@@ -1,0 +1,7612 @@
+[
+  {
+    "rank": 1,
+    "name": "Baiqiang Dong (董百强)",
+    "gender": "男",
+    "result": "20.33",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2008DONG06",
+    "province": "福建",
+    "city": "泉州"
+  },
+  {
+    "rank": 2,
+    "name": "Lichi Fang (方力驰)",
+    "gender": "男",
+    "result": "20.67",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2018FANG03",
+    "province": "广东",
+    "city": "珠海"
+  },
+  {
+    "rank": 2,
+    "name": "Nachuan Sun (孙纳川)",
+    "gender": "男",
+    "result": "20.67",
+    "competition": "Hong Kong FMC Championship 2025",
+    "wcaid": "2017SUNN02",
+    "province": "辽宁",
+    "city": "大连"
+  },
+  {
+    "rank": 4,
+    "name": "Yiwei Liu (刘伊玮)",
+    "gender": "女",
+    "result": "21.00",
+    "competition": "Tokyo Open FMC Winter 2025",
+    "wcaid": "2012LIUY03",
+    "province": "浙江",
+    "city": "温州"
+  },
+  {
+    "rank": 5,
+    "name": "Yunhao Lou (娄云皓)",
+    "gender": "男",
+    "result": "21.33",
+    "competition": "FMC London Summer 2023",
+    "wcaid": "2017LOUY01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 5,
+    "name": "Dunhui Xiao (肖敦慧)",
+    "gender": "男",
+    "result": "21.33",
+    "competition": "Rhein-Neckar Complete Breakdown 2025",
+    "wcaid": "2018XIAO03",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 7,
+    "name": "Jibo Zhao (赵吉波)",
+    "gender": "男",
+    "result": "21.67",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2010ZHAO11",
+    "province": "四川",
+    "city": "绵阳"
+  },
+  {
+    "rank": 7,
+    "name": "Dorian Chan",
+    "gender": "男",
+    "result": "21.67",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2023DORI01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 9,
+    "name": "Qijun Miao (缪其隽)",
+    "gender": "男",
+    "result": "22.00",
+    "competition": "Hong Kong FMC Championship 2024",
+    "wcaid": "2014MIAO02",
+    "province": "广东",
+    "city": "佛山"
+  },
+  {
+    "rank": 9,
+    "name": "Alvin Cheng Hiu Yeung (鄭曉洋)",
+    "gender": "男",
+    "result": "22.00",
+    "competition": "Hong Kong FMC Championship 2024",
+    "wcaid": "2019YEUN01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 11,
+    "name": "Tianze Xu (徐天泽)",
+    "gender": "男",
+    "result": "22.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015XUTI01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 11,
+    "name": "Weijie Jian (简维杰)",
+    "gender": "男",
+    "result": "22.67",
+    "competition": "Shanghai FMC Summer 2024",
+    "wcaid": "2011JIAN07",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 13,
+    "name": "Yongqiang Peng (彭永强)",
+    "gender": "男",
+    "result": "23.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2013PENG02",
+    "province": "河南",
+    "city": "商丘"
+  },
+  {
+    "rank": 13,
+    "name": "Dewei Tan (譚得唯)",
+    "gender": "男",
+    "result": "23.00",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2024TAND01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 15,
+    "name": "Yunqi Ouyang (欧阳韵奇)",
+    "gender": "男",
+    "result": "23.33",
+    "competition": "Korean FMC Championship 2024",
+    "wcaid": "2007YUNQ01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 15,
+    "name": "Xiwen Ruan (阮熙文)",
+    "gender": "男",
+    "result": "23.33",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2018RUAN04",
+    "province": "湖南",
+    "city": "邵阳"
+  },
+  {
+    "rank": 15,
+    "name": "Yanghong Zhang (张扬红)",
+    "gender": "男",
+    "result": "23.33",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2024ZHAN75",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 18,
+    "name": "Maosheng Chen (陈茂盛)",
+    "gender": "男",
+    "result": "23.67",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2012CHEN44",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 18,
+    "name": "Cian-Jyun Yang (楊謙君)",
+    "gender": "男",
+    "result": "23.67",
+    "competition": "Singapore 3xFMCx3 2024",
+    "wcaid": "2019YANG94",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 18,
+    "name": "Liren Sun (孙立仁)",
+    "gender": "男",
+    "result": "23.67",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2017SUNL03",
+    "province": "黑龙江",
+    "city": "牡丹江"
+  },
+  {
+    "rank": 21,
+    "name": "Hsiang-Cheng Kan (闞祥誠)",
+    "gender": "男",
+    "result": "24.00",
+    "competition": "Philippine Championship 2025",
+    "wcaid": "2016KANH02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 22,
+    "name": "Kun Zhu (朱坤)",
+    "gender": "男",
+    "result": "24.67",
+    "competition": "FMC 2024",
+    "wcaid": "2011ZHUK01",
+    "province": "四川",
+    "city": "成都"
+  },
+  {
+    "rank": 22,
+    "name": "Ruei-Ying Huang (黃睿穎)",
+    "gender": "男",
+    "result": "24.67",
+    "competition": "Taiwan Championship 2019",
+    "wcaid": "2017HUAN63",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 22,
+    "name": "Jiayue Chen (陈家悦)",
+    "gender": "女",
+    "result": "24.67",
+    "competition": "Guangzhou Quiet Day 2024",
+    "wcaid": "2023CHEJ12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 22,
+    "name": "Yuhang Sun (孙煜航)",
+    "gender": "男",
+    "result": "24.67",
+    "competition": "Guangzhou Quiet Day 2024",
+    "wcaid": "2019SUNY09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 22,
+    "name": "Zicong Liu (刘子聪)",
+    "gender": "男",
+    "result": "24.67",
+    "competition": "Guangzhou 3x3 Quiet Day 2025",
+    "wcaid": "2024LIUZ11",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 27,
+    "name": "Yifan Wang (王逸帆)",
+    "gender": "男",
+    "result": "25.00",
+    "competition": "Rubik's WCA World Championship 2023",
+    "wcaid": "2017WANY29",
+    "province": "福建",
+    "city": "三明"
+  },
+  {
+    "rank": 28,
+    "name": "Yibo Wang (王怡卜)",
+    "gender": "男",
+    "result": "25.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2023WANY11",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 29,
+    "name": "Zian Song (宋子安)",
+    "gender": "男",
+    "result": "25.67",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2014SONG08",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 29,
+    "name": "Yen-Lei Jen (任晏磊)",
+    "gender": "男",
+    "result": "25.67",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2023JENY01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 31,
+    "name": "Bo Huang (黄镈)",
+    "gender": "男",
+    "result": "26.33",
+    "competition": "Cross-strait Cubing Exchange 2016",
+    "wcaid": "2013HUAN16",
+    "province": "广东",
+    "city": "潮州"
+  },
+  {
+    "rank": 31,
+    "name": "Jiejie Du (杜杰杰)",
+    "gender": "男",
+    "result": "26.33",
+    "competition": "Cube of Odd Numbers 2016",
+    "wcaid": "2010DUJI01",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 31,
+    "name": "Xinyuan Fan (范歆远)",
+    "gender": "男",
+    "result": "26.33",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2016FANX01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 31,
+    "name": "Haohan Zheng (郑皓涵)",
+    "gender": "男",
+    "result": "26.33",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2019ZHEN38",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 35,
+    "name": "Ziheng Ma (马子恒)",
+    "gender": "男",
+    "result": "26.67",
+    "competition": "Cube of Odd Numbers 2016",
+    "wcaid": "2012MAZI01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 35,
+    "name": "Xuyang Zhang (张煦阳)",
+    "gender": "男",
+    "result": "26.67",
+    "competition": "Guangzhou Quiet Day 2024",
+    "wcaid": "2014ZHAN43",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 35,
+    "name": "Wu Chun Yin (胡俊賢)",
+    "gender": "男",
+    "result": "26.67",
+    "competition": "Hong Kong FMC Championship 2025",
+    "wcaid": "2012YINW01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 38,
+    "name": "Max Xiong (熊锐明)",
+    "gender": "男",
+    "result": "27.00",
+    "competition": "FMC Canada 2025",
+    "wcaid": "2015XION03",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 38,
+    "name": "Jiashun Wu (吴嘉顺)",
+    "gender": "男",
+    "result": "27.00",
+    "competition": "Shanghai FMC Summer 2024",
+    "wcaid": "2016WUJI01",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 40,
+    "name": "Wong Kin Lok (黃健樂)",
+    "gender": "男",
+    "result": "27.33",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2014LOKW01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 40,
+    "name": "Andy Mok Man Cheuk (莫文卓)",
+    "gender": "男",
+    "result": "27.33",
+    "competition": "Hong Kong FMC Championship 2024",
+    "wcaid": "2016CHEU04",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 40,
+    "name": "Ge Shi (石歌)",
+    "gender": "男",
+    "result": "27.33",
+    "competition": "PBQ in Almaty 2026",
+    "wcaid": "2024GESH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 43,
+    "name": "Yan Xuan (宣炎)",
+    "gender": "男",
+    "result": "28.00",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2009XUAN03",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 43,
+    "name": "Yunke Zhang (张云柯)",
+    "gender": "男",
+    "result": "28.00",
+    "competition": "FMC 2019",
+    "wcaid": "2014ZHAN11",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 43,
+    "name": "Peiyan Li (利沛焰)",
+    "gender": "男",
+    "result": "28.00",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2013LIPE01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 43,
+    "name": "Tsang Hon Pong (曾漢邦)",
+    "gender": "男",
+    "result": "28.00",
+    "competition": "Hong Kong FMC Championship 2025",
+    "wcaid": "2014PONG01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 43,
+    "name": "Zhiyuan Zhang (张质源)",
+    "gender": "男",
+    "result": "28.00",
+    "competition": "Tianjin Summer Solstice 2021",
+    "wcaid": "2018ZHAZ08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 43,
+    "name": "Shih-Hao Wang (王士豪)",
+    "gender": "男",
+    "result": "28.00",
+    "competition": "Taipei FMC All Day 2023",
+    "wcaid": "2015WANG46",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 43,
+    "name": "Daniel Chiu",
+    "gender": "男",
+    "result": "28.00",
+    "competition": "Rubik's UK Championship FMC 2024",
+    "wcaid": "2022CHIU06",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 43,
+    "name": "Lai Pak Kiu (賴柏喬)",
+    "gender": "男",
+    "result": "28.00",
+    "competition": "Hong Kong FMC Championship 2025",
+    "wcaid": "2024KIUL01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 51,
+    "name": "Mok Man Kit (莫文傑)",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "Guangzhou 3x3 Quiet Day 2025",
+    "wcaid": "2009KITM01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 51,
+    "name": "Haoxiang Ying (应浩祥)",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "Shanghai FMC Summer 2024",
+    "wcaid": "2016YING02",
+    "province": "福建",
+    "city": "龙岩"
+  },
+  {
+    "rank": 51,
+    "name": "Aolin Tang (唐奥林)",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2017TANG19",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 51,
+    "name": "Yining Wang (王逸宁)",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2023WANY06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 51,
+    "name": "Qinghong Zeng (曾庆鸿)",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2019ZENG04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 56,
+    "name": "Zibo Xu (徐子博)",
+    "gender": "男",
+    "result": "28.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2014XUZI01",
+    "province": "湖北",
+    "city": "襄阳"
+  },
+  {
+    "rank": 56,
+    "name": "Zhiyuan Ma (马之元)",
+    "gender": "男",
+    "result": "28.67",
+    "competition": "Shanghai FMC Summer 2024",
+    "wcaid": "2017MAZH04",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 56,
+    "name": "Mingzhi Da (达明志)",
+    "gender": "男",
+    "result": "28.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2014DAMI01",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 56,
+    "name": "Putian Ye (叶溥天)",
+    "gender": "男",
+    "result": "28.67",
+    "competition": "FMC East Melbourne 2023",
+    "wcaid": "2021YEPU01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 60,
+    "name": "Ruohan Qiu (邱若寒)",
+    "gender": "男",
+    "result": "29.00",
+    "competition": "Guangzhou Quiet Day 2024",
+    "wcaid": "2012QIUR01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 60,
+    "name": "Yixiao Shen (沈逸霄)",
+    "gender": "男",
+    "result": "29.00",
+    "competition": "Fewest Moves Southeast Asia 2018",
+    "wcaid": "2017SHEN31",
+    "province": "浙江",
+    "city": "嘉兴"
+  },
+  {
+    "rank": 60,
+    "name": "Yan Luo (骆彦)",
+    "gender": "女",
+    "result": "29.00",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2017LUOY05",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 60,
+    "name": "Junhao Jin (金俊昊)",
+    "gender": "男",
+    "result": "29.00",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2023JINJ03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 64,
+    "name": "Ping-Yueh Huang (黃品越)",
+    "gender": "男",
+    "result": "29.33",
+    "competition": "Please Be Quiet Luzon 2024",
+    "wcaid": "2012HUAN12",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 64,
+    "name": "Feihong Zhang (张费鸿)",
+    "gender": "男",
+    "result": "29.33",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2016ZHAN18",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 64,
+    "name": "Wong Pat Lun (黃柏綸)",
+    "gender": "男",
+    "result": "29.33",
+    "competition": "Hong Kong FMC Championship 2025",
+    "wcaid": "2023LUNW01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 64,
+    "name": "Guangtong Quan (全广通)",
+    "gender": "男",
+    "result": "29.33",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2017QUAN22",
+    "province": "广东",
+    "city": "湛江"
+  },
+  {
+    "rank": 64,
+    "name": "Haoxuan Zhang (张浩轩)",
+    "gender": "男",
+    "result": "29.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2024ZHAN41",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 69,
+    "name": "Chunhao Liu (柳春浩)",
+    "gender": "男",
+    "result": "29.67",
+    "competition": "More Than One Cube 2018",
+    "wcaid": "2017LIUC11",
+    "province": "辽宁",
+    "city": "营口"
+  },
+  {
+    "rank": 69,
+    "name": "Ziyuan Li (李梓元)",
+    "gender": "男",
+    "result": "29.67",
+    "competition": "Please Be Quiet Beijing 2024",
+    "wcaid": "2017LIZI05",
+    "province": "河北",
+    "city": "秦皇岛"
+  },
+  {
+    "rank": 69,
+    "name": "Cheng-Wei Lin (林澄蔚)",
+    "gender": "男",
+    "result": "29.67",
+    "competition": "Taipei FMC All Day 2023",
+    "wcaid": "2015LINC03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 69,
+    "name": "Ziheng Feng (冯梓恒)",
+    "gender": "男",
+    "result": "29.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023FENG05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 73,
+    "name": "Shuang Chen (陈霜)",
+    "gender": "男",
+    "result": "30.00",
+    "competition": "PKU FM 2012",
+    "wcaid": "2008CHEN27",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 73,
+    "name": "Bowen Deng (邓博文)",
+    "gender": "男",
+    "result": "30.00",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2009DENG01",
+    "province": "湖南",
+    "city": "常德"
+  },
+  {
+    "rank": 73,
+    "name": "Han Su (苏涵)",
+    "gender": "男",
+    "result": "30.00",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2021SUHA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 76,
+    "name": "Yikuan Kan (阚亦宽)",
+    "gender": "女",
+    "result": "30.33",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2015KANY01",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 76,
+    "name": "Yuheng Wu (吴雨衡)",
+    "gender": "男",
+    "result": "30.33",
+    "competition": "Shanghai FMC Summer 2024",
+    "wcaid": "2018WUYU03",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 76,
+    "name": "Shu-Yii Luo (駱書翊)",
+    "gender": "男",
+    "result": "30.33",
+    "competition": "Taipei FMC All Day 2023",
+    "wcaid": "2012LUOS01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 76,
+    "name": "Yiyun Chen (陈毅昀)",
+    "gender": "男",
+    "result": "30.33",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2017CHEN28",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 80,
+    "name": "Xinyu Lu (卢鑫宇)",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "Asian Championship 2016",
+    "wcaid": "2014LUXI05",
+    "province": "黑龙江",
+    "city": "哈尔滨"
+  },
+  {
+    "rank": 80,
+    "name": "Lichao Liu (刘立超)",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "Shanghai FMC Summer 2024",
+    "wcaid": "2018LIUL05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 80,
+    "name": "Taiji Yi (易泰基)",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2018YITA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 80,
+    "name": "Ho Hsieh (謝合)",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "Taiwan Championship 2019",
+    "wcaid": "2015HSIE02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 80,
+    "name": "Kai-Wen Wang (王楷文)",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2015WANG09",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 80,
+    "name": "Yiqun Lin (林逸群)",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2014LINY02",
+    "province": "福建",
+    "city": "福州"
+  },
+  {
+    "rank": 80,
+    "name": "Timothy Kong Wing Sum (江永琛)",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "Hong Kong FMC Championship 2025",
+    "wcaid": "2015SUMT01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 80,
+    "name": "Min Wu (吴民)",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2009WUMI01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 88,
+    "name": "Bo Wang (王擘)",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "Asian Championship 2016",
+    "wcaid": "2013WANG69",
+    "province": "西藏",
+    "city": "日喀则"
+  },
+  {
+    "rank": 88,
+    "name": "Qihan Chen (陈启晗)",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2019CHEQ05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 88,
+    "name": "Yueshan Yang (杨悦山)",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2021YANG11",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 88,
+    "name": "Young He (何嘉炀)",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "FMC LIVE - North America 2025",
+    "wcaid": "2014HEYO01",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 92,
+    "name": "Owen Yepeng Sun (孙叶芃)",
+    "gender": "男",
+    "result": "31.33",
+    "competition": "SoCal Silent Spectacular 2022",
+    "wcaid": "2017SUNY01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 92,
+    "name": "Anyu Zhang (张安宇)",
+    "gender": "男",
+    "result": "31.33",
+    "competition": "Singapore 3xFMCx3 2024",
+    "wcaid": "2012ZHAN08",
+    "province": "陕西",
+    "city": "榆林"
+  },
+  {
+    "rank": 92,
+    "name": "Rinji Chan Pak Hei (陳柏熹)",
+    "gender": "男",
+    "result": "31.33",
+    "competition": "Hong Kong FMC Championship 2024",
+    "wcaid": "2019HEIR01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 92,
+    "name": "Jiazhou Li (李佳洲)",
+    "gender": "男",
+    "result": "31.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2016LIJI05",
+    "province": "四川",
+    "city": "成都"
+  },
+  {
+    "rank": 96,
+    "name": "Zijia Feng (冯子甲)",
+    "gender": "男",
+    "result": "31.67",
+    "competition": "Cube of Odd Numbers 2016",
+    "wcaid": "2013FENG02",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 96,
+    "name": "Jack Pan (潘杰康)",
+    "gender": "男",
+    "result": "31.67",
+    "competition": "Asian Championship 2016",
+    "wcaid": "2012PANJ02",
+    "province": "甘肃",
+    "city": "兰州"
+  },
+  {
+    "rank": 96,
+    "name": "Chao-Che Chung (鍾肇哲)",
+    "gender": "男",
+    "result": "31.67",
+    "competition": "Taipei FMC All Day 2022",
+    "wcaid": "2012CHON03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 96,
+    "name": "Yi Wang (王旖)",
+    "gender": "女",
+    "result": "31.67",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2011WANG33",
+    "province": "福建",
+    "city": "福州"
+  },
+  {
+    "rank": 96,
+    "name": "Zhuocheng Guo (郭卓成)",
+    "gender": "男",
+    "result": "31.67",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2024GUOZ04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 101,
+    "name": "Xingye Zhu (朱星晔)",
+    "gender": "男",
+    "result": "32.00",
+    "competition": "China Championship 2015",
+    "wcaid": "2015ZHUX01",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 101,
+    "name": "Ivan Li Ka Leong (李嘉亮)",
+    "gender": "男",
+    "result": "32.00",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2015LEON02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 101,
+    "name": "Xun Zhao (赵洵)",
+    "gender": "男",
+    "result": "32.00",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2015ZHAO07",
+    "province": "四川",
+    "city": "成都"
+  },
+  {
+    "rank": 101,
+    "name": "Mengfei Shen (沈梦非)",
+    "gender": "女",
+    "result": "32.00",
+    "competition": "Harrow Autumn 2023",
+    "wcaid": "2018SHEN07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 101,
+    "name": "Weijie Fang (方伟杰)",
+    "gender": "男",
+    "result": "32.00",
+    "competition": "Shenzhen Open 2018",
+    "wcaid": "2018FANG10",
+    "province": "广东",
+    "city": "潮州"
+  },
+  {
+    "rank": 106,
+    "name": "Mo Ji (季默)",
+    "gender": "男",
+    "result": "32.33",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2010JIMO01",
+    "province": "辽宁",
+    "city": "阜新"
+  },
+  {
+    "rank": 106,
+    "name": "Zongwen Mu (牟宗文)",
+    "gender": "男",
+    "result": "32.33",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2015MUZO01",
+    "province": "山东",
+    "city": "日照"
+  },
+  {
+    "rank": 106,
+    "name": "Haoran Jing (荆浩然)",
+    "gender": "男",
+    "result": "32.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2017JING06",
+    "province": "山东",
+    "city": "济南"
+  },
+  {
+    "rank": 109,
+    "name": "Weixing Zhang (张炜星)",
+    "gender": "男",
+    "result": "32.67",
+    "competition": "Shenzhen Open 2018",
+    "wcaid": "2009ZHAN53",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 109,
+    "name": "Pengwei Chen (陈芃威)",
+    "gender": "男",
+    "result": "32.67",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2015CHEN87",
+    "province": "福建",
+    "city": "宁德"
+  },
+  {
+    "rank": 109,
+    "name": "Bo-Yan Wu (吳柏彥)",
+    "gender": "男",
+    "result": "32.67",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2019WUBO01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 112,
+    "name": "Rui-Jun Liu (劉睿鈞)",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Taiwan Summer Open 2014",
+    "wcaid": "2011LIUR02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 112,
+    "name": "Xingyan Ding (丁醒炎)",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Asian Championship 2016",
+    "wcaid": "2014DING02",
+    "province": "江苏",
+    "city": "无锡"
+  },
+  {
+    "rank": 112,
+    "name": "Yi-Fan Wu (吳亦凡)",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2010WUIF01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 112,
+    "name": "Xinyun Chen (陈新运)",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "FMC 2024",
+    "wcaid": "2017CHEN36",
+    "province": "湖北",
+    "city": "武汉"
+  },
+  {
+    "rank": 112,
+    "name": "Yuhao Deng (邓宇豪)",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2014DENG05",
+    "province": "广东",
+    "city": "东莞"
+  },
+  {
+    "rank": 112,
+    "name": "Xingkai Yin (尹星凯)",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2017YINX01",
+    "province": "江苏",
+    "city": "连云港"
+  },
+  {
+    "rank": 112,
+    "name": "Ruimin Yan (颜瑞民)",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Warm Up Canberra 2019",
+    "wcaid": "2017YANR02",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 112,
+    "name": "Kai-Lun Cheng (鄭凱倫)",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Philippine Championship 2024",
+    "wcaid": "2020CHEN31",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 112,
+    "name": "Yi-Wei Chen (陳奕瑋)",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2020CHEN34",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 112,
+    "name": "Jinge Li (李金戈)",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Guangzhou Quiet Day 2024",
+    "wcaid": "2021LIJI02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 122,
+    "name": "Zijian Chen (陈梓键)",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "Guangdong Open 2014",
+    "wcaid": "2014CHEN02",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 122,
+    "name": "Fazhen Wu (吴法臻)",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "Hefei Open 2017",
+    "wcaid": "2013WUFA03",
+    "province": "山东",
+    "city": "潍坊"
+  },
+  {
+    "rank": 122,
+    "name": "Wei Dong (董唯)",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2018DONG22",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 122,
+    "name": "Jeffers Chan",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "SA Side State Championship 2025",
+    "wcaid": "2017TUNG16",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 122,
+    "name": "Michael Ngan (顏律言)",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2016NGAN02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 122,
+    "name": "Yuzhe Gan (甘宇喆)",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2018GANY01",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 122,
+    "name": "Yixun Zhao (赵以训)",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2024ZHAO32",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 122,
+    "name": "Congxi Liu (刘淙溪)",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2018LIUC22",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 122,
+    "name": "Xuyi Wang (汪绪奕)",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2018WANX10",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 131,
+    "name": "Chunyu Zhang (张春雨)",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "Asian Championship 2016",
+    "wcaid": "2011ZHAN24",
+    "province": "安徽",
+    "city": "合肥"
+  },
+  {
+    "rank": 131,
+    "name": "Jiayu Wang (王佳宇)",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "China Championship 2017",
+    "wcaid": "2010WANG53",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 131,
+    "name": "Er-Sheng Kuo (郭爾陞)",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "Cross-strait Cubing Exchange 2016",
+    "wcaid": "2011KUOE01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 131,
+    "name": "Zongqiang Hu (胡宗强)",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "Hefei Open 2017",
+    "wcaid": "2016HUZO01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 131,
+    "name": "Xiaohu Xu (胥啸虎)",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2015XUXI01",
+    "province": "四川",
+    "city": "成都"
+  },
+  {
+    "rank": 131,
+    "name": "Yang Li (李扬)",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2012LIYA01",
+    "province": "河北",
+    "city": "石家庄"
+  },
+  {
+    "rank": 131,
+    "name": "Hongyuan Fu (傅泓源)",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2017FUHO01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 131,
+    "name": "Weikang Zheng (郑炜康)",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2018ZHEN42",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 131,
+    "name": "Haotian Hu (胡皓天)",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "Mental Breakdown Hoorn 2024",
+    "wcaid": "2022HUHA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 131,
+    "name": "Zijian Cai (蔡子健)",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2017CAIZ03",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 141,
+    "name": "Meng-Yi Li (李孟一)",
+    "gender": "男",
+    "result": "34.00",
+    "competition": "Cross-strait Cubing Exchange 2016",
+    "wcaid": "2011LIME01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 141,
+    "name": "Liudi Sun (孙柳笛)",
+    "gender": "女",
+    "result": "34.00",
+    "competition": "Xi'an New Year 2016",
+    "wcaid": "2012SUNL03",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 141,
+    "name": "Shenghai Fang (方胜海)",
+    "gender": "男",
+    "result": "34.00",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2016FANG01",
+    "province": "安徽",
+    "city": "马鞍山"
+  },
+  {
+    "rank": 141,
+    "name": "Duo Li (李铎)",
+    "gender": "男",
+    "result": "34.00",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2016LIDU01",
+    "province": "吉林",
+    "city": "白山"
+  },
+  {
+    "rank": 141,
+    "name": "Yunliang Zhang (张赟量)",
+    "gender": "男",
+    "result": "34.00",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2016ZHAN45",
+    "province": "江苏",
+    "city": "苏州"
+  },
+  {
+    "rank": 141,
+    "name": "Zhibo Xuan (禤志博)",
+    "gender": "男",
+    "result": "34.00",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2017XUAN01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 141,
+    "name": "Yuxuan Wu (吴雨轩)",
+    "gender": "男",
+    "result": "34.00",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2017WUYU10",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 148,
+    "name": "Zhenyu Zhang (张振宇)",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "Hefei Open 2015",
+    "wcaid": "2015ZHAN13",
+    "province": "安徽",
+    "city": "合肥"
+  },
+  {
+    "rank": 148,
+    "name": "Linxiao Xu (徐林霄)",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "Please Be Quiet Beijing 2018",
+    "wcaid": "2014XULI01",
+    "province": "天津",
+    "city": "天津"
+  },
+  {
+    "rank": 148,
+    "name": "Tong Zhu (朱彤)",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "Koalafication Brisbane 2019",
+    "wcaid": "2011ZHUT01",
+    "province": "天津",
+    "city": "天津"
+  },
+  {
+    "rank": 148,
+    "name": "Yu Chen (陈宇)",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "China Championship 2019",
+    "wcaid": "2014CHEN22",
+    "province": "山东",
+    "city": "临沂"
+  },
+  {
+    "rank": 148,
+    "name": "Shek Ho Hin (石灝軒)",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "Hong Kong FMC Championship 2024",
+    "wcaid": "2016HINS02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 148,
+    "name": "Teng-Da Chang (張騰達)",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2024CHAN51",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 148,
+    "name": "Albert So Yik Ban (蘇益品)",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2022SOAL01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 155,
+    "name": "Jiawen Wu (吴嘉文)",
+    "gender": "男",
+    "result": "34.67",
+    "competition": "Cross-strait FMC 2016",
+    "wcaid": "2010WUJI01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 155,
+    "name": "Tao Yu (喻韬)",
+    "gender": "男",
+    "result": "34.67",
+    "competition": "World Rubik's Cube Championship 2017",
+    "wcaid": "2012YUTA01",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 155,
+    "name": "Xin Luo (罗鑫)",
+    "gender": "男",
+    "result": "34.67",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2013LUOX01",
+    "province": "江西",
+    "city": "吉安"
+  },
+  {
+    "rank": 155,
+    "name": "Lanshi Zhang (张岚石)",
+    "gender": "男",
+    "result": "34.67",
+    "competition": "Guangzhou 3x3 BLD and FMC 2020",
+    "wcaid": "2013ZHAN41",
+    "province": "黑龙江",
+    "city": "哈尔滨"
+  },
+  {
+    "rank": 155,
+    "name": "Chenhao Sun (孙晨皓)",
+    "gender": "男",
+    "result": "34.67",
+    "competition": "Melbourne Summer 2023",
+    "wcaid": "2018SUNC02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 155,
+    "name": "Ziyi Xu (徐梓翼)",
+    "gender": "男",
+    "result": "34.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2023XUZI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 155,
+    "name": "Wayne Pi",
+    "gender": "男",
+    "result": "34.67",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2017PIWA01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 155,
+    "name": "Xiaotian Ma (马晓田)",
+    "gender": "男",
+    "result": "34.67",
+    "competition": "Vietnam Championship 2025",
+    "wcaid": "2020MAXI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 163,
+    "name": "Qingbin Chen (陈庆斌)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Cube of Prime Numbers 2015",
+    "wcaid": "2011CHEN19",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 163,
+    "name": "Shenjie Zhu (朱申杰)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2014ZHUS01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 163,
+    "name": "Xulang Li (黎旭朗)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2017LIXU06",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 163,
+    "name": "Tairan Zhong (钟泰然)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Shenzhen 3x3 Days 2019",
+    "wcaid": "2013ZHON04",
+    "province": "湖南",
+    "city": "株洲"
+  },
+  {
+    "rank": 163,
+    "name": "Martin Zhang (张镐轩)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Swedish FMC Championship 2024",
+    "wcaid": "2021ZHAN52",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 163,
+    "name": "Zhedong Wang (王哲栋)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "URJC Open 2024",
+    "wcaid": "2015WANG83",
+    "province": "浙江",
+    "city": "湖州"
+  },
+  {
+    "rank": 163,
+    "name": "Burno Li Chak Kwan (李澤堃)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "FMC Canada 2023",
+    "wcaid": "2017KWAN05",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 163,
+    "name": "Max Kwok U Sam (郭愉琛)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "FMC 2024",
+    "wcaid": "2018SAMK01",
+    "province": "澳门",
+    "city": "澳门"
+  },
+  {
+    "rank": 163,
+    "name": "Jia-Hong Lu (陸嘉宏)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2007LUJI01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 163,
+    "name": "Sing-Hao Lian (連星皓)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2024LIAN11",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 163,
+    "name": "Zehan Xue (薛泽韩)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Cube Camp in Suan Phueng 2025",
+    "wcaid": "2018XUEZ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 163,
+    "name": "Quinson Hon Kwan Shun (韓君信)",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Hong Kong FMC Championship 2024",
+    "wcaid": "2015SHUN02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 175,
+    "name": "Ming Zheng (郑鸣)",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "WCA Asian Championship 2018",
+    "wcaid": "2009ZHEN11",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 175,
+    "name": "Jici Liu (刘纪赐)",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "Guangzhou Quiet Day 2024",
+    "wcaid": "2009LIUJ04",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 175,
+    "name": "Tianwei Cai (蔡天威)",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "Ningbo Footsteps 2019",
+    "wcaid": "2015CAIT01",
+    "province": "浙江",
+    "city": "宁波"
+  },
+  {
+    "rank": 175,
+    "name": "Yi-Chun Chen (陳奕均)",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2007CHEN07",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 175,
+    "name": "Xingyu Wu (伍星宇)",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "Shanghai FMC Summer 2024",
+    "wcaid": "2018WUXI03",
+    "province": "江苏",
+    "city": "淮安"
+  },
+  {
+    "rank": 175,
+    "name": "Yibo Wang (王奕博)",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "Melbourne Summer 2023",
+    "wcaid": "2018WANG39",
+    "province": "山东",
+    "city": "青岛"
+  },
+  {
+    "rank": 175,
+    "name": "Hongyu Zhu (朱泓宇)",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "FMC 2024",
+    "wcaid": "2017ZHUH05",
+    "province": "云南",
+    "city": "西双版纳"
+  },
+  {
+    "rank": 175,
+    "name": "Fan Ye (叶凡)",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "FMC 2024",
+    "wcaid": "2019YEFA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 175,
+    "name": "Te Wu (邬特)",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2015WUTE01",
+    "province": "广东",
+    "city": "清远"
+  },
+  {
+    "rank": 175,
+    "name": "Chengnuo Han (韩承诺)",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "Cube Camp in Suan Phueng 2025",
+    "wcaid": "2021HANC01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 185,
+    "name": "Hong Zhang (张宏)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "PKU Fewest Moves 2010",
+    "wcaid": "2008ZHAN13",
+    "province": "天津",
+    "city": "天津"
+  },
+  {
+    "rank": 185,
+    "name": "Xiaobo Jin (金晓波)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2008JINX01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 185,
+    "name": "Xuesi Chen (陈学思)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "FMC Asia 2015",
+    "wcaid": "2010CHEN03",
+    "province": "浙江",
+    "city": "金华"
+  },
+  {
+    "rank": 185,
+    "name": "Jian Wu (吴建)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2015WUJI02",
+    "province": "江西",
+    "city": "上饶"
+  },
+  {
+    "rank": 185,
+    "name": "Chi-Lun Hung (洪啟倫)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "Taiwan Blind Day 2018",
+    "wcaid": "2010HONG01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 185,
+    "name": "Xuanwei Liang (梁轩玮)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2016LIAN17",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 185,
+    "name": "Xinyu Wang (王欣宇)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "FMC 2024",
+    "wcaid": "2017WANX08",
+    "province": "安徽",
+    "city": "安庆"
+  },
+  {
+    "rank": 185,
+    "name": "Chenhao Ma (马晨皓)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "Please Be Quiet Beijing 2024",
+    "wcaid": "2017MACH03",
+    "province": "天津",
+    "city": "天津"
+  },
+  {
+    "rank": 185,
+    "name": "Qingze Li (李庆泽)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2016LIQI03",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 185,
+    "name": "Angus Wong Tsz On (王梓安)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "Hong Kong FMC Championship 2024",
+    "wcaid": "2017ONAN01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 185,
+    "name": "Jiahao Han (韩嘉豪)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "Guangzhou 3x3 Quiet Day 2025",
+    "wcaid": "2025HANJ03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 196,
+    "name": "Leung Ka Ho (梁家浩)",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "Cross-strait FMC 2014",
+    "wcaid": "2012HOLE01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 196,
+    "name": "Shao-Yu Hu (胡紹宇)",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2015HUSH02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 196,
+    "name": "Chan Hay Yin (陳希言)",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "Hong Kong FMC 2023",
+    "wcaid": "2015YINC01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 196,
+    "name": "Pengcheng Wang (王鹏程)",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "Xi'an Open 2018",
+    "wcaid": "2017WANG24",
+    "province": "甘肃",
+    "city": "庆阳"
+  },
+  {
+    "rank": 196,
+    "name": "Chun-Pao Ni (倪君寶)",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2016NIJU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 196,
+    "name": "Wei-Chen Hsieh (謝維宸)",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2019HSIE04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 196,
+    "name": "Hongjie Zhang (张鸿杰)",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2018ZHAH02",
+    "province": "福建",
+    "city": "宁德"
+  },
+  {
+    "rank": 203,
+    "name": "Wen-Pin Chen (陳文聘)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Cross-strait FMC 2016",
+    "wcaid": "2011CHEN16",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 203,
+    "name": "Jiacheng Peng (彭家诚)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "FMC Asia 2015",
+    "wcaid": "2012PENG05",
+    "province": "广东",
+    "city": "汕尾"
+  },
+  {
+    "rank": 203,
+    "name": "Shaowei Hou (侯少尉)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "China Championship 2017",
+    "wcaid": "2014HOUS01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 203,
+    "name": "Tianping Ding (丁天平)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "FMC 2019",
+    "wcaid": "2016DING05",
+    "province": "江苏",
+    "city": "无锡"
+  },
+  {
+    "rank": 203,
+    "name": "Qikai Wang (王其凯)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2016WANQ04",
+    "province": "浙江",
+    "city": "舟山"
+  },
+  {
+    "rank": 203,
+    "name": "Wong Yuk Chi (黃昱誌)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Rubik's WCA Oceanic Championship 2022",
+    "wcaid": "2015CHIC01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 203,
+    "name": "Wenqiang Yan (严文强)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2016YANW01",
+    "province": "广东",
+    "city": "阳江"
+  },
+  {
+    "rank": 203,
+    "name": "Lam Yu Ching (林雨晴)",
+    "gender": "女",
+    "result": "36.33",
+    "competition": "Melbourne Mental Mania 2019",
+    "wcaid": "2012CHIN04",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 203,
+    "name": "Tiannan Wang (王天南)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2016WANT04",
+    "province": "河南",
+    "city": "濮阳"
+  },
+  {
+    "rank": 203,
+    "name": "Jinzhou Huang (黄金洲)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2017HUAN34",
+    "province": "山东",
+    "city": "济宁"
+  },
+  {
+    "rank": 203,
+    "name": "Zhe Wang (王哲)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Tianjin Summer Solstice 2021",
+    "wcaid": "2019WANZ21",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 203,
+    "name": "Wenshuo Wang (王文烁)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2024WANG14",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 203,
+    "name": "Ziyun Wang (王子云)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2024WANZ09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 203,
+    "name": "Siwei Chen (陈思玮)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2025CHEN55",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 203,
+    "name": "Chenyi Ye (叶晨佾)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2018YECH03",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 218,
+    "name": "Zixuan Liu (刘子瑄)",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2015LIUZ07",
+    "province": "广东",
+    "city": "揭阳"
+  },
+  {
+    "rank": 218,
+    "name": "Haoguang Lyu (吕浩光)",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2017LUHA03",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 218,
+    "name": "Anto Kam (甘浩東)",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "Bay Area Speedcubin' 33 But it's Quiet - 2022",
+    "wcaid": "2017TUNG13",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 218,
+    "name": "Wei-Ming Zeng (曾唯銘)",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "Philippine Championship 2024",
+    "wcaid": "2019ZENG10",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 218,
+    "name": "Chuanyin Ju (鞠传垠)",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "FMC 2024",
+    "wcaid": "2024JUCH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 218,
+    "name": "Yixiang Gao (高翊翔)",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "FMC 2024",
+    "wcaid": "2019GAOY05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 218,
+    "name": "Loïc Zhang",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "FMC French Championship 2025",
+    "wcaid": "2022ZHAN31",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 218,
+    "name": "Yang Zong (宗杨)",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2024ZONG02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 218,
+    "name": "Kejian Shi (史可鉴)",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2021SHIK01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 227,
+    "name": "Hao-Zheng Lin (林浩正)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Show Off Quickness 2015",
+    "wcaid": "2008LINH01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 227,
+    "name": "Jr-Wei Jang (張智瑋)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Taiwan Blind Day 2018",
+    "wcaid": "2010JANG01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 227,
+    "name": "Junhe Zhang (张钧鹤)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2009ZHAN24",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 227,
+    "name": "Jiankun Wu (吴健坤)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2015WUJI01",
+    "province": "江西",
+    "city": "南昌"
+  },
+  {
+    "rank": 227,
+    "name": "Chunxiao Li (李春啸)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2013LICH01",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 227,
+    "name": "Chilin Fang (方炽霖)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2016FANG12",
+    "province": "广东",
+    "city": "汕头"
+  },
+  {
+    "rank": 227,
+    "name": "Shenchuan Mao (毛神川)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2011MAOS01",
+    "province": "福建",
+    "city": "南平"
+  },
+  {
+    "rank": 227,
+    "name": "Ying Lin (林颖)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Guangdong Open 2021",
+    "wcaid": "2015LINY08",
+    "province": "广东",
+    "city": "揭阳"
+  },
+  {
+    "rank": 227,
+    "name": "Jianyan Ou (欧鉴言)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Shenzhen Open 2018",
+    "wcaid": "2016OUJI01",
+    "province": "福建",
+    "city": "漳州"
+  },
+  {
+    "rank": 227,
+    "name": "Zixing Wang (王子兴)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Mental Breakdown Singapore 2022",
+    "wcaid": "2018WANZ50",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 227,
+    "name": "Shun-Yu Yu (游舜宇)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2018YUSH04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 227,
+    "name": "Yen-An Chen (陳彥安)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2019CHEY31",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 227,
+    "name": "Chi Zhang (张弛)",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2016ZHAC01",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 227,
+    "name": "Heyu Fu (付荷语)",
+    "gender": "女",
+    "result": "37.00",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2019FUHE01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 241,
+    "name": "Yongtao Sun (孙永涛)",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "Cube of Odd Numbers 2016",
+    "wcaid": "2013SUNY02",
+    "province": "河南",
+    "city": "郑州"
+  },
+  {
+    "rank": 241,
+    "name": "Xiaobin Rui (芮晓彬)",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2013RUIX02",
+    "province": "江苏",
+    "city": "徐州"
+  },
+  {
+    "rank": 241,
+    "name": "Chun-Chen Chu (朱峻辰)",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "Taipei FMC All Day 2022",
+    "wcaid": "2013CHUC01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 241,
+    "name": "Ruei-Jyun Chang (張睿鈞)",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "Taipei FMC All Day 2023",
+    "wcaid": "2020CHAN15",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 241,
+    "name": "Junqi Feng (冯骏骐)",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "Adelaide Summer 2025",
+    "wcaid": "2015FENG12",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 241,
+    "name": "Yuki Gao",
+    "gender": "女",
+    "result": "37.33",
+    "competition": "FMC New Zealand 2025",
+    "wcaid": "2019GAOY01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 241,
+    "name": "Huixuan Shi (施慧轩)",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2013SHIH03",
+    "province": "黑龙江",
+    "city": "牡丹江"
+  },
+  {
+    "rank": 241,
+    "name": "Chan Ho Hin (陳𣉞軒)",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "Hong Kong FMC Championship 2025",
+    "wcaid": "2023HINC04",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 249,
+    "name": "Yinghao Wang (王鹰豪)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "Hefei Open 2016",
+    "wcaid": "2010WANG07",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 249,
+    "name": "Shujie Fang (方述杰)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "China Championship 2015",
+    "wcaid": "2011FANG02",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 249,
+    "name": "Xiaowei Wang (王晓伟)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "Xi'an New Year 2016",
+    "wcaid": "2011WANG52",
+    "province": "河南",
+    "city": "濮阳"
+  },
+  {
+    "rank": 249,
+    "name": "Jiazheng Zhao (赵家正)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "6.25 Bay Area 2017",
+    "wcaid": "2014ZHAO10",
+    "province": "黑龙江",
+    "city": "牡丹江"
+  },
+  {
+    "rank": 249,
+    "name": "Haoyang Yan (晏浩洋)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "FMC on a Madison Terrace 2022",
+    "wcaid": "2016YANH01",
+    "province": "四川",
+    "city": "成都"
+  },
+  {
+    "rank": 249,
+    "name": "Yifan Sun (孙逸凡)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "FMC 2024",
+    "wcaid": "2016SUNY08",
+    "province": "江苏",
+    "city": "镇江"
+  },
+  {
+    "rank": 249,
+    "name": "Wuouran Liu (刘巫偶然)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "Xi'an Open 2023",
+    "wcaid": "2019LIUW05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 249,
+    "name": "Yu Chou (周禹)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "Philippine Championship 2024",
+    "wcaid": "2021CHOU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 249,
+    "name": "Jingcai Li (李经才)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "FMC 2024",
+    "wcaid": "2019LIJI25",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 249,
+    "name": "Hongjie Huang (黄泓杰)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2024HUAN40",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 249,
+    "name": "Yubo Ji (纪宇博)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2017JIYU01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 249,
+    "name": "Ruixuan Dong (董睿轩)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2024DONG19",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 249,
+    "name": "Ziyu Shang (尚子煜)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2018SHAN08",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 249,
+    "name": "Zejun Chen (陈泽鋆)",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2018CHEZ21",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 263,
+    "name": "Jingyuan Chen (陈静远)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "China Championship 2015",
+    "wcaid": "2012CHEN25",
+    "province": "安徽",
+    "city": "合肥"
+  },
+  {
+    "rank": 263,
+    "name": "Xin Shi (石欣)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "Thailand Championship 2019",
+    "wcaid": "2010SHIX01",
+    "province": "湖北",
+    "city": "武汉"
+  },
+  {
+    "rank": 263,
+    "name": "Chia-Wei Lu (呂家維)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "FMC USA 2015",
+    "wcaid": "2007LUCH01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 263,
+    "name": "Zhaobo Sheng (盛照博)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "FMC 2019",
+    "wcaid": "2016SHEN18",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 263,
+    "name": "Ronnie Jinxuan Zhu (朱缙轩)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "Xi'an Open 2023",
+    "wcaid": "2021ZHUR03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 263,
+    "name": "Xingyu Zhu (朱星宇)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "Portugal Championship 2024",
+    "wcaid": "2023ZHUX01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 263,
+    "name": "Lui Chi Fung (雷智鋒)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2014LUIC01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 263,
+    "name": "Yi Chen (陈易)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2023CHEY31",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 263,
+    "name": "Yu-An Dai (戴昱安)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2024DAIY02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 263,
+    "name": "Jiacheng Lou (楼嘉铖)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2025LOUJ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 273,
+    "name": "Yuxuan Chen",
+    "gender": "女",
+    "result": "38.33",
+    "competition": "FMC Americas 2018",
+    "wcaid": "2011CHEN54",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 273,
+    "name": "Ziyue Liao (廖梓跃)",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "Cube of Prime Numbers 2015",
+    "wcaid": "2013LIAO03",
+    "province": "广东",
+    "city": "揭阳"
+  },
+  {
+    "rank": 273,
+    "name": "Zhihao Zhou (周志豪)",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2010ZHOU17",
+    "province": "江苏",
+    "city": "苏州"
+  },
+  {
+    "rank": 273,
+    "name": "Yu-Hsuan Chang (張祐瑄)",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "Taipei FMC All Day 2023",
+    "wcaid": "2013CHAN09",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 273,
+    "name": "Pengji Li (李棚吉)",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2018LIPE01",
+    "province": "山西",
+    "city": "忻州"
+  },
+  {
+    "rank": 273,
+    "name": "Yuxuan Song (宋宇轩)",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "Ayase FMC 2023",
+    "wcaid": "2018SONG20",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 273,
+    "name": "Chia-En Wu (吳佳恩)",
+    "gender": "女",
+    "result": "38.33",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2023WUCH01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 273,
+    "name": "Yiyang Ma (马熠阳)",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2024MAYI02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 273,
+    "name": "Qingling Chen (陈庆灵)",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2017CHEQ04",
+    "province": "广东",
+    "city": "湛江"
+  },
+  {
+    "rank": 282,
+    "name": "Sheng Cao (曹晟)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "Hefei Open 2016",
+    "wcaid": "2011CAOS01",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 282,
+    "name": "Zhijun Li (李芷筠)",
+    "gender": "女",
+    "result": "38.67",
+    "competition": "Xi'an Cherry Blossom 2017",
+    "wcaid": "2015LIZH02",
+    "province": "江西",
+    "city": "南昌"
+  },
+  {
+    "rank": 282,
+    "name": "Xinwei Zhou (周欣伟)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2016ZHOU13",
+    "province": "江苏",
+    "city": "镇江"
+  },
+  {
+    "rank": 282,
+    "name": "Qi Zhou (周祺)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2015ZHOU07",
+    "province": "浙江",
+    "city": "湖州"
+  },
+  {
+    "rank": 282,
+    "name": "Weisheng Chen (陈伟胜)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2015CHEN52",
+    "province": "广东",
+    "city": "茂名"
+  },
+  {
+    "rank": 282,
+    "name": "Yen-Pin Xiao (蕭彥平)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2010XIAO01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 282,
+    "name": "Yang Pin Xiu (楊品修)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "FMC 2024",
+    "wcaid": "2023XIUY01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 282,
+    "name": "Po-Hsien Lai (賴柏憲)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2022LAIP01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 282,
+    "name": "Yusheng Zheng (郑煜升)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "FMC 2024",
+    "wcaid": "2023ZHEN26",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 282,
+    "name": "Yunhui Zhao (赵云晖)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2019ZHAO44",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 282,
+    "name": "Haolin Zhang (张昊霖)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2015ZHAN72",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 282,
+    "name": "Chan Sai Chong (陳世聰)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "Hong Kong FMC Championship 2024",
+    "wcaid": "2018CHON01",
+    "province": "澳门",
+    "city": "澳门"
+  },
+  {
+    "rank": 294,
+    "name": "Xiao Hu (胡霄)",
+    "gender": "男",
+    "result": "39.00",
+    "competition": "Guangdong Open 2014",
+    "wcaid": "2011HUXI01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 294,
+    "name": "Xiaojie Jiang (蒋孝杰)",
+    "gender": "男",
+    "result": "39.00",
+    "competition": "China Championship 2015",
+    "wcaid": "2011JIAN15",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 294,
+    "name": "Hang Yu (禹杭)",
+    "gender": "男",
+    "result": "39.00",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2016YUHA04",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 294,
+    "name": "Ziyue Chen (陈子悦)",
+    "gender": "男",
+    "result": "39.00",
+    "competition": "China Championship 2019",
+    "wcaid": "2017CHEZ05",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 294,
+    "name": "Yu Feng (冯煜)",
+    "gender": "男",
+    "result": "39.00",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2017FENG09",
+    "province": "河北",
+    "city": "廊坊"
+  },
+  {
+    "rank": 294,
+    "name": "Minxing Zhang (张敏行)",
+    "gender": "女",
+    "result": "39.00",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023ZHAN23",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 294,
+    "name": "Tianyu Sun (孙天宇)",
+    "gender": "男",
+    "result": "39.00",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2021SUNT01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 301,
+    "name": "Yu Gu (谷雨)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "Cube of Odd Numbers 2016",
+    "wcaid": "2013GUYU01",
+    "province": "河南",
+    "city": "郑州"
+  },
+  {
+    "rank": 301,
+    "name": "Sen Dang (党森)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "Xi'an New Year 2016",
+    "wcaid": "2009DANG01",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 301,
+    "name": "Kuo-Hau Wu (吳國豪)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "Asian Championship 2016",
+    "wcaid": "2008WUKU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 301,
+    "name": "Baocheng Wu (吴宝城)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2014WUBA01",
+    "province": "湖北",
+    "city": "武汉"
+  },
+  {
+    "rank": 301,
+    "name": "Xiaohan Yan (闫小晗)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "China Championship 2017",
+    "wcaid": "2017YANX01",
+    "province": "安徽",
+    "city": "阜阳"
+  },
+  {
+    "rank": 301,
+    "name": "Zihan Mu (穆子晗)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "Please Be Quiet Beijing 2018",
+    "wcaid": "2016MUZI01",
+    "province": "江苏",
+    "city": "镇江"
+  },
+  {
+    "rank": 301,
+    "name": "Zhichun Li (李志纯)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "Shenzhen Open 2018",
+    "wcaid": "2017LIZH13",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 301,
+    "name": "Xinyu Li (李欣宇)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "China Championship 2018",
+    "wcaid": "2017LIXI03",
+    "province": "山东",
+    "city": "枣庄"
+  },
+  {
+    "rank": 301,
+    "name": "Xujia Lei (雷旭嘉)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "Guangdong Open 2021",
+    "wcaid": "2017LEIX02",
+    "province": "甘肃",
+    "city": "定西"
+  },
+  {
+    "rank": 301,
+    "name": "Jui-Hung Liu (劉睿紘)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "Taipei FMC All Day 2023",
+    "wcaid": "2022LIUJ03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 301,
+    "name": "Xiaozhu Guo (郭晓宁)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "FMC 2024",
+    "wcaid": "2018GUOX06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 301,
+    "name": "Ziyao Yang (杨紫尧)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "FMC 2024",
+    "wcaid": "2024YANG02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 301,
+    "name": "Zixiong Xu (徐梓雄)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2017XUZI03",
+    "province": "广东",
+    "city": "潮州"
+  },
+  {
+    "rank": 301,
+    "name": "Zhenyu Gao (高振宇)",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2018GAOZ03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 315,
+    "name": "Haichuan Du (杜海川)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "Hefei Open 2015",
+    "wcaid": "2011DUHA01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 315,
+    "name": "Huan Luo (罗桓)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2016LUOH02",
+    "province": "湖南",
+    "city": "长沙"
+  },
+  {
+    "rank": 315,
+    "name": "Yongzhe Mao (毛勇喆)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "Xi'an Cherry Blossom 2017",
+    "wcaid": "2013MAOY01",
+    "province": "山西",
+    "city": "运城"
+  },
+  {
+    "rank": 315,
+    "name": "Dongzhe Li (李东哲)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2014LIDO01",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 315,
+    "name": "Min Cao (曹敏)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2018CAOM02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 315,
+    "name": "Hongyuan Tang (唐鸿远)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2011TANG04",
+    "province": "广西",
+    "city": "柳州"
+  },
+  {
+    "rank": 315,
+    "name": "Bo-Yan Chen (陳柏諺)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2023CHEB04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 315,
+    "name": "Guoliang Wang (王国梁)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "FMC 2024",
+    "wcaid": "2017WAGU02",
+    "province": "江西",
+    "city": "抚州"
+  },
+  {
+    "rank": 315,
+    "name": "Yang Tong (佟杨)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "FMC 2024",
+    "wcaid": "2023TONG08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 315,
+    "name": "Jiaxun Song (宋佳迅)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2019SONG06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 315,
+    "name": "Zeyuan Guo (郭泽原)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2018GUOZ07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 315,
+    "name": "Yim Cheuk Him (嚴倬謙)",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "Hong Kong FMC Championship 2024",
+    "wcaid": "2023HIMY01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 327,
+    "name": "Yan-Jou Lin (林彥州)",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "Taiwan Championship 2019",
+    "wcaid": "2011LINY05",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 327,
+    "name": "Chia-Leo Lin (林珈樂)",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "Cross-strait FMC 2016",
+    "wcaid": "2006LINC01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 327,
+    "name": "Muyi Yang (杨慕屹)",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2010YANG16",
+    "province": "河北",
+    "city": "张家口"
+  },
+  {
+    "rank": 327,
+    "name": "Jingbin Li (李晶斌)",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2016LIJI01",
+    "province": "福建",
+    "city": "莆田"
+  },
+  {
+    "rank": 327,
+    "name": "Xinjie Shi (施鑫杰)",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "China Championship 2019",
+    "wcaid": "2016SHIX02",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 327,
+    "name": "Po-Hao Huang (黃博晧)",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2022HUAN55",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 327,
+    "name": "Yu-Chun Yeh (葉昱均)",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2023YEHY01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 327,
+    "name": "Sirun Wu (吴思润)",
+    "gender": "女",
+    "result": "40.00",
+    "competition": "Vietnam Championship 2025",
+    "wcaid": "2019WUSI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 327,
+    "name": "Yuxiang Feng (奉于翔)",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "Guangzhou 3x3 Quiet Day 2025",
+    "wcaid": "2017FENG35",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 327,
+    "name": "Ting-Yu Tung (董庭佑)",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2023TUNG07",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 337,
+    "name": "Zhiwei Lin (林智玮)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Guangdong Open 2014",
+    "wcaid": "2012LINZ02",
+    "province": "广东",
+    "city": "珠海"
+  },
+  {
+    "rank": 337,
+    "name": "Chengming Su (苏成明)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Merdeka Mind Games 2019",
+    "wcaid": "2013SUCH02",
+    "province": "安徽",
+    "city": "六安"
+  },
+  {
+    "rank": 337,
+    "name": "Chuhaolun Deng (邓储浩伦)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "WHU Rubik's Cube Days 2017",
+    "wcaid": "2015DENG04",
+    "province": "江西",
+    "city": "鹰潭"
+  },
+  {
+    "rank": 337,
+    "name": "Donghong Lin (林东泓)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Shenzhen Open 2018",
+    "wcaid": "2015LIND05",
+    "province": "广东",
+    "city": "揭阳"
+  },
+  {
+    "rank": 337,
+    "name": "Lijiaqi Zhang (张李佳琦)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2011ZHAN03",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 337,
+    "name": "Zhengfen Huang (黄政奋)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Shenzhen 3x3 Days 2019",
+    "wcaid": "2015HUAN24",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 337,
+    "name": "Yuxuan Pan (潘宇轩)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "FMC Shanghai 2019",
+    "wcaid": "2018PANY07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 337,
+    "name": "Shihao Ou (欧世浩)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Guangdong Open 2021",
+    "wcaid": "2014OUSH01",
+    "province": "广东",
+    "city": "汕头"
+  },
+  {
+    "rank": 337,
+    "name": "Yifeng Pei (裴一丰)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Xi'an Open 2023",
+    "wcaid": "2023PEIY01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 337,
+    "name": "Yu Fu (付煜)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Xi'an Open 2023",
+    "wcaid": "2019FUYU01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 337,
+    "name": "Yanrui Xie (谢延睿)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2023YANR02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 337,
+    "name": "Haoxu Ye (叶浩煦)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "FMC 2024",
+    "wcaid": "2018YEHA03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 337,
+    "name": "Rongxing Guo (郭嵘兴)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "FMC 2024",
+    "wcaid": "2024GUOR02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 337,
+    "name": "Pengrui Xiang (向鹏睿)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "FMC 2024",
+    "wcaid": "2017XIAN07",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 337,
+    "name": "Yuxuan Huang (黄宇轩)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Franconia XX 2025",
+    "wcaid": "2015HUAN32",
+    "province": "安徽",
+    "city": "滁州"
+  },
+  {
+    "rank": 337,
+    "name": "Liu Shing Chak (柳丞澤)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2024CHAK03",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 353,
+    "name": "Guanghua Wang (王光华)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Cross-strait FMC 2014",
+    "wcaid": "2009WANG21",
+    "province": "浙江",
+    "city": "嘉兴"
+  },
+  {
+    "rank": 353,
+    "name": "Yonghui Ou (区永辉)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Cross-strait FMC 2014",
+    "wcaid": "2014OUYO01",
+    "province": "广东",
+    "city": "中山"
+  },
+  {
+    "rank": 353,
+    "name": "Zhiyang Chen (陈至扬)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "China Championship 2015",
+    "wcaid": "2011CHAN10",
+    "province": "江西",
+    "city": "吉安"
+  },
+  {
+    "rank": 353,
+    "name": "Yiyi Xing (邢祎祎)",
+    "gender": "女",
+    "result": "40.67",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2016XING03",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 353,
+    "name": "Zesheng Li (李泽生)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Xi'an Open 2023",
+    "wcaid": "2016LIZE03",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 353,
+    "name": "Kam Chor Kin (甘楚健)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Shenzhen Open 2018",
+    "wcaid": "2008GANC02",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 353,
+    "name": "Jiankang Li (李建康)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2017LIJI37",
+    "province": "山东",
+    "city": "青岛"
+  },
+  {
+    "rank": 353,
+    "name": "Jerry Chung (鍾養浩)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2017HOJE01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 353,
+    "name": "Yunlin Miao (缪昀林)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2024MIAO03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 353,
+    "name": "Yuchong Liu (刘雨翀)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Guangzhou Quiet Day 2024",
+    "wcaid": "2018LIUY38",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 353,
+    "name": "Ziyao Xu (徐子尧)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Fires de Girona 2024",
+    "wcaid": "2023XUZI02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 353,
+    "name": "Zhe Wang (汪哲)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2017WANZ25",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 353,
+    "name": "Miaojie Wang (王妙杰)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2025WANG05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 353,
+    "name": "Yiming Zuo (左一鸣)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2019ZUOY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 367,
+    "name": "Weifeng Cheng (程维锋)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "Guangdong Open 2014",
+    "wcaid": "2009CHEN35",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 367,
+    "name": "Liuyuan Geng (耿留远)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2013GENG01",
+    "province": "甘肃",
+    "city": "陇南"
+  },
+  {
+    "rank": 367,
+    "name": "Xiangjie Li (李祥杰)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2016LIXI04",
+    "province": "江苏",
+    "city": "连云港"
+  },
+  {
+    "rank": 367,
+    "name": "Yilin Song (宋翊麟)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2018SONG04",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 367,
+    "name": "Pei Pan (潘霈)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "WCA Asian Championship 2018",
+    "wcaid": "2010PANP01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 367,
+    "name": "Qiyue Wang (王启越)",
+    "gender": "女",
+    "result": "41.00",
+    "competition": "China Championship 2018",
+    "wcaid": "2016WANQ03",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 367,
+    "name": "Yinghao Zhu (朱英豪)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "FMC 2019",
+    "wcaid": "2013ZHUY01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 367,
+    "name": "Chengyang Song (宋成阳)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "Tianjin Summer Solstice 2021",
+    "wcaid": "2016SONG04",
+    "province": "江苏",
+    "city": "苏州"
+  },
+  {
+    "rank": 367,
+    "name": "Ji-Siang Jian (簡季湘)",
+    "gender": "女",
+    "result": "41.00",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2021JIAN09",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 367,
+    "name": "Yi Li (李燚)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "FMC 2024",
+    "wcaid": "2016LIYI05",
+    "province": "黑龙江",
+    "city": "大庆"
+  },
+  {
+    "rank": 367,
+    "name": "Yichen Wang (王奕辰)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2024WANG55",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 367,
+    "name": "Gefan Yang (杨舸帆)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2024YANG08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 379,
+    "name": "Jiajun Li (李嘉俊)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Cross-strait FMC 2014",
+    "wcaid": "2009LIJI03",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 379,
+    "name": "Zihang Lin (林子杭)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Cross-strait Cubing Exchange 2016",
+    "wcaid": "2013LINZ04",
+    "province": "广东",
+    "city": "汕头"
+  },
+  {
+    "rank": 379,
+    "name": "Fubo Wang (王富博)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2007FUBO01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 379,
+    "name": "Mingxuan Ni (倪铭轩)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2016NIMI01",
+    "province": "江苏",
+    "city": "无锡"
+  },
+  {
+    "rank": 379,
+    "name": "Xuan Liu (刘璇)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Ayase Autumn 2019",
+    "wcaid": "2016LIUX15",
+    "province": "天津",
+    "city": "天津"
+  },
+  {
+    "rank": 379,
+    "name": "Yucheng Chen (陈裕铖)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Please Be Quiet Thailand 2025",
+    "wcaid": "2015CHEN49",
+    "province": "广东",
+    "city": "东莞"
+  },
+  {
+    "rank": 379,
+    "name": "Kaijun Lin (林恺俊)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Guangzhou 3x3 BLD and FMC 2020",
+    "wcaid": "2013LINK01",
+    "province": "广东",
+    "city": "江门"
+  },
+  {
+    "rank": 379,
+    "name": "Heng Wu (吴桁)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Guangdong Open 2021",
+    "wcaid": "2016WUHE01",
+    "province": "广东",
+    "city": "揭阳"
+  },
+  {
+    "rank": 379,
+    "name": "Zhaohe Wang (王昭赫)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Guangzhou Quiet Day 2024",
+    "wcaid": "2018WANZ34",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 379,
+    "name": "Yinfei Wang (王寅飞)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2017WANY23",
+    "province": "浙江",
+    "city": "绍兴"
+  },
+  {
+    "rank": 379,
+    "name": "Xuanwen Liu (刘轩闻)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2024LIUX04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 379,
+    "name": "Hugo Chan Chun Wang (陳俊宏)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Guangzhou 3x3 Quiet Day 2025",
+    "wcaid": "2023WANG14",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 379,
+    "name": "Xianhong Bao (包先宏)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Geselliges Gewürfel Göttingen 2025",
+    "wcaid": "2025BAOX01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 379,
+    "name": "Zaya Qiaolong (俏龙扎雅)",
+    "gender": "女",
+    "result": "41.33",
+    "competition": "PBQ in Tashkent 2025",
+    "wcaid": "2024QIAO03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 379,
+    "name": "Yun-Kai Yeh (葉昀愷)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2022YEHY01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 379,
+    "name": "Haonan Qu (渠浩南)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2023QUHA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 379,
+    "name": "Yifang Zhu (朱一方)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2025ZHUY07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 396,
+    "name": "Chia-Liang Tai (戴嘉良)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "Taiwan Blind Day 2016",
+    "wcaid": "2008TAIC01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 396,
+    "name": "Shengliang Cai (蔡盛梁)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2014CAIS01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 396,
+    "name": "Yiming Liu (刘一鸣)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "Beijing Open 2015",
+    "wcaid": "2009LIUY03",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 396,
+    "name": "Yongyi Xiong (熊永一)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "Xi'an Cherry Blossom 2016",
+    "wcaid": "2010XION04",
+    "province": "湖北",
+    "city": "武汉"
+  },
+  {
+    "rank": 396,
+    "name": "Fuwei Chu (褚福崴)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "Hangzhou Open 2018",
+    "wcaid": "2017CHUF01",
+    "province": "山东",
+    "city": "枣庄"
+  },
+  {
+    "rank": 396,
+    "name": "Xuan Zhao (赵轩)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "Xi'an 10th Anniversary 2019",
+    "wcaid": "2015ZHAO08",
+    "province": "湖北",
+    "city": "武汉"
+  },
+  {
+    "rank": 396,
+    "name": "Peiyun Sang (桑培耘)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "More Than One Cube 2018",
+    "wcaid": "2015SANG03",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 396,
+    "name": "Ziqi Li (李子祺)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "Singapore Mini 2019",
+    "wcaid": "2016LIZI09",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 396,
+    "name": "Tian Qiu (邱天)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "China Championship 2019",
+    "wcaid": "2018QIUT02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 396,
+    "name": "Zheng Qiao (乔政)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2018QIAO09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 396,
+    "name": "Junliang Chen (陈俊良)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2018CHEN15",
+    "province": "广西",
+    "city": "柳州"
+  },
+  {
+    "rank": 396,
+    "name": "Peijie Zhao (赵培杰)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2019ZHAP04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 396,
+    "name": "Yunqi Liu (刘云起)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2016LIUY24",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 396,
+    "name": "Leo Qu (屈静悠)",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "FMC à Montréal 2025",
+    "wcaid": "2023QULE01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 396,
+    "name": "Yunmiao Gao (高云淼)",
+    "gender": "女",
+    "result": "41.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2019GAOY03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 411,
+    "name": "Chen Kang (亢晨)",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Xi'an Cherry Blossom 2017",
+    "wcaid": "2011KANG05",
+    "province": "青海",
+    "city": "西宁"
+  },
+  {
+    "rank": 411,
+    "name": "Lin Lai (赖林)",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2016LAIL01",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 411,
+    "name": "Sizhe Ren (任思哲)",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2014RENS03",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 411,
+    "name": "Zhiyong Liu (柳智勇)",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Hangzhou Open 2018",
+    "wcaid": "2016LIUZ10",
+    "province": "福建",
+    "city": "莆田"
+  },
+  {
+    "rank": 411,
+    "name": "Jitao Zhu (朱继涛)",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2017ZHUJ02",
+    "province": "甘肃",
+    "city": "白银"
+  },
+  {
+    "rank": 411,
+    "name": "Zhuowen Liang (梁卓文)",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2015LIAN01",
+    "province": "广东",
+    "city": "惠州"
+  },
+  {
+    "rank": 411,
+    "name": "You-Hsiang Lu (呂祐翔)",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Taipei FMC All Day 2023",
+    "wcaid": "2016LUYO01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 411,
+    "name": "Juncheng Chen (陈俊丞)",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2018CHEJ13",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 411,
+    "name": "Kai-Hsing Chang (鄭愷行)",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2024CHAN89",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 411,
+    "name": "Chao-Chi Teng (鄧兆棋)",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2022TENG02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 421,
+    "name": "Jiawei Shou (寿佳伟)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Cross-strait FMC 2014",
+    "wcaid": "2009SHOU01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 421,
+    "name": "Jinhao Zheng (郑金昊)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Asian Championship 2016",
+    "wcaid": "2013ZHEN02",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 421,
+    "name": "Zhiyuan Zhang (张智渊)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Wuhan NxN Open 2017",
+    "wcaid": "2016ZHAZ01",
+    "province": "山东",
+    "city": "淄博"
+  },
+  {
+    "rank": 421,
+    "name": "Cheng-Yu Hsieh (謝承諭)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Taipei FMC All Day 2022",
+    "wcaid": "2014HSIE01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 421,
+    "name": "Tianji Fang (方天骥)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2011FANG03",
+    "province": "浙江",
+    "city": "宁波"
+  },
+  {
+    "rank": 421,
+    "name": "Yiling Yuan (袁艺凌)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "WHU Rubik's Cube Days 2017",
+    "wcaid": "2015YUAN05",
+    "province": "湖北",
+    "city": "潜江"
+  },
+  {
+    "rank": 421,
+    "name": "Zongyang Li (李宗阳)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2013LIZO01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 421,
+    "name": "Yulun Wu (吴宇伦)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Hangzhou Open 2018",
+    "wcaid": "2010WUYU02",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 421,
+    "name": "Wuxiao Dong (董毋小)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Ningbo Footsteps 2019",
+    "wcaid": "2017DONG13",
+    "province": "浙江",
+    "city": "宁波"
+  },
+  {
+    "rank": 421,
+    "name": "Hao Wang (王浩)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2018WANH02",
+    "province": "浙江",
+    "city": "宁波"
+  },
+  {
+    "rank": 421,
+    "name": "Liang Chen (陈樑)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2017CHEL02",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 421,
+    "name": "Han Wang (汪涵)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2018WANH17",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 421,
+    "name": "Bangqi Zhou (周邦麒)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "FMC 2024",
+    "wcaid": "2019ZHOU57",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 421,
+    "name": "Zheqi Zhu (诸哲祺)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2017ZHUZ01",
+    "province": "江西",
+    "city": "上饶"
+  },
+  {
+    "rank": 421,
+    "name": "Ko Ching Lam (高靖嵐)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Guangzhou 3x3 Quiet Day 2025",
+    "wcaid": "2024LAMK01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 421,
+    "name": "Tzu-Heng Lin (林子恆)",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2010LINT01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 437,
+    "name": "Chaohui Lin (林朝辉)",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "Hefei Open 2015",
+    "wcaid": "2013LINC01",
+    "province": "福建",
+    "city": "泉州"
+  },
+  {
+    "rank": 437,
+    "name": "Daoming Ye (叶道明)",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2016YEDA01",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 437,
+    "name": "Zixiong Gao (高子雄)",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2013GAOZ01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 437,
+    "name": "Shengqi Pan (潘盛琪)",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "More Than One Cube 2018",
+    "wcaid": "2017PANS02",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 437,
+    "name": "Xinyue Meng (孟心悦)",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2018MENG06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 437,
+    "name": "Zhihao Wang (王志豪)",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2012WANG07",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 437,
+    "name": "Zishuo Zhang (张子硕)",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "Cube Camp in Kaeng Krachan 2023",
+    "wcaid": "2016ZHAZ07",
+    "province": "山东",
+    "city": "济宁"
+  },
+  {
+    "rank": 437,
+    "name": "Xuyan Huang (黄绪琂)",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "FMCow Ohio State 2023",
+    "wcaid": "2019HUAN43",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 437,
+    "name": "Xuewei Zhang (章学威)",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2018ZHAX04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 437,
+    "name": "Ziyu Liang (梁梓煜)",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2023LIAN12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 437,
+    "name": "Enyu Lu",
+    "gender": "女",
+    "result": "42.67",
+    "competition": "Cube Camp in Suan Phueng 2025",
+    "wcaid": "2023LUEN03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 448,
+    "name": "Jiaxi Wang (王嘉熙)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Sébra Open 2014",
+    "wcaid": "2010WANG11",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 448,
+    "name": "Geng Xie (谢耿)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2012XIEG01",
+    "province": "广东",
+    "city": "汕头"
+  },
+  {
+    "rank": 448,
+    "name": "Tao Yu (余涛)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Cross-strait FMC 2016",
+    "wcaid": "2010YUTA01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 448,
+    "name": "Guang Zhao (赵广)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2010ZHAO10",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 448,
+    "name": "Han Wu (吳翰)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Japan Championship 2019",
+    "wcaid": "2008WUHA01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 448,
+    "name": "Bo-Jun Chen (陳柏鈞)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Taiwan Blind Day 2018",
+    "wcaid": "2013CHEN61",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 448,
+    "name": "Han-Lin Wu (吳翰霖)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Taiwan Blind Day 2018",
+    "wcaid": "2015WUHA05",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 448,
+    "name": "Yiran Wang (王毅然)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Please Be Quiet Beijing 2018",
+    "wcaid": "2017WANY19",
+    "province": "山西",
+    "city": "晋中"
+  },
+  {
+    "rank": 448,
+    "name": "Ching-Hsiang Li (李清翔)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2016LICH02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 448,
+    "name": "Bo Gao (高博)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "FMC 2024",
+    "wcaid": "2023GAOB02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 448,
+    "name": "Qi Mi (米琦)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Cube Camp in Nakhon Nayok 2024",
+    "wcaid": "2019MIQI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 448,
+    "name": "Zhige Guo (郭致格)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2019GUOZ12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 448,
+    "name": "Junyu Wang (王骏瑜)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2012WANG18",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 448,
+    "name": "Weiran Zhang (张为然)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2017ZHAW07",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 448,
+    "name": "Yiming Zheng (郑一鸣)",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2025ZHEN30",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 463,
+    "name": "Yiqun Fan (樊轶群)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "Hangzhou Open 2018",
+    "wcaid": "2010FANY01",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 463,
+    "name": "Hung Lo (羅鴻)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "Cross-strait FMC 2014",
+    "wcaid": "2009LOHU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 463,
+    "name": "Zhibo Yin (阴智博)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "China Championship 2015",
+    "wcaid": "2014YINZ02",
+    "province": "黑龙江",
+    "city": "佳木斯"
+  },
+  {
+    "rank": 463,
+    "name": "Shun-Hsin Chang (張舜欣)",
+    "gender": "女",
+    "result": "43.33",
+    "competition": "Cross-strait FMC 2016",
+    "wcaid": "2011JHAN01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 463,
+    "name": "Fangze Zheng (郑方泽)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "Xi'an New Year 2016",
+    "wcaid": "2015ZHEN02",
+    "province": "河南",
+    "city": "三门峡"
+  },
+  {
+    "rank": 463,
+    "name": "Can Mao (毛灿)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "Cube of Odd Numbers 2016",
+    "wcaid": "2010MAOC01",
+    "province": "河南",
+    "city": "洛阳"
+  },
+  {
+    "rank": 463,
+    "name": "Min-Yan Tsai (蔡旻諺)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "Taiwan Blind Day 2017",
+    "wcaid": "2015TSAI06",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 463,
+    "name": "Ling Yan (严铃)",
+    "gender": "女",
+    "result": "43.33",
+    "competition": "FMC 2019",
+    "wcaid": "2015YANL02",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 463,
+    "name": "Tiancai Zhu (朱田才)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2017ZHUT01",
+    "province": "江苏",
+    "city": "泰州"
+  },
+  {
+    "rank": 463,
+    "name": "Chih-Chuan Yang (楊智全)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "Please Be Quiet Bukit Jalil 2023",
+    "wcaid": "2018YANG92",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 463,
+    "name": "Chen-Jyun Pan (潘辰寯)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "Taipei FMC All Day 2023",
+    "wcaid": "2020PANC01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 463,
+    "name": "Fang-Ru Yu (余芳儒)",
+    "gender": "女",
+    "result": "43.33",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2023YUFA01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 463,
+    "name": "Junhao Tu (涂峻豪)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "Please Be Quiet Beijing 2024",
+    "wcaid": "2024TUJU01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 463,
+    "name": "Chen Chen (陈宸)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2024CHEC07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 463,
+    "name": "Tao Wang (王涛)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2024WANT01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 463,
+    "name": "Jin-Shiu Wu (吳謹旭)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2019WUJI04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 479,
+    "name": "Ming Gao (高鸣)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Beijing Spring 2014",
+    "wcaid": "2007MING01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 479,
+    "name": "Liaoyi Xu (徐了一)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Hefei Open 2015",
+    "wcaid": "2012XULI01",
+    "province": "浙江",
+    "city": "绍兴"
+  },
+  {
+    "rank": 479,
+    "name": "Kaiyang Gao (高凯阳)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Wuhan NxN Open 2017",
+    "wcaid": "2012GAOK01",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 479,
+    "name": "Fengkai Zhang (张丰凯)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Hefei Open 2017",
+    "wcaid": "2013ZHAN29",
+    "province": "安徽",
+    "city": "合肥"
+  },
+  {
+    "rank": 479,
+    "name": "Yudong Zhou (周煜东)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2015ZHOU05",
+    "province": "湖南",
+    "city": "株洲"
+  },
+  {
+    "rank": 479,
+    "name": "Jiajun Wu (吴佳骏)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2017WUJI08",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 479,
+    "name": "Lianghai Sui (眭亮海)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Shenzhen Open 2018",
+    "wcaid": "2015SUIL01",
+    "province": "江西",
+    "city": "吉安"
+  },
+  {
+    "rank": 479,
+    "name": "Jihao Zhang (张纪豪)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2016ZHAJ09",
+    "province": "湖北",
+    "city": "武汉"
+  },
+  {
+    "rank": 479,
+    "name": "Xiaoxue Zhou (周晓学)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Shenzhen 3x3 Days 2019",
+    "wcaid": "2009XUEZ01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 479,
+    "name": "Yu-Kuan Chang (張宇寬)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Taiwan Championship 2019",
+    "wcaid": "2019CHAN78",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 479,
+    "name": "Yuan Gao (高原)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2016GAOY02",
+    "province": "辽宁",
+    "city": "铁岭"
+  },
+  {
+    "rank": 479,
+    "name": "Hongfei Tian (田洪飞)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Westport Warmup 2023",
+    "wcaid": "2010TIAN03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 479,
+    "name": "Yutong Wang (王宇彤)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "FMC 2024",
+    "wcaid": "2018WANY63",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 479,
+    "name": "Qinyang Feng (冯钦扬)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "FMC 2024",
+    "wcaid": "2021FENG06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 479,
+    "name": "Bing-Chien Chen (陳昺謙)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2024CHEN98",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 479,
+    "name": "Jianlong Li (李健龙)",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Guangzhou 3x3 Quiet Day 2025",
+    "wcaid": "2024LIJI13",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 495,
+    "name": "Yu-Chen Wang (王于宸)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "Taiwan Summer Open 2014",
+    "wcaid": "2010WANG58",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 495,
+    "name": "Yan Jin (金岩)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "China Championship 2015",
+    "wcaid": "2010JINY02",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 495,
+    "name": "Hua-Ting Lee (李華庭)",
+    "gender": "女",
+    "result": "44.00",
+    "competition": "Cross-strait FMC 2016",
+    "wcaid": "2013LIHU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 495,
+    "name": "Zhihuang Chen (陈志煌)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "Asian Championship 2016",
+    "wcaid": "2013CHEN46",
+    "province": "福建",
+    "city": "福州"
+  },
+  {
+    "rank": 495,
+    "name": "Victor Tang Yao Jun (湯曜駿)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2015JUNV01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 495,
+    "name": "Binwei Liu (刘玢炜)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "More Than One Cube 2018",
+    "wcaid": "2016LIUB01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 495,
+    "name": "Xiaoliang Zhu (朱校良)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "Shenzhen Open 2018",
+    "wcaid": "2017ZHUX01",
+    "province": "江苏",
+    "city": "苏州"
+  },
+  {
+    "rank": 495,
+    "name": "Chengxiang Cui (崔程翔)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2015CUIC01",
+    "province": "江苏",
+    "city": "连云港"
+  },
+  {
+    "rank": 495,
+    "name": "Yangshuo Teng (滕仰硕)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "Guangdong Open 2021",
+    "wcaid": "2019TENG03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 495,
+    "name": "Yixing Wang (王一行)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "FMC 2024",
+    "wcaid": "2018WANG49",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 495,
+    "name": "You Wu (吴悠)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2017WUYO01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 495,
+    "name": "Mufeng Zhou (周牧锋)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "Please Be Quiet Beijing 2024",
+    "wcaid": "2024ZHOU28",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 495,
+    "name": "Weisen Zhao (赵伟森)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2024ZHAO19",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 495,
+    "name": "Wenxin Huang (黄文信)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2019HUAN49",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 495,
+    "name": "Ruiman Wang (王瑞满)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2023WANG48",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 510,
+    "name": "Rong Fan (樊榕)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Shanghai Milanyuan Cafe 2014",
+    "wcaid": "2012RONG01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 510,
+    "name": "Zi-Xian Liao (廖子賢)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Taiwan Summer Open 2014",
+    "wcaid": "2012LIAO03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 510,
+    "name": "Shao-Heng Hung (洪紹恆)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Taiwan Championship 2018",
+    "wcaid": "2011HUNG02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 510,
+    "name": "Qirun Zhong (钟奇润)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Hefei Open 2015",
+    "wcaid": "2008ZHON01",
+    "province": "广东",
+    "city": "湛江"
+  },
+  {
+    "rank": 510,
+    "name": "Mingtao Wu (吴铭涛)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "China Championship 2015",
+    "wcaid": "2014WUMI01",
+    "province": "广东",
+    "city": "肇庆"
+  },
+  {
+    "rank": 510,
+    "name": "Mok Mun Wai (莫滿懷)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "WCA Asian Championship 2018",
+    "wcaid": "2008WAIM01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 510,
+    "name": "Zicong Weng (翁子聪)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2014WENG01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 510,
+    "name": "Jun Xia (夏骏)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2015XIAJ01",
+    "province": "江西",
+    "city": "宜春"
+  },
+  {
+    "rank": 510,
+    "name": "Zichen Zhao (赵子辰)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2016ZHAO53",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 510,
+    "name": "Zhuoxi Yin (尹卓曦)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Shenzhen 3x3 Days 2019",
+    "wcaid": "2018YINZ03",
+    "province": "广东",
+    "city": "东莞"
+  },
+  {
+    "rank": 510,
+    "name": "Peixuan Shi (时培轩)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Weihai Open 2019",
+    "wcaid": "2017SHIP04",
+    "province": "山东",
+    "city": "日照"
+  },
+  {
+    "rank": 510,
+    "name": "Kwok Chi Hang (郭志亨)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Ayase Autumn 2019",
+    "wcaid": "2008HANG02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 510,
+    "name": "Yung-Hung Cheng (鄭永鴻)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2019CHEY09",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 510,
+    "name": "Sikai Wang (王思凯)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2016WANS06",
+    "province": "广西",
+    "city": "北海"
+  },
+  {
+    "rank": 510,
+    "name": "Lang Cheng (程朗)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2024CHEN89",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 510,
+    "name": "Junhe Liao (廖俊和)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2018LIAO12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 510,
+    "name": "Yanchen Long (龙彦辰)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Cube Camp in Suan Phueng 2025",
+    "wcaid": "2018LONG08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 510,
+    "name": "Yiqun Liu (刘轶群)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Vietnam Championship 2025",
+    "wcaid": "2018LIUY44",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 510,
+    "name": "Kai-Jie Wu (吳楷傑)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2024WUKA02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 510,
+    "name": "Zhuojia Zhou (周琢嘉)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2024ZHOU23",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 530,
+    "name": "Jiantao Su (苏剑涛)",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2016SUJI02",
+    "province": "福建",
+    "city": "泉州"
+  },
+  {
+    "rank": 530,
+    "name": "Yi-Fan Wu (吳一凡)",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "Taiwan Championship 2018",
+    "wcaid": "2016WUYI02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 530,
+    "name": "Joy Liou Liu (刘丽欧)",
+    "gender": "女",
+    "result": "44.67",
+    "competition": "FMC Europe 2019",
+    "wcaid": "2017LIUJ21",
+    "province": "吉林",
+    "city": "吉林"
+  },
+  {
+    "rank": 530,
+    "name": "Zizheng Li (李子铮)",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "FMC Shanghai 2019",
+    "wcaid": "2017LIZI03",
+    "province": "新疆",
+    "city": "乌鲁木齐"
+  },
+  {
+    "rank": 530,
+    "name": "Bowen Xiao (肖博文)",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "FMC 2019",
+    "wcaid": "2017XIAO09",
+    "province": "山东",
+    "city": "济南"
+  },
+  {
+    "rank": 530,
+    "name": "Suen Ming Chi (孫銘志)",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "FMC 2019",
+    "wcaid": "2017CHIS02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 530,
+    "name": "Ke Zhou (周科)",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "Guangdong Open 2021",
+    "wcaid": "2016ZHOU02",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 530,
+    "name": "Zixiang Zhang (张子翔)",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "Xi'an Open 2023",
+    "wcaid": "2017ZHAZ16",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 530,
+    "name": "Meng Chon Kuok (郭明臻)",
+    "gender": "女",
+    "result": "44.67",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2023KUOK01",
+    "province": "澳门",
+    "city": "澳门"
+  },
+  {
+    "rank": 530,
+    "name": "Xin-Hui Huang (黃歆惠)",
+    "gender": "女",
+    "result": "44.67",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2023HUAN22",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 530,
+    "name": "Haoting Jiang (蒋昊庭)",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2025JIAN10",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 530,
+    "name": "Zexi Zeng (曾泽西)",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2011ZENG01",
+    "province": "福建",
+    "city": "泉州"
+  },
+  {
+    "rank": 530,
+    "name": "Xingyu Chen (陈星宇)",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2012CHEN54",
+    "province": "广东",
+    "city": "茂名"
+  },
+  {
+    "rank": 543,
+    "name": "Lincheng Cai (蔡林成)",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "FMC Asia 2015",
+    "wcaid": "2014CAIL01",
+    "province": "广东",
+    "city": "揭阳"
+  },
+  {
+    "rank": 543,
+    "name": "Chung-Yao Chiang (江仲堯)",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2015CHIA05",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 543,
+    "name": "Kun Zhu (朱锟)",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "Shenzhen Open 2018",
+    "wcaid": "2012ZHUK02",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 543,
+    "name": "Chia-Yu Tsai (蔡家瑜)",
+    "gender": "女",
+    "result": "45.00",
+    "competition": "Taiwan Championship 2018",
+    "wcaid": "2018TSAI02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 543,
+    "name": "Huang Chen (陈煌)",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "Shenzhen 3x3 Days 2019",
+    "wcaid": "2017CHEH07",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 543,
+    "name": "Ting-Xian Lin (林廷縣)",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "Taiwan Championship 2019",
+    "wcaid": "2011LINJ04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 543,
+    "name": "Xuran Zheng (郑旭然)",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "Guangdong Open 2021",
+    "wcaid": "2014ZHEN02",
+    "province": "黑龙江",
+    "city": "哈尔滨"
+  },
+  {
+    "rank": 543,
+    "name": "Shitao Hu (胡诗涛)",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "FMC 2024",
+    "wcaid": "2018HUSH02",
+    "province": "广东",
+    "city": "茂名"
+  },
+  {
+    "rank": 543,
+    "name": "Hung-Tsang Chen (陳泓滄)",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2021CHEN43",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 543,
+    "name": "Deying Ou (欧德颖)",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "Vietnam Championship 2025",
+    "wcaid": "2017OUDE01",
+    "province": "广东",
+    "city": "湛江"
+  },
+  {
+    "rank": 543,
+    "name": "Zirui Zhang (张梓瑞)",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2024ZHAN94",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 554,
+    "name": "Zheng Li (李政)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "FMC Americas 2017",
+    "wcaid": "2008LIZH02",
+    "province": "吉林",
+    "city": "长春"
+  },
+  {
+    "rank": 554,
+    "name": "Ziyuan Lin (林子源)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "Cross-strait Cubing Exchange 2016",
+    "wcaid": "2010LINZ03",
+    "province": "广东",
+    "city": "汕头"
+  },
+  {
+    "rank": 554,
+    "name": "Haoliang Zhang (张皓喨)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2016ZHAN61",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 554,
+    "name": "Chao Ma (马超)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2016MACH03",
+    "province": "吉林",
+    "city": "长春"
+  },
+  {
+    "rank": 554,
+    "name": "Yikang Xie (谢轶康)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "Xi'an Cherry Blossom 2017",
+    "wcaid": "2016XIEY03",
+    "province": "江西",
+    "city": "南昌"
+  },
+  {
+    "rank": 554,
+    "name": "Jianxu Chen (陈建旭)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2016CHEJ04",
+    "province": "广东",
+    "city": "湛江"
+  },
+  {
+    "rank": 554,
+    "name": "Jia-He Lai (賴佳禾)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "Taiwan Blind Day 2018",
+    "wcaid": "2015LAIJ02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 554,
+    "name": "Shikai Jiang (江侍锴)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2012JIAN07",
+    "province": "湖北",
+    "city": "襄阳"
+  },
+  {
+    "rank": 554,
+    "name": "Huiyuan Wang (王汇元)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2018WANH28",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 554,
+    "name": "Kanting Shi (史勘霆)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2016SHIK02",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 554,
+    "name": "Xiang Li (李响)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "Please Be Quiet Beijing 2024",
+    "wcaid": "2017LIXI13",
+    "province": "河北",
+    "city": "张家口"
+  },
+  {
+    "rank": 554,
+    "name": "Ke Fan (樊柯)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "Ningbo Footsteps 2019",
+    "wcaid": "2019FANK01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 554,
+    "name": "Li Yifei (李逸飞)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "FMC Singapore 2024",
+    "wcaid": "2015YIFE01",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 554,
+    "name": "Anjie Zhao (赵安洁)",
+    "gender": "女",
+    "result": "45.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2018ZHAO48",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 554,
+    "name": "Linhao Li (李林豪)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2019LILI02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 554,
+    "name": "Tianyu Yang (杨天宇)",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2024YANG18",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 554,
+    "name": "Yuqi Fu (傅钰淇)",
+    "gender": "女",
+    "result": "45.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2019FUYU02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 571,
+    "name": "Yanhong Chen (陈燕宏)",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "FMC Asia 2015",
+    "wcaid": "2012CHEN14",
+    "province": "河北",
+    "city": "廊坊"
+  },
+  {
+    "rank": 571,
+    "name": "Jiawei Wu (伍嘉维)",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "Guangzhou Rubik's Cube Days 2016",
+    "wcaid": "2014WUJI01",
+    "province": "福建",
+    "city": "福州"
+  },
+  {
+    "rank": 571,
+    "name": "Haochen Wang (王皓辰)",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "Asian Championship 2016",
+    "wcaid": "2012WANG54",
+    "province": "河北",
+    "city": "秦皇岛"
+  },
+  {
+    "rank": 571,
+    "name": "Yanrui Guo (郭延瑞)",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "Harbin Open 2018",
+    "wcaid": "2015GUOY07",
+    "province": "黑龙江",
+    "city": "哈尔滨"
+  },
+  {
+    "rank": 571,
+    "name": "Qiaowei Hong (洪翘伟)",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "Shenzhen Open 2018",
+    "wcaid": "2016HONG24",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 571,
+    "name": "Feilong Tang (唐飞龙)",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "Hangzhou Open 2018",
+    "wcaid": "2013TANG07",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 571,
+    "name": "Yizhou Wang (王翼洲)",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2018WANY44",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 571,
+    "name": "Kai Liang (梁楷)",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2023LIAN34",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 571,
+    "name": "Yuhao Sun (孙雨昊)",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2014SUNY02",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 571,
+    "name": "Haidong Feng (冯海栋)",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2024FENG08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 571,
+    "name": "Michael Jiazhuo Xu",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "SCU II: Double-Scoop of FMC 2025",
+    "wcaid": "2015XUJI03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 571,
+    "name": "Chan-Yi Lin (林展邑)",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2024LINC05",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 583,
+    "name": "Yifan Hao (郝逸凡)",
+    "gender": "男",
+    "result": "46.00",
+    "competition": "Xi'an Open 2018",
+    "wcaid": "2011HAOY01",
+    "province": "青海",
+    "city": "海南"
+  },
+  {
+    "rank": 583,
+    "name": "Linqi Chen (陈林奇)",
+    "gender": "男",
+    "result": "46.00",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2013CHEN13",
+    "province": "江苏",
+    "city": "常州"
+  },
+  {
+    "rank": 583,
+    "name": "Junxiang Hong (洪骏翔)",
+    "gender": "男",
+    "result": "46.00",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2016HONG07",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 583,
+    "name": "Zaiyang Zhang (张在旸)",
+    "gender": "男",
+    "result": "46.00",
+    "competition": "Please Be Quiet Beijing 2018",
+    "wcaid": "2017ZHAZ09",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 583,
+    "name": "Yunzhou Zhu (朱云舟)",
+    "gender": "男",
+    "result": "46.00",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2016ZHUY04",
+    "province": "山西",
+    "city": "太原"
+  },
+  {
+    "rank": 583,
+    "name": "Yifan Sun (孙一帆)",
+    "gender": "女",
+    "result": "46.00",
+    "competition": "FMC 2024",
+    "wcaid": "2017SUNY03",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 583,
+    "name": "Jun Hu (胡骏)",
+    "gender": "男",
+    "result": "46.00",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2016HUJU02",
+    "province": "江苏",
+    "city": "扬州"
+  },
+  {
+    "rank": 583,
+    "name": "Yi Lin (林一)",
+    "gender": "男",
+    "result": "46.00",
+    "competition": "Guangzhou Quiet Day 2024",
+    "wcaid": "2024LINY06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 583,
+    "name": "Shuxiu Jiang (蒋束修)",
+    "gender": "男",
+    "result": "46.00",
+    "competition": "Oberlin Challenge I 2025",
+    "wcaid": "2023JIAN21",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 583,
+    "name": "Mengzhe Wu (吴孟哲)",
+    "gender": "男",
+    "result": "46.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2024WUME02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 593,
+    "name": "Hao Zhang (张昊)",
+    "gender": "男",
+    "result": "46.33",
+    "competition": "On the Side South Australia 2023",
+    "wcaid": "2010ZHAN17",
+    "province": "河南",
+    "city": "郑州"
+  },
+  {
+    "rank": 593,
+    "name": "Yitong Kong (孔艺潼)",
+    "gender": "男",
+    "result": "46.33",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2017KONG09",
+    "province": "江苏",
+    "city": "无锡"
+  },
+  {
+    "rank": 593,
+    "name": "Chuntian Long (龙椿天)",
+    "gender": "男",
+    "result": "46.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2017LONG15",
+    "province": "广东",
+    "city": "茂名"
+  },
+  {
+    "rank": 593,
+    "name": "Yueqi Bai (白悦琦)",
+    "gender": "男",
+    "result": "46.33",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2019BAIY04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 597,
+    "name": "Minjie Huang (黄敏杰)",
+    "gender": "男",
+    "result": "46.67",
+    "competition": "Nanchang Open 2017",
+    "wcaid": "2011HUAN08",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 597,
+    "name": "Sheeran Xue (薛思远)",
+    "gender": "男",
+    "result": "46.67",
+    "competition": "FMC 2024",
+    "wcaid": "2023XUES01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 597,
+    "name": "Ruifeng Zhou (周睿峰)",
+    "gender": "男",
+    "result": "46.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2023ZHOU15",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 597,
+    "name": "Yung-Jen Szu (司永任)",
+    "gender": "男",
+    "result": "46.67",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2022SZUY01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 601,
+    "name": "Jia Zeng (曾嘉)",
+    "gender": "男",
+    "result": "47.00",
+    "competition": "China Championship 2015",
+    "wcaid": "2011ZENG02",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 601,
+    "name": "Yikang Chen (陈毅康)",
+    "gender": "男",
+    "result": "47.00",
+    "competition": "Wuhan NxN Open 2017",
+    "wcaid": "2016CHEY12",
+    "province": "山西",
+    "city": "吕梁"
+  },
+  {
+    "rank": 601,
+    "name": "Yiming Liu (刘一明)",
+    "gender": "男",
+    "result": "47.00",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2010YIMI01",
+    "province": "河北",
+    "city": "秦皇岛"
+  },
+  {
+    "rank": 601,
+    "name": "Haoyang Chen (陈浩杨)",
+    "gender": "男",
+    "result": "47.00",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2016CHEH02",
+    "province": "浙江",
+    "city": "温州"
+  },
+  {
+    "rank": 601,
+    "name": "Yongxiang Guo (郭永祥)",
+    "gender": "男",
+    "result": "47.00",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2017GUOY03",
+    "province": "内蒙古",
+    "city": "包头"
+  },
+  {
+    "rank": 601,
+    "name": "Zong-Xing Yang (楊宗興)",
+    "gender": "男",
+    "result": "47.00",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2018YANG70",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 607,
+    "name": "Yuchen Huang (黄禹尘)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2015HUAN43",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 607,
+    "name": "Jiuwei Li (李九威)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2015LIJI07",
+    "province": "江苏",
+    "city": "淮安"
+  },
+  {
+    "rank": 607,
+    "name": "Xuan Chen (陈炫)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2015CHEN30",
+    "province": "浙江",
+    "city": "温州"
+  },
+  {
+    "rank": 607,
+    "name": "Hongzhuang Ren (任洪壮)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2016RENH02",
+    "province": "吉林",
+    "city": "四平"
+  },
+  {
+    "rank": 607,
+    "name": "Jinlin Jiang (江锦林)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "Weihai Open 2019",
+    "wcaid": "2015JIAN21",
+    "province": "山东",
+    "city": "威海"
+  },
+  {
+    "rank": 607,
+    "name": "Renjie Su (苏仁杰)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "FMC Shanghai 2019",
+    "wcaid": "2017SURE11",
+    "province": "福建",
+    "city": "莆田"
+  },
+  {
+    "rank": 607,
+    "name": "Bo-Yu Lin (林柏佑)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "Taiwan Championship 2019",
+    "wcaid": "2018LINB02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 607,
+    "name": "Ziyi Ou (欧子宜)",
+    "gender": "女",
+    "result": "47.33",
+    "competition": "Kewbz UK Championship FMC 2022",
+    "wcaid": "2022OUZI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 607,
+    "name": "Rui Qin (秦睿)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "FMC 2024",
+    "wcaid": "2017QINR02",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 607,
+    "name": "Tien-Hao Chu (鞠天浩)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2024CHUT02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 607,
+    "name": "Yuxia Luo (罗与夏)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2024LUOY01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 607,
+    "name": "Yuhang Chen (陈宇航)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "Cube Camp in Suan Phueng 2025",
+    "wcaid": "2023CHEY30",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 607,
+    "name": "Yiheng Jiang (姜懿恒)",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2024JIAN20",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 620,
+    "name": "Haozhen Jiang (江皓臻)",
+    "gender": "男",
+    "result": "47.67",
+    "competition": "China Championship 2015",
+    "wcaid": "2011JIAN10",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 620,
+    "name": "Sora Wenjie Xu (徐文杰)",
+    "gender": "男",
+    "result": "47.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2016XUWE02",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 620,
+    "name": "Wenhao He (贺文浩)",
+    "gender": "男",
+    "result": "47.67",
+    "competition": "Xi'an Cherry Blossom 2017",
+    "wcaid": "2016HEWE02",
+    "province": "陕西",
+    "city": "榆林"
+  },
+  {
+    "rank": 620,
+    "name": "Hongzhi Chen (陈泓知)",
+    "gender": "男",
+    "result": "47.67",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2011CHEN01",
+    "province": "江苏",
+    "city": "无锡"
+  },
+  {
+    "rank": 620,
+    "name": "Hao Li (李昊)",
+    "gender": "男",
+    "result": "47.67",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2017LIHA12",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 620,
+    "name": "Chih-Han Sung (宋治翰)",
+    "gender": "男",
+    "result": "47.67",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2024SUNG01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 620,
+    "name": "Zirui Wang (王子睿)",
+    "gender": "男",
+    "result": "47.67",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2019WANG36",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 627,
+    "name": "Wei Wei (韦薇)",
+    "gender": "女",
+    "result": "48.00",
+    "competition": "Shanghai Milanyuan Cafe 2014",
+    "wcaid": "2011WEIW01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 627,
+    "name": "Yilin Wang (王艺霖)",
+    "gender": "男",
+    "result": "48.00",
+    "competition": "Asian Championship 2016",
+    "wcaid": "2015WANG65",
+    "province": "江苏",
+    "city": "扬州"
+  },
+  {
+    "rank": 627,
+    "name": "Youqian Zhang (张友前)",
+    "gender": "男",
+    "result": "48.00",
+    "competition": "Wuhan NxN Open 2017",
+    "wcaid": "2016ZHAN82",
+    "province": "河南",
+    "city": "商丘"
+  },
+  {
+    "rank": 627,
+    "name": "Shujian Guo (郭书暕)",
+    "gender": "男",
+    "result": "48.00",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2016GUOS04",
+    "province": "福建",
+    "city": "泉州"
+  },
+  {
+    "rank": 627,
+    "name": "Haoran Wang (汪浩然)",
+    "gender": "男",
+    "result": "48.00",
+    "competition": "China Championship 2018",
+    "wcaid": "2017WANH15",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 627,
+    "name": "Jiaqing Zhang (章家卿)",
+    "gender": "男",
+    "result": "48.00",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2017ZHAJ02",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 627,
+    "name": "Chow Lok Hang (周樂恒)",
+    "gender": "男",
+    "result": "48.00",
+    "competition": "Hong Kong FMC 2023",
+    "wcaid": "2023HANG02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 627,
+    "name": "Siqi Cheng (程思齐)",
+    "gender": "男",
+    "result": "48.00",
+    "competition": "Please Be Quiet Beijing 2024",
+    "wcaid": "2024CHEN27",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 627,
+    "name": "Wei-Zhi Lu (呂煒智)",
+    "gender": "男",
+    "result": "48.00",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2019LUWE01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 636,
+    "name": "Cheung Yi Cing (張意珵)",
+    "gender": "女",
+    "result": "48.33",
+    "competition": "Guangzhou Quiet Day 2024",
+    "wcaid": "2024CING01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 636,
+    "name": "Rui Chen (陈锐)",
+    "gender": "男",
+    "result": "48.33",
+    "competition": "Guangzhou Quiet Day 2024",
+    "wcaid": "2018CHEN99",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 636,
+    "name": "Li Shang Cheng (李尚澄)",
+    "gender": "女",
+    "result": "48.33",
+    "competition": "Hong Kong FMC Championship 2025",
+    "wcaid": "2024LISH03",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 639,
+    "name": "Jintao Jin (金锦涛)",
+    "gender": "男",
+    "result": "48.67",
+    "competition": "More Than One Cube 2018",
+    "wcaid": "2017JINJ02",
+    "province": "浙江",
+    "city": "温州"
+  },
+  {
+    "rank": 639,
+    "name": "Chen-Pin Sun (孫振斌)",
+    "gender": "男",
+    "result": "48.67",
+    "competition": "Please Be Quiet Oshawa 2019",
+    "wcaid": "2017SUNC03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 639,
+    "name": "Kuiping Che (车馗平)",
+    "gender": "男",
+    "result": "48.67",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2019CHEK01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 639,
+    "name": "Xinyang Li (李昕洋)",
+    "gender": "男",
+    "result": "48.67",
+    "competition": "Tianjin Summer Solstice 2021",
+    "wcaid": "2018LIXI12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 639,
+    "name": "Yiliang Lu (路义亮)",
+    "gender": "男",
+    "result": "48.67",
+    "competition": "Xi'an Open 2023",
+    "wcaid": "2008LUYI01",
+    "province": "河南",
+    "city": "郑州"
+  },
+  {
+    "rank": 644,
+    "name": "Mingyang Xie (谢铭扬)",
+    "gender": "男",
+    "result": "49.00",
+    "competition": "FMC Asia 2015",
+    "wcaid": "2014XIEM01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 644,
+    "name": "Yonghao Xu (徐永浩)",
+    "gender": "男",
+    "result": "49.00",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2017XUYO01",
+    "province": "广东",
+    "city": "韶关"
+  },
+  {
+    "rank": 644,
+    "name": "Zongze Li (李宗泽)",
+    "gender": "男",
+    "result": "49.00",
+    "competition": "FMC 2024",
+    "wcaid": "2024LIZO02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 644,
+    "name": "Junbi Zhang (张俊弼)",
+    "gender": "男",
+    "result": "49.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2025ZHAN85",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 644,
+    "name": "Yanru Sun (孙琰茹)",
+    "gender": "女",
+    "result": "49.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2023SUNY03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 649,
+    "name": "Li Gong (龚莉)",
+    "gender": "女",
+    "result": "49.33",
+    "competition": "Cube of Prime Numbers 2015",
+    "wcaid": "2013GONG01",
+    "province": "甘肃",
+    "city": "兰州"
+  },
+  {
+    "rank": 649,
+    "name": "Hongxi Wang (王洪熙)",
+    "gender": "男",
+    "result": "49.33",
+    "competition": "Hefei Open 2016",
+    "wcaid": "2015WANG61",
+    "province": "山东",
+    "city": "青岛"
+  },
+  {
+    "rank": 649,
+    "name": "Zhifang Xi (席之枋)",
+    "gender": "男",
+    "result": "49.33",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2016XIZH01",
+    "province": "江西",
+    "city": "南昌"
+  },
+  {
+    "rank": 649,
+    "name": "Yu Zhou (周煜)",
+    "gender": "男",
+    "result": "49.33",
+    "competition": "More Than One Cube 2018",
+    "wcaid": "2017YUZH03",
+    "province": "浙江",
+    "city": "嘉兴"
+  },
+  {
+    "rank": 649,
+    "name": "Kailin Sun (孙凯霖)",
+    "gender": "男",
+    "result": "49.33",
+    "competition": "Hangzhou Open 2018",
+    "wcaid": "2018SUNK01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 649,
+    "name": "Ryan Tang Chi Hang (鄧智恒)",
+    "gender": "男",
+    "result": "49.33",
+    "competition": "FMC Korea Spring 2024",
+    "wcaid": "2019HANG02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 649,
+    "name": "Jiahao Deng (邓家豪)",
+    "gender": "男",
+    "result": "49.33",
+    "competition": "Cube Camp in Nakhon Nayok 2024",
+    "wcaid": "2014DENG08",
+    "province": "广东",
+    "city": "佛山"
+  },
+  {
+    "rank": 649,
+    "name": "Mingsen Han (韩明森)",
+    "gender": "男",
+    "result": "49.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2010HANM01",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 649,
+    "name": "Yikang Mao (毛逸康)",
+    "gender": "男",
+    "result": "49.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2018MAOY01",
+    "province": "江苏",
+    "city": "无锡"
+  },
+  {
+    "rank": 649,
+    "name": "Jie Jiao (焦杰)",
+    "gender": "男",
+    "result": "49.33",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2018JIAO01",
+    "province": "山东",
+    "city": "临沂"
+  },
+  {
+    "rank": 649,
+    "name": "Yifeng Xie (谢艺枫)",
+    "gender": "男",
+    "result": "49.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2017XIEY05",
+    "province": "广东",
+    "city": "汕尾"
+  },
+  {
+    "rank": 660,
+    "name": "Qingwei Kong (孔庆玮)",
+    "gender": "男",
+    "result": "49.67",
+    "competition": "Cross-strait FMC 2014",
+    "wcaid": "2012KONG01",
+    "province": "江苏",
+    "city": "淮安"
+  },
+  {
+    "rank": 660,
+    "name": "Chun-Ting Liu (劉淳庭)",
+    "gender": "女",
+    "result": "49.67",
+    "competition": "FMC Asia 2015",
+    "wcaid": "2013LIUC02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 660,
+    "name": "Heng Wang (王衡)",
+    "gender": "男",
+    "result": "49.67",
+    "competition": "Hefei Open 2017",
+    "wcaid": "2014WANG55",
+    "province": "贵州",
+    "city": "遵义"
+  },
+  {
+    "rank": 660,
+    "name": "Dongyun Yin (殷冬昀)",
+    "gender": "男",
+    "result": "49.67",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2012YIND01",
+    "province": "江苏",
+    "city": "无锡"
+  },
+  {
+    "rank": 660,
+    "name": "Weichen Yin (殷维晨)",
+    "gender": "女",
+    "result": "49.67",
+    "competition": "Hangzhou Open 2018",
+    "wcaid": "2017YINW01",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 660,
+    "name": "Zihan Wang (王子涵)",
+    "gender": "男",
+    "result": "49.67",
+    "competition": "Xi'an 10th Anniversary 2019",
+    "wcaid": "2016WANG81",
+    "province": "山西",
+    "city": "太原"
+  },
+  {
+    "rank": 660,
+    "name": "Haonan Su (苏浩楠)",
+    "gender": "男",
+    "result": "49.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2016SUHA02",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 667,
+    "name": "Xiang Fei (费翔)",
+    "gender": "男",
+    "result": "50.00",
+    "competition": "Hefei Open 2015",
+    "wcaid": "2015FEIX01",
+    "province": "河南",
+    "city": "郑州"
+  },
+  {
+    "rank": 667,
+    "name": "Dawei Zheng (郑大伟)",
+    "gender": "男",
+    "result": "50.00",
+    "competition": "Shanghai FMC Summer 2024",
+    "wcaid": "2017ZHEN06",
+    "province": "江苏",
+    "city": "扬州"
+  },
+  {
+    "rank": 667,
+    "name": "Tingyu Wu (吴庭玉)",
+    "gender": "女",
+    "result": "50.00",
+    "competition": "Guangzhou 3x3 Quiet Day 2025",
+    "wcaid": "2020WUTI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 670,
+    "name": "Guanda Fu (符冠达)",
+    "gender": "男",
+    "result": "50.33",
+    "competition": "FMC USA 2015",
+    "wcaid": "2010FUGU01",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 670,
+    "name": "Jiahui Zhu (朱嘉辉)",
+    "gender": "男",
+    "result": "50.33",
+    "competition": "Cross-strait FMC 2016",
+    "wcaid": "2015ZHUJ05",
+    "province": "浙江",
+    "city": "宁波"
+  },
+  {
+    "rank": 670,
+    "name": "Congjian Zhang (张丛健)",
+    "gender": "男",
+    "result": "50.33",
+    "competition": "Please Be Quiet Beijing 2018",
+    "wcaid": "2011ZHAN56",
+    "province": "新疆",
+    "city": "克拉玛依"
+  },
+  {
+    "rank": 670,
+    "name": "Fung Hoi Yin (馮凱賢)",
+    "gender": "男",
+    "result": "50.33",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2010YINF01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 670,
+    "name": "Shuo Liu (刘硕)",
+    "gender": "男",
+    "result": "50.33",
+    "competition": "Tianjin Summer Solstice 2021",
+    "wcaid": "2017LIUS06",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 670,
+    "name": "I-Chuan Lin (林奕全)",
+    "gender": "男",
+    "result": "50.33",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2024LINI01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 676,
+    "name": "Xiaohe Tang (唐霄鹤)",
+    "gender": "男",
+    "result": "50.67",
+    "competition": "Cross-strait FMC 2014",
+    "wcaid": "2012TANG05",
+    "province": "河北",
+    "city": "邯郸"
+  },
+  {
+    "rank": 676,
+    "name": "Boxuan Huang (黄博暄)",
+    "gender": "男",
+    "result": "50.67",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2015HUAN29",
+    "province": "广东",
+    "city": "揭阳"
+  },
+  {
+    "rank": 676,
+    "name": "Di Lu (卢迪)",
+    "gender": "男",
+    "result": "50.67",
+    "competition": "Hefei Open 2017",
+    "wcaid": "2016LUDI01",
+    "province": "山西",
+    "city": "太原"
+  },
+  {
+    "rank": 676,
+    "name": "Simeng Liu (刘思萌)",
+    "gender": "女",
+    "result": "50.67",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2017LIUS18",
+    "province": "黑龙江",
+    "city": "伊春"
+  },
+  {
+    "rank": 676,
+    "name": "Kun Lu (陆堃)",
+    "gender": "男",
+    "result": "50.67",
+    "competition": "Selangor Cube Open 2019",
+    "wcaid": "2016LUKU01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 676,
+    "name": "Yizhi Cui (崔益智)",
+    "gender": "男",
+    "result": "50.67",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2016CUIY04",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 676,
+    "name": "Jingcong Zhou (周敬聪)",
+    "gender": "男",
+    "result": "50.67",
+    "competition": "Guangzhou 3x3 Quiet Day 2025",
+    "wcaid": "2024ZHOU46",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 676,
+    "name": "Xinyu Wang (王昕雨)",
+    "gender": "女",
+    "result": "50.67",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2019WANX22",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 684,
+    "name": "Xu Zhao (赵旭)",
+    "gender": "女",
+    "result": "51.00",
+    "competition": "Beijing Spring 2014",
+    "wcaid": "2009ZHAO05",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 684,
+    "name": "Hao Chang (常皓)",
+    "gender": "女",
+    "result": "51.00",
+    "competition": "WHU Rubik's Cube Days 2017",
+    "wcaid": "2015CHAN33",
+    "province": "内蒙古",
+    "city": "乌兰察布"
+  },
+  {
+    "rank": 684,
+    "name": "Xinghua Zhang (张兴华)",
+    "gender": "男",
+    "result": "51.00",
+    "competition": "FMC 2019",
+    "wcaid": "2016ZHAX06",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 684,
+    "name": "Zhili Yu (余志立)",
+    "gender": "男",
+    "result": "51.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2019YUZH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 688,
+    "name": "Sai Zhang (张赛)",
+    "gender": "男",
+    "result": "51.33",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2015ZHAN47",
+    "province": "河南",
+    "city": "商丘"
+  },
+  {
+    "rank": 688,
+    "name": "Yufei Shi (史宇斐)",
+    "gender": "男",
+    "result": "51.33",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2016SHIY03",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 688,
+    "name": "Yutao Guo (郭宇韬)",
+    "gender": "男",
+    "result": "51.33",
+    "competition": "Weihai Open 2019",
+    "wcaid": "2019GUOY04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 688,
+    "name": "Zongqi Liu (刘宗奇)",
+    "gender": "男",
+    "result": "51.33",
+    "competition": "Weihai Open 2019",
+    "wcaid": "2019LIUZ03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 688,
+    "name": "Duo Zheng (郑铎)",
+    "gender": "男",
+    "result": "51.33",
+    "competition": "Mental Breakdown Minnesota 2022",
+    "wcaid": "2018DUOZ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 688,
+    "name": "Sheng-Fan Tsai (蔡勝帆)",
+    "gender": "男",
+    "result": "51.33",
+    "competition": "Taipei FMC All Day 2023",
+    "wcaid": "2022TSAI02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 688,
+    "name": "Bowen Shi (施博文)",
+    "gender": "男",
+    "result": "51.33",
+    "competition": "FMC 2024",
+    "wcaid": "2023SHIB02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 688,
+    "name": "Hailun Hou (侯海论)",
+    "gender": "男",
+    "result": "51.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2024HOUH03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 696,
+    "name": "Jieyu Jiang (蒋捷宇)",
+    "gender": "男",
+    "result": "51.67",
+    "competition": "Guangdong Open 2021",
+    "wcaid": "2019JIAN19",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 696,
+    "name": "Zejing Zhang (张泽菁)",
+    "gender": "女",
+    "result": "51.67",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2019ZHAZ19",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 696,
+    "name": "Kaiyan Ren (任开颜)",
+    "gender": "女",
+    "result": "51.67",
+    "competition": "Cube Camp in Suan Phueng 2025",
+    "wcaid": "2023RENK05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 699,
+    "name": "Hongtong Zhu (朱泓同)",
+    "gender": "男",
+    "result": "52.00",
+    "competition": "Hangzhou Open 2018",
+    "wcaid": "2018ZHUH05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 699,
+    "name": "Xinyue Liu (刘欣悦)",
+    "gender": "女",
+    "result": "52.00",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2017LIUX06",
+    "province": "山西",
+    "city": "太原"
+  },
+  {
+    "rank": 701,
+    "name": "Shifei Dai (代时飞)",
+    "gender": "女",
+    "result": "52.33",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2015DAIS01",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 701,
+    "name": "Jinyao Chen (陈今尧)",
+    "gender": "男",
+    "result": "52.33",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2015CHEN18",
+    "province": "宁夏",
+    "city": "银川"
+  },
+  {
+    "rank": 701,
+    "name": "Yuchen Guo (郭昱辰)",
+    "gender": "男",
+    "result": "52.33",
+    "competition": "FMC 2024",
+    "wcaid": "2019GUOY09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 704,
+    "name": "Xiaojian Li (李晓健)",
+    "gender": "男",
+    "result": "52.67",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2009LIXI02",
+    "province": "辽宁",
+    "city": "鞍山"
+  },
+  {
+    "rank": 704,
+    "name": "Bodun Zhu (朱博楯)",
+    "gender": "男",
+    "result": "52.67",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2016ZHUB01",
+    "province": "河北",
+    "city": "石家庄"
+  },
+  {
+    "rank": 704,
+    "name": "Zhengyang Zhang (张正阳)",
+    "gender": "男",
+    "result": "52.67",
+    "competition": "Weihai Open 2019",
+    "wcaid": "2018ZHAN37",
+    "province": "山东",
+    "city": "济宁"
+  },
+  {
+    "rank": 704,
+    "name": "Jiahang Li (李佳航)",
+    "gender": "男",
+    "result": "52.67",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2025LIJI15",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 708,
+    "name": "Shengjun Yang (杨胜军)",
+    "gender": "男",
+    "result": "53.00",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2014YANG22",
+    "province": "湖北",
+    "city": "孝感"
+  },
+  {
+    "rank": 708,
+    "name": "Hong-Jun Zhao (趙浤鈞)",
+    "gender": "男",
+    "result": "53.00",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2024ZHAO07",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 708,
+    "name": "Ziyi Chen (陈子怡)",
+    "gender": "女",
+    "result": "53.00",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2017CHEZ19",
+    "province": "湖北",
+    "city": "武汉"
+  },
+  {
+    "rank": 708,
+    "name": "Kangjin Liu (刘康琎)",
+    "gender": "男",
+    "result": "53.00",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2025LIUK05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 708,
+    "name": "Yihao Luo (罗益浩)",
+    "gender": "男",
+    "result": "53.00",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2017LUOY03",
+    "province": "广东",
+    "city": "梅州"
+  },
+  {
+    "rank": 713,
+    "name": "Fengqi Dai (代凤奇)",
+    "gender": "男",
+    "result": "53.67",
+    "competition": "Please Be Quiet Beijing 2018",
+    "wcaid": "2017DAIF01",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 713,
+    "name": "Jinlai Zhao (赵锦来)",
+    "gender": "男",
+    "result": "53.67",
+    "competition": "Weihai Open 2019",
+    "wcaid": "2017ZHAO09",
+    "province": "山东",
+    "city": "威海"
+  },
+  {
+    "rank": 713,
+    "name": "Zhenyu Wang (王振宇)",
+    "gender": "男",
+    "result": "53.67",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2018WANG40",
+    "province": "山东",
+    "city": "青岛"
+  },
+  {
+    "rank": 713,
+    "name": "Kuan-Ying Li (李冠穎)",
+    "gender": "男",
+    "result": "53.67",
+    "competition": "Taipei FMC All Day 2024",
+    "wcaid": "2009LIKU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 717,
+    "name": "Penghe Lin (林鹏河)",
+    "gender": "男",
+    "result": "54.00",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2016LINP04",
+    "province": "福建",
+    "city": "泉州"
+  },
+  {
+    "rank": 717,
+    "name": "Yimin Lü (吕怡敏)",
+    "gender": "女",
+    "result": "54.00",
+    "competition": "Quanzhou Side Event 2017",
+    "wcaid": "2016LUYI02",
+    "province": "福建",
+    "city": "漳州"
+  },
+  {
+    "rank": 717,
+    "name": "Hao Wang (王皓)",
+    "gender": "男",
+    "result": "54.00",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2024WANH02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 720,
+    "name": "Jianyu Que (阙剑宇)",
+    "gender": "男",
+    "result": "54.33",
+    "competition": "Guangdong Open 2014",
+    "wcaid": "2011QUEJ01",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 720,
+    "name": "Qianshu Zhou (周千舒)",
+    "gender": "女",
+    "result": "54.33",
+    "competition": "Xi'an Cherry Blossom 2016",
+    "wcaid": "2013ZHOU03",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 720,
+    "name": "Yang Jiao (焦阳)",
+    "gender": "男",
+    "result": "54.33",
+    "competition": "Cube of Odd Numbers 2016",
+    "wcaid": "2010JIAO01",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 720,
+    "name": "Chi-Hsun Hung (洪琪勛)",
+    "gender": "男",
+    "result": "54.33",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2024HUNG15",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 724,
+    "name": "Guolang Deng (邓果琅)",
+    "gender": "男",
+    "result": "54.67",
+    "competition": "Beijing Open 2015",
+    "wcaid": "2013DENG06",
+    "province": "广东",
+    "city": "云浮"
+  },
+  {
+    "rank": 724,
+    "name": "Jun Fei (费俊)",
+    "gender": "男",
+    "result": "54.67",
+    "competition": "FMC 2019",
+    "wcaid": "2016FEIJ02",
+    "province": "江苏",
+    "city": "南通"
+  },
+  {
+    "rank": 724,
+    "name": "Yan Xia (夏焱)",
+    "gender": "男",
+    "result": "54.67",
+    "competition": "Xi'an Open 2018",
+    "wcaid": "2010XIAY01",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 724,
+    "name": "Shuo Zhao (赵硕)",
+    "gender": "男",
+    "result": "54.67",
+    "competition": "Hangzhou Open 2018",
+    "wcaid": "2017ZHAO15",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 724,
+    "name": "Zehao Huang (黄泽浩)",
+    "gender": "男",
+    "result": "54.67",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2019HUAZ03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 724,
+    "name": "Chenyu Wang (王晨宇)",
+    "gender": "男",
+    "result": "54.67",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2017WANG92",
+    "province": "河北",
+    "city": "唐山"
+  },
+  {
+    "rank": 730,
+    "name": "Yaochao Wang (王垚超)",
+    "gender": "男",
+    "result": "55.33",
+    "competition": "FMC Cubing China 2025",
+    "wcaid": "2025WANG84",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 731,
+    "name": "Junrong Guo (郭峻荣)",
+    "gender": "男",
+    "result": "56.00",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2017GUOJ04",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 731,
+    "name": "Yexing Li (李烨星)",
+    "gender": "男",
+    "result": "56.00",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2015LIYE01",
+    "province": "河南",
+    "city": "郑州"
+  },
+  {
+    "rank": 731,
+    "name": "Dong Shen (沈冬)",
+    "gender": "男",
+    "result": "56.00",
+    "competition": "FMC Asia 2025",
+    "wcaid": "2024SHEN22",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 734,
+    "name": "Liwen Xu (许力文)",
+    "gender": "女",
+    "result": "56.33",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2015XULI01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 734,
+    "name": "Shang-Wen Wang (王聖文)",
+    "gender": "男",
+    "result": "56.33",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2023WANG35",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 736,
+    "name": "Rongxuan Yang (杨镕漩)",
+    "gender": "男",
+    "result": "56.67",
+    "competition": "FMC Asia 2017",
+    "wcaid": "2017YANR03",
+    "province": "湖南",
+    "city": "邵阳"
+  },
+  {
+    "rank": 736,
+    "name": "Yanfeng Zhu (朱艳枫)",
+    "gender": "女",
+    "result": "56.67",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2013ZHUY02",
+    "province": "江苏",
+    "city": "无锡"
+  },
+  {
+    "rank": 736,
+    "name": "Wan-Ying Chen (陳婉瑩)",
+    "gender": "女",
+    "result": "56.67",
+    "competition": "FMC Asia 2019",
+    "wcaid": "2019CHEN10",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 739,
+    "name": "Gong Chen (陈功)",
+    "gender": "男",
+    "result": "57.00",
+    "competition": "FMC Asia 2018",
+    "wcaid": "2017CHEG01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 740,
+    "name": "Donglei Li (李冬雷)",
+    "gender": "男",
+    "result": "57.33",
+    "competition": "FMC Asia 2015",
+    "wcaid": "2009LIDO01",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 741,
+    "name": "Hongyu Han (韩鸿宇)",
+    "gender": "男",
+    "result": "57.67",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2015HANH01",
+    "province": "山东",
+    "city": "潍坊"
+  },
+  {
+    "rank": 741,
+    "name": "Yuanxing Gao (高元兴)",
+    "gender": "男",
+    "result": "57.67",
+    "competition": "Wuxi Try to Get a Mean 2018",
+    "wcaid": "2018GAOY04",
+    "province": "山东",
+    "city": "潍坊"
+  },
+  {
+    "rank": 741,
+    "name": "Shukun Zhang (张树坤)",
+    "gender": "男",
+    "result": "57.67",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2018ZHAN34",
+    "province": "山东",
+    "city": "威海"
+  },
+  {
+    "rank": 741,
+    "name": "Hao Wang (王昊)",
+    "gender": "男",
+    "result": "57.67",
+    "competition": "FMC 2024",
+    "wcaid": "2024WANG12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 745,
+    "name": "Jihaobutao (冀好布套)",
+    "gender": "男",
+    "result": "58.67",
+    "competition": "Please Be Quiet Beijing 2018",
+    "wcaid": "2017JIHA01",
+    "province": "内蒙古",
+    "city": "呼和浩特"
+  },
+  {
+    "rank": 745,
+    "name": "Guohui Yan (闫国惠)",
+    "gender": "男",
+    "result": "58.67",
+    "competition": "Ningbo Footsteps 2019",
+    "wcaid": "2017YANG36",
+    "province": "湖北",
+    "city": "武汉"
+  },
+  {
+    "rank": 747,
+    "name": "Jiexing Zhang (张杰星)",
+    "gender": "男",
+    "result": "59.00",
+    "competition": "Xi'an Cherry Blossom 2017",
+    "wcaid": "2013ZHAN39",
+    "province": "山西",
+    "city": "太原"
+  },
+  {
+    "rank": 748,
+    "name": "Jiachi Han (韩佳池)",
+    "gender": "男",
+    "result": "60.00",
+    "competition": "Please Be Quiet Beijing 2018",
+    "wcaid": "2014HANJ02",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 748,
+    "name": "Jia-Bow Tsai (蔡家堡)",
+    "gender": "男",
+    "result": "60.00",
+    "competition": "Taiwan Championship 2019",
+    "wcaid": "2019TSAI11",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 748,
+    "name": "Pao-Cheng-Bobby Yen (焉保誠)",
+    "gender": "男",
+    "result": "60.00",
+    "competition": "Please Be Quiet Taiwan 2024",
+    "wcaid": "2024YENP01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 748,
+    "name": "Yuhang Wang (王宇航)",
+    "gender": "男",
+    "result": "60.00",
+    "competition": "FMC Cubing China 2024",
+    "wcaid": "2023WANY03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 752,
+    "name": "Weiyang Zhang (张维阳)",
+    "gender": "男",
+    "result": "61.00",
+    "competition": "Please Be Quiet Beijing 2024",
+    "wcaid": "2018ZHAN51",
+    "province": "河南",
+    "city": "信阳"
+  },
+  {
+    "rank": 753,
+    "name": "Jing-Heng Ling (凌敬恒)",
+    "gender": "男",
+    "result": "61.33",
+    "competition": "Master Challenge 2014",
+    "wcaid": "2013LING03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 754,
+    "name": "Ying Shi (石瑛)",
+    "gender": "女",
+    "result": "61.67",
+    "competition": "FMC Asia 2016",
+    "wcaid": "2011SHIY03",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 755,
+    "name": "Haibin Shi (施海滨)",
+    "gender": "男",
+    "result": "62.00",
+    "competition": "FMC 2024",
+    "wcaid": "2023SHIH11",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 756,
+    "name": "Kaimu Chen (陈楷沐)",
+    "gender": "男",
+    "result": "62.33",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2018CHEK05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 757,
+    "name": "Pei-Yu Ko (柯沛羽)",
+    "gender": "女",
+    "result": "62.67",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2014KOPE01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 758,
+    "name": "Yingmin Mao (毛英民)",
+    "gender": "男",
+    "result": "63.00",
+    "competition": "Cross-strait FMC 2018",
+    "wcaid": "2016MAOY01",
+    "province": "吉林",
+    "city": "白山"
+  },
+  {
+    "rank": 758,
+    "name": "Haoran He (何浩然)",
+    "gender": "男",
+    "result": "63.00",
+    "competition": "FMC 2024",
+    "wcaid": "2018HEHA01",
+    "province": "黑龙江",
+    "city": "大庆"
+  },
+  {
+    "rank": 760,
+    "name": "Zhuo Li (李卓)",
+    "gender": "男",
+    "result": "63.67",
+    "competition": "Shandong Open 2019",
+    "wcaid": "2013LIZH01",
+    "province": "山东",
+    "city": "潍坊"
+  },
+  {
+    "rank": 761,
+    "name": "Sena Y. Zhang",
+    "gender": "男",
+    "result": "78.33",
+    "competition": "FMC under the Mistletoe 2025",
+    "wcaid": "2015ZHAN25",
+    "province": "四川",
+    "city": "成都"
+  }
+]

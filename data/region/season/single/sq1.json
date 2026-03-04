@@ -1,0 +1,1282 @@
+[
+  {
+    "rank": 1,
+    "name": "Zijia Liu (刘子甲)",
+    "gender": "男",
+    "result": "5.03",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2024LIUZ10",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 2,
+    "name": "Xuezhong Deng (邓学中)",
+    "gender": "男",
+    "result": "5.28",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2024DENG09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 3,
+    "name": "Jiazhou Li (李佳洲)",
+    "gender": "男",
+    "result": "5.49",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016LIJI05",
+    "province": "四川",
+    "city": "成都"
+  },
+  {
+    "rank": 4,
+    "name": "Timothy Kong Wing Sum (江永琛)",
+    "gender": "男",
+    "result": "5.59",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015SUMT01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 5,
+    "name": "Zhiquan Li (李志权)",
+    "gender": "男",
+    "result": "5.77",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2019LIZH07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 6,
+    "name": "Bailing Hou",
+    "gender": "男",
+    "result": "6.09",
+    "competition": "Brown Cubing Day 2026",
+    "wcaid": "2018HOUB01",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 7,
+    "name": "Zhenyu Wang (王振宇)",
+    "gender": "男",
+    "result": "6.64",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2018WANG40",
+    "province": "山东",
+    "city": "青岛"
+  },
+  {
+    "rank": 8,
+    "name": "Haohan Zheng (郑皓涵)",
+    "gender": "男",
+    "result": "6.76",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019ZHEN38",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 9,
+    "name": "Jiate Xie (谢佳特)",
+    "gender": "男",
+    "result": "7.21",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2018XIEJ04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 10,
+    "name": "Putian Ye (叶溥天)",
+    "gender": "男",
+    "result": "7.39",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2021YEPU01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 11,
+    "name": "Wang Ma (马旺)",
+    "gender": "男",
+    "result": "7.42",
+    "competition": "Ohio State Winter 2026",
+    "wcaid": "2016MAWA01",
+    "province": "陕西",
+    "city": "宝鸡"
+  },
+  {
+    "rank": 12,
+    "name": "Dorian Chan",
+    "gender": "男",
+    "result": "7.52",
+    "competition": "Weston-super-Mare Winter 2026",
+    "wcaid": "2023DORI01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 13,
+    "name": "Yuzhe Su (苏宇喆)",
+    "gender": "男",
+    "result": "7.84",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2024SUYU01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 14,
+    "name": "Kaixi Guo (郭铠希)",
+    "gender": "男",
+    "result": "7.88",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2023GUOK01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 15,
+    "name": "Zijian Cai (蔡子健)",
+    "gender": "男",
+    "result": "8.34",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017CAIZ03",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 16,
+    "name": "Owen Yepeng Sun (孙叶芃)",
+    "gender": "男",
+    "result": "8.38",
+    "competition": "Agoura Winter 2026",
+    "wcaid": "2017SUNY01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 17,
+    "name": "Deting Qi (戚德廷)",
+    "gender": "男",
+    "result": "8.58",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025QIDE01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 18,
+    "name": "Yunhao Lou (娄云皓)",
+    "gender": "男",
+    "result": "9.16",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2017LOUY01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 19,
+    "name": "Loïc Zhang",
+    "gender": "男",
+    "result": "9.37",
+    "competition": "Chelles Open 2026",
+    "wcaid": "2022ZHAN31",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 20,
+    "name": "Tina Xiangyan Jin (金香延)",
+    "gender": "女",
+    "result": "9.44",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2015JINX01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 21,
+    "name": "Yiqin Sun (孙弋钦)",
+    "gender": "男",
+    "result": "9.58",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2021SUNY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 22,
+    "name": "Harney Liu (劉峻熙)",
+    "gender": "男",
+    "result": "9.73",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2023LIUJ10",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 23,
+    "name": "Yuhao Sun (孙雨昊)",
+    "gender": "男",
+    "result": "9.85",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2014SUNY02",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 24,
+    "name": "Xiaole Chen (陈晓乐)",
+    "gender": "男",
+    "result": "10.09",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024CHEX04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 25,
+    "name": "Zhiyuan Ma (马之元)",
+    "gender": "男",
+    "result": "10.27",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017MAZH04",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 26,
+    "name": "Zhaoxuan Guan (关兆炫)",
+    "gender": "男",
+    "result": "10.30",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023XUAN02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 27,
+    "name": "Lui Chi Fung (雷智鋒)",
+    "gender": "男",
+    "result": "10.44",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2014LUIC01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 28,
+    "name": "Aolin Tang (唐奥林)",
+    "gender": "男",
+    "result": "10.54",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2017TANG19",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 29,
+    "name": "Chengyang Du (杜成洋)",
+    "gender": "男",
+    "result": "10.79",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2017DUCH02",
+    "province": "河南",
+    "city": "济源"
+  },
+  {
+    "rank": 30,
+    "name": "Max Kwok U Sam (郭愉琛)",
+    "gender": "男",
+    "result": "11.19",
+    "competition": "Glasgow Side Events Winter 2026",
+    "wcaid": "2018SAMK01",
+    "province": "澳门",
+    "city": "澳门"
+  },
+  {
+    "rank": 31,
+    "name": "Taiqi Li (李泰祺)",
+    "gender": "男",
+    "result": "11.25",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2021LITA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 32,
+    "name": "Jinge Li (李金戈)",
+    "gender": "男",
+    "result": "11.39",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2021LIJI02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 33,
+    "name": "Yanchen Long (龙彦辰)",
+    "gender": "男",
+    "result": "11.88",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018LONG08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 34,
+    "name": "Yunhui Zhao (赵云晖)",
+    "gender": "男",
+    "result": "11.99",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2019ZHAO44",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 35,
+    "name": "Antonio Li Ka Ming (李家銘)",
+    "gender": "男",
+    "result": "12.06",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019MING07",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 36,
+    "name": "Yuxiao Wang (王宇骁)",
+    "gender": "男",
+    "result": "12.23",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2019WANY67",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 37,
+    "name": "Yuzhe Gan (甘宇喆)",
+    "gender": "男",
+    "result": "12.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018GANY01",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 38,
+    "name": "Bowen Deng (邓博文)",
+    "gender": "男",
+    "result": "13.08",
+    "competition": "Agoura Winter 2026",
+    "wcaid": "2009DENG01",
+    "province": "湖南",
+    "city": "常德"
+  },
+  {
+    "rank": 39,
+    "name": "Kanting Shi (史勘霆)",
+    "gender": "男",
+    "result": "13.22",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016SHIK02",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 40,
+    "name": "Cherayerumal Arnav Morgan",
+    "gender": "男",
+    "result": "13.61",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2023MORG03",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 41,
+    "name": "Yibo Wang (王奕博)",
+    "gender": "男",
+    "result": "13.83",
+    "competition": "Cube Against Cancer Brisbane 2026",
+    "wcaid": "2018WANG39",
+    "province": "山东",
+    "city": "青岛"
+  },
+  {
+    "rank": 42,
+    "name": "Mingyu Wang (王铭予)",
+    "gender": "男",
+    "result": "13.96",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2026WANG05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 42,
+    "name": "Andy Wu",
+    "gender": "男",
+    "result": "13.96",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2024WUAN02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 44,
+    "name": "Yiran Peng (彭弈然)",
+    "gender": "男",
+    "result": "14.02",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017PENG04",
+    "province": "四川",
+    "city": "成都"
+  },
+  {
+    "rank": 45,
+    "name": "Xi Zhang (张希)",
+    "gender": "男",
+    "result": "14.06",
+    "competition": "Ulmgedreht 2026",
+    "wcaid": "2015ZHAN62",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 46,
+    "name": "Yuhang Sun (孙煜航)",
+    "gender": "男",
+    "result": "14.12",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019SUNY09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 47,
+    "name": "Ruixian Li (李瑞先)",
+    "gender": "男",
+    "result": "14.28",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2016LIRU06",
+    "province": "山东",
+    "city": "济宁"
+  },
+  {
+    "rank": 48,
+    "name": "Xiwen Ruan (阮熙文)",
+    "gender": "男",
+    "result": "14.71",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2018RUAN04",
+    "province": "湖南",
+    "city": "邵阳"
+  },
+  {
+    "rank": 48,
+    "name": "Chan Tak Chuen (陳德泉)",
+    "gender": "男",
+    "result": "14.71",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2007CHUE01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 50,
+    "name": "Glen Zhang",
+    "gender": "男",
+    "result": "14.94",
+    "competition": "Hurlubik's Cube Mouscron 2026",
+    "wcaid": "2022ZHAN10",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 51,
+    "name": "Haidong Feng (冯海栋)",
+    "gender": "男",
+    "result": "15.00",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024FENG08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 52,
+    "name": "Chenhao Ma (马晨皓)",
+    "gender": "男",
+    "result": "15.01",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2017MACH03",
+    "province": "天津",
+    "city": "天津"
+  },
+  {
+    "rank": 53,
+    "name": "Enyu Lu",
+    "gender": "女",
+    "result": "15.10",
+    "competition": "Phitsanulok Chill Big & Sides 2026",
+    "wcaid": "2023LUEN03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 54,
+    "name": "Zhuojia Zhou (周琢嘉)",
+    "gender": "男",
+    "result": "15.14",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2024ZHOU23",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 55,
+    "name": "Yuchen Fan (范于宸)",
+    "gender": "男",
+    "result": "15.32",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025FANY02",
+    "province": "广东",
+    "city": "惠州"
+  },
+  {
+    "rank": 56,
+    "name": "Zitao Ye (叶子滔)",
+    "gender": "男",
+    "result": "15.51",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017YEZI01",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 57,
+    "name": "Yuxiang Feng (奉于翔)",
+    "gender": "男",
+    "result": "15.69",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017FENG35",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 58,
+    "name": "Zeyuan Guo (郭泽原)",
+    "gender": "男",
+    "result": "16.09",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018GUOZ07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 59,
+    "name": "Congxi Liu (刘淙溪)",
+    "gender": "男",
+    "result": "16.53",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2018LIUC22",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 60,
+    "name": "Tianyu Yang (杨天宇)",
+    "gender": "男",
+    "result": "16.76",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024YANG18",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 61,
+    "name": "Duo Wang (王舵)",
+    "gender": "男",
+    "result": "16.95",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2013WANG48",
+    "province": "内蒙古",
+    "city": "乌兰察布"
+  },
+  {
+    "rank": 62,
+    "name": "Heyu Fu (付荷语)",
+    "gender": "女",
+    "result": "17.09",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2019FUHE01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 63,
+    "name": "Yonghao Xu (徐永浩)",
+    "gender": "男",
+    "result": "17.12",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017XUYO01",
+    "province": "广东",
+    "city": "韶关"
+  },
+  {
+    "rank": 64,
+    "name": "Jingbin Li (李晶斌)",
+    "gender": "男",
+    "result": "17.68",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016LIJI01",
+    "province": "福建",
+    "city": "莆田"
+  },
+  {
+    "rank": 65,
+    "name": "Arxiden Abdurahman (艾尔西丁·阿布都热合曼)",
+    "gender": "男",
+    "result": "17.93",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2024ABDU16",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 66,
+    "name": "Yechen Yan (颜叶辰)",
+    "gender": "男",
+    "result": "18.22",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023YANY01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 67,
+    "name": "Jia Song (宋佳)",
+    "gender": "女",
+    "result": "18.46",
+    "competition": "Phitsanulok Chill Big & Sides 2026",
+    "wcaid": "2019SONG14",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 68,
+    "name": "Yuyang Zhen (甄禹扬)",
+    "gender": "男",
+    "result": "18.58",
+    "competition": "Fredericksburg Winter PM 2026",
+    "wcaid": "2013ZHEN11",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 69,
+    "name": "Qiyin Deng (邓期尹)",
+    "gender": "男",
+    "result": "18.59",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019DENG12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 70,
+    "name": "Jiarun Weng (翁镓润)",
+    "gender": "男",
+    "result": "18.64",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024WENG06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 71,
+    "name": "Boxun Zhang (张博勋)",
+    "gender": "男",
+    "result": "18.90",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024ZHAB01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 72,
+    "name": "Paul Sun (孫晨博)",
+    "gender": "男",
+    "result": "18.93",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025SUNP01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 73,
+    "name": "Hayron Ling",
+    "gender": "男",
+    "result": "19.18",
+    "competition": "Crewe Winter 2026",
+    "wcaid": "2023LING09",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 74,
+    "name": "Chongjian Zhao (赵崇健)",
+    "gender": "男",
+    "result": "19.46",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025ZHAO21",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 75,
+    "name": "You Wu (吴悠)",
+    "gender": "男",
+    "result": "19.61",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017WUYO01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 76,
+    "name": "Xiang Meng (孟响)",
+    "gender": "男",
+    "result": "19.68",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2017MENG07",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 77,
+    "name": "Chen Kang (亢晨)",
+    "gender": "男",
+    "result": "19.81",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2011KANG05",
+    "province": "青海",
+    "city": "西宁"
+  },
+  {
+    "rank": 78,
+    "name": "Moxuan Sun (孙墨轩)",
+    "gender": "男",
+    "result": "19.89",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2018SUNM07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 79,
+    "name": "Zirui Zhang (张梓瑞)",
+    "gender": "男",
+    "result": "19.94",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024ZHAN94",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 80,
+    "name": "Hanmo Hou (侯瀚墨)",
+    "gender": "男",
+    "result": "20.47",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2024HOUH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 81,
+    "name": "Hongyu Zhu (朱泓宇)",
+    "gender": "男",
+    "result": "20.73",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017ZHUH05",
+    "province": "云南",
+    "city": "西双版纳"
+  },
+  {
+    "rank": 82,
+    "name": "Taiji Yi (易泰基)",
+    "gender": "男",
+    "result": "20.76",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018YITA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 83,
+    "name": "Kaijin Wang (王凯津)",
+    "gender": "男",
+    "result": "20.86",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018WANK05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 84,
+    "name": "Lianghai Sui (眭亮海)",
+    "gender": "男",
+    "result": "20.92",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015SUIL01",
+    "province": "江西",
+    "city": "吉安"
+  },
+  {
+    "rank": 85,
+    "name": "Haoran Yezhou",
+    "gender": "男",
+    "result": "20.97",
+    "competition": "Velilla Open 2026",
+    "wcaid": "2024YEZH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 86,
+    "name": "Chuntian Long (龙椿天)",
+    "gender": "男",
+    "result": "20.98",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017LONG15",
+    "province": "广东",
+    "city": "茂名"
+  },
+  {
+    "rank": 87,
+    "name": "Wenjun Luo (罗文俊)",
+    "gender": "男",
+    "result": "21.27",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024LUOW02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 88,
+    "name": "Yuyang Ding (丁雨阳)",
+    "gender": "男",
+    "result": "22.29",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024DING09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 89,
+    "name": "Zhedong Wang (王哲栋)",
+    "gender": "男",
+    "result": "22.88",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2015WANG83",
+    "province": "浙江",
+    "city": "湖州"
+  },
+  {
+    "rank": 90,
+    "name": "Jiayu Wang (王佳宇)",
+    "gender": "男",
+    "result": "22.92",
+    "competition": "Luzon Championship 2026",
+    "wcaid": "2010WANG53",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 91,
+    "name": "Jerry Chung (鍾養浩)",
+    "gender": "男",
+    "result": "23.23",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2017HOJE01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 92,
+    "name": "Yuxuan Huang (黄宇轩)",
+    "gender": "男",
+    "result": "23.61",
+    "competition": "Schwerin Open 2026",
+    "wcaid": "2015HUAN32",
+    "province": "安徽",
+    "city": "滁州"
+  },
+  {
+    "rank": 93,
+    "name": "Hao Hu (胡昊)",
+    "gender": "男",
+    "result": "23.87",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025HUHA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 94,
+    "name": "Yuhang Zhong (钟宇航)",
+    "gender": "男",
+    "result": "24.36",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2018ZHON06",
+    "province": "江西",
+    "city": "宜春"
+  },
+  {
+    "rank": 95,
+    "name": "Junhe Liao (廖俊和)",
+    "gender": "男",
+    "result": "25.31",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018LIAO12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 96,
+    "name": "Yiyang Lin (林逸阳)",
+    "gender": "男",
+    "result": "26.24",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2026LINY03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 97,
+    "name": "Yanfu Feng (冯彦福)",
+    "gender": "男",
+    "result": "26.79",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2017FENG22",
+    "province": "山西",
+    "city": "阳泉"
+  },
+  {
+    "rank": 98,
+    "name": "Alex Huang Tsz To (黃梓都)",
+    "gender": "男",
+    "result": "27.16",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025HUAN58",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 99,
+    "name": "Minxing Zhang (张敏行)",
+    "gender": "女",
+    "result": "27.23",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023ZHAN23",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 100,
+    "name": "Shuyang Zhang (张舒洋)",
+    "gender": "女",
+    "result": "28.45",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2024ZHAN47",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 101,
+    "name": "Min Wu (吴民)",
+    "gender": "男",
+    "result": "28.77",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2009WUMI01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 102,
+    "name": "Michael Ngan (顏律言)",
+    "gender": "男",
+    "result": "28.89",
+    "competition": "Edinburgh Winter 2026",
+    "wcaid": "2016NGAN02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 103,
+    "name": "Yize Xing (邢羿泽)",
+    "gender": "男",
+    "result": "29.04",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2024XING05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 104,
+    "name": "Yichen Wang (王奕辰)",
+    "gender": "男",
+    "result": "29.13",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024WANG55",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 105,
+    "name": "Jiaqi Jin (靳佳祺)",
+    "gender": "女",
+    "result": "29.80",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024JINJ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 106,
+    "name": "Ranhan Li (李然瀚)",
+    "gender": "男",
+    "result": "31.36",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2026LIRA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 107,
+    "name": "Weikang Zheng (郑炜康)",
+    "gender": "男",
+    "result": "31.43",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018ZHEN42",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 108,
+    "name": "Enze He (贺恩泽)",
+    "gender": "男",
+    "result": "31.79",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025HEEN01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 109,
+    "name": "Ziyi Xu (徐梓翼)",
+    "gender": "男",
+    "result": "32.11",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023XUZI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 110,
+    "name": "Yizhou Liu (刘翼舟)",
+    "gender": "男",
+    "result": "32.49",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2021LIUY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 111,
+    "name": "Deng Jingheng",
+    "gender": "男",
+    "result": "33.57",
+    "competition": "Singapore Warm Up January 2026",
+    "wcaid": "2025JING01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 112,
+    "name": "Chengshuo Zhu (朱成硕)",
+    "gender": "男",
+    "result": "35.06",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024ZHUC01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 113,
+    "name": "Yutong Liang (梁昱桐)",
+    "gender": "男",
+    "result": "35.62",
+    "competition": "Agoura Winter 2026",
+    "wcaid": "2017LIAN26",
+    "province": "天津",
+    "city": "天津"
+  },
+  {
+    "rank": 114,
+    "name": "Xiang Li (李响)",
+    "gender": "男",
+    "result": "36.37",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2017LIXI13",
+    "province": "河北",
+    "city": "张家口"
+  },
+  {
+    "rank": 115,
+    "name": "Chengjun Chen (陈诚骏)",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024CHEC02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 116,
+    "name": "Yiming Zuo (左一鸣)",
+    "gender": "男",
+    "result": "36.82",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019ZUOY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 117,
+    "name": "Yuncheng Li (李允诚)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "Concordia Turning Winter 2026",
+    "wcaid": "2014LIYU01",
+    "province": "山东",
+    "city": "潍坊"
+  },
+  {
+    "rank": 118,
+    "name": "Haining Tang (唐海宁)",
+    "gender": "男",
+    "result": "38.52",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025TANG12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 119,
+    "name": "Tianyuan Li (李天元)",
+    "gender": "男",
+    "result": "39.14",
+    "competition": "Ulmgedreht 2026",
+    "wcaid": "2017LITI01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 120,
+    "name": "Li Shang Cheng (李尚澄)",
+    "gender": "女",
+    "result": "40.11",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024LISH03",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 121,
+    "name": "Zairong Li (李在容)",
+    "gender": "男",
+    "result": "41.26",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018LIZA02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 122,
+    "name": "Hongjie Zhang (张鸿杰)",
+    "gender": "男",
+    "result": "42.35",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018ZHAH02",
+    "province": "福建",
+    "city": "宁德"
+  },
+  {
+    "rank": 123,
+    "name": "Jiayue Chen (陈嘉悦)",
+    "gender": "男",
+    "result": "42.51",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2026CHEN20",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 124,
+    "name": "Zibo Peng (彭梓博)",
+    "gender": "男",
+    "result": "44.99",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2025PENG07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 125,
+    "name": "Jiacan Su (苏家灿)",
+    "gender": "男",
+    "result": "45.12",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017SUDI01",
+    "province": "广西",
+    "city": "南宁"
+  },
+  {
+    "rank": 126,
+    "name": "Zejia Guo (郭泽嘉)",
+    "gender": "男",
+    "result": "48.63",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018GUOZ01",
+    "province": "广东",
+    "city": "汕尾"
+  },
+  {
+    "rank": 127,
+    "name": "Yu Wang (王禹)",
+    "gender": "男",
+    "result": "56.14",
+    "competition": "Beijing Winter 2026",
+    "wcaid": "2026WANG10",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 128,
+    "name": "Anjie Zhao (赵安洁)",
+    "gender": "女",
+    "result": "1:45.99",
+    "competition": "Just Judge Jura 2026",
+    "wcaid": "2018ZHAO48",
+    "province": "神手谷",
+    "city": "神手谷"
+  }
+]

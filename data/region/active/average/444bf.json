@@ -1,0 +1,272 @@
+[
+  {
+    "rank": 1,
+    "name": "Alvin Cheng Hiu Yeung (鄭曉洋)",
+    "gender": "男",
+    "result": "1:59.50",
+    "competition": "Gros Jouets à Montréal 2025",
+    "wcaid": "2019YEUN01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 2,
+    "name": "Sora Wenjie Xu (徐文杰)",
+    "gender": "男",
+    "result": "2:28.79",
+    "competition": "Please Be Quiet Xi'an 2025",
+    "wcaid": "2016XUWE02",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 3,
+    "name": "Jia-Hong Lu (陸嘉宏)",
+    "gender": "男",
+    "result": "2:34.45",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2007LUJI01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 4,
+    "name": "Mengfei Shen (沈梦非)",
+    "gender": "女",
+    "result": "2:37.44",
+    "competition": "Glasgow Spring - Scottish Blind Off 2025",
+    "wcaid": "2018SHEN07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 5,
+    "name": "Ziyi Xu (徐梓翼)",
+    "gender": "男",
+    "result": "3:14.05",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023XUZI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 6,
+    "name": "Yucheng Chen (陈裕铖)",
+    "gender": "男",
+    "result": "3:14.93",
+    "competition": "Please Be Quiet Xi'an 2024",
+    "wcaid": "2015CHEN49",
+    "province": "广东",
+    "city": "东莞"
+  },
+  {
+    "rank": 7,
+    "name": "Yuhang Sun (孙煜航)",
+    "gender": "男",
+    "result": "3:22.63",
+    "competition": "Please Be Quiet Hefei 2025",
+    "wcaid": "2019SUNY09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 8,
+    "name": "Michael Ngan (顏律言)",
+    "gender": "男",
+    "result": "3:23.37",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2016NGAN02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 9,
+    "name": "Zicong Liu (刘子聪)",
+    "gender": "男",
+    "result": "3:30.05",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2024LIUZ11",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 10,
+    "name": "Wenxuan Yue (岳文轩)",
+    "gender": "男",
+    "result": "3:54.28",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015YUEW01",
+    "province": "河南",
+    "city": "洛阳"
+  },
+  {
+    "rank": 11,
+    "name": "Wayne Pi",
+    "gender": "男",
+    "result": "5:15.72",
+    "competition": "Rubik's WCA Asian Championship 2024",
+    "wcaid": "2017PIWA01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 12,
+    "name": "Yifan Cheng (程依凡)",
+    "gender": "男",
+    "result": "5:23.37",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2018CHEY36",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 13,
+    "name": "Yonghao Xu (徐永浩)",
+    "gender": "男",
+    "result": "5:28.41",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2017XUYO01",
+    "province": "广东",
+    "city": "韶关"
+  },
+  {
+    "rank": 14,
+    "name": "Zijun Liu (刘子钧)",
+    "gender": "男",
+    "result": "5:39.38",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2021LIUZ07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 15,
+    "name": "Yifan Wang (王逸帆)",
+    "gender": "男",
+    "result": "5:50.95",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2017WANY29",
+    "province": "福建",
+    "city": "三明"
+  },
+  {
+    "rank": 16,
+    "name": "Ge Shi (石歌)",
+    "gender": "男",
+    "result": "6:34.01",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2024GESH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 17,
+    "name": "Ting He (禾廷)",
+    "gender": "男",
+    "result": "6:48.97",
+    "competition": "Please Be Quiet Xi'an 2024",
+    "wcaid": "2015HETI01",
+    "province": "山西",
+    "city": "大同"
+  },
+  {
+    "rank": 18,
+    "name": "Ng Hoi Ying (吳鎧楹)",
+    "gender": "女",
+    "result": "6:51.77",
+    "competition": "Hong Kong Blind Legends 2024",
+    "wcaid": "2023YING03",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 19,
+    "name": "Max Kwok U Sam (郭愉琛)",
+    "gender": "男",
+    "result": "8:05.87",
+    "competition": "Glasgow Summer - Scottish Blind Off 2024",
+    "wcaid": "2018SAMK01",
+    "province": "澳门",
+    "city": "澳门"
+  },
+  {
+    "rank": 20,
+    "name": "Yuheng Wu (吴雨衡)",
+    "gender": "男",
+    "result": "8:26.59",
+    "competition": "Please Be Quiet Xi'an 2025",
+    "wcaid": "2018WUYU03",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 21,
+    "name": "Jiayue Chen (陈家悦)",
+    "gender": "女",
+    "result": "8:51.24",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2023CHEJ12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 22,
+    "name": "Jiayu Wang (王佳宇)",
+    "gender": "男",
+    "result": "11:15.00",
+    "competition": "Rapid Academy Indonesian Championship 2025",
+    "wcaid": "2010WANG53",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 23,
+    "name": "Jingcai Li (李经才)",
+    "gender": "男",
+    "result": "12:23.00",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2019LIJI25",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 24,
+    "name": "Zaya Qiaolong (俏龙扎雅)",
+    "gender": "女",
+    "result": "13:03.00",
+    "competition": "Please Be Quiet Quanzhou 2025",
+    "wcaid": "2024QIAO03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 25,
+    "name": "Lanshi Zhang (张岚石)",
+    "gender": "男",
+    "result": "14:26.00",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2013ZHAN41",
+    "province": "黑龙江",
+    "city": "哈尔滨"
+  },
+  {
+    "rank": 26,
+    "name": "Yizhi Cui (崔益智)",
+    "gender": "男",
+    "result": "14:45.00",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2016CUIY04",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 27,
+    "name": "Chan Yau Hoi (陳佑愷)",
+    "gender": "男",
+    "result": "24:54.00",
+    "competition": "Hong Kong Blind Legends 2024",
+    "wcaid": "2023HOIC01",
+    "province": "香港",
+    "city": "香港"
+  }
+]

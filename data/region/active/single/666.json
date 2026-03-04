@@ -1,0 +1,7612 @@
+[
+  {
+    "rank": 1,
+    "name": "Ziyu Wu (吴子钰)",
+    "gender": "男",
+    "result": "1:03.30",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2016WUZI04",
+    "province": "河南",
+    "city": "鹤壁"
+  },
+  {
+    "rank": 2,
+    "name": "Kai-Wen Wang (王楷文)",
+    "gender": "男",
+    "result": "1:08.49",
+    "competition": "Maru Cube Day Taiwan 2024",
+    "wcaid": "2015WANG09",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 3,
+    "name": "Anyu Zhang (张安宇)",
+    "gender": "男",
+    "result": "1:12.35",
+    "competition": "Singapore Independence Day 2025",
+    "wcaid": "2012ZHAN08",
+    "province": "陕西",
+    "city": "榆林"
+  },
+  {
+    "rank": 4,
+    "name": "Ivan Li Ka Leong (李嘉亮)",
+    "gender": "男",
+    "result": "1:12.69",
+    "competition": "Selangor Niche 2024",
+    "wcaid": "2015LEON02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 5,
+    "name": "Wei-Ming Zeng (曾唯銘)",
+    "gender": "男",
+    "result": "1:12.88",
+    "competition": "Taipei Summer Open 2025",
+    "wcaid": "2019ZENG10",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 6,
+    "name": "Junliang Huang (黄骏亮)",
+    "gender": "男",
+    "result": "1:14.80",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017HUAN77",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 7,
+    "name": "Rui Yu (余睿)",
+    "gender": "男",
+    "result": "1:16.10",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2019YURU02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 8,
+    "name": "Burno Li Chak Kwan (李澤堃)",
+    "gender": "男",
+    "result": "1:16.91",
+    "competition": "Elmira Miracle 2025",
+    "wcaid": "2017KWAN05",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 9,
+    "name": "Tianlan Geng (耿天澜)",
+    "gender": "男",
+    "result": "1:17.89",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2025GENG04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 10,
+    "name": "Cian-Jyun Yang (楊謙君)",
+    "gender": "男",
+    "result": "1:18.64",
+    "competition": "Rubik's WCA Asian Championship 2024",
+    "wcaid": "2019YANG94",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 11,
+    "name": "Xuyi Wang (汪绪奕)",
+    "gender": "男",
+    "result": "1:19.33",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018WANX10",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 12,
+    "name": "Ping-Yueh Huang (黃品越)",
+    "gender": "男",
+    "result": "1:19.63",
+    "competition": "Taiwan Championship 2024",
+    "wcaid": "2012HUAN12",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 13,
+    "name": "Chongkui Chen (陈崇魁)",
+    "gender": "男",
+    "result": "1:19.79",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2023CHEC12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 14,
+    "name": "Andy Mok Man Cheuk (莫文卓)",
+    "gender": "男",
+    "result": "1:20.27",
+    "competition": "Taipei Summer Open 2025",
+    "wcaid": "2016CHEU04",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 15,
+    "name": "Yinzhi Sha (沙印志)",
+    "gender": "男",
+    "result": "1:20.46",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2019SHAY01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 16,
+    "name": "Zhangshuai Zhou (周章率)",
+    "gender": "男",
+    "result": "1:20.57",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2019ZHOU51",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 17,
+    "name": "Shih-Hao Wang (王士豪)",
+    "gender": "男",
+    "result": "1:20.83",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2015WANG46",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 18,
+    "name": "Yi-Fan Wu (吳亦凡)",
+    "gender": "男",
+    "result": "1:22.04",
+    "competition": "Penang One Bigger 2025",
+    "wcaid": "2010WUIF01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 19,
+    "name": "Yijun Yin (尹伊珺)",
+    "gender": "男",
+    "result": "1:22.06",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2023YINY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 20,
+    "name": "Max Xiong (熊锐明)",
+    "gender": "男",
+    "result": "1:22.57",
+    "competition": "Pickering Favourites Spring 2025",
+    "wcaid": "2015XION03",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 21,
+    "name": "Chun-Pao Ni (倪君寶)",
+    "gender": "男",
+    "result": "1:22.63",
+    "competition": "Rubik's WCA Asian Championship 2024",
+    "wcaid": "2016NIJU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 22,
+    "name": "Haoxuan Zhu (朱皓轩)",
+    "gender": "男",
+    "result": "1:23.25",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2019ZHUH05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 23,
+    "name": "Zixuan Liu (刘子瑄)",
+    "gender": "男",
+    "result": "1:23.75",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2015LIUZ07",
+    "province": "广东",
+    "city": "揭阳"
+  },
+  {
+    "rank": 24,
+    "name": "Xuming Wang (王旭明)",
+    "gender": "男",
+    "result": "1:25.16",
+    "competition": "MYHM Zeer Rangsit Cubing 2025",
+    "wcaid": "2013WANG67",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 25,
+    "name": "Chen Chen (陈晨)",
+    "gender": "男",
+    "result": "1:25.26",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2017CHEN24",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 26,
+    "name": "Zijian Cai (蔡子健)",
+    "gender": "男",
+    "result": "1:26.43",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2017CAIZ03",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 27,
+    "name": "Kai-Lun Cheng (鄭凱倫)",
+    "gender": "男",
+    "result": "1:26.91",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2020CHEN31",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 28,
+    "name": "Max Kwok U Sam (郭愉琛)",
+    "gender": "男",
+    "result": "1:27.02",
+    "competition": "Glasgow Side Events Winter 2026",
+    "wcaid": "2018SAMK01",
+    "province": "澳门",
+    "city": "澳门"
+  },
+  {
+    "rank": 29,
+    "name": "Tianzuo Du (杜天佐)",
+    "gender": "男",
+    "result": "1:27.03",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2021DUTI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 30,
+    "name": "Yen-Chun Hua (華彥鈞)",
+    "gender": "男",
+    "result": "1:27.19",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2018HUAY03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 31,
+    "name": "Aolin Tang (唐奥林)",
+    "gender": "男",
+    "result": "1:27.33",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2017TANG19",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 32,
+    "name": "Jihao Huang (黄继豪)",
+    "gender": "男",
+    "result": "1:28.32",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2019HUAN69",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 33,
+    "name": "Yi-Jen Hsueh (薛以仁)",
+    "gender": "男",
+    "result": "1:28.58",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2016HSUE02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 34,
+    "name": "Shuxiu Jiang (蒋束修)",
+    "gender": "男",
+    "result": "1:28.65",
+    "competition": "Big Cubes in an Alliance Clubhouse 2025",
+    "wcaid": "2023JIAN21",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 35,
+    "name": "Yuzhe Gan (甘宇喆)",
+    "gender": "男",
+    "result": "1:29.16",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018GANY01",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 36,
+    "name": "Yen-An Chen (陳彥安)",
+    "gender": "男",
+    "result": "1:29.40",
+    "competition": "New Taipei Big Cube Day 2024",
+    "wcaid": "2019CHEY31",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 37,
+    "name": "Chih-Hsiang Yang (楊志翔)",
+    "gender": "男",
+    "result": "1:29.45",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2023YANG22",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 38,
+    "name": "Fung Hoi Yin (馮凱賢)",
+    "gender": "男",
+    "result": "1:29.55",
+    "competition": "New Taipei Big Cube Day 2024",
+    "wcaid": "2010YINF01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 39,
+    "name": "Jingming Xu (许菁铭)",
+    "gender": "男",
+    "result": "1:29.70",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017XUJI06",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 40,
+    "name": "Weiqin Yang (杨伟钦)",
+    "gender": "男",
+    "result": "1:29.72",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2021YANG05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 41,
+    "name": "Jiman Huang (黄继满)",
+    "gender": "男",
+    "result": "1:29.76",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025HUAN06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 42,
+    "name": "He-Ping Zheng (鄭和平)",
+    "gender": "男",
+    "result": "1:30.22",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2015ZHEN20",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 43,
+    "name": "Ziyue Peng (彭子悦)",
+    "gender": "男",
+    "result": "1:30.45",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2025PENG03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 44,
+    "name": "Chao-Che Chung (鍾肇哲)",
+    "gender": "男",
+    "result": "1:30.82",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2012CHON03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 45,
+    "name": "Yi-Ho Hsueh (薛以和)",
+    "gender": "男",
+    "result": "1:30.91",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2016HSUE01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 45,
+    "name": "Sheng Cao (曹晟)",
+    "gender": "男",
+    "result": "1:30.91",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2011CAOS01",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 47,
+    "name": "Yuhang Sun (孙煜航)",
+    "gender": "男",
+    "result": "1:31.33",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2019SUNY09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 48,
+    "name": "Xulang Li (黎旭朗)",
+    "gender": "男",
+    "result": "1:31.39",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017LIXU06",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 49,
+    "name": "Zhiyuan Ma (马之元)",
+    "gender": "男",
+    "result": "1:31.83",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2017MAZH04",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 50,
+    "name": "Timothy Kong Wing Sum (江永琛)",
+    "gender": "男",
+    "result": "1:31.87",
+    "competition": "Please Big Cubes Korea 2025",
+    "wcaid": "2015SUMT01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 51,
+    "name": "Xi Zhang (张希)",
+    "gender": "男",
+    "result": "1:32.58",
+    "competition": "Erlangen Open III 2026",
+    "wcaid": "2015ZHAN62",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 52,
+    "name": "Mu-Cheng Liu (劉牧承)",
+    "gender": "男",
+    "result": "1:32.63",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2022LIUM02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 53,
+    "name": "Qingze Li (李庆泽)",
+    "gender": "男",
+    "result": "1:32.80",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2016LIQI03",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 54,
+    "name": "Henry Tang Kun Chung (鄧貫中)",
+    "gender": "男",
+    "result": "1:33.34",
+    "competition": "Rubik's WCA Asian Championship 2024",
+    "wcaid": "2016CHUN07",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 55,
+    "name": "Zekai Li (李泽楷)",
+    "gender": "男",
+    "result": "1:33.39",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2024LISH05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 56,
+    "name": "Jiayang Zhang (张嘉阳)",
+    "gender": "男",
+    "result": "1:33.46",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2018ZHAJ16",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 57,
+    "name": "Tao Sun (孙涛)",
+    "gender": "男",
+    "result": "1:33.53",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2019SUNT02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 58,
+    "name": "Hui Pan (潘晖)",
+    "gender": "男",
+    "result": "1:33.56",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2026PANH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 59,
+    "name": "Yuchong Liu (刘雨翀)",
+    "gender": "男",
+    "result": "1:34.18",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018LIUY38",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 60,
+    "name": "Leung Ka Ho (梁家浩)",
+    "gender": "男",
+    "result": "1:34.45",
+    "competition": "Hong Kong Championship 2025",
+    "wcaid": "2012HOLE01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 61,
+    "name": "Wei-Chen Hsieh (謝維宸)",
+    "gender": "男",
+    "result": "1:34.55",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2019HSIE04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 62,
+    "name": "Jiazhou Li (李佳洲)",
+    "gender": "男",
+    "result": "1:34.58",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2016LIJI05",
+    "province": "四川",
+    "city": "成都"
+  },
+  {
+    "rank": 63,
+    "name": "Yibo Wang (王奕博)",
+    "gender": "男",
+    "result": "1:34.76",
+    "competition": "MarsdeNxN 2024",
+    "wcaid": "2018WANG39",
+    "province": "山东",
+    "city": "青岛"
+  },
+  {
+    "rank": 64,
+    "name": "Yusheng Du (杜宇生)",
+    "gender": "男",
+    "result": "1:35.04",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2015DUYU01",
+    "province": "黑龙江",
+    "city": "佳木斯"
+  },
+  {
+    "rank": 64,
+    "name": "Yiming Lin (林伊铭)",
+    "gender": "女",
+    "result": "1:35.04",
+    "competition": "Thailand Championship 2025",
+    "wcaid": "2024LINY01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 66,
+    "name": "Ryan Chan",
+    "gender": "男",
+    "result": "1:35.14",
+    "competition": "Stevenage September 2025",
+    "wcaid": "2023CHAN16",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 67,
+    "name": "Shek Ho Hin (石灝軒)",
+    "gender": "男",
+    "result": "1:35.27",
+    "competition": "Bangkok Paradise Place Cube Fest 2025",
+    "wcaid": "2016HINS02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 68,
+    "name": "Bo Wang (王擘)",
+    "gender": "男",
+    "result": "1:35.61",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2013WANG69",
+    "province": "西藏",
+    "city": "日喀则"
+  },
+  {
+    "rank": 69,
+    "name": "Zian Song (宋子安)",
+    "gender": "男",
+    "result": "1:35.63",
+    "competition": "Cube Camp in Nakhon Nayok 2024",
+    "wcaid": "2014SONG08",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 70,
+    "name": "Jiahao Deng (邓家豪)",
+    "gender": "男",
+    "result": "1:35.64",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2014DENG08",
+    "province": "广东",
+    "city": "佛山"
+  },
+  {
+    "rank": 71,
+    "name": "Shaoyi Liu (刘少一)",
+    "gender": "男",
+    "result": "1:35.92",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2024LIUS04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 72,
+    "name": "Le Dai (代乐)",
+    "gender": "男",
+    "result": "1:36.29",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018DAIL02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 73,
+    "name": "Zixiong Xu (徐梓雄)",
+    "gender": "男",
+    "result": "1:36.74",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017XUZI03",
+    "province": "广东",
+    "city": "潮州"
+  },
+  {
+    "rank": 74,
+    "name": "Yun-Kai Yeh (葉昀愷)",
+    "gender": "男",
+    "result": "1:36.79",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2022YEHY01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 75,
+    "name": "Lian Li (李联)",
+    "gender": "男",
+    "result": "1:37.15",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2023LILI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 76,
+    "name": "Haoxiang Ying (应浩祥)",
+    "gender": "男",
+    "result": "1:37.50",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016YING02",
+    "province": "福建",
+    "city": "龙岩"
+  },
+  {
+    "rank": 77,
+    "name": "Ganghui Lin (林刚辉)",
+    "gender": "男",
+    "result": "1:37.78",
+    "competition": "Big Cubes in an Alliance Clubhouse 2025",
+    "wcaid": "2014LING04",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 78,
+    "name": "Chan Chun Hei (陳俊熙)",
+    "gender": "男",
+    "result": "1:38.07",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2017CHEJ06",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 79,
+    "name": "Yuanzhe Teng (滕远哲)",
+    "gender": "男",
+    "result": "1:38.21",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2024TENG04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 80,
+    "name": "Peiyuan Chen (陈培源)",
+    "gender": "男",
+    "result": "1:38.30",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2024CHEP04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 81,
+    "name": "Shih-Si Yao (姚詩璽)",
+    "gender": "男",
+    "result": "1:38.81",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2023YAOS03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 82,
+    "name": "Zhibo Xuan (禤志博)",
+    "gender": "男",
+    "result": "1:39.20",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2017XUAN01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 83,
+    "name": "An Hu (胡安)",
+    "gender": "男",
+    "result": "1:39.34",
+    "competition": "Bali Discovery Speedcubing Masters 2024",
+    "wcaid": "2014HUAN07",
+    "province": "湖北",
+    "city": "黄冈"
+  },
+  {
+    "rank": 84,
+    "name": "Yu Chou (周禹)",
+    "gender": "男",
+    "result": "1:39.43",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2021CHOU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 85,
+    "name": "Hao-Jyun Kang (康皓鈞)",
+    "gender": "男",
+    "result": "1:39.73",
+    "competition": "Taipei Summer Open 2025",
+    "wcaid": "2022KANG06",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 86,
+    "name": "Haining Wang (王海宁)",
+    "gender": "女",
+    "result": "1:39.86",
+    "competition": "Singapore Championship 2025",
+    "wcaid": "2018WANH29",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 87,
+    "name": "Zhedong Wang (王哲栋)",
+    "gender": "男",
+    "result": "1:39.87",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2015WANG83",
+    "province": "浙江",
+    "city": "湖州"
+  },
+  {
+    "rank": 88,
+    "name": "Xiang Xiao (肖翔)",
+    "gender": "男",
+    "result": "1:39.88",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2025XIAO11",
+    "province": "广东",
+    "city": "惠州"
+  },
+  {
+    "rank": 89,
+    "name": "Branson Lau (劉朗朗)",
+    "gender": "男",
+    "result": "1:40.29",
+    "competition": "Glasgow Side Events Spring 2025",
+    "wcaid": "2025LAUB01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 90,
+    "name": "Jiachuan Ye (叶佳川)",
+    "gender": "男",
+    "result": "1:40.35",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2021YEJI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 91,
+    "name": "Yuhang Chen (陈宇航)",
+    "gender": "男",
+    "result": "1:40.59",
+    "competition": "Cube Camp in Suan Phueng 2025",
+    "wcaid": "2023CHEY30",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 92,
+    "name": "Yang Zong (宗杨)",
+    "gender": "男",
+    "result": "1:40.67",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2024ZONG02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 93,
+    "name": "Yibo Xu (许一博)",
+    "gender": "男",
+    "result": "1:40.78",
+    "competition": "Good Time at Beletime 2024",
+    "wcaid": "2017XUYI03",
+    "province": "广东",
+    "city": "揭阳"
+  },
+  {
+    "rank": 94,
+    "name": "Zhijie He (何智劼)",
+    "gender": "男",
+    "result": "1:41.24",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2021HEZH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 95,
+    "name": "Tianze Xu (徐天泽)",
+    "gender": "男",
+    "result": "1:41.42",
+    "competition": "Rubik's WCA Asian Championship 2024",
+    "wcaid": "2015XUTI01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 96,
+    "name": "Sirun Wu (吴思润)",
+    "gender": "女",
+    "result": "1:41.51",
+    "competition": "Thailand Championship 2025",
+    "wcaid": "2019WUSI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 97,
+    "name": "Jieming Zhao (赵捷鸣)",
+    "gender": "男",
+    "result": "1:41.54",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2024ZHAO42",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 98,
+    "name": "Haoyu Li (李浩宇)",
+    "gender": "男",
+    "result": "1:41.57",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2024LIHA04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 99,
+    "name": "Yihao Cui (崔艺豪)",
+    "gender": "男",
+    "result": "1:41.61",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2023CUIY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 100,
+    "name": "Lei Liu (刘磊)",
+    "gender": "男",
+    "result": "1:41.93",
+    "competition": "Warm Up at gateway klia2 2024",
+    "wcaid": "2018LIUL01",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 101,
+    "name": "Chenxiao He (何辰骁)",
+    "gender": "男",
+    "result": "1:42.05",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2015HECH02",
+    "province": "天津",
+    "city": "天津"
+  },
+  {
+    "rank": 102,
+    "name": "Kam Chor Kin (甘楚健)",
+    "gender": "男",
+    "result": "1:42.24",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2008GANC02",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 103,
+    "name": "Haoyuan Lu (卢昊元)",
+    "gender": "男",
+    "result": "1:42.34",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025LUHA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 104,
+    "name": "Kaichen Huang (黄楷宸)",
+    "gender": "男",
+    "result": "1:42.42",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023HUAN21",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 105,
+    "name": "Quincy Tang (鄧子謙)",
+    "gender": "男",
+    "result": "1:42.45",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2019TANG28",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 106,
+    "name": "Bo Lu (卢博)",
+    "gender": "男",
+    "result": "1:42.61",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2025LUBO01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 107,
+    "name": "Zekai Huang (黄泽楷)",
+    "gender": "男",
+    "result": "1:42.78",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2025HUAZ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 108,
+    "name": "Zehan Xue (薛泽韩)",
+    "gender": "男",
+    "result": "1:42.82",
+    "competition": "gateway KLIA2 Cube Open 2025",
+    "wcaid": "2018XUEZ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 109,
+    "name": "Chengnuo Han (韩承诺)",
+    "gender": "男",
+    "result": "1:42.83",
+    "competition": "Almaty New Year 2026",
+    "wcaid": "2021HANC01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 110,
+    "name": "Kai-Jie Wu (吳楷傑)",
+    "gender": "男",
+    "result": "1:42.84",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2024WUKA02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 111,
+    "name": "Weisheng Chen (陈伟胜)",
+    "gender": "男",
+    "result": "1:42.89",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2015CHEN52",
+    "province": "广东",
+    "city": "茂名"
+  },
+  {
+    "rank": 112,
+    "name": "Yilin Wang (王艺霖)",
+    "gender": "男",
+    "result": "1:43.00",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2015WANG65",
+    "province": "江苏",
+    "city": "扬州"
+  },
+  {
+    "rank": 113,
+    "name": "Yixin Luo (罗益鑫)",
+    "gender": "男",
+    "result": "1:43.31",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2025LUOY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 114,
+    "name": "Yu-Kai Lin (林昱愷)",
+    "gender": "男",
+    "result": "1:43.35",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2018LINY04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 115,
+    "name": "Zhaoyang Hong (洪兆阳)",
+    "gender": "男",
+    "result": "1:43.37",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016HONG13",
+    "province": "广东",
+    "city": "揭阳"
+  },
+  {
+    "rank": 116,
+    "name": "Jiyi Wang (王吉怡)",
+    "gender": "女",
+    "result": "1:43.41",
+    "competition": "Bristol August 2025",
+    "wcaid": "2017WANJ21",
+    "province": "江苏",
+    "city": "无锡"
+  },
+  {
+    "rank": 117,
+    "name": "Zhenyu Cai (蔡镇宇)",
+    "gender": "男",
+    "result": "1:43.42",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2019CAIZ05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 118,
+    "name": "Yiqin Sun (孙弋钦)",
+    "gender": "男",
+    "result": "1:43.50",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2021SUNY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 119,
+    "name": "Kuo-Hau Wu (吳國豪)",
+    "gender": "男",
+    "result": "1:44.16",
+    "competition": "Taipei Summer Open 2024",
+    "wcaid": "2008WUKU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 120,
+    "name": "Xu Lu (陆旭)",
+    "gender": "男",
+    "result": "1:44.19",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018LUXU01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 121,
+    "name": "Wenjun Luo (罗文俊)",
+    "gender": "男",
+    "result": "1:44.32",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024LUOW02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 122,
+    "name": "Yunhao Lou (娄云皓)",
+    "gender": "男",
+    "result": "1:44.36",
+    "competition": "Burbank Big Cubes 2025",
+    "wcaid": "2017LOUY01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 123,
+    "name": "Yueh-Lin Tsai (蔡岳霖)",
+    "gender": "男",
+    "result": "1:44.45",
+    "competition": "Chien Kuo Cubing Party 2024",
+    "wcaid": "2006TSAI03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 123,
+    "name": "Xiwen Ruan (阮熙文)",
+    "gender": "男",
+    "result": "1:44.45",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2018RUAN04",
+    "province": "湖南",
+    "city": "邵阳"
+  },
+  {
+    "rank": 125,
+    "name": "Xinyu Wang (王欣宇)",
+    "gender": "男",
+    "result": "1:44.51",
+    "competition": "Cube Camp in Suan Phueng 2025",
+    "wcaid": "2017WANX08",
+    "province": "安徽",
+    "city": "安庆"
+  },
+  {
+    "rank": 126,
+    "name": "Yi Li (李燚)",
+    "gender": "男",
+    "result": "1:44.57",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2016LIYI05",
+    "province": "黑龙江",
+    "city": "大庆"
+  },
+  {
+    "rank": 127,
+    "name": "Xiangyu Pan (潘翔宇)",
+    "gender": "男",
+    "result": "1:44.64",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2018PANX02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 128,
+    "name": "Xiaohan Yan (闫小晗)",
+    "gender": "男",
+    "result": "1:44.80",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2017YANX01",
+    "province": "安徽",
+    "city": "阜阳"
+  },
+  {
+    "rank": 129,
+    "name": "Yiqi Zheng (郑伊淇)",
+    "gender": "男",
+    "result": "1:44.90",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2025ZHEN11",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 130,
+    "name": "Hongyu Zhu (朱泓宇)",
+    "gender": "男",
+    "result": "1:45.40",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2017ZHUH05",
+    "province": "云南",
+    "city": "西双版纳"
+  },
+  {
+    "rank": 131,
+    "name": "Ziheng Ma (马子恒)",
+    "gender": "男",
+    "result": "1:45.44",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2012MAZI01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 132,
+    "name": "Kai-Xuan Lin (林楷軒)",
+    "gender": "男",
+    "result": "1:46.01",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2021LINK02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 133,
+    "name": "Jinxuan Ni (倪锦旋)",
+    "gender": "男",
+    "result": "1:46.07",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2019NIJI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 134,
+    "name": "Xingyu Lu (陆星宇)",
+    "gender": "男",
+    "result": "1:46.10",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2017LUXI05",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 135,
+    "name": "Weicheng Luo (罗炜城)",
+    "gender": "男",
+    "result": "1:46.19",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2018LUOW01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 136,
+    "name": "You Wu (吴悠)",
+    "gender": "男",
+    "result": "1:46.24",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017WUYO01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 137,
+    "name": "Haonan Su (苏浩楠)",
+    "gender": "男",
+    "result": "1:46.25",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2016SUHA02",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 138,
+    "name": "Tianhao Mo (莫天皓)",
+    "gender": "男",
+    "result": "1:46.36",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2018MOTI02",
+    "province": "四川",
+    "city": "成都"
+  },
+  {
+    "rank": 139,
+    "name": "Jinyao Chen (陈今尧)",
+    "gender": "男",
+    "result": "1:46.42",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2015CHEN18",
+    "province": "宁夏",
+    "city": "银川"
+  },
+  {
+    "rank": 140,
+    "name": "Shijie Peng (彭世杰)",
+    "gender": "男",
+    "result": "1:46.70",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2019PENG06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 141,
+    "name": "Xuan Liu (刘璇)",
+    "gender": "男",
+    "result": "1:46.76",
+    "competition": "Tokyo Autumn 2025",
+    "wcaid": "2016LIUX15",
+    "province": "天津",
+    "city": "天津"
+  },
+  {
+    "rank": 142,
+    "name": "Jiayi Song (宋稼毅)",
+    "gender": "男",
+    "result": "1:46.87",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2024SONG19",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 143,
+    "name": "Guangtong Quan (全广通)",
+    "gender": "男",
+    "result": "1:46.88",
+    "competition": "Vietnam Championship 2025",
+    "wcaid": "2017QUAN22",
+    "province": "广东",
+    "city": "湛江"
+  },
+  {
+    "rank": 143,
+    "name": "Jinge Li (李金戈)",
+    "gender": "男",
+    "result": "1:46.88",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2021LIJI02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 145,
+    "name": "Kailin Sun (孙凯霖)",
+    "gender": "男",
+    "result": "1:47.03",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2018SUNK01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 146,
+    "name": "Chenyuheng Zhang (张陈禹衡)",
+    "gender": "男",
+    "result": "1:47.13",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2024ZHAN08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 147,
+    "name": "Xuechao Zhang (张学超)",
+    "gender": "男",
+    "result": "1:47.15",
+    "competition": "Cube Camp in Suan Phueng 2025",
+    "wcaid": "2017ZHAX02",
+    "province": "江苏",
+    "city": "徐州"
+  },
+  {
+    "rank": 148,
+    "name": "Xingkai Yin (尹星凯)",
+    "gender": "男",
+    "result": "1:47.17",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2017YINX01",
+    "province": "江苏",
+    "city": "连云港"
+  },
+  {
+    "rank": 149,
+    "name": "Bo-Yan Wu (吳柏彥)",
+    "gender": "男",
+    "result": "1:47.56",
+    "competition": "New Taipei Big Cube Day 2024",
+    "wcaid": "2019WUBO01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 150,
+    "name": "Shao-Heng Hung (洪紹恆)",
+    "gender": "男",
+    "result": "1:47.81",
+    "competition": "Taipei Summer Open 2024",
+    "wcaid": "2011HUNG02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 151,
+    "name": "Chenyang He (何晨阳)",
+    "gender": "男",
+    "result": "1:48.04",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2018HECH04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 152,
+    "name": "Yiqun Liu (刘轶群)",
+    "gender": "男",
+    "result": "1:48.09",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018LIUY44",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 153,
+    "name": "Zhengtian Wang (王政田)",
+    "gender": "男",
+    "result": "1:48.20",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2025WANZ25",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 154,
+    "name": "Cai Ying (应才)",
+    "gender": "男",
+    "result": "1:48.30",
+    "competition": "Lishui Open 2025",
+    "wcaid": "2014YING01",
+    "province": "浙江",
+    "city": "金华"
+  },
+  {
+    "rank": 155,
+    "name": "Zixuan Zou (邹子轩)",
+    "gender": "男",
+    "result": "1:48.35",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2024ZOUZ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 156,
+    "name": "Jichuan Deng (邓冀川)",
+    "gender": "男",
+    "result": "1:48.40",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2019DENG08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 157,
+    "name": "Jiaxin Lu (卢嘉昕)",
+    "gender": "男",
+    "result": "1:48.48",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2016LUJI04",
+    "province": "福建",
+    "city": "泉州"
+  },
+  {
+    "rank": 158,
+    "name": "Chenying Pei (裴琛英)",
+    "gender": "男",
+    "result": "1:48.62",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2016PEIC01",
+    "province": "山西",
+    "city": "太原"
+  },
+  {
+    "rank": 159,
+    "name": "Ruihang Xu (许瑞航)",
+    "gender": "男",
+    "result": "1:48.79",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2017XURU04",
+    "province": "浙江",
+    "city": "丽水"
+  },
+  {
+    "rank": 160,
+    "name": "Haiyang Wang (王海洋)",
+    "gender": "男",
+    "result": "1:48.87",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2023WANH05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 161,
+    "name": "Haoran Li (黎浩然)",
+    "gender": "男",
+    "result": "1:48.98",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024LIHA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 162,
+    "name": "Yinghao Lai (赖樱豪)",
+    "gender": "男",
+    "result": "1:49.05",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2024LAIY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 163,
+    "name": "Ziyu Shang (尚子煜)",
+    "gender": "男",
+    "result": "1:49.35",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018SHAN08",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 164,
+    "name": "Renjie Fang (方仁洁)",
+    "gender": "男",
+    "result": "1:49.45",
+    "competition": "Lishui Open 2025",
+    "wcaid": "2023FANG12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 165,
+    "name": "Yunhui Zhao (赵云晖)",
+    "gender": "男",
+    "result": "1:49.57",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2019ZHAO44",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 166,
+    "name": "Yuwen Su (苏裕文)",
+    "gender": "男",
+    "result": "1:49.58",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2018SUYU04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 167,
+    "name": "Yue Cui (崔月)",
+    "gender": "男",
+    "result": "1:49.61",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2024CUIY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 168,
+    "name": "Junpeng Deng (邓钧澎)",
+    "gender": "男",
+    "result": "1:49.75",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2025DENG18",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 169,
+    "name": "Chang Guo (郭畅)",
+    "gender": "男",
+    "result": "1:49.88",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2024GUOC01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 170,
+    "name": "Guoqin Liu (刘国钦)",
+    "gender": "男",
+    "result": "1:49.93",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017LIUG02",
+    "province": "广东",
+    "city": "东莞"
+  },
+  {
+    "rank": 171,
+    "name": "Shuhui Zhu (朱书晖)",
+    "gender": "男",
+    "result": "1:49.99",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2025ZHUS01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 172,
+    "name": "Zitao Ye (叶子滔)",
+    "gender": "男",
+    "result": "1:50.28",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017YEZI01",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 173,
+    "name": "Jinghong Wang (王靖泓)",
+    "gender": "男",
+    "result": "1:50.30",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024WANG20",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 174,
+    "name": "Sheng-Wen Wang (王聖文)",
+    "gender": "男",
+    "result": "1:50.46",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2010WANG56",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 175,
+    "name": "Jiahao Zhu (朱嘉昊)",
+    "gender": "男",
+    "result": "1:50.76",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023ZHUJ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 176,
+    "name": "Yalun Wu (吴亚伦)",
+    "gender": "男",
+    "result": "1:50.87",
+    "competition": "Rubik's WCA Asian Championship 2024",
+    "wcaid": "2018WUYA01",
+    "province": "浙江",
+    "city": "丽水"
+  },
+  {
+    "rank": 176,
+    "name": "Zhen Yuan (袁桢)",
+    "gender": "男",
+    "result": "1:50.87",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2015YUAN01",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 178,
+    "name": "Ziyun Wang (王子云)",
+    "gender": "男",
+    "result": "1:50.94",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2024WANZ09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 179,
+    "name": "Jie-Yu Xie (謝傑宇)",
+    "gender": "男",
+    "result": "1:50.95",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2019XIEJ05",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 179,
+    "name": "Cheng-Yu Tsai (蔡承佑)",
+    "gender": "男",
+    "result": "1:50.95",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2024TSAI02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 181,
+    "name": "Shidong Zhang (张世东)",
+    "gender": "男",
+    "result": "1:51.09",
+    "competition": "Nub Open Trabuco Hills Fall 2025",
+    "wcaid": "2017ZHAS06",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 182,
+    "name": "Binyu Zhong (钟滨宇)",
+    "gender": "男",
+    "result": "1:51.15",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2019ZHON27",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 183,
+    "name": "Haoyu Liu (刘浩宇)",
+    "gender": "男",
+    "result": "1:51.26",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2025LIUH04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 184,
+    "name": "Zhenjie Yang (杨振家)",
+    "gender": "男",
+    "result": "1:51.67",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2021YANG18",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 185,
+    "name": "Jiajun Liu (刘嘉俊)",
+    "gender": "男",
+    "result": "1:51.86",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019LIUJ03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 186,
+    "name": "Shuojin Feng (冯铄今)",
+    "gender": "男",
+    "result": "1:52.02",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2024FENG05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 187,
+    "name": "Feng Luo (骆枫)",
+    "gender": "男",
+    "result": "1:52.06",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2016LUOF02",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 188,
+    "name": "Zhengtao Yu (俞正涛)",
+    "gender": "男",
+    "result": "1:52.39",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2017YUZH02",
+    "province": "福建",
+    "city": "宁德"
+  },
+  {
+    "rank": 189,
+    "name": "Jeffers Chan",
+    "gender": "男",
+    "result": "1:52.44",
+    "competition": "SA Side State Championship 2025",
+    "wcaid": "2017TUNG16",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 190,
+    "name": "Xiang-Yu Wu (吳享諭)",
+    "gender": "男",
+    "result": "1:52.75",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2019WUXI04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 191,
+    "name": "Chenlai Zhao",
+    "gender": "男",
+    "result": "1:52.76",
+    "competition": "La Côte Open 2025",
+    "wcaid": "2020ZHAO05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 192,
+    "name": "Mingtao Zhong (钟明涛)",
+    "gender": "男",
+    "result": "1:53.13",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2026ZHON02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 193,
+    "name": "Chi Zhang (张弛)",
+    "gender": "男",
+    "result": "1:53.16",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2016ZHAC01",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 194,
+    "name": "Chenhao Ma (马晨皓)",
+    "gender": "男",
+    "result": "1:53.48",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2017MACH03",
+    "province": "天津",
+    "city": "天津"
+  },
+  {
+    "rank": 195,
+    "name": "Zhuoting Qu (屈卓廷)",
+    "gender": "男",
+    "result": "1:53.51",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017QUZH02",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 196,
+    "name": "Zi-Xian Liao (廖子賢)",
+    "gender": "男",
+    "result": "1:53.56",
+    "competition": "Kaohsiung Winter Open 2024",
+    "wcaid": "2012LIAO03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 197,
+    "name": "He Ting Xi (何霆熙)",
+    "gender": "男",
+    "result": "1:53.57",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2019XIHE01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 198,
+    "name": "Daniel Chiu",
+    "gender": "男",
+    "result": "1:53.81",
+    "competition": "Weston-super-Mare Autumn 2025",
+    "wcaid": "2022CHIU06",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 199,
+    "name": "Xiannong Lin (林闲农)",
+    "gender": "男",
+    "result": "1:53.94",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2023LINX04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 200,
+    "name": "Tang-Kai Huang (黃堂愷)",
+    "gender": "男",
+    "result": "1:53.96",
+    "competition": "Philippine Championship 2024",
+    "wcaid": "2017HUAT03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 201,
+    "name": "Yuxiang Huang (黄宇翔)",
+    "gender": "男",
+    "result": "1:53.98",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2025HUAN18",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 202,
+    "name": "Shangze Li (李尚泽)",
+    "gender": "男",
+    "result": "1:54.12",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2021LISH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 203,
+    "name": "Jinhao Cai (蔡锦浩)",
+    "gender": "男",
+    "result": "1:54.14",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2024CAIJ02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 204,
+    "name": "Hongzhuang Ren (任洪壮)",
+    "gender": "男",
+    "result": "1:54.28",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2016RENH02",
+    "province": "吉林",
+    "city": "四平"
+  },
+  {
+    "rank": 205,
+    "name": "Jinhan Wang (王金涵)",
+    "gender": "男",
+    "result": "1:54.54",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2017WANJ24",
+    "province": "山东",
+    "city": "潍坊"
+  },
+  {
+    "rank": 206,
+    "name": "Heyu Fu (付荷语)",
+    "gender": "女",
+    "result": "1:54.60",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2019FUHE01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 207,
+    "name": "Rui-Jun Liu (劉睿鈞)",
+    "gender": "男",
+    "result": "1:54.65",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2011LIUR02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 208,
+    "name": "Youbin Zheng (郑友彬)",
+    "gender": "男",
+    "result": "1:54.73",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2017ZHEN01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 209,
+    "name": "Ziang Yan (晏子昂)",
+    "gender": "男",
+    "result": "1:55.00",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2017YANZ01",
+    "province": "湖北",
+    "city": "武汉"
+  },
+  {
+    "rank": 210,
+    "name": "Rinji Chan Pak Hei (陳柏熹)",
+    "gender": "男",
+    "result": "1:55.01",
+    "competition": "Hong Kong Championship 2025",
+    "wcaid": "2019HEIR01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 210,
+    "name": "Boxun Zhang (张博勋)",
+    "gender": "男",
+    "result": "1:55.01",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024ZHAB01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 212,
+    "name": "Yu-Lun Huang (黃于倫)",
+    "gender": "男",
+    "result": "1:55.12",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2023HUAN31",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 213,
+    "name": "Shu-Yii Luo (駱書翊)",
+    "gender": "男",
+    "result": "1:55.42",
+    "competition": "New Taipei Big Cube Day 2024",
+    "wcaid": "2012LUOS01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 214,
+    "name": "Qi Liu (刘祺)",
+    "gender": "男",
+    "result": "1:55.52",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2016LIUQ05",
+    "province": "江苏",
+    "city": "扬州"
+  },
+  {
+    "rank": 215,
+    "name": "Han Wang (汪涵)",
+    "gender": "男",
+    "result": "1:55.64",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2018WANH17",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 216,
+    "name": "Haoran Jing (荆浩然)",
+    "gender": "男",
+    "result": "1:55.70",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2017JING06",
+    "province": "山东",
+    "city": "济南"
+  },
+  {
+    "rank": 217,
+    "name": "Ding-Hong Ke (柯定紘)",
+    "gender": "男",
+    "result": "1:55.94",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2022KEDI03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 218,
+    "name": "Chan Hay Yin (陳希言)",
+    "gender": "男",
+    "result": "1:56.03",
+    "competition": "Ansan Favorites 2026",
+    "wcaid": "2015YINC01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 219,
+    "name": "Hongtong Zhu (朱泓同)",
+    "gender": "男",
+    "result": "1:56.05",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2018ZHUH05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 220,
+    "name": "Ruotong Jia (贾若桐)",
+    "gender": "男",
+    "result": "1:56.30",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2025JIAR01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 221,
+    "name": "Xianhong Bao (包先宏)",
+    "gender": "男",
+    "result": "1:56.46",
+    "competition": "Íslandsmótið í Töfrateningum 2025",
+    "wcaid": "2025BAOX01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 222,
+    "name": "Yu-Chun Yeh (葉昱均)",
+    "gender": "男",
+    "result": "1:56.50",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2023YEHY01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 223,
+    "name": "Mok Man Kit (莫文傑)",
+    "gender": "男",
+    "result": "1:57.15",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2009KITM01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 224,
+    "name": "Shao-Yu Hu (胡紹宇)",
+    "gender": "男",
+    "result": "1:57.19",
+    "competition": "New Taipei Big Cube Day 2024",
+    "wcaid": "2015HUSH02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 225,
+    "name": "Zuhan Zhang (张祖瀚)",
+    "gender": "男",
+    "result": "1:57.41",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019ZHAZ25",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 226,
+    "name": "Chih-Chuan Yang (楊智全)",
+    "gender": "男",
+    "result": "1:57.62",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2018YANG92",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 227,
+    "name": "Yan-Hung Lai (賴彥宏)",
+    "gender": "男",
+    "result": "1:57.68",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2009LAIY01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 228,
+    "name": "Bingbin Hu (胡冰斌)",
+    "gender": "男",
+    "result": "1:57.79",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2019HUBI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 229,
+    "name": "Gilbert Chen (陳牧灼)",
+    "gender": "男",
+    "result": "1:57.90",
+    "competition": "Taiwan Championship 2024",
+    "wcaid": "2021CHEN64",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 230,
+    "name": "Jingxiang Wang (王景翔)",
+    "gender": "男",
+    "result": "1:58.11",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2024WANG50",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 231,
+    "name": "Alvin Cheng Hiu Yeung (鄭曉洋)",
+    "gender": "男",
+    "result": "1:58.22",
+    "competition": "Pickering NxNxN Winter 2026",
+    "wcaid": "2019YEUN01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 232,
+    "name": "Yizhi Wang (王易知)",
+    "gender": "男",
+    "result": "1:58.27",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018WANG64",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 233,
+    "name": "Yicheng Zhang (张翊程)",
+    "gender": "男",
+    "result": "1:58.34",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2025ZHAN46",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 234,
+    "name": "Wayne Pi",
+    "gender": "男",
+    "result": "1:58.45",
+    "competition": "New Taipei Big Cube Day 2024",
+    "wcaid": "2017PIWA01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 235,
+    "name": "Cheng-Hua Wu (巫政樺)",
+    "gender": "男",
+    "result": "1:58.72",
+    "competition": "Turn 'N Solve Bataan 2024",
+    "wcaid": "2015WUCH01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 236,
+    "name": "Chuhao Guo (郭楚昊)",
+    "gender": "男",
+    "result": "1:58.80",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2020GUOC02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 237,
+    "name": "Chi-Chien Kao (高齊謙)",
+    "gender": "男",
+    "result": "1:58.86",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2022KAOC01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 238,
+    "name": "Haoze Yang (杨浩泽)",
+    "gender": "男",
+    "result": "1:58.88",
+    "competition": "UTP Cube Open 2024",
+    "wcaid": "2018YANG71",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 239,
+    "name": "Yu-Chia Sung (宋祐嘉)",
+    "gender": "男",
+    "result": "1:59.23",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2018SUNG02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 240,
+    "name": "Yanheng Zhu (朱砚珩)",
+    "gender": "男",
+    "result": "1:59.30",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2024ZHUY06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 241,
+    "name": "Juewei Hu (胡珏伟)",
+    "gender": "男",
+    "result": "1:59.33",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2014HUJU02",
+    "province": "浙江",
+    "city": "宁波"
+  },
+  {
+    "rank": 242,
+    "name": "Xudong Yan (闫煦东)",
+    "gender": "男",
+    "result": "1:59.42",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2011YANX01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 243,
+    "name": "Yunliang Zhang (张赟量)",
+    "gender": "男",
+    "result": "1:59.53",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2016ZHAN45",
+    "province": "江苏",
+    "city": "苏州"
+  },
+  {
+    "rank": 244,
+    "name": "Dongzhe Li (李东哲)",
+    "gender": "男",
+    "result": "1:59.62",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2014LIDO01",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 245,
+    "name": "Jui-Hung Liu (劉睿紘)",
+    "gender": "男",
+    "result": "1:59.72",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2022LIUJ03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 246,
+    "name": "Zhuojian Chen (陈卓坚)",
+    "gender": "男",
+    "result": "2:00.02",
+    "competition": "Quick in Quincy 2024",
+    "wcaid": "2015CHEN33",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 247,
+    "name": "Tong Liu (刘通)",
+    "gender": "男",
+    "result": "2:00.15",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2023LIUT02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 248,
+    "name": "Jerry Liu",
+    "gender": "男",
+    "result": "2:00.39",
+    "competition": "Cubing Above the Dinosaurs 2024",
+    "wcaid": "2019LIUT07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 249,
+    "name": "Zhuojia Zhou (周琢嘉)",
+    "gender": "男",
+    "result": "2:00.76",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2024ZHOU23",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 250,
+    "name": "Yuxuan Pan (潘宇轩)",
+    "gender": "男",
+    "result": "2:00.85",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2018PANY07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 251,
+    "name": "Yen-Pin Xiao (蕭彥平)",
+    "gender": "男",
+    "result": "2:00.95",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2010XIAO01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 252,
+    "name": "Yiming Zhuang (庄轶茗)",
+    "gender": "男",
+    "result": "2:01.23",
+    "competition": "Singapore Championship 2025",
+    "wcaid": "2021ZHUA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 253,
+    "name": "Ji-Siang Jian (簡季湘)",
+    "gender": "女",
+    "result": "2:01.27",
+    "competition": "Taipei Summer Open 2025",
+    "wcaid": "2021JIAN09",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 254,
+    "name": "Qijun Miao (缪其隽)",
+    "gender": "男",
+    "result": "2:01.73",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2014MIAO02",
+    "province": "广东",
+    "city": "佛山"
+  },
+  {
+    "rank": 254,
+    "name": "Daoyi Qi (祁道一)",
+    "gender": "男",
+    "result": "2:01.73",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2025QIDA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 256,
+    "name": "Yu-Shi Tzeng (曾瑀希)",
+    "gender": "女",
+    "result": "2:01.74",
+    "competition": "Taipei Summer Open 2025",
+    "wcaid": "2021TZEN01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 257,
+    "name": "Po-Hsien Lai (賴柏憲)",
+    "gender": "男",
+    "result": "2:01.75",
+    "competition": "Taipei Summer Open 2025",
+    "wcaid": "2022LAIP01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 258,
+    "name": "Junqi Feng (冯骏骐)",
+    "gender": "男",
+    "result": "2:01.80",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2015FENG12",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 259,
+    "name": "Shangzhen Liu (刘尚振)",
+    "gender": "男",
+    "result": "2:02.17",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2013LIUS02",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 260,
+    "name": "Matt Mao",
+    "gender": "男",
+    "result": "2:02.24",
+    "competition": "Bay Area Speedcubin' 65 - Berkeley 2024",
+    "wcaid": "2023MAOS01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 261,
+    "name": "Junyu Yi (易俊羽)",
+    "gender": "男",
+    "result": "2:02.26",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2018YIJU01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 262,
+    "name": "Lui Chi Fung (雷智鋒)",
+    "gender": "男",
+    "result": "2:02.43",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2014LUIC01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 263,
+    "name": "Feilong Tang (唐飞龙)",
+    "gender": "男",
+    "result": "2:02.46",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2013TANG07",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 264,
+    "name": "Wu Li (李悟)",
+    "gender": "男",
+    "result": "2:02.50",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2023LIWU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 265,
+    "name": "Xiang Shao (邵翔)",
+    "gender": "男",
+    "result": "2:02.55",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2018SHAO07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 266,
+    "name": "Han Lin (林涵)",
+    "gender": "男",
+    "result": "2:02.64",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2009LINH03",
+    "province": "广东",
+    "city": "中山"
+  },
+  {
+    "rank": 267,
+    "name": "Tianyuan Li (李天元)",
+    "gender": "男",
+    "result": "2:02.69",
+    "competition": "Ulmgedreht 2026",
+    "wcaid": "2017LITI01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 268,
+    "name": "Guanfeng Wu (吴冠锋)",
+    "gender": "男",
+    "result": "2:02.70",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2018WUGU01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 269,
+    "name": "Yung-Hung Cheng (鄭永鴻)",
+    "gender": "男",
+    "result": "2:02.76",
+    "competition": "Taipei Summer Open 2024",
+    "wcaid": "2019CHEY09",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 270,
+    "name": "Weikang Zheng (郑炜康)",
+    "gender": "男",
+    "result": "2:02.78",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2018ZHEN42",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 271,
+    "name": "Zhengzhe Li (李征哲)",
+    "gender": "男",
+    "result": "2:02.79",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2025LIZH07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 272,
+    "name": "Siyuan Chen (陈思源)",
+    "gender": "男",
+    "result": "2:03.15",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2019CHES09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 273,
+    "name": "Chan Sai Chong (陳世聰)",
+    "gender": "男",
+    "result": "2:03.17",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2018CHON01",
+    "province": "澳门",
+    "city": "澳门"
+  },
+  {
+    "rank": 274,
+    "name": "Gaojian Pan (潘高健)",
+    "gender": "男",
+    "result": "2:03.38",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2017PANG08",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 275,
+    "name": "Zhuoheng Li (李卓恒)",
+    "gender": "男",
+    "result": "2:03.39",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2017LIZH20",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 276,
+    "name": "Jinghan Zhang (张璟涵)",
+    "gender": "男",
+    "result": "2:03.46",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2016ZHAN62",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 277,
+    "name": "Yanze Shi (石焱泽)",
+    "gender": "男",
+    "result": "2:03.65",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2018SHIY07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 278,
+    "name": "Ruzhen Ye (叶儒臻)",
+    "gender": "男",
+    "result": "2:03.74",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2009YERU01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 279,
+    "name": "Hong-An Lai (賴泓安)",
+    "gender": "男",
+    "result": "2:03.90",
+    "competition": "Chien Kuo Cubing Party 2024",
+    "wcaid": "2018LAIH01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 279,
+    "name": "Jiashun Wu (吴嘉顺)",
+    "gender": "男",
+    "result": "2:03.90",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2016WUJI01",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 281,
+    "name": "Yu-Chi Hou (侯宥圻)",
+    "gender": "男",
+    "result": "2:03.95",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2018HOUY01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 282,
+    "name": "Yusheng Zheng (郑煜升)",
+    "gender": "男",
+    "result": "2:04.00",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2023ZHEN26",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 283,
+    "name": "Joy Liou Liu (刘丽欧)",
+    "gender": "女",
+    "result": "2:04.01",
+    "competition": "Megaminx og Meget Mere Hvidovre 2026",
+    "wcaid": "2017LIUJ21",
+    "province": "吉林",
+    "city": "吉林"
+  },
+  {
+    "rank": 284,
+    "name": "Lingkun Kong (孔令坤)",
+    "gender": "男",
+    "result": "2:04.09",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2024KONG03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 285,
+    "name": "Yuki Gao",
+    "gender": "女",
+    "result": "2:04.12",
+    "competition": "Australian Nationals 2025",
+    "wcaid": "2019GAOY01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 286,
+    "name": "Zhibo Jin (金智博)",
+    "gender": "男",
+    "result": "2:04.53",
+    "competition": "Rubik's UK Championship 2024",
+    "wcaid": "2018JINZ02",
+    "province": "江苏",
+    "city": "淮安"
+  },
+  {
+    "rank": 287,
+    "name": "Mengfei Shen (沈梦非)",
+    "gender": "女",
+    "result": "2:04.70",
+    "competition": "Rubik's WCA European Championship 2024",
+    "wcaid": "2018SHEN07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 288,
+    "name": "Yu-Chih Chuang (莊雨直)",
+    "gender": "男",
+    "result": "2:04.76",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2023CHUA06",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 289,
+    "name": "Chen-Jyun Pan (潘辰寯)",
+    "gender": "男",
+    "result": "2:04.81",
+    "competition": "Chien Kuo Cubing Party 2024",
+    "wcaid": "2020PANC01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 290,
+    "name": "Tao Guo (郭涛)",
+    "gender": "男",
+    "result": "2:04.98",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2025GUOT01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 291,
+    "name": "Zhijie Yin (尹智杰)",
+    "gender": "男",
+    "result": "2:05.23",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2015YINZ01",
+    "province": "湖南",
+    "city": "郴州"
+  },
+  {
+    "rank": 292,
+    "name": "Pin-Shang Ye (葉品尚)",
+    "gender": "男",
+    "result": "2:05.31",
+    "competition": "New Taipei Big Cube Day 2024",
+    "wcaid": "2022YEPI01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 293,
+    "name": "Qingyang Zhao (赵清杨)",
+    "gender": "男",
+    "result": "2:05.50",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2021ZHAO07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 294,
+    "name": "Yifan He (何一帆)",
+    "gender": "男",
+    "result": "2:05.54",
+    "competition": "Lishui Open 2025",
+    "wcaid": "2025HEYI03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 295,
+    "name": "Yiran Peng (彭弈然)",
+    "gender": "男",
+    "result": "2:05.70",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017PENG04",
+    "province": "四川",
+    "city": "成都"
+  },
+  {
+    "rank": 296,
+    "name": "Jingxiang Zhou (周靖翔)",
+    "gender": "男",
+    "result": "2:05.88",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2019ZHOU70",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 297,
+    "name": "Ruei-Ying Huang (黃睿穎)",
+    "gender": "男",
+    "result": "2:05.94",
+    "competition": "Taiwan Championship 2024",
+    "wcaid": "2017HUAN63",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 298,
+    "name": "Zong-Xing Yang (楊宗興)",
+    "gender": "男",
+    "result": "2:06.19",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2018YANG70",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 299,
+    "name": "Yiming Liu (刘一鸣)",
+    "gender": "男",
+    "result": "2:06.27",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2009LIUY03",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 300,
+    "name": "Xunyi Zhao (赵勋祎)",
+    "gender": "男",
+    "result": "2:06.40",
+    "competition": "SA Side State Championship 2025",
+    "wcaid": "2024ZHAO01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 301,
+    "name": "Junzhong Chen (陈浚中)",
+    "gender": "男",
+    "result": "2:06.43",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2018CHEN60",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 302,
+    "name": "Jiahe Tang (唐嘉禾)",
+    "gender": "男",
+    "result": "2:06.57",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2017TANG20",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 303,
+    "name": "Han Su (苏涵)",
+    "gender": "男",
+    "result": "2:06.63",
+    "competition": "Lishui Open 2025",
+    "wcaid": "2021SUHA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 304,
+    "name": "Yifeng Pei (裴一丰)",
+    "gender": "男",
+    "result": "2:06.85",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2023PEIY01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 305,
+    "name": "Zhiyi Ye (叶智毅)",
+    "gender": "男",
+    "result": "2:07.22",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018YEZH03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 306,
+    "name": "Yuhao Sun (孙雨昊)",
+    "gender": "男",
+    "result": "2:07.35",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2014SUNY02",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 307,
+    "name": "Yuhang Wang (王宇航)",
+    "gender": "男",
+    "result": "2:07.47",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2024WANG70",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 308,
+    "name": "Jingqi Zhang",
+    "gender": "男",
+    "result": "2:07.61",
+    "competition": "La Côte Open 2025",
+    "wcaid": "2016ZHAJ08",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 309,
+    "name": "Zirui Wang (王子睿)",
+    "gender": "男",
+    "result": "2:07.89",
+    "competition": "Tokyo Autumn 2025",
+    "wcaid": "2019WANG36",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 310,
+    "name": "Xinrui Lü (吕鑫睿)",
+    "gender": "男",
+    "result": "2:07.92",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2025LUXI02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 311,
+    "name": "Haiming Chen (陈海铭)",
+    "gender": "男",
+    "result": "2:07.93",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2017CHEN01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 312,
+    "name": "Yuxuan Wu (吴雨轩)",
+    "gender": "男",
+    "result": "2:07.95",
+    "competition": "NUS Open 2025",
+    "wcaid": "2017WUYU10",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 313,
+    "name": "Yifan Cheng (程依凡)",
+    "gender": "男",
+    "result": "2:07.96",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2018CHEY36",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 314,
+    "name": "Yanjierui Li (李延杰睿)",
+    "gender": "男",
+    "result": "2:08.24",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2017LIYA07",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 315,
+    "name": "Pengrui Xiang (向鹏睿)",
+    "gender": "男",
+    "result": "2:08.71",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2017XIAN07",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 316,
+    "name": "Yu-Tse Lee (李侑澤)",
+    "gender": "男",
+    "result": "2:08.78",
+    "competition": "Kaohsiung Winter Open 2024",
+    "wcaid": "2022LEEY05",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 317,
+    "name": "Shilan Wang (王石蓝)",
+    "gender": "男",
+    "result": "2:08.93",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2017WANG03",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 318,
+    "name": "Michael Ngan (顏律言)",
+    "gender": "男",
+    "result": "2:09.09",
+    "competition": "Rubik's Irish Championship 2025",
+    "wcaid": "2016NGAN02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 319,
+    "name": "Ryan Tang Chi Hang (鄧智恒)",
+    "gender": "男",
+    "result": "2:09.16",
+    "competition": "Busan Spring 2024",
+    "wcaid": "2019HANG02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 320,
+    "name": "Zhihan Liu (刘智涵)",
+    "gender": "男",
+    "result": "2:09.25",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2017LIUZ21",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 321,
+    "name": "Feng Shi (石峰)",
+    "gender": "男",
+    "result": "2:09.33",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2023SHIF04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 321,
+    "name": "Bojun Hu (胡博钧)",
+    "gender": "男",
+    "result": "2:09.33",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2013HUBO01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 323,
+    "name": "Xin-Hui Huang (黃歆惠)",
+    "gender": "女",
+    "result": "2:09.41",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2023HUAN22",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 324,
+    "name": "Yi-En Tsai (蔡以恩)",
+    "gender": "男",
+    "result": "2:09.62",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2022TSAI08",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 325,
+    "name": "Zheyi Gao (郜哲屹)",
+    "gender": "男",
+    "result": "2:09.66",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018GAOZ06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 326,
+    "name": "Junliang Li (李俊良)",
+    "gender": "男",
+    "result": "2:09.75",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2018LIJU06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 327,
+    "name": "Yu-You Guo (郭昱佑)",
+    "gender": "男",
+    "result": "2:09.97",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2022GUOY01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 328,
+    "name": "Xuezhong Deng (邓学中)",
+    "gender": "男",
+    "result": "2:10.32",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2024DENG09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 329,
+    "name": "Guan-Yi Li (李冠毅)",
+    "gender": "男",
+    "result": "2:10.39",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2020LIGU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 330,
+    "name": "Qihang Yang (杨齐航)",
+    "gender": "男",
+    "result": "2:10.60",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2023YANG90",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 331,
+    "name": "Haohan Zheng (郑皓涵)",
+    "gender": "男",
+    "result": "2:10.79",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2019ZHEN38",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 332,
+    "name": "Jianming Yang (杨剑鸣)",
+    "gender": "男",
+    "result": "2:10.91",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018YANG12",
+    "province": "河北",
+    "city": "张家口"
+  },
+  {
+    "rank": 333,
+    "name": "Yongzhe Mao (毛勇喆)",
+    "gender": "男",
+    "result": "2:11.11",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2013MAOY01",
+    "province": "山西",
+    "city": "运城"
+  },
+  {
+    "rank": 334,
+    "name": "Liang Sun (孙亮)",
+    "gender": "男",
+    "result": "2:11.35",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025SUNL01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 335,
+    "name": "Bochang Lu (卢伯畅)",
+    "gender": "男",
+    "result": "2:11.65",
+    "competition": "Stevenage March 2025",
+    "wcaid": "2018LUBO01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 336,
+    "name": "Ziyi Xu (徐梓翼)",
+    "gender": "男",
+    "result": "2:11.71",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2023XUZI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 336,
+    "name": "Xuan Wang (王璇)",
+    "gender": "男",
+    "result": "2:11.71",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2025WANG62",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 338,
+    "name": "Yunke Zhang (张云柯)",
+    "gender": "男",
+    "result": "2:11.73",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2014ZHAN11",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 339,
+    "name": "Mingshi Zheng (郑铭师)",
+    "gender": "男",
+    "result": "2:11.75",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016ZHEN28",
+    "province": "广东",
+    "city": "揭阳"
+  },
+  {
+    "rank": 340,
+    "name": "Ruiyang Zhang (张睿扬)",
+    "gender": "男",
+    "result": "2:11.88",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018ZHAR08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 341,
+    "name": "Po-An Lai (賴柏安)",
+    "gender": "男",
+    "result": "2:11.99",
+    "competition": "Taipei Summer Open 2024",
+    "wcaid": "2022LAIP02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 342,
+    "name": "Hui Hing Ho (許鑫豪)",
+    "gender": "男",
+    "result": "2:12.10",
+    "competition": "Rubik's WCA Asian Championship 2024",
+    "wcaid": "2007HOHU01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 343,
+    "name": "Yihan Shen (申忆寒)",
+    "gender": "男",
+    "result": "2:12.35",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2025SHEN21",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 344,
+    "name": "Yonghao Xu (徐永浩)",
+    "gender": "男",
+    "result": "2:12.42",
+    "competition": "Vietnam Championship 2025",
+    "wcaid": "2017XUYO01",
+    "province": "广东",
+    "city": "韶关"
+  },
+  {
+    "rank": 345,
+    "name": "Qiuhao Qian (潜秋豪)",
+    "gender": "男",
+    "result": "2:12.50",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2015QIAN02",
+    "province": "浙江",
+    "city": "金华"
+  },
+  {
+    "rank": 346,
+    "name": "Jianrong Chen (陈健荣)",
+    "gender": "男",
+    "result": "2:12.65",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2017CHEJ11",
+    "province": "广东",
+    "city": "中山"
+  },
+  {
+    "rank": 347,
+    "name": "Yue Shen (申粤)",
+    "gender": "男",
+    "result": "2:12.78",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2015SHEN07",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 348,
+    "name": "An Li (李安)",
+    "gender": "男",
+    "result": "2:12.83",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2018LIAN23",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 349,
+    "name": "Sheng-Fan Tsai (蔡勝帆)",
+    "gender": "男",
+    "result": "2:12.85",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2022TSAI02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 350,
+    "name": "Canzheng Cao (曹参政)",
+    "gender": "男",
+    "result": "2:13.40",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2017CAOC01",
+    "province": "河南",
+    "city": "郑州"
+  },
+  {
+    "rank": 351,
+    "name": "Han Dong (董晗)",
+    "gender": "男",
+    "result": "2:13.44",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2012DONG02",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 352,
+    "name": "Jianxu Chen (陈建旭)",
+    "gender": "男",
+    "result": "2:13.52",
+    "competition": "Georgetown Side Event Day 2026",
+    "wcaid": "2016CHEJ04",
+    "province": "广东",
+    "city": "湛江"
+  },
+  {
+    "rank": 353,
+    "name": "Jiaxian Ye (叶家贤)",
+    "gender": "男",
+    "result": "2:13.68",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2023YEJI02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 354,
+    "name": "Chenjie Zhang (张晨杰)",
+    "gender": "男",
+    "result": "2:13.74",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2019ZHAC09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 355,
+    "name": "Jiaze Li (李嘉泽)",
+    "gender": "男",
+    "result": "2:14.12",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2025LIJI12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 356,
+    "name": "Jiahui Zhu (朱嘉辉)",
+    "gender": "男",
+    "result": "2:14.18",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2015ZHUJ05",
+    "province": "浙江",
+    "city": "宁波"
+  },
+  {
+    "rank": 357,
+    "name": "Hayden Ngan Chu Hay (顏曙曦)",
+    "gender": "男",
+    "result": "2:14.32",
+    "competition": "La La Land 2024",
+    "wcaid": "2016HAYH01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 358,
+    "name": "Heyang Cai (蔡和杨)",
+    "gender": "男",
+    "result": "2:14.38",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2017CAIH06",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 359,
+    "name": "Wentai Li (李文泰)",
+    "gender": "男",
+    "result": "2:14.39",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2024LIWE01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 360,
+    "name": "Zhe Wang (王哲)",
+    "gender": "男",
+    "result": "2:14.40",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2019WANZ21",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 361,
+    "name": "Yuqi Wang (王钰琪)",
+    "gender": "女",
+    "result": "2:14.46",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2024WANY05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 362,
+    "name": "Loïc Zhang",
+    "gender": "男",
+    "result": "2:14.77",
+    "competition": "Chevry Miel 2025",
+    "wcaid": "2022ZHAN31",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 363,
+    "name": "Siheng Chen (陈思衡)",
+    "gender": "男",
+    "result": "2:14.86",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2021CHEN15",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 364,
+    "name": "Tsung-Kai Chang (張宗楷)",
+    "gender": "男",
+    "result": "2:14.92",
+    "competition": "Chien Kuo Cubing Party 2024",
+    "wcaid": "2013CHAN08",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 365,
+    "name": "Zeyu Ma (马泽余)",
+    "gender": "男",
+    "result": "2:15.13",
+    "competition": "South Jersey Speedsolving 2024",
+    "wcaid": "2018MAZE01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 366,
+    "name": "Zeqian Liu (刘泽谦)",
+    "gender": "男",
+    "result": "2:15.18",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2025LIUZ07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 367,
+    "name": "Xiao Sun (孙晓)",
+    "gender": "男",
+    "result": "2:15.22",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2019SUNX01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 368,
+    "name": "Xiaotian Ma (马晓田)",
+    "gender": "男",
+    "result": "2:15.30",
+    "competition": "Vietnam Championship 2025",
+    "wcaid": "2020MAXI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 369,
+    "name": "Gavin Panfeng Jiang (江攀峰)",
+    "gender": "男",
+    "result": "2:15.32",
+    "competition": "Bay Area Speedcubin' 65 - Berkeley 2024",
+    "wcaid": "2019JIAN46",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 370,
+    "name": "Cong-Yu Huang (黃琮煜)",
+    "gender": "男",
+    "result": "2:15.36",
+    "competition": "Maru Cube Day Taiwan 2024",
+    "wcaid": "2021HUAN33",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 371,
+    "name": "Renjian Chen (陈仁键)",
+    "gender": "男",
+    "result": "2:15.42",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2016CHER03",
+    "province": "广东",
+    "city": "茂名"
+  },
+  {
+    "rank": 372,
+    "name": "Jiahao Han (韩嘉豪)",
+    "gender": "男",
+    "result": "2:15.48",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2025HANJ03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 373,
+    "name": "Shangtong Fu (傅上桐)",
+    "gender": "女",
+    "result": "2:15.99",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2017FUSH01",
+    "province": "广东",
+    "city": "佛山"
+  },
+  {
+    "rank": 374,
+    "name": "Shuchang Ying (应舒畅)",
+    "gender": "男",
+    "result": "2:16.08",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2016YING06",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 375,
+    "name": "Yiheng Jiang (姜懿恒)",
+    "gender": "男",
+    "result": "2:16.10",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2024JIAN20",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 376,
+    "name": "Yan Luk (陸昕)",
+    "gender": "女",
+    "result": "2:16.11",
+    "competition": "Pickering Favourites Fall 2025",
+    "wcaid": "2019YANL01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 377,
+    "name": "Yihuan Jiang (姜懿桓)",
+    "gender": "男",
+    "result": "2:16.23",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2023JIAN33",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 378,
+    "name": "Yifan Wang (王逸帆)",
+    "gender": "男",
+    "result": "2:16.33",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2017WANY29",
+    "province": "福建",
+    "city": "三明"
+  },
+  {
+    "rank": 379,
+    "name": "Binwei Fu (付彬炜)",
+    "gender": "男",
+    "result": "2:16.39",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2024FUBI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 380,
+    "name": "Pei-Ni Chiang (江霈妮)",
+    "gender": "女",
+    "result": "2:16.40",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2022CHIA01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 381,
+    "name": "Haidong Feng (冯海栋)",
+    "gender": "男",
+    "result": "2:16.49",
+    "competition": "Lishui Open 2025",
+    "wcaid": "2024FENG08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 382,
+    "name": "Shih-Wen Su (蘇詩文)",
+    "gender": "男",
+    "result": "2:16.53",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2022SUSH01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 383,
+    "name": "Chan Yun Yung (陳潤蓉)",
+    "gender": "女",
+    "result": "2:16.61",
+    "competition": "Taipei Summer Open 2024",
+    "wcaid": "2017YUNG01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 384,
+    "name": "Yixiang Gao (高翊翔)",
+    "gender": "男",
+    "result": "2:17.18",
+    "competition": "Lishui Open 2025",
+    "wcaid": "2019GAOY05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 385,
+    "name": "Jerry Chung (鍾養浩)",
+    "gender": "男",
+    "result": "2:17.44",
+    "competition": "Hong Kong Championship 2025",
+    "wcaid": "2017HOJE01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 386,
+    "name": "Wuouran Liu (刘巫偶然)",
+    "gender": "男",
+    "result": "2:17.63",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2019LIUW05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 387,
+    "name": "Congxi Liu (刘淙溪)",
+    "gender": "男",
+    "result": "2:17.64",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018LIUC22",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 388,
+    "name": "Yubo Ji (纪宇博)",
+    "gender": "男",
+    "result": "2:17.69",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2017JIYU01",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 389,
+    "name": "Yang Li (李扬)",
+    "gender": "男",
+    "result": "2:18.65",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2012LIYA01",
+    "province": "河北",
+    "city": "石家庄"
+  },
+  {
+    "rank": 390,
+    "name": "Huixuan Shi (施慧轩)",
+    "gender": "男",
+    "result": "2:18.70",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2013SHIH03",
+    "province": "黑龙江",
+    "city": "牡丹江"
+  },
+  {
+    "rank": 391,
+    "name": "Dunhui Xiao (肖敦慧)",
+    "gender": "男",
+    "result": "2:18.71",
+    "competition": "Mainzelcubing 2025",
+    "wcaid": "2018XIAO03",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 392,
+    "name": "Yongjie Yan (严勇杰)",
+    "gender": "男",
+    "result": "2:18.76",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2017YANY06",
+    "province": "江西",
+    "city": "上饶"
+  },
+  {
+    "rank": 393,
+    "name": "Yehui Liang (梁烨辉)",
+    "gender": "男",
+    "result": "2:18.88",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017LIAN43",
+    "province": "广东",
+    "city": "江门"
+  },
+  {
+    "rank": 394,
+    "name": "Yue Jiang (蒋越)",
+    "gender": "男",
+    "result": "2:18.90",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2016JIAN02",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 395,
+    "name": "Jian Wu (吴建)",
+    "gender": "男",
+    "result": "2:19.06",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015WUJI02",
+    "province": "江西",
+    "city": "上饶"
+  },
+  {
+    "rank": 396,
+    "name": "Tian-Sin Yang (楊天心)",
+    "gender": "女",
+    "result": "2:19.13",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2016YANG20",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 397,
+    "name": "Yiqun Fan (樊轶群)",
+    "gender": "男",
+    "result": "2:19.16",
+    "competition": "Lishui Open 2025",
+    "wcaid": "2010FANY01",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 398,
+    "name": "Qichen Hu (胡启辰)",
+    "gender": "男",
+    "result": "2:19.23",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2025HUQI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 399,
+    "name": "Jie Shi (史杰)",
+    "gender": "男",
+    "result": "2:19.95",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2018SHIJ05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 400,
+    "name": "Nanbin Zhang (张楠彬)",
+    "gender": "男",
+    "result": "2:19.99",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2009ZHAN52",
+    "province": "广东",
+    "city": "汕头"
+  },
+  {
+    "rank": 401,
+    "name": "Kangzhan Wei (魏康展)",
+    "gender": "男",
+    "result": "2:20.36",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018WEIK02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 402,
+    "name": "Meng Chon Kuok (郭明臻)",
+    "gender": "女",
+    "result": "2:20.44",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023KUOK01",
+    "province": "澳门",
+    "city": "澳门"
+  },
+  {
+    "rank": 403,
+    "name": "Jia-Wei Yu (游家瑋)",
+    "gender": "男",
+    "result": "2:20.60",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2024YOUJ01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 404,
+    "name": "Wong Pat Lun (黃柏綸)",
+    "gender": "男",
+    "result": "2:21.08",
+    "competition": "Bristol August 2025",
+    "wcaid": "2023LUNW01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 405,
+    "name": "Bowen Deng (邓博文)",
+    "gender": "男",
+    "result": "2:21.26",
+    "competition": "West Coast Cubing Tour: Berkeley 2025",
+    "wcaid": "2009DENG01",
+    "province": "湖南",
+    "city": "常德"
+  },
+  {
+    "rank": 406,
+    "name": "Boying Li (李博莹)",
+    "gender": "女",
+    "result": "2:21.49",
+    "competition": "Sunway Velocity Mall Open 2024",
+    "wcaid": "2016LIBO05",
+    "province": "山西",
+    "city": "大同"
+  },
+  {
+    "rank": 407,
+    "name": "Xiao Yang (杨潇)",
+    "gender": "男",
+    "result": "2:21.65",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2023YANG99",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 408,
+    "name": "Chun Wei (魏淳)",
+    "gender": "男",
+    "result": "2:21.79",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2017WEIC02",
+    "province": "福建",
+    "city": "泉州"
+  },
+  {
+    "rank": 409,
+    "name": "Zicong Liu (刘子聪)",
+    "gender": "男",
+    "result": "2:21.92",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2024LIUZ11",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 410,
+    "name": "Mingzhi Da (达明志)",
+    "gender": "男",
+    "result": "2:22.00",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2014DAMI01",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 411,
+    "name": "Zeyuan Guo (郭泽原)",
+    "gender": "男",
+    "result": "2:22.02",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2018GUOZ07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 412,
+    "name": "Chin-Shuan Wang (王至玄)",
+    "gender": "男",
+    "result": "2:22.18",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2018WANC17",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 413,
+    "name": "Xingyu Chen (陈星宇)",
+    "gender": "男",
+    "result": "2:22.27",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2012CHEN54",
+    "province": "广东",
+    "city": "茂名"
+  },
+  {
+    "rank": 414,
+    "name": "En-Tzu Lin (林恩慈)",
+    "gender": "女",
+    "result": "2:22.43",
+    "competition": "Taipei Summer Open 2025",
+    "wcaid": "2019LINE02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 415,
+    "name": "Ruidong Guan (官睿东)",
+    "gender": "男",
+    "result": "2:22.48",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2019GUAN11",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 416,
+    "name": "Mingjun He (何明骏)",
+    "gender": "男",
+    "result": "2:22.64",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2024HEMI03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 417,
+    "name": "Chao-Chi Teng (鄧兆棋)",
+    "gender": "男",
+    "result": "2:22.78",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2022TENG02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 418,
+    "name": "Ziyi Chen (陈子怡)",
+    "gender": "女",
+    "result": "2:22.79",
+    "competition": "Rubik's WCA Asian Championship 2024",
+    "wcaid": "2017CHEZ19",
+    "province": "湖北",
+    "city": "武汉"
+  },
+  {
+    "rank": 419,
+    "name": "Zhaoxuan Guan (关兆炫)",
+    "gender": "男",
+    "result": "2:22.86",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023XUAN02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 420,
+    "name": "Kaiyan Ren (任开颜)",
+    "gender": "女",
+    "result": "2:22.97",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2023RENK05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 421,
+    "name": "Haijun Tan (谭海俊)",
+    "gender": "男",
+    "result": "2:23.03",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2011TANH01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 422,
+    "name": "Jiayu Wang (王佳宇)",
+    "gender": "男",
+    "result": "2:23.21",
+    "competition": "Rubik's WCA Asian Championship 2024",
+    "wcaid": "2010WANG53",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 423,
+    "name": "Qinghong Liu (刘庆鸿)",
+    "gender": "男",
+    "result": "2:23.22",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2025LIUQ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 424,
+    "name": "Yicheng Bao (包亦成)",
+    "gender": "男",
+    "result": "2:23.29",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2015BAOY01",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 425,
+    "name": "Zihao Wang (王子豪)",
+    "gender": "男",
+    "result": "2:23.35",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2017WANZ26",
+    "province": "山东",
+    "city": "泰安"
+  },
+  {
+    "rank": 426,
+    "name": "Chenge Liu (刘晨舸)",
+    "gender": "男",
+    "result": "2:23.57",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2011LIUC02",
+    "province": "浙江",
+    "city": "杭州"
+  },
+  {
+    "rank": 427,
+    "name": "Yuxuan Huang (黄宇轩)",
+    "gender": "男",
+    "result": "2:23.71",
+    "competition": "Schwerin Open 2026",
+    "wcaid": "2015HUAN32",
+    "province": "安徽",
+    "city": "滁州"
+  },
+  {
+    "rank": 428,
+    "name": "Taiji Yi (易泰基)",
+    "gender": "男",
+    "result": "2:24.07",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2018YITA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 429,
+    "name": "Xinyue Yuan (袁新玥)",
+    "gender": "女",
+    "result": "2:24.18",
+    "competition": "Cube Camp in Suan Phueng 2025",
+    "wcaid": "2017YUAN17",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 430,
+    "name": "Lichao Liu (刘立超)",
+    "gender": "男",
+    "result": "2:24.28",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018LIUL05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 431,
+    "name": "Fan Li (李凡)",
+    "gender": "男",
+    "result": "2:24.31",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2018LIFA01",
+    "province": "湖南",
+    "city": "邵阳"
+  },
+  {
+    "rank": 432,
+    "name": "Gefeng Guo (郭革锋)",
+    "gender": "男",
+    "result": "2:24.40",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2017GUOG01",
+    "province": "广东",
+    "city": "中山"
+  },
+  {
+    "rank": 433,
+    "name": "Rui Zhu (朱锐)",
+    "gender": "男",
+    "result": "2:24.43",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2016ZHUR01",
+    "province": "广东",
+    "city": "惠州"
+  },
+  {
+    "rank": 434,
+    "name": "Tianyu Yang (杨天宇)",
+    "gender": "男",
+    "result": "2:24.46",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024YANG18",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 435,
+    "name": "Yuzhu Fan (范宇宁)",
+    "gender": "男",
+    "result": "2:24.50",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2025FANY01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 436,
+    "name": "Tong Wang (王瞳)",
+    "gender": "男",
+    "result": "2:24.59",
+    "competition": "Chien Kuo Cubing Party 2024",
+    "wcaid": "2020WANG25",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 437,
+    "name": "Dorian Chan",
+    "gender": "男",
+    "result": "2:24.82",
+    "competition": "Weston-super-Mare Winter 2025",
+    "wcaid": "2023DORI01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 438,
+    "name": "Jiacheng Cai (蔡嘉成)",
+    "gender": "男",
+    "result": "2:25.07",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2017CAIJ02",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 439,
+    "name": "Ruizhe Guo (郭睿哲)",
+    "gender": "男",
+    "result": "2:25.11",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2017GUOR02",
+    "province": "山东",
+    "city": "淄博"
+  },
+  {
+    "rank": 440,
+    "name": "Hui Hing Ngai (許慶毅)",
+    "gender": "男",
+    "result": "2:25.32",
+    "competition": "Stevenage September 2025",
+    "wcaid": "2015NGAI01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 441,
+    "name": "Yihua Li (李易华)",
+    "gender": "男",
+    "result": "2:25.46",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2017LIYI09",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 441,
+    "name": "Tao Wang (王涛)",
+    "gender": "男",
+    "result": "2:25.46",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2024WANT01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 443,
+    "name": "Yuqing Tang (唐雨清)",
+    "gender": "女",
+    "result": "2:25.73",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2024TANG31",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 444,
+    "name": "Chun-Yu Liu (劉軍佑)",
+    "gender": "男",
+    "result": "2:25.85",
+    "competition": "Taipei Summer Open 2024",
+    "wcaid": "2022LIUC04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 445,
+    "name": "Zihao He (何梓豪)",
+    "gender": "男",
+    "result": "2:25.86",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2017HEZI03",
+    "province": "内蒙古",
+    "city": "包头"
+  },
+  {
+    "rank": 446,
+    "name": "Yu-Shen Zhang (張昱紳)",
+    "gender": "男",
+    "result": "2:26.29",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2025ZHAY03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 447,
+    "name": "Hao Liu (刘昊)",
+    "gender": "男",
+    "result": "2:26.62",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2017LIUH02",
+    "province": "山东",
+    "city": "青岛"
+  },
+  {
+    "rank": 448,
+    "name": "Maoxuan Chen (陈茂轩)",
+    "gender": "男",
+    "result": "2:26.68",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2018CHEM01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 449,
+    "name": "Yelong Wei (魏业隆)",
+    "gender": "男",
+    "result": "2:26.82",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2013WEIY02",
+    "province": "黑龙江",
+    "city": "哈尔滨"
+  },
+  {
+    "rank": 450,
+    "name": "Lau Chung Shun (劉重信)",
+    "gender": "男",
+    "result": "2:26.92",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2023SHUN03",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 451,
+    "name": "Zhiqiang Kong (孔志强)",
+    "gender": "男",
+    "result": "2:27.49",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2017KONG04",
+    "province": "甘肃",
+    "city": "临夏"
+  },
+  {
+    "rank": 452,
+    "name": "Jiacan Su (苏家灿)",
+    "gender": "男",
+    "result": "2:28.06",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2017SUDI01",
+    "province": "广西",
+    "city": "南宁"
+  },
+  {
+    "rank": 453,
+    "name": "Wangkang Zhu (朱旺康)",
+    "gender": "男",
+    "result": "2:28.16",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2016ZHUW02",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 454,
+    "name": "Yingming Song (宋映鸣)",
+    "gender": "男",
+    "result": "2:28.33",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2024SONG20",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 455,
+    "name": "Xinrui Zhang (张昕瑞)",
+    "gender": "男",
+    "result": "2:28.52",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2017ZHAX11",
+    "province": "江西",
+    "city": "南昌"
+  },
+  {
+    "rank": 456,
+    "name": "Jeco Lau (劉俊僑)",
+    "gender": "男",
+    "result": "2:28.62",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019KIUJ01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 457,
+    "name": "Teng Wang (王腾)",
+    "gender": "男",
+    "result": "2:28.79",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2018WANT04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 458,
+    "name": "Jingcai Li (李经才)",
+    "gender": "男",
+    "result": "2:28.92",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2019LIJI25",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 458,
+    "name": "Han Wang (王瀚)",
+    "gender": "男",
+    "result": "2:28.92",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2016WANH03",
+    "province": "江西",
+    "city": "南昌"
+  },
+  {
+    "rank": 460,
+    "name": "Gengchen Hua (华庚宸)",
+    "gender": "男",
+    "result": "2:29.04",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2024HUAG01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 461,
+    "name": "Kangjin Liu (刘康琎)",
+    "gender": "男",
+    "result": "2:29.13",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025LIUK05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 462,
+    "name": "Hao Wang (王浩)",
+    "gender": "男",
+    "result": "2:29.15",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2018WANH02",
+    "province": "浙江",
+    "city": "宁波"
+  },
+  {
+    "rank": 463,
+    "name": "Boxuan Fan (范柏轩)",
+    "gender": "男",
+    "result": "2:29.18",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2016FANB01",
+    "province": "广东",
+    "city": "茂名"
+  },
+  {
+    "rank": 464,
+    "name": "Runxi Zhou (周润希)",
+    "gender": "男",
+    "result": "2:29.21",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2024ZHOU18",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 465,
+    "name": "Andy Wu",
+    "gender": "男",
+    "result": "2:29.26",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2024WUAN02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 466,
+    "name": "Wenqiang Yan (严文强)",
+    "gender": "男",
+    "result": "2:29.56",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2016YANW01",
+    "province": "广东",
+    "city": "阳江"
+  },
+  {
+    "rank": 467,
+    "name": "Yuxiang Feng (奉于翔)",
+    "gender": "男",
+    "result": "2:29.77",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2017FENG35",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 468,
+    "name": "Kegang Hao (郝克钢)",
+    "gender": "男",
+    "result": "2:29.97",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2024HAOK01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 469,
+    "name": "Jun Fei (费俊)",
+    "gender": "男",
+    "result": "2:30.15",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2016FEIJ02",
+    "province": "江苏",
+    "city": "南通"
+  },
+  {
+    "rank": 470,
+    "name": "Yuxia Luo (罗与夏)",
+    "gender": "男",
+    "result": "2:30.25",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2024LUOY01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 471,
+    "name": "Wei-Zhi Lu (呂煒智)",
+    "gender": "男",
+    "result": "2:30.36",
+    "competition": "Taipei Summer Open 2024",
+    "wcaid": "2019LUWE01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 472,
+    "name": "Lei Zhang (张磊)",
+    "gender": "男",
+    "result": "2:30.40",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2014ZHAN39",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 473,
+    "name": "Mengqi He (何梦旗)",
+    "gender": "男",
+    "result": "2:30.41",
+    "competition": "Singapore Masters 2024",
+    "wcaid": "2016HEME02",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 474,
+    "name": "Yiqun Lin (林逸群)",
+    "gender": "男",
+    "result": "2:30.47",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2014LINY02",
+    "province": "福建",
+    "city": "福州"
+  },
+  {
+    "rank": 475,
+    "name": "Yuxuan Li (李雨轩)",
+    "gender": "男",
+    "result": "2:30.51",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2024LIYU03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 476,
+    "name": "Junxi Jian (简隽希)",
+    "gender": "男",
+    "result": "2:30.58",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017JIAN32",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 476,
+    "name": "Moxuan Sun (孙墨轩)",
+    "gender": "男",
+    "result": "2:30.58",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2018SUNM07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 478,
+    "name": "Yuxuan Zhang (张宇轩)",
+    "gender": "女",
+    "result": "2:30.61",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2024ZHAN10",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 479,
+    "name": "You-Yi Fan (范宥翼)",
+    "gender": "男",
+    "result": "2:30.64",
+    "competition": "Taipei Summer Open 2025",
+    "wcaid": "2023FANY02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 480,
+    "name": "Tzu-Yang Chang (張子洋)",
+    "gender": "男",
+    "result": "2:30.67",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2022CHAN02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 481,
+    "name": "Zhihai Liu (刘之海)",
+    "gender": "男",
+    "result": "2:30.76",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018LIUZ10",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 482,
+    "name": "Zhongcheng Shen (谌重丞)",
+    "gender": "男",
+    "result": "2:31.34",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024SHEN02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 483,
+    "name": "Wenshuo Wang (王文烁)",
+    "gender": "男",
+    "result": "2:31.40",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2024WANG14",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 484,
+    "name": "Shuyang Zhang (张舒洋)",
+    "gender": "女",
+    "result": "2:31.47",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2024ZHAN47",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 485,
+    "name": "Nan Yan (严楠)",
+    "gender": "男",
+    "result": "2:31.67",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2025YANN02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 486,
+    "name": "Ruicheng Tao (陶睿成)",
+    "gender": "男",
+    "result": "2:31.69",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025TAOR02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 487,
+    "name": "Huanyi Tan (谭焕疑)",
+    "gender": "男",
+    "result": "2:31.78",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018TANH04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 488,
+    "name": "Ziyu Wu (吴子煜)",
+    "gender": "男",
+    "result": "2:31.99",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2021WUZI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 489,
+    "name": "Boxi Deng (邓柏禧)",
+    "gender": "男",
+    "result": "2:32.03",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025DENG15",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 490,
+    "name": "Chuan-Chen Ho (何權宸)",
+    "gender": "男",
+    "result": "2:32.09",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2019HOCH04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 491,
+    "name": "Xinyu Wang (王昕雨)",
+    "gender": "女",
+    "result": "2:32.21",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2019WANX22",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 492,
+    "name": "Ming Zheng (郑鸣)",
+    "gender": "男",
+    "result": "2:32.22",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2009ZHEN11",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 493,
+    "name": "Yuheng Wu (吴雨衡)",
+    "gender": "男",
+    "result": "2:32.65",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2018WUYU03",
+    "province": "辽宁",
+    "city": "沈阳"
+  },
+  {
+    "rank": 494,
+    "name": "Wendong Zheng (郑文东)",
+    "gender": "男",
+    "result": "2:32.79",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2019ZHEN07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 495,
+    "name": "Ching-Cheng Hsieh (謝京城)",
+    "gender": "男",
+    "result": "2:32.81",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2013HSIE01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 496,
+    "name": "Anto Kam (甘浩東)",
+    "gender": "男",
+    "result": "2:32.88",
+    "competition": "Bay Area Speedcubin' 55 - San Ramon 2024",
+    "wcaid": "2017TUNG13",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 497,
+    "name": "I-Chuan Lin (林奕全)",
+    "gender": "男",
+    "result": "2:33.42",
+    "competition": "Taipei Summer Open 2025",
+    "wcaid": "2024LINI01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 498,
+    "name": "Yang Pin Xiu (楊品修)",
+    "gender": "男",
+    "result": "2:33.49",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2023XIUY01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 499,
+    "name": "Zeyuan Li (李泽元)",
+    "gender": "男",
+    "result": "2:33.65",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2024LIZE03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 500,
+    "name": "Wanling Xu (徐万凌)",
+    "gender": "男",
+    "result": "2:33.72",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2016XUWA02",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 501,
+    "name": "Xujia Lei (雷旭嘉)",
+    "gender": "男",
+    "result": "2:33.97",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2017LEIX02",
+    "province": "甘肃",
+    "city": "定西"
+  },
+  {
+    "rank": 502,
+    "name": "Weihong Xu (徐维宏)",
+    "gender": "男",
+    "result": "2:34.01",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2025XUWE02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 503,
+    "name": "Shi-Cian Chen (陳士謙)",
+    "gender": "男",
+    "result": "2:34.23",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2023CHES03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 504,
+    "name": "Teng-Yuan Chang (張騰元)",
+    "gender": "男",
+    "result": "2:34.34",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2022CHAN63",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 505,
+    "name": "Shuochen Wang (王硕晨)",
+    "gender": "男",
+    "result": "2:34.38",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2025WANG10",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 506,
+    "name": "Kuang-Yu Cheng (鄭光祐)",
+    "gender": "男",
+    "result": "2:34.55",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2020CHEN22",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 507,
+    "name": "Ming-Long Kao (高銘隆)",
+    "gender": "男",
+    "result": "2:34.60",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2022KAOM01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 508,
+    "name": "Wu Chun Yin (胡俊賢)",
+    "gender": "男",
+    "result": "2:34.64",
+    "competition": "Hong Kong Championship 2025",
+    "wcaid": "2012YINW01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 509,
+    "name": "Xuewei Zhang (章学威)",
+    "gender": "男",
+    "result": "2:34.90",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2018ZHAX04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 509,
+    "name": "Zesheng Li (李泽生)",
+    "gender": "男",
+    "result": "2:34.90",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2016LIZE03",
+    "province": "上海",
+    "city": "上海"
+  },
+  {
+    "rank": 511,
+    "name": "Duan-Lin He (何端綝)",
+    "gender": "男",
+    "result": "2:35.08",
+    "competition": "Maru Cube Day Taiwan 2024",
+    "wcaid": "2014HEDU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 512,
+    "name": "Yi Yang (杨易)",
+    "gender": "男",
+    "result": "2:35.10",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2014YANG08",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 513,
+    "name": "Yufei Hu (胡雨菲)",
+    "gender": "女",
+    "result": "2:35.15",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2017HUYU02",
+    "province": "湖北",
+    "city": "武汉"
+  },
+  {
+    "rank": 514,
+    "name": "Yu-An Dai (戴昱安)",
+    "gender": "男",
+    "result": "2:35.24",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2024DAIY02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 515,
+    "name": "Chenxi Lai (赖辰熙)",
+    "gender": "男",
+    "result": "2:35.36",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018LAIC02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 516,
+    "name": "Zhengkai Xu (徐正凯)",
+    "gender": "男",
+    "result": "2:35.40",
+    "competition": "Rubik's WCA Asian Championship 2024",
+    "wcaid": "2016XUZH06",
+    "province": "江苏",
+    "city": "苏州"
+  },
+  {
+    "rank": 516,
+    "name": "Ting-Xian Lin (林廷縣)",
+    "gender": "男",
+    "result": "2:35.40",
+    "competition": "Maru Cube Day Taiwan 2024",
+    "wcaid": "2011LINJ04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 518,
+    "name": "Jingyu Huang (黄靖宇)",
+    "gender": "男",
+    "result": "2:35.70",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2024HUAN50",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 519,
+    "name": "Shihao Xu (许世豪)",
+    "gender": "男",
+    "result": "2:35.80",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2018XUSH08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 520,
+    "name": "Yuan-Jyun Shih (施元鈞)",
+    "gender": "男",
+    "result": "2:36.00",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2017SHIH04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 521,
+    "name": "Qihang Guo (郭启航)",
+    "gender": "男",
+    "result": "2:36.58",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2023GUOQ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 522,
+    "name": "Maxwell Haoyuan Wu",
+    "gender": "男",
+    "result": "2:36.72",
+    "competition": "West Coast Cubing Western Championship 2025",
+    "wcaid": "2023WUMA01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 523,
+    "name": "Jun Cao (曹骏)",
+    "gender": "男",
+    "result": "2:36.86",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2021CAOJ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 524,
+    "name": "Yuhang Wang (王宇航)",
+    "gender": "男",
+    "result": "2:37.39",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2023WANY03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 525,
+    "name": "Xusheng Hong (洪旭升)",
+    "gender": "男",
+    "result": "2:37.56",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2010HONG07",
+    "province": "广东",
+    "city": "汕头"
+  },
+  {
+    "rank": 526,
+    "name": "Jiacheng Li (李家诚)",
+    "gender": "男",
+    "result": "2:37.59",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025LIJI05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 527,
+    "name": "Shun-Hsin Chang (張舜欣)",
+    "gender": "女",
+    "result": "2:37.61",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2011JHAN01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 528,
+    "name": "Shihao Ou (欧世浩)",
+    "gender": "男",
+    "result": "2:37.96",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2014OUSH01",
+    "province": "广东",
+    "city": "汕头"
+  },
+  {
+    "rank": 529,
+    "name": "Brian Fong Ching (方正)",
+    "gender": "男",
+    "result": "2:38.04",
+    "competition": "Hong Kong Championship 2025",
+    "wcaid": "2023CHIN17",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 530,
+    "name": "Yeung Chun Hei (楊駿希)",
+    "gender": "男",
+    "result": "2:38.10",
+    "competition": "Hong Kong Championship 2024",
+    "wcaid": "2014HEIY01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 531,
+    "name": "Putian Ye (叶溥天)",
+    "gender": "男",
+    "result": "2:38.35",
+    "competition": "Melbourne Summer 2025",
+    "wcaid": "2021YEPU01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 532,
+    "name": "Chenyi Ye (叶晨佾)",
+    "gender": "男",
+    "result": "2:38.69",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018YECH03",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 533,
+    "name": "Tsang Hon Pong (曾漢邦)",
+    "gender": "男",
+    "result": "2:38.71",
+    "competition": "No Parity Mayhem Singapore 2025",
+    "wcaid": "2014PONG01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 534,
+    "name": "Enyu Lu",
+    "gender": "女",
+    "result": "2:38.99",
+    "competition": "Phitsanulok Chill Big & Sides 2026",
+    "wcaid": "2023LUEN03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 535,
+    "name": "Xiujun Shi (史修浚)",
+    "gender": "男",
+    "result": "2:39.03",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2018SHIX03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 536,
+    "name": "Yulong Zhu (朱昱龙)",
+    "gender": "男",
+    "result": "2:39.13",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2019ZHUY07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 537,
+    "name": "Yuan Gao (高原)",
+    "gender": "男",
+    "result": "2:39.50",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2016GAOY02",
+    "province": "辽宁",
+    "city": "铁岭"
+  },
+  {
+    "rank": 538,
+    "name": "Guopeng Huang (黄国鹏)",
+    "gender": "男",
+    "result": "2:39.55",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2021HUAN17",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 539,
+    "name": "Meng-Yi Li (李孟一)",
+    "gender": "男",
+    "result": "2:39.80",
+    "competition": "Thailand Championship 2025",
+    "wcaid": "2011LIME01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 540,
+    "name": "Yu Jin (金煜)",
+    "gender": "男",
+    "result": "2:39.83",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2018JINY05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 541,
+    "name": "Zhihong Lin (林之弘)",
+    "gender": "男",
+    "result": "2:40.06",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2019LINZ05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 542,
+    "name": "Yating Han",
+    "gender": "女",
+    "result": "2:40.08",
+    "competition": "Bay Area Slowcubin' 2025",
+    "wcaid": "2024HANY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 543,
+    "name": "Jiaxiang Feng (冯嘉翔)",
+    "gender": "男",
+    "result": "2:40.21",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018FENG28",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 544,
+    "name": "Jeff Miao",
+    "gender": "男",
+    "result": "2:40.23",
+    "competition": "Cubing at The Cube 2026",
+    "wcaid": "2019MIAO02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 545,
+    "name": "Zih-Siang Huang (黃子翔)",
+    "gender": "男",
+    "result": "2:40.34",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2020HUAN11",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 546,
+    "name": "Jiyuan Wang (王际源)",
+    "gender": "男",
+    "result": "2:40.35",
+    "competition": "Cube Camp in Suan Phueng 2025",
+    "wcaid": "2024WANG96",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 547,
+    "name": "Yuan Gao (高原)",
+    "gender": "男",
+    "result": "2:40.59",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018GAOY07",
+    "province": "河南",
+    "city": "洛阳"
+  },
+  {
+    "rank": 548,
+    "name": "Jiaqin Huang (黄嘉钦)",
+    "gender": "男",
+    "result": "2:40.67",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2019HUAN96",
+    "province": "广东",
+    "city": "惠州"
+  },
+  {
+    "rank": 549,
+    "name": "Jeremy Xi",
+    "gender": "男",
+    "result": "2:40.95",
+    "competition": "Thornhill Spring 2024",
+    "wcaid": "2023XIJE01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 550,
+    "name": "Chenhao Sun (孙晨皓)",
+    "gender": "男",
+    "result": "2:40.96",
+    "competition": "Cubing at The Cube 2024",
+    "wcaid": "2018SUNC02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 551,
+    "name": "Jiashun Li (李嘉顺)",
+    "gender": "男",
+    "result": "2:41.00",
+    "competition": "Lishui Open 2025",
+    "wcaid": "2024LIJI06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 552,
+    "name": "Liu Yik Yung (劉益融)",
+    "gender": "男",
+    "result": "2:41.08",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2023YUNG02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 553,
+    "name": "Haonan Li (李皓楠)",
+    "gender": "男",
+    "result": "2:41.09",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2023LIHA03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 554,
+    "name": "Hengsheng Dai (戴恒盛)",
+    "gender": "男",
+    "result": "2:41.69",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2011DAIH01",
+    "province": "安徽",
+    "city": "合肥"
+  },
+  {
+    "rank": 555,
+    "name": "Yilai Chen (陈奕莱)",
+    "gender": "男",
+    "result": "2:41.86",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2025CHEN62",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 556,
+    "name": "Yifei Ren",
+    "gender": "男",
+    "result": "2:41.97",
+    "competition": "FSUbers 5.0 2024",
+    "wcaid": "2023RENY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 557,
+    "name": "Kejian Shi (史可鉴)",
+    "gender": "男",
+    "result": "2:42.12",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2021SHIK01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 558,
+    "name": "Kwok Chi Hang (郭志亨)",
+    "gender": "男",
+    "result": "2:42.35",
+    "competition": "Tokyo Autumn 2025",
+    "wcaid": "2008HANG02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 559,
+    "name": "Tse Yuet Ming (謝乙銘)",
+    "gender": "男",
+    "result": "2:42.59",
+    "competition": "Manchester June 2024",
+    "wcaid": "2009TSEM01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 560,
+    "name": "Jixuan Wang (王佶萱)",
+    "gender": "男",
+    "result": "2:43.02",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2020WANG20",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 561,
+    "name": "Ting-Yu Liao (廖庭右)",
+    "gender": "男",
+    "result": "2:43.07",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2016LIAO10",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 562,
+    "name": "Siyuan Shi (史思远)",
+    "gender": "男",
+    "result": "2:43.11",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2019SHIS06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 563,
+    "name": "Zejia Guo (郭泽嘉)",
+    "gender": "男",
+    "result": "2:43.41",
+    "competition": "gateway KLIA2 Cube Open 2025",
+    "wcaid": "2018GUOZ01",
+    "province": "广东",
+    "city": "汕尾"
+  },
+  {
+    "rank": 564,
+    "name": "Haokai Wang (王昊凯)",
+    "gender": "男",
+    "result": "2:43.48",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018WANH22",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 565,
+    "name": "Junhe Liao (廖俊和)",
+    "gender": "男",
+    "result": "2:43.93",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2018LIAO12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 566,
+    "name": "Linxiao Xu (徐林霄)",
+    "gender": "男",
+    "result": "2:44.19",
+    "competition": "Lishui Open 2025",
+    "wcaid": "2014XULI01",
+    "province": "天津",
+    "city": "天津"
+  },
+  {
+    "rank": 567,
+    "name": "Hongyuan Fu (傅泓源)",
+    "gender": "男",
+    "result": "2:44.33",
+    "competition": "NxN in Hanoi 2025",
+    "wcaid": "2017FUHO01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 567,
+    "name": "Cheng Yang (楊誠)",
+    "gender": "男",
+    "result": "2:44.33",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2023YANG53",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 569,
+    "name": "Chengshuo Zhu (朱成硕)",
+    "gender": "男",
+    "result": "2:45.26",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2024ZHUC01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 570,
+    "name": "Ziye Zhang (张子烨)",
+    "gender": "男",
+    "result": "2:45.64",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2017ZHAN45",
+    "province": "甘肃",
+    "city": "兰州"
+  },
+  {
+    "rank": 571,
+    "name": "Gaocheng Qu (瞿高丞)",
+    "gender": "男",
+    "result": "2:45.95",
+    "competition": "Lishui Open 2025",
+    "wcaid": "2025QUGA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 572,
+    "name": "Haotian Hu (胡皓天)",
+    "gender": "男",
+    "result": "2:45.96",
+    "competition": "Bigger in Breda 2024",
+    "wcaid": "2022HUHA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 573,
+    "name": "Guo-En Zeng (曾國恩)",
+    "gender": "男",
+    "result": "2:46.04",
+    "competition": "Maru Cube Day Taiwan 2024",
+    "wcaid": "2019ZENG14",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 574,
+    "name": "Rui Yang (杨睿)",
+    "gender": "男",
+    "result": "2:46.10",
+    "competition": "Penn Cube Day Fall 2025",
+    "wcaid": "2009YANG06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 575,
+    "name": "Tam Ming Ki",
+    "gender": "男",
+    "result": "2:46.12",
+    "competition": "Manchester June 2024",
+    "wcaid": "2009KITA01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 576,
+    "name": "Zishuo Zhang (张子硕)",
+    "gender": "男",
+    "result": "2:46.64",
+    "competition": "Malaysia 15th Anniversary Championship 2024",
+    "wcaid": "2016ZHAZ07",
+    "province": "山东",
+    "city": "济宁"
+  },
+  {
+    "rank": 577,
+    "name": "Ruohan Qiu (邱若寒)",
+    "gender": "男",
+    "result": "2:46.75",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2012QIUR01",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 578,
+    "name": "Bang Wan (万邦)",
+    "gender": "男",
+    "result": "2:47.05",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2024WANB03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 579,
+    "name": "Zi-Ning Yen (閻子甯)",
+    "gender": "男",
+    "result": "2:47.31",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2022YENZ02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 580,
+    "name": "Kuan-Ying Li (李冠穎)",
+    "gender": "男",
+    "result": "2:47.75",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2009LIKU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 581,
+    "name": "Wenhao Xiang (向文昊)",
+    "gender": "男",
+    "result": "2:47.81",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025XIAN12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 582,
+    "name": "Deyang Wang (王德阳)",
+    "gender": "男",
+    "result": "2:48.38",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2013WANG76",
+    "province": "辽宁",
+    "city": "大连"
+  },
+  {
+    "rank": 583,
+    "name": "Chao Wei (卫超)",
+    "gender": "男",
+    "result": "2:48.53",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2017WEIC03",
+    "province": "山西",
+    "city": "长治"
+  },
+  {
+    "rank": 584,
+    "name": "Yangbiao Liao (廖扬彪)",
+    "gender": "男",
+    "result": "2:48.70",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2024LIAO15",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 585,
+    "name": "Yixin Qian (钱奕昕)",
+    "gender": "男",
+    "result": "2:49.11",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2024QIAN07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 586,
+    "name": "Duanyu Wu (吴段誉)",
+    "gender": "男",
+    "result": "2:49.21",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2018WUDU01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 587,
+    "name": "Ching-Yuan Cheng (鄭景淵)",
+    "gender": "男",
+    "result": "2:49.51",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2023CHEN82",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 588,
+    "name": "Zheqi Xie (谢哲麒)",
+    "gender": "男",
+    "result": "2:49.72",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018XIEZ03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 589,
+    "name": "Yaxin Song (宋亚新)",
+    "gender": "男",
+    "result": "2:50.02",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2023SONG24",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 590,
+    "name": "Sing-Hao Lian (連星皓)",
+    "gender": "男",
+    "result": "2:50.13",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2024LIAN11",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 591,
+    "name": "Run Wang (王润)",
+    "gender": "男",
+    "result": "2:50.25",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2019WANR11",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 592,
+    "name": "Yonglin Zhong (钟永麟)",
+    "gender": "男",
+    "result": "2:50.65",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019ZHON08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 593,
+    "name": "Wenxuan Xia (夏文轩)",
+    "gender": "男",
+    "result": "2:51.00",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2024XIAW01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 594,
+    "name": "Cindy Xiaoyue Huang (黄小越)",
+    "gender": "女",
+    "result": "2:51.67",
+    "competition": "Washtenaw Qualifiers 2024",
+    "wcaid": "2019HUAN73",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 595,
+    "name": "Li Xiaotian",
+    "gender": "男",
+    "result": "2:51.77",
+    "competition": "Brookline Favorites III 2025",
+    "wcaid": "2019XIAO15",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 596,
+    "name": "Xintong Li (李欣桐)",
+    "gender": "女",
+    "result": "2:52.33",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2016LIXI06",
+    "province": "吉林",
+    "city": "四平"
+  },
+  {
+    "rank": 597,
+    "name": "Yongtao Sun (孙永涛)",
+    "gender": "男",
+    "result": "2:52.94",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2013SUNY02",
+    "province": "河南",
+    "city": "郑州"
+  },
+  {
+    "rank": 598,
+    "name": "Yi-Wei Chen (陳奕瑋)",
+    "gender": "男",
+    "result": "2:53.44",
+    "competition": "Singapore NxNxN 2024",
+    "wcaid": "2020CHEN34",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 599,
+    "name": "Tengwen Zhang (章騰文)",
+    "gender": "男",
+    "result": "2:53.69",
+    "competition": "Chevry Miel 2025",
+    "wcaid": "2025ZHAN50",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 600,
+    "name": "Yuming Liu",
+    "gender": "男",
+    "result": "2:54.02",
+    "competition": "Melbourne Cube Days 2025",
+    "wcaid": "2023LIUY08",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 601,
+    "name": "Cheng-Wei Lin (林澄蔚)",
+    "gender": "男",
+    "result": "2:54.10",
+    "competition": "Maru Cube Day Taiwan 2024",
+    "wcaid": "2015LINC03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 602,
+    "name": "Weizhong Qiu (邱炜中)",
+    "gender": "男",
+    "result": "2:54.25",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2025QIUW01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 603,
+    "name": "Daoming Ye (叶道明)",
+    "gender": "男",
+    "result": "2:54.36",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016YEDA01",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 604,
+    "name": "Yunlin Miao (缪昀林)",
+    "gender": "男",
+    "result": "2:54.94",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2024MIAO03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 605,
+    "name": "Yi-Chen Lee (李奕澄)",
+    "gender": "男",
+    "result": "2:55.11",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2024LEEY10",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 606,
+    "name": "Rui Qin (秦睿)",
+    "gender": "男",
+    "result": "2:55.48",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017QINR02",
+    "province": "福建",
+    "city": "厦门"
+  },
+  {
+    "rank": 607,
+    "name": "Yong Liu (刘勇)",
+    "gender": "男",
+    "result": "2:55.50",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2016LIUY22",
+    "province": "安徽",
+    "city": "淮南"
+  },
+  {
+    "rank": 608,
+    "name": "Danxiao Zhang (张澹潇)",
+    "gender": "男",
+    "result": "2:55.92",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2020ZHAN20",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 609,
+    "name": "Shunan Zhou (周顺铵)",
+    "gender": "男",
+    "result": "2:56.08",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2025ZHOU26",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 610,
+    "name": "Zhenyu Sun (孙振宇)",
+    "gender": "男",
+    "result": "2:56.44",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2017SUNZ03",
+    "province": "重庆",
+    "city": "重庆"
+  },
+  {
+    "rank": 611,
+    "name": "Ziqiang Tong (仝自强)",
+    "gender": "男",
+    "result": "2:56.63",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2016TONG06",
+    "province": "新疆",
+    "city": "乌鲁木齐"
+  },
+  {
+    "rank": 612,
+    "name": "Jiacheng Lou (楼嘉铖)",
+    "gender": "男",
+    "result": "2:56.77",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2025LOUJ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 613,
+    "name": "Bo-Yao Qiu (邱柏堯)",
+    "gender": "男",
+    "result": "2:57.20",
+    "competition": "Maru Cube Day Taiwan 2024",
+    "wcaid": "2021QIUB01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 614,
+    "name": "Haoguang Lyu (吕浩光)",
+    "gender": "男",
+    "result": "2:58.40",
+    "competition": "Cube Camp in Nakhon Nayok 2024",
+    "wcaid": "2017LUHA03",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 615,
+    "name": "Songqi Jiang (姜淞淇)",
+    "gender": "男",
+    "result": "2:58.98",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2019JIAN66",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 616,
+    "name": "Guanda Fu (符冠达)",
+    "gender": "男",
+    "result": "2:59.18",
+    "competition": "Colorado Championship 2024",
+    "wcaid": "2010FUGU01",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 617,
+    "name": "Ruimin Yan (颜瑞民)",
+    "gender": "男",
+    "result": "2:59.73",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2017YANR02",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 618,
+    "name": "Qifeng Wang (王祺丰)",
+    "gender": "男",
+    "result": "3:00.52",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2019WANQ04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 619,
+    "name": "Yiran Wang (王毅然)",
+    "gender": "男",
+    "result": "3:00.67",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2017WANY19",
+    "province": "山西",
+    "city": "晋中"
+  },
+  {
+    "rank": 620,
+    "name": "Beibei Lin (林北北)",
+    "gender": "男",
+    "result": "3:00.94",
+    "competition": "FSUbers 10.0 2025",
+    "wcaid": "2023LINB01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 621,
+    "name": "Siyu Lu (卢思宇)",
+    "gender": "男",
+    "result": "3:01.21",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2018LUSI03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 622,
+    "name": "Jhih-Chi Yang (楊智期)",
+    "gender": "男",
+    "result": "3:02.78",
+    "competition": "Taipei Summer Open 2024",
+    "wcaid": "2019YANG33",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 623,
+    "name": "Qingwei Deng (邓庆威)",
+    "gender": "男",
+    "result": "3:03.66",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2017DENG03",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 624,
+    "name": "Hsiang-Cheng Kan (闞祥誠)",
+    "gender": "男",
+    "result": "3:03.94",
+    "competition": "Vietnam Championship 2025",
+    "wcaid": "2016KANH02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 625,
+    "name": "Ling Yan (严铃)",
+    "gender": "女",
+    "result": "3:04.07",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2015YANL02",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 626,
+    "name": "Zairong Li (李在容)",
+    "gender": "男",
+    "result": "3:04.10",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018LIZA02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 627,
+    "name": "You-Jun Hsieh (謝侑峻)",
+    "gender": "男",
+    "result": "3:04.21",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2019HSIE02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 628,
+    "name": "Guan-Xun Huang (黃冠勳)",
+    "gender": "男",
+    "result": "3:04.42",
+    "competition": "Kaohsiung Winter Open 2024",
+    "wcaid": "2020HUAN17",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 629,
+    "name": "Po-Hao Huang (黃博晧)",
+    "gender": "男",
+    "result": "3:04.71",
+    "competition": "Kaohsiung Winter Open 2024",
+    "wcaid": "2022HUAN55",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 629,
+    "name": "Kun Wang (王堃)",
+    "gender": "男",
+    "result": "3:04.71",
+    "competition": "UCSD Fall 2024",
+    "wcaid": "2017WANK01",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 631,
+    "name": "Jiawei Xu (许佳炜)",
+    "gender": "男",
+    "result": "3:04.96",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018XUJI06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 632,
+    "name": "Haolin Zhang (张昊霖)",
+    "gender": "男",
+    "result": "3:04.99",
+    "competition": "Mega Time Singapore 2024",
+    "wcaid": "2015ZHAN72",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 633,
+    "name": "Yexing Li (李烨星)",
+    "gender": "男",
+    "result": "3:05.17",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2015LIYE01",
+    "province": "河南",
+    "city": "郑州"
+  },
+  {
+    "rank": 634,
+    "name": "Yiyang Ma (马熠阳)",
+    "gender": "男",
+    "result": "3:05.27",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2024MAYI02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 635,
+    "name": "Jiahe Zhang (张家赫)",
+    "gender": "男",
+    "result": "3:05.42",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023ZHAN41",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 636,
+    "name": "Tzu-Heng Lin (林子恆)",
+    "gender": "男",
+    "result": "3:05.57",
+    "competition": "Maru Cube Day Taiwan 2024",
+    "wcaid": "2010LINT01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 637,
+    "name": "Lichi Fang (方力驰)",
+    "gender": "男",
+    "result": "3:05.87",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2018FANG03",
+    "province": "广东",
+    "city": "珠海"
+  },
+  {
+    "rank": 638,
+    "name": "Weifan Huang",
+    "gender": "男",
+    "result": "3:06.10",
+    "competition": "CubingUSA Mid-Atlantic Championship 2025",
+    "wcaid": "2024HUAN03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 639,
+    "name": "Hung-Chun Wang (王竑鈞)",
+    "gender": "男",
+    "result": "3:06.73",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2022WANG42",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 640,
+    "name": "Yuxuan Chen",
+    "gender": "女",
+    "result": "3:07.17",
+    "competition": "Washtenaw Summer 2024",
+    "wcaid": "2011CHEN54",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 641,
+    "name": "Zhiheng Wang (王智恒)",
+    "gender": "男",
+    "result": "3:08.23",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2018WANZ21",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 642,
+    "name": "Yexin Weng (翁业心)",
+    "gender": "男",
+    "result": "3:08.74",
+    "competition": "Canton Countdown 2025",
+    "wcaid": "2019WENG03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 643,
+    "name": "Chenxuan Su (苏宸轩)",
+    "gender": "男",
+    "result": "3:08.86",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2009LINJ06",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 644,
+    "name": "Zifeng Lin (蔺子丰)",
+    "gender": "男",
+    "result": "3:08.91",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2019LINZ09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 645,
+    "name": "Jiahan Wei (魏嘉函)",
+    "gender": "男",
+    "result": "3:09.27",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2019WEIJ03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 646,
+    "name": "Jiarui Li (李家瑞)",
+    "gender": "男",
+    "result": "3:09.56",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2025LIJI07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 647,
+    "name": "Kangshuo Xia (夏康朔)",
+    "gender": "男",
+    "result": "3:09.93",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2024XIAK01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 648,
+    "name": "Chenxing Ma (马晨星)",
+    "gender": "男",
+    "result": "3:09.99",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2017MACH07",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 649,
+    "name": "Qianhan Zhang (张乾翰)",
+    "gender": "男",
+    "result": "3:10.25",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2015ZHAN55",
+    "province": "广东",
+    "city": "潮州"
+  },
+  {
+    "rank": 650,
+    "name": "Nathan Wang (王思文)",
+    "gender": "男",
+    "result": "3:11.04",
+    "competition": "Maple Ridge Favourites 2025",
+    "wcaid": "2023WANG28",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 651,
+    "name": "Bo Gao (高博)",
+    "gender": "男",
+    "result": "3:11.60",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2023GAOB02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 652,
+    "name": "Yuyang Zhang (张语洋)",
+    "gender": "男",
+    "result": "3:11.63",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2025ZHAN96",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 653,
+    "name": "Hongjie Zhang (张鸿杰)",
+    "gender": "男",
+    "result": "3:12.54",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2018ZHAH02",
+    "province": "福建",
+    "city": "宁德"
+  },
+  {
+    "rank": 654,
+    "name": "Qinchen Li (李沁宸)",
+    "gender": "男",
+    "result": "3:12.65",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023LIQI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 655,
+    "name": "Hung-Cheng Chang (張鴻承)",
+    "gender": "男",
+    "result": "3:12.84",
+    "competition": "Taiwan Championship 2024",
+    "wcaid": "2021CHAN15",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 656,
+    "name": "Chia-Leo Lin (林珈樂)",
+    "gender": "男",
+    "result": "3:13.42",
+    "competition": "New Taipei Big Cube Day 2024",
+    "wcaid": "2006LINC01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 657,
+    "name": "Feng Liang (梁锋)",
+    "gender": "男",
+    "result": "3:13.65",
+    "competition": "Warm Up at gateway klia2 2024",
+    "wcaid": "2019LIAN13",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 658,
+    "name": "Lianghai Sui (眭亮海)",
+    "gender": "男",
+    "result": "3:14.40",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2015SUIL01",
+    "province": "江西",
+    "city": "吉安"
+  },
+  {
+    "rank": 659,
+    "name": "Shuai Yuan (袁帅)",
+    "gender": "男",
+    "result": "3:14.69",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2023YUAN17",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 660,
+    "name": "Xiang Li (李响)",
+    "gender": "男",
+    "result": "3:15.03",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2017LIXI13",
+    "province": "河北",
+    "city": "张家口"
+  },
+  {
+    "rank": 661,
+    "name": "Chuanyin Ju (鞠传垠)",
+    "gender": "男",
+    "result": "3:16.23",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2024JUCH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 662,
+    "name": "Yiming Zhang (张益鸣)",
+    "gender": "男",
+    "result": "3:16.50",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2019ZHAY32",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 663,
+    "name": "Seven Yang (杨子熙)",
+    "gender": "男",
+    "result": "3:18.09",
+    "competition": "Don't Go Slow in Wicklow 2025",
+    "wcaid": "2022YANG21",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 664,
+    "name": "Qi Mi (米琦)",
+    "gender": "男",
+    "result": "3:19.07",
+    "competition": "Cube Camp in Nakhon Nayok 2024",
+    "wcaid": "2019MIQI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 665,
+    "name": "Zhi-Chen Cai (蔡智丞)",
+    "gender": "男",
+    "result": "3:19.27",
+    "competition": "Kaohsiung Winter Open 2024",
+    "wcaid": "2021CAIZ03",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 666,
+    "name": "Changyu Wu (吴昌钰)",
+    "gender": "男",
+    "result": "3:19.48",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2017WUCH08",
+    "province": "广东",
+    "city": "中山"
+  },
+  {
+    "rank": 667,
+    "name": "Yu-Hsuan Chang (張祐瑄)",
+    "gender": "男",
+    "result": "3:20.97",
+    "competition": "UoSM Cube Open SOR 2025",
+    "wcaid": "2013CHAN09",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 668,
+    "name": "Hao Chang (常皓)",
+    "gender": "女",
+    "result": "3:21.93",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2015CHAN33",
+    "province": "内蒙古",
+    "city": "乌兰察布"
+  },
+  {
+    "rank": 669,
+    "name": "Paul Sun (孫晨博)",
+    "gender": "男",
+    "result": "3:22.22",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025SUNP01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 670,
+    "name": "Deying Ou (欧德颖)",
+    "gender": "男",
+    "result": "3:22.57",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017OUDE01",
+    "province": "广东",
+    "city": "湛江"
+  },
+  {
+    "rank": 671,
+    "name": "Xuran Zheng (郑旭然)",
+    "gender": "男",
+    "result": "3:23.15",
+    "competition": "Korean Championship 2024",
+    "wcaid": "2014ZHEN02",
+    "province": "黑龙江",
+    "city": "哈尔滨"
+  },
+  {
+    "rank": 672,
+    "name": "Ching-Hsiang Li (李清翔)",
+    "gender": "男",
+    "result": "3:23.34",
+    "competition": "Maru Cube Day Taiwan 2024",
+    "wcaid": "2016LICH02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 673,
+    "name": "Hao Hu (胡昊)",
+    "gender": "男",
+    "result": "3:27.01",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025HUHA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 674,
+    "name": "Zhong Yi Yan",
+    "gender": "男",
+    "result": "3:28.06",
+    "competition": "Manchester June 2024",
+    "wcaid": "2022YANZ02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 675,
+    "name": "Chen-Rui Yu (余晨睿)",
+    "gender": "男",
+    "result": "3:28.19",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2024YUCH04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 676,
+    "name": "Zhenyu Gao (高振宇)",
+    "gender": "男",
+    "result": "3:29.12",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2018GAOZ03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 677,
+    "name": "Yuyang Liu",
+    "gender": "未知",
+    "result": "3:29.88",
+    "competition": "Glasgow Side Events Winter 2026",
+    "wcaid": "2023LIUY03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 678,
+    "name": "Sutong Wang (王苏桐)",
+    "gender": "男",
+    "result": "3:30.04",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2025WANS07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 679,
+    "name": "Dibing Han (韩迪冰)",
+    "gender": "男",
+    "result": "3:30.42",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2026HAND01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 680,
+    "name": "Oumeng Zhang",
+    "gender": "男",
+    "result": "3:30.72",
+    "competition": "Burbank Big Cubes 2025",
+    "wcaid": "2024ZHAN30",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 681,
+    "name": "Zijun Liu (刘子钧)",
+    "gender": "男",
+    "result": "3:30.95",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2021LIUZ07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 682,
+    "name": "Albert So Yik Ban (蘇益品)",
+    "gender": "男",
+    "result": "3:31.19",
+    "competition": "Malaysia Cube Championship 2025",
+    "wcaid": "2022SOAL01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 683,
+    "name": "Jie Chen (陈杰)",
+    "gender": "男",
+    "result": "3:31.25",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2013CHEN81",
+    "province": "江苏",
+    "city": "泰州"
+  },
+  {
+    "rank": 684,
+    "name": "Duo Wang (王舵)",
+    "gender": "男",
+    "result": "3:31.76",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2013WANG48",
+    "province": "内蒙古",
+    "city": "乌兰察布"
+  },
+  {
+    "rank": 685,
+    "name": "Qiang Ma (马强)",
+    "gender": "男",
+    "result": "3:32.13",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2015MAQI02",
+    "province": "陕西",
+    "city": "西安"
+  },
+  {
+    "rank": 686,
+    "name": "Jianxiong Huang (黄健雄)",
+    "gender": "男",
+    "result": "3:32.27",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024HUAJ02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 687,
+    "name": "Jaidon Poraminthara Lin (เจเดิ้น ปรมินทร์ หลิน)",
+    "gender": "男",
+    "result": "3:32.87",
+    "competition": "Robinson Lifestyle Ratchaphruek Cubing 2025",
+    "wcaid": "2019LINJ04",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 688,
+    "name": "Mohan Feng (冯莫涵)",
+    "gender": "女",
+    "result": "3:33.16",
+    "competition": "Penang Cube Masters 2024",
+    "wcaid": "2017FENG33",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 689,
+    "name": "Kate Lee Ka Ching (李家晴)",
+    "gender": "女",
+    "result": "3:33.47",
+    "competition": "Hong Kong Championship 2025",
+    "wcaid": "2023CHIN18",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 690,
+    "name": "En-Ruei Tien (田恩睿)",
+    "gender": "男",
+    "result": "3:34.56",
+    "competition": "New Taipei Big Cube Day 2024",
+    "wcaid": "2021TIEN01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 691,
+    "name": "Chung-Yao Chiang (江仲堯)",
+    "gender": "男",
+    "result": "3:36.62",
+    "competition": "New Taipei Big Cube Day 2024",
+    "wcaid": "2015CHIA05",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 692,
+    "name": "Yen-Lei Jen (任晏磊)",
+    "gender": "男",
+    "result": "3:39.30",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2023JENY01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 693,
+    "name": "Yanrui Xie (谢延睿)",
+    "gender": "男",
+    "result": "3:39.48",
+    "competition": "Binus Speedcubing 2024",
+    "wcaid": "2023YANR02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 694,
+    "name": "Naifan Zhang (张乃凡)",
+    "gender": "男",
+    "result": "3:39.49",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2015ZHAN98",
+    "province": "黑龙江",
+    "city": "齐齐哈尔"
+  },
+  {
+    "rank": 695,
+    "name": "Pengle Li (李鹏乐)",
+    "gender": "男",
+    "result": "3:39.82",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2024LIPE01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 696,
+    "name": "Yijin Wang (王奕锦)",
+    "gender": "男",
+    "result": "3:40.97",
+    "competition": "Beijing University Cube League 2025",
+    "wcaid": "2023WANY05",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 697,
+    "name": "Yu-Xiang Chen (陳禹翔)",
+    "gender": "男",
+    "result": "3:41.97",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2024CHEY24",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 698,
+    "name": "Jingxuan Gan (甘景煊)",
+    "gender": "男",
+    "result": "3:42.02",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2025GANJ01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 699,
+    "name": "Junyan Ou",
+    "gender": "男",
+    "result": "3:42.59",
+    "competition": "CubingUSA Northwest Championship 2024",
+    "wcaid": "2017OUJU01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 700,
+    "name": "Han Wang (王涵)",
+    "gender": "男",
+    "result": "3:43.23",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2023WANH03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 701,
+    "name": "Fang-Ru Yu (余芳儒)",
+    "gender": "女",
+    "result": "3:44.30",
+    "competition": "New Taipei Big Cube Day 2024",
+    "wcaid": "2023YUFA01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 702,
+    "name": "Gordon Cheung",
+    "gender": "男",
+    "result": "3:45.27",
+    "competition": "Leeds Spring 2025",
+    "wcaid": "2022CHEU02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 703,
+    "name": "Yiming Zuo (左一鸣)",
+    "gender": "男",
+    "result": "3:46.94",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2019ZUOY02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 704,
+    "name": "Zaya Qiaolong (俏龙扎雅)",
+    "gender": "女",
+    "result": "3:47.03",
+    "competition": "Celebes Championship 2025",
+    "wcaid": "2024QIAO03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 705,
+    "name": "Ziqi Ding",
+    "gender": "男",
+    "result": "3:47.77",
+    "competition": "Melbourne Summer 2024",
+    "wcaid": "2021DING02",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 706,
+    "name": "Wentao Shi (史文涛)",
+    "gender": "男",
+    "result": "3:48.85",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2024SHIW01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 707,
+    "name": "Alvarez Edel (于璐正)",
+    "gender": "男",
+    "result": "3:50.51",
+    "competition": "Philippine Championship 2024",
+    "wcaid": "2023EDEL01",
+    "province": "澳门",
+    "city": "澳门"
+  },
+  {
+    "rank": 708,
+    "name": "Hung-Tsang Chen (陳泓滄)",
+    "gender": "男",
+    "result": "3:54.14",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2021CHEN43",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 709,
+    "name": "Jiayue Yuan (袁嘉跃)",
+    "gender": "女",
+    "result": "3:54.28",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2017YUAN13",
+    "province": "辽宁",
+    "city": "大连"
+  },
+  {
+    "rank": 710,
+    "name": "Tiancai Zhu (朱田才)",
+    "gender": "男",
+    "result": "3:56.01",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2017ZHUT01",
+    "province": "江苏",
+    "city": "泰州"
+  },
+  {
+    "rank": 711,
+    "name": "Michael Jiazhuo Xu",
+    "gender": "男",
+    "result": "3:57.88",
+    "competition": "SCU II: Double-Scoop of FMC 2025",
+    "wcaid": "2015XUJI03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 712,
+    "name": "Marcus Lai (賴卓希)",
+    "gender": "男",
+    "result": "4:00.19",
+    "competition": "Guangzhou Big Cubes 2025",
+    "wcaid": "2025LAIM02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 713,
+    "name": "Wenjie Qi (齐文杰)",
+    "gender": "男",
+    "result": "4:02.38",
+    "competition": "Manchester June 2024",
+    "wcaid": "2015QIWE01",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 714,
+    "name": "Li Yifei (李逸飞)",
+    "gender": "男",
+    "result": "4:02.84",
+    "competition": "Good Time at Beletime 2024",
+    "wcaid": "2015YIFE01",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 715,
+    "name": "Clara Wu Mun Yu (胡滿悆)",
+    "gender": "女",
+    "result": "4:03.17",
+    "competition": "Pickering NxNxN Summer 2025",
+    "wcaid": "2023YUCL01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 716,
+    "name": "Chun Yin Kam",
+    "gender": "男",
+    "result": "4:06.76",
+    "competition": "Coventry Spring 2025",
+    "wcaid": "2024KAMC01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 717,
+    "name": "Yueqi Bai (白悦琦)",
+    "gender": "男",
+    "result": "4:10.70",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2019BAIY04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 718,
+    "name": "Jau-Shiun Huang (黃昭勳)",
+    "gender": "男",
+    "result": "4:10.73",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2024HUAN34",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 719,
+    "name": "Triton Tsui",
+    "gender": "男",
+    "result": "4:10.89",
+    "competition": "2x2 in Tāmaki Makaurau 2025",
+    "wcaid": "2023TSUI01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 720,
+    "name": "Quancheng Zhou (周泉呈)",
+    "gender": "男",
+    "result": "4:10.95",
+    "competition": "Zhengzhou Zeal 2025",
+    "wcaid": "2025ZHOU47",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 721,
+    "name": "Han Wu (吳翰)",
+    "gender": "男",
+    "result": "4:14.34",
+    "competition": "Tokai Big Cubes 2025",
+    "wcaid": "2008WUHA01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 722,
+    "name": "Yu-Chin Lee (李侑縉)",
+    "gender": "男",
+    "result": "4:14.57",
+    "competition": "Chien Kuo Cubing Party 2025",
+    "wcaid": "2023LEEY06",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 723,
+    "name": "Hua-Ting Lee (李華庭)",
+    "gender": "女",
+    "result": "4:16.32",
+    "competition": "Maru Cube Day Taiwan 2025",
+    "wcaid": "2013LIHU01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 724,
+    "name": "Anjie Zhao (赵安洁)",
+    "gender": "女",
+    "result": "4:17.86",
+    "competition": "Beijing Spring Open 2025",
+    "wcaid": "2018ZHAO48",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 725,
+    "name": "Young He (何嘉炀)",
+    "gender": "男",
+    "result": "4:18.54",
+    "competition": "South Bay Weeknight Brain Freeze 4 2024",
+    "wcaid": "2014HEYO01",
+    "province": "江苏",
+    "city": "南京"
+  },
+  {
+    "rank": 726,
+    "name": "Wang Ma (马旺)",
+    "gender": "男",
+    "result": "4:18.94",
+    "competition": "New York New Year 2025",
+    "wcaid": "2016MAWA01",
+    "province": "陕西",
+    "city": "宝鸡"
+  },
+  {
+    "rank": 727,
+    "name": "Shiyu Xu (徐诗雨)",
+    "gender": "男",
+    "result": "4:19.68",
+    "competition": "Guangzhou Big Cubes 2024",
+    "wcaid": "2024XUSH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 728,
+    "name": "Ge Shi (石歌)",
+    "gender": "男",
+    "result": "4:19.73",
+    "competition": "Celebes Championship 2025",
+    "wcaid": "2024GESH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 729,
+    "name": "Zhenhuan Zhang (张振寰)",
+    "gender": "男",
+    "result": "4:21.63",
+    "competition": "Zhengzhou Summer I 2025",
+    "wcaid": "2018ZHAN10",
+    "province": "广东",
+    "city": "清远"
+  },
+  {
+    "rank": 730,
+    "name": "Yichen Wang (王奕辰)",
+    "gender": "男",
+    "result": "4:22.42",
+    "competition": "Chengdu Spring Open 2025",
+    "wcaid": "2024WANG55",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 731,
+    "name": "Gengchen Tuo (脱耕晨)",
+    "gender": "男",
+    "result": "4:25.35",
+    "competition": "Edmonton River Valley Rumble 2024",
+    "wcaid": "2018TUOG01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 732,
+    "name": "Zheyi Zhang (张哲熠)",
+    "gender": "男",
+    "result": "4:26.44",
+    "competition": "Deqing Spring 2025",
+    "wcaid": "2025ZHAN47",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 733,
+    "name": "Xin-Xu Tu (凃信旭)",
+    "gender": "男",
+    "result": "4:27.18",
+    "competition": "Maru Cube Day Taiwan 2024",
+    "wcaid": "2022TUXI01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 734,
+    "name": "Peicheng Nie (聂沛程)",
+    "gender": "男",
+    "result": "4:27.81",
+    "competition": "Adelaide Summer 2026",
+    "wcaid": "2021NIEP01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 735,
+    "name": "Sena Y. Zhang",
+    "gender": "男",
+    "result": "4:31.07",
+    "competition": "Louisiana Mega Two Day 2025",
+    "wcaid": "2015ZHAN25",
+    "province": "四川",
+    "city": "成都"
+  },
+  {
+    "rank": 736,
+    "name": "Limou Chen",
+    "gender": "男",
+    "result": "4:34.81",
+    "competition": "Greek Nationals 2024",
+    "wcaid": "2024CHEN47",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 737,
+    "name": "Lam Seon Zi (林信知)",
+    "gender": "男",
+    "result": "4:35.59",
+    "competition": "Australian Nationals 2024",
+    "wcaid": "2023ZILA01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 738,
+    "name": "Shun Zhang (张顺)",
+    "gender": "男",
+    "result": "4:36.40",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2018ZHAS04",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 739,
+    "name": "Haochen Lei (雷昊晨)",
+    "gender": "男",
+    "result": "4:37.20",
+    "competition": "FSUbers 7.0 2024",
+    "wcaid": "2018LEIH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 740,
+    "name": "Jiayue Chen (陈嘉悦)",
+    "gender": "男",
+    "result": "4:39.97",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2026CHEN20",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 741,
+    "name": "Zhihan Dong (董知涵)",
+    "gender": "男",
+    "result": "4:42.55",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2024DONG07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 742,
+    "name": "Guanghua Wang (王光华)",
+    "gender": "男",
+    "result": "4:44.84",
+    "competition": "Huzhou Open 2024",
+    "wcaid": "2009WANG21",
+    "province": "浙江",
+    "city": "嘉兴"
+  },
+  {
+    "rank": 743,
+    "name": "Ruiqi Li (李睿祁)",
+    "gender": "男",
+    "result": "4:47.66",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2023LIRU02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 744,
+    "name": "Handong He (何瀚东)",
+    "gender": "男",
+    "result": "4:48.29",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2023HEHA01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 745,
+    "name": "Che-Jui Hsu (許哲睿)",
+    "gender": "男",
+    "result": "4:49.58",
+    "competition": "Taipei Summer Open 2024",
+    "wcaid": "2022HSUC01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 746,
+    "name": "Haining Tang (唐海宁)",
+    "gender": "男",
+    "result": "4:51.48",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2025TANG12",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 747,
+    "name": "Haoran He (何浩然)",
+    "gender": "男",
+    "result": "4:55.68",
+    "competition": "Xi'an Open 2024",
+    "wcaid": "2018HEHA01",
+    "province": "黑龙江",
+    "city": "大庆"
+  },
+  {
+    "rank": 748,
+    "name": "Zhouyao Zhu (朱洲瑶)",
+    "gender": "女",
+    "result": "5:00.14",
+    "competition": "Evanston Qualifier 2025",
+    "wcaid": "2017ZHUZ04",
+    "province": "浙江",
+    "city": "嘉兴"
+  },
+  {
+    "rank": 749,
+    "name": "Hang-Yu Ku (谷航宇)",
+    "gender": "男",
+    "result": "5:11.56",
+    "competition": "Maru Cube Day Taiwan 2024",
+    "wcaid": "2024KUHA02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 750,
+    "name": "Sunnie Hong Ching Shing (盛康晴)",
+    "gender": "女",
+    "result": "5:16.23",
+    "competition": "Stevenage September 2025",
+    "wcaid": "2023SHIN20",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 751,
+    "name": "Hengyu Liu (刘恒羽)",
+    "gender": "男",
+    "result": "5:27.71",
+    "competition": "Vancouver's on Tracks 2024",
+    "wcaid": "2023LIUH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 752,
+    "name": "Jin Wu (武进)",
+    "gender": "男",
+    "result": "5:37.94",
+    "competition": "Bay Area Speedcubin' 63 - Atherton 2024",
+    "wcaid": "2009WUJI04",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 753,
+    "name": "Cheng-Wei Lin",
+    "gender": "男",
+    "result": "5:55.57",
+    "competition": "Wisconsin Championship 2025",
+    "wcaid": "2022LINC02",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 754,
+    "name": "Kai-En Wu (吳凱恩)",
+    "gender": "男",
+    "result": "5:57.12",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2024WUKA01",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 755,
+    "name": "Marius Tsui",
+    "gender": "男",
+    "result": "6:06.15",
+    "competition": "Twisting in Titirangi 2025",
+    "wcaid": "2023TSUI03",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 756,
+    "name": "Bryce Li",
+    "gender": "男",
+    "result": "6:10.15",
+    "competition": "Appleby Summer 2024",
+    "wcaid": "2022LIBR02",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 757,
+    "name": "Jaspar Liu (劉尚捷)",
+    "gender": "男",
+    "result": "6:10.37",
+    "competition": "Kaohsiung Winter Open 2024",
+    "wcaid": "2022LIUJ06",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 758,
+    "name": "Cedric Siu Yik Hin (蕭奕軒)",
+    "gender": "男",
+    "result": "6:41.56",
+    "competition": "Singapore Independence Day 2025",
+    "wcaid": "2025HINC01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 759,
+    "name": "Lucas Chung Lik Hang (鍾力恆)",
+    "gender": "男",
+    "result": "6:54.43",
+    "competition": "Thornhill Spring 2024",
+    "wcaid": "2024HANG01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 760,
+    "name": "Leung Yu Ching (梁宇正)",
+    "gender": "男",
+    "result": "7:20.17",
+    "competition": "Pingtung Winter Open 2025",
+    "wcaid": "2008CHIN01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 761,
+    "name": "Kaiming Liu (刘铠铭)",
+    "gender": "男",
+    "result": "8:45.54",
+    "competition": "UIUC Big Cubes Spring 2024",
+    "wcaid": "2021LIUK01",
+    "province": "神手谷",
+    "city": "神手谷"
+  }
+]

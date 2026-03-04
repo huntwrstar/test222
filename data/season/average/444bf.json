@@ -1,0 +1,245 @@
+[
+  {
+    "rank": 1,
+    "name": "Liam Chen",
+    "gender": "男",
+    "result": "1:42.15",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2014CHEN37",
+    "country": "USA"
+  },
+  {
+    "rank": 2,
+    "name": "Charlie Eggins",
+    "gender": "男",
+    "result": "1:44.10",
+    "competition": "Cubing at The Cube 2026",
+    "wcaid": "2019EGGI02",
+    "country": "Australia"
+  },
+  {
+    "rank": 3,
+    "name": "Graham Siggins",
+    "gender": "男",
+    "result": "1:46.37",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2016SIGG01",
+    "country": "USA"
+  },
+  {
+    "rank": 4,
+    "name": "Joshua Gao",
+    "gender": "男",
+    "result": "2:05.05",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2023GAOJ02",
+    "country": "USA"
+  },
+  {
+    "rank": 5,
+    "name": "Andrew Tao",
+    "gender": "男",
+    "result": "2:39.01",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2022TAOA01",
+    "country": "USA"
+  },
+  {
+    "rank": 6,
+    "name": "Rowe Hessler",
+    "gender": "男",
+    "result": "3:06.41",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2007HESS01",
+    "country": "USA"
+  },
+  {
+    "rank": 7,
+    "name": "Ziyi Xu (徐梓翼)",
+    "gender": "男",
+    "result": "3:14.05",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023XUZI01",
+    "country": "China"
+  },
+  {
+    "rank": 8,
+    "name": "Sebastiano Tronto",
+    "gender": "男",
+    "result": "3:19.50",
+    "competition": "Leersum Open 2026",
+    "wcaid": "2011TRON02",
+    "country": "Italy"
+  },
+  {
+    "rank": 9,
+    "name": "Michael Ngan (顏律言)",
+    "gender": "男",
+    "result": "3:23.37",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2016NGAN02",
+    "country": "China"
+  },
+  {
+    "rank": 10,
+    "name": "Rodrigo Ángeles Montes de Oca",
+    "gender": "男",
+    "result": "3:26.59",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2023OCAR01",
+    "country": "Mexico"
+  },
+  {
+    "rank": 11,
+    "name": "Wenxuan Yue (岳文轩)",
+    "gender": "男",
+    "result": "3:54.28",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015YUEW01",
+    "country": "China"
+  },
+  {
+    "rank": 12,
+    "name": "Niklas Aasen Eliasson",
+    "gender": "男",
+    "result": "3:58.10",
+    "competition": "Dvärsätt Open 2026",
+    "wcaid": "2021ELIA01",
+    "country": "Norway"
+  },
+  {
+    "rank": 13,
+    "name": "James Ballantine",
+    "gender": "男",
+    "result": "4:33.78",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2018BALL01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 14,
+    "name": "Gabriele Bacchieri",
+    "gender": "男",
+    "result": "4:59.73",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2014BACC01",
+    "country": "Italy"
+  },
+  {
+    "rank": 15,
+    "name": "Adam Black",
+    "gender": "男",
+    "result": "5:07.69",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2022BLAC01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 16,
+    "name": "Samuel Hernandez Castro",
+    "gender": "男",
+    "result": "5:26.18",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2016CAST31",
+    "country": "Mexico"
+  },
+  {
+    "rank": 17,
+    "name": "Luis Gabriel Magadia",
+    "gender": "男",
+    "result": "5:48.75",
+    "competition": "Greenwoods Clock Clash 2026",
+    "wcaid": "2014MAGA04",
+    "country": "Philippines"
+  },
+  {
+    "rank": 18,
+    "name": "Étienne Aubry",
+    "gender": "男",
+    "result": "6:21.30",
+    "competition": "Saucisse Vergèze au PBQ 2026",
+    "wcaid": "2018AUBR01",
+    "country": "France"
+  },
+  {
+    "rank": 19,
+    "name": "Wilfrid Py",
+    "gender": "男",
+    "result": "6:22.03",
+    "competition": "Merignac Open CuBeutrois 2026",
+    "wcaid": "2016PYWI01",
+    "country": "France"
+  },
+  {
+    "rank": 20,
+    "name": "Ge Shi (石歌)",
+    "gender": "男",
+    "result": "6:34.01",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2024GESH01",
+    "country": "China"
+  },
+  {
+    "rank": 21,
+    "name": "Romain Velcin",
+    "gender": "男",
+    "result": "7:00.41",
+    "competition": "Saucisse Vergèze au PBQ 2026",
+    "wcaid": "2023VELC01",
+    "country": "France"
+  },
+  {
+    "rank": 22,
+    "name": "Kacper Paweł Dworak",
+    "gender": "男",
+    "result": "7:06.04",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2020DWOR01",
+    "country": "Poland"
+  },
+  {
+    "rank": 23,
+    "name": "Joon Cha (차준혁)",
+    "gender": "男",
+    "result": "7:38.18",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2012CHAJ01",
+    "country": "Korea"
+  },
+  {
+    "rank": 24,
+    "name": "Alec Cheng",
+    "gender": "男",
+    "result": "7:39.75",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2024CHEN23",
+    "country": "USA"
+  },
+  {
+    "rank": 25,
+    "name": "Emmet Hobbs",
+    "gender": "男",
+    "result": "7:43.42",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016HOBB01",
+    "country": "Australia"
+  },
+  {
+    "rank": 26,
+    "name": "Currin Wilson",
+    "gender": "男",
+    "result": "8:33.38",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2018WILS11",
+    "country": "USA"
+  },
+  {
+    "rank": 27,
+    "name": "Harry Forbes",
+    "gender": "男",
+    "result": "9:32.35",
+    "competition": "Don't Inverloch Up 2026",
+    "wcaid": "2021FORB01",
+    "country": "Australia"
+  }
+]

@@ -1,0 +1,2648 @@
+[
+  {
+    "rank": 1,
+    "name": "Stanley Chapel",
+    "gender": "男",
+    "result": "59.39",
+    "competition": "New York Multimate PBQ II 2025",
+    "wcaid": "2016CHAP04",
+    "country": "USA"
+  },
+  {
+    "rank": 2,
+    "name": "Ryan Eckersley",
+    "gender": "男",
+    "result": "1:30.62",
+    "competition": "Cambridge Autumn - British Blind Off 2024",
+    "wcaid": "2019ECKE02",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 3,
+    "name": "Ezra Hirschi",
+    "gender": "男",
+    "result": "1:35.91",
+    "competition": "Swisscubing Cup Mental Breakdown I 2024",
+    "wcaid": "2019HIRS01",
+    "country": "Switzerland"
+  },
+  {
+    "rank": 4,
+    "name": "Daniel Wallin",
+    "gender": "男",
+    "result": "1:38.94",
+    "competition": "Swedish Blind Marathon 2025",
+    "wcaid": "2013WALL03",
+    "country": "Sweden"
+  },
+  {
+    "rank": 5,
+    "name": "Michael Tripodi",
+    "gender": "男",
+    "result": "1:39.39",
+    "competition": "Rubik's WCA World Championship 2025",
+    "wcaid": "2021TRIP01",
+    "country": "Australia"
+  },
+  {
+    "rank": 6,
+    "name": "Graham Siggins",
+    "gender": "男",
+    "result": "1:41.67",
+    "competition": "Bay Area Slowcubin' 2025",
+    "wcaid": "2016SIGG01",
+    "country": "USA"
+  },
+  {
+    "rank": 7,
+    "name": "Liam Chen",
+    "gender": "男",
+    "result": "1:42.15",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2014CHEN37",
+    "country": "USA"
+  },
+  {
+    "rank": 8,
+    "name": "Amy Smith",
+    "gender": "女",
+    "result": "1:43.42",
+    "competition": "Jog Your Memory Joondalup 2025",
+    "wcaid": "2019SMIT36",
+    "country": "Australia"
+  },
+  {
+    "rank": 9,
+    "name": "Charlie Eggins",
+    "gender": "男",
+    "result": "1:44.10",
+    "competition": "Cubing at The Cube 2026",
+    "wcaid": "2019EGGI02",
+    "country": "Australia"
+  },
+  {
+    "rank": 10,
+    "name": "Simon Praschl",
+    "gender": "男",
+    "result": "1:53.84",
+    "competition": "Vienna Autumn 2024",
+    "wcaid": "2021PRAS02",
+    "country": "Austria"
+  },
+  {
+    "rank": 11,
+    "name": "Tommy Cherry",
+    "gender": "男",
+    "result": "1:55.30",
+    "competition": "3BLD on a Madison MoNona 2024",
+    "wcaid": "2015CHER07",
+    "country": "USA"
+  },
+  {
+    "rank": 12,
+    "name": "Yeon Kyun Park (박연균)",
+    "gender": "男",
+    "result": "1:58.11",
+    "competition": "Silent Korea Open 2025",
+    "wcaid": "2016PARK10",
+    "country": "Korea"
+  },
+  {
+    "rank": 13,
+    "name": "Charlie Harrison",
+    "gender": "男",
+    "result": "1:59.43",
+    "competition": "Rubik's WCA European Championship 2024",
+    "wcaid": "2017HARR08",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 14,
+    "name": "Alvin Cheng Hiu Yeung (鄭曉洋)",
+    "gender": "男",
+    "result": "1:59.50",
+    "competition": "Gros Jouets à Montréal 2025",
+    "wcaid": "2019YEUN01",
+    "country": "China"
+  },
+  {
+    "rank": 15,
+    "name": "Karol Piskorek",
+    "gender": "男",
+    "result": "2:01.91",
+    "competition": "Warm Up Portugalete 2024",
+    "wcaid": "2021PISK01",
+    "country": "Poland"
+  },
+  {
+    "rank": 16,
+    "name": "Joshua Gao",
+    "gender": "男",
+    "result": "2:05.05",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2023GAOJ02",
+    "country": "USA"
+  },
+  {
+    "rank": 17,
+    "name": "Theodore Chan",
+    "gender": "男",
+    "result": "2:06.28",
+    "competition": "Brilliant Ballarat 2024",
+    "wcaid": "2016CHAN25",
+    "country": "Singapore"
+  },
+  {
+    "rank": 18,
+    "name": "Elliott Kobelansky",
+    "gender": "男",
+    "result": "2:08.46",
+    "competition": "Championnat Canadien 2025",
+    "wcaid": "2019KOBE03",
+    "country": "Canada"
+  },
+  {
+    "rank": 19,
+    "name": "Manuel Gutman",
+    "gender": "男",
+    "result": "2:08.48",
+    "competition": "10th Anniversary Cervantes 2024",
+    "wcaid": "2017GUTM01",
+    "country": "Argentina"
+  },
+  {
+    "rank": 20,
+    "name": "Adrian Dębski",
+    "gender": "男",
+    "result": "2:13.07",
+    "competition": "BrizZon Side Open II 2025",
+    "wcaid": "2017DEBS01",
+    "country": "Poland"
+  },
+  {
+    "rank": 21,
+    "name": "Cale Schoon",
+    "gender": "男",
+    "result": "2:17.82",
+    "competition": "3BLD on a Madison MoNona 2024",
+    "wcaid": "2014SCHO02",
+    "country": "USA"
+  },
+  {
+    "rank": 22,
+    "name": "Marcos Ferreira Semolini",
+    "gender": "男",
+    "result": "2:19.95",
+    "competition": "House Is Quiet Cidade Líder 2025",
+    "wcaid": "2017SEMO02",
+    "country": "Brazil"
+  },
+  {
+    "rank": 23,
+    "name": "Tom Nelson",
+    "gender": "男",
+    "result": "2:21.15",
+    "competition": "Wellington Mind Games 2025",
+    "wcaid": "2013NELS01",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 24,
+    "name": "Martin Fröhlich",
+    "gender": "男",
+    "result": "2:22.65",
+    "competition": "Rubik's WCA European Championship 2024",
+    "wcaid": "2023FROH01",
+    "country": "Austria"
+  },
+  {
+    "rank": 25,
+    "name": "Bálint Csengő",
+    "gender": "男",
+    "result": "2:23.01",
+    "competition": "Erlangen Open II 2025",
+    "wcaid": "2019CSEN01",
+    "country": "Hungary"
+  },
+  {
+    "rank": 26,
+    "name": "Rowe Hessler",
+    "gender": "男",
+    "result": "2:24.42",
+    "competition": "Side & Blind North Andover 2025",
+    "wcaid": "2007HESS01",
+    "country": "USA"
+  },
+  {
+    "rank": 27,
+    "name": "Martin Vædele Egdal",
+    "gender": "男",
+    "result": "2:27.62",
+    "competition": "Rubik's WCA World Championship 2025",
+    "wcaid": "2013EGDA02",
+    "country": "Denmark"
+  },
+  {
+    "rank": 28,
+    "name": "Sora Wenjie Xu (徐文杰)",
+    "gender": "男",
+    "result": "2:28.79",
+    "competition": "Please Be Quiet Xi'an 2025",
+    "wcaid": "2016XUWE02",
+    "country": "China"
+  },
+  {
+    "rank": 29,
+    "name": "Arthur Garcin",
+    "gender": "男",
+    "result": "2:28.93",
+    "competition": "Couffouleux Open 2025",
+    "wcaid": "2014GARC27",
+    "country": "France"
+  },
+  {
+    "rank": 30,
+    "name": "Noah Kraft",
+    "gender": "男",
+    "result": "2:33.05",
+    "competition": "Rhein-Neckar Complete Breakdown 2025",
+    "wcaid": "2016KRAF01",
+    "country": "Germany"
+  },
+  {
+    "rank": 31,
+    "name": "Jordi Lleixà López",
+    "gender": "男",
+    "result": "2:33.42",
+    "competition": "Fires de Girona 2024",
+    "wcaid": "2023LOPE09",
+    "country": "Spain"
+  },
+  {
+    "rank": 32,
+    "name": "Jaye Sloan",
+    "gender": "未知",
+    "result": "2:33.56",
+    "competition": "Rubik's UK Championship 2024",
+    "wcaid": "2022SLOA01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 33,
+    "name": "Jia-Hong Lu (陸嘉宏)",
+    "gender": "男",
+    "result": "2:34.45",
+    "competition": "Taiwan Championship 2025",
+    "wcaid": "2007LUJI01",
+    "country": "China"
+  },
+  {
+    "rank": 34,
+    "name": "Dhruv Ambastha",
+    "gender": "男",
+    "result": "2:34.94",
+    "competition": "South India Cube Championship 2025",
+    "wcaid": "2016AMBA02",
+    "country": "India"
+  },
+  {
+    "rank": 35,
+    "name": "Mengfei Shen (沈梦非)",
+    "gender": "女",
+    "result": "2:37.44",
+    "competition": "Glasgow Spring - Scottish Blind Off 2025",
+    "wcaid": "2018SHEN07",
+    "country": "China"
+  },
+  {
+    "rank": 36,
+    "name": "Naoto Kobayashi (小林直登)",
+    "gender": "男",
+    "result": "2:37.75",
+    "competition": "Kansai Odd and BLD 2025",
+    "wcaid": "2017SHIN02",
+    "country": "Japan"
+  },
+  {
+    "rank": 37,
+    "name": "Andrew Tao",
+    "gender": "男",
+    "result": "2:39.01",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2022TAOA01",
+    "country": "USA"
+  },
+  {
+    "rank": 38,
+    "name": "William Wright",
+    "gender": "男",
+    "result": "2:42.94",
+    "competition": "Cambridge Autumn - British Blind Off 2024",
+    "wcaid": "2015WRIG07",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 39,
+    "name": "Mason Langenderfer",
+    "gender": "男",
+    "result": "2:47.76",
+    "competition": "Rubik's WCA North American Championship 2024",
+    "wcaid": "2013LANG03",
+    "country": "USA"
+  },
+  {
+    "rank": 40,
+    "name": "Riccardo Ripoldi",
+    "gender": "男",
+    "result": "2:52.04",
+    "competition": "Gallarate Mental Breakdown 2024",
+    "wcaid": "2022RIPO01",
+    "country": "Italy"
+  },
+  {
+    "rank": 41,
+    "name": "Jaehyun Jeong (정재현)",
+    "gender": "男",
+    "result": "2:57.14",
+    "competition": "Korean Championship 2025",
+    "wcaid": "2016JEON02",
+    "country": "Korea"
+  },
+  {
+    "rank": 42,
+    "name": "Jacob Turrubiartes",
+    "gender": "男",
+    "result": "2:57.67",
+    "competition": "Shhicago IV 2025",
+    "wcaid": "2018TURR01",
+    "country": "USA"
+  },
+  {
+    "rank": 43,
+    "name": "Andrés Rodríguez Galán",
+    "gender": "男",
+    "result": "3:02.37",
+    "competition": "Spanish Championship 2025",
+    "wcaid": "2016GALA04",
+    "country": "Spain"
+  },
+  {
+    "rank": 44,
+    "name": "Oliver Fritz",
+    "gender": "男",
+    "result": "3:04.09",
+    "competition": "French Championship 2025",
+    "wcaid": "2014FRIT02",
+    "country": "Germany"
+  },
+  {
+    "rank": 45,
+    "name": "Kamil Przybylski",
+    "gender": "男",
+    "result": "3:05.47",
+    "competition": "MBLD Madness in Dobřejovice 2025",
+    "wcaid": "2016PRZY01",
+    "country": "Poland"
+  },
+  {
+    "rank": 46,
+    "name": "Shivam Bansal",
+    "gender": "男",
+    "result": "3:06.58",
+    "competition": "Rubik's WCA World Championship 2025",
+    "wcaid": "2011BANS02",
+    "country": "India"
+  },
+  {
+    "rank": 47,
+    "name": "Kevin Liu",
+    "gender": "男",
+    "result": "3:09.04",
+    "competition": "CubingUSA Mid-Atlantic Quiet Championship 2024",
+    "wcaid": "2023LIUK02",
+    "country": "USA"
+  },
+  {
+    "rank": 48,
+    "name": "Ziyi Xu (徐梓翼)",
+    "gender": "男",
+    "result": "3:14.05",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023XUZI01",
+    "country": "China"
+  },
+  {
+    "rank": 49,
+    "name": "Thomas Strasser",
+    "gender": "男",
+    "result": "3:14.71",
+    "competition": "Slovak Championship 2025",
+    "wcaid": "2022STRA10",
+    "country": "Austria"
+  },
+  {
+    "rank": 50,
+    "name": "Yucheng Chen (陈裕铖)",
+    "gender": "男",
+    "result": "3:14.93",
+    "competition": "Please Be Quiet Xi'an 2024",
+    "wcaid": "2015CHEN49",
+    "country": "China"
+  },
+  {
+    "rank": 51,
+    "name": "Jonathan Blöcher",
+    "gender": "男",
+    "result": "3:15.65",
+    "competition": "Rhein-Neckar Mental Squaredown 2024",
+    "wcaid": "2018BLOC01",
+    "country": "Germany"
+  },
+  {
+    "rank": 52,
+    "name": "Abhijeet Ghodgaonkar (अभिजीत घोडगावकर)",
+    "gender": "男",
+    "result": "3:16.81",
+    "competition": "Saraswati College Cube Open 2025",
+    "wcaid": "2013GHOD01",
+    "country": "India"
+  },
+  {
+    "rank": 53,
+    "name": "Jonathan Dammann",
+    "gender": "男",
+    "result": "3:18.83",
+    "competition": "FLIP Open 2025",
+    "wcaid": "2021DAMM01",
+    "country": "France"
+  },
+  {
+    "rank": 54,
+    "name": "Sebastiano Tronto",
+    "gender": "男",
+    "result": "3:19.50",
+    "competition": "Leersum Open 2026",
+    "wcaid": "2011TRON02",
+    "country": "Italy"
+  },
+  {
+    "rank": 55,
+    "name": "Mihály Horváth",
+    "gender": "男",
+    "result": "3:20.94",
+    "competition": "Hungarian All-Rounder 7: Egy Elfelejtett Szó 2024",
+    "wcaid": "2016HORV04",
+    "country": "Hungary"
+  },
+  {
+    "rank": 56,
+    "name": "Yuhang Sun (孙煜航)",
+    "gender": "男",
+    "result": "3:22.63",
+    "competition": "Please Be Quiet Hefei 2025",
+    "wcaid": "2019SUNY09",
+    "country": "China"
+  },
+  {
+    "rank": 57,
+    "name": "Michael Ngan (顏律言)",
+    "gender": "男",
+    "result": "3:23.37",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2016NGAN02",
+    "country": "China"
+  },
+  {
+    "rank": 58,
+    "name": "Noah Swor",
+    "gender": "男",
+    "result": "3:24.43",
+    "competition": "CubingUSA Southeast Championship 2025",
+    "wcaid": "2017SWOR01",
+    "country": "USA"
+  },
+  {
+    "rank": 59,
+    "name": "Ng Jia Quan (黄佳铨)",
+    "gender": "男",
+    "result": "3:24.63",
+    "competition": "Mental Breakdown Singapore 2024",
+    "wcaid": "2015QUAN03",
+    "country": "Malaysia"
+  },
+  {
+    "rank": 60,
+    "name": "Niklas Aasen Eliasson",
+    "gender": "男",
+    "result": "3:25.17",
+    "competition": "Please Be Quiet Bergen 2025",
+    "wcaid": "2021ELIA01",
+    "country": "Norway"
+  },
+  {
+    "rank": 61,
+    "name": "Rodolphe Rouyrre",
+    "gender": "男",
+    "result": "3:25.74",
+    "competition": "French Championship 2025",
+    "wcaid": "2020ROUY01",
+    "country": "France"
+  },
+  {
+    "rank": 62,
+    "name": "Nahyun Jung (정나현)",
+    "gender": "女",
+    "result": "3:26.49",
+    "competition": "Korean Championship 2025",
+    "wcaid": "2023JUNG04",
+    "country": "Korea"
+  },
+  {
+    "rank": 63,
+    "name": "Rodrigo Ángeles Montes de Oca",
+    "gender": "男",
+    "result": "3:26.59",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2023OCAR01",
+    "country": "Mexico"
+  },
+  {
+    "rank": 64,
+    "name": "Thomas Reinke",
+    "gender": "男",
+    "result": "3:29.73",
+    "competition": "Madison MistletOH 2025",
+    "wcaid": "2018REIN04",
+    "country": "USA"
+  },
+  {
+    "rank": 65,
+    "name": "Andy Wong",
+    "gender": "男",
+    "result": "3:29.81",
+    "competition": "CubingUSA Heartland Championship 2025",
+    "wcaid": "2017WONG13",
+    "country": "USA"
+  },
+  {
+    "rank": 66,
+    "name": "Zicong Liu (刘子聪)",
+    "gender": "男",
+    "result": "3:30.05",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2024LIUZ11",
+    "country": "China"
+  },
+  {
+    "rank": 67,
+    "name": "Thiago Han",
+    "gender": "男",
+    "result": "3:38.40",
+    "competition": "Campeonato Brasileiro de Cubo Mágico 2025",
+    "wcaid": "2022HANT01",
+    "country": "Brazil"
+  },
+  {
+    "rank": 68,
+    "name": "Ben Baron",
+    "gender": "男",
+    "result": "3:39.35",
+    "competition": "Hungarian Open 2025",
+    "wcaid": "2016BARO04",
+    "country": "Israel"
+  },
+  {
+    "rank": 69,
+    "name": "Ivo Stoutjesdijk",
+    "gender": "男",
+    "result": "3:39.77",
+    "competition": "Mini Mental Delft 2025",
+    "wcaid": "2019STOU02",
+    "country": "Netherlands"
+  },
+  {
+    "rank": 70,
+    "name": "Brandon Lin (林博浩)",
+    "gender": "男",
+    "result": "3:41.71",
+    "competition": "UCSD Blind and Big 2025",
+    "wcaid": "2011LINB01",
+    "country": "USA"
+  },
+  {
+    "rank": 71,
+    "name": "Carter Kucala",
+    "gender": "未知",
+    "result": "3:49.14",
+    "competition": "CubingUSA Great Lakes Championship 2025",
+    "wcaid": "2015KUCA01",
+    "country": "USA"
+  },
+  {
+    "rank": 72,
+    "name": "Firstian Fushada (符逢城)",
+    "gender": "男",
+    "result": "3:51.17",
+    "competition": "Kooyong Clock Clash 2025",
+    "wcaid": "2015FUSH01",
+    "country": "Indonesia"
+  },
+  {
+    "rank": 73,
+    "name": "Luca Chiandotto",
+    "gender": "男",
+    "result": "3:53.36",
+    "competition": "Lejre Side Events 2024",
+    "wcaid": "2022CHIA04",
+    "country": "Italy"
+  },
+  {
+    "rank": 74,
+    "name": "Ryan Pilat",
+    "gender": "男",
+    "result": "3:53.77",
+    "competition": "DFW Mega Mental Breakdown 2025",
+    "wcaid": "2016PILA03",
+    "country": "USA"
+  },
+  {
+    "rank": 75,
+    "name": "Wenxuan Yue (岳文轩)",
+    "gender": "男",
+    "result": "3:54.28",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015YUEW01",
+    "country": "China"
+  },
+  {
+    "rank": 76,
+    "name": "Zeke Mackay",
+    "gender": "男",
+    "result": "3:54.47",
+    "competition": "Indiana Championship 2024",
+    "wcaid": "2015MACK06",
+    "country": "USA"
+  },
+  {
+    "rank": 77,
+    "name": "Aidan Chiari",
+    "gender": "男",
+    "result": "3:55.13",
+    "competition": "Rubik's Italian Championship 2025",
+    "wcaid": "2025CHIA03",
+    "country": "Italy"
+  },
+  {
+    "rank": 78,
+    "name": "Lennon Hughes",
+    "gender": "男",
+    "result": "4:01.57",
+    "competition": "Don't Inverloch Up 2024",
+    "wcaid": "2017HUGH04",
+    "country": "Australia"
+  },
+  {
+    "rank": 79,
+    "name": "Thomas Patterson",
+    "gender": "男",
+    "result": "4:02.76",
+    "competition": "Stevenage January 2024",
+    "wcaid": "2014PATT02",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 80,
+    "name": "Kalin Doherty",
+    "gender": "男",
+    "result": "4:05.01",
+    "competition": "Termonfeckin Fast 2025",
+    "wcaid": "2021DOHE02",
+    "country": "Ireland"
+  },
+  {
+    "rank": 81,
+    "name": "Kyeongmin Choi (최경민)",
+    "gender": "男",
+    "result": "4:05.03",
+    "competition": "Silent Korea Open 2025",
+    "wcaid": "2017CHOI07",
+    "country": "Korea"
+  },
+  {
+    "rank": 82,
+    "name": "Eskil Munthe",
+    "gender": "男",
+    "result": "4:07.72",
+    "competition": "Kublördag Jönköping III - 2024",
+    "wcaid": "2022MUNT02",
+    "country": "Sweden"
+  },
+  {
+    "rank": 83,
+    "name": "Jonghyun Choi (최종현)",
+    "gender": "男",
+    "result": "4:17.05",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2016CHOI13",
+    "country": "Korea"
+  },
+  {
+    "rank": 84,
+    "name": "Mark Sander",
+    "gender": "男",
+    "result": "4:20.24",
+    "competition": "Israel Championship 2025",
+    "wcaid": "2023SAND02",
+    "country": "Israel"
+  },
+  {
+    "rank": 85,
+    "name": "Aris Raksamani (อริศม์ รักษมณี)",
+    "gender": "男",
+    "result": "4:22.38",
+    "competition": "Singapore Championship 2025",
+    "wcaid": "2017RAKS01",
+    "country": "Thailand"
+  },
+  {
+    "rank": 86,
+    "name": "Teruki Tamura (田村旭輝)",
+    "gender": "男",
+    "result": "4:23.50",
+    "competition": "Silent Korea Open 2025",
+    "wcaid": "2016TAMU01",
+    "country": "Japan"
+  },
+  {
+    "rank": 87,
+    "name": "Mattheo de Wit",
+    "gender": "男",
+    "result": "4:30.83",
+    "competition": "Kölner Kubing 2025",
+    "wcaid": "2015WITM01",
+    "country": "Netherlands"
+  },
+  {
+    "rank": 88,
+    "name": "James Ballantine",
+    "gender": "男",
+    "result": "4:33.78",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2018BALL01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 89,
+    "name": "Jan Bentlage",
+    "gender": "男",
+    "result": "4:34.19",
+    "competition": "Nichts Vergessen in Nordhessen 2024",
+    "wcaid": "2010BENT01",
+    "country": "Germany"
+  },
+  {
+    "rank": 90,
+    "name": "Evan Liu",
+    "gender": "男",
+    "result": "4:35.91",
+    "competition": "Westchester Blind Leap 2024",
+    "wcaid": "2009LIUE01",
+    "country": "USA"
+  },
+  {
+    "rank": 91,
+    "name": "Christopher Sun",
+    "gender": "男",
+    "result": "4:36.10",
+    "competition": "Empire State Winter 2024",
+    "wcaid": "2017SUNC02",
+    "country": "USA"
+  },
+  {
+    "rank": 92,
+    "name": "Henri Gerber",
+    "gender": "男",
+    "result": "4:41.09",
+    "competition": "German Open 2025",
+    "wcaid": "2014GERB01",
+    "country": "Germany"
+  },
+  {
+    "rank": 93,
+    "name": "Brandon Villadolid",
+    "gender": "男",
+    "result": "4:41.40",
+    "competition": "New York Multimate PBQ III 2025",
+    "wcaid": "2019VILL03",
+    "country": "USA"
+  },
+  {
+    "rank": 94,
+    "name": "DongSoo Park (박동수)",
+    "gender": "男",
+    "result": "4:41.52",
+    "competition": "Silent Korea Open 2025",
+    "wcaid": "2017PARK05",
+    "country": "Korea"
+  },
+  {
+    "rank": 95,
+    "name": "Luke Garrett",
+    "gender": "男",
+    "result": "4:45.84",
+    "competition": "CubingUSA Southeast Championship 2025",
+    "wcaid": "2017GARR05",
+    "country": "USA"
+  },
+  {
+    "rank": 96,
+    "name": "Victor Valentin Glyrskov",
+    "gender": "男",
+    "result": "4:46.57",
+    "competition": "EM Kval i Farum 2024",
+    "wcaid": "2014GLYR01",
+    "country": "Denmark"
+  },
+  {
+    "rank": 97,
+    "name": "Willem Klose",
+    "gender": "男",
+    "result": "4:55.96",
+    "competition": "French Championship 2024",
+    "wcaid": "2017KLOS01",
+    "country": "Germany"
+  },
+  {
+    "rank": 98,
+    "name": "Ben Ridley",
+    "gender": "男",
+    "result": "4:56.14",
+    "competition": "Cambridge Autumn - British Blind Off 2024",
+    "wcaid": "2016RIDL01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 99,
+    "name": "Adrien Neveu",
+    "gender": "男",
+    "result": "4:56.40",
+    "competition": "Couffouleux Open 2025",
+    "wcaid": "2018NEVE02",
+    "country": "France"
+  },
+  {
+    "rank": 100,
+    "name": "Nicolas Campanario",
+    "gender": "男",
+    "result": "4:57.45",
+    "competition": "Di Tella Inspira 2024",
+    "wcaid": "2022CAMP02",
+    "country": "Argentina"
+  },
+  {
+    "rank": 101,
+    "name": "Gabriele Bacchieri",
+    "gender": "男",
+    "result": "4:59.73",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2014BACC01",
+    "country": "Italy"
+  },
+  {
+    "rank": 102,
+    "name": "Kaius Young",
+    "gender": "未知",
+    "result": "5:00.38",
+    "competition": "Exceedingly Mini-sota 2025",
+    "wcaid": "2017YOUN10",
+    "country": "USA"
+  },
+  {
+    "rank": 103,
+    "name": "Luis Gabriel Magadia",
+    "gender": "男",
+    "result": "5:02.58",
+    "competition": "Dare to DR Rizal 2025",
+    "wcaid": "2014MAGA04",
+    "country": "Philippines"
+  },
+  {
+    "rank": 104,
+    "name": "Jáchym Střelec",
+    "gender": "男",
+    "result": "5:07.11",
+    "competition": "4BLD Madness in Dobřejovice 2025",
+    "wcaid": "2022STRE03",
+    "country": "Czech Republic"
+  },
+  {
+    "rank": 105,
+    "name": "Adam Black",
+    "gender": "男",
+    "result": "5:07.69",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2022BLAC01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 106,
+    "name": "Jack McDougall",
+    "gender": "男",
+    "result": "5:08.41",
+    "competition": "Fast Solves in Fendalton 2024",
+    "wcaid": "2020MCDO01",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 107,
+    "name": "Katharina Schlomberg",
+    "gender": "女",
+    "result": "5:09.74",
+    "competition": "c't Open Hannover 2024",
+    "wcaid": "2020SCHL01",
+    "country": "Germany"
+  },
+  {
+    "rank": 108,
+    "name": "Josete Sánchez",
+    "gender": "男",
+    "result": "5:10.07",
+    "competition": "Lazarillo Open 2024",
+    "wcaid": "2015SANC18",
+    "country": "Spain"
+  },
+  {
+    "rank": 109,
+    "name": "Jindřich Heissiger",
+    "gender": "男",
+    "result": "5:10.76",
+    "competition": "Příbram Cube 2025",
+    "wcaid": "2021HEIS01",
+    "country": "Czech Republic"
+  },
+  {
+    "rank": 110,
+    "name": "Jason White",
+    "gender": "男",
+    "result": "5:12.84",
+    "competition": "Oregon Championship 2024",
+    "wcaid": "2016WHIT16",
+    "country": "USA"
+  },
+  {
+    "rank": 111,
+    "name": "Wayne Pi",
+    "gender": "男",
+    "result": "5:15.72",
+    "competition": "Rubik's WCA Asian Championship 2024",
+    "wcaid": "2017PIWA01",
+    "country": "China"
+  },
+  {
+    "rank": 112,
+    "name": "Cham J. Chambers",
+    "gender": "未知",
+    "result": "5:17.75",
+    "competition": "Kanonkuben 2024",
+    "wcaid": "2017CHAM09",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 113,
+    "name": "Samuel Moliver",
+    "gender": "男",
+    "result": "5:20.38",
+    "competition": "Cubing at The Cube 2024",
+    "wcaid": "2017MOLI05",
+    "country": "Australia"
+  },
+  {
+    "rank": 114,
+    "name": "Brayden Thompson",
+    "gender": "男",
+    "result": "5:20.63",
+    "competition": "5BLD in a Madison Fall 2024",
+    "wcaid": "2022THOM14",
+    "country": "USA"
+  },
+  {
+    "rank": 115,
+    "name": "Abner Brijesh",
+    "gender": "男",
+    "result": "5:22.08",
+    "competition": "New Jersey Quiet Championship 2024",
+    "wcaid": "2016BRIJ01",
+    "country": "USA"
+  },
+  {
+    "rank": 116,
+    "name": "Francisco Moraes Mandalozzo",
+    "gender": "男",
+    "result": "5:22.88",
+    "competition": "Opentrópolis CEFET 2024",
+    "wcaid": "2017MAND13",
+    "country": "Brazil"
+  },
+  {
+    "rank": 117,
+    "name": "Yifan Cheng (程依凡)",
+    "gender": "男",
+    "result": "5:23.37",
+    "competition": "Xi'an Cherry Blossom 2025",
+    "wcaid": "2018CHEY36",
+    "country": "China"
+  },
+  {
+    "rank": 118,
+    "name": "James Moore",
+    "gender": "男",
+    "result": "5:23.50",
+    "competition": "NZ North Island Championship 2025",
+    "wcaid": "2016MOOR07",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 119,
+    "name": "Samuel Hernandez Castro",
+    "gender": "男",
+    "result": "5:26.18",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2016CAST31",
+    "country": "Mexico"
+  },
+  {
+    "rank": 120,
+    "name": "Yonghao Xu (徐永浩)",
+    "gender": "男",
+    "result": "5:28.41",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2017XUYO01",
+    "country": "China"
+  },
+  {
+    "rank": 121,
+    "name": "Jan Zeman",
+    "gender": "男",
+    "result": "5:31.32",
+    "competition": "4BLD Madness in Dobřejovice 2025",
+    "wcaid": "2021ZEMA01",
+    "country": "Czech Republic"
+  },
+  {
+    "rank": 122,
+    "name": "Sophie Gilbert",
+    "gender": "女",
+    "result": "5:31.50",
+    "competition": "Hampshire Autumn 2025",
+    "wcaid": "2022GILB05",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 123,
+    "name": "Frederick Zheng",
+    "gender": "男",
+    "result": "5:35.89",
+    "competition": "Slow N Steady Spring 2024",
+    "wcaid": "2018ZHEN45",
+    "country": "USA"
+  },
+  {
+    "rank": 124,
+    "name": "Bruno Lezama",
+    "gender": "男",
+    "result": "5:35.90",
+    "competition": "Rubik's WCA South American Championship 2024",
+    "wcaid": "2014LEZA02",
+    "country": "Uruguay"
+  },
+  {
+    "rank": 125,
+    "name": "Callum Hales-Jepp",
+    "gender": "男",
+    "result": "5:38.42",
+    "competition": "August Bank Holiday Crawley 2024",
+    "wcaid": "2012HALE01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 126,
+    "name": "Zijun Liu (刘子钧)",
+    "gender": "男",
+    "result": "5:39.38",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2021LIUZ07",
+    "country": "China"
+  },
+  {
+    "rank": 127,
+    "name": "Taku Yanai (矢内拓)",
+    "gender": "男",
+    "result": "5:41.16",
+    "competition": "Taiwan Championship 2024",
+    "wcaid": "2012YANA01",
+    "country": "Japan"
+  },
+  {
+    "rank": 128,
+    "name": "Adam Śmigaj",
+    "gender": "男",
+    "result": "5:41.22",
+    "competition": "Blind Marathon in Rzeszów 2025",
+    "wcaid": "2021SMIG01",
+    "country": "Poland"
+  },
+  {
+    "rank": 129,
+    "name": "Azael Toysehua",
+    "gender": "男",
+    "result": "5:41.43",
+    "competition": "FMC Tijuas II 2025",
+    "wcaid": "2017TOYS01",
+    "country": "Mexico"
+  },
+  {
+    "rank": 130,
+    "name": "Shuto Ueno (上野柊斗)",
+    "gender": "男",
+    "result": "5:46.04",
+    "competition": "Tokyo BLD Spring 2025",
+    "wcaid": "2008UENO01",
+    "country": "Japan"
+  },
+  {
+    "rank": 131,
+    "name": "Bowen Xie",
+    "gender": "男",
+    "result": "5:46.20",
+    "competition": "Rubik's WCA World Championship 2025",
+    "wcaid": "2018XIEB01",
+    "country": "Belgium"
+  },
+  {
+    "rank": 132,
+    "name": "Jareth Soong Ying Rui (宋颖锐)",
+    "gender": "男",
+    "result": "5:49.41",
+    "competition": "Don't DNF March Singapore 2025",
+    "wcaid": "2016SOON01",
+    "country": "Singapore"
+  },
+  {
+    "rank": 133,
+    "name": "Ben Timmons",
+    "gender": "男",
+    "result": "5:49.98",
+    "competition": "Don't DNF Dublin 2025",
+    "wcaid": "2017TIMM01",
+    "country": "Ireland"
+  },
+  {
+    "rank": 134,
+    "name": "Matteo Dummar",
+    "gender": "男",
+    "result": "5:50.08",
+    "competition": "Gallarate Mental Breakdown 2024",
+    "wcaid": "2017DUMM01",
+    "country": "Italy"
+  },
+  {
+    "rank": 135,
+    "name": "Marlon de V. Marques",
+    "gender": "男",
+    "result": "5:50.11",
+    "competition": "Brasília Bigs & Blind 2024",
+    "wcaid": "2014MARQ02",
+    "country": "Brazil"
+  },
+  {
+    "rank": 136,
+    "name": "Gianfranco Huanqui",
+    "gender": "男",
+    "result": "5:50.90",
+    "competition": "Peru Nationals 2024",
+    "wcaid": "2013HUAN29",
+    "country": "Peru"
+  },
+  {
+    "rank": 137,
+    "name": "Yifan Wang (王逸帆)",
+    "gender": "男",
+    "result": "5:50.95",
+    "competition": "Vietnam Championship 2024",
+    "wcaid": "2017WANY29",
+    "country": "China"
+  },
+  {
+    "rank": 138,
+    "name": "Haruka Kitamura (北村晴香)",
+    "gender": "女",
+    "result": "5:51.59",
+    "competition": "Please Be Quiet Taiwan 2025",
+    "wcaid": "2017KITA03",
+    "country": "Japan"
+  },
+  {
+    "rank": 139,
+    "name": "Timothy Lawrance",
+    "gender": "男",
+    "result": "5:55.18",
+    "competition": "Beginner and Blind Cape Town 2024",
+    "wcaid": "2017LAWR04",
+    "country": "South Africa"
+  },
+  {
+    "rank": 140,
+    "name": "Jaxon Foster",
+    "gender": "男",
+    "result": "5:56.12",
+    "competition": "Adelaide Summer 2025",
+    "wcaid": "2021FOST01",
+    "country": "Australia"
+  },
+  {
+    "rank": 141,
+    "name": "Nathan Benson",
+    "gender": "男",
+    "result": "5:57.15",
+    "competition": "Texas Championship 2024",
+    "wcaid": "2022BENS01",
+    "country": "USA"
+  },
+  {
+    "rank": 142,
+    "name": "Marike Faught",
+    "gender": "女",
+    "result": "5:59.71",
+    "competition": "Rubik's WCA African Championship 2024",
+    "wcaid": "2015FAUG01",
+    "country": "South Africa"
+  },
+  {
+    "rank": 143,
+    "name": "Nevins Chan Pak Hoong (陈百鸿)",
+    "gender": "男",
+    "result": "6:04.57",
+    "competition": "Manchester 4BLD Day 2024",
+    "wcaid": "2010CHAN20",
+    "country": "Malaysia"
+  },
+  {
+    "rank": 144,
+    "name": "An JiWan (안지완)",
+    "gender": "男",
+    "result": "6:10.62",
+    "competition": "Silent Korea Open 2025",
+    "wcaid": "2023JIWA01",
+    "country": "Korea"
+  },
+  {
+    "rank": 145,
+    "name": "Elias Lampert",
+    "gender": "男",
+    "result": "6:12.73",
+    "competition": "Rhein-Neckar Complete Breakdown 2025",
+    "wcaid": "2021LAMP01",
+    "country": "Austria"
+  },
+  {
+    "rank": 146,
+    "name": "Mikus Lembergs",
+    "gender": "男",
+    "result": "6:13.02",
+    "competition": "Nittedal Mental Breakdown 2024",
+    "wcaid": "2017LEMB02",
+    "country": "Latvia"
+  },
+  {
+    "rank": 147,
+    "name": "Fabian Settelen",
+    "gender": "男",
+    "result": "6:15.09",
+    "competition": "Wommelgem Open 2024",
+    "wcaid": "2015SETT01",
+    "country": "Switzerland"
+  },
+  {
+    "rank": 148,
+    "name": "János Csontos",
+    "gender": "男",
+    "result": "6:16.13",
+    "competition": "Countless Cubes Chicagoland A 2024",
+    "wcaid": "2022CSON01",
+    "country": "USA"
+  },
+  {
+    "rank": 149,
+    "name": "Kacper Paweł Dworak",
+    "gender": "男",
+    "result": "6:17.26",
+    "competition": "Rubik's WCA World Championship 2025",
+    "wcaid": "2020DWOR01",
+    "country": "Poland"
+  },
+  {
+    "rank": 150,
+    "name": "Angelo Melera",
+    "gender": "男",
+    "result": "6:18.04",
+    "competition": "Bellinzona Back to School 2024",
+    "wcaid": "2022MELE01",
+    "country": "Switzerland"
+  },
+  {
+    "rank": 151,
+    "name": "Shiori Yanai",
+    "gender": "女",
+    "result": "6:18.38",
+    "competition": "Kansai Odd and BLD 2025",
+    "wcaid": "2013SATO01",
+    "country": "Japan"
+  },
+  {
+    "rank": 152,
+    "name": "Étienne Aubry",
+    "gender": "男",
+    "result": "6:21.30",
+    "competition": "Saucisse Vergèze au PBQ 2026",
+    "wcaid": "2018AUBR01",
+    "country": "France"
+  },
+  {
+    "rank": 153,
+    "name": "Wilfrid Py",
+    "gender": "男",
+    "result": "6:22.03",
+    "competition": "Merignac Open CuBeutrois 2026",
+    "wcaid": "2016PYWI01",
+    "country": "France"
+  },
+  {
+    "rank": 154,
+    "name": "Helmer Ewert",
+    "gender": "男",
+    "result": "6:23.17",
+    "competition": "Kanonkuben 2024",
+    "wcaid": "2015EWER01",
+    "country": "Sweden"
+  },
+  {
+    "rank": 155,
+    "name": "Wesley Barwinski",
+    "gender": "男",
+    "result": "6:23.18",
+    "competition": "PBQ Toledo Fall 2025",
+    "wcaid": "2023BARW01",
+    "country": "USA"
+  },
+  {
+    "rank": 156,
+    "name": "Olli Vikstedt",
+    "gender": "男",
+    "result": "6:24.08",
+    "competition": "Puzzling Puzzles Vantaa 2025",
+    "wcaid": "2014VIKS01",
+    "country": "Finland"
+  },
+  {
+    "rank": 157,
+    "name": "Raúl Cuevas Castillo",
+    "gender": "男",
+    "result": "6:26.20",
+    "competition": "Sum of Ranks Granada 2024",
+    "wcaid": "2018CAST11",
+    "country": "Spain"
+  },
+  {
+    "rank": 158,
+    "name": "Konstantin Jaehne",
+    "gender": "男",
+    "result": "6:28.69",
+    "competition": "Bolton Summer 2024",
+    "wcaid": "2015JAEH01",
+    "country": "Germany"
+  },
+  {
+    "rank": 159,
+    "name": "Caleb Retik",
+    "gender": "男",
+    "result": "6:29.12",
+    "competition": "Rubik's WCA North American Championship 2024",
+    "wcaid": "2022RETI01",
+    "country": "USA"
+  },
+  {
+    "rank": 160,
+    "name": "István Kocza",
+    "gender": "男",
+    "result": "6:32.17",
+    "competition": "Hungarian All-Rounder 7: Egy Elfelejtett Szó 2024",
+    "wcaid": "2005KOCZ01",
+    "country": "Hungary"
+  },
+  {
+    "rank": 161,
+    "name": "Miles Greco",
+    "gender": "男",
+    "result": "6:32.93",
+    "competition": "Rubik's WCA World Championship 2025",
+    "wcaid": "2022GREC01",
+    "country": "USA"
+  },
+  {
+    "rank": 162,
+    "name": "Ge Shi (石歌)",
+    "gender": "男",
+    "result": "6:34.01",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2024GESH01",
+    "country": "China"
+  },
+  {
+    "rank": 163,
+    "name": "Oliver Wheat",
+    "gender": "男",
+    "result": "6:34.93",
+    "competition": "Rubik's WCA World Championship 2025",
+    "wcaid": "2016WHEA01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 164,
+    "name": "Patryk Milewczyk",
+    "gender": "男",
+    "result": "6:35.75",
+    "competition": "Back To Białystok 2024",
+    "wcaid": "2014MILE01",
+    "country": "Poland"
+  },
+  {
+    "rank": 165,
+    "name": "Maxim Pürstinger",
+    "gender": "男",
+    "result": "6:37.73",
+    "competition": "Warm Up Portugalete 2024",
+    "wcaid": "2022PURS01",
+    "country": "Austria"
+  },
+  {
+    "rank": 166,
+    "name": "Kalindu Sachintha Wijesundara",
+    "gender": "男",
+    "result": "6:38.83",
+    "competition": "Sri Lankan Nationals 2024",
+    "wcaid": "2022WIJE02",
+    "country": "Sri Lanka"
+  },
+  {
+    "rank": 167,
+    "name": "Luke Selle",
+    "gender": "男",
+    "result": "6:38.90",
+    "competition": "Madison MistletOH 2025",
+    "wcaid": "2022SELL05",
+    "country": "USA"
+  },
+  {
+    "rank": 168,
+    "name": "Swami Srinivasan",
+    "gender": "男",
+    "result": "6:39.72",
+    "competition": "Australian Nationals 2025",
+    "wcaid": "2015SRIN02",
+    "country": "Australia"
+  },
+  {
+    "rank": 169,
+    "name": "Jake Brown",
+    "gender": "未知",
+    "result": "6:42.60",
+    "competition": "Manchester Spring 2024",
+    "wcaid": "2020BROW01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 170,
+    "name": "Yuhei Takagi (高木佑平)",
+    "gender": "男",
+    "result": "6:44.72",
+    "competition": "Kansai Odd and BLD 2025",
+    "wcaid": "2008TAKA01",
+    "country": "Japan"
+  },
+  {
+    "rank": 171,
+    "name": "Viktor Zenk",
+    "gender": "男",
+    "result": "6:46.19",
+    "competition": "Blindmas Landvetter 2024",
+    "wcaid": "2016ZENK01",
+    "country": "Sweden"
+  },
+  {
+    "rank": 172,
+    "name": "Ting He (禾廷)",
+    "gender": "男",
+    "result": "6:48.97",
+    "competition": "Please Be Quiet Xi'an 2024",
+    "wcaid": "2015HETI01",
+    "country": "China"
+  },
+  {
+    "rank": 173,
+    "name": "Zakarya Otair",
+    "gender": "男",
+    "result": "6:49.27",
+    "competition": "Jordan Nationals 2025",
+    "wcaid": "2021OTAI01",
+    "country": "Jordan"
+  },
+  {
+    "rank": 174,
+    "name": "Bárbara Guerra",
+    "gender": "女",
+    "result": "6:51.29",
+    "competition": "Goiânia Xiu 2024",
+    "wcaid": "2019RIBE11",
+    "country": "Brazil"
+  },
+  {
+    "rank": 175,
+    "name": "Ng Hoi Ying (吳鎧楹)",
+    "gender": "女",
+    "result": "6:51.77",
+    "competition": "Hong Kong Blind Legends 2024",
+    "wcaid": "2023YING03",
+    "country": "China"
+  },
+  {
+    "rank": 176,
+    "name": "Ty Baird",
+    "gender": "男",
+    "result": "6:55.97",
+    "competition": "PBQ Utah Championship 2025",
+    "wcaid": "2023BAIR02",
+    "country": "USA"
+  },
+  {
+    "rank": 177,
+    "name": "Anuar Miguel Abib Onofre",
+    "gender": "男",
+    "result": "6:56.17",
+    "competition": "Forgotten O'Clocks II SBC 2024",
+    "wcaid": "2015ONOF01",
+    "country": "Brazil"
+  },
+  {
+    "rank": 178,
+    "name": "Romain Velcin",
+    "gender": "男",
+    "result": "7:00.41",
+    "competition": "Saucisse Vergèze au PBQ 2026",
+    "wcaid": "2023VELC01",
+    "country": "France"
+  },
+  {
+    "rank": 179,
+    "name": "Brayden Wroten",
+    "gender": "男",
+    "result": "7:01.07",
+    "competition": "Centennial State Cube Off 2024",
+    "wcaid": "2018WROT01",
+    "country": "USA"
+  },
+  {
+    "rank": 180,
+    "name": "Sukesh Kumar",
+    "gender": "男",
+    "result": "7:08.80",
+    "competition": "Big N Blind Bangalore March 2024",
+    "wcaid": "2017KUMA30",
+    "country": "India"
+  },
+  {
+    "rank": 181,
+    "name": "Jason Hammerman",
+    "gender": "男",
+    "result": "7:12.50",
+    "competition": "Rocky Mountain Championship 2025",
+    "wcaid": "2014HAMM01",
+    "country": "USA"
+  },
+  {
+    "rank": 182,
+    "name": "Leo Johansson",
+    "gender": "男",
+    "result": "7:13.42",
+    "competition": "Uppsala Christmas Special 2025",
+    "wcaid": "2022JOHA08",
+    "country": "Sweden"
+  },
+  {
+    "rank": 183,
+    "name": "Aaron Soley",
+    "gender": "男",
+    "result": "7:24.25",
+    "competition": "Evanston Qualifier 2025",
+    "wcaid": "2017SOLE01",
+    "country": "USA"
+  },
+  {
+    "rank": 184,
+    "name": "Igor Aipkin",
+    "gender": "男",
+    "result": "7:30.31",
+    "competition": "PBQ in Tashkent 2025",
+    "wcaid": "2017AIPK01",
+    "country": "Uzbekistan"
+  },
+  {
+    "rank": 185,
+    "name": "Tien Tran",
+    "gender": "男",
+    "result": "7:33.11",
+    "competition": "Please Be Quiet Nashville 2025",
+    "wcaid": "2018TRAN09",
+    "country": "USA"
+  },
+  {
+    "rank": 186,
+    "name": "Alessio Pandin",
+    "gender": "男",
+    "result": "7:33.73",
+    "competition": "Ljubljana Blind Open 2024",
+    "wcaid": "2021PAND01",
+    "country": "Italy"
+  },
+  {
+    "rank": 187,
+    "name": "Kate Grahame",
+    "gender": "女",
+    "result": "7:34.27",
+    "competition": "Australian Nationals 2025",
+    "wcaid": "2018GRAH05",
+    "country": "USA"
+  },
+  {
+    "rank": 188,
+    "name": "Aiki Yaginuma (柳沼愛輝)",
+    "gender": "男",
+    "result": "7:35.32",
+    "competition": "Kooyong Clock Clash 2025",
+    "wcaid": "2022YAGI03",
+    "country": "Japan"
+  },
+  {
+    "rank": 189,
+    "name": "Stephen Bohner",
+    "gender": "男",
+    "result": "7:36.91",
+    "competition": "CubingUSA Mid-Atlantic Quiet Championship 2025",
+    "wcaid": "2018BOHN04",
+    "country": "USA"
+  },
+  {
+    "rank": 190,
+    "name": "Joon Cha (차준혁)",
+    "gender": "男",
+    "result": "7:38.18",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2012CHAJ01",
+    "country": "Korea"
+  },
+  {
+    "rank": 191,
+    "name": "Rafael Sultanaliev",
+    "gender": "男",
+    "result": "7:38.58",
+    "competition": "Ohio State Winter 2025",
+    "wcaid": "2023SULT02",
+    "country": "USA"
+  },
+  {
+    "rank": 192,
+    "name": "Alec Cheng",
+    "gender": "男",
+    "result": "7:39.75",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2024CHEN23",
+    "country": "USA"
+  },
+  {
+    "rank": 193,
+    "name": "Omar Ornelas Sifuentes",
+    "gender": "男",
+    "result": "7:40.31",
+    "competition": "FMC Tijuas I 2025",
+    "wcaid": "2016SIFU02",
+    "country": "Mexico"
+  },
+  {
+    "rank": 194,
+    "name": "Emmet Hobbs",
+    "gender": "男",
+    "result": "7:43.42",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016HOBB01",
+    "country": "Australia"
+  },
+  {
+    "rank": 195,
+    "name": "Rasmus Heggvik Aune",
+    "gender": "男",
+    "result": "7:43.82",
+    "competition": "Norwegian Championship 2025",
+    "wcaid": "2020AUNE01",
+    "country": "Norway"
+  },
+  {
+    "rank": 196,
+    "name": "Dylan Himmelfarb",
+    "gender": "男",
+    "result": "7:43.87",
+    "competition": "More Cubes Karori 2025",
+    "wcaid": "2023HIMM02",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 197,
+    "name": "Ko Youngjin (고영진)",
+    "gender": "男",
+    "result": "7:44.96",
+    "competition": "Silent Korea Spring 2024",
+    "wcaid": "2007YOUN04",
+    "country": "Korea"
+  },
+  {
+    "rank": 198,
+    "name": "Valerii Klymenko",
+    "gender": "男",
+    "result": "7:46.04",
+    "competition": "KoprCube Blind 2025",
+    "wcaid": "2023KLYM02",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 199,
+    "name": "Luis Fernando Aldás Cuestas",
+    "gender": "男",
+    "result": "7:46.40",
+    "competition": "UPEC Open 2025",
+    "wcaid": "2017CUES02",
+    "country": "Ecuador"
+  },
+  {
+    "rank": 200,
+    "name": "Justin Sui",
+    "gender": "男",
+    "result": "7:48.42",
+    "competition": "Washtenaw Qualifiers 2024",
+    "wcaid": "2022SUIJ01",
+    "country": "USA"
+  },
+  {
+    "rank": 201,
+    "name": "Kevin Arturo Huamán Ruiz",
+    "gender": "男",
+    "result": "7:54.00",
+    "competition": "Peru Nationals 2024",
+    "wcaid": "2014RUIZ10",
+    "country": "Peru"
+  },
+  {
+    "rank": 202,
+    "name": "Manu Dutheil",
+    "gender": "男",
+    "result": "7:57.56",
+    "competition": "Charente Open 2025",
+    "wcaid": "2018DUTH01",
+    "country": "France"
+  },
+  {
+    "rank": 203,
+    "name": "Max Kwok U Sam (郭愉琛)",
+    "gender": "男",
+    "result": "8:05.87",
+    "competition": "Glasgow Summer - Scottish Blind Off 2024",
+    "wcaid": "2018SAMK01",
+    "country": "China"
+  },
+  {
+    "rank": 204,
+    "name": "Takuma Shirahase (白波瀬拓磨)",
+    "gender": "男",
+    "result": "8:08.98",
+    "competition": "Taiwan Championship 2024",
+    "wcaid": "2007SHIR01",
+    "country": "Japan"
+  },
+  {
+    "rank": 205,
+    "name": "Knut Skaug Haraldsen",
+    "gender": "男",
+    "result": "8:12.70",
+    "competition": "Trondheim Mental Breakdown 2024",
+    "wcaid": "2016HARA02",
+    "country": "Norway"
+  },
+  {
+    "rank": 206,
+    "name": "AJ Nicholls",
+    "gender": "男",
+    "result": "8:18.72",
+    "competition": "Stevenage October 2025",
+    "wcaid": "2015NICH04",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 207,
+    "name": "Cyrill Speiser",
+    "gender": "男",
+    "result": "8:18.88",
+    "competition": "Swiss Nationals 2025",
+    "wcaid": "2019SPEI01",
+    "country": "Switzerland"
+  },
+  {
+    "rank": 208,
+    "name": "Andrew Mao",
+    "gender": "男",
+    "result": "8:22.15",
+    "competition": "Please Be Quiet Pickering Winter 2024",
+    "wcaid": "2022MAOA01",
+    "country": "Canada"
+  },
+  {
+    "rank": 209,
+    "name": "Yuheng Wu (吴雨衡)",
+    "gender": "男",
+    "result": "8:26.59",
+    "competition": "Please Be Quiet Xi'an 2025",
+    "wcaid": "2018WUYU03",
+    "country": "China"
+  },
+  {
+    "rank": 210,
+    "name": "Evan Maccagnan",
+    "gender": "男",
+    "result": "8:30.37",
+    "competition": "Valsugana New Year 2025",
+    "wcaid": "2022MACC01",
+    "country": "Italy"
+  },
+  {
+    "rank": 211,
+    "name": "Walker Welch",
+    "gender": "男",
+    "result": "8:33.16",
+    "competition": "Wisconsin Quiet Championship 2025",
+    "wcaid": "2011WELC01",
+    "country": "USA"
+  },
+  {
+    "rank": 212,
+    "name": "Currin Wilson",
+    "gender": "男",
+    "result": "8:33.38",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2018WILS11",
+    "country": "USA"
+  },
+  {
+    "rank": 213,
+    "name": "Mykhailo Yartsun (Михайло Ярцун)",
+    "gender": "男",
+    "result": "8:37.97",
+    "competition": "Nichts Vergessen in Nordhessen 2024",
+    "wcaid": "2018YART01",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 214,
+    "name": "Arkadiusz Żynel",
+    "gender": "男",
+    "result": "8:38.35",
+    "competition": "BrizZon Side Open II 2025",
+    "wcaid": "2018ZYNE01",
+    "country": "Poland"
+  },
+  {
+    "rank": 215,
+    "name": "Bekmurod Astanaliyev",
+    "gender": "男",
+    "result": "8:38.92",
+    "competition": "Uzbekistan Nationals 2025",
+    "wcaid": "2023ASTA02",
+    "country": "Uzbekistan"
+  },
+  {
+    "rank": 216,
+    "name": "Sean Moran",
+    "gender": "男",
+    "result": "8:39.52",
+    "competition": "Chichester January 2025",
+    "wcaid": "2016MORA24",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 217,
+    "name": "Olivier Vos",
+    "gender": "男",
+    "result": "8:39.85",
+    "competition": "Mental Breakdown Hoorn 2024",
+    "wcaid": "2016VOSO01",
+    "country": "Netherlands"
+  },
+  {
+    "rank": 218,
+    "name": "Jeremy Benik",
+    "gender": "男",
+    "result": "8:42.62",
+    "competition": "BASC 57 - Big and Blind 2024",
+    "wcaid": "2016BENI05",
+    "country": "USA"
+  },
+  {
+    "rank": 219,
+    "name": "Jihu Mun (문지후)",
+    "gender": "男",
+    "result": "8:44.26",
+    "competition": "Michigan Championship 2025",
+    "wcaid": "2014MUNJ02",
+    "country": "USA"
+  },
+  {
+    "rank": 220,
+    "name": "Jiayue Chen (陈家悦)",
+    "gender": "女",
+    "result": "8:51.24",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2023CHEJ12",
+    "country": "China"
+  },
+  {
+    "rank": 221,
+    "name": "Christopher Chi",
+    "gender": "男",
+    "result": "9:02.32",
+    "competition": "Efficient in Elmsford Winter 2025",
+    "wcaid": "2014CHIC01",
+    "country": "USA"
+  },
+  {
+    "rank": 222,
+    "name": "Alexandru Ignat",
+    "gender": "男",
+    "result": "9:02.75",
+    "competition": "Bucharest Cubing December 2025",
+    "wcaid": "2019IGNA02",
+    "country": "Romania"
+  },
+  {
+    "rank": 223,
+    "name": "Alexis Fedeler",
+    "gender": "男",
+    "result": "9:03.40",
+    "competition": "Rhein-Neckar Mental Squaredown 2024",
+    "wcaid": "2015FEDE01",
+    "country": "Germany"
+  },
+  {
+    "rank": 224,
+    "name": "Jesús Lindo García",
+    "gender": "男",
+    "result": "9:03.53",
+    "competition": "Ocaña BotijOpen 2025",
+    "wcaid": "2013GARC08",
+    "country": "Spain"
+  },
+  {
+    "rank": 225,
+    "name": "Albert Mao",
+    "gender": "男",
+    "result": "9:07.99",
+    "competition": "Virginia Quiet Championship 2025",
+    "wcaid": "2023MAOA01",
+    "country": "USA"
+  },
+  {
+    "rank": 226,
+    "name": "Christian Naguio",
+    "gender": "男",
+    "result": "9:11.52",
+    "competition": "Sikat ng Taon Speedcubing Blitz 2025",
+    "wcaid": "2016NAGU02",
+    "country": "Philippines"
+  },
+  {
+    "rank": 227,
+    "name": "Damir Zhanataev",
+    "gender": "男",
+    "result": "9:14.22",
+    "competition": "PBQ in Tashkent 2025",
+    "wcaid": "2017ZHAD01",
+    "country": "Kazakhstan"
+  },
+  {
+    "rank": 228,
+    "name": "Namuun Natsagdorj",
+    "gender": "女",
+    "result": "9:15.64",
+    "competition": "Don't DNF Dublin 2025",
+    "wcaid": "2019NATS02",
+    "country": "Mongolia"
+  },
+  {
+    "rank": 229,
+    "name": "Jason Ostdiek",
+    "gender": "男",
+    "result": "9:25.35",
+    "competition": "Please Be Quiet Reno 2025",
+    "wcaid": "2017OSTD02",
+    "country": "USA"
+  },
+  {
+    "rank": 230,
+    "name": "Elliott Perkins",
+    "gender": "未知",
+    "result": "9:30.15",
+    "competition": "Gem City Airplane Mode Special VI OH 2025",
+    "wcaid": "2018PERK01",
+    "country": "USA"
+  },
+  {
+    "rank": 231,
+    "name": "Harry Forbes",
+    "gender": "男",
+    "result": "9:32.35",
+    "competition": "Don't Inverloch Up 2026",
+    "wcaid": "2021FORB01",
+    "country": "Australia"
+  },
+  {
+    "rank": 232,
+    "name": "Chris Hardwick",
+    "gender": "男",
+    "result": "9:32.45",
+    "competition": "3BLD on a Madison MoNona 2024",
+    "wcaid": "2003HARD01",
+    "country": "USA"
+  },
+  {
+    "rank": 233,
+    "name": "Hannah Minas",
+    "gender": "女",
+    "result": "9:35.01",
+    "competition": "Swisscubing Cup Mental Breakdown I 2024",
+    "wcaid": "2017MINA04",
+    "country": "Switzerland"
+  },
+  {
+    "rank": 234,
+    "name": "Gerardo Ornelas Sifuentes",
+    "gender": "男",
+    "result": "9:41.10",
+    "competition": "FMC Tijuas II 2025",
+    "wcaid": "2019SIFU01",
+    "country": "Mexico"
+  },
+  {
+    "rank": 235,
+    "name": "Gaurav Bachani",
+    "gender": "男",
+    "result": "9:41.97",
+    "competition": "Bheja Fry Dec Bangalore 2024",
+    "wcaid": "2017BACH09",
+    "country": "India"
+  },
+  {
+    "rank": 236,
+    "name": "Manu Vereecken",
+    "gender": "男",
+    "result": "9:42.94",
+    "competition": "Quiet Louvain-La-Neuve 2024",
+    "wcaid": "2010VERE01",
+    "country": "Belgium"
+  },
+  {
+    "rank": 237,
+    "name": "Erik Tjong Kim Sang",
+    "gender": "男",
+    "result": "9:46.11",
+    "competition": "Couffouleux Open 2025",
+    "wcaid": "2018SANG01",
+    "country": "Netherlands"
+  },
+  {
+    "rank": 238,
+    "name": "Arvid Ahlstrand",
+    "gender": "男",
+    "result": "9:49.01",
+    "competition": "Porfyrkuben 2024",
+    "wcaid": "2022AHLS01",
+    "country": "Sweden"
+  },
+  {
+    "rank": 239,
+    "name": "Earl Bien D. Celestino",
+    "gender": "男",
+    "result": "9:49.03",
+    "competition": "Luzon Championship 2025",
+    "wcaid": "2019CELE01",
+    "country": "Philippines"
+  },
+  {
+    "rank": 240,
+    "name": "Alexander Wheeler",
+    "gender": "男",
+    "result": "9:50.49",
+    "competition": "Southern Indiana Qualifier 2025",
+    "wcaid": "2014WHEE01",
+    "country": "USA"
+  },
+  {
+    "rank": 241,
+    "name": "Alexander Nilsson",
+    "gender": "男",
+    "result": "9:55.21",
+    "competition": "Blindmas Landvetter 2024",
+    "wcaid": "2022NILS01",
+    "country": "Sweden"
+  },
+  {
+    "rank": 242,
+    "name": "Jelle Dillen",
+    "gender": "男",
+    "result": "9:55.81",
+    "competition": "Wommelgem Open 2024",
+    "wcaid": "2019DILL03",
+    "country": "Belgium"
+  },
+  {
+    "rank": 243,
+    "name": "Abhimanyu Singhal (अभिमन्यु सिंघल)",
+    "gender": "男",
+    "result": "9:57.66",
+    "competition": "FMC Ya Dublin OH 2025",
+    "wcaid": "2013SING12",
+    "country": "USA"
+  },
+  {
+    "rank": 244,
+    "name": "Andrew Surine",
+    "gender": "男",
+    "result": "10:08.00",
+    "competition": "Minnesota Quiet Championship 2024",
+    "wcaid": "2015SURI02",
+    "country": "USA"
+  },
+  {
+    "rank": 245,
+    "name": "Braden Richards",
+    "gender": "男",
+    "result": "10:17.00",
+    "competition": "ALL1- Oxford 2024",
+    "wcaid": "2017RICH02",
+    "country": "USA"
+  },
+  {
+    "rank": 246,
+    "name": "Karol Zakrzewski",
+    "gender": "男",
+    "result": "10:21.00",
+    "competition": "Clock Masters Opole 2024",
+    "wcaid": "2014ZAKR01",
+    "country": "Poland"
+  },
+  {
+    "rank": 247,
+    "name": "Daniel Hicklin",
+    "gender": "男",
+    "result": "10:28.00",
+    "competition": "GA Cubers Please Banana Quiet 2025",
+    "wcaid": "2017HICK04",
+    "country": "USA"
+  },
+  {
+    "rank": 248,
+    "name": "Alex Butera",
+    "gender": "男",
+    "result": "10:31.00",
+    "competition": "Melbourne Cube Days 2024",
+    "wcaid": "2021BUTE03",
+    "country": "Australia"
+  },
+  {
+    "rank": 249,
+    "name": "Simon Chanin",
+    "gender": "男",
+    "result": "10:44.00",
+    "competition": "Please Be Quiet Nashville 2025",
+    "wcaid": "2007CHAN04",
+    "country": "USA"
+  },
+  {
+    "rank": 250,
+    "name": "Raymos Castillo",
+    "gender": "男",
+    "result": "10:48.00",
+    "competition": "CubingUSA Rocky Mountain Championship 2024",
+    "wcaid": "2017CAST41",
+    "country": "USA"
+  },
+  {
+    "rank": 251,
+    "name": "Joel Müller",
+    "gender": "男",
+    "result": "10:53.00",
+    "competition": "Rhein-Neckar Mental 2025",
+    "wcaid": "2024MULL05",
+    "country": "Germany"
+  },
+  {
+    "rank": 252,
+    "name": "Achim Spies",
+    "gender": "男",
+    "result": "10:58.00",
+    "competition": "Dutch Nationals 2024",
+    "wcaid": "2021SPIE01",
+    "country": "Germany"
+  },
+  {
+    "rank": 253,
+    "name": "Yurii Riabov (Юрій Рябов)",
+    "gender": "男",
+    "result": "10:59.00",
+    "competition": "Kyiv Mental Breakdown April 2024",
+    "wcaid": "2018RIAB01",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 254,
+    "name": "Simone Bentlage",
+    "gender": "女",
+    "result": "11:03.00",
+    "competition": "Rhein-Neckar Please Be Squiet 2025",
+    "wcaid": "2014OHLE01",
+    "country": "Germany"
+  },
+  {
+    "rank": 255,
+    "name": "Cyrille Beauchesne",
+    "gender": "男",
+    "result": "11:07.00",
+    "competition": "Ottawa Blindfolded 2025",
+    "wcaid": "2018BEAU06",
+    "country": "Canada"
+  },
+  {
+    "rank": 256,
+    "name": "Ali Mojarrad (علی مجرد)",
+    "gender": "男",
+    "result": "11:14.00",
+    "competition": "Hooshinoo Open 2024",
+    "wcaid": "2024MOJA01",
+    "country": "Iran"
+  },
+  {
+    "rank": 257,
+    "name": "Takayuki Tanaka (田中隆喜)",
+    "gender": "男",
+    "result": "11:15.00",
+    "competition": "Tokyo BLD Spring 2025",
+    "wcaid": "2014TANA01",
+    "country": "Japan"
+  },
+  {
+    "rank": 257,
+    "name": "Jiayu Wang (王佳宇)",
+    "gender": "男",
+    "result": "11:15.00",
+    "competition": "Rapid Academy Indonesian Championship 2025",
+    "wcaid": "2010WANG53",
+    "country": "China"
+  },
+  {
+    "rank": 259,
+    "name": "Myles Jarman",
+    "gender": "男",
+    "result": "11:26.00",
+    "competition": "Brilliant Ballarat 2024",
+    "wcaid": "2016JARM01",
+    "country": "Australia"
+  },
+  {
+    "rank": 260,
+    "name": "Christopher Wittman",
+    "gender": "男",
+    "result": "11:33.00",
+    "competition": "Empire State Winter 2024",
+    "wcaid": "2017WITT01",
+    "country": "USA"
+  },
+  {
+    "rank": 261,
+    "name": "Glen Goh Wee Zhuan (吴洧全)",
+    "gender": "男",
+    "result": "11:34.00",
+    "competition": "Please Be Quiet Johor 2025",
+    "wcaid": "2015ZHUA01",
+    "country": "Singapore"
+  },
+  {
+    "rank": 262,
+    "name": "Owl Carpenter",
+    "gender": "女",
+    "result": "11:59.00",
+    "competition": "Centennial State Cube Off 2024",
+    "wcaid": "2022CARP05",
+    "country": "USA"
+  },
+  {
+    "rank": 263,
+    "name": "Jingcai Li (李经才)",
+    "gender": "男",
+    "result": "12:23.00",
+    "competition": "Big n Blind n Clock Xianju 2024",
+    "wcaid": "2019LIJI25",
+    "country": "China"
+  },
+  {
+    "rank": 264,
+    "name": "Christian Sachgau",
+    "gender": "男",
+    "result": "12:40.00",
+    "competition": "Rhein-Neckar Mental 2025",
+    "wcaid": "2018SACH03",
+    "country": "Germany"
+  },
+  {
+    "rank": 265,
+    "name": "Zaya Qiaolong (俏龙扎雅)",
+    "gender": "女",
+    "result": "13:03.00",
+    "competition": "Please Be Quiet Quanzhou 2025",
+    "wcaid": "2024QIAO03",
+    "country": "China"
+  },
+  {
+    "rank": 266,
+    "name": "Komahal Eswaran",
+    "gender": "女",
+    "result": "13:15.00",
+    "competition": "Kumaraguru Cube Open 2024",
+    "wcaid": "2022ESWA01",
+    "country": "India"
+  },
+  {
+    "rank": 266,
+    "name": "Konosuke Nishiyama (西山幸之介)",
+    "gender": "男",
+    "result": "13:15.00",
+    "competition": "Ota BLD Autumn 2025",
+    "wcaid": "2019NISH05",
+    "country": "Japan"
+  },
+  {
+    "rank": 268,
+    "name": "Flurin König",
+    "gender": "男",
+    "result": "13:30.00",
+    "competition": "Lugano Big & Blind 2024",
+    "wcaid": "2019KONI03",
+    "country": "Switzerland"
+  },
+  {
+    "rank": 269,
+    "name": "Ng Si Xian (伍思贤)",
+    "gender": "男",
+    "result": "13:52.00",
+    "competition": "Please Be Quiet Kuala Lumpur 2025",
+    "wcaid": "2017XIAN16",
+    "country": "Malaysia"
+  },
+  {
+    "rank": 270,
+    "name": "Felix Christian Schmidt",
+    "gender": "男",
+    "result": "14:12.00",
+    "competition": "Erlangen Open II 2025",
+    "wcaid": "2022SCHM01",
+    "country": "Germany"
+  },
+  {
+    "rank": 271,
+    "name": "Lanshi Zhang (张岚石)",
+    "gender": "男",
+    "result": "14:26.00",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2013ZHAN41",
+    "country": "China"
+  },
+  {
+    "rank": 272,
+    "name": "Kasparas Lienys",
+    "gender": "男",
+    "result": "14:38.00",
+    "competition": "Kārķi Open 2025",
+    "wcaid": "2018LIEN01",
+    "country": "Lithuania"
+  },
+  {
+    "rank": 273,
+    "name": "Yizhi Cui (崔益智)",
+    "gender": "男",
+    "result": "14:45.00",
+    "competition": "Please Be Quiet Shanghai 2025",
+    "wcaid": "2016CUIY04",
+    "country": "China"
+  },
+  {
+    "rank": 274,
+    "name": "Andrei Răzvan Ionel",
+    "gender": "男",
+    "result": "15:50.00",
+    "competition": "Bucharest Cubing April A 2024",
+    "wcaid": "2012IONE01",
+    "country": "Romania"
+  },
+  {
+    "rank": 275,
+    "name": "Ian Moore",
+    "gender": "男",
+    "result": "15:57.00",
+    "competition": "Shhicago 2024",
+    "wcaid": "2019MOOR11",
+    "country": "USA"
+  },
+  {
+    "rank": 276,
+    "name": "Marco Yang",
+    "gender": "男",
+    "result": "16:01.00",
+    "competition": "Ottawa Blindfolded 2025",
+    "wcaid": "2017YANG62",
+    "country": "Canada"
+  },
+  {
+    "rank": 277,
+    "name": "António Gomes",
+    "gender": "男",
+    "result": "17:17.00",
+    "competition": "Mini Blind Canelas 2025",
+    "wcaid": "2014GOME07",
+    "country": "Portugal"
+  },
+  {
+    "rank": 278,
+    "name": "Oana-Simona Vrabie",
+    "gender": "女",
+    "result": "17:23.00",
+    "competition": "Easter in Prague-East 2025",
+    "wcaid": "2022VRAB01",
+    "country": "Romania"
+  },
+  {
+    "rank": 279,
+    "name": "Andrew Joshua",
+    "gender": "男",
+    "result": "17:43.00",
+    "competition": "Pennsylvania Quiet Championship 2024",
+    "wcaid": "2022JOSH12",
+    "country": "USA"
+  },
+  {
+    "rank": 280,
+    "name": "Jakub Drobný",
+    "gender": "男",
+    "result": "18:16.00",
+    "competition": "Slovak Championship 2025",
+    "wcaid": "2016DROB01",
+    "country": "Slovakia"
+  },
+  {
+    "rank": 280,
+    "name": "Eli Rogers",
+    "gender": "男",
+    "result": "18:16.00",
+    "competition": "Efficient in Elmsford Winter 2025",
+    "wcaid": "2022ROGE05",
+    "country": "USA"
+  },
+  {
+    "rank": 282,
+    "name": "Hamish Duncan",
+    "gender": "男",
+    "result": "19:08.00",
+    "competition": "Please Be Quiet Brisbane 2024",
+    "wcaid": "2022DUNC02",
+    "country": "Australia"
+  },
+  {
+    "rank": 283,
+    "name": "Matthew Bidwell",
+    "gender": "男",
+    "result": "19:11.00",
+    "competition": "Cube On in Richardson 2025",
+    "wcaid": "2018BIDW02",
+    "country": "USA"
+  },
+  {
+    "rank": 284,
+    "name": "Martin Fádlik",
+    "gender": "男",
+    "result": "19:43.00",
+    "competition": "Langenstein City Blind Open 2025",
+    "wcaid": "2023FADL01",
+    "country": "Slovakia"
+  },
+  {
+    "rank": 285,
+    "name": "Sora Sato",
+    "gender": "男",
+    "result": "20:49.00",
+    "competition": "Cubing at The Cube 2024",
+    "wcaid": "2018SATO01",
+    "country": "Australia"
+  },
+  {
+    "rank": 286,
+    "name": "Patrik Oom",
+    "gender": "男",
+    "result": "21:20.00",
+    "competition": "Svealandsmästerskapet 2025",
+    "wcaid": "2021OOMP01",
+    "country": "Sweden"
+  },
+  {
+    "rank": 287,
+    "name": "Sotaro Hayashi (林聡太朗)",
+    "gender": "男",
+    "result": "22:04.00",
+    "competition": "Kansai Odd and BLD 2025",
+    "wcaid": "2024HAYA06",
+    "country": "Japan"
+  },
+  {
+    "rank": 288,
+    "name": "Donna Krueger",
+    "gender": "女",
+    "result": "22:40.00",
+    "competition": "Ohio State Summer 2024",
+    "wcaid": "2016KRUE03",
+    "country": "USA"
+  },
+  {
+    "rank": 289,
+    "name": "Rex Kotovich",
+    "gender": "男",
+    "result": "23:04.00",
+    "competition": "Megaminx on the Madison Isthmus 2025",
+    "wcaid": "2022KOTO01",
+    "country": "Canada"
+  },
+  {
+    "rank": 290,
+    "name": "Salil Desai",
+    "gender": "男",
+    "result": "23:10.00",
+    "competition": "New Jersey Quiet Championship 2024",
+    "wcaid": "2013DESA02",
+    "country": "USA"
+  },
+  {
+    "rank": 291,
+    "name": "Ethan Woll",
+    "gender": "男",
+    "result": "23:14.00",
+    "competition": "UCSD Please Be Qualified 2024",
+    "wcaid": "2014WOLL01",
+    "country": "USA"
+  },
+  {
+    "rank": 292,
+    "name": "Alex Lehman",
+    "gender": "男",
+    "result": "23:44.00",
+    "competition": "La La Land 2024",
+    "wcaid": "2015LEHM01",
+    "country": "USA"
+  },
+  {
+    "rank": 293,
+    "name": "Chan Yau Hoi (陳佑愷)",
+    "gender": "男",
+    "result": "24:54.00",
+    "competition": "Hong Kong Blind Legends 2024",
+    "wcaid": "2023HOIC01",
+    "country": "China"
+  },
+  {
+    "rank": 294,
+    "name": "Jakub Hanuszkiewicz",
+    "gender": "男",
+    "result": "62:43.00",
+    "competition": "CF Goes Crazy Brzeziny 2025",
+    "wcaid": "2014HANU01",
+    "country": "Poland"
+  }
+]

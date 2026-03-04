@@ -1,0 +1,110 @@
+[
+  {
+    "rank": 1,
+    "name": "Victor Tang Yao Jun (湯曜駿)",
+    "gender": "男",
+    "result": "5:32.27",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015JUNV01",
+    "country": "China"
+  },
+  {
+    "rank": 2,
+    "name": "Marcos Ferreira Semolini",
+    "gender": "男",
+    "result": "7:10.97",
+    "competition": "Itapeva 2026",
+    "wcaid": "2017SEMO02",
+    "country": "Brazil"
+  },
+  {
+    "rank": 3,
+    "name": "Ivo Stoutjesdijk",
+    "gender": "男",
+    "result": "9:31.20",
+    "competition": "Leersum Open 2026",
+    "wcaid": "2019STOU02",
+    "country": "Netherlands"
+  },
+  {
+    "rank": 4,
+    "name": "Rodolphe Rouyrre",
+    "gender": "男",
+    "result": "13:29.00",
+    "competition": "Saucisse Vergèze au PBQ 2026",
+    "wcaid": "2020ROUY01",
+    "country": "France"
+  },
+  {
+    "rank": 5,
+    "name": "Mikus Lembergs",
+    "gender": "男",
+    "result": "15:17.00",
+    "competition": "PBQ Ropaži 2026",
+    "wcaid": "2017LEMB02",
+    "country": "Latvia"
+  },
+  {
+    "rank": 6,
+    "name": "Daniel Goodman",
+    "gender": "男",
+    "result": "15:35.00",
+    "competition": "Love is Blind UMBC 2026",
+    "wcaid": "2013GOOD01",
+    "country": "USA"
+  },
+  {
+    "rank": 7,
+    "name": "James Moore",
+    "gender": "男",
+    "result": "16:42.00",
+    "competition": "Wellington Mind Games 2026",
+    "wcaid": "2016MOOR07",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 8,
+    "name": "Ge Shi (石歌)",
+    "gender": "男",
+    "result": "17:08.00",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2024GESH01",
+    "country": "China"
+  },
+  {
+    "rank": 9,
+    "name": "Kacper Paweł Dworak",
+    "gender": "男",
+    "result": "20:30.00",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2020DWOR01",
+    "country": "Poland"
+  },
+  {
+    "rank": 10,
+    "name": "Carson Claud",
+    "gender": "男",
+    "result": "28:19.00",
+    "competition": "Spokane Winter PBQ 2026",
+    "wcaid": "2015CLAU02",
+    "country": "USA"
+  },
+  {
+    "rank": 11,
+    "name": "Eli Rogers",
+    "gender": "男",
+    "result": "28:57.00",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2022ROGE05",
+    "country": "USA"
+  },
+  {
+    "rank": 12,
+    "name": "Zaya Qiaolong (俏龙扎雅)",
+    "gender": "女",
+    "result": "29:36.00",
+    "competition": "PBQ in Almaty 2026",
+    "wcaid": "2024QIAO03",
+    "country": "China"
+  }
+]

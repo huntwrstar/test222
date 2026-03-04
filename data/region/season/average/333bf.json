@@ -1,0 +1,222 @@
+[
+  {
+    "rank": 1,
+    "name": "Kaijun Lin (林恺俊)",
+    "gender": "男",
+    "result": "20.22",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2013LINK01",
+    "province": "广东",
+    "city": "江门"
+  },
+  {
+    "rank": 2,
+    "name": "Mengfei Shen (沈梦非)",
+    "gender": "女",
+    "result": "24.36",
+    "competition": "Stevenage January 2026",
+    "wcaid": "2018SHEN07",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 3,
+    "name": "Anto Kam (甘浩東)",
+    "gender": "男",
+    "result": "25.06",
+    "competition": "Berkeley February Weekday 2026",
+    "wcaid": "2017TUNG13",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 4,
+    "name": "Yucheng Chen (陈裕铖)",
+    "gender": "男",
+    "result": "26.87",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015CHEN49",
+    "province": "广东",
+    "city": "东莞"
+  },
+  {
+    "rank": 5,
+    "name": "Hongjie Zhang (张鸿杰)",
+    "gender": "男",
+    "result": "28.43",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018ZHAH02",
+    "province": "福建",
+    "city": "宁德"
+  },
+  {
+    "rank": 6,
+    "name": "Zheyu Liao (廖喆宇)",
+    "gender": "男",
+    "result": "30.78",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018LIAO08",
+    "province": "广东",
+    "city": "惠州"
+  },
+  {
+    "rank": 7,
+    "name": "Yuhang Sun (孙煜航)",
+    "gender": "男",
+    "result": "32.08",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019SUNY09",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 8,
+    "name": "Michael Ngan (顏律言)",
+    "gender": "男",
+    "result": "34.83",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2016NGAN02",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 9,
+    "name": "Sora Wenjie Xu (徐文杰)",
+    "gender": "男",
+    "result": "39.69",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016XUWE02",
+    "province": "广东",
+    "city": "广州"
+  },
+  {
+    "rank": 10,
+    "name": "Zhe Wang (王哲)",
+    "gender": "男",
+    "result": "40.13",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019WANZ21",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 11,
+    "name": "Ziyi Xu (徐梓翼)",
+    "gender": "男",
+    "result": "41.83",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023XUZI01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 12,
+    "name": "Rui Yang (杨睿)",
+    "gender": "男",
+    "result": "45.72",
+    "competition": "Love is Blind UMBC 2026",
+    "wcaid": "2009YANG06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 13,
+    "name": "Zhibao Zhang (张智宝)",
+    "gender": "男",
+    "result": "53.25",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2021ZHAN18",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 14,
+    "name": "Yang Li (李扬)",
+    "gender": "男",
+    "result": "53.29",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2012LIYA01",
+    "province": "河北",
+    "city": "石家庄"
+  },
+  {
+    "rank": 15,
+    "name": "Zaya Qiaolong (俏龙扎雅)",
+    "gender": "女",
+    "result": "53.54",
+    "competition": "Luzon Championship 2026",
+    "wcaid": "2024QIAO03",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 16,
+    "name": "Ge Shi (石歌)",
+    "gender": "男",
+    "result": "1:10.67",
+    "competition": "PBQ in Almaty 2026",
+    "wcaid": "2024GESH01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 17,
+    "name": "Putian Ye (叶溥天)",
+    "gender": "男",
+    "result": "1:19.16",
+    "competition": "Don't Inverloch Up 2026",
+    "wcaid": "2021YEPU01",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 18,
+    "name": "Luchen Zhang (张录辰)",
+    "gender": "男",
+    "result": "1:23.25",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2007LUCH02",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 19,
+    "name": "Dorian Chan",
+    "gender": "男",
+    "result": "1:42.04",
+    "competition": "Weston-super-Mare Winter 2026",
+    "wcaid": "2023DORI01",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 20,
+    "name": "Bowen Deng (邓博文)",
+    "gender": "男",
+    "result": "1:42.70",
+    "competition": "Berkeley February Weekday 2026",
+    "wcaid": "2009DENG01",
+    "province": "湖南",
+    "city": "常德"
+  },
+  {
+    "rank": 21,
+    "name": "Jiayu Wang (王佳宇)",
+    "gender": "男",
+    "result": "2:07.37",
+    "competition": "Luzon Championship 2026",
+    "wcaid": "2010WANG53",
+    "province": "浙江",
+    "city": "台州"
+  },
+  {
+    "rank": 22,
+    "name": "Weiting Wang (王卫铤)",
+    "gender": "男",
+    "result": "2:28.62",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2026WANG24",
+    "province": "神手谷",
+    "city": "神手谷"
+  }
+]

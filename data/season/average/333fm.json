@@ -1,0 +1,4016 @@
+[
+  {
+    "rank": 1,
+    "name": "Carter Kucala",
+    "gender": "未知",
+    "result": "20.33",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2015KUCA01",
+    "country": "USA"
+  },
+  {
+    "rank": 2,
+    "name": "Radomił Baran",
+    "gender": "男",
+    "result": "20.67",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2020BARA02",
+    "country": "Poland"
+  },
+  {
+    "rank": 2,
+    "name": "Wong Chong Wen (黄崇文)",
+    "gender": "男",
+    "result": "20.67",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2014WENW01",
+    "country": "Singapore"
+  },
+  {
+    "rank": 2,
+    "name": "Louis-Marie Ratto",
+    "gender": "男",
+    "result": "20.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2019RATT02",
+    "country": "France"
+  },
+  {
+    "rank": 2,
+    "name": "Fabio Schwandt",
+    "gender": "男",
+    "result": "20.67",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2014SCHW02",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 6,
+    "name": "Wojciech Rogoziński",
+    "gender": "男",
+    "result": "21.00",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2019ROGO04",
+    "country": "Poland"
+  },
+  {
+    "rank": 7,
+    "name": "Moritz Lotz",
+    "gender": "男",
+    "result": "21.33",
+    "competition": "FMC Lovers Fürth 2026",
+    "wcaid": "2017LOTZ01",
+    "country": "Germany"
+  },
+  {
+    "rank": 7,
+    "name": "Yurii Riabov (Юрій Рябов)",
+    "gender": "男",
+    "result": "21.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2018RIAB01",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 9,
+    "name": "Hajime Miyazaki (宮崎朔)",
+    "gender": "男",
+    "result": "21.67",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2022MIYA01",
+    "country": "Japan"
+  },
+  {
+    "rank": 9,
+    "name": "Brian Johnson",
+    "gender": "男",
+    "result": "21.67",
+    "competition": "No Sprinting NY 2026",
+    "wcaid": "2013JOHN10",
+    "country": "USA"
+  },
+  {
+    "rank": 9,
+    "name": "Mauro Moisés Ortega López",
+    "gender": "男",
+    "result": "21.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2016LOPE44",
+    "country": "Spain"
+  },
+  {
+    "rank": 9,
+    "name": "Dorian Chan",
+    "gender": "男",
+    "result": "21.67",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2023DORI01",
+    "country": "China"
+  },
+  {
+    "rank": 13,
+    "name": "Christopher Chi",
+    "gender": "男",
+    "result": "22.00",
+    "competition": "No Sprinting NY 2026",
+    "wcaid": "2014CHIC01",
+    "country": "USA"
+  },
+  {
+    "rank": 13,
+    "name": "Lorenzo Mauro",
+    "gender": "男",
+    "result": "22.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2014MAUR06",
+    "country": "Italy"
+  },
+  {
+    "rank": 13,
+    "name": "Enrico Tenuti",
+    "gender": "男",
+    "result": "22.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2017TENU01",
+    "country": "Italy"
+  },
+  {
+    "rank": 13,
+    "name": "Daichi Halphen",
+    "gender": "男",
+    "result": "22.00",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2019HALP02",
+    "country": "USA"
+  },
+  {
+    "rank": 13,
+    "name": "Alexander Wheeler",
+    "gender": "男",
+    "result": "22.00",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2014WHEE01",
+    "country": "USA"
+  },
+  {
+    "rank": 13,
+    "name": "Elliot Wiecek",
+    "gender": "男",
+    "result": "22.00",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2016WIEC02",
+    "country": "USA"
+  },
+  {
+    "rank": 19,
+    "name": "Tomoyuki Hiraide (平出智之)",
+    "gender": "男",
+    "result": "22.33",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2012HIRA01",
+    "country": "Japan"
+  },
+  {
+    "rank": 19,
+    "name": "Tommaso Raposio",
+    "gender": "男",
+    "result": "22.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2014RAPO01",
+    "country": "Italy"
+  },
+  {
+    "rank": 19,
+    "name": "Szabolcs Szántai",
+    "gender": "男",
+    "result": "22.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2016SZAN01",
+    "country": "Hungary"
+  },
+  {
+    "rank": 19,
+    "name": "Krzysztof Pietrusiak",
+    "gender": "男",
+    "result": "22.33",
+    "competition": "Fun with Fewest Moves in Warsaw 2026",
+    "wcaid": "2019PIET01",
+    "country": "Poland"
+  },
+  {
+    "rank": 23,
+    "name": "Yiwei Liu (刘伊玮)",
+    "gender": "女",
+    "result": "22.67",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2012LIUY03",
+    "country": "China"
+  },
+  {
+    "rank": 23,
+    "name": "Jan Bentlage",
+    "gender": "男",
+    "result": "22.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2010BENT01",
+    "country": "Germany"
+  },
+  {
+    "rank": 23,
+    "name": "Levi Gibson",
+    "gender": "未知",
+    "result": "22.67",
+    "competition": "Oberlin Challenge I 2026",
+    "wcaid": "2018GIBS04",
+    "country": "USA"
+  },
+  {
+    "rank": 23,
+    "name": "Joseph Guzman",
+    "gender": "男",
+    "result": "22.67",
+    "competition": "No Sprinting NY 2026",
+    "wcaid": "2015GUZM03",
+    "country": "USA"
+  },
+  {
+    "rank": 23,
+    "name": "Adam Marcellus Kelly",
+    "gender": "男",
+    "result": "22.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2016KELL10",
+    "country": "Denmark"
+  },
+  {
+    "rank": 23,
+    "name": "Daniel Vædele Egdal",
+    "gender": "男",
+    "result": "22.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2013EGDA01",
+    "country": "Denmark"
+  },
+  {
+    "rank": 23,
+    "name": "Tianze Xu (徐天泽)",
+    "gender": "男",
+    "result": "22.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015XUTI01",
+    "country": "China"
+  },
+  {
+    "rank": 30,
+    "name": "Radosław Opoka",
+    "gender": "男",
+    "result": "23.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2013OPOK01",
+    "country": "Poland"
+  },
+  {
+    "rank": 30,
+    "name": "Yuki Yamamoto (山本祐輝)",
+    "gender": "男",
+    "result": "23.00",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2010YAMA04",
+    "country": "Japan"
+  },
+  {
+    "rank": 30,
+    "name": "Noah Kraft",
+    "gender": "男",
+    "result": "23.00",
+    "competition": "Rhein-Sieg Open 2026",
+    "wcaid": "2016KRAF01",
+    "country": "Germany"
+  },
+  {
+    "rank": 30,
+    "name": "Nicolas Gertner Kilian",
+    "gender": "男",
+    "result": "23.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2013GERT01",
+    "country": "France"
+  },
+  {
+    "rank": 30,
+    "name": "Tom Nelson",
+    "gender": "男",
+    "result": "23.00",
+    "competition": "Wellington Mind Games 2026",
+    "wcaid": "2013NELS01",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 30,
+    "name": "Bence Barát",
+    "gender": "男",
+    "result": "23.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2008BARA01",
+    "country": "Hungary"
+  },
+  {
+    "rank": 30,
+    "name": "Phuwish Sripattrapan (ภูวิศ ศรีภัทราพันธุ์)",
+    "gender": "男",
+    "result": "23.00",
+    "competition": "Please Be Quiet Thailand 2026",
+    "wcaid": "2023SRIP04",
+    "country": "Thailand"
+  },
+  {
+    "rank": 30,
+    "name": "Natthaphat Mahtani (ณัฐภัทร จี มาทานี)",
+    "gender": "男",
+    "result": "23.00",
+    "competition": "Please Be Quiet Thailand 2026",
+    "wcaid": "2011MAHT02",
+    "country": "Thailand"
+  },
+  {
+    "rank": 30,
+    "name": "David Epstein",
+    "gender": "男",
+    "result": "23.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2016EPST02",
+    "country": "Australia"
+  },
+  {
+    "rank": 39,
+    "name": "Shuto Ueno (上野柊斗)",
+    "gender": "男",
+    "result": "23.33",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2008UENO01",
+    "country": "Japan"
+  },
+  {
+    "rank": 39,
+    "name": "Dewei Tan (譚得唯)",
+    "gender": "男",
+    "result": "23.33",
+    "competition": "SacQuiet Winter 2026",
+    "wcaid": "2024TAND01",
+    "country": "China"
+  },
+  {
+    "rank": 39,
+    "name": "Adrien Neveu",
+    "gender": "男",
+    "result": "23.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2018NEVE02",
+    "country": "France"
+  },
+  {
+    "rank": 39,
+    "name": "Ylann Vernaton",
+    "gender": "男",
+    "result": "23.33",
+    "competition": "Cœur de Cube Charantonnay 2026",
+    "wcaid": "2025VERN01",
+    "country": "France"
+  },
+  {
+    "rank": 39,
+    "name": "Chang Hong Liang (张泓量)",
+    "gender": "男",
+    "result": "23.33",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2016LIAN02",
+    "country": "Singapore"
+  },
+  {
+    "rank": 44,
+    "name": "Shota Wakabayashi (若林翔太)",
+    "gender": "男",
+    "result": "23.67",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2023KADO01",
+    "country": "Japan"
+  },
+  {
+    "rank": 44,
+    "name": "Yasunari Kumekawa (粂川泰成)",
+    "gender": "男",
+    "result": "23.67",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2022KUME01",
+    "country": "Japan"
+  },
+  {
+    "rank": 44,
+    "name": "Simone Bentlage",
+    "gender": "女",
+    "result": "23.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2014OHLE01",
+    "country": "Germany"
+  },
+  {
+    "rank": 44,
+    "name": "Tino Joksch",
+    "gender": "男",
+    "result": "23.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2022JOKS01",
+    "country": "Austria"
+  },
+  {
+    "rank": 48,
+    "name": "Yunhao Lou (娄云皓)",
+    "gender": "男",
+    "result": "24.00",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2017LOUY01",
+    "country": "China"
+  },
+  {
+    "rank": 48,
+    "name": "Sébastien Auroux",
+    "gender": "男",
+    "result": "24.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2008AURO01",
+    "country": "Germany"
+  },
+  {
+    "rank": 48,
+    "name": "Ben Baron",
+    "gender": "男",
+    "result": "24.00",
+    "competition": "PBQ Ropaži 2026",
+    "wcaid": "2016BARO04",
+    "country": "Israel"
+  },
+  {
+    "rank": 48,
+    "name": "Håvard Færden",
+    "gender": "男",
+    "result": "24.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2019FARD01",
+    "country": "Norway"
+  },
+  {
+    "rank": 48,
+    "name": "David Slabý",
+    "gender": "男",
+    "result": "24.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2022SLAB01",
+    "country": "Czech Republic"
+  },
+  {
+    "rank": 48,
+    "name": "Walker Welch",
+    "gender": "男",
+    "result": "24.00",
+    "competition": "North Star Cubing Challenge MN 2026",
+    "wcaid": "2011WELC01",
+    "country": "USA"
+  },
+  {
+    "rank": 48,
+    "name": "Shawn Lee Zhi Xuan (李致轩)",
+    "gender": "男",
+    "result": "24.00",
+    "competition": "FMC Lovers Fürth 2026",
+    "wcaid": "2017XUAN03",
+    "country": "Malaysia"
+  },
+  {
+    "rank": 48,
+    "name": "Evan Brown",
+    "gender": "男",
+    "result": "24.00",
+    "competition": "Oberlin Challenge I 2026",
+    "wcaid": "2013BROW04",
+    "country": "USA"
+  },
+  {
+    "rank": 48,
+    "name": "Max Parris",
+    "gender": "男",
+    "result": "24.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022PARR10",
+    "country": "Australia"
+  },
+  {
+    "rank": 48,
+    "name": "Simon Kellum",
+    "gender": "男",
+    "result": "24.00",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2016KELL12",
+    "country": "USA"
+  },
+  {
+    "rank": 58,
+    "name": "Takumi Tamura (田村匠)",
+    "gender": "男",
+    "result": "24.33",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2019TAMU01",
+    "country": "Japan"
+  },
+  {
+    "rank": 58,
+    "name": "Quentin Rivault",
+    "gender": "男",
+    "result": "24.33",
+    "competition": "Saucisse Vergèze au PBQ 2026",
+    "wcaid": "2017RIVA09",
+    "country": "France"
+  },
+  {
+    "rank": 58,
+    "name": "Sora Sato",
+    "gender": "男",
+    "result": "24.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2018SATO01",
+    "country": "Australia"
+  },
+  {
+    "rank": 61,
+    "name": "Victor Valentin Glyrskov",
+    "gender": "男",
+    "result": "24.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2014GLYR01",
+    "country": "Denmark"
+  },
+  {
+    "rank": 61,
+    "name": "Zeke Mackay",
+    "gender": "男",
+    "result": "24.67",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2015MACK06",
+    "country": "USA"
+  },
+  {
+    "rank": 61,
+    "name": "Alexei Sinyavin",
+    "gender": "男",
+    "result": "24.67",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2016SINY01",
+    "country": "USA"
+  },
+  {
+    "rank": 64,
+    "name": "Haruka Kitamura (北村晴香)",
+    "gender": "女",
+    "result": "25.00",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2017KITA03",
+    "country": "Japan"
+  },
+  {
+    "rank": 64,
+    "name": "Jackson Warley",
+    "gender": "男",
+    "result": "25.00",
+    "competition": "Spokane Winter PBQ 2026",
+    "wcaid": "2008WARL01",
+    "country": "USA"
+  },
+  {
+    "rank": 64,
+    "name": "Tymur Ostapets (Тимур Остапець)",
+    "gender": "男",
+    "result": "25.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2024OSTA02",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 64,
+    "name": "Vasco Vasconcelos",
+    "gender": "男",
+    "result": "25.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2008VASC01",
+    "country": "Portugal"
+  },
+  {
+    "rank": 64,
+    "name": "Tommy Kiprillis",
+    "gender": "男",
+    "result": "25.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2014KIPR01",
+    "country": "Australia"
+  },
+  {
+    "rank": 69,
+    "name": "Chiara Marcucci",
+    "gender": "女",
+    "result": "25.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2021MARC03",
+    "country": "Italy"
+  },
+  {
+    "rank": 69,
+    "name": "Jack McDougall",
+    "gender": "男",
+    "result": "25.33",
+    "competition": "Wellington Mind Games 2026",
+    "wcaid": "2020MCDO01",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 69,
+    "name": "Grzegorz Łuczyna",
+    "gender": "男",
+    "result": "25.33",
+    "competition": "Fun with Fewest Moves in Warsaw 2026",
+    "wcaid": "2005LUCZ01",
+    "country": "Poland"
+  },
+  {
+    "rank": 69,
+    "name": "Elijah La Porte",
+    "gender": "男",
+    "result": "25.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022PORT01",
+    "country": "Australia"
+  },
+  {
+    "rank": 73,
+    "name": "Abhimanyu Singhal (अभिमन्यु सिंघल)",
+    "gender": "男",
+    "result": "25.67",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2013SING12",
+    "country": "USA"
+  },
+  {
+    "rank": 73,
+    "name": "Étienne Aubry",
+    "gender": "男",
+    "result": "25.67",
+    "competition": "Cœur de Cube Charantonnay 2026",
+    "wcaid": "2018AUBR01",
+    "country": "France"
+  },
+  {
+    "rank": 73,
+    "name": "Martin Vædele Egdal",
+    "gender": "男",
+    "result": "25.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2013EGDA02",
+    "country": "Denmark"
+  },
+  {
+    "rank": 76,
+    "name": "Kyra Joiner",
+    "gender": "女",
+    "result": "26.00",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2015JOIN01",
+    "country": "USA"
+  },
+  {
+    "rank": 76,
+    "name": "Kazuhiko Kusano (草野一彦)",
+    "gender": "男",
+    "result": "26.00",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2023KUSA03",
+    "country": "Japan"
+  },
+  {
+    "rank": 76,
+    "name": "Brayan Alexander Sandoval Camacho",
+    "gender": "男",
+    "result": "26.00",
+    "competition": "FMC Colombia IX 2026",
+    "wcaid": "2022CAMA04",
+    "country": "Colombia"
+  },
+  {
+    "rank": 76,
+    "name": "Baiqiang Dong (董百强)",
+    "gender": "男",
+    "result": "26.00",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2008DONG06",
+    "country": "China"
+  },
+  {
+    "rank": 76,
+    "name": "Luis Tan Hong Yi (陈宏溢)",
+    "gender": "男",
+    "result": "26.00",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2023YILU01",
+    "country": "Singapore"
+  },
+  {
+    "rank": 81,
+    "name": "Yuto Morishita (森下優斗)",
+    "gender": "男",
+    "result": "26.67",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2023SHIK03",
+    "country": "Japan"
+  },
+  {
+    "rank": 81,
+    "name": "Austin Reed",
+    "gender": "男",
+    "result": "26.67",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2011REED01",
+    "country": "USA"
+  },
+  {
+    "rank": 81,
+    "name": "Vincenzo Maria Gammino",
+    "gender": "男",
+    "result": "26.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2016GAMM01",
+    "country": "Italy"
+  },
+  {
+    "rank": 84,
+    "name": "Jacob Ambrose",
+    "gender": "男",
+    "result": "27.00",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2010AMBR01",
+    "country": "USA"
+  },
+  {
+    "rank": 84,
+    "name": "Charlie Butler",
+    "gender": "男",
+    "result": "27.00",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2022BUTL06",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 86,
+    "name": "Ge Shi (石歌)",
+    "gender": "男",
+    "result": "27.33",
+    "competition": "PBQ in Almaty 2026",
+    "wcaid": "2024GESH01",
+    "country": "China"
+  },
+  {
+    "rank": 86,
+    "name": "Zach Baruch",
+    "gender": "未知",
+    "result": "27.33",
+    "competition": "Oberlin Challenge I 2026",
+    "wcaid": "2017BARU01",
+    "country": "USA"
+  },
+  {
+    "rank": 86,
+    "name": "Serena Meng",
+    "gender": "女",
+    "result": "27.33",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2022MENG01",
+    "country": "Canada"
+  },
+  {
+    "rank": 89,
+    "name": "Weijie Jian (简维杰)",
+    "gender": "男",
+    "result": "27.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2011JIAN07",
+    "country": "China"
+  },
+  {
+    "rank": 90,
+    "name": "Daisuke Kochi (幸地大輔)",
+    "gender": "男",
+    "result": "28.00",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2019KOCH05",
+    "country": "Japan"
+  },
+  {
+    "rank": 90,
+    "name": "Jordi Lleixà López",
+    "gender": "男",
+    "result": "28.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2023LOPE09",
+    "country": "Spain"
+  },
+  {
+    "rank": 90,
+    "name": "Ben Stokes",
+    "gender": "男",
+    "result": "28.00",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2018STOK01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 93,
+    "name": "Karol Zakrzewski",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2014ZAKR01",
+    "country": "Poland"
+  },
+  {
+    "rank": 93,
+    "name": "Kacper Paweł Dworak",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2020DWOR01",
+    "country": "Poland"
+  },
+  {
+    "rank": 93,
+    "name": "Bogdan Grigoruţă",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2013GRIG01",
+    "country": "Romania"
+  },
+  {
+    "rank": 93,
+    "name": "Urho Kinnunen",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2018KINN05",
+    "country": "Finland"
+  },
+  {
+    "rank": 93,
+    "name": "Modest Podzolkin",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2017PODZ01",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 93,
+    "name": "Rodrigo Ángeles Montes de Oca",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2023OCAR01",
+    "country": "Mexico"
+  },
+  {
+    "rank": 93,
+    "name": "Juan Felipe Gómez López",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "FMC Colombia X 2026",
+    "wcaid": "2021LOPE01",
+    "country": "Colombia"
+  },
+  {
+    "rank": 93,
+    "name": "Haohan Zheng (郑皓涵)",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019ZHEN38",
+    "country": "China"
+  },
+  {
+    "rank": 93,
+    "name": "Zicong Liu (刘子聪)",
+    "gender": "男",
+    "result": "28.33",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024LIUZ11",
+    "country": "China"
+  },
+  {
+    "rank": 102,
+    "name": "Michael Young",
+    "gender": "男",
+    "result": "28.67",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2008YOUN02",
+    "country": "USA"
+  },
+  {
+    "rank": 102,
+    "name": "Mingzhi Da (达明志)",
+    "gender": "男",
+    "result": "28.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2014DAMI01",
+    "country": "China"
+  },
+  {
+    "rank": 102,
+    "name": "Calvin Nielson",
+    "gender": "男",
+    "result": "28.67",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2014NIEL03",
+    "country": "USA"
+  },
+  {
+    "rank": 105,
+    "name": "Katie Hull",
+    "gender": "女",
+    "result": "29.00",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2010HULL01",
+    "country": "USA"
+  },
+  {
+    "rank": 105,
+    "name": "Syunei Miyauchi (宮内俊英)",
+    "gender": "男",
+    "result": "29.00",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2017MIYA07",
+    "country": "Japan"
+  },
+  {
+    "rank": 105,
+    "name": "Junhao Jin (金俊昊)",
+    "gender": "男",
+    "result": "29.00",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2023JINJ03",
+    "country": "China"
+  },
+  {
+    "rank": 105,
+    "name": "Ivo Stoutjesdijk",
+    "gender": "男",
+    "result": "29.00",
+    "competition": "Rhein-Sieg Open 2026",
+    "wcaid": "2019STOU02",
+    "country": "Netherlands"
+  },
+  {
+    "rank": 105,
+    "name": "Elian Beguec",
+    "gender": "男",
+    "result": "29.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2014BEGU01",
+    "country": "France"
+  },
+  {
+    "rank": 105,
+    "name": "Jonas Pilhöfer",
+    "gender": "男",
+    "result": "29.00",
+    "competition": "FMC Lovers Fürth 2026",
+    "wcaid": "2019PILH01",
+    "country": "Germany"
+  },
+  {
+    "rank": 105,
+    "name": "Paolo Gallegos",
+    "gender": "男",
+    "result": "29.00",
+    "competition": "Love Is Blind Lima 2026",
+    "wcaid": "2018DIAZ09",
+    "country": "Peru"
+  },
+  {
+    "rank": 105,
+    "name": "Parist Pariyakanok (พริษฐ์ ปริยกนก)",
+    "gender": "男",
+    "result": "29.00",
+    "competition": "Please Be Quiet Thailand 2026",
+    "wcaid": "2018PARI07",
+    "country": "Thailand"
+  },
+  {
+    "rank": 113,
+    "name": "Łukasz Burliga",
+    "gender": "男",
+    "result": "29.33",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2013BURL01",
+    "country": "Poland"
+  },
+  {
+    "rank": 113,
+    "name": "Benjamin Christie",
+    "gender": "男",
+    "result": "29.33",
+    "competition": "Baton Rouge Winter 2026",
+    "wcaid": "2014CHRI04",
+    "country": "USA"
+  },
+  {
+    "rank": 113,
+    "name": "Josete Sánchez",
+    "gender": "男",
+    "result": "29.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2015SANC18",
+    "country": "Spain"
+  },
+  {
+    "rank": 113,
+    "name": "Marco Guarasci",
+    "gender": "男",
+    "result": "29.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2020GUAR01",
+    "country": "Italy"
+  },
+  {
+    "rank": 113,
+    "name": "Diego Alonso Tapia Mera",
+    "gender": "男",
+    "result": "29.33",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2017MERA01",
+    "country": "Chile"
+  },
+  {
+    "rank": 118,
+    "name": "Romain Velcin",
+    "gender": "男",
+    "result": "29.67",
+    "competition": "Saucisse Vergèze au PBQ 2026",
+    "wcaid": "2023VELC01",
+    "country": "France"
+  },
+  {
+    "rank": 118,
+    "name": "Reuben Zane",
+    "gender": "男",
+    "result": "29.67",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2023ZANE01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 118,
+    "name": "Jacob Sherwen Brown",
+    "gender": "男",
+    "result": "29.67",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2022BROW01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 118,
+    "name": "Jonathan Charlesworth",
+    "gender": "男",
+    "result": "29.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2016CHAR01",
+    "country": "Australia"
+  },
+  {
+    "rank": 118,
+    "name": "Amy Smith",
+    "gender": "女",
+    "result": "29.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2019SMIT36",
+    "country": "Australia"
+  },
+  {
+    "rank": 118,
+    "name": "Ziheng Feng (冯梓恒)",
+    "gender": "男",
+    "result": "29.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023FENG05",
+    "country": "China"
+  },
+  {
+    "rank": 124,
+    "name": "Arkadiusz Żynel",
+    "gender": "男",
+    "result": "30.00",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2018ZYNE01",
+    "country": "Poland"
+  },
+  {
+    "rank": 124,
+    "name": "Kate Grahame",
+    "gender": "女",
+    "result": "30.00",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2018GRAH05",
+    "country": "USA"
+  },
+  {
+    "rank": 124,
+    "name": "Bowen Deng (邓博文)",
+    "gender": "男",
+    "result": "30.00",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2009DENG01",
+    "country": "China"
+  },
+  {
+    "rank": 124,
+    "name": "Yuhang Sun (孙煜航)",
+    "gender": "男",
+    "result": "30.00",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2019SUNY09",
+    "country": "China"
+  },
+  {
+    "rank": 124,
+    "name": "Roman Ostapenko (Роман Остапенко)",
+    "gender": "男",
+    "result": "30.00",
+    "competition": "Kyiv Blind Side Winter 2026",
+    "wcaid": "2009OSTA01",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 129,
+    "name": "Parker Trager",
+    "gender": "男",
+    "result": "30.33",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2016TRAG01",
+    "country": "USA"
+  },
+  {
+    "rank": 129,
+    "name": "Ben Timmons",
+    "gender": "男",
+    "result": "30.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2017TIMM01",
+    "country": "Ireland"
+  },
+  {
+    "rank": 129,
+    "name": "Korakot Inkaew (กรกฎ อิ่นแก้ว)",
+    "gender": "男",
+    "result": "30.33",
+    "competition": "Please Be Quiet Thailand 2026",
+    "wcaid": "2017INKA01",
+    "country": "Thailand"
+  },
+  {
+    "rank": 129,
+    "name": "Sean Cutshaw",
+    "gender": "男",
+    "result": "30.33",
+    "competition": "Oberlin Challenge I 2026",
+    "wcaid": "2016CUTS01",
+    "country": "USA"
+  },
+  {
+    "rank": 129,
+    "name": "Liam Highducheck",
+    "gender": "男",
+    "result": "30.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2015HIGH01",
+    "country": "Australia"
+  },
+  {
+    "rank": 134,
+    "name": "Achim Spies",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "Rhein-Sieg Open 2026",
+    "wcaid": "2021SPIE01",
+    "country": "Germany"
+  },
+  {
+    "rank": 134,
+    "name": "Eli Rogers",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "No Sprinting NY 2026",
+    "wcaid": "2022ROGE05",
+    "country": "USA"
+  },
+  {
+    "rank": 134,
+    "name": "Tristan Paulussen",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2009PAUL01",
+    "country": "Netherlands"
+  },
+  {
+    "rank": 134,
+    "name": "Rajesh Mhatre",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2014MHAT01",
+    "country": "India"
+  },
+  {
+    "rank": 134,
+    "name": "Ben Coppin",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2013COPP01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 134,
+    "name": "Yuheng Wu (吴雨衡)",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018WUYU03",
+    "country": "China"
+  },
+  {
+    "rank": 134,
+    "name": "Trevor Mendelson",
+    "gender": "男",
+    "result": "30.67",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2022MEND14",
+    "country": "USA"
+  },
+  {
+    "rank": 141,
+    "name": "Kellan Butler",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2022BUTL02",
+    "country": "USA"
+  },
+  {
+    "rank": 141,
+    "name": "Adam Śmigaj",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2021SMIG01",
+    "country": "Poland"
+  },
+  {
+    "rank": 141,
+    "name": "Samuel Jehanno",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2018JEHA01",
+    "country": "France"
+  },
+  {
+    "rank": 141,
+    "name": "Evan Maccagnan",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2022MACC01",
+    "country": "Italy"
+  },
+  {
+    "rank": 141,
+    "name": "Roberts Dreijers",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2018DREI02",
+    "country": "Latvia"
+  },
+  {
+    "rank": 141,
+    "name": "Jose Sánchez García",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2022GARC19",
+    "country": "Spain"
+  },
+  {
+    "rank": 141,
+    "name": "Pietro Gasparetto",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2016GASP01",
+    "country": "Italy"
+  },
+  {
+    "rank": 141,
+    "name": "Guangtong Quan (全广通)",
+    "gender": "男",
+    "result": "31.00",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017QUAN22",
+    "country": "China"
+  },
+  {
+    "rank": 149,
+    "name": "Łukasz Dubicki",
+    "gender": "男",
+    "result": "31.33",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2018DUBI01",
+    "country": "Poland"
+  },
+  {
+    "rank": 149,
+    "name": "Dominic Shoji",
+    "gender": "男",
+    "result": "31.33",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2023SHOJ01",
+    "country": "USA"
+  },
+  {
+    "rank": 149,
+    "name": "Akatsuki Kitamura (北村曉)",
+    "gender": "男",
+    "result": "31.33",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2017KITA01",
+    "country": "Japan"
+  },
+  {
+    "rank": 149,
+    "name": "Matīss Maksis Podinskis",
+    "gender": "男",
+    "result": "31.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2018PODI02",
+    "country": "Latvia"
+  },
+  {
+    "rank": 149,
+    "name": "Roman Rudakov",
+    "gender": "男",
+    "result": "31.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022RUDA02",
+    "country": "Australia"
+  },
+  {
+    "rank": 149,
+    "name": "Stanley Tran",
+    "gender": "男",
+    "result": "31.33",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2019TRAN04",
+    "country": "USA"
+  },
+  {
+    "rank": 155,
+    "name": "Wilfrid Py",
+    "gender": "男",
+    "result": "31.67",
+    "competition": "Saucisse Vergèze au PBQ 2026",
+    "wcaid": "2016PYWI01",
+    "country": "France"
+  },
+  {
+    "rank": 155,
+    "name": "Fabian Tomasović",
+    "gender": "男",
+    "result": "31.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2020TOMA01",
+    "country": "Italy"
+  },
+  {
+    "rank": 155,
+    "name": "Pi Sevilla Hernández",
+    "gender": "男",
+    "result": "31.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2013HENA01",
+    "country": "Spain"
+  },
+  {
+    "rank": 155,
+    "name": "Matteo Emiliani",
+    "gender": "男",
+    "result": "31.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2023EMIL02",
+    "country": "Italy"
+  },
+  {
+    "rank": 155,
+    "name": "Haoxiang Ying (应浩祥)",
+    "gender": "男",
+    "result": "31.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016YING02",
+    "country": "China"
+  },
+  {
+    "rank": 160,
+    "name": "Quintin Audisho",
+    "gender": "男",
+    "result": "32.00",
+    "competition": "Arizona Quiet Championship 2026",
+    "wcaid": "2022AUDI02",
+    "country": "USA"
+  },
+  {
+    "rank": 160,
+    "name": "Dániel Varga",
+    "gender": "男",
+    "result": "32.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2008VARG01",
+    "country": "Hungary"
+  },
+  {
+    "rank": 160,
+    "name": "Balázs Polyák",
+    "gender": "男",
+    "result": "32.00",
+    "competition": "Hungarian FMC Series 1 2026",
+    "wcaid": "2017POLY02",
+    "country": "Hungary"
+  },
+  {
+    "rank": 160,
+    "name": "Jakub Bartos",
+    "gender": "男",
+    "result": "32.00",
+    "competition": "Fun with Fewest Moves in Warsaw 2026",
+    "wcaid": "2014BART06",
+    "country": "Poland"
+  },
+  {
+    "rank": 160,
+    "name": "Leo Alanen",
+    "gender": "男",
+    "result": "32.00",
+    "competition": "VERK XII 2026",
+    "wcaid": "2022ALAN02",
+    "country": "Finland"
+  },
+  {
+    "rank": 160,
+    "name": "Phakinthorn Pronmongkolsuk (ภคินธร พรมงคลสุข)",
+    "gender": "男",
+    "result": "32.00",
+    "competition": "Please Be Quiet Thailand 2026",
+    "wcaid": "2018PRON02",
+    "country": "Thailand"
+  },
+  {
+    "rank": 160,
+    "name": "Elliott Perkins",
+    "gender": "未知",
+    "result": "32.00",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2018PERK01",
+    "country": "USA"
+  },
+  {
+    "rank": 167,
+    "name": "Tomohiro Kobayashi (小林知広)",
+    "gender": "男",
+    "result": "32.33",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2013KOBA01",
+    "country": "Japan"
+  },
+  {
+    "rank": 167,
+    "name": "Asset Agabekov",
+    "gender": "男",
+    "result": "32.33",
+    "competition": "PBQ in Almaty 2026",
+    "wcaid": "2018AGAB03",
+    "country": "Kazakhstan"
+  },
+  {
+    "rank": 167,
+    "name": "Daniel Ortega Pastor",
+    "gender": "男",
+    "result": "32.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2014PAST03",
+    "country": "Spain"
+  },
+  {
+    "rank": 167,
+    "name": "Min Wu (吴民)",
+    "gender": "男",
+    "result": "32.33",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2009WUMI01",
+    "country": "China"
+  },
+  {
+    "rank": 171,
+    "name": "Diego Isai Mijangos Flores",
+    "gender": "男",
+    "result": "32.67",
+    "competition": "FMC Tijuas I 2026",
+    "wcaid": "2016FLOR18",
+    "country": "Mexico"
+  },
+  {
+    "rank": 171,
+    "name": "Michał Denkiewicz",
+    "gender": "男",
+    "result": "32.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2021DENK01",
+    "country": "Poland"
+  },
+  {
+    "rank": 171,
+    "name": "Takumi Kawazoe (川添匠)",
+    "gender": "男",
+    "result": "32.67",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2022KAWA02",
+    "country": "Japan"
+  },
+  {
+    "rank": 171,
+    "name": "Andy Wong",
+    "gender": "男",
+    "result": "32.67",
+    "competition": "Micro Minnesota 2026",
+    "wcaid": "2017WONG13",
+    "country": "USA"
+  },
+  {
+    "rank": 171,
+    "name": "Andrew Tan Jing Bang",
+    "gender": "男",
+    "result": "32.67",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2019BANG01",
+    "country": "Singapore"
+  },
+  {
+    "rank": 176,
+    "name": "Felix Christian Schmidt",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Rhein-Sieg Open 2026",
+    "wcaid": "2022SCHM01",
+    "country": "Germany"
+  },
+  {
+    "rank": 176,
+    "name": "Satya Bhavesh Gala",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2022GALA03",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 176,
+    "name": "Andy Gong",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2016GONG02",
+    "country": "Australia"
+  },
+  {
+    "rank": 176,
+    "name": "Keagen Khew",
+    "gender": "男",
+    "result": "33.00",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2022KHEW01",
+    "country": "Singapore"
+  },
+  {
+    "rank": 180,
+    "name": "Daniel Mullen",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2016MULL04",
+    "country": "USA"
+  },
+  {
+    "rank": 180,
+    "name": "William Jackson",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "Wellington Mind Games 2026",
+    "wcaid": "2023JACK04",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 180,
+    "name": "Michael Ngan (顏律言)",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2016NGAN02",
+    "country": "China"
+  },
+  {
+    "rank": 180,
+    "name": "Michael Tripodi",
+    "gender": "男",
+    "result": "33.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2021TRIP01",
+    "country": "Australia"
+  },
+  {
+    "rank": 184,
+    "name": "Lucas Aubin",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "SacQuiet Winter 2026",
+    "wcaid": "2019AUBI01",
+    "country": "USA"
+  },
+  {
+    "rank": 184,
+    "name": "Jonathan Dammann",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "Merignac Open CuBeutrois 2026",
+    "wcaid": "2021DAMM01",
+    "country": "France"
+  },
+  {
+    "rank": 184,
+    "name": "Dennis Rosero",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "FMC Colombia IX 2026",
+    "wcaid": "2010ROSE03",
+    "country": "Colombia"
+  },
+  {
+    "rank": 184,
+    "name": "Christian Smedegaard",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "Aarhus Winter 2026",
+    "wcaid": "2015SMED01",
+    "country": "Denmark"
+  },
+  {
+    "rank": 184,
+    "name": "Alonzo Sanchez Arica",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "Love Is Blind Lima 2026",
+    "wcaid": "2023ARIC01",
+    "country": "Peru"
+  },
+  {
+    "rank": 184,
+    "name": "Patrick Kleverlaan",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2019KLEV01",
+    "country": "Australia"
+  },
+  {
+    "rank": 184,
+    "name": "Lennon Hughes",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2017HUGH04",
+    "country": "Australia"
+  },
+  {
+    "rank": 184,
+    "name": "Benjamin Gottschalk",
+    "gender": "男",
+    "result": "33.67",
+    "competition": "Oregon State PBQ 2026",
+    "wcaid": "2016GOTT01",
+    "country": "USA"
+  },
+  {
+    "rank": 192,
+    "name": "Luke Satko",
+    "gender": "男",
+    "result": "34.00",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2023SATK01",
+    "country": "USA"
+  },
+  {
+    "rank": 192,
+    "name": "Robert Alan Marks",
+    "gender": "男",
+    "result": "34.00",
+    "competition": "Don't DNF Davis 2026",
+    "wcaid": "2024MARK03",
+    "country": "USA"
+  },
+  {
+    "rank": 192,
+    "name": "Ethan George Hayes",
+    "gender": "男",
+    "result": "34.00",
+    "competition": "Spokane Winter PBQ 2026",
+    "wcaid": "2019HAYE05",
+    "country": "USA"
+  },
+  {
+    "rank": 192,
+    "name": "Aarni Salakari",
+    "gender": "男",
+    "result": "34.00",
+    "competition": "VERK XII 2026",
+    "wcaid": "2022SALA09",
+    "country": "Finland"
+  },
+  {
+    "rank": 192,
+    "name": "Kevin Arturo Huamán Ruiz",
+    "gender": "男",
+    "result": "34.00",
+    "competition": "Love Is Blind Lima 2026",
+    "wcaid": "2014RUIZ10",
+    "country": "Peru"
+  },
+  {
+    "rank": 197,
+    "name": "Konrad Matyszek",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2022MATY02",
+    "country": "Poland"
+  },
+  {
+    "rank": 197,
+    "name": "Wojciech Szatanowski",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "Fun with Fewest Moves in Warsaw 2026",
+    "wcaid": "2011SZAT01",
+    "country": "Poland"
+  },
+  {
+    "rank": 197,
+    "name": "Akshaansh Chilakapati",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2016CHIL02",
+    "country": "India"
+  },
+  {
+    "rank": 197,
+    "name": "Scott Hunter",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2024HUNT04",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 197,
+    "name": "Adam Devere",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2018DEVE02",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 197,
+    "name": "Blue James",
+    "gender": "男",
+    "result": "34.33",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2022JAME01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 203,
+    "name": "Luukas Lempinen",
+    "gender": "男",
+    "result": "34.67",
+    "competition": "VERK XII 2026",
+    "wcaid": "2021LEMP01",
+    "country": "Finland"
+  },
+  {
+    "rank": 203,
+    "name": "Ahti Isohanni",
+    "gender": "男",
+    "result": "34.67",
+    "competition": "VERK XII 2026",
+    "wcaid": "2023HANN13",
+    "country": "Finland"
+  },
+  {
+    "rank": 205,
+    "name": "Clay Moore",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2017MOOR03",
+    "country": "USA"
+  },
+  {
+    "rank": 205,
+    "name": "Roberto Icaza Kinloch",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Baton Rouge Winter 2026",
+    "wcaid": "2023KINL02",
+    "country": "Nicaragua"
+  },
+  {
+    "rank": 205,
+    "name": "Paul Mahvi",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2012MAHV01",
+    "country": "USA"
+  },
+  {
+    "rank": 205,
+    "name": "Jakub Cabaj",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Fun with Fewest Moves in Warsaw 2026",
+    "wcaid": "2008CABA03",
+    "country": "Poland"
+  },
+  {
+    "rank": 205,
+    "name": "Abhilash Kasina",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2024KASI01",
+    "country": "India"
+  },
+  {
+    "rank": 205,
+    "name": "Basile Chandon",
+    "gender": "男",
+    "result": "35.00",
+    "competition": "Cœur de Cube Charantonnay 2026",
+    "wcaid": "2022CHAN39",
+    "country": "France"
+  },
+  {
+    "rank": 205,
+    "name": "Emery McFeeter",
+    "gender": "未知",
+    "result": "35.00",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2019MCFE01",
+    "country": "USA"
+  },
+  {
+    "rank": 212,
+    "name": "Jānis Zirnis",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2013ZIRN01",
+    "country": "Latvia"
+  },
+  {
+    "rank": 212,
+    "name": "Riccardo Raciti",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "Sicily Smart Solving 2026",
+    "wcaid": "2016RACI03",
+    "country": "Slovakia"
+  },
+  {
+    "rank": 212,
+    "name": "José David Castiblanco Marin",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "FMC Colombia X 2026",
+    "wcaid": "2012MARI04",
+    "country": "Colombia"
+  },
+  {
+    "rank": 212,
+    "name": "Stepan Kaplinskyi (Степан Каплінський)",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "Kyiv Blind Side Winter 2026",
+    "wcaid": "2024KAPL01",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 212,
+    "name": "Jorge Adrian Hernández Dionicio",
+    "gender": "男",
+    "result": "35.33",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2011DION02",
+    "country": "Mexico"
+  },
+  {
+    "rank": 217,
+    "name": "Kavin Tangtartharakul",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2014TANG03",
+    "country": "USA"
+  },
+  {
+    "rank": 217,
+    "name": "Mikkel Stang Birnum",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "Aarhus Winter 2026",
+    "wcaid": "2022BIRN01",
+    "country": "Denmark"
+  },
+  {
+    "rank": 217,
+    "name": "Nikita Shapovalov (Нікіта Шаповалов)",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2024SHAP04",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 217,
+    "name": "Preetham Samala",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2022SAMA01",
+    "country": "India"
+  },
+  {
+    "rank": 217,
+    "name": "Nathan Phillips",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "North Star Cubing Challenge MN 2026",
+    "wcaid": "2021PHIL05",
+    "country": "USA"
+  },
+  {
+    "rank": 217,
+    "name": "Timo Norrkniivilä",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "VERK XII 2026",
+    "wcaid": "2017NORR01",
+    "country": "Finland"
+  },
+  {
+    "rank": 217,
+    "name": "Salma Sydykov Méndez",
+    "gender": "女",
+    "result": "35.67",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2022MEND15",
+    "country": "Mexico"
+  },
+  {
+    "rank": 217,
+    "name": "Thomas Bevan",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2017BEVA01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 217,
+    "name": "Keenan Darkins",
+    "gender": "男",
+    "result": "35.67",
+    "competition": "Oberlin Challenge I 2026",
+    "wcaid": "2019DARK02",
+    "country": "USA"
+  },
+  {
+    "rank": 226,
+    "name": "Mateusz Szwugier",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2014SZWU01",
+    "country": "Poland"
+  },
+  {
+    "rank": 226,
+    "name": "Adam Black",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2022BLAC01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 226,
+    "name": "James Allsopp",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2026ALLS01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 226,
+    "name": "Daniel Leidulvstad Pereda",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "Love Is Blind Lima 2026",
+    "wcaid": "2023PERE14",
+    "country": "Peru"
+  },
+  {
+    "rank": 226,
+    "name": "Anukun Supcharoenkun (อนุกูล ทรัพย์เจริญกุล)",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "Please Be Quiet Thailand 2026",
+    "wcaid": "2009SUPC01",
+    "country": "Thailand"
+  },
+  {
+    "rank": 226,
+    "name": "Jacob Vincent Vicente Mangosing",
+    "gender": "男",
+    "result": "36.00",
+    "competition": "Don't DNF Davis 2026",
+    "wcaid": "2022MANG07",
+    "country": "USA"
+  },
+  {
+    "rank": 232,
+    "name": "Fred Johnson",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2006JOHN01",
+    "country": "USA"
+  },
+  {
+    "rank": 232,
+    "name": "Graham Siggins",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2016SIGG01",
+    "country": "USA"
+  },
+  {
+    "rank": 232,
+    "name": "Axel Juan Pablo Moreno Rodriguez",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "FMC Colombia IX 2026",
+    "wcaid": "2023RODR80",
+    "country": "Colombia"
+  },
+  {
+    "rank": 232,
+    "name": "Adam Romanowski",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Fun with Fewest Moves in Warsaw 2026",
+    "wcaid": "2023ROMA10",
+    "country": "Poland"
+  },
+  {
+    "rank": 232,
+    "name": "Abhijeet Ghodgaonkar (अभिजीत घोडगावकर)",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2013GHOD01",
+    "country": "India"
+  },
+  {
+    "rank": 232,
+    "name": "Jean-Charles Tillit",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Merignac Open CuBeutrois 2026",
+    "wcaid": "2018TILL02",
+    "country": "France"
+  },
+  {
+    "rank": 232,
+    "name": "Luis Eduardo Martínez Castellanos",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2016CAST01",
+    "country": "Mexico"
+  },
+  {
+    "rank": 232,
+    "name": "James Ballantine",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2018BALL01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 232,
+    "name": "Sam Jones",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2023JONE09",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 232,
+    "name": "Markus Pirzer",
+    "gender": "男",
+    "result": "36.33",
+    "competition": "FMC Lovers Fürth 2026",
+    "wcaid": "2006PIRZ01",
+    "country": "Germany"
+  },
+  {
+    "rank": 232,
+    "name": "Madeline Willoughby-Khan",
+    "gender": "女",
+    "result": "36.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2019WILL30",
+    "country": "Australia"
+  },
+  {
+    "rank": 243,
+    "name": "Hans Christian Rosendal Overgaard",
+    "gender": "女",
+    "result": "36.67",
+    "competition": "Aarhus Winter 2026",
+    "wcaid": "2022ROSE31",
+    "country": "Denmark"
+  },
+  {
+    "rank": 243,
+    "name": "Thor Muto Asmund",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "Aarhus Winter 2026",
+    "wcaid": "2017ASMU01",
+    "country": "Denmark"
+  },
+  {
+    "rank": 243,
+    "name": "Lucas Patrick Dowling",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2023DOWL01",
+    "country": "Ireland"
+  },
+  {
+    "rank": 243,
+    "name": "Anish Sanjay Badithe",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2017BADI03",
+    "country": "India"
+  },
+  {
+    "rank": 243,
+    "name": "Manuel Popayán",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "FMC Colombia X 2026",
+    "wcaid": "2017POPA01",
+    "country": "Colombia"
+  },
+  {
+    "rank": 243,
+    "name": "Jack Pfeifer",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "Oberlin Challenge I 2026",
+    "wcaid": "2016PFEI01",
+    "country": "USA"
+  },
+  {
+    "rank": 243,
+    "name": "Mitchell Anderson",
+    "gender": "男",
+    "result": "36.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022ANDE01",
+    "country": "Australia"
+  },
+  {
+    "rank": 250,
+    "name": "Maksymilian Gala",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2022GALA01",
+    "country": "Poland"
+  },
+  {
+    "rank": 250,
+    "name": "Andres Rodriguez",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Baton Rouge Winter 2026",
+    "wcaid": "2015RODR01",
+    "country": "USA"
+  },
+  {
+    "rank": 250,
+    "name": "Vlad Negară",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2017NEGA01",
+    "country": "Romania"
+  },
+  {
+    "rank": 250,
+    "name": "Malo Coraboeuf",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "Merignac Open CuBeutrois 2026",
+    "wcaid": "2019CORA01",
+    "country": "France"
+  },
+  {
+    "rank": 250,
+    "name": "Ethan Mendelson",
+    "gender": "男",
+    "result": "37.00",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2022MEND13",
+    "country": "USA"
+  },
+  {
+    "rank": 255,
+    "name": "Ryan Morrison",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "Arizona Quiet Championship 2026",
+    "wcaid": "2019MORR07",
+    "country": "USA"
+  },
+  {
+    "rank": 255,
+    "name": "James Kershaw",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "No Sprinting NY 2026",
+    "wcaid": "2022KERS01",
+    "country": "USA"
+  },
+  {
+    "rank": 255,
+    "name": "Andrew Joshua",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "No Sprinting NY 2026",
+    "wcaid": "2022JOSH12",
+    "country": "USA"
+  },
+  {
+    "rank": 255,
+    "name": "Akula Pavan Kumar",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2011KUMA01",
+    "country": "India"
+  },
+  {
+    "rank": 255,
+    "name": "Ivan ThanhDanh Duong",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "North Star Cubing Challenge MN 2026",
+    "wcaid": "2022DUON09",
+    "country": "USA"
+  },
+  {
+    "rank": 255,
+    "name": "Auric Cui",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022CUIA01",
+    "country": "Australia"
+  },
+  {
+    "rank": 255,
+    "name": "Alvis Ng",
+    "gender": "男",
+    "result": "37.33",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2024NGAL02",
+    "country": "Singapore"
+  },
+  {
+    "rank": 262,
+    "name": "Azael Toysehua",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "Arizona Quiet Championship 2026",
+    "wcaid": "2017TOYS01",
+    "country": "Mexico"
+  },
+  {
+    "rank": 262,
+    "name": "Stanisław Ożyński",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "Fun with Fewest Moves in Warsaw 2026",
+    "wcaid": "2022OZYN01",
+    "country": "Poland"
+  },
+  {
+    "rank": 262,
+    "name": "Koustubh Nadadur",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2022NADA02",
+    "country": "India"
+  },
+  {
+    "rank": 262,
+    "name": "Andrés Hisashi Suzuki Cabrera",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "Love Is Blind Lima 2026",
+    "wcaid": "2016SUZU03",
+    "country": "Peru"
+  },
+  {
+    "rank": 262,
+    "name": "Ryan Lau",
+    "gender": "男",
+    "result": "37.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022LAUR07",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 267,
+    "name": "Ian Yazid Zavala",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "FMC Tijuas I 2026",
+    "wcaid": "2023LOPE06",
+    "country": "Mexico"
+  },
+  {
+    "rank": 267,
+    "name": "Takayuki Tanaka (田中隆喜)",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2014TANA01",
+    "country": "Japan"
+  },
+  {
+    "rank": 267,
+    "name": "Oliver Wheat",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2016WHEA01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 267,
+    "name": "Antoine Quemerais",
+    "gender": "男",
+    "result": "38.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022QUEM01",
+    "country": "France"
+  },
+  {
+    "rank": 271,
+    "name": "Stanisław Szyszka",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2016SZYS02",
+    "country": "Poland"
+  },
+  {
+    "rank": 271,
+    "name": "Ordway Persyn",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2016PERS01",
+    "country": "USA"
+  },
+  {
+    "rank": 271,
+    "name": "Dylan Miller",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "Baton Rouge Winter 2026",
+    "wcaid": "2015MILL01",
+    "country": "USA"
+  },
+  {
+    "rank": 271,
+    "name": "Vladislavs Baranovs",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "PBQ Ropaži 2026",
+    "wcaid": "2012BARA03",
+    "country": "Latvia"
+  },
+  {
+    "rank": 271,
+    "name": "Márton Pap",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "Hungarian FMC Series 1 2026",
+    "wcaid": "2023PAPM01",
+    "country": "Hungary"
+  },
+  {
+    "rank": 271,
+    "name": "Wojciech Piórczyński",
+    "gender": "男",
+    "result": "38.33",
+    "competition": "Fun with Fewest Moves in Warsaw 2026",
+    "wcaid": "2021PIOR01",
+    "country": "Poland"
+  },
+  {
+    "rank": 277,
+    "name": "Benjamin Bjerring Bach",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "Aarhus Winter 2026",
+    "wcaid": "2023BACH04",
+    "country": "Denmark"
+  },
+  {
+    "rank": 277,
+    "name": "Niilo Eskelinen",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "VERK XII 2026",
+    "wcaid": "2022ESKE01",
+    "country": "Finland"
+  },
+  {
+    "rank": 277,
+    "name": "Weikang Zheng (郑炜康)",
+    "gender": "男",
+    "result": "38.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018ZHEN42",
+    "country": "China"
+  },
+  {
+    "rank": 280,
+    "name": "Andrew French",
+    "gender": "男",
+    "result": "39.00",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2019FREN01",
+    "country": "USA"
+  },
+  {
+    "rank": 280,
+    "name": "Steven Wintringham",
+    "gender": "男",
+    "result": "39.00",
+    "competition": "No Sprinting NY 2026",
+    "wcaid": "2015WINT02",
+    "country": "USA"
+  },
+  {
+    "rank": 280,
+    "name": "Adriel Tsui",
+    "gender": "男",
+    "result": "39.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2021TSUI01",
+    "country": "Australia"
+  },
+  {
+    "rank": 280,
+    "name": "Minxing Zhang (张敏行)",
+    "gender": "女",
+    "result": "39.00",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023ZHAN23",
+    "country": "China"
+  },
+  {
+    "rank": 284,
+    "name": "Zachary Miller",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2017MILL04",
+    "country": "USA"
+  },
+  {
+    "rank": 284,
+    "name": "Hamza Hafeez",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "SacQuiet Winter 2026",
+    "wcaid": "2018HAFE01",
+    "country": "USA"
+  },
+  {
+    "rank": 284,
+    "name": "Damir Zhanataev",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "Please Be Quiet Thailand 2026",
+    "wcaid": "2017ZHAD01",
+    "country": "Kazakhstan"
+  },
+  {
+    "rank": 284,
+    "name": "Kasparas Lienys",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "PBQ Ropaži 2026",
+    "wcaid": "2018LIEN01",
+    "country": "Lithuania"
+  },
+  {
+    "rank": 284,
+    "name": "Luke Steele",
+    "gender": "男",
+    "result": "39.33",
+    "competition": "Wellington Mind Games 2026",
+    "wcaid": "2022STEE07",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 289,
+    "name": "Mihails Telkijevs",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2024TELK01",
+    "country": "Latvia"
+  },
+  {
+    "rank": 289,
+    "name": "Gerard Vrieze",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2025VRIE02",
+    "country": "Netherlands"
+  },
+  {
+    "rank": 289,
+    "name": "Mannessah Kani",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2016KANI01",
+    "country": "Australia"
+  },
+  {
+    "rank": 289,
+    "name": "Emmet Hobbs",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2016HOBB01",
+    "country": "Australia"
+  },
+  {
+    "rank": 289,
+    "name": "Tom Noble",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2019NOBL01",
+    "country": "Australia"
+  },
+  {
+    "rank": 289,
+    "name": "Clancy Caster",
+    "gender": "男",
+    "result": "39.67",
+    "competition": "Oregon State PBQ 2026",
+    "wcaid": "2017CAST08",
+    "country": "USA"
+  },
+  {
+    "rank": 295,
+    "name": "Omar Ornelas Sifuentes",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "FMC Tijuas I 2026",
+    "wcaid": "2016SIFU02",
+    "country": "Mexico"
+  },
+  {
+    "rank": 295,
+    "name": "Glen Goh Wee Zhuan (吴洧全)",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "Please Be Quiet Thailand 2026",
+    "wcaid": "2015ZHUA01",
+    "country": "Singapore"
+  },
+  {
+    "rank": 295,
+    "name": "Alex Hamburg",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "No Sprinting NY 2026",
+    "wcaid": "2019HAMB01",
+    "country": "USA"
+  },
+  {
+    "rank": 295,
+    "name": "Alberto Romero",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2015ROME03",
+    "country": "Spain"
+  },
+  {
+    "rank": 295,
+    "name": "Andrew Tyberg",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "North Star Cubing Challenge MN 2026",
+    "wcaid": "2016TYBE01",
+    "country": "USA"
+  },
+  {
+    "rank": 295,
+    "name": "Hans Lin",
+    "gender": "男",
+    "result": "40.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2018LINH02",
+    "country": "Australia"
+  },
+  {
+    "rank": 301,
+    "name": "Reed W. Richardson",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2021RICH02",
+    "country": "USA"
+  },
+  {
+    "rank": 301,
+    "name": "Diasbek Zhuraev (Диасбек Жураев)",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Please Be Quiet Thailand 2026",
+    "wcaid": "2021ZHUR04",
+    "country": "Kazakhstan"
+  },
+  {
+    "rank": 301,
+    "name": "Daniel Adel Alhayki",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Aarhus Winter 2026",
+    "wcaid": "2018ALHA03",
+    "country": "Bahrain"
+  },
+  {
+    "rank": 301,
+    "name": "Liam Paul Mader",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "North Star Cubing Challenge MN 2026",
+    "wcaid": "2025MADE01",
+    "country": "USA"
+  },
+  {
+    "rank": 301,
+    "name": "Adam Stringer",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2023STRI02",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 301,
+    "name": "Napat Smavatkul",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Please Be Quiet Thailand 2026",
+    "wcaid": "2023SMAV01",
+    "country": "Thailand"
+  },
+  {
+    "rank": 301,
+    "name": "Nathan Fares",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2021FARE01",
+    "country": "Australia"
+  },
+  {
+    "rank": 301,
+    "name": "Hamish Bentley",
+    "gender": "男",
+    "result": "40.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2023BENT02",
+    "country": "Australia"
+  },
+  {
+    "rank": 309,
+    "name": "Giovanni Tramontano",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2013TRAM03",
+    "country": "Italy"
+  },
+  {
+    "rank": 309,
+    "name": "Alexandru Ignat",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2019IGNA02",
+    "country": "Romania"
+  },
+  {
+    "rank": 309,
+    "name": "Vasile Dan",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2013VASI02",
+    "country": "Romania"
+  },
+  {
+    "rank": 309,
+    "name": "Marianne Faure",
+    "gender": "女",
+    "result": "40.67",
+    "competition": "Cœur de Cube Charantonnay 2026",
+    "wcaid": "2023FAUR01",
+    "country": "France"
+  },
+  {
+    "rank": 309,
+    "name": "Ang An-Sel",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2016ANSE01",
+    "country": "Singapore"
+  },
+  {
+    "rank": 309,
+    "name": "Cameron Stollery",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2010STOL01",
+    "country": "Australia"
+  },
+  {
+    "rank": 309,
+    "name": "Ruixuan Dong (董睿轩)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2024DONG19",
+    "country": "China"
+  },
+  {
+    "rank": 309,
+    "name": "Zeyuan Guo (郭泽原)",
+    "gender": "男",
+    "result": "40.67",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2018GUOZ07",
+    "country": "China"
+  },
+  {
+    "rank": 317,
+    "name": "Tsukasa Sano (佐野司)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2022SANO02",
+    "country": "USA"
+  },
+  {
+    "rank": 317,
+    "name": "Yuki Gao",
+    "gender": "女",
+    "result": "41.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2019GAOY01",
+    "country": "China"
+  },
+  {
+    "rank": 317,
+    "name": "Akula Sai Kumar",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2012KUMA02",
+    "country": "India"
+  },
+  {
+    "rank": 317,
+    "name": "Max Kwok U Sam (郭愉琛)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2018SAMK01",
+    "country": "China"
+  },
+  {
+    "rank": 317,
+    "name": "Karl Abarquez",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2023ABAR02",
+    "country": "Philippines"
+  },
+  {
+    "rank": 317,
+    "name": "Veer Liu Dogra",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2023DOGR01",
+    "country": "Australia"
+  },
+  {
+    "rank": 317,
+    "name": "Ostap Bukatiuk (Остап Букатюк)",
+    "gender": "男",
+    "result": "41.00",
+    "competition": "Kyiv Blind Side Winter 2026",
+    "wcaid": "2025BUKA01",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 324,
+    "name": "Kasper Jansson",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2018JANS05",
+    "country": "USA"
+  },
+  {
+    "rank": 324,
+    "name": "Sherry Tao (陶心仪)",
+    "gender": "女",
+    "result": "41.33",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2022TAOS01",
+    "country": "USA"
+  },
+  {
+    "rank": 324,
+    "name": "Darby Lee",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2018LEED03",
+    "country": "Australia"
+  },
+  {
+    "rank": 324,
+    "name": "Lui Chi Fung (雷智鋒)",
+    "gender": "男",
+    "result": "41.33",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2014LUIC01",
+    "country": "China"
+  },
+  {
+    "rank": 328,
+    "name": "Dylan Himmelfarb",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "Wellington Mind Games 2026",
+    "wcaid": "2023HIMM02",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 328,
+    "name": "Velidi Venkata Jagan Mohana Murali Krishna",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2012KRIS04",
+    "country": "India"
+  },
+  {
+    "rank": 328,
+    "name": "Richard Taylor",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2015TAYL04",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 328,
+    "name": "Benjamin Kao",
+    "gender": "男",
+    "result": "41.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022KAOB01",
+    "country": "Australia"
+  },
+  {
+    "rank": 332,
+    "name": "Thomas Schukraft",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2018SCHU17",
+    "country": "Germany"
+  },
+  {
+    "rank": 332,
+    "name": "Aaryn Cole",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Spokane Winter PBQ 2026",
+    "wcaid": "2023COLE17",
+    "country": "USA"
+  },
+  {
+    "rank": 332,
+    "name": "Enrico Bedocchi",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2023BEDO03",
+    "country": "Italy"
+  },
+  {
+    "rank": 332,
+    "name": "Florian Bernard",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Merignac Open CuBeutrois 2026",
+    "wcaid": "2023BERN07",
+    "country": "France"
+  },
+  {
+    "rank": 332,
+    "name": "Dennis Preciado",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Love Is Blind Lima 2026",
+    "wcaid": "2022PREC01",
+    "country": "Peru"
+  },
+  {
+    "rank": 332,
+    "name": "Benson Lawson",
+    "gender": "男",
+    "result": "42.00",
+    "competition": "Oregon State PBQ 2026",
+    "wcaid": "2018LAWS02",
+    "country": "USA"
+  },
+  {
+    "rank": 338,
+    "name": "Marek Dojtrowski",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2023DOJT01",
+    "country": "Poland"
+  },
+  {
+    "rank": 338,
+    "name": "Samuel Martin",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2019MART21",
+    "country": "USA"
+  },
+  {
+    "rank": 338,
+    "name": "Yeskendir Kenzhebolat",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "PBQ in Almaty 2026",
+    "wcaid": "2024KENZ01",
+    "country": "Kazakhstan"
+  },
+  {
+    "rank": 338,
+    "name": "Toms Edvards Vucens",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "PBQ Ropaži 2026",
+    "wcaid": "2022VUCE02",
+    "country": "Latvia"
+  },
+  {
+    "rank": 338,
+    "name": "Damian Brzozowski",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Fun with Fewest Moves in Warsaw 2026",
+    "wcaid": "2024BRZO01",
+    "country": "Poland"
+  },
+  {
+    "rank": 338,
+    "name": "Dattatreya Chodavarapu",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2014DATT01",
+    "country": "India"
+  },
+  {
+    "rank": 338,
+    "name": "Eduardo Sandoval Maldonado",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2022MALD05",
+    "country": "Mexico"
+  },
+  {
+    "rank": 338,
+    "name": "Peter Au",
+    "gender": "男",
+    "result": "42.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2021AUPE01",
+    "country": "Australia"
+  },
+  {
+    "rank": 346,
+    "name": "Anka Engin",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2017ENGI01",
+    "country": "USA"
+  },
+  {
+    "rank": 346,
+    "name": "Aaron Do",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2019DOAA01",
+    "country": "USA"
+  },
+  {
+    "rank": 346,
+    "name": "Hemanth Gande",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2023GAND07",
+    "country": "India"
+  },
+  {
+    "rank": 346,
+    "name": "Srivishnu Paida",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2019PAID01",
+    "country": "India"
+  },
+  {
+    "rank": 346,
+    "name": "Pablo Ramírez García",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2022GARC28",
+    "country": "Mexico"
+  },
+  {
+    "rank": 346,
+    "name": "Callum Inglis",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2018INGL02",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 346,
+    "name": "Tymofii Bortnyk (Тимофій Бортник)",
+    "gender": "男",
+    "result": "42.67",
+    "competition": "Kyiv Blind Side Winter 2026",
+    "wcaid": "2019BORT04",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 353,
+    "name": "Filip Brokos",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2022BROK03",
+    "country": "Poland"
+  },
+  {
+    "rank": 353,
+    "name": "Malte Oliver Bøgh Kjøller",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2018KJOL01",
+    "country": "Denmark"
+  },
+  {
+    "rank": 353,
+    "name": "Dev Ravindra Munvar",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2015MUNV01",
+    "country": "India"
+  },
+  {
+    "rank": 353,
+    "name": "Liam Sheldon",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "North Star Cubing Challenge MN 2026",
+    "wcaid": "2023SHEL01",
+    "country": "USA"
+  },
+  {
+    "rank": 353,
+    "name": "Sam Tonkin",
+    "gender": "男",
+    "result": "43.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2024TONK01",
+    "country": "Australia"
+  },
+  {
+    "rank": 358,
+    "name": "Takayuki Ookusa (大艸尊之)",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2006OOKU01",
+    "country": "Japan"
+  },
+  {
+    "rank": 358,
+    "name": "Vilius Ribinskas",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "PBQ Ropaži 2026",
+    "wcaid": "2015RIBI01",
+    "country": "Lithuania"
+  },
+  {
+    "rank": 358,
+    "name": "Steve Clarke",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2015CLAR13",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 358,
+    "name": "Daniel Cho",
+    "gender": "男",
+    "result": "43.33",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2021CHOD01",
+    "country": "USA"
+  },
+  {
+    "rank": 362,
+    "name": "Noah Green",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Baton Rouge Winter 2026",
+    "wcaid": "2023GREE01",
+    "country": "USA"
+  },
+  {
+    "rank": 362,
+    "name": "Ryan Eckersley",
+    "gender": "男",
+    "result": "43.67",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2019ECKE02",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 364,
+    "name": "Reece Manders",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2023MAND08",
+    "country": "USA"
+  },
+  {
+    "rank": 364,
+    "name": "Daniel Jamrużka",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2012JAMR01",
+    "country": "Poland"
+  },
+  {
+    "rank": 364,
+    "name": "Xin Shi (石欣)",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2010SHIX01",
+    "country": "China"
+  },
+  {
+    "rank": 364,
+    "name": "Tripp Peters",
+    "gender": "男",
+    "result": "44.00",
+    "competition": "Oregon State PBQ 2026",
+    "wcaid": "2017PETE04",
+    "country": "USA"
+  },
+  {
+    "rank": 368,
+    "name": "Angelo Terpening",
+    "gender": "未知",
+    "result": "44.33",
+    "competition": "No Sprinting NY 2026",
+    "wcaid": "2019TERP01",
+    "country": "USA"
+  },
+  {
+    "rank": 368,
+    "name": "Rostyslav Sviashchenko",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Spokane Winter PBQ 2026",
+    "wcaid": "2022SVIA01",
+    "country": "Ukraine"
+  },
+  {
+    "rank": 368,
+    "name": "Hayden Wallace",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2023WALL05",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 368,
+    "name": "Zicong Weng (翁子聪)",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2014WENG01",
+    "country": "China"
+  },
+  {
+    "rank": 368,
+    "name": "Tristan Patrick",
+    "gender": "男",
+    "result": "44.33",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2016PATR03",
+    "country": "USA"
+  },
+  {
+    "rank": 373,
+    "name": "Rashad Kadado (رشاد قدادو)",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "Don't DNF Davis 2026",
+    "wcaid": "2014KADA02",
+    "country": "Lebanon"
+  },
+  {
+    "rank": 373,
+    "name": "Titouan Rincon",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "Merignac Open CuBeutrois 2026",
+    "wcaid": "2022RINC06",
+    "country": "France"
+  },
+  {
+    "rank": 373,
+    "name": "David José Fernández Bretón",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2023BRET01",
+    "country": "Mexico"
+  },
+  {
+    "rank": 373,
+    "name": "David Kopřiva",
+    "gender": "男",
+    "result": "44.67",
+    "competition": "FMC Lovers Fürth 2026",
+    "wcaid": "2023KOPR02",
+    "country": "Czech Republic"
+  },
+  {
+    "rank": 377,
+    "name": "Ryan Chen",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2024CHEN20",
+    "country": "Australia"
+  },
+  {
+    "rank": 377,
+    "name": "Nate Leitch",
+    "gender": "男",
+    "result": "45.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022LEIT02",
+    "country": "Australia"
+  },
+  {
+    "rank": 379,
+    "name": "Gerardo Ornelas Sifuentes",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "FMC Tijuas I 2026",
+    "wcaid": "2019SIFU01",
+    "country": "Mexico"
+  },
+  {
+    "rank": 379,
+    "name": "Seth Talbot",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "Baton Rouge Winter 2026",
+    "wcaid": "2015TALB01",
+    "country": "USA"
+  },
+  {
+    "rank": 379,
+    "name": "Emanuels Stupelis",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "PBQ Ropaži 2026",
+    "wcaid": "2023STUP03",
+    "country": "Latvia"
+  },
+  {
+    "rank": 379,
+    "name": "Juan Nicolás Pinzón Martínez",
+    "gender": "男",
+    "result": "45.33",
+    "competition": "FMC Colombia IX 2026",
+    "wcaid": "2016MART84",
+    "country": "Colombia"
+  },
+  {
+    "rank": 383,
+    "name": "Udayan Latha Ramamurthi",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "Survive FMC in Hyderabad 2026",
+    "wcaid": "2017RAMA20",
+    "country": "India"
+  },
+  {
+    "rank": 383,
+    "name": "Shain Papalotl Longbehn",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "Micro Minnesota 2026",
+    "wcaid": "2020LONG05",
+    "country": "USA"
+  },
+  {
+    "rank": 383,
+    "name": "Aitan Joseph Marks",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022MARK01",
+    "country": "Australia"
+  },
+  {
+    "rank": 383,
+    "name": "Andrew Davidge",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2019DAVI08",
+    "country": "Australia"
+  },
+  {
+    "rank": 383,
+    "name": "Advay Hari",
+    "gender": "男",
+    "result": "45.67",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2023HARI09",
+    "country": "Singapore"
+  },
+  {
+    "rank": 388,
+    "name": "Nathan Scovis",
+    "gender": "未知",
+    "result": "46.00",
+    "competition": "Don't DNF Davis 2026",
+    "wcaid": "2023SCOV01",
+    "country": "USA"
+  },
+  {
+    "rank": 389,
+    "name": "Tyler Lindow Tsao",
+    "gender": "男",
+    "result": "46.33",
+    "competition": "No Sprinting NY 2026",
+    "wcaid": "2024TSAO01",
+    "country": "USA"
+  },
+  {
+    "rank": 390,
+    "name": "Kévin Ky",
+    "gender": "男",
+    "result": "46.67",
+    "competition": "Merignac Open CuBeutrois 2026",
+    "wcaid": "2022KYKE01",
+    "country": "France"
+  },
+  {
+    "rank": 390,
+    "name": "Noah Abdullah Yen",
+    "gender": "男",
+    "result": "46.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2024YENN01",
+    "country": "Singapore"
+  },
+  {
+    "rank": 390,
+    "name": "Kinkajou Celeste Oren",
+    "gender": "未知",
+    "result": "46.67",
+    "competition": "Oregon State PBQ 2026",
+    "wcaid": "2020OREN01",
+    "country": "USA"
+  },
+  {
+    "rank": 393,
+    "name": "Rodolphe Rouyrre",
+    "gender": "男",
+    "result": "47.00",
+    "competition": "Saucisse Vergèze au PBQ 2026",
+    "wcaid": "2020ROUY01",
+    "country": "France"
+  },
+  {
+    "rank": 393,
+    "name": "Dean Angert",
+    "gender": "男",
+    "result": "47.00",
+    "competition": "North Star Cubing Challenge MN 2026",
+    "wcaid": "2024ANGE14",
+    "country": "USA"
+  },
+  {
+    "rank": 395,
+    "name": "Ilmari Arima",
+    "gender": "男",
+    "result": "47.33",
+    "competition": "VERK XII 2026",
+    "wcaid": "2024ARIM02",
+    "country": "Finland"
+  },
+  {
+    "rank": 396,
+    "name": "Zirui Wang (王子睿)",
+    "gender": "男",
+    "result": "47.67",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2019WANG36",
+    "country": "China"
+  },
+  {
+    "rank": 396,
+    "name": "Jerónimo Espinosa",
+    "gender": "男",
+    "result": "47.67",
+    "competition": "FMC Colombia IX 2026",
+    "wcaid": "2023ESPI07",
+    "country": "Colombia"
+  },
+  {
+    "rank": 396,
+    "name": "Adhyan Daga",
+    "gender": "男",
+    "result": "47.67",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022DAGA01",
+    "country": "Australia"
+  },
+  {
+    "rank": 399,
+    "name": "You Wu (吴悠)",
+    "gender": "男",
+    "result": "48.00",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017WUYO01",
+    "country": "China"
+  },
+  {
+    "rank": 400,
+    "name": "Roman Wofford",
+    "gender": "男",
+    "result": "48.33",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2017WOFF01",
+    "country": "USA"
+  },
+  {
+    "rank": 400,
+    "name": "Alex Carney",
+    "gender": "男",
+    "result": "48.33",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2024CARN05",
+    "country": "USA"
+  },
+  {
+    "rank": 400,
+    "name": "Chris Martin",
+    "gender": "男",
+    "result": "48.33",
+    "competition": "For the Love of FMC USA 2026",
+    "wcaid": "2013MART03",
+    "country": "USA"
+  },
+  {
+    "rank": 400,
+    "name": "AJ Nicholls",
+    "gender": "男",
+    "result": "48.33",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2015NICH04",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 400,
+    "name": "Caleb Joshua Thomas",
+    "gender": "男",
+    "result": "48.33",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2022THOM09",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 400,
+    "name": "Jingbin Li (李晶斌)",
+    "gender": "男",
+    "result": "48.33",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2016LIJI01",
+    "country": "China"
+  },
+  {
+    "rank": 406,
+    "name": "Matthew Arca",
+    "gender": "男",
+    "result": "48.67",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2019ARCA01",
+    "country": "USA"
+  },
+  {
+    "rank": 406,
+    "name": "Carmela Gravano",
+    "gender": "女",
+    "result": "48.67",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2022GRAV05",
+    "country": "Italy"
+  },
+  {
+    "rank": 406,
+    "name": "Valentin Kaunzinger",
+    "gender": "男",
+    "result": "48.67",
+    "competition": "FMC Lovers Fürth 2026",
+    "wcaid": "2021KAUN01",
+    "country": "Germany"
+  },
+  {
+    "rank": 409,
+    "name": "Szymon Gabara",
+    "gender": "男",
+    "result": "49.00",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2023GABA01",
+    "country": "Poland"
+  },
+  {
+    "rank": 409,
+    "name": "Mason Wong",
+    "gender": "男",
+    "result": "49.00",
+    "competition": "Don't DNF Davis 2026",
+    "wcaid": "2022WONG03",
+    "country": "USA"
+  },
+  {
+    "rank": 409,
+    "name": "Mia Sponseller",
+    "gender": "女",
+    "result": "49.00",
+    "competition": "Arizona Quiet Championship 2026",
+    "wcaid": "2017SPON01",
+    "country": "USA"
+  },
+  {
+    "rank": 412,
+    "name": "Tuval Stone",
+    "gender": "男",
+    "result": "49.33",
+    "competition": "PBQ Ropaži 2026",
+    "wcaid": "2022STON03",
+    "country": "Israel"
+  },
+  {
+    "rank": 413,
+    "name": "Ryan Seacroft",
+    "gender": "男",
+    "result": "50.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2022SEAC01",
+    "country": "Australia"
+  },
+  {
+    "rank": 414,
+    "name": "Aris Raksamani (อริศม์ รักษมณี)",
+    "gender": "男",
+    "result": "50.67",
+    "competition": "Please Be Quiet Thailand 2026",
+    "wcaid": "2017RAKS01",
+    "country": "Thailand"
+  },
+  {
+    "rank": 415,
+    "name": "Myles Jarman",
+    "gender": "男",
+    "result": "51.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2016JARM01",
+    "country": "Australia"
+  },
+  {
+    "rank": 416,
+    "name": "Ethan Gotshall",
+    "gender": "男",
+    "result": "51.67",
+    "competition": "Spokane Winter PBQ 2026",
+    "wcaid": "2022GOTS03",
+    "country": "USA"
+  },
+  {
+    "rank": 417,
+    "name": "Ioannis Papadopoulos",
+    "gender": "男",
+    "result": "52.00",
+    "competition": "Cœur de Cube Charantonnay 2026",
+    "wcaid": "2013PAPA01",
+    "country": "Greece"
+  },
+  {
+    "rank": 417,
+    "name": "Lucas Martin",
+    "gender": "男",
+    "result": "52.00",
+    "competition": "Oberlin Challenge I 2026",
+    "wcaid": "2024MARL03",
+    "country": "USA"
+  },
+  {
+    "rank": 419,
+    "name": "Zijia Feng (冯子甲)",
+    "gender": "男",
+    "result": "52.33",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2013FENG02",
+    "country": "China"
+  },
+  {
+    "rank": 420,
+    "name": "Emil Lazaryev",
+    "gender": "男",
+    "result": "52.67",
+    "competition": "Super Duper San Diego 2026",
+    "wcaid": "2022LAZA11",
+    "country": "USA"
+  },
+  {
+    "rank": 420,
+    "name": "Melvin Goglin",
+    "gender": "男",
+    "result": "52.67",
+    "competition": "Merignac Open CuBeutrois 2026",
+    "wcaid": "2023GOGL02",
+    "country": "France"
+  },
+  {
+    "rank": 422,
+    "name": "Dylan Raymond",
+    "gender": "男",
+    "result": "53.00",
+    "competition": "Oregon State PBQ 2026",
+    "wcaid": "2016RAYM01",
+    "country": "USA"
+  },
+  {
+    "rank": 423,
+    "name": "Christopher Placencia",
+    "gender": "男",
+    "result": "53.33",
+    "competition": "Love Is Blind Lima 2026",
+    "wcaid": "2024PLAC02",
+    "country": "Peru"
+  },
+  {
+    "rank": 424,
+    "name": "Piotr Brokos",
+    "gender": "男",
+    "result": "53.67",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2023BROK01",
+    "country": "Poland"
+  },
+  {
+    "rank": 424,
+    "name": "Caleb Axvig",
+    "gender": "男",
+    "result": "53.67",
+    "competition": "Micro Minnesota 2026",
+    "wcaid": "2025AXVI01",
+    "country": "USA"
+  },
+  {
+    "rank": 426,
+    "name": "Tomi Ronkainen",
+    "gender": "男",
+    "result": "54.00",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2012RONK01",
+    "country": "Finland"
+  },
+  {
+    "rank": 427,
+    "name": "Antoni Szcześniak",
+    "gender": "男",
+    "result": "54.33",
+    "competition": "Fun with Fewest Moves in Warsaw 2026",
+    "wcaid": "2023SZCZ04",
+    "country": "Poland"
+  },
+  {
+    "rank": 428,
+    "name": "Niko Ronkainen",
+    "gender": "男",
+    "result": "54.67",
+    "competition": "VERK XII 2026",
+    "wcaid": "2010RONK01",
+    "country": "Finland"
+  },
+  {
+    "rank": 428,
+    "name": "Luis Armando Guerra Garcia",
+    "gender": "男",
+    "result": "54.67",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2023GARC48",
+    "country": "Mexico"
+  },
+  {
+    "rank": 430,
+    "name": "Benjamin Valdivieso",
+    "gender": "男",
+    "result": "55.00",
+    "competition": "Georgia Quiet Championship 2026",
+    "wcaid": "2022VALD04",
+    "country": "USA"
+  },
+  {
+    "rank": 431,
+    "name": "Kerry Go",
+    "gender": "男",
+    "result": "55.67",
+    "competition": "No Sprinting NY 2026",
+    "wcaid": "2019GOKE01",
+    "country": "USA"
+  },
+  {
+    "rank": 431,
+    "name": "Chris Tabar",
+    "gender": "男",
+    "result": "55.67",
+    "competition": "Spokane Winter PBQ 2026",
+    "wcaid": "2017TABA02",
+    "country": "USA"
+  },
+  {
+    "rank": 431,
+    "name": "Carson Claud",
+    "gender": "男",
+    "result": "55.67",
+    "competition": "Spokane Winter PBQ 2026",
+    "wcaid": "2015CLAU02",
+    "country": "USA"
+  },
+  {
+    "rank": 434,
+    "name": "Takato Mori (森理人)",
+    "gender": "男",
+    "result": "56.00",
+    "competition": "Tokyo FMC Winter 2026",
+    "wcaid": "2016MORI01",
+    "country": "Japan"
+  },
+  {
+    "rank": 434,
+    "name": "Oscar Niizeki",
+    "gender": "男",
+    "result": "56.00",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2024NIIZ01",
+    "country": "Australia"
+  },
+  {
+    "rank": 436,
+    "name": "Daniel Rörick",
+    "gender": "男",
+    "result": "56.33",
+    "competition": "Europe FMC Friends Winter 2026",
+    "wcaid": "2022RORI01",
+    "country": "Germany"
+  },
+  {
+    "rank": 436,
+    "name": "Aaron Lu",
+    "gender": "男",
+    "result": "56.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2021LUAA01",
+    "country": "Australia"
+  },
+  {
+    "rank": 438,
+    "name": "Ryan Butler",
+    "gender": "男",
+    "result": "57.00",
+    "competition": "North Star Cubing Challenge MN 2026",
+    "wcaid": "2024BUTL01",
+    "country": "USA"
+  },
+  {
+    "rank": 439,
+    "name": "Edward Carew-Jones",
+    "gender": "男",
+    "result": "57.33",
+    "competition": "FMC Cheltenham Winter 2026",
+    "wcaid": "2022CARE01",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 440,
+    "name": "Malthe Petersen",
+    "gender": "男",
+    "result": "58.33",
+    "competition": "Aarhus Winter 2026",
+    "wcaid": "2025PETE18",
+    "country": "Denmark"
+  },
+  {
+    "rank": 440,
+    "name": "Lisa Kucala",
+    "gender": "女",
+    "result": "58.33",
+    "competition": "Micro Minnesota 2026",
+    "wcaid": "2019KUCA01",
+    "country": "USA"
+  },
+  {
+    "rank": 440,
+    "name": "Kittatam Saisaard",
+    "gender": "男",
+    "result": "58.33",
+    "competition": "Melbourne Summer 2026",
+    "wcaid": "2018SAIS01",
+    "country": "Australia"
+  },
+  {
+    "rank": 443,
+    "name": "Ewan Delaunay",
+    "gender": "男",
+    "result": "61.33",
+    "competition": "Merignac Open CuBeutrois 2026",
+    "wcaid": "2025DELA03",
+    "country": "France"
+  },
+  {
+    "rank": 443,
+    "name": "Myriam Daniela Sancliment Martínez",
+    "gender": "女",
+    "result": "61.33",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2024MART68",
+    "country": "Mexico"
+  },
+  {
+    "rank": 445,
+    "name": "Brooks Nelsen",
+    "gender": "男",
+    "result": "62.33",
+    "competition": "Micro Minnesota 2026",
+    "wcaid": "2024NELS13",
+    "country": "USA"
+  },
+  {
+    "rank": 446,
+    "name": "Alan Rojas Cruz",
+    "gender": "男",
+    "result": "63.00",
+    "competition": "Pumacubo CDMX 2026",
+    "wcaid": "2023CRUZ01",
+    "country": "Mexico"
+  }
+]

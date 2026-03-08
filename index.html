@@ -45,7 +45,7 @@
 <script src="api.js"></script>
 <script src="ui.js"></script>
 <script src="main.js"></script>
-<!-- 悬浮反馈按钮 -->
+<!-- 悬浮反馈按钮（可拖拽） -->
 <div id="feedbackFloat" class="feedback-float expanded">
     <span class="feedback-text">反馈</span>
 </div>
@@ -70,6 +70,11 @@
     font-size: 16px;
     line-height: 1;
     white-space: nowrap;
+    /* 拖拽时禁用文本选择 */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .feedback-float.collapsed {
     width: 30px;
@@ -98,8 +103,11 @@
 (function() {
     const floatBtn = document.getElementById('feedbackFloat');
     let timer = null;
+    let isDragging = false;           // 是否正在拖拽
+    let startX, startY;                // 鼠标起始位置（视口坐标）
+    let startLeft, startTop;            // 按钮起始位置（left/top 值）
 
-    // 切换展开/折叠状态
+    // ---------- 展开/折叠逻辑 ----------
     function setExpanded(expanded) {
         if (expanded) {
             floatBtn.classList.remove('collapsed');
@@ -110,7 +118,6 @@
         }
     }
 
-    // 启动10秒倒计时后折叠
     function startTimer() {
         if (timer) clearTimeout(timer);
         timer = setTimeout(() => {
@@ -119,7 +126,6 @@
         }, 10000); // 10秒
     }
 
-    // 清除计时器
     function clearTimer() {
         if (timer) {
             clearTimeout(timer);
@@ -127,16 +133,105 @@
         }
     }
 
-    // 点击处理
+    // ---------- 拖拽逻辑 ----------
+    function onDragStart(e) {
+        e.preventDefault();            // 阻止选中文本或默认拖拽行为
+        e.stopPropagation();
+
+        // 获取当前按钮相对于视口的位置
+        const rect = floatBtn.getBoundingClientRect();
+        startLeft = rect.left;
+        startTop = rect.top;
+
+        // 切换为 left/top 定位，并将 right/bottom 设为 auto
+        floatBtn.style.left = startLeft + 'px';
+        floatBtn.style.top = startTop + 'px';
+        floatBtn.style.right = 'auto';
+        floatBtn.style.bottom = 'auto';
+
+        // 记录鼠标起始位置
+        if (e.type === 'mousedown') {
+            startX = e.clientX;
+            startY = e.clientY;
+            document.addEventListener('mousemove', onDragMove);
+            document.addEventListener('mouseup', onDragEnd);
+        } else if (e.type === 'touchstart') {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+            document.addEventListener('touchmove', onDragMove, { passive: false });
+            document.addEventListener('touchend', onDragEnd);
+            document.addEventListener('touchcancel', onDragEnd);
+        }
+
+        isDragging = true;
+    }
+
+    function onDragMove(e) {
+        if (!isDragging) return;
+        e.preventDefault();  // 防止滚动
+
+        let clientX, clientY;
+        if (e.type === 'mousemove') {
+            clientX = e.clientX;
+            clientY = e.clientY;
+        } else if (e.type === 'touchmove') {
+            clientX = e.touches[0].clientX;
+            clientY = e.touches[0].clientY;
+        }
+
+        // 计算新位置
+        let newLeft = startLeft + (clientX - startX);
+        let newTop = startTop + (clientY - startY);
+
+        // 边界限制（防止拖出屏幕）
+        const winWidth = window.innerWidth;
+        const winHeight = window.innerHeight;
+        const btnWidth = floatBtn.offsetWidth;
+        const btnHeight = floatBtn.offsetHeight;
+
+        newLeft = Math.max(0, Math.min(newLeft, winWidth - btnWidth));
+        newTop = Math.max(0, Math.min(newTop, winHeight - btnHeight));
+
+        // 更新位置
+        floatBtn.style.left = newLeft + 'px';
+        floatBtn.style.top = newTop + 'px';
+
+        // 更新起始值，使拖拽连续（如果不更新，下一次计算会基于原始startLeft偏移，导致累加错误）
+        // 注意：这里要同时更新 startX/Y 和 startLeft/Top，以便下一次移动基于当前位置
+        startX = clientX;
+        startY = clientY;
+        startLeft = newLeft;
+        startTop = newTop;
+    }
+
+    function onDragEnd(e) {
+        if (!isDragging) return;
+        isDragging = false;
+
+        // 移除事件监听
+        document.removeEventListener('mousemove', onDragMove);
+        document.removeEventListener('mouseup', onDragEnd);
+        document.removeEventListener('touchmove', onDragMove);
+        document.removeEventListener('touchend', onDragEnd);
+        document.removeEventListener('touchcancel', onDragEnd);
+    }
+
+    // 绑定拖拽事件
+    floatBtn.addEventListener('mousedown', onDragStart);
+    floatBtn.addEventListener('touchstart', onDragStart, { passive: false });
+
+    // ---------- 点击处理（排除拖拽）----------
     floatBtn.addEventListener('click', function(e) {
-        e.stopPropagation(); // 避免冒泡（如有必要）
+        if (isDragging) return;          // 如果是拖拽产生的mouseup，不执行点击逻辑
+        e.stopPropagation();
+
         if (floatBtn.classList.contains('collapsed')) {
             // 折叠状态：展开并重新计时
             setExpanded(true);
             startTimer();
         } else {
             // 展开状态：跳转反馈页面
-            clearTimer(); // 跳转前清除计时器（非必须，但规范）
+            clearTimer();
             window.location.href = 'feedback.html';
         }
     });

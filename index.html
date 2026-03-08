@@ -8,51 +8,6 @@
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* 无图标悬浮反馈按钮 */
-        .feedback-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 1000;
-        }
-        .feedback-btn {
-            display: inline-block;
-            background-color: #2c3e50;
-            color: white;
-            padding: 10px 22px;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: 500;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            transition: background-color 0.3s, transform 0.2s;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        .feedback-btn:hover {
-            background-color: #1e2b37;
-            transform: scale(1.05);
-        }
-        /* 手机端隐藏悬浮按钮 */
-        @media (max-width: 768px) {
-            .feedback-float {
-                display: none;
-            }
-        }
-        /* 移动菜单中反馈链接的基础样式（与现有菜单项尽量保持一致） */
-        .mobile-nav .nav-item.mobile-feedback {
-            display: block;
-            padding: 12px 16px;
-            color: #333;
-            text-decoration: none;
-            border-bottom: 1px solid #eee;
-            font-size: 1rem;
-        }
-        .mobile-nav .nav-item.mobile-feedback:hover {
-            background-color: #f5f5f5;
-        }
-    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -82,11 +37,6 @@
     </footer>
 </div>
 
-<!-- 无图标悬浮反馈按钮（手机端自动隐藏） -->
-<div class="feedback-float">
-    <a href="feedback.html" class="feedback-btn">反馈</a>
-</div>
-
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
@@ -95,60 +45,105 @@
 <script src="api.js"></script>
 <script src="ui.js"></script>
 <script src="main.js"></script>
+<!-- 悬浮反馈按钮 -->
+<div id="feedbackFloat" class="feedback-float expanded">
+    <span class="feedback-text">反馈</span>
+</div>
 
-<!-- 向移动菜单中添加“反馈”链接（保持与现有菜单样式一致） -->
+<style>
+.feedback-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    user-select: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 1;
+    white-space: nowrap;
+}
+.feedback-float.collapsed {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #2c3e50;
+}
+.feedback-float.collapsed .feedback-text {
+    display: none;
+}
+.feedback-float.collapsed::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+}
+.feedback-float.expanded::after {
+    display: none;
+}
+</style>
+
 <script>
 (function() {
-    // 等待移动菜单容器出现
-    const mobileNav = document.getElementById('mobile-nav');
-    if (!mobileNav) return;
+    const floatBtn = document.getElementById('feedbackFloat');
+    let timer = null;
 
-    // 标记是否已添加反馈链接
-    let feedbackAdded = false;
-
-    // 尝试添加反馈链接的函数
-    function addFeedbackLink() {
-        if (feedbackAdded) return;
-        // 检查是否已经有反馈链接（避免重复）
-        if (mobileNav.querySelector('a[href="feedback.html"]')) return;
-
-        // 获取现有菜单项（如果有）并复制其样式类
-        const existingItem = mobileNav.querySelector('a');
-        let classNames = ['nav-item', 'mobile-feedback']; // 默认类
-        if (existingItem) {
-            // 复制现有菜单项的类（保留原有类，再添加我们的标识类）
-            const existingClasses = Array.from(existingItem.classList);
-            classNames = [...new Set([...existingClasses, 'mobile-feedback'])];
+    // 切换展开/折叠状态
+    function setExpanded(expanded) {
+        if (expanded) {
+            floatBtn.classList.remove('collapsed');
+            floatBtn.classList.add('expanded');
+        } else {
+            floatBtn.classList.remove('expanded');
+            floatBtn.classList.add('collapsed');
         }
-
-        // 创建反馈链接
-        const feedbackLink = document.createElement('a');
-        feedbackLink.href = 'feedback.html';
-        feedbackLink.textContent = '反馈';
-        feedbackLink.classList.add(...classNames);
-        // 不设置 data-page 以避免干扰路由（直接跳转独立页面）
-
-        // 插入到移动菜单末尾
-        mobileNav.appendChild(feedbackLink);
-        feedbackAdded = true;
     }
 
-    // 如果移动菜单已经填充（例如由 main.js 立即填充），直接尝试添加
-    if (mobileNav.children.length > 0) {
-        addFeedbackLink();
+    // 启动10秒倒计时后折叠
+    function startTimer() {
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(() => {
+            setExpanded(false);
+            timer = null;
+        }, 10000); // 10秒
     }
 
-    // 使用 MutationObserver 监听移动菜单的子节点变化，一旦菜单项加载完成就添加反馈链接
-    const observer = new MutationObserver(function(mutations) {
-        if (mobileNav.children.length > 0) {
-            addFeedbackLink();
-            // 添加完成后可以断开观察，避免后续反复触发
-            observer.disconnect();
+    // 清除计时器
+    function clearTimer() {
+        if (timer) {
+            clearTimeout(timer);
+            timer = null;
+        }
+    }
+
+    // 点击处理
+    floatBtn.addEventListener('click', function(e) {
+        e.stopPropagation(); // 避免冒泡（如有必要）
+        if (floatBtn.classList.contains('collapsed')) {
+            // 折叠状态：展开并重新计时
+            setExpanded(true);
+            startTimer();
+        } else {
+            // 展开状态：跳转反馈页面
+            clearTimer(); // 跳转前清除计时器（非必须，但规范）
+            window.location.href = 'feedback.html';
         }
     });
-    observer.observe(mobileNav, { childList: true, subtree: false });
 
-    // 同时监听移动菜单图标点击（某些实现可能在点击时才渲染菜单），但上述观察已足够
+    // 初始化：展开状态，开始计时
+    setExpanded(true);
+    startTimer();
 })();
 </script>
 </body>

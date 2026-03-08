@@ -30,7 +30,6 @@
             font-size: 1.8rem;
             color: #2c3e50;
         }
-        /* 简单导航（无移动菜单依赖，保证链接可点） */
         .simple-nav {
             background: white;
             border-bottom: 1px solid #eaeef2;
@@ -102,7 +101,7 @@
         </div>
     </header>
 
-    <!-- 简单导航：链接到主站各版块（保留hash以便主站路由识别） -->
+    <!-- 简单导航：链接到主站各版块，反馈页高亮显示 -->
     <nav class="simple-nav">
         <div class="simple-nav-container">
             <a href="index.html#home">首页</a>
@@ -128,7 +127,7 @@
     </footer>
 </div>
 
-<!-- 来自原feedback的iframe高度自适应脚本 -->
+<!-- 原iframe高度自适应脚本 -->
 <script>
 window.addEventListener('message', function(e) {
     if (e.data && e.data.type === 'setHeight') {

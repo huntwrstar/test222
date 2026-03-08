@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* 浮动反馈按钮样式 */
+        /* 无图标悬浮反馈按钮 */
         .feedback-float {
             position: fixed;
             bottom: 30px;
@@ -17,34 +17,40 @@
             z-index: 1000;
         }
         .feedback-btn {
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            display: inline-block;
             background-color: #2c3e50;
             color: white;
-            padding: 12px 24px;
+            padding: 10px 22px;
             border-radius: 40px;
             text-decoration: none;
             font-weight: 500;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             transition: background-color 0.3s, transform 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
         }
         .feedback-btn:hover {
             background-color: #1e2b37;
             transform: scale(1.05);
         }
-        .feedback-btn i {
-            font-size: 1.2rem;
-        }
-        @media (max-width: 600px) {
+        /* 手机端隐藏悬浮按钮 */
+        @media (max-width: 768px) {
             .feedback-float {
-                bottom: 20px;
-                right: 20px;
+                display: none;
             }
-            .feedback-btn {
-                padding: 10px 18px;
-                font-size: 0.9rem;
-            }
+        }
+        /* 移动菜单中反馈链接的基础样式（与现有菜单项尽量保持一致） */
+        .mobile-nav .nav-item.mobile-feedback {
+            display: block;
+            padding: 12px 16px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+            font-size: 1rem;
+        }
+        .mobile-nav .nav-item.mobile-feedback:hover {
+            background-color: #f5f5f5;
         }
     </style>
 </head>
@@ -76,11 +82,9 @@
     </footer>
 </div>
 
-<!-- 浮动意见反馈按钮 -->
+<!-- 无图标悬浮反馈按钮（手机端自动隐藏） -->
 <div class="feedback-float">
-    <a href="feedback.html" class="feedback-btn">
-        <i class="fas fa-comment"></i> 意见反馈
-    </a>
+    <a href="feedback.html" class="feedback-btn">反馈</a>
 </div>
 
 <script>
@@ -91,5 +95,61 @@
 <script src="api.js"></script>
 <script src="ui.js"></script>
 <script src="main.js"></script>
+
+<!-- 向移动菜单中添加“反馈”链接（保持与现有菜单样式一致） -->
+<script>
+(function() {
+    // 等待移动菜单容器出现
+    const mobileNav = document.getElementById('mobile-nav');
+    if (!mobileNav) return;
+
+    // 标记是否已添加反馈链接
+    let feedbackAdded = false;
+
+    // 尝试添加反馈链接的函数
+    function addFeedbackLink() {
+        if (feedbackAdded) return;
+        // 检查是否已经有反馈链接（避免重复）
+        if (mobileNav.querySelector('a[href="feedback.html"]')) return;
+
+        // 获取现有菜单项（如果有）并复制其样式类
+        const existingItem = mobileNav.querySelector('a');
+        let classNames = ['nav-item', 'mobile-feedback']; // 默认类
+        if (existingItem) {
+            // 复制现有菜单项的类（保留原有类，再添加我们的标识类）
+            const existingClasses = Array.from(existingItem.classList);
+            classNames = [...new Set([...existingClasses, 'mobile-feedback'])];
+        }
+
+        // 创建反馈链接
+        const feedbackLink = document.createElement('a');
+        feedbackLink.href = 'feedback.html';
+        feedbackLink.textContent = '反馈';
+        feedbackLink.classList.add(...classNames);
+        // 不设置 data-page 以避免干扰路由（直接跳转独立页面）
+
+        // 插入到移动菜单末尾
+        mobileNav.appendChild(feedbackLink);
+        feedbackAdded = true;
+    }
+
+    // 如果移动菜单已经填充（例如由 main.js 立即填充），直接尝试添加
+    if (mobileNav.children.length > 0) {
+        addFeedbackLink();
+    }
+
+    // 使用 MutationObserver 监听移动菜单的子节点变化，一旦菜单项加载完成就添加反馈链接
+    const observer = new MutationObserver(function(mutations) {
+        if (mobileNav.children.length > 0) {
+            addFeedbackLink();
+            // 添加完成后可以断开观察，避免后续反复触发
+            observer.disconnect();
+        }
+    });
+    observer.observe(mobileNav, { childList: true, subtree: false });
+
+    // 同时监听移动菜单图标点击（某些实现可能在点击时才渲染菜单），但上述观察已足够
+})();
+</script>
 </body>
 </html>

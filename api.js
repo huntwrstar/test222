@@ -1,4 +1,3 @@
-// 数据获取（带缓存）
 async function fetchJSON(url) {
     console.log(`开始加载: ${url}`);
     if (state.cache[url]) {
@@ -18,7 +17,6 @@ async function fetchJSON(url) {
         } else {
             console.warn(`警告: ${url} 返回空数组`);
         }
-        // 统一处理缺失的 result 字段
         data.forEach(item => {
             if (item.result === undefined || item.result === null) {
                 item.result = 'DNF';
@@ -27,11 +25,10 @@ async function fetchJSON(url) {
     } else {
         console.log(`加载成功: ${url} (对象)`);
     }
-    state.cache[url] = data; // 存入缓存
+    state.cache[url] = data; 
     return data;
 }
 
-// 加载元数据
 async function loadMeta() {
     if (state.meta) return;
     try {
@@ -48,7 +45,6 @@ async function loadMeta() {
     }
 }
 
-// 工具函数：成绩解析与格式化
 function formatResultForSort(resultStr) {
     if (resultStr === undefined || resultStr === null || resultStr === '') return Infinity;
     if (resultStr === 'DNF' || resultStr === '暂无') return Infinity;
@@ -112,11 +108,6 @@ function extractChineseName(name) {
 
 function getDisplayName(item) {
     const name = item.name || '';
-    // 如果当前语言不是中文（不匹配 'zh'），则直接返回原始姓名
-    if (!state.currentLang.startsWith('zh')) {
-        return name;
-    }
-    // 否则，仅对中国选手提取括号内中文
     const isChinese = (item.country === 'China') || (item.province);
     if (isChinese) {
         return extractChineseName(name);
@@ -124,7 +115,6 @@ function getDisplayName(item) {
     return name;
 }
 
-// 排序与排名
 function recomputeRanks(data, project) {
     data = data.filter(item => item && item.result !== undefined);
     
@@ -186,7 +176,6 @@ function recomputeRanks(data, project) {
     return data;
 }
 
-// 筛选器
 function applyGenderFilter(data, gender) {
     if (gender === 'all') return data;
     return data.filter(d => d.gender === gender);
@@ -207,7 +196,6 @@ function applyContinentFilter(country, continent) {
     return countryContinent[country] === continent;
 }
 
-// 分页
 function paginate(data, page, pageSize = 100) {
     const start = (page - 1) * pageSize;
     return data.slice(start, start + pageSize);

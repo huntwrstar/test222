@@ -139,7 +139,6 @@ body {
     align-items: center;
     gap: 10px;
 }
-/* 页面小字描述 */
 .page-subtitle {
     font-size: 0.9rem;
     color: #4a6e80;
@@ -147,8 +146,7 @@ body {
     padding: 8px 15px;
     line-height: 1.5;
     background-color: #f0f7ff;
-    border-left: 4px solid #4a6ee0;
-    border-radius: 0 4px 4px 0;
+    border-radius:  4px;
 }
 .filter-section {
     display: flex;
@@ -541,26 +539,4 @@ tbody tr:hover { background-color: #f1f5ff; }
 }
 .announcement-header i {
     margin-right: 8px;
-}
-
-/* 语言选择器 */
-.language-selector {
-    margin-left: 20px;
-}
-.language-selector select {
-    padding: 6px 10px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    background-color: white;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-@media (max-width: 640px) {
-    .language-selector {
-        margin-left: 10px;
-    }
-    .language-selector select {
-        padding: 4px 6px;
-        font-size: 0.8rem;
-    }
 }

@@ -1,8 +1,6 @@
-// 全局状态对象
 window.state = {
-    cache: {},
+    cache: {}, 
     currentPage: 'home',
-    currentLang: 'en',               // 当前语言代码
     meta: null,
     season: { project: '333', type: 'single', scope: 'country:China', gender: 'all', continent: '', country: 'China' },
     active: { project: '333', type: 'single', scope: 'country:China', gender: 'all', continent: '', country: 'China' },
@@ -37,7 +35,6 @@ window.state = {
     pagination: { currentPage: 1, totalPages: 1, data: [] }
 };
 
-// 常量
 window.MUNICIPALITIES = ['北京', '上海', '重庆', '天津', '台湾', '香港', '澳门', '神手谷'];
 
 window.PROJECT_LIST = [

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>意见反馈 - XCUBING魔方排名网</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 保证页面结构与主站一致 */
+        body {
+            background-color: #f5f7fa;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background: white;
+            border-bottom: 1px solid #eaeef2;
+            padding: 1rem;
+            text-align: center;
+        }
+        .logo-area h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #2c3e50;
+        }
+        /* 简单导航（无移动菜单依赖，保证链接可点） */
+        .simple-nav {
+            background: white;
+            border-bottom: 1px solid #eaeef2;
+            padding: 0.8rem 1rem;
+        }
+        .simple-nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2rem 2rem;
+        }
+        .simple-nav-container a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0.3rem 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .simple-nav-container a:hover {
+            border-bottom-color: #2c3e50;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .feedback-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .feedback-container h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            min-height: 650px;
+        }
+        .footer {
+            background: white;
+            border-top: 1px solid #eaeef2;
+            padding: 1.5rem;
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            .logo-area h1 { font-size: 1.4rem; }
+            .simple-nav-container { gap: 0.8rem; }
+            .simple-nav-container a { font-size: 0.9rem; }
+            .feedback-container { margin: 20px 10px; padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="logo-area">
+            <h1>XCUBING · 魔方排名网</h1>
+        </div>
+    </header>
+
+    <!-- 简单导航：链接到主站各版块（保留hash以便主站路由识别） -->
+    <nav class="simple-nav">
+        <div class="simple-nav-container">
+            <a href="index.html#home">首页</a>
+            <a href="index.html#season">赛季排名</a>
+            <a href="index.html#active">现役排名</a>
+            <a href="index.html#region">省市排名</a>
+            <a href="index.html#comprehensive">综合排名</a>
+            <a href="index.html#record">省市纪录</a>
+            <a href="feedback.html" style="border-bottom-color: #2c3e50; font-weight: 600;">意见反馈</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="feedback-container">
+            <h2>意见反馈</h2>
+            <p style="color: #6c757d; font-size: 0.9rem;">您提交的信息仅用于改进网站，不会用于其他用途。</p>
+            <iframe src="https://wj.qq.com/s2/25901137/5d5c/" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-modals allow-downloads allow-forms allow-popups"></iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div>Copyright © 2026 XCUBING.CN</div>
+    </footer>
+</div>
+
+<!-- 来自原feedback的iframe高度自适应脚本 -->
+<script>
+window.addEventListener('message', function(e) {
+    if (e.data && e.data.type === 'setHeight') {
+        const iframe = document.querySelector('iframe');
+        if (iframe) iframe.style.height = e.data.height + 'px';
+    }
+});
+</script>
+</body>
+</html>

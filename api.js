@@ -108,6 +108,11 @@ function extractChineseName(name) {
 
 function getDisplayName(item) {
     const name = item.name || '';
+    // 如果当前语言不是中文（不匹配 'zh'），则直接返回原始姓名
+    if (!state.currentLang.startsWith('zh')) {
+        return name;
+    }
+    // 否则，仅对中国选手提取括号内中文
     const isChinese = (item.country === 'China') || (item.province);
     if (isChinese) {
         return extractChineseName(name);

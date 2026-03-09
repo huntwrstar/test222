@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="XCUBING,XCUBING·魔方排名网提供WCA赛事赛季排名、现役排名、省市排名、综合排名及省市纪录查询，数据源自WCA官方排名。">
+    <meta name="description" content="XCUBING,XCUBING·魔方排名网提供WCA赛事年度排名、近三年度排名、省市排名、综合排名及省市纪录查询，数据源自WCA官方排名。">
     <title>XCUBING · 魔方排名网</title>
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,16 +15,16 @@
         <div class="logo-area">
             <h1>XCUBING · 魔方排名网</h1>
         </div>
+        <div class="language-selector">
+            <select id="lang-select" aria-label="Language">
+                <!-- 选项由JS动态生成 -->
+            </select>
+        </div>
     </header>
 
     <nav class="main-nav">
         <div class="nav-container" id="desktop-nav">
-            <a href="#home" class="nav-item" data-page="home">首页</a>
-            <a href="#season" class="nav-item" data-page="season">年度排名</a>
-            <a href="#active" class="nav-item" data-page="active">近三年度排名</a>
-            <a href="#region" class="nav-item" data-page="region">省市排名</a>
-            <a href="#comprehensive" class="nav-item" data-page="comprehensive">综合排名</a>
-            <a href="#record" class="nav-item" data-page="record">省市纪录</a>
+            <!-- 桌面导航由JS动态生成 -->
         </div>
         <div class="mobile-menu-icon" id="mobile-menu-icon">☰</div>
         <div class="mobile-nav" id="mobile-nav"></div>
@@ -42,10 +42,11 @@
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
 <script src="state.js"></script>
+<script src="langs.js"></script>
 <script src="api.js"></script>
 <script src="ui.js"></script>
 <script src="main.js"></script>
-<!-- 悬浮反馈按钮（可拖拽，背景色 #4a6ee0） -->
+
 <div id="feedbackFloat" class="feedback-float expanded">
     <span class="feedback-text">反馈</span>
 </div>
@@ -55,7 +56,7 @@
     position: fixed;
     right: 20px;
     bottom: 20px;
-    background-color: #4a6ee0;  /* 与首页标语文字颜色一致 */
+    background-color: #4a6ee0; 
     color: white;
     border-radius: 30px;
     padding: 10px 20px;
@@ -80,7 +81,7 @@
     height: 30px;
     padding: 0;
     border-radius: 50%;
-    background-color: #4a6ee0;  /* 保持一致 */
+    background-color: #4a6ee0; 
 }
 .feedback-float.collapsed .feedback-text {
     display: none;
@@ -102,15 +103,13 @@
 (function() {
     const floatBtn = document.getElementById('feedbackFloat');
     let timer = null;
-    // 拖拽相关变量
-    let isDragging = false;           // 是否处于拖拽中（移动超过阈值后设为true）
-    let dragStarted = false;          // 是否已开始拖拽（mousedown时设为true）
-    let startX, startY;               // 鼠标起始位置（视口坐标）
-    let startLeft, startTop;          // 按钮起始位置（left/top值）
-    const DRAG_THRESHOLD = 5;         // 移动阈值，超过才视为拖拽
-    let clickFromDrag = false;        // 标记点击是否由拖拽逻辑触发，避免重复处理
+    let isDragging = false;        
+    let dragStarted = false;      
+    let startX, startY;             
+    let startLeft, startTop;       
+    const DRAG_THRESHOLD = 5; 
+    let clickFromDrag = false; 
 
-    // ---------- 展开/折叠逻辑 ----------
     function setExpanded(expanded) {
         if (expanded) {
             floatBtn.classList.remove('collapsed');
@@ -136,23 +135,19 @@
         }
     }
 
-    // ---------- 拖拽逻辑 ----------
     function onDragStart(e) {
-        e.preventDefault();            // 阻止选中文本或默认拖拽行为
+        e.preventDefault();  
         e.stopPropagation();
 
-        // 获取当前按钮相对于视口的位置
         const rect = floatBtn.getBoundingClientRect();
         startLeft = rect.left;
         startTop = rect.top;
 
-        // 切换为 left/top 定位，并将 right/bottom 设为 auto
         floatBtn.style.left = startLeft + 'px';
         floatBtn.style.top = startTop + 'px';
         floatBtn.style.right = 'auto';
         floatBtn.style.bottom = 'auto';
 
-        // 记录鼠标起始位置
         if (e.type === 'mousedown') {
             startX = e.clientX;
             startY = e.clientY;
@@ -188,14 +183,13 @@
         const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
 
         if (!isDragging && distance > DRAG_THRESHOLD) {
-            isDragging = true;   // 超过阈值，正式进入拖拽模式
+            isDragging = true;  
         }
 
         if (isDragging) {
             let newLeft = startLeft + deltaX;
             let newTop = startTop + deltaY;
 
-            // 边界限制
             const winWidth = window.innerWidth;
             const winHeight = window.innerHeight;
             const btnWidth = floatBtn.offsetWidth;
@@ -207,7 +201,6 @@
             floatBtn.style.left = newLeft + 'px';
             floatBtn.style.top = newTop + 'px';
 
-            // 更新起始值，使拖拽连续
             startX = clientX;
             startY = clientY;
             startLeft = newLeft;
@@ -225,7 +218,6 @@
         document.removeEventListener('touchcancel', onDragEnd);
 
         if (!isDragging) {
-            // 未拖拽（即点击），执行点击逻辑，并标记由拖拽触发
             clickFromDrag = true;
             handleClick();
         }
@@ -234,7 +226,6 @@
         isDragging = false;
     }
 
-    // 点击处理函数（展开/跳转）
     function handleClick() {
         if (floatBtn.classList.contains('collapsed')) {
             setExpanded(true);
@@ -245,20 +236,17 @@
         }
     }
 
-    // 绑定拖拽事件
     floatBtn.addEventListener('mousedown', onDragStart);
     floatBtn.addEventListener('touchstart', onDragStart, { passive: false });
 
-    // 保留 click 事件以支持键盘/辅助技术
     floatBtn.addEventListener('click', function(e) {
         if (clickFromDrag) {
-            clickFromDrag = false; // 重置标记，避免影响下次点击
+            clickFromDrag = false; 
             return;
         }
         handleClick();
     });
 
-    // 初始化：展开状态，开始计时
     setExpanded(true);
     startTimer();
 })();

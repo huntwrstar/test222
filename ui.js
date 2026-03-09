@@ -1,3 +1,4 @@
+// ==================== 首页 ====================
 function renderHome() {
     return `
         <div style="text-align: center; margin: 50px 0;">
@@ -5,131 +6,181 @@ function renderHome() {
         </div>
         <div class="announcement-list">
             <div class="announcement">
+                <h3>更新公告</h3>
+                <div class="announcement-card"><p>根据最近几天大家的反馈，本次更新内容如下：<p>
+<p>1.更改部分排名榜单的定义<p>
+<p>2.修复部分已知bug<p>
+<p>3.开放选手省份城市更改<p>
+<p>4.添加反馈页<p>
+<p>-通过该页面可直接提交对网站的意见反馈或选手省市信息更改申请。<p>
+<p>（反馈入口可在页面右下角找到）<p>
+欢迎大家积极反馈，一起完善小破站。
+<p>2026-03-08<p>
+                </div>
+            </div>
+        <div class="announcement-list">
+            <div class="announcement">
                 <h3>关于省市信息</h3>
                 <div class="announcement-card"><p>2018年5月粗饼网取消选手所在城市显示，由于现在已无法从粗饼网获取选手城市，故而此后的选手在本站被作者归入了不存在的神手谷。<p>目前使用的选手省市信息源自魔友赵吉波在取消前爬取的数据，非常感谢前辈留下的数据！<p>
                 </div>
             </div>
             <div class="announcement">
-                <h3>网站上线</h3>
+                <h3>${__('announcement.launch.title')}</h3>
                 <div class="announcement-card">
-                    <p>XCUBING网站正式上线运行，网站目前提供WCA赛事的年度、近三年度、省市、综合排名及省市纪录功能，诚挚欢迎广大魔友积极体验并对网站在页面显示、功能使用等方面存在的问题和不足提出宝贵意见和建议。如您在访问网站过程中发现任何错误、故障，请及时通过以下方式反馈：</p>
-                    <p>作者邮箱：xcubing@qq.com。</p>
+                    <p>${__('announcement.launch.content')}</p>
                 </div>
             </div>
         </div>
     `;
 }
 
+// ==================== 年度排名 ====================
 function renderSeason() {
     return `
         <div class="page-heading">
-            <h2>年度排名</h2>
+            <h2>${__('season.title')}</h2>
         </div>
-        <div class="page-subtitle">本页面为年度排名，以一个自然年为一个年度（如2026年即为2026年度），将参赛选手在这个年度内取得的最佳成绩进行排名。所有的排名成绩源自WCA赛事的官方排名。</div>
+        <div class="page-subtitle">${__('season.subtitle')}</div>
         <div class="filter-section">
             <div class="filter-item">
-                <label>地区</label>
+                <label>${__('filter.region')}</label>
                 <select id="season-scope"></select>
             </div>
             <div class="filter-item">
-                <label>项目</label>
+                <label>${__('filter.project')}</label>
                 <select id="season-project">${projectOptions()}</select>
             </div>
             <div class="filter-item">
-                <label>性别</label>
+                <label>${__('filter.gender')}</label>
                 <select id="season-gender">${genderOptions()}</select>
             </div>
             <div class="btn-group">
-<button id="season-single" class="btn btn-warning">单次</button>
-<button id="season-average" class="btn btn-primary">平均</button>
+                <button id="season-single" class="btn btn-warning">${__('btn.single')}</button>
+                <button id="season-average" class="btn btn-primary">${__('btn.average')}</button>
             </div>
         </div>
         <div class="current-info">
-            <h3><i class="fa fa-info-circle"></i> 当前：<span id="active-current-gender">年度</span> - <span id="season-current-project">三阶</span> - <span id="season-current-type">单次</span></h3>
+            <h3><i class="fa fa-info-circle"></i> ${__('current.season')} - <span id="season-current-project">${getProjectName(state.season.project)}</span> - <span id="season-current-type">${__('btn.single')}</span></h3>
         </div>
         <div class="table-container">
-            <table id="season-table"><thead><tr><th>排名</th><th>姓名</th><th>国家</th><th>成绩</th><th>比赛</th><th>WCA ID</th></tr></thead><tbody id="season-tbody"></tbody></table>
+            <table id="season-table">
+                <thead>
+                    <tr>
+                        <th>${__('table.rank')}</th>
+                        <th>${__('table.name')}</th>
+                        <th>${__('table.country')}</th>
+                        <th>${__('table.result')}</th>
+                        <th>${__('table.competition')}</th>
+                        <th>${__('table.wcaid')}</th>
+                    </tr>
+                </thead>
+                <tbody id="season-tbody"></tbody>
+            </table>
         </div>
         <div class="pagination-container" id="season-pagination"></div>
     `;
 }
 
+// ==================== 近三年度排名 ====================
 function renderActive() {
     return `
         <div class="page-heading">
-            <h2>近三年度排名</h2>
+            <h2>${__('active.title')}</h2>
         </div>
-        <div class="page-subtitle">本页面为近三年度排名，将参赛选手在最近三年内取得的最佳成绩进行排名，超过三年无参赛记录的选手不被列入排名。所有的排名成绩源自WCA赛事的官方排名。</div>
+        <div class="page-subtitle">${__('active.subtitle')}</div>
         <div class="filter-section">
             <div class="filter-item">
-                <label>地区</label>
+                <label>${__('filter.region')}</label>
                 <select id="active-scope"></select>
             </div>
             <div class="filter-item">
-                <label>项目</label>
+                <label>${__('filter.project')}</label>
                 <select id="active-project">${projectOptions()}</select>
             </div>
             <div class="filter-item">
-                <label>性别</label>
+                <label>${__('filter.gender')}</label>
                 <select id="active-gender">${genderOptions()}</select>
             </div>
             <div class="btn-group">
-<button id="active-single" class="btn btn-warning">单次</button>
-<button id="active-average" class="btn btn-primary">平均</button>
+                <button id="active-single" class="btn btn-warning">${__('btn.single')}</button>
+                <button id="active-average" class="btn btn-primary">${__('btn.average')}</button>
             </div>
         </div>
         <div class="current-info">
-            <h3><i class="fa fa-info-circle"></i> 当前：<span id="active-current-gender">近三年度</span> - <span id="active-current-project">三阶</span> - <span id="active-current-type">单次</span></h3>
+            <h3><i class="fa fa-info-circle"></i> ${__('current.active')} - <span id="active-current-project">${getProjectName(state.active.project)}</span> - <span id="active-current-type">${__('btn.single')}</span></h3>
         </div>
         <div class="table-container">
-            <table id="active-table"><thead><tr><th>排名</th><th>姓名</th><th>国家</th><th>成绩</th><th>比赛</th><th>WCA ID</th></tr></thead><tbody id="active-tbody"></tbody></table>
+            <table id="active-table">
+                <thead>
+                    <tr>
+                        <th>${__('table.rank')}</th>
+                        <th>${__('table.name')}</th>
+                        <th>${__('table.country')}</th>
+                        <th>${__('table.result')}</th>
+                        <th>${__('table.competition')}</th>
+                        <th>${__('table.wcaid')}</th>
+                    </tr>
+                </thead>
+                <tbody id="active-tbody"></tbody>
+            </table>
         </div>
         <div class="pagination-container" id="active-pagination"></div>
     `;
 }
 
+// ==================== 省市排名 ====================
 function renderRegion() {
     return `
         <div class="page-heading">
-            <h2>省市排名</h2>
+            <h2>${__('region.title')}</h2>
         </div>
-        <div class="page-subtitle">本页面为省市排名，可以查看中国选手在其归属地的排名，对于截至2018年5月前没有在粗饼网选择归属地的选手，系统将自动将其归入本站虚构的秘境——神手谷（具体缘由详见首页公告）。所有的排名成绩源自WCA赛事的官方排名。</div>
+        <div class="page-subtitle">${__('region.subtitle')}</div>
         <div class="filter-section">
             <div class="filter-item">
-                <label>时期</label>
+                <label>${__('filter.period')}</label>
                 <div class="radio-group" id="region-period-group">
-                    <label><input type="radio" name="region-period" value="historical" checked> 所有</label>
-                    <label><input type="radio" name="region-period" value="season"> 年度</label>
-                    <label><input type="radio" name="region-period" value="active"> 近三年度</label>
+                    <label><input type="radio" name="region-period" value="historical" checked> ${__('current.historical')}</label>
+                    <label><input type="radio" name="region-period" value="season"> ${__('current.season')}</label>
+                    <label><input type="radio" name="region-period" value="active"> ${__('current.active')}</label>
                 </div>
             </div>
             <div class="filter-item">
-                <label>省份</label>
+                <label>${__('filter.province')}</label>
                 <select id="region-province"></select>
             </div>
             <div class="filter-item">
-                <label>城市</label>
+                <label>${__('filter.city')}</label>
                 <select id="region-city"></select>
             </div>
             <div class="filter-item">
-                <label>项目</label>
+                <label>${__('filter.project')}</label>
                 <select id="region-project">${projectOptions()}</select>
             </div>
             <div class="filter-item">
-                <label>性别</label>
+                <label>${__('filter.gender')}</label>
                 <select id="region-gender">${genderOptions()}</select>
             </div>
             <div class="btn-group">
-<button id="region-single" class="btn btn-warning">单次</button>
-<button id="region-average" class="btn btn-primary">平均</button>
+                <button id="region-single" class="btn btn-warning">${__('btn.single')}</button>
+                <button id="region-average" class="btn btn-primary">${__('btn.average')}</button>
             </div>
         </div>
         <div class="current-info">
-            <h3><i class="fa fa-info-circle"></i> 当前：<span id="region-current">省市排名</span> - <span id="region-current-project">三阶</span> - <span id="region-current-type">单次</span> <span id="region-current-period">所有</span></h3>
+            <h3><i class="fa fa-info-circle"></i> ${__('current.region')} - <span id="region-current-project">${getProjectName(state.region.project)}</span> - <span id="region-current-type">${__('btn.single')}</span> <span id="region-current-period">${__('current.historical')}</span></h3>
         </div>
         <div class="table-container">
             <table id="region-table">
-                <thead></thead>
+                <thead>
+                    <tr>
+                        <th>${__('table.rank')}</th>
+                        <th>${__('table.name')}</th>
+                        <th>${__('table.province')}</th>
+                        <th>${__('table.city')}</th>
+                        <th>${__('table.result')}</th>
+                        <th>${__('table.competition')}</th>
+                        <th>${__('table.wcaid')}</th>
+                    </tr>
+                </thead>
                 <tbody id="region-tbody"></tbody>
             </table>
         </div>
@@ -137,59 +188,60 @@ function renderRegion() {
     `;
 }
 
+// ==================== 综合排名 ====================
 function renderComprehensive() {
     return `
         <div class="page-heading">
-            <h2>综合排名</h2>
+            <h2>${__('comprehensive.title')}</h2>
         </div>
-        <div class="page-subtitle">本页面为综合排名，可计算选手在多个项目的排名总和并进行排名。</div>
+        <div class="page-subtitle">${__('comprehensive.subtitle')}</div>
         <div style="margin-bottom: 15px;">
-            <label style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #6c757d; margin-bottom: 5px; display: block;">项目(点击选择)</label>
+            <label style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #6c757d; margin-bottom: 5px; display: block;">${__('comp.select_events')}</label>
             <div class="project-tag-group" id="comp-project-tags"></div>
         </div>
         <div class="filter-section" id="comp-filters">
             <div class="filter-item">
-                <label>排名类型</label>
+                <label>${__('filter.source')}</label>
                 <select id="comp-source">
-                    <option value="season">年度排名</option>
-                    <option value="active">近三年度排名</option>
-                    <option value="province">省市排名</option>
+                    <option value="season">${__('nav.season')}</option>
+                    <option value="active">${__('nav.active')}</option>
+                    <option value="province">${__('nav.region')}</option>
                 </select>
             </div>
             <div class="filter-item" id="comp-scope-item">
-                <label>地区</label>
+                <label>${__('filter.region')}</label>
                 <select id="comp-scope"></select>
             </div>
             <div class="filter-item hidden" id="comp-dataset-item">
-                <label>时期</label>
+                <label>${__('filter.dataset')}</label>
                 <select id="comp-dataset">
-                    <option value="historical">所有</option>
-                    <option value="season">年度 (2026)</option>
-                    <option value="active">近三年度 (2024-2026)</option>
+                    <option value="historical">${__('current.historical')}</option>
+                    <option value="season">${__('current.season')} (2026)</option>
+                    <option value="active">${__('current.active')} (2024-2026)</option>
                 </select>
             </div>
             <div class="filter-item">
-                <label>性别</label>
+                <label>${__('filter.gender')}</label>
                 <select id="comp-gender">${genderOptions()}</select>
             </div>
             <div class="filter-item hidden" id="comp-province-item">
-                <label>省份</label>
+                <label>${__('filter.province')}</label>
                 <select id="comp-province"></select>
             </div>
             <div class="filter-item hidden" id="comp-city-item">
-                <label>城市</label>
+                <label>${__('filter.city')}</label>
                 <select id="comp-city"></select>
             </div>
             <div class="btn-group">
-<button id="comp-single" class="btn btn-warning">单次</button>
-<button id="comp-average" class="btn btn-primary">平均</button>
+                <button id="comp-single" class="btn btn-warning">${__('btn.single')}</button>
+                <button id="comp-average" class="btn btn-primary">${__('btn.average')}</button>
             </div>
         </div>
         <div class="current-info">
-            <h3><i class="fa fa-info-circle"></i> 当前：<span id="comp-current">年度排名 - 已选1个项目 (单次)</span></h3>
+            <h3><i class="fa fa-info-circle"></i> <span id="comp-current">${__('comp.current', {source: __('nav.season'), count: '1', type: __('btn.single')})}</span></h3>
         </div>
         <div id="comp-loading" class="loading-indicator" style="display: none;">
-            <i class="fas fa-spinner fa-spin"></i> 正在计算综合排名，请稍候...
+            <i class="fas fa-spinner fa-spin"></i> ${__('comp.calculating')}
         </div>
         <div class="table-container">
             <table id="comp-table">
@@ -201,67 +253,68 @@ function renderComprehensive() {
     `;
 }
 
+// ==================== 省市纪录 ====================
 function renderRecord() {
     return `
         <div class="page-heading">
-            <h2>省市纪录</h2>
+            <h2>${__('record.title')}</h2>
         </div>
-        <div class="page-subtitle">本页面为省市纪录，可以查看中国所有有参赛选手的省份及城市在WCA所有项目的纪录。所有的成绩源自WCA官方排名。</div>
+        <div class="page-subtitle">${__('record.subtitle')}</div>
         <div class="filter-section">
             <div class="filter-item">
-                <label>省份</label>
+                <label>${__('filter.province')}</label>
                 <select id="record-province"></select>
             </div>
             <div class="filter-item">
-                <label>城市</label>
+                <label>${__('filter.city')}</label>
                 <select id="record-city"></select>
             </div>
             <div class="filter-item">
-                <label>性别</label>
+                <label>${__('filter.gender')}</label>
                 <select id="record-gender">
-                    <option value="all">所有</option>
-                    <option value="男">男</option>
-                    <option value="女">女</option>
-                    <option value="未知">未知</option>
+                    <option value="all">${__('gender.all')}</option>
+                    <option value="男">${__('gender.male')}</option>
+                    <option value="女">${__('gender.female')}</option>
+                    <option value="未知">${__('gender.unknown')}</option>
                 </select>
             </div>
             <div class="btn-group">
-                <button id="record-refresh" class="btn btn-primary"> 刷新</button>
+                <button id="record-refresh" class="btn btn-primary">${__('btn.refresh')}</button>
             </div>
         </div>
         <div class="current-info">
-            <h3><i class="fa fa-map-marker-alt"></i> 当前：<span id="record-current">省市纪录</span> - <span id="record-current-province">北京</span> · <span id="record-current-city">全省</span> · <span id="record-current-gender">所有</span></h3>
+            <h3><i class="fa fa-map-marker-alt"></i> ${__('current.region')} - <span id="record-current-province">北京</span> · <span id="record-current-city">${__('all_cities')}</span> · <span id="record-current-gender">${__('gender.all')}</span></h3>
         </div>
         <div class="table-container">
             <table id="record-table">
                 <thead>
                     <tr>
-                        <th width="15%">项目</th>
-                        <th width="15%">单次</th>
-                        <th width="15%">平均</th>
-                        <th width="20%">姓名</th>
-                        <th width="35%">比赛</th>
+                        <th width="15%">${__('table.event')}</th>
+                        <th width="15%">${__('btn.single')}</th>
+                        <th width="15%">${__('btn.average')}</th>
+                        <th width="20%">${__('table.name')}</th>
+                        <th width="35%">${__('table.competition')}</th>
                     </tr>
                 </thead>
                 <tbody id="record-tbody">
-                    <tr><td colspan="5" class="loading-cell"><i class="fas fa-spinner"></i> 加载数据<span class="loading-dots"></span></td></tr>
+                    <tr><td colspan="5" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}<span class="loading-dots"></span></td></tr>
                 </tbody>
             </table>
         </div>
     `;
 }
 
+// ==================== 辅助函数 ====================
 function projectOptions() {
-    return PROJECT_LIST.map(p => `<option value="${p.code}">${p.name}</option>`).join('');
+    return PROJECT_LIST.map(p => `<option value="${p.code}">${__('project.' + p.code)}</option>`).join('');
 }
 
 function genderOptions() {
-    return `<option value="all">所有</option><option value="男">男</option><option value="女">女</option><option value="未知">未知</option>`;
+    return `<option value="all">${__('gender.all')}</option><option value="男">${__('gender.male')}</option><option value="女">${__('gender.female')}</option><option value="未知">${__('gender.unknown')}</option>`;
 }
 
 function getProjectName(code) {
-    const p = PROJECT_LIST.find(p => p.code === code);
-    return p ? p.name : code;
+    return __('project.' + code);
 }
 
 function showPageLoading(page) {
@@ -278,14 +331,14 @@ function showPageLoading(page) {
     } else if (page === 'record') {
         colspan = 5;
     }
-    tbody.innerHTML = `<tr><td colspan="${colspan}" class="loading-cell"><i class="fas fa-spinner"></i> 加载中<span class="loading-dots"></span></td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="${colspan}" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}<span class="loading-dots"></span></td></tr>`;
 }
 
 function updateCurrentLabels(page, project, type) {
     const projSpan = document.getElementById(`${page}-current-project`);
     const typeSpan = document.getElementById(`${page}-current-type`);
     if (projSpan) projSpan.textContent = getProjectName(project);
-    if (typeSpan) typeSpan.textContent = type === 'single' ? '单次' : '平均';
+    if (typeSpan) typeSpan.textContent = type === 'single' ? __('btn.single') : __('btn.average');
 }
 
 function renderPagination(containerId, totalPages, currentPage, callback) {
@@ -404,16 +457,17 @@ function renderCompTableBody(tbody, data) {
         row += `<td>${item.eventCount}</td><td>${item.totalRank}</td></tr>`;
         html += row;
     });
-    tbody.innerHTML = html || `<tr><td colspan="${source === 'province' ? 6 : 5}">暂无数据</td></tr>`;
+    tbody.innerHTML = html || `<tr><td colspan="${source === 'province' ? 6 : 5}">${__('no_data')}</td></tr>`;
 }
 
+// 综合排名相关 UI
 function renderProjectTags() {
     const container = document.getElementById('comp-project-tags');
     if (!container) return;
     const selected = state.comprehensive.selectedEvents;
     const html = PROJECT_LIST.map(p => {
         const isSelected = selected.includes(p.code);
-        return `<span class="project-tag ${isSelected ? 'selected' : ''}" data-code="${p.code}">${p.name}</span>`;
+        return `<span class="project-tag ${isSelected ? 'selected' : ''}" data-code="${p.code}">${__('project.' + p.code)}</span>`;
     }).join('');
     container.innerHTML = html;
 
@@ -451,8 +505,11 @@ function toggleCompFilters(source) {
 
 function updateCompCurrentLabel() {
     const comp = state.comprehensive;
-    const sourceName = comp.source === 'season' ? '年度' : (comp.source === 'active' ? '近三年度' : '省市');
-    const typeName = comp.type === 'single' ? '单次' : '平均';
+    let sourceName = '';
+    if (comp.source === 'season') sourceName = __('nav.season');
+    else if (comp.source === 'active') sourceName = __('nav.active');
+    else sourceName = __('nav.region');
+    const typeName = comp.type === 'single' ? __('btn.single') : __('btn.average');
     const eventCount = comp.selectedEvents.length;
-    document.getElementById('comp-current').innerText = `${sourceName} - 已选${eventCount}个项目 (${typeName})`;
+    document.getElementById('comp-current').innerText = __('comp.current', {source: sourceName, count: eventCount, type: typeName});
 }

@@ -1,4 +1,3 @@
-// ==================== 首页 ====================
 function renderHome() {
     return `
         <div style="text-align: center; margin: 50px 0;">
@@ -21,7 +20,7 @@ function renderHome() {
         <div class="announcement-list">
             <div class="announcement">
                 <h3>关于省市信息</h3>
-                <div class="announcement-card"><p>2018年5月粗饼网取消选手所在城市显示，由于现在已无法从粗饼网获取选手城市，故而此后的选手在本站被作者归入了不存在的神手谷。<p>目前使用的选手省市信息源自魔友赵吉波在取消前爬取的数据，非常感谢前辈留下的数据！<p>
+                <div class="announcement-card"><p>2018年5月粗饼网取消选手所在城市显示，由于现在已无法从粗饼网获取选手城市，故2018年5月之后参加WCA比赛的选手在本站被作者归入了不存在的神手谷。<p>目前使用的选手省市信息源自魔友赵吉波在取消前爬取的数据，非常感谢前辈留下的数据！<p>
                 </div>
             </div>
             <div class="announcement">
@@ -34,7 +33,6 @@ function renderHome() {
     `;
 }
 
-// ==================== 年度排名 ====================
 function renderSeason() {
     return `
         <div class="page-heading">
@@ -81,7 +79,6 @@ function renderSeason() {
     `;
 }
 
-// ==================== 近三年度排名 ====================
 function renderActive() {
     return `
         <div class="page-heading">
@@ -128,7 +125,6 @@ function renderActive() {
     `;
 }
 
-// ==================== 省市排名 ====================
 function renderRegion() {
     return `
         <div class="page-heading">
@@ -188,7 +184,6 @@ function renderRegion() {
     `;
 }
 
-// ==================== 综合排名 ====================
 function renderComprehensive() {
     return `
         <div class="page-heading">
@@ -253,7 +248,6 @@ function renderComprehensive() {
     `;
 }
 
-// ==================== 省市纪录 ====================
 function renderRecord() {
     return `
         <div class="page-heading">
@@ -304,7 +298,6 @@ function renderRecord() {
     `;
 }
 
-// ==================== 辅助函数 ====================
 function projectOptions() {
     return PROJECT_LIST.map(p => `<option value="${p.code}">${__('project.' + p.code)}</option>`).join('');
 }
@@ -460,7 +453,6 @@ function renderCompTableBody(tbody, data) {
     tbody.innerHTML = html || `<tr><td colspan="${source === 'province' ? 6 : 5}">${__('no_data')}</td></tr>`;
 }
 
-// 综合排名相关 UI
 function renderProjectTags() {
     const container = document.getElementById('comp-project-tags');
     if (!container) return;
@@ -512,4 +504,81 @@ function updateCompCurrentLabel() {
     const typeName = comp.type === 'single' ? __('btn.single') : __('btn.average');
     const eventCount = comp.selectedEvents.length;
     document.getElementById('comp-current').innerText = __('comp.current', {source: sourceName, count: eventCount, type: typeName});
+}
+function renderTopRegion() {
+    return `
+        <div class="page-heading">
+            <h2>省市榜首排名</h2>
+        </div>
+        <div class="page-subtitle">
+            展示每个省份/城市在选定项目上的第一名选手，并对这些第一名进行跨区排名。综合模式下计算各项目跨区排名名次的总和。
+        </div>
+        <div class="filter-section">
+            <div class="filter-item">
+                <label>维度</label>
+                <select id="topregion-dimension">
+                    <option value="province">省份</option>
+                    <option value="city">城市</option>
+                </select>
+            </div>
+            <div class="filter-item" id="topregion-province-item">
+                <label>省份</label>
+                <select id="topregion-province">
+                    <option value="all">全部省份</option>
+                </select>
+            </div>
+            <div class="filter-item hidden" id="topregion-city-item">
+                <label>城市</label>
+                <select id="topregion-city">
+                    <option value="all">全部城市</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label>排名类型</label>
+                <select id="topregion-ranktype">
+                    <option value="single">单项</option>
+                    <option value="comprehensive">综合</option>
+                </select>
+            </div>
+            <div class="filter-item" id="topregion-project-item">
+                <label>项目</label>
+                <select id="topregion-project">${projectOptions()}</select>
+            </div>
+            <div class="filter-item" id="topregion-gender-item">
+                <label>性别</label>
+                <select id="topregion-gender">${genderOptions()}</select>
+            </div>
+            <div class="btn-group">
+                <button id="topregion-single" class="btn btn-warning">单次</button>
+                <button id="topregion-average" class="btn btn-primary">平均</button>
+            </div>
+        </div>
+        <div id="topregion-project-tags-container" style="margin-bottom:15px; display:none;">
+            <label style="font-size:0.85rem; font-weight:600; color:#6c757d;">项目(点击多选)</label>
+            <div class="project-tag-group" id="topregion-project-tags"></div>
+        </div>
+        <div class="current-info">
+            <h3><i class="fa fa-info-circle"></i> <span id="topregion-current">省份 · 全部省份 · 三阶 · 单次</span></h3>
+        </div>
+        <div id="topregion-loading" class="loading-indicator" style="display:none;">
+            <i class="fas fa-spinner fa-spin"></i> 数据加载中...
+        </div>
+        <div class="table-container">
+            <table id="topregion-table">
+                <thead id="topregion-thead">
+                    <tr>
+                        <th>排名</th>
+                        <th>省份</th>
+                        <th>城市</th>
+                        <th>姓名</th>
+                        <th>成绩</th>
+                        <th>比赛</th>
+                        <th>WCA ID</th>
+                    </tr>
+                </thead>
+                <tbody id="topregion-tbody"></tbody>
+            </table>
+        </div>
+        <div class="pagination-container" id="topregion-pagination"></div>
+    `;
 }

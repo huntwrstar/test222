@@ -1,65 +1,27 @@
-// 支持的语言列表
 window.LANG_LIST = [
     { code: 'zh-CN', name: '简体中文' },
     { code: 'zh-TW', name: '繁體中文' },
-    { code: 'en', name: 'English' },
-    { code: 'ca', name: 'Català' },
-    { code: 'cs', name: 'Čeština' },
-    { code: 'da', name: 'Dansk' },
-    { code: 'de', name: 'Deutsch' },
-    { code: 'eo', name: 'Esperanto' },
-    { code: 'es-ES', name: 'Español (España)' },
-    { code: 'es-419', name: 'Español (América Latina)' },
-    { code: 'eu', name: 'Euskara' },
-    { code: 'fi', name: 'Suomi' },
-    { code: 'fr', name: 'Français' },
-    { code: 'fr-CA', name: 'Français Canadien' },
-    { code: 'hr', name: 'Hrvatski' },
-    { code: 'hu', name: 'Magyar' },
-    { code: 'id', name: 'Bahasa Indonesia' },
-    { code: 'it', name: 'Italiano' },
-    { code: 'ja', name: '日本語' },
-    { code: 'kk', name: 'Қазақша' },
-    { code: 'ko', name: '한국어' },
-    { code: 'nl', name: 'Nederlands' },
-    { code: 'pl', name: 'Polski' },
-    { code: 'pt-PT', name: 'Português Europeu' },
-    { code: 'pt-BR', name: 'Português Brasileiro' },
-    { code: 'ro', name: 'Română' },
-    { code: 'ru', name: 'Русский' },
-    { code: 'sk', name: 'Slovenský' },
-    { code: 'sl', name: 'Slovenščina' },
-    { code: 'sv', name: 'Svenska' },
-    { code: 'th', name: 'ภาษาไทย' },
-    { code: 'uk', name: 'Українська' },
-    { code: 'vi', name: 'Tiếng Việt' }
+    { code: 'en', name: 'English' }
 ];
 
-// 翻译资源
 window.TRANSLATIONS = {
-    // 英文
     'en': {
-        // 导航
         'nav.home': 'Home',
         'nav.season': 'Annual Rankings',
         'nav.active': 'Last 3 Years Rankings',
         'nav.region': 'Regional Rankings',
         'nav.comprehensive': 'Comprehensive Rankings',
         'nav.record': 'Regional Records',
-
-        // 页面标题和描述
         'season.title': 'Annual Rankings',
         'season.subtitle': 'This page shows annual rankings, taking one calendar year as a cycle (e.g., 2026 season). It ranks players\' best results achieved within that year. All ranking results are from official WCA competitions.',
         'active.title': 'Last 3 Years Rankings',
         'active.subtitle': 'This page shows rankings based on the best results achieved in the last three years. Players with no competition records for more than three years are not included. All ranking results are from official WCA competitions.',
         'region.title': 'Regional Rankings',
-        'region.subtitle': 'This page shows rankings of Chinese players within their provinces/cities. For players who did not select their region on Cubing China before May 2018, they are automatically assigned to the fictional "Shenshou Valley" (see homepage announcement for details). Note: Players can now submit information change requests via the feedback page. All ranking results are from official WCA competitions.',
+        'region.subtitle': 'This page displays rankings by province and city, allowing you to view the rankings of Chinese competitors in their respective cities. Competitors with unknown province and city information will be automatically categorized as "Shenshougu" by the system (please refer to the announcement on the homepage for specific reasons). Friendly reminder: Competitors can now enter the feedback page to submit requests for changing their province and city information. All ranking results are sourced from the official rankings of WCA events.',
         'comprehensive.title': 'Comprehensive Rankings',
         'comprehensive.subtitle': 'This page calculates the sum of ranks across multiple events and ranks players accordingly.',
         'record.title': 'Regional Records',
         'record.subtitle': 'This page shows records for all provinces and cities in China across all WCA events. All results are from official WCA rankings.',
-
-        // 筛选器标签
         'filter.region': 'Region',
         'filter.project': 'Event',
         'filter.gender': 'Gender',
@@ -68,19 +30,13 @@ window.TRANSLATIONS = {
         'filter.city': 'City',
         'filter.source': 'Ranking Type',
         'filter.dataset': 'Sub-dataset',
-
-        // 性别选项
         'gender.all': 'All',
         'gender.male': 'Male',
         'gender.female': 'Female',
         'gender.unknown': 'Unknown',
-
-        // 按钮
         'btn.single': 'Single',
         'btn.average': 'Average',
         'btn.refresh': 'Refresh',
-
-        // 表格表头
         'table.rank': 'Rank',
         'table.name': 'Name',
         'table.country': 'Country',
@@ -92,32 +48,29 @@ window.TRANSLATIONS = {
         'table.event': 'Event',
         'table.events_count': 'Events',
         'table.total_rank': 'Total Rank',
-
-        // 当前信息
         'current.single': 'Single',
         'current.average': 'Average',
         'current.historical': 'All',
         'current.season': 'Annual',
         'current.active': 'Last 3 Years',
         'current.region': 'Regional',
-
-        // 状态提示
         'loading': 'Loading',
         'loading_failed': 'Data loading failed',
         'no_data': 'No data',
         'all_cities': 'All cities in province',
         'record.no_record': 'No record',
-
-        // 综合排名
         'comp.select_events': 'Select events (click to choose)',
         'comp.calculating': 'Calculating comprehensive rankings, please wait...',
         'comp.current': '{source} - {count} event(s) selected ({type})',
-
-        // 首页公告（仅翻译网站上线）
         'announcement.launch.title': 'Website Launch',
         'announcement.launch.content': 'XCUBING website is now online. It provides annual rankings, last 3 years rankings, regional rankings, comprehensive rankings, and regional records from WCA events. We welcome all cubers to experience the site and provide feedback on any issues or suggestions. If you encounter any errors, please contact the author at: xcubing@qq.com.',
-
-        // 项目名称翻译
+    'world': 'World',
+    'continent.asia': 'Asia',
+    'continent.europe': 'Europe',
+    'continent.north_america': 'North America',
+    'continent.south_america': 'South America',
+    'continent.africa': 'Africa',
+    'continent.oceania': 'Oceania',
         'project.333': '3x3x3 Cube',
         'project.222': '2x2x2 Cube',
         'project.444': '4x4x4 Cube',
@@ -137,7 +90,6 @@ window.TRANSLATIONS = {
         'project.333mbf': '3x3x3 Multi-Blind',
     },
 
-    // 简体中文（完整）
     'zh-CN': {
         'nav.home': '首页',
         'nav.season': '年度排名',
@@ -150,7 +102,7 @@ window.TRANSLATIONS = {
         'active.title': '近三年度排名',
         'active.subtitle': '本页面为近三年度排名，将参赛选手在最近三年内取得的最佳成绩进行排名，超过三年无参赛记录的选手不被列入排名。所有的排名成绩源自WCA赛事的官方排名。',
         'region.title': '省市排名',
-        'region.subtitle': '本页面为省市排名，可以查看中国选手在其所属城市的排名，对于截至2018年5月前没有在粗饼网选择归属地的选手，系统将自动将其归入本站虚构的秘境——神手谷（具体缘由详见首页公告）。温馨提示：选手现可进入反馈页提交信息更改申请。所有的排名成绩源自WCA赛事的官方排名。',
+        'region.subtitle': '本页面为省市排名，可以查看中国选手在其所属城市的排名，省市信息未知的选手将被系统自动归入神手谷（具体缘由详见首页公告）。温馨提示：选手现可进入反馈页提交省市信息更改申请。所有的排名成绩源自WCA赛事的官方排名。',
         'comprehensive.title': '综合排名',
         'comprehensive.subtitle': '本页面为综合排名，可计算选手在多个项目的排名总和并进行排名。',
         'record.title': '省市纪录',
@@ -197,8 +149,14 @@ window.TRANSLATIONS = {
         'comp.current': '{source} - 已选{count}个项目 ({type})',
         'announcement.launch.title': '网站上线',
         'announcement.launch.content': 'XCUBING网站正式上线运行，网站目前提供WCA赛事的年度、近三年度、省市、综合排名及省市纪录功能，诚挚欢迎广大魔友积极体验并对网站在页面显示、功能使用等方面存在的问题和不足提出宝贵意见和建议。如您在访问网站过程中发现任何错误、故障，请及时通过以下方式反馈：作者邮箱：xcubing@qq.com。',
+    'world': '世界',
+    'continent.asia': '亚洲',
+    'continent.europe': '欧洲',
+    'continent.north_america': '北美洲',
+    'continent.south_america': '南美洲',
+    'continent.africa': '非洲',
+    'continent.oceania': '大洋洲',
 
-        // 项目名称（中文保持不变）
         'project.333': '三阶',
         'project.222': '二阶',
         'project.444': '四阶',
@@ -218,7 +176,6 @@ window.TRANSLATIONS = {
         'project.333mbf': '多盲',
     },
 
-    // 繁体中文
     'zh-TW': {
         'nav.home': '首頁',
         'nav.season': '年度排名',
@@ -231,7 +188,7 @@ window.TRANSLATIONS = {
         'active.title': '近三年度排名',
         'active.subtitle': '本頁面為近三年度排名，將參賽選手在最近三年內取得的最佳成績進行排名，超過三年無參賽記錄的選手不被列入排名。所有的排名成績源自WCA賽事的官方排名。',
         'region.title': '省市排名',
-        'region.subtitle': '本頁面為省市排名，可以查看中國選手在其所屬城市的排名，對於截至2018年5月前沒有在粗餅網選擇歸屬地的選手，系統將自動將其歸入本站虛構的秘境——神手谷（具體緣由詳見首頁公告）。溫馨提示：選手現可進入反饋頁提交信息更改申請。所有的排名成績源自WCA賽事的官方排名。',
+        'region.subtitle': '本頁面為省市排名，可以查看中國選手在其所屬城市的排名，省市訊息未知的選手將被系統自動歸入神手谷（具體緣由詳見首頁公告）。溫馨提示：選手現可進入反饋頁提交省市訊息更改申請。所有的排名成績源自WCA賽事的官方排名。',
         'comprehensive.title': '綜合排名',
         'comprehensive.subtitle': '本頁面為綜合排名，可計算選手在多個項目的排名總和並進行排名。',
         'record.title': '省市紀錄',
@@ -278,8 +235,15 @@ window.TRANSLATIONS = {
         'comp.current': '{source} - 已選{count}個項目 ({type})',
         'announcement.launch.title': '網站上線',
         'announcement.launch.content': 'XCUBING網站正式上線運行，網站目前提供WCA賽事的年度、近三年度、省市、綜合排名及省市紀錄功能，誠摯歡迎廣大魔友積極體驗並對網站在頁面顯示、功能使用等方面存在的問題和不足提出寶貴意見和建議。如您在訪問網站過程中發現任何錯誤、故障，請及時通過以下方式反饋：作者郵箱：xcubing@qq.com。',
+    'world': '世界',
+    'continent.asia': '亞洲',
+    'continent.europe': '歐洲',
+    'continent.north_america': '北美洲',
+    'continent.south_america': '南美洲',
+    'continent.africa': '非洲',
+    'continent.oceania': '大洋洲',
 
-        // 项目名称（与简体一致，可保持原样）
+
         'project.333': '三階',
         'project.222': '二階',
         'project.444': '四階',
@@ -299,11 +263,9 @@ window.TRANSLATIONS = {
         'project.333mbf': '多盲',
     },
 
-    // 其他语言保持空对象（自动回退到英文）
     'ca': {}, 'cs': {}, 'da': {}, 'de': {}, 'eo': {}, 'es-ES': {}, 'es-419': {}, 'eu': {}, 'fi': {}, 'fr': {}, 'fr-CA': {}, 'hr': {}, 'hu': {}, 'id': {}, 'it': {}, 'ja': {}, 'kk': {}, 'ko': {}, 'nl': {}, 'pl': {}, 'pt-PT': {}, 'pt-BR': {}, 'ro': {}, 'ru': {}, 'sk': {}, 'sl': {}, 'sv': {}, 'th': {}, 'uk': {}, 'vi': {}
 };
 
-// 翻译辅助函数
 window.__ = function(key, params = {}) {
     const lang = state.currentLang;
     const translations = TRANSLATIONS[lang] || TRANSLATIONS['en'] || {};

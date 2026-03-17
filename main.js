@@ -1,4 +1,3 @@
-// 语言检测（基于 IP）
 async function detectLanguageFromIP() {
     try {
         const response = await fetch('https://ipapi.co/json/');
@@ -6,9 +5,8 @@ async function detectLanguageFromIP() {
         const country = data.country_code;
         if (country === 'CN') return 'zh-CN';
         if (['TW', 'HK', 'MO'].includes(country)) return 'zh-TW';
-        return 'en'; // 其他国家默认英文
+        return 'en'; 
     } catch (e) {
-        // 失败时使用浏览器语言作为后备
         const navLang = navigator.language || 'en';
         if (navLang.startsWith('zh')) {
             if (navLang === 'zh-TW' || navLang === 'zh-HK') return 'zh-TW';
@@ -18,18 +16,15 @@ async function detectLanguageFromIP() {
     }
 }
 
-// 初始化语言
 async function initLanguage() {
     const detected = await detectLanguageFromIP();
     state.currentLang = detected;
-    // 更新下拉框选中项
     const select = document.getElementById('lang-select');
     if (select) {
         select.value = state.currentLang;
     }
 }
 
-// 更新桌面导航
 function updateDesktopNav() {
     const desktopNav = document.getElementById('desktop-nav');
     if (!desktopNav) return;
@@ -38,12 +33,12 @@ function updateDesktopNav() {
         <a href="#annual" class="nav-item" data-page="season">${__('nav.season')}</a>
         <a href="#three-year" class="nav-item" data-page="active">${__('nav.active')}</a>
         <a href="#region" class="nav-item" data-page="region">${__('nav.region')}</a>
+<a href="#topregion" class="nav-item" data-page="topregion">省市榜首</a>
         <a href="#comprehensive" class="nav-item" data-page="comprehensive">${__('nav.comprehensive')}</a>
         <a href="#record" class="nav-item" data-page="record">${__('nav.record')}</a>
     `;
 }
 
-// 绑定语言切换
 function bindLanguageSwitch() {
     const select = document.getElementById('lang-select');
     if (!select) return;
@@ -51,8 +46,7 @@ function bindLanguageSwitch() {
     select.value = state.currentLang;
     select.addEventListener('change', (e) => {
         state.currentLang = e.target.value;
-        updateDesktopNav(); // 更新桌面导航
-        // 更新移动导航
+        updateDesktopNav(); 
         const mobileNav = document.getElementById('mobile-nav');
         if (mobileNav) {
             mobileNav.innerHTML = `
@@ -60,11 +54,11 @@ function bindLanguageSwitch() {
                 <a href="#annual" class="nav-item" data-page="season">${__('nav.season')}</a>
                 <a href="#three-year" class="nav-item" data-page="active">${__('nav.active')}</a>
                 <a href="#region" class="nav-item" data-page="region">${__('nav.region')}</a>
+<a href="#topregion" class="nav-item" data-page="topregion">省市榜首</a>
                 <a href="#comprehensive" class="nav-item" data-page="comprehensive">${__('nav.comprehensive')}</a>
                 <a href="#record" class="nav-item" data-page="record">${__('nav.record')}</a>
             `;
         }
-        // 重新加载当前页面以更新所有文本
         if (state.currentPage) {
             loadPage(state.currentPage);
         }
@@ -84,6 +78,7 @@ async function loadPage(page) {
         case 'region': app.innerHTML = renderRegion(); await initRegion(); break;
         case 'comprehensive': app.innerHTML = renderComprehensive(); await initComprehensive(); break;
         case 'record': app.innerHTML = renderRecord(); await initRecord(); break;
+case 'topregion': app.innerHTML = renderTopRegion(); await initTopRegion(); break;
         default: window.location.hash = '#home';
     }
 }
@@ -94,6 +89,7 @@ function handleHash() {
     if (hash === 'annual') page = 'season';
     else if (hash === 'three-year') page = 'active';
     loadPage(page);
+else if (hash === 'topregion') page = 'topregion';
 }
 
 async function initSeason() {
@@ -132,22 +128,28 @@ async function initRegion() {
         const historicalData = await fetchJSON(`data/region/historical/single/333.json`);
         console.log(`构建省份列表，数据条数: ${historicalData.length}`);
         const allRecords = historicalData;
-        const provinceSet = new Set();
-        const cityMap = {};
-        allRecords.forEach(r => {
-            if (r.province) {
-                provinceSet.add(r.province);
-                if (r.city) {
-                    if (!cityMap[r.province]) cityMap[r.province] = new Set();
-                    cityMap[r.province].add(r.city);
-                }
-            }
-        });
-        state.region.allProvinces = Array.from(provinceSet).sort();
-        state.region.provinceCities = {};
-        for (let p in cityMap) {
-            state.region.provinceCities[p] = Array.from(cityMap[p]).sort();
+const provinceSet = new Set();
+const cityMap = {};
+allRecords.forEach(r => {
+    if (r.province) {
+        provinceSet.add(r.province);
+        if (r.city) {
+            if (!cityMap[r.province]) cityMap[r.province] = new Set();
+            cityMap[r.province].add(r.city);
         }
+    }
+});
+let provinces = Array.from(provinceSet).sort((a, b) => a.localeCompare(b, 'zh'));
+const shenshouIndex = provinces.indexOf('神手谷');
+if (shenshouIndex > -1) {
+    provinces.splice(shenshouIndex, 1);
+    provinces.unshift('神手谷');
+}
+state.region.allProvinces = provinces;
+state.region.provinceCities = {};
+for (let p in cityMap) {
+    state.region.provinceCities[p] = Array.from(cityMap[p]).sort((a, b) => a.localeCompare(b, 'zh'));
+}
         console.log('省份列表:', state.region.allProvinces);
     } catch (e) {
         console.warn('无法构建省份城市列表', e);
@@ -611,16 +613,22 @@ async function loadAllRecordsData() {
 
         state.record.rawDataByProject = rawDataByProject;
 
-        const provinceSet = new Set();
-        for (let proj in rawDataByProject) {
-            ['single', 'average'].forEach(type => {
-                rawDataByProject[proj][type].forEach(item => {
-                    if (item.province) provinceSet.add(item.province);
-                });
-            });
-        }
-        state.record.allProvinces = Array.from(provinceSet).sort((a,b) => a.localeCompare(b, 'zh'));
-        state.record.dataLoaded = true;
+const provinceSet = new Set();
+for (let proj in rawDataByProject) {
+    ['single', 'average'].forEach(type => {
+        rawDataByProject[proj][type].forEach(item => {
+            if (item.province) provinceSet.add(item.province);
+        });
+    });
+}
+let provinces = Array.from(provinceSet).sort((a,b) => a.localeCompare(b, 'zh'));
+const shenshouIndex = provinces.indexOf('神手谷');
+if (shenshouIndex > -1) {
+    provinces.splice(shenshouIndex, 1);
+    provinces.unshift('神手谷');
+}
+state.record.allProvinces = provinces;
+state.record.dataLoaded = true;
         console.log('省市纪录原始数据加载完成，省份列表：', state.record.allProvinces);
     } catch (e) {
         console.error('加载省市纪录原始数据失败', e);
@@ -827,12 +835,23 @@ async function loadRecordData() {
 function populateScopeSelect(selectId, currentVal) {
     const select = document.getElementById(selectId);
     if (!select) return;
-    let html = '<option value="world">世界</option>';
-    const continents = ['亚洲','欧洲','北美洲','南美洲','非洲','大洋洲'];
-    continents.forEach(c => html += `<option value="continent:${c}">${c}</option>`);
-    html += '<option value="country:China">中国</option>';
+    let html = `<option value="world">${__('world')}</option>`;
+    const continents = [
+        { code: 'asia', name: __('continent.asia') },
+        { code: 'europe', name: __('continent.europe') },
+        { code: 'north_america', name: __('continent.north_america') },
+        { code: 'south_america', name: __('continent.south_america') },
+        { code: 'africa', name: __('continent.africa') },
+        { code: 'oceania', name: __('continent.oceania') }
+    ];
+    continents.forEach(c => {
+        html += `<option value="continent:${c.code}">${c.name}</option>`;
+    });
+    html += '<option value="country:China">中国</option>'; 
     if (state.meta && state.meta.countries) {
-        state.meta.countries.filter(c => c !== 'China').forEach(c => html += `<option value="country:${c}">${c}</option>`);
+        state.meta.countries.filter(c => c !== 'China').forEach(c => {
+            html += `<option value="country:${c}">${c}</option>`;
+        });
     }
     select.innerHTML = html;
     if (currentVal) select.value = currentVal;
@@ -886,7 +905,12 @@ async function updateCompCitySelect(province) {
 async function loadCompProvinceList() {
     try {
         const data = await fetchJSON(`data/region/historical/single/333.json`);
-        const provinces = [...new Set(data.map(d => d.province).filter(p => p))].sort();
+        let provinces = [...new Set(data.map(d => d.province).filter(p => p))].sort((a, b) => a.localeCompare(b, 'zh'));
+        const shenshouIndex = provinces.indexOf('神手谷');
+        if (shenshouIndex > -1) {
+            provinces.splice(shenshouIndex, 1);
+            provinces.unshift('神手谷');
+        }
         const provinceSelect = document.getElementById('comp-province');
         if (provinceSelect) {
             provinceSelect.innerHTML = provinces.map(p => `<option value="${p}">${p}</option>`).join('');
@@ -972,9 +996,9 @@ function setType(page, type) {
 }
 
 window.addEventListener('load', async () => {
-    await initLanguage();          // 先检测语言
-    bindLanguageSwitch();           // 绑定语言切换
-    updateDesktopNav();             // 首次生成桌面导航
+    await initLanguage();   
+    bindLanguageSwitch();   
+    updateDesktopNav();   
 
     const menuIcon = document.getElementById('mobile-menu-icon');
     const mobileNav = document.getElementById('mobile-nav');
@@ -984,6 +1008,7 @@ window.addEventListener('load', async () => {
         <a href="#annual" class="nav-item" data-page="season">${__('nav.season')}</a>
         <a href="#three-year" class="nav-item" data-page="active">${__('nav.active')}</a>
         <a href="#region" class="nav-item" data-page="region">${__('nav.region')}</a>
+<a href="#topregion" class="nav-item" data-page="topregion">省市榜首</a>
         <a href="#comprehensive" class="nav-item" data-page="comprehensive">${__('nav.comprehensive')}</a>
         <a href="#record" class="nav-item" data-page="record">${__('nav.record')}</a>
     `;
@@ -992,3 +1017,495 @@ window.addEventListener('load', async () => {
     window.addEventListener('hashchange', handleHash);
     handleHash();
 });
+async function initTopRegion() {
+    await loadMeta();
+    await loadTopRegionProvinceCityList();  // 构建省份/城市下拉列表
+
+    const dimSelect = document.getElementById('topregion-dimension');
+    const provinceItem = document.getElementById('topregion-province-item');
+    const cityItem = document.getElementById('topregion-city-item');
+    const rankTypeSelect = document.getElementById('topregion-ranktype');
+    const projectItem = document.getElementById('topregion-project-item');
+    const tagsContainer = document.getElementById('topregion-project-tags-container');
+    const singleBtn = document.getElementById('topregion-single');
+    const avgBtn = document.getElementById('topregion-average');
+
+    // 初始化下拉值
+    dimSelect.value = state.topRegion.dimension;
+    document.getElementById('topregion-province').value = state.topRegion.scopeProvince;
+    document.getElementById('topregion-city').value = state.topRegion.scopeCity;
+    rankTypeSelect.value = state.topRegion.rankType;
+    document.getElementById('topregion-project').value = state.topRegion.project;
+    document.getElementById('topregion-gender').value = state.topRegion.gender;
+
+    // 维度切换
+    dimSelect.addEventListener('change', (e) => {
+        state.topRegion.dimension = e.target.value;
+        if (e.target.value === 'province') {
+            provinceItem.classList.remove('hidden');
+            cityItem.classList.add('hidden');
+        } else {
+            provinceItem.classList.add('hidden');
+            cityItem.classList.remove('hidden');
+        }
+        loadTopRegionData();
+    });
+
+    // 省份筛选
+    document.getElementById('topregion-province').addEventListener('change', (e) => {
+        state.topRegion.scopeProvince = e.target.value;
+        loadTopRegionData();
+    });
+
+    // 城市筛选
+    document.getElementById('topregion-city').addEventListener('change', (e) => {
+        state.topRegion.scopeCity = e.target.value;
+        loadTopRegionData();
+    });
+
+    // 排名类型切换
+    rankTypeSelect.addEventListener('change', (e) => {
+        const isComp = e.target.value === 'comprehensive';
+        state.topRegion.rankType = e.target.value;
+        projectItem.classList.toggle('hidden', isComp);
+        tagsContainer.style.display = isComp ? 'block' : 'none';
+        if (isComp) {
+            renderTopRegionProjectTags();
+        }
+        loadTopRegionData();
+    });
+
+    // 单项项目切换
+    document.getElementById('topregion-project').addEventListener('change', (e) => {
+        state.topRegion.project = e.target.value;
+        loadTopRegionData();
+    });
+
+    // 性别筛选
+    document.getElementById('topregion-gender').addEventListener('change', (e) => {
+        state.topRegion.gender = e.target.value;
+        loadTopRegionData();
+    });
+
+    // 单次/平均按钮
+    singleBtn.addEventListener('click', () => {
+        setTopRegionType('single');
+    });
+    avgBtn.addEventListener('click', () => {
+        setTopRegionType('average');
+    });
+
+    // 初始加载数据
+    await loadTopRegionData();
+}
+
+function setTopRegionType(type) {
+    state.topRegion.type = type;
+    const singleBtn = document.getElementById('topregion-single');
+    const avgBtn = document.getElementById('topregion-average');
+    if (type === 'single') {
+        singleBtn.classList.add('btn-warning');
+        singleBtn.classList.remove('btn-primary');
+        avgBtn.classList.add('btn-primary');
+        avgBtn.classList.remove('btn-warning');
+    } else {
+        avgBtn.classList.add('btn-warning');
+        avgBtn.classList.remove('btn-primary');
+        singleBtn.classList.add('btn-primary');
+        singleBtn.classList.remove('btn-warning');
+    }
+    loadTopRegionData();
+}
+
+// 构建省份/城市下拉选项（基于省市排名数据）
+async function loadTopRegionProvinceCityList() {
+    try {
+        const data = await fetchJSON('data/region/historical/single/333.json');
+        const provinces = [...new Set(data.map(d => d.province).filter(p => p))].sort((a,b) => a.localeCompare(b,'zh'));
+        const cities = [...new Set(data.map(d => d.city).filter(c => c))].sort((a,b) => a.localeCompare(b,'zh'));
+        state.topRegion.provinceList = provinces;
+        state.topRegion.cityList = cities;
+
+        const provinceSelect = document.getElementById('topregion-province');
+        provinceSelect.innerHTML = '<option value="all">全部省份</option>' + 
+            provinces.map(p => `<option value="${p}">${p}</option>`).join('');
+
+        const citySelect = document.getElementById('topregion-city');
+        citySelect.innerHTML = '<option value="all">全部城市</option>' + 
+            cities.map(c => `<option value="${c}">${c}</option>`).join('');
+    } catch (e) {
+        console.warn('加载省市列表失败', e);
+    }
+}
+
+// 渲染综合项目标签
+function renderTopRegionProjectTags() {
+    const container = document.getElementById('topregion-project-tags');
+    if (!container) return;
+    const selected = state.topRegion.selectedEvents;
+    const html = PROJECT_LIST.map(p => {
+        const isSelected = selected.includes(p.code);
+        return `<span class="project-tag ${isSelected ? 'selected' : ''}" data-code="${p.code}">${__('project.' + p.code)}</span>`;
+    }).join('');
+    container.innerHTML = html;
+
+    container.querySelectorAll('.project-tag').forEach(tag => {
+        tag.addEventListener('click', () => {
+            const code = tag.dataset.code;
+            let selected = state.topRegion.selectedEvents.slice();
+            if (selected.includes(code)) {
+                if (selected.length > 1) {
+                    selected = selected.filter(c => c !== code);
+                } else {
+                    return;
+                }
+            } else {
+                selected.push(code);
+            }
+            state.topRegion.selectedEvents = selected;
+            renderTopRegionProjectTags();
+            loadTopRegionData();
+        });
+    });
+}
+
+// 核心数据加载与排名计算
+async function loadTopRegionData() {
+    const dim = state.topRegion.dimension;
+    const rankType = state.topRegion.rankType;
+    const type = state.topRegion.type; // single/average
+    const gender = state.topRegion.gender;
+    const project = state.topRegion.project;
+    const selectedEvents = state.topRegion.selectedEvents;
+    const scopeProvince = state.topRegion.scopeProvince;
+    const scopeCity = state.topRegion.scopeCity;
+
+    // 更新当前信息显示
+    updateTopRegionCurrentLabel();
+
+    const tbody = document.getElementById('topregion-tbody');
+    const loading = document.getElementById('topregion-loading');
+    if (!tbody) return;
+
+    loading.style.display = 'block';
+    tbody.innerHTML = '';
+
+    try {
+        if (rankType === 'single') {
+            // 单项模式：只处理一个项目
+            const data = await fetchJSON(`data/region/historical/${type}/${project}.json`);
+            let filtered = applyGenderFilter(data, gender);
+
+            // 按维度分组取最佳
+            const groupMap = new Map(); // key: 省份名或城市名
+            filtered.forEach(item => {
+                const key = dim === 'province' ? item.province : item.city;
+                if (!key) return;
+                // 应用范围筛选
+                if (dim === 'province' && scopeProvince !== 'all' && item.province !== scopeProvince) return;
+                if (dim === 'city' && scopeCity !== 'all' && item.city !== scopeCity) return;
+
+                const existing = groupMap.get(key);
+                const currVal = parseTime(item.result);
+                if (!existing || currVal < parseTime(existing.result)) {
+                    groupMap.set(key, item);
+                } else if (currVal === parseTime(existing.result)) {
+                    // 成绩相同取日期更早的（可选）
+                    if (item.date && existing.date && item.date < existing.date) {
+                        groupMap.set(key, item);
+                    }
+                }
+            });
+
+            // 将 map 转为数组并排序（按成绩）
+            let tops = Array.from(groupMap.values());
+            if (project === '333mbf') {
+                tops.sort((a, b) => {
+                    const pa = parseMBF(a.result), pb = parseMBF(b.result);
+                    if (!pa && !pb) return 0;
+                    if (!pa) return 1;
+                    if (!pb) return -1;
+                    const scoreA = pa.success - pa.fail, scoreB = pb.success - pb.fail;
+                    if (scoreA !== scoreB) return scoreB - scoreA;
+                    if (pa.timeSeconds !== pb.timeSeconds) return pa.timeSeconds - pb.timeSeconds;
+                    return pa.fail - pb.fail;
+                });
+            } else {
+                tops.sort((a, b) => parseTime(a.result) - parseTime(b.result));
+            }
+
+            // 赋予排名（考虑并列）
+            let rank = 1, sameCount = 0;
+            tops.forEach((item, idx) => {
+                if (idx === 0) {
+                    item.displayRank = rank;
+                } else {
+                    const prev = tops[idx-1];
+                    const isSame = (project === '333mbf') ? 
+                        (parseMBF(item.result)?.success === parseMBF(prev.result)?.success &&
+                         parseMBF(item.result)?.timeSeconds === parseMBF(prev.result)?.timeSeconds &&
+                         parseMBF(item.result)?.fail === parseMBF(prev.result)?.fail) :
+                        (item.result === prev.result);
+                    if (isSame) {
+                        sameCount++;
+                        item.displayRank = rank;
+                    } else {
+                        rank += 1 + sameCount;
+                        sameCount = 0;
+                        item.displayRank = rank;
+                    }
+                }
+            });
+
+            // 分页渲染
+            renderTopRegionTable(tops, 'single');
+        } else {
+            // 综合模式：多项目
+            const eventList = selectedEvents;
+            if (eventList.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7">请至少选择一个项目</td></tr>';
+                loading.style.display = 'none';
+                return;
+            }
+
+            // 用于存储每个维度（省份/城市）在各个项目上的最佳记录及其在该项目所有tops中的排名
+            const dimTopRankMap = new Map(); // key: 维度名 -> { 项目名: { rank: ..., record: ... } }
+            const projectTops = {}; // 暂存每个项目的tops列表，用于排名
+
+            // 先加载所有项目数据，并计算每个项目的 tops（按维度分组的最佳）
+            for (let proj of eventList) {
+                const data = await fetchJSON(`data/region/historical/${type}/${proj}.json`);
+                let filtered = applyGenderFilter(data, gender);
+
+                // 按维度分组取最佳
+                const groupMap = new Map();
+                filtered.forEach(item => {
+                    const key = dim === 'province' ? item.province : item.city;
+                    if (!key) return;
+                    if (dim === 'province' && scopeProvince !== 'all' && item.province !== scopeProvince) return;
+                    if (dim === 'city' && scopeCity !== 'all' && item.city !== scopeCity) return;
+
+                    const existing = groupMap.get(key);
+                    const currVal = parseTime(item.result);
+                    if (!existing || currVal < parseTime(existing.result)) {
+                        groupMap.set(key, item);
+                    }
+                });
+
+                let tops = Array.from(groupMap.values());
+                // 排序获得排名
+                if (proj === '333mbf') {
+                    tops.sort((a, b) => {
+                        const pa = parseMBF(a.result), pb = parseMBF(b.result);
+                        if (!pa && !pb) return 0;
+                        if (!pa) return 1;
+                        if (!pb) return -1;
+                        const scoreA = pa.success - pa.fail, scoreB = pb.success - pb.fail;
+                        if (scoreA !== scoreB) return scoreB - scoreA;
+                        if (pa.timeSeconds !== pb.timeSeconds) return pa.timeSeconds - pb.timeSeconds;
+                        return pa.fail - pb.fail;
+                    });
+                } else {
+                    tops.sort((a, b) => parseTime(a.result) - parseTime(b.result));
+                }
+
+                // 赋予排名
+                let rank = 1, sameCount = 0;
+                tops.forEach((item, idx) => {
+                    if (idx === 0) {
+                        item.rank = rank;
+                    } else {
+                        const prev = tops[idx-1];
+                        const isSame = (proj === '333mbf') ? 
+                            (parseMBF(item.result)?.success === parseMBF(prev.result)?.success &&
+                             parseMBF(item.result)?.timeSeconds === parseMBF(prev.result)?.timeSeconds &&
+                             parseMBF(item.result)?.fail === parseMBF(prev.result)?.fail) :
+                            (item.result === prev.result);
+                        if (isSame) {
+                            sameCount++;
+                            item.rank = rank;
+                        } else {
+                            rank += 1 + sameCount;
+                            sameCount = 0;
+                            item.rank = rank;
+                        }
+                    }
+                });
+
+                projectTops[proj] = tops;
+
+                // 记录每个维度的项目排名
+                tops.forEach(item => {
+                    const key = dim === 'province' ? item.province : item.city;
+                    if (!dimTopRankMap.has(key)) dimTopRankMap.set(key, {});
+                    dimTopRankMap.get(key)[proj] = {
+                        rank: item.rank,
+                        record: item
+                    };
+                });
+            }
+
+            // 计算每个维度的总分（所选项目的排名之和）
+            const results = [];
+            for (let [key, projRanks] of dimTopRankMap.entries()) {
+                let total = 0;
+                let count = 0;
+                for (let proj of eventList) {
+                    if (projRanks[proj]) {
+                        total += projRanks[proj].rank;
+                        count++;
+                    } else {
+                        // 该维度下无此项目记录，排名取该项目 tops 长度+1（最后一名）
+                        const maxRank = projectTops[proj]?.length || 0;
+                        total += maxRank + 1;
+                    }
+                }
+                // 取任意一条记录作为展示信息（名称、省份等）
+                const sampleRecord = projRanks[eventList.find(p => projRanks[p])]?.record;
+                results.push({
+                    key: key,
+                    province: sampleRecord?.province || (dim === 'province' ? key : ''),
+                    city: sampleRecord?.city || (dim === 'city' ? key : ''),
+                    totalRank: total,
+                    eventCount: count,
+                    sampleName: sampleRecord?.name || '',
+                });
+            }
+
+            // 按总分排序
+            results.sort((a, b) => a.totalRank - b.totalRank);
+
+            // 赋予最终排名（并列处理）
+            let rank = 1, sameCount = 0, lastTotal = null;
+            results.forEach((item, idx) => {
+                if (idx === 0) {
+                    item.displayRank = rank;
+                    lastTotal = item.totalRank;
+                } else {
+                    if (item.totalRank === lastTotal) {
+                        sameCount++;
+                        item.displayRank = rank;
+                    } else {
+                        rank += 1 + sameCount;
+                        sameCount = 0;
+                        lastTotal = item.totalRank;
+                        item.displayRank = rank;
+                    }
+                }
+            });
+
+            // 渲染综合表格
+            renderTopRegionTable(results, 'comprehensive');
+        }
+    } catch (e) {
+        console.error(e);
+        tbody.innerHTML = '<tr><td colspan="7">数据加载失败</td></tr>';
+    } finally {
+        loading.style.display = 'none';
+    }
+}
+
+// 更新当前信息标签
+function updateTopRegionCurrentLabel() {
+    const dim = state.topRegion.dimension === 'province' ? '省份' : '城市';
+    const scope = state.topRegion.dimension === 'province' 
+        ? (state.topRegion.scopeProvince === 'all' ? '全部' : state.topRegion.scopeProvince)
+        : (state.topRegion.scopeCity === 'all' ? '全部' : state.topRegion.scopeCity);
+    const rankType = state.topRegion.rankType === 'single' ? '单项' : '综合';
+    const proj = state.topRegion.rankType === 'single' 
+        ? getProjectName(state.topRegion.project) 
+        : `多项目(${state.topRegion.selectedEvents.length}个)`;
+    const type = state.topRegion.type === 'single' ? '单次' : '平均';
+    document.getElementById('topregion-current').innerText = `${dim} · ${scope} · ${proj} · ${rankType} · ${type}`;
+}
+
+// 渲染表格（分页）
+function renderTopRegionTable(data, mode) {
+    const tbody = document.getElementById('topregion-tbody');
+    const thead = document.getElementById('topregion-thead');
+    if (!tbody) return;
+
+    // 根据模式调整表头
+    if (mode === 'single') {
+        thead.innerHTML = `<tr>
+            <th>排名</th>
+            <th>省份</th>
+            <th>城市</th>
+            <th>姓名</th>
+            <th>成绩</th>
+            <th>比赛</th>
+            <th>WCA ID</th>
+        </tr>`;
+    } else {
+        thead.innerHTML = `<tr>
+            <th>排名</th>
+            <th>省份</th>
+            <th>城市</th>
+            <th>参与项目数</th>
+            <th>排名总和</th>
+        </tr>`;
+    }
+
+    // 分页
+    const pageSize = 100;
+    const totalPages = Math.ceil(data.length / pageSize);
+    const currentPage = 1;
+
+    const pageData = data.slice(0, pageSize);
+
+    if (mode === 'single') {
+        tbody.innerHTML = pageData.map(item => `
+            <tr>
+                <td class="rank-cell">${item.displayRank}</td>
+                <td>${item.province || ''}</td>
+                <td>${item.city || ''}</td>
+                <td>${extractChineseName(item.name)}</td>
+                <td>${formatResult(item.result)}</td>
+                <td>${item.competition || ''}</td>
+                <td>${item.wcaid || ''}</td>
+            </tr>
+        `).join('');
+    } else {
+        tbody.innerHTML = pageData.map(item => `
+            <tr>
+                <td class="rank-cell">${item.displayRank}</td>
+                <td>${item.province || ''}</td>
+                <td>${item.city || ''}</td>
+                <td>${item.eventCount}</td>
+                <td>${item.totalRank}</td>
+            </tr>
+        `).join('');
+    }
+
+    // 分页组件
+    const onPageChange = (newPage) => {
+        const start = (newPage - 1) * pageSize;
+        const newPageData = data.slice(start, start + pageSize);
+        if (mode === 'single') {
+            tbody.innerHTML = newPageData.map(item => `
+                <tr>
+                    <td class="rank-cell">${item.displayRank}</td>
+                    <td>${item.province || ''}</td>
+                    <td>${item.city || ''}</td>
+                    <td>${extractChineseName(item.name)}</td>
+                    <td>${formatResult(item.result)}</td>
+                    <td>${item.competition || ''}</td>
+                    <td>${item.wcaid || ''}</td>
+                </tr>
+            `).join('');
+        } else {
+            tbody.innerHTML = newPageData.map(item => `
+                <tr>
+                    <td class="rank-cell">${item.displayRank}</td>
+                    <td>${item.province || ''}</td>
+                    <td>${item.city || ''}</td>
+                    <td>${item.eventCount}</td>
+                    <td>${item.totalRank}</td>
+                </tr>
+            `).join('');
+        }
+        renderPagination('topregion-pagination', totalPages, newPage, onPageChange);
+    };
+
+    renderPagination('topregion-pagination', totalPages, currentPage, onPageChange);
+}

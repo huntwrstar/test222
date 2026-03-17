@@ -33,7 +33,7 @@ window.state = {
         dataLoaded: false,
         loading: false
     },
-    pagination: { currentPage: 1, totalPages: 1, data: [] }
+    pagination: { currentPage: 1, totalPages: 1, data: [] },
 // 在 state.js 的 window.state 中添加
 topRegion: {
     dimension: 'province',           // 'province' 或 'city'
@@ -47,7 +47,7 @@ topRegion: {
     dataCache: {},                   // 缓存已加载的项目数据
     provinceList: [],                // 所有省份列表（用于下拉）
     cityList: []                     // 所有城市列表（用于下拉）
-},
+}
 };
 
 window.MUNICIPALITIES = ['北京', '上海', '重庆', '天津', '台湾', '香港', '澳门', '神手谷'];

@@ -36,17 +36,13 @@ window.state = {
     pagination: { currentPage: 1, totalPages: 1, data: [] },
 // 在 state.js 的 window.state 中添加
 topRegion: {
-    dimension: 'province',           // 'province' 或 'city'
-    scopeProvince: 'all',            // 省份筛选：'all' 或具体省名
-    scopeCity: 'all',                // 城市筛选：'all' 或具体市名
-    rankType: 'single',              // 'single' 或 'comprehensive'
-    type: 'single',                  // 'single' 或 'average' (仅在单项时有效)
-    project: '333',                  // 单项时选中的项目
-    selectedEvents: ['333'],         // 综合时选中的项目列表
+    dimension: 'province',      // 'province' 或 'city'
+    rankType: 'single',         // 'single' 或 'comprehensive'
+    type: 'single',             // 'single' 或 'average'
+    project: '333',
+    selectedEvents: ['333'],
     gender: 'all',
-    dataCache: {},                   // 缓存已加载的项目数据
-    provinceList: [],                // 所有省份列表（用于下拉）
-    cityList: []                     // 所有城市列表（用于下拉）
+    dataCache: {}
 }
 };
 

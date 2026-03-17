@@ -521,18 +521,6 @@ function renderTopRegion() {
                     <option value="city">城市</option>
                 </select>
             </div>
-            <div class="filter-item" id="topregion-province-item">
-                <label>省份</label>
-                <select id="topregion-province">
-                    <option value="all">全部省份</option>
-                </select>
-            </div>
-            <div class="filter-item hidden" id="topregion-city-item">
-                <label>城市</label>
-                <select id="topregion-city">
-                    <option value="all">全部城市</option>
-                </select>
-            </div>
             <div class="filter-item">
                 <label>排名类型</label>
                 <select id="topregion-ranktype">
@@ -558,7 +546,7 @@ function renderTopRegion() {
             <div class="project-tag-group" id="topregion-project-tags"></div>
         </div>
         <div class="current-info">
-            <h3><i class="fa fa-info-circle"></i> <span id="topregion-current">省份 · 全部省份 · 三阶 · 单次</span></h3>
+            <h3><i class="fa fa-info-circle"></i> <span id="topregion-current">省份 · 全部 · 三阶 · 单次</span></h3>
         </div>
         <div id="topregion-loading" class="loading-indicator" style="display:none;">
             <i class="fas fa-spinner fa-spin"></i> 数据加载中...
@@ -568,9 +556,9 @@ function renderTopRegion() {
                 <thead id="topregion-thead">
                     <tr>
                         <th>排名</th>
+                        <th>姓名</th>
                         <th>省份</th>
                         <th>城市</th>
-                        <th>姓名</th>
                         <th>成绩</th>
                         <th>比赛</th>
                         <th>WCA ID</th>

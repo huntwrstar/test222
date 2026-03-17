@@ -47,7 +47,7 @@ topRegion: {
     dataCache: {},                   // 缓存已加载的项目数据
     provinceList: [],                // 所有省份列表（用于下拉）
     cityList: []                     // 所有城市列表（用于下拉）
-}
+},
 };
 
 window.MUNICIPALITIES = ['北京', '上海', '重庆', '天津', '台湾', '香港', '澳门', '神手谷'];

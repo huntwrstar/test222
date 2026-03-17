@@ -88,8 +88,8 @@ function handleHash() {
     let page = hash;
     if (hash === 'annual') page = 'season';
     else if (hash === 'three-year') page = 'active';
-    loadPage(page);
 else if (hash === 'topregion') page = 'topregion';
+    loadPage(page);
 }
 
 async function initSeason() {

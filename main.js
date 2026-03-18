@@ -216,6 +216,15 @@ async function initRegionTop() {
         });
     }
 
+    // 时期单选按钮
+    const periodRadios = document.querySelectorAll('input[name="regionTop-period"]');
+    periodRadios.forEach(r => {
+        if (r.value === state.regionTop.period) r.checked = true;
+        r.addEventListener('change', (e) => {
+            state.regionTop.period = e.target.value;
+        });
+    });
+
     const projSelect = document.getElementById('regionTop-project');
     if (projSelect) {
         projSelect.value = state.regionTop.project;
@@ -247,12 +256,16 @@ async function initRegionTop() {
 async function loadRegionTopData() {
     if (state.currentPage !== 'regionTop') return;
     showPageLoading('regionTop');
-    const { dimension, project, type, gender } = state.regionTop;
+    const { dimension, project, type, gender, period } = state.regionTop;
+    let periodText = '';
+    if (period === 'historical') periodText = __('current.historical');
+    else if (period === 'season') periodText = __('current.season');
+    else periodText = __('current.active');
     document.getElementById('regionTop-current').innerText = 
-        `${dimension === 'province' ? __('dimension.province') : __('dimension.city')} · ${getProjectName(project)} · ${type === 'single' ? __('btn.single') : __('btn.average')}`;
+        `${dimension === 'province' ? __('dimension.province') : __('dimension.city')} · ${periodText} · ${getProjectName(project)} · ${type === 'single' ? __('btn.single') : __('btn.average')}`;
 
     try {
-        let data = await fetchJSON(`data/region/historical/${type}/${project}.json`);
+        let data = await fetchJSON(`data/region/${period}/${type}/${project}.json`);
         data = applyGenderFilter(data, gender);
 
         // 分组找出每个地区的第一名（并列）
@@ -267,8 +280,7 @@ async function loadRegionTopData() {
         let topList = [];
         for (let key in groups) {
             const items = groups[key];
-            // 按成绩排序
-            const sorted = recomputeRanks(items, project); // 获得组内排名，取rank=1的
+            const sorted = recomputeRanks(items, project);
             const bestRank = sorted[0].rank;
             const bestItems = sorted.filter(item => item.rank === bestRank);
             bestItems.forEach(item => {
@@ -281,7 +293,7 @@ async function loadRegionTopData() {
             });
         }
 
-        // 对所有榜首按成绩排序（再次全局排序）
+        // 对所有榜首按成绩排序
         if (project === '333mbf') {
             topList.sort((a, b) => {
                 const aParsed = parseMBF(a.result);
@@ -346,6 +358,16 @@ async function initRegionComp() {
         });
     }
 
+    // 时期单选按钮
+    const periodRadios = document.querySelectorAll('input[name="regionComp-period"]');
+    periodRadios.forEach(r => {
+        if (r.value === state.regionComp.period) r.checked = true;
+        r.addEventListener('change', (e) => {
+            state.regionComp.period = e.target.value;
+            updateRegionCompCurrentLabel();
+        });
+    });
+
     renderRegionCompProjectTags();
 
     document.getElementById('regionComp-single').addEventListener('click', () => {
@@ -371,20 +393,19 @@ async function calculateRegionComp() {
 
     updateRegionCompCurrentLabel();
 
-    const { dimension, selectedEvents, type } = state.regionComp;
+    const { dimension, selectedEvents, type, period } = state.regionComp;
     if (selectedEvents.length === 0) {
         tbody.innerHTML = '<tr><td colspan="5">' + __('no_data') + '</td></tr>';
         return;
     }
 
-    const projectDataMap = {}; // { proj: { rankMap: { groupKey: rank }, maxRank } }
-    const groupInfoMap = new Map(); // key -> { province, city }
+    const projectDataMap = {};
+    const groupInfoMap = new Map();
 
     for (let proj of selectedEvents) {
         try {
-            const url = `data/region/historical/${type}/${proj}.json`;
+            const url = `data/region/${period}/${type}/${proj}.json`;
             let data = await fetchJSON(url);
-            // 性别不过滤
             const ranked = recomputeRanks(data, proj);
             const maxRank = ranked.length;
 

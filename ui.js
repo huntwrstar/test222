@@ -199,6 +199,14 @@ function renderRegionTop() {
                 </select>
             </div>
             <div class="filter-item">
+                <label>${__('filter.period')}</label>
+                <div class="radio-group" id="regionTop-period-group">
+                    <label><input type="radio" name="regionTop-period" value="historical" checked> ${__('current.historical')}</label>
+                    <label><input type="radio" name="regionTop-period" value="season"> ${__('current.season')}</label>
+                    <label><input type="radio" name="regionTop-period" value="active"> ${__('current.active')}</label>
+                </div>
+            </div>
+            <div class="filter-item">
                 <label>${__('filter.project')}</label>
                 <select id="regionTop-project">${projectOptions()}</select>
             </div>
@@ -247,6 +255,14 @@ function renderRegionComp() {
                     <option value="province">${__('dimension.province')}</option>
                     <option value="city">${__('dimension.city')}</option>
                 </select>
+            </div>
+            <div class="filter-item">
+                <label>${__('filter.period')}</label>
+                <div class="radio-group" id="regionComp-period-group">
+                    <label><input type="radio" name="regionComp-period" value="historical" checked> ${__('current.historical')}</label>
+                    <label><input type="radio" name="regionComp-period" value="season"> ${__('current.season')}</label>
+                    <label><input type="radio" name="regionComp-period" value="active"> ${__('current.active')}</label>
+                </div>
             </div>
             <div style="margin-bottom: 15px; width:100%;">
                 <label style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #6c757d; margin-bottom: 5px; display: block;">${__('comp.select_events')}</label>
@@ -639,5 +655,10 @@ function renderRegionCompProjectTags() {
 function updateRegionCompCurrentLabel() {
     const dim = state.regionComp.dimension === 'province' ? __('dimension.province') : __('dimension.city');
     const type = state.regionComp.type === 'single' ? __('btn.single') : __('btn.average');
-    document.getElementById('regionComp-current').innerText = `${dim} · ${type} · ${state.regionComp.selectedEvents.length} ${__('table.event')}`;
+    const period = state.regionComp.period;
+    let periodText = '';
+    if (period === 'historical') periodText = __('current.historical');
+    else if (period === 'season') periodText = __('current.season');
+    else periodText = __('current.active');
+    document.getElementById('regionComp-current').innerText = `${dim} · ${periodText} · ${type} · ${state.regionComp.selectedEvents.length} ${__('table.event')}`;
 }

@@ -184,6 +184,100 @@ function renderRegion() {
     `;
 }
 
+function renderRegionTop() {
+    return `
+        <div class="page-heading">
+            <h2>${__('regionTop.title')}</h2>
+        </div>
+        <div class="page-subtitle">${__('regionTop.subtitle')}</div>
+        <div class="filter-section">
+            <div class="filter-item">
+                <label>${__('filter.dimension')}</label>
+                <select id="regionTop-dimension">
+                    <option value="province">${__('dimension.province')}</option>
+                    <option value="city">${__('dimension.city')}</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label>${__('filter.project')}</label>
+                <select id="regionTop-project">${projectOptions()}</select>
+            </div>
+            <div class="filter-item">
+                <label>${__('filter.gender')}</label>
+                <select id="regionTop-gender">${genderOptions()}</select>
+            </div>
+            <div class="btn-group">
+                <button id="regionTop-single" class="btn btn-warning">${__('btn.single')}</button>
+                <button id="regionTop-average" class="btn btn-primary">${__('btn.average')}</button>
+            </div>
+        </div>
+        <div class="current-info">
+            <h3><i class="fa fa-info-circle"></i> <span id="regionTop-current"></span></h3>
+        </div>
+        <div class="table-container">
+            <table id="regionTop-table">
+                <thead>
+                    <tr>
+                        <th>${__('table.rank')}</th>
+                        <th>${__('table.name')}</th>
+                        <th>${__('table.province')}</th>
+                        <th>${__('table.city')}</th>
+                        <th>${__('table.result')}</th>
+                        <th>${__('table.competition')}</th>
+                        <th>${__('table.wcaid')}</th>
+                    </tr>
+                </thead>
+                <tbody id="regionTop-tbody"></tbody>
+            </table>
+        </div>
+        <div class="pagination-container" id="regionTop-pagination"></div>
+    `;
+}
+
+function renderRegionComp() {
+    return `
+        <div class="page-heading">
+            <h2>${__('regionComp.title')}</h2>
+        </div>
+        <div class="page-subtitle">${__('regionComp.subtitle')}</div>
+        <div class="filter-section">
+            <div class="filter-item">
+                <label>${__('filter.dimension')}</label>
+                <select id="regionComp-dimension">
+                    <option value="province">${__('dimension.province')}</option>
+                    <option value="city">${__('dimension.city')}</option>
+                </select>
+            </div>
+            <div style="margin-bottom: 15px; width:100%;">
+                <label style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #6c757d; margin-bottom: 5px; display: block;">${__('comp.select_events')}</label>
+                <div class="project-tag-group" id="regionComp-project-tags"></div>
+            </div>
+            <div class="btn-group">
+                <button id="regionComp-single" class="btn btn-warning">${__('btn.single')}</button>
+                <button id="regionComp-average" class="btn btn-primary">${__('btn.average')}</button>
+            </div>
+        </div>
+        <div class="current-info">
+            <h3><i class="fa fa-info-circle"></i> <span id="regionComp-current"></span></h3>
+        </div>
+        <div class="table-container">
+            <table id="regionComp-table">
+                <thead>
+                    <tr>
+                        <th>${__('table.rank')}</th>
+                        <th>${__('dimension.province')}</th>
+                        <th>${__('dimension.city')}</th>
+                        <th>${__('table.events_count')}</th>
+                        <th>${__('table.total_rank')}</th>
+                    </tr>
+                </thead>
+                <tbody id="regionComp-tbody"></tbody>
+            </table>
+        </div>
+        <div class="pagination-container" id="regionComp-pagination"></div>
+    `;
+}
+
 function renderComprehensive() {
     return `
         <div class="page-heading">
@@ -283,15 +377,16 @@ function renderRecord() {
             <table id="record-table">
                 <thead>
                     <tr>
-                        <th width="15%">${__('table.event')}</th>
-                        <th width="15%">${__('btn.single')}</th>
-                        <th width="15%">${__('btn.average')}</th>
-                        <th width="20%">${__('table.name')}</th>
-                        <th width="35%">${__('table.competition')}</th>
+                        <th width="12%">${__('table.event')}</th>
+                        <th width="12%">${__('btn.single')}</th>
+                        <th width="12%">${__('btn.average')}</th>
+                        <th width="15%">${__('table.name')}</th>
+                        <th width="25%">${__('table.competition')}</th>
+                        <th width="12%">${__('table.date')}</th>
                     </tr>
                 </thead>
                 <tbody id="record-tbody">
-                    <tr><td colspan="5" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}<span class="loading-dots"></span></td></tr>
+                    <tr><td colspan="6" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}<span class="loading-dots"></span></td></tr>
                 </tbody>
             </table>
         </div>
@@ -318,11 +413,15 @@ function showPageLoading(page) {
         colspan = 7;
     } else if (page === 'season' || page === 'active') {
         colspan = 6;
+    } else if (page === 'regionTop') {
+        colspan = 7;
+    } else if (page === 'regionComp') {
+        colspan = 5;
     } else if (page === 'comprehensive') {
         const source = state.comprehensive.source;
         colspan = source === 'province' ? 6 : 5;
     } else if (page === 'record') {
-        colspan = 5;
+        colspan = 6;
     }
     tbody.innerHTML = `<tr><td colspan="${colspan}" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}<span class="loading-dots"></span></td></tr>`;
 }
@@ -424,12 +523,12 @@ function renderTable(page, data, project) {
     state.pagination.currentPage = 1;
 
     const pageData = paginate(ranked, 1);
-    renderTableBody(tbody, pageData, page === 'region');
+    renderTableBody(tbody, pageData, page === 'region' || page === 'regionTop');
 
     const onPageChange = (newPage) => {
         state.pagination.currentPage = newPage;
         const newPageData = paginate(ranked, newPage);
-        renderTableBody(tbody, newPageData, page === 'region');
+        renderTableBody(tbody, newPageData, page === 'region' || page === 'regionTop');
         renderPagination(`${page}-pagination`, state.pagination.totalPages, newPage, onPageChange);
     };
 
@@ -505,68 +604,40 @@ function updateCompCurrentLabel() {
     const eventCount = comp.selectedEvents.length;
     document.getElementById('comp-current').innerText = __('comp.current', {source: sourceName, count: eventCount, type: typeName});
 }
-function renderTopRegion() {
-    return `
-        <div class="page-heading">
-            <h2>省市榜首排名</h2>
-        </div>
-        <div class="page-subtitle">
-            展示每个省份/城市在选定项目上的第一名选手，并对这些第一名进行跨区排名。综合模式下计算各项目跨区排名名次的总和。
-        </div>
-        <div class="filter-section">
-            <div class="filter-item">
-                <label>维度</label>
-                <select id="topregion-dimension">
-                    <option value="province">省份</option>
-                    <option value="city">城市</option>
-                </select>
-            </div>
-            <div class="filter-item">
-                <label>排名类型</label>
-                <select id="topregion-ranktype">
-                    <option value="single">单项</option>
-                    <option value="comprehensive">综合</option>
-                </select>
-            </div>
-            <div class="filter-item" id="topregion-project-item">
-                <label>项目</label>
-                <select id="topregion-project">${projectOptions()}</select>
-            </div>
-            <div class="filter-item" id="topregion-gender-item">
-                <label>性别</label>
-                <select id="topregion-gender">${genderOptions()}</select>
-            </div>
-            <div class="btn-group">
-                <button id="topregion-single" class="btn btn-warning">单次</button>
-                <button id="topregion-average" class="btn btn-primary">平均</button>
-            </div>
-        </div>
-        <div id="topregion-project-tags-container" style="margin-bottom:15px; display:none;">
-            <label style="font-size:0.85rem; font-weight:600; color:#6c757d;">项目(点击多选)</label>
-            <div class="project-tag-group" id="topregion-project-tags"></div>
-        </div>
-        <div class="current-info">
-            <h3><i class="fa fa-info-circle"></i> <span id="topregion-current">省份 · 全部 · 三阶 · 单次</span></h3>
-        </div>
-        <div id="topregion-loading" class="loading-indicator" style="display:none;">
-            <i class="fas fa-spinner fa-spin"></i> 数据加载中...
-        </div>
-        <div class="table-container">
-            <table id="topregion-table">
-                <thead id="topregion-thead">
-                    <tr>
-                        <th>排名</th>
-                        <th>姓名</th>
-                        <th>省份</th>
-                        <th>城市</th>
-                        <th>成绩</th>
-                        <th>比赛</th>
-                        <th>WCA ID</th>
-                    </tr>
-                </thead>
-                <tbody id="topregion-tbody"></tbody>
-            </table>
-        </div>
-        <div class="pagination-container" id="topregion-pagination"></div>
-    `;
+
+// 省市综合专用标签渲染
+function renderRegionCompProjectTags() {
+    const container = document.getElementById('regionComp-project-tags');
+    if (!container) return;
+    const selected = state.regionComp.selectedEvents;
+    const html = PROJECT_LIST.map(p => {
+        const isSelected = selected.includes(p.code);
+        return `<span class="project-tag ${isSelected ? 'selected' : ''}" data-code="${p.code}">${__('project.' + p.code)}</span>`;
+    }).join('');
+    container.innerHTML = html;
+
+    container.querySelectorAll('.project-tag').forEach(tag => {
+        tag.addEventListener('click', (e) => {
+            const code = tag.dataset.code;
+            let selected = state.regionComp.selectedEvents.slice();
+            if (selected.includes(code)) {
+                if (selected.length > 1) {
+                    selected = selected.filter(c => c !== code);
+                } else {
+                    return;
+                }
+            } else {
+                selected.push(code);
+            }
+            state.regionComp.selectedEvents = selected;
+            renderRegionCompProjectTags();
+            updateRegionCompCurrentLabel();
+        });
+    });
+}
+
+function updateRegionCompCurrentLabel() {
+    const dim = state.regionComp.dimension === 'province' ? __('dimension.province') : __('dimension.city');
+    const type = state.regionComp.type === 'single' ? __('btn.single') : __('btn.average');
+    document.getElementById('regionComp-current').innerText = `${dim} · ${type} · ${state.regionComp.selectedEvents.length} ${__('table.event')}`;
 }

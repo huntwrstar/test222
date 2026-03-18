@@ -32,9 +32,10 @@ function updateDesktopNav() {
         <a href="#home" class="nav-item" data-page="home">${__('nav.home')}</a>
         <a href="#annual" class="nav-item" data-page="season">${__('nav.season')}</a>
         <a href="#three-year" class="nav-item" data-page="active">${__('nav.active')}</a>
-        <a href="#region" class="nav-item" data-page="region">${__('nav.region')}</a>
-<a href="#topregion" class="nav-item" data-page="topregion">省市榜首</a>
         <a href="#comprehensive" class="nav-item" data-page="comprehensive">${__('nav.comprehensive')}</a>
+        <a href="#region" class="nav-item" data-page="region">${__('nav.region')}</a>
+        <a href="#regionTop" class="nav-item" data-page="regionTop">${__('nav.regionTop')}</a>
+        <a href="#regionComp" class="nav-item" data-page="regionComp">${__('nav.regionComp')}</a>
         <a href="#record" class="nav-item" data-page="record">${__('nav.record')}</a>
     `;
 }
@@ -53,9 +54,10 @@ function bindLanguageSwitch() {
                 <a href="#home" class="nav-item" data-page="home">${__('nav.home')}</a>
                 <a href="#annual" class="nav-item" data-page="season">${__('nav.season')}</a>
                 <a href="#three-year" class="nav-item" data-page="active">${__('nav.active')}</a>
-                <a href="#region" class="nav-item" data-page="region">${__('nav.region')}</a>
-<a href="#topregion" class="nav-item" data-page="topregion">省市榜首</a>
                 <a href="#comprehensive" class="nav-item" data-page="comprehensive">${__('nav.comprehensive')}</a>
+                <a href="#region" class="nav-item" data-page="region">${__('nav.region')}</a>
+                <a href="#regionTop" class="nav-item" data-page="regionTop">${__('nav.regionTop')}</a>
+                <a href="#regionComp" class="nav-item" data-page="regionComp">${__('nav.regionComp')}</a>
                 <a href="#record" class="nav-item" data-page="record">${__('nav.record')}</a>
             `;
         }
@@ -75,10 +77,11 @@ async function loadPage(page) {
         case 'home': app.innerHTML = renderHome(); break;
         case 'season': app.innerHTML = renderSeason(); await initSeason(); break;
         case 'active': app.innerHTML = renderActive(); await initActive(); break;
-        case 'region': app.innerHTML = renderRegion(); await initRegion(); break;
         case 'comprehensive': app.innerHTML = renderComprehensive(); await initComprehensive(); break;
+        case 'region': app.innerHTML = renderRegion(); await initRegion(); break;
+        case 'regionTop': app.innerHTML = renderRegionTop(); await initRegionTop(); break;
+        case 'regionComp': app.innerHTML = renderRegionComp(); await initRegionComp(); break;
         case 'record': app.innerHTML = renderRecord(); await initRecord(); break;
-case 'topregion': app.innerHTML = renderTopRegion(); await initTopRegion(); break;
         default: window.location.hash = '#home';
     }
 }
@@ -88,7 +91,6 @@ function handleHash() {
     let page = hash;
     if (hash === 'annual') page = 'season';
     else if (hash === 'three-year') page = 'active';
-else if (hash === 'topregion') page = 'topregion';
     loadPage(page);
 }
 
@@ -202,6 +204,298 @@ for (let p in cityMap) {
     });
 
     await loadRegionData();
+}
+
+async function initRegionTop() {
+    await loadMeta();
+    const dimSelect = document.getElementById('regionTop-dimension');
+    if (dimSelect) {
+        dimSelect.value = state.regionTop.dimension;
+        dimSelect.addEventListener('change', (e) => {
+            state.regionTop.dimension = e.target.value;
+        });
+    }
+
+    const projSelect = document.getElementById('regionTop-project');
+    if (projSelect) {
+        projSelect.value = state.regionTop.project;
+        projSelect.addEventListener('change', (e) => {
+            state.regionTop.project = e.target.value;
+        });
+    }
+
+    const genderSelect = document.getElementById('regionTop-gender');
+    if (genderSelect) {
+        genderSelect.value = state.regionTop.gender;
+        genderSelect.addEventListener('change', (e) => {
+            state.regionTop.gender = e.target.value;
+        });
+    }
+
+    document.getElementById('regionTop-single').addEventListener('click', () => {
+        setType('regionTop', 'single');
+        loadRegionTopData();
+    });
+    document.getElementById('regionTop-average').addEventListener('click', () => {
+        setType('regionTop', 'average');
+        loadRegionTopData();
+    });
+
+    await loadRegionTopData();
+}
+
+async function loadRegionTopData() {
+    if (state.currentPage !== 'regionTop') return;
+    showPageLoading('regionTop');
+    const { dimension, project, type, gender } = state.regionTop;
+    document.getElementById('regionTop-current').innerText = 
+        `${dimension === 'province' ? __('dimension.province') : __('dimension.city')} · ${getProjectName(project)} · ${type === 'single' ? __('btn.single') : __('btn.average')}`;
+
+    try {
+        let data = await fetchJSON(`data/region/historical/${type}/${project}.json`);
+        data = applyGenderFilter(data, gender);
+
+        // 分组找出每个地区的第一名（并列）
+        const groups = {};
+        data.forEach(item => {
+            const key = dimension === 'province' ? item.province : `${item.province}|${item.city}`;
+            if (!key) return;
+            if (!groups[key]) groups[key] = [];
+            groups[key].push(item);
+        });
+
+        let topList = [];
+        for (let key in groups) {
+            const items = groups[key];
+            // 按成绩排序
+            const sorted = recomputeRanks(items, project); // 获得组内排名，取rank=1的
+            const bestRank = sorted[0].rank;
+            const bestItems = sorted.filter(item => item.rank === bestRank);
+            bestItems.forEach(item => {
+                topList.push({
+                    ...item,
+                    groupKey: key,
+                    province: item.province,
+                    city: item.city || ''
+                });
+            });
+        }
+
+        // 对所有榜首按成绩排序（再次全局排序）
+        if (project === '333mbf') {
+            topList.sort((a, b) => {
+                const aParsed = parseMBF(a.result);
+                const bParsed = parseMBF(b.result);
+                if (!aParsed && !bParsed) return 0;
+                if (!aParsed) return 1;
+                if (!bParsed) return -1;
+                const aScore = aParsed.success - aParsed.fail;
+                const bScore = bParsed.success - bParsed.fail;
+                if (aScore !== bScore) return bScore - aScore;
+                if (aParsed.timeSeconds !== bParsed.timeSeconds) return aParsed.timeSeconds - bParsed.timeSeconds;
+                return aParsed.fail - bParsed.fail;
+            });
+        } else {
+            topList.sort((a, b) => parseTime(a.result) - parseTime(b.result));
+        }
+
+        // 重新计算排名（同分同名次）
+        let rank = 1, sameCount = 0;
+        for (let i = 0; i < topList.length; i++) {
+            if (i === 0) {
+                topList[i].displayRank = rank;
+                continue;
+            }
+            let isSame = false;
+            if (project === '333mbf') {
+                const prev = parseMBF(topList[i-1].result);
+                const curr = parseMBF(topList[i].result);
+                if (prev && curr) {
+                    isSame = (prev.success - prev.fail === curr.success - curr.fail) &&
+                             (prev.timeSeconds === curr.timeSeconds) &&
+                             (prev.fail === curr.fail);
+                } else if (!prev && !curr) isSame = true;
+            } else {
+                isSame = topList[i].result === topList[i-1].result;
+            }
+            if (isSame) {
+                sameCount++;
+                topList[i].displayRank = rank;
+            } else {
+                rank += 1 + sameCount;
+                sameCount = 0;
+                topList[i].displayRank = rank;
+            }
+        }
+
+        renderTable('regionTop', topList, project);
+    } catch (e) {
+        console.error(e);
+        document.getElementById('regionTop-tbody').innerHTML = '<tr><td colspan="7">' + __('loading_failed') + '</td></tr>';
+    }
+}
+
+async function initRegionComp() {
+    await loadMeta();
+    const dimSelect = document.getElementById('regionComp-dimension');
+    if (dimSelect) {
+        dimSelect.value = state.regionComp.dimension;
+        dimSelect.addEventListener('change', (e) => {
+            state.regionComp.dimension = e.target.value;
+            updateRegionCompCurrentLabel();
+        });
+    }
+
+    renderRegionCompProjectTags();
+
+    document.getElementById('regionComp-single').addEventListener('click', () => {
+        setType('regionComp', 'single');
+        calculateRegionComp();
+    });
+    document.getElementById('regionComp-average').addEventListener('click', () => {
+        setType('regionComp', 'average');
+        calculateRegionComp();
+    });
+
+    await calculateRegionComp();
+}
+
+async function calculateRegionComp() {
+    if (state.currentPage !== 'regionComp') return;
+    const tbody = document.getElementById('regionComp-tbody');
+    const paginationDiv = document.getElementById('regionComp-pagination');
+    if (tbody) tbody.innerHTML = '<tr><td colspan="5" class="loading-cell"><i class="fas fa-spinner"></i> ' + __('comp.calculating') + '</td></tr>';
+    if (paginationDiv) paginationDiv.innerHTML = '';
+
+    await new Promise(resolve => setTimeout(resolve, 20));
+
+    updateRegionCompCurrentLabel();
+
+    const { dimension, selectedEvents, type } = state.regionComp;
+    if (selectedEvents.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="5">' + __('no_data') + '</td></tr>';
+        return;
+    }
+
+    const projectDataMap = {}; // { proj: { rankMap: { groupKey: rank }, maxRank } }
+    const groupInfoMap = new Map(); // key -> { province, city }
+
+    for (let proj of selectedEvents) {
+        try {
+            const url = `data/region/historical/${type}/${proj}.json`;
+            let data = await fetchJSON(url);
+            // 性别不过滤
+            const ranked = recomputeRanks(data, proj);
+            const maxRank = ranked.length;
+
+            const groupRank = {};
+            ranked.forEach(item => {
+                const key = dimension === 'province' ? item.province : `${item.province}|${item.city}`;
+                if (!key) return;
+                const rank = item.rank;
+                if (!groupRank[key] || rank < groupRank[key]) {
+                    groupRank[key] = rank;
+                }
+                if (!groupInfoMap.has(key)) {
+                    groupInfoMap.set(key, {
+                        province: item.province || '',
+                        city: item.city || ''
+                    });
+                }
+            });
+
+            projectDataMap[proj] = {
+                rankMap: groupRank,
+                maxRank: maxRank
+            };
+        } catch (e) {
+            console.warn(`加载项目 ${proj} 失败`, e);
+            projectDataMap[proj] = { rankMap: {}, maxRank: 0 };
+        }
+    }
+
+    const results = [];
+    for (let [key, info] of groupInfoMap.entries()) {
+        let totalRank = 0;
+        let count = 0;
+        for (let proj of selectedEvents) {
+            const projData = projectDataMap[proj];
+            const rank = projData.rankMap[key];
+            if (rank !== undefined) {
+                totalRank += rank;
+                count++;
+            } else {
+                totalRank += (projData.maxRank + 1);
+            }
+        }
+        results.push({
+            groupKey: key,
+            province: info.province,
+            city: info.city,
+            totalRank: totalRank,
+            eventCount: count
+        });
+    }
+
+    results.sort((a, b) => a.totalRank - b.totalRank);
+
+    let rank = 1, sameCount = 0;
+    const rankedResults = results.map((item, idx) => {
+        if (idx === 0) {
+            item.displayRank = rank;
+        } else {
+            if (item.totalRank === results[idx-1].totalRank) {
+                sameCount++;
+                item.displayRank = rank;
+            } else {
+                rank += 1 + sameCount;
+                sameCount = 0;
+                item.displayRank = rank;
+            }
+        }
+        return item;
+    });
+
+    renderRegionCompTable(rankedResults);
+}
+
+function renderRegionCompTable(data) {
+    const tbody = document.getElementById('regionComp-tbody');
+    if (!tbody) return;
+
+    if (data.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="5">' + __('no_data') + '</td></tr>';
+        return;
+    }
+
+    state.pagination.data = data;
+    state.pagination.totalPages = Math.ceil(data.length / 100);
+    state.pagination.currentPage = 1;
+
+    const pageData = paginate(data, 1);
+    renderRegionCompTableBody(tbody, pageData);
+
+    const onPageChange = (newPage) => {
+        state.pagination.currentPage = newPage;
+        const newPageData = paginate(data, newPage);
+        renderRegionCompTableBody(tbody, newPageData);
+        renderPagination('regionComp-pagination', state.pagination.totalPages, newPage, onPageChange);
+    };
+    renderPagination('regionComp-pagination', state.pagination.totalPages, 1, onPageChange);
+}
+
+function renderRegionCompTableBody(tbody, data) {
+    let html = '';
+    data.forEach(item => {
+        html += `<tr>
+            <td class="rank-cell">${item.displayRank}</td>
+            <td>${item.province}</td>
+            <td>${item.city || ''}</td>
+            <td>${item.eventCount}</td>
+            <td>${item.totalRank}</td>
+        </tr>`;
+    });
+    tbody.innerHTML = html;
 }
 
 async function initComprehensive() {
@@ -674,97 +968,64 @@ function updateRecordCitySelect(province) {
     }
 }
 
-function computeBestForFilters(province, city, gender) {
+function computeAllBestRecords(province, city, gender) {
     const result = {};
     for (let proj of PROJECT_LIST) {
-        const singleBest = { value: Infinity, record: null };
-        const avgBest = { value: Infinity, record: null };
         const projCode = proj.code;
-
         const singleList = state.record.rawDataByProject[projCode]?.single || [];
         const avgList = state.record.rawDataByProject[projCode]?.average || [];
 
+        const filterFn = (item) => {
+            if (item.province !== province) return false;
+            if (city !== '全部城市' && item.city !== city) return false;
+            if (gender !== 'all' && item.gender !== gender) return false;
+            return true;
+        };
+
+        const filteredSingle = singleList.filter(filterFn);
+        const filteredAvg = avgList.filter(filterFn);
+
+        let bestSingleVal = Infinity, bestAvgVal = Infinity;
         if (projCode === '333mbf') {
-            let bestScore = -Infinity, bestTime = Infinity, bestFail = Infinity;
-            singleList.forEach(item => {
-                if (item.province !== province) return;
-                if (city !== '全部城市' && item.city !== city) return;
-                if (gender !== 'all' && item.gender !== gender) return;
+            filteredSingle.forEach(item => {
                 const parsed = parseMBF(item.result);
                 if (!parsed) return;
                 const score = parsed.success - parsed.fail;
-                if (score > bestScore) {
-                    bestScore = score;
-                    bestTime = parsed.timeSeconds;
-                    bestFail = parsed.fail;
-                    singleBest.record = { ...item };
-                } else if (score === bestScore) {
-                    if (parsed.timeSeconds < bestTime) {
-                        bestTime = parsed.timeSeconds;
-                        bestFail = parsed.fail;
-                        singleBest.record = { ...item };
-                    } else if (parsed.timeSeconds === bestTime) {
-                        if (parsed.fail < bestFail) {
-                            bestFail = parsed.fail;
-                            singleBest.record = { ...item };
-                        } else if (parsed.fail === bestFail) {
-                            if (item.date && singleBest.record?.date && item.date < singleBest.record.date) {
-                                singleBest.record = { ...item };
-                            }
-                        }
-                    }
-                }
+                if (score > bestSingleVal) bestSingleVal = score;
             });
         } else {
-            singleList.forEach(item => {
-                if (item.province !== province) return;
-                if (city !== '全部城市' && item.city !== city) return;
-                if (gender !== 'all' && item.gender !== gender) return;
+            filteredSingle.forEach(item => {
                 const val = parseTime(item.result);
-                if (val < singleBest.value) {
-                    singleBest.value = val;
-                    singleBest.record = {
-                        result: item.result,
-                        name: item.name,
-                        competition: item.competition,
-                        date: item.date,
-                        wcaid: item.wcaid
-                    };
-                } else if (val === singleBest.value && singleBest.record) {
-                    if (item.date && singleBest.record.date && item.date < singleBest.record.date) {
-                        singleBest.record = { ...item };
-                    }
-                }
+                if (val < bestSingleVal) bestSingleVal = val;
+            });
+            filteredAvg.forEach(item => {
+                const val = parseTime(item.result);
+                if (val < bestAvgVal) bestAvgVal = val;
             });
         }
 
+        const bestSingles = [];
+        const bestAvgs = [];
+
         if (projCode === '333mbf') {
-        } else {
-            avgList.forEach(item => {
-                if (item.province !== province) return;
-                if (city !== '全部城市' && item.city !== city) return;
-                if (gender !== 'all' && item.gender !== gender) return;
-                const val = parseTime(item.result);
-                if (val < avgBest.value) {
-                    avgBest.value = val;
-                    avgBest.record = {
-                        result: item.result,
-                        name: item.name,
-                        competition: item.competition,
-                        date: item.date,
-                        wcaid: item.wcaid
-                    };
-                } else if (val === avgBest.value && avgBest.record) {
-                    if (item.date && avgBest.record.date && item.date < avgBest.record.date) {
-                        avgBest.record = { ...item };
-                    }
+            filteredSingle.forEach(item => {
+                const parsed = parseMBF(item.result);
+                if (parsed && (parsed.success - parsed.fail) === bestSingleVal) {
+                    bestSingles.push(item);
                 }
+            });
+        } else {
+            filteredSingle.forEach(item => {
+                if (parseTime(item.result) === bestSingleVal) bestSingles.push(item);
+            });
+            filteredAvg.forEach(item => {
+                if (parseTime(item.result) === bestAvgVal) bestAvgs.push(item);
             });
         }
 
         result[projCode] = {
-            single: singleBest.record,
-            average: avgBest.record
+            single: bestSingles,
+            average: bestAvgs
         };
     }
     return result;
@@ -774,7 +1035,7 @@ async function loadRecordData() {
     const tbody = document.getElementById('record-tbody');
     if (!tbody) return;
     if (!state.record.dataLoaded) {
-        tbody.innerHTML = '<tr><td colspan="5" class="loading-cell"><i class="fas fa-spinner"></i> 数据未就绪</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="6" class="loading-cell"><i class="fas fa-spinner"></i> 数据未就绪</td></tr>';
         return;
     }
 
@@ -791,45 +1052,47 @@ async function loadRecordData() {
     else if (gender === '未知') genderText = '未知';
     document.getElementById('record-current-gender').textContent = genderText;
 
-    tbody.innerHTML = '<tr><td colspan="5" class="loading-cell"><i class="fas fa-spinner"></i> 加载纪录表<span class="loading-dots"></span></td></tr>';
+    tbody.innerHTML = '<tr><td colspan="6" class="loading-cell"><i class="fas fa-spinner"></i> 加载纪录表<span class="loading-dots"></span></td></tr>';
     await new Promise(resolve => setTimeout(resolve, 20));
 
-    const bestMap = computeBestForFilters(province, city, gender);
+    const bestMap = computeAllBestRecords(province, city, gender);
     let html = '';
 
     for (let proj of PROJECT_LIST) {
-        const projBest = bestMap[proj.code] || { single: null, average: null };
-        const singleRec = projBest.single;
-        const avgRec = projBest.average;
+        const projBest = bestMap[proj.code] || { single: [], average: [] };
+        const singleList = projBest.single;
+        const avgList = projBest.average;
 
-        html += `<tr class="region-cell"><td colspan="5">${proj.name}</td></tr>`;
+        html += `<tr class="region-cell"><td colspan="6">${proj.name}</td></tr>`;
 
-        if (!singleRec && !avgRec) {
-            html += `<tr><td colspan="5" class="empty-cell">暂无纪录</td></tr>`;
+        if (singleList.length === 0 && avgList.length === 0) {
+            html += `<tr><td colspan="6" class="empty-cell">${__('record.no_record')}</td></tr>`;
         } else {
-            if (singleRec) {
-                const displayName = extractChineseName(singleRec.name);
+            singleList.forEach(rec => {
+                const displayName = extractChineseName(rec.name);
                 html += `<tr>
                     <td></td>
-                    <td>${formatResult(singleRec.result)}</td>
+                    <td>${formatResult(rec.result)}</td>
                     <td></td>
                     <td>${displayName}</td>
-                    <td>${singleRec.competition || ''}</td>
+                    <td>${rec.competition || ''}</td>
+                    <td>${rec.date || ''}</td>
                 </tr>`;
-            }
-            if (avgRec) {
-                const displayName = extractChineseName(avgRec.name);
+            });
+            avgList.forEach(rec => {
+                const displayName = extractChineseName(rec.name);
                 html += `<tr>
                     <td></td>
                     <td></td>
-                    <td>${formatResult(avgRec.result)}</td>
+                    <td>${formatResult(rec.result)}</td>
                     <td>${displayName}</td>
-                    <td>${avgRec.competition || ''}</td>
+                    <td>${rec.competition || ''}</td>
+                    <td>${rec.date || ''}</td>
                 </tr>`;
-            }
+            });
         }
     }
-    tbody.innerHTML = html || '<tr><td colspan="5">暂无数据</td></tr>';
+    tbody.innerHTML = html || '<tr><td colspan="6">暂无数据</td></tr>';
 }
 
 function populateScopeSelect(selectId, currentVal) {
@@ -927,7 +1190,7 @@ async function loadCompProvinceList() {
 
 function bindEvents(page, autoLoad = true) {
     const prefix = page === 'comprehensive' ? 'comp' : page;
-    if (page !== 'comprehensive') {
+    if (page !== 'comprehensive' && page !== 'regionTop' && page !== 'regionComp') {
         const projSelect = document.getElementById(`${prefix}-project`);
         if (projSelect) {
             projSelect.addEventListener('change', (e) => {
@@ -936,12 +1199,12 @@ function bindEvents(page, autoLoad = true) {
         }
     }
     const genderSelect = document.getElementById(`${prefix}-gender`);
-    if (genderSelect) {
+    if (genderSelect && page !== 'regionComp') { // regionComp 无性别
         genderSelect.addEventListener('change', (e) => {
             state[page].gender = e.target.value;
         });
     }
-    if (prefix !== 'region' && page !== 'comprehensive') {
+    if (prefix !== 'region' && page !== 'comprehensive' && page !== 'regionTop' && page !== 'regionComp') {
         const scopeSelect = document.getElementById(`${prefix}-scope`);
         if (scopeSelect) {
             scopeSelect.addEventListener('change', (e) => {
@@ -959,7 +1222,7 @@ function bindEvents(page, autoLoad = true) {
             });
         }
     }
-    if (page !== 'comprehensive') {
+    if (page !== 'comprehensive' && page !== 'regionComp') {
         const singleBtn = document.getElementById(`${prefix}-single`);
         const avgBtn = document.getElementById(`${prefix}-average`);
         if (singleBtn) {
@@ -1007,9 +1270,10 @@ window.addEventListener('load', async () => {
         <a href="#home" class="nav-item" data-page="home">${__('nav.home')}</a>
         <a href="#annual" class="nav-item" data-page="season">${__('nav.season')}</a>
         <a href="#three-year" class="nav-item" data-page="active">${__('nav.active')}</a>
-        <a href="#region" class="nav-item" data-page="region">${__('nav.region')}</a>
-<a href="#topregion" class="nav-item" data-page="topregion">省市榜首</a>
         <a href="#comprehensive" class="nav-item" data-page="comprehensive">${__('nav.comprehensive')}</a>
+        <a href="#region" class="nav-item" data-page="region">${__('nav.region')}</a>
+        <a href="#regionTop" class="nav-item" data-page="regionTop">${__('nav.regionTop')}</a>
+        <a href="#regionComp" class="nav-item" data-page="regionComp">${__('nav.regionComp')}</a>
         <a href="#record" class="nav-item" data-page="record">${__('nav.record')}</a>
     `;
     mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.classList.remove('show')));
@@ -1017,423 +1281,3 @@ window.addEventListener('load', async () => {
     window.addEventListener('hashchange', handleHash);
     handleHash();
 });
-async function initTopRegion() {
-    await loadMeta();
-
-    const dimSelect = document.getElementById('topregion-dimension');
-    const rankTypeSelect = document.getElementById('topregion-ranktype');
-    const projectItem = document.getElementById('topregion-project-item');
-    const tagsContainer = document.getElementById('topregion-project-tags-container');
-    const singleBtn = document.getElementById('topregion-single');
-    const avgBtn = document.getElementById('topregion-average');
-    const projectSelect = document.getElementById('topregion-project');
-    const genderSelect = document.getElementById('topregion-gender');
-
-    dimSelect.value = state.topRegion.dimension;
-    rankTypeSelect.value = state.topRegion.rankType;
-    projectSelect.value = state.topRegion.project;
-    genderSelect.value = state.topRegion.gender;
-
-    // 维度切换：只更新标签，不加载数据
-    dimSelect.addEventListener('change', (e) => {
-        state.topRegion.dimension = e.target.value;
-        updateTopRegionCurrentLabel();
-    });
-
-    // 排名类型切换
-    rankTypeSelect.addEventListener('change', (e) => {
-        const isComp = e.target.value === 'comprehensive';
-        state.topRegion.rankType = e.target.value;
-        projectItem.classList.toggle('hidden', isComp);
-        tagsContainer.style.display = isComp ? 'block' : 'none';
-        if (isComp) {
-            renderTopRegionProjectTags();
-        }
-        updateTopRegionCurrentLabel();
-    });
-
-    // 单项项目切换
-    projectSelect.addEventListener('change', (e) => {
-        state.topRegion.project = e.target.value;
-        updateTopRegionCurrentLabel();
-    });
-
-    // 性别切换
-    genderSelect.addEventListener('change', (e) => {
-        state.topRegion.gender = e.target.value;
-        updateTopRegionCurrentLabel();
-    });
-
-    // 单次/平均按钮：更新类型并加载数据
-    singleBtn.addEventListener('click', () => {
-        setTopRegionType('single');
-        loadTopRegionData();
-    });
-    avgBtn.addEventListener('click', () => {
-        setTopRegionType('average');
-        loadTopRegionData();
-    });
-
-    // 初始提示
-    const tbody = document.getElementById('topregion-tbody');
-    if (tbody) tbody.innerHTML = '<tr><td colspan="7">请点击“单次”或“平均”按钮加载数据</td></tr>';
-}
-
-
-function setTopRegionType(type) {
-    state.topRegion.type = type;
-    const singleBtn = document.getElementById('topregion-single');
-    const avgBtn = document.getElementById('topregion-average');
-    if (type === 'single') {
-        singleBtn.classList.add('btn-warning');
-        singleBtn.classList.remove('btn-primary');
-        avgBtn.classList.add('btn-primary');
-        avgBtn.classList.remove('btn-warning');
-    } else {
-        avgBtn.classList.add('btn-warning');
-        avgBtn.classList.remove('btn-primary');
-        singleBtn.classList.add('btn-primary');
-        singleBtn.classList.remove('btn-warning');
-    }
-    loadTopRegionData();
-}
-
-
-// 渲染综合项目标签
-function renderTopRegionProjectTags() {
-    const container = document.getElementById('topregion-project-tags');
-    if (!container) return;
-    const selected = state.topRegion.selectedEvents;
-    const html = PROJECT_LIST.map(p => {
-        const isSelected = selected.includes(p.code);
-        return `<span class="project-tag ${isSelected ? 'selected' : ''}" data-code="${p.code}">${__('project.' + p.code)}</span>`;
-    }).join('');
-    container.innerHTML = html;
-
-    container.querySelectorAll('.project-tag').forEach(tag => {
-        tag.addEventListener('click', () => {
-            const code = tag.dataset.code;
-            let selected = state.topRegion.selectedEvents.slice();
-            if (selected.includes(code)) {
-                if (selected.length > 1) {
-                    selected = selected.filter(c => c !== code);
-                } else {
-                    return;
-                }
-            } else {
-                selected.push(code);
-            }
-            state.topRegion.selectedEvents = selected;
-            renderTopRegionProjectTags();
-            updateTopRegionCurrentLabel();
-        });
-    });
-}
-
-// 核心数据加载与排名计算
-async function loadTopRegionData() {
-    const dim = state.topRegion.dimension;
-    const rankType = state.topRegion.rankType;
-    const type = state.topRegion.type;
-    const gender = state.topRegion.gender;
-    const project = state.topRegion.project;
-    const selectedEvents = state.topRegion.selectedEvents;
-
-    updateTopRegionCurrentLabel();
-
-    const tbody = document.getElementById('topregion-tbody');
-    const loading = document.getElementById('topregion-loading');
-    if (!tbody) return;
-
-    loading.style.display = 'block';
-    tbody.innerHTML = '';
-
-    try {
-        if (rankType === 'single') {
-            // 单项模式
-            const data = await fetchJSON(`data/region/historical/${type}/${project}.json`);
-            let filtered = applyGenderFilter(data, gender);
-
-            const groupMap = new Map();
-            filtered.forEach(item => {
-                const key = dim === 'province' ? item.province : item.city;
-                if (!key) return;
-                const existing = groupMap.get(key);
-                const currVal = parseTime(item.result);
-                if (!existing || currVal < parseTime(existing.result)) {
-                    groupMap.set(key, item);
-                } else if (currVal === parseTime(existing.result)) {
-                    if (item.date && existing.date && item.date < existing.date) {
-                        groupMap.set(key, item);
-                    }
-                }
-            });
-
-            let tops = Array.from(groupMap.values());
-            if (project === '333mbf') {
-                tops.sort((a, b) => {
-                    const pa = parseMBF(a.result), pb = parseMBF(b.result);
-                    if (!pa && !pb) return 0;
-                    if (!pa) return 1;
-                    if (!pb) return -1;
-                    const scoreA = pa.success - pa.fail, scoreB = pb.success - pb.fail;
-                    if (scoreA !== scoreB) return scoreB - scoreA;
-                    if (pa.timeSeconds !== pb.timeSeconds) return pa.timeSeconds - pb.timeSeconds;
-                    return pa.fail - pb.fail;
-                });
-            } else {
-                tops.sort((a, b) => parseTime(a.result) - parseTime(b.result));
-            }
-
-            let rank = 1, sameCount = 0;
-            tops.forEach((item, idx) => {
-                if (idx === 0) {
-                    item.displayRank = rank;
-                } else {
-                    const prev = tops[idx-1];
-                    const isSame = (project === '333mbf') ? 
-                        (parseMBF(item.result)?.success === parseMBF(prev.result)?.success &&
-                         parseMBF(item.result)?.timeSeconds === parseMBF(prev.result)?.timeSeconds &&
-                         parseMBF(item.result)?.fail === parseMBF(prev.result)?.fail) :
-                        (item.result === prev.result);
-                    if (isSame) {
-                        sameCount++;
-                        item.displayRank = rank;
-                    } else {
-                        rank += 1 + sameCount;
-                        sameCount = 0;
-                        item.displayRank = rank;
-                    }
-                }
-            });
-
-            renderTopRegionTable(tops, 'single');
-        } else {
-            // 综合模式
-            const eventList = selectedEvents;
-            if (eventList.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="5">请至少选择一个项目</td></tr>';
-                loading.style.display = 'none';
-                return;
-            }
-
-            const dimTopRankMap = new Map();
-            const projectTops = {};
-
-            for (let proj of eventList) {
-                const data = await fetchJSON(`data/region/historical/${type}/${proj}.json`);
-                let filtered = applyGenderFilter(data, gender);
-
-                const groupMap = new Map();
-                filtered.forEach(item => {
-                    const key = dim === 'province' ? item.province : item.city;
-                    if (!key) return;
-                    const existing = groupMap.get(key);
-                    const currVal = parseTime(item.result);
-                    if (!existing || currVal < parseTime(existing.result)) {
-                        groupMap.set(key, item);
-                    }
-                });
-
-                let tops = Array.from(groupMap.values());
-                if (proj === '333mbf') {
-                    tops.sort((a, b) => {
-                        const pa = parseMBF(a.result), pb = parseMBF(b.result);
-                        if (!pa && !pb) return 0;
-                        if (!pa) return 1;
-                        if (!pb) return -1;
-                        const scoreA = pa.success - pa.fail, scoreB = pb.success - pb.fail;
-                        if (scoreA !== scoreB) return scoreB - scoreA;
-                        if (pa.timeSeconds !== pb.timeSeconds) return pa.timeSeconds - pb.timeSeconds;
-                        return pa.fail - pb.fail;
-                    });
-                } else {
-                    tops.sort((a, b) => parseTime(a.result) - parseTime(b.result));
-                }
-
-                let rank = 1, sameCount = 0;
-                tops.forEach((item, idx) => {
-                    if (idx === 0) {
-                        item.rank = rank;
-                    } else {
-                        const prev = tops[idx-1];
-                        const isSame = (proj === '333mbf') ? 
-                            (parseMBF(item.result)?.success === parseMBF(prev.result)?.success &&
-                             parseMBF(item.result)?.timeSeconds === parseMBF(prev.result)?.timeSeconds &&
-                             parseMBF(item.result)?.fail === parseMBF(prev.result)?.fail) :
-                            (item.result === prev.result);
-                        if (isSame) {
-                            sameCount++;
-                            item.rank = rank;
-                        } else {
-                            rank += 1 + sameCount;
-                            sameCount = 0;
-                            item.rank = rank;
-                        }
-                    }
-                });
-
-                projectTops[proj] = tops;
-
-                tops.forEach(item => {
-                    const key = dim === 'province' ? item.province : item.city;
-                    if (!dimTopRankMap.has(key)) dimTopRankMap.set(key, {});
-                    dimTopRankMap.get(key)[proj] = {
-                        rank: item.rank,
-                        record: item
-                    };
-                });
-            }
-
-            const results = [];
-            for (let [key, projRanks] of dimTopRankMap.entries()) {
-                let total = 0;
-                let count = 0;
-                for (let proj of eventList) {
-                    if (projRanks[proj]) {
-                        total += projRanks[proj].rank;
-                        count++;
-                    } else {
-                        const maxRank = projectTops[proj]?.length || 0;
-                        total += maxRank + 1;
-                    }
-                }
-                const sampleRecord = projRanks[eventList.find(p => projRanks[p])]?.record;
-                results.push({
-                    key: key,
-                    province: sampleRecord?.province || (dim === 'province' ? key : ''),
-                    city: sampleRecord?.city || (dim === 'city' ? key : ''),
-                    totalRank: total,
-                    eventCount: count,
-                    sampleName: sampleRecord?.name || '',
-                });
-            }
-
-            results.sort((a, b) => a.totalRank - b.totalRank);
-
-            let rank = 1, sameCount = 0, lastTotal = null;
-            results.forEach((item, idx) => {
-                if (idx === 0) {
-                    item.displayRank = rank;
-                    lastTotal = item.totalRank;
-                } else {
-                    if (item.totalRank === lastTotal) {
-                        sameCount++;
-                        item.displayRank = rank;
-                    } else {
-                        rank += 1 + sameCount;
-                        sameCount = 0;
-                        lastTotal = item.totalRank;
-                        item.displayRank = rank;
-                    }
-                }
-            });
-
-            renderTopRegionTable(results, 'comprehensive');
-        }
-    } catch (e) {
-        console.error(e);
-        tbody.innerHTML = '<tr><td colspan="7">数据加载失败</td></tr>';
-    } finally {
-        loading.style.display = 'none';
-    }
-}
-
-
-// 更新当前信息标签
-function updateTopRegionCurrentLabel() {
-    const dim = state.topRegion.dimension === 'province' ? '省份' : '城市';
-    const rankType = state.topRegion.rankType === 'single' ? '单项' : '综合';
-    const proj = state.topRegion.rankType === 'single' 
-        ? getProjectName(state.topRegion.project) 
-        : `多项目(${state.topRegion.selectedEvents.length}个)`;
-    const type = state.topRegion.type === 'single' ? '单次' : '平均';
-    document.getElementById('topregion-current').innerText = `${dim} · 全部 · ${proj} · ${rankType} · ${type}`;
-}
-
-// 渲染表格（分页）
-function renderTopRegionTable(data, mode) {
-    const tbody = document.getElementById('topregion-tbody');
-    const thead = document.getElementById('topregion-thead');
-    if (!tbody) return;
-
-    if (mode === 'single') {
-        thead.innerHTML = `<tr>
-            <th>排名</th>
-            <th>姓名</th>
-            <th>省份</th>
-            <th>城市</th>
-            <th>成绩</th>
-            <th>比赛</th>
-            <th>WCA ID</th>
-        </tr>`;
-    } else {
-        thead.innerHTML = `<tr>
-            <th>排名</th>
-            <th>省份</th>
-            <th>城市</th>
-            <th>参与项目数</th>
-            <th>排名总和</th>
-        </tr>`;
-    }
-
-    const pageSize = 100;
-    const totalPages = Math.ceil(data.length / pageSize);
-    const currentPage = 1;
-    const pageData = data.slice(0, pageSize);
-
-    if (mode === 'single') {
-        tbody.innerHTML = pageData.map(item => `
-            <tr>
-                <td class="rank-cell">${item.displayRank}</td>
-                <td>${extractChineseName(item.name)}</td>
-                <td>${item.province || ''}</td>
-                <td>${item.city || ''}</td>
-                <td>${formatResult(item.result)}</td>
-                <td>${item.competition || ''}</td>
-                <td>${item.wcaid || ''}</td>
-            </tr>
-        `).join('');
-    } else {
-        tbody.innerHTML = pageData.map(item => `
-            <tr>
-                <td class="rank-cell">${item.displayRank}</td>
-                <td>${item.province || ''}</td>
-                <td>${item.city || ''}</td>
-                <td>${item.eventCount}</td>
-                <td>${item.totalRank}</td>
-            </tr>
-        `).join('');
-    }
-
-    const onPageChange = (newPage) => {
-        const start = (newPage - 1) * pageSize;
-        const newPageData = data.slice(start, start + pageSize);
-        if (mode === 'single') {
-            tbody.innerHTML = newPageData.map(item => `
-                <tr>
-                    <td class="rank-cell">${item.displayRank}</td>
-                    <td>${extractChineseName(item.name)}</td>
-                    <td>${item.province || ''}</td>
-                    <td>${item.city || ''}</td>
-                    <td>${formatResult(item.result)}</td>
-                    <td>${item.competition || ''}</td>
-                    <td>${item.wcaid || ''}</td>
-                </tr>
-            `).join('');
-        } else {
-            tbody.innerHTML = newPageData.map(item => `
-                <tr>
-                    <td class="rank-cell">${item.displayRank}</td>
-                    <td>${item.province || ''}</td>
-                    <td>${item.city || ''}</td>
-                    <td>${item.eventCount}</td>
-                    <td>${item.totalRank}</td>
-                </tr>
-            `).join('');
-        }
-        renderPagination('topregion-pagination', totalPages, newPage, onPageChange);
-    };
-
-    renderPagination('topregion-pagination', totalPages, currentPage, onPageChange);
-}

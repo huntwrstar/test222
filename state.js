@@ -11,6 +11,21 @@ window.state = {
         allProvinces: [],
         provinceCities: {}
     },
+    regionTop: {
+        dimension: 'province',    // 'province' 或 'city'
+        project: '333',
+        type: 'single',
+        gender: 'all',
+        data: [],
+        currentPage: 1
+    },
+    regionComp: {
+        dimension: 'province',
+        selectedEvents: ['333', '222', '444'],
+        type: 'single',
+        data: [],
+        currentPage: 1
+    },
     comprehensive: { 
         source: 'season',
         subDataset: 'historical',
@@ -33,17 +48,7 @@ window.state = {
         dataLoaded: false,
         loading: false
     },
-    pagination: { currentPage: 1, totalPages: 1, data: [] },
-// 在 state.js 的 window.state 中添加
-topRegion: {
-    dimension: 'province',      // 'province' 或 'city'
-    rankType: 'single',         // 'single' 或 'comprehensive'
-    type: 'single',             // 'single' 或 'average'
-    project: '333',
-    selectedEvents: ['333'],
-    gender: 'all',
-    dataCache: {}
-}
+    pagination: { currentPage: 1, totalPages: 1, data: [] }
 };
 
 window.MUNICIPALITIES = ['北京', '上海', '重庆', '天津', '台湾', '香港', '澳门', '神手谷'];

@@ -6,6 +6,7 @@
     "result": "1:20.08",
     "competition": "Guangdong Open 2021",
     "wcaid": "2013LINK01",
+    "date": "2021-05-01",
     "province": "广东",
     "city": "江门"
   },
@@ -16,6 +17,7 @@
     "result": "1:59.50",
     "competition": "Gros Jouets à Montréal 2025",
     "wcaid": "2019YEUN01",
+    "date": "2025-04-19",
     "province": "香港",
     "city": "香港"
   },
@@ -26,6 +28,7 @@
     "result": "2:16.78",
     "competition": "May MBLD Madness Singapore 2023",
     "wcaid": "2016XUWE02",
+    "date": "2023-05-20",
     "province": "广东",
     "city": "广州"
   },
@@ -36,6 +39,7 @@
     "result": "2:34.45",
     "competition": "Taiwan Championship 2025",
     "wcaid": "2007LUJI01",
+    "date": "2025-12-19",
     "province": "台湾",
     "city": "台湾"
   },
@@ -46,6 +50,7 @@
     "result": "2:37.44",
     "competition": "Glasgow Spring - Scottish Blind Off 2025",
     "wcaid": "2018SHEN07",
+    "date": "2025-03-01",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -56,6 +61,7 @@
     "result": "3:14.05",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2023XUZI01",
+    "date": "2026-02-06",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -66,6 +72,7 @@
     "result": "3:14.93",
     "competition": "Please Be Quiet Xi'an 2024",
     "wcaid": "2015CHEN49",
+    "date": "2024-06-01",
     "province": "广东",
     "city": "东莞"
   },
@@ -76,6 +83,7 @@
     "result": "3:22.63",
     "competition": "Please Be Quiet Hefei 2025",
     "wcaid": "2019SUNY09",
+    "date": "2025-12-21",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -86,6 +94,7 @@
     "result": "3:23.37",
     "competition": "Glasgow Winter - Scottish Blind Off 2026",
     "wcaid": "2016NGAN02",
+    "date": "2026-02-07",
     "province": "香港",
     "city": "香港"
   },
@@ -96,6 +105,7 @@
     "result": "3:30.05",
     "competition": "Please Be Quiet Shanghai 2025",
     "wcaid": "2024LIUZ11",
+    "date": "2025-04-12",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -106,6 +116,7 @@
     "result": "3:54.28",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2015YUEW01",
+    "date": "2026-02-06",
     "province": "河南",
     "city": "洛阳"
   },
@@ -116,6 +127,7 @@
     "result": "4:00.45",
     "competition": "Big N Blind Berwick 2023",
     "wcaid": "2018SUNC02",
+    "date": "2023-12-16",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -126,6 +138,7 @@
     "result": "4:07.25",
     "competition": "Guangdong Open 2021",
     "wcaid": "2019WANZ21",
+    "date": "2021-05-01",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -136,6 +149,7 @@
     "result": "4:24.93",
     "competition": "Big 'n Blind Guangzhou 2019",
     "wcaid": "2011TANH01",
+    "date": "2019-12-08",
     "province": "广东",
     "city": "广州"
   },
@@ -146,6 +160,7 @@
     "result": "5:15.72",
     "competition": "Rubik's WCA Asian Championship 2024",
     "wcaid": "2017PIWA01",
+    "date": "2024-11-01",
     "province": "台湾",
     "city": "台湾"
   },
@@ -156,6 +171,7 @@
     "result": "5:21.06",
     "competition": "Rubik's WCA World Championship 2023",
     "wcaid": "2017TUNG13",
+    "date": "2023-08-12",
     "province": "香港",
     "city": "香港"
   },
@@ -166,6 +182,7 @@
     "result": "5:23.37",
     "competition": "Xi'an Cherry Blossom 2025",
     "wcaid": "2018CHEY36",
+    "date": "2025-04-04",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -176,6 +193,7 @@
     "result": "5:28.41",
     "competition": "Big n Blind n Clock Xianju 2024",
     "wcaid": "2017XUYO01",
+    "date": "2024-08-31",
     "province": "广东",
     "city": "韶关"
   },
@@ -186,6 +204,7 @@
     "result": "5:39.38",
     "competition": "Please Be Quiet Shanghai 2025",
     "wcaid": "2021LIUZ07",
+    "date": "2025-04-12",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -196,6 +215,7 @@
     "result": "5:41.26",
     "competition": "Hangzhou Open 2018",
     "wcaid": "2014HANJ02",
+    "date": "2018-11-10",
     "province": "辽宁",
     "city": "沈阳"
   },
@@ -206,6 +226,7 @@
     "result": "5:50.95",
     "competition": "Vietnam Championship 2024",
     "wcaid": "2017WANY29",
+    "date": "2024-07-19",
     "province": "福建",
     "city": "三明"
   },
@@ -216,6 +237,7 @@
     "result": "6:05.34",
     "competition": "Please Be Quiet Toronto 2019",
     "wcaid": "2017SUNC03",
+    "date": "2019-06-16",
     "province": "台湾",
     "city": "台湾"
   },
@@ -226,6 +248,7 @@
     "result": "6:34.01",
     "competition": "Singapore Championship 2026",
     "wcaid": "2024GESH01",
+    "date": "2026-02-20",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -236,6 +259,7 @@
     "result": "6:48.97",
     "competition": "Please Be Quiet Xi'an 2024",
     "wcaid": "2015HETI01",
+    "date": "2024-06-01",
     "province": "山西",
     "city": "大同"
   },
@@ -246,6 +270,7 @@
     "result": "6:51.77",
     "competition": "Hong Kong Blind Legends 2024",
     "wcaid": "2023YING03",
+    "date": "2024-08-17",
     "province": "香港",
     "city": "香港"
   },
@@ -256,6 +281,7 @@
     "result": "7:38.32",
     "competition": "Shanghai Memory Nightmare 2019",
     "wcaid": "2015KANY01",
+    "date": "2019-04-20",
     "province": "江苏",
     "city": "南京"
   },
@@ -266,6 +292,7 @@
     "result": "8:05.87",
     "competition": "Glasgow Summer - Scottish Blind Off 2024",
     "wcaid": "2018SAMK01",
+    "date": "2024-06-01",
     "province": "澳门",
     "city": "澳门"
   },
@@ -276,6 +303,7 @@
     "result": "8:13.46",
     "competition": "Harbin Open 2018",
     "wcaid": "2007YUNQ01",
+    "date": "2018-06-09",
     "province": "上海",
     "city": "上海"
   },
@@ -286,6 +314,7 @@
     "result": "8:26.59",
     "competition": "Please Be Quiet Xi'an 2025",
     "wcaid": "2018WUYU03",
+    "date": "2025-12-21",
     "province": "辽宁",
     "city": "沈阳"
   },
@@ -296,6 +325,7 @@
     "result": "8:51.24",
     "competition": "Big n Blind n Clock Xianju 2024",
     "wcaid": "2023CHEJ12",
+    "date": "2024-08-31",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -306,6 +336,7 @@
     "result": "9:37.22",
     "competition": "Michigan 2018",
     "wcaid": "2015XION03",
+    "date": "2018-08-10",
     "province": "",
     "city": ""
   },
@@ -316,6 +347,7 @@
     "result": "9:43.28",
     "competition": "Hefei Open 2013",
     "wcaid": "2010WUJI01",
+    "date": "2013-07-27",
     "province": "上海",
     "city": "上海"
   },
@@ -326,6 +358,7 @@
     "result": "9:47.38",
     "competition": "Wakefield Spring 2023",
     "wcaid": "2019ONCH01",
+    "date": "2023-04-01",
     "province": "香港",
     "city": "香港"
   },
@@ -336,6 +369,7 @@
     "result": "9:47.85",
     "competition": "Taiwan Championship 2019",
     "wcaid": "2018WULI01",
+    "date": "2019-12-13",
     "province": "台湾",
     "city": "台湾"
   },
@@ -346,6 +380,7 @@
     "result": "9:53.03",
     "competition": "Shanghai Memory Nightmare 2019",
     "wcaid": "2012LIYA01",
+    "date": "2019-04-20",
     "province": "河北",
     "city": "石家庄"
   },
@@ -356,6 +391,7 @@
     "result": "11:15.00",
     "competition": "Rapid Academy Indonesian Championship 2025",
     "wcaid": "2010WANG53",
+    "date": "2025-12-19",
     "province": "浙江",
     "city": "台州"
   },
@@ -366,6 +402,7 @@
     "result": "12:23.00",
     "competition": "Big n Blind n Clock Xianju 2024",
     "wcaid": "2019LIJI25",
+    "date": "2024-08-31",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -376,6 +413,7 @@
     "result": "13:03.00",
     "competition": "Please Be Quiet Quanzhou 2025",
     "wcaid": "2024QIAO03",
+    "date": "2025-12-21",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -386,6 +424,7 @@
     "result": "13:14.00",
     "competition": "Wuxi Try to Get a Mean 2018",
     "wcaid": "2017SHEN06",
+    "date": "2018-07-14",
     "province": "山东",
     "city": "泰安"
   },
@@ -396,6 +435,7 @@
     "result": "14:26.00",
     "competition": "Please Be Quiet Shanghai 2025",
     "wcaid": "2013ZHAN41",
+    "date": "2025-04-12",
     "province": "黑龙江",
     "city": "哈尔滨"
   },
@@ -406,6 +446,7 @@
     "result": "14:45.00",
     "competition": "Please Be Quiet Shanghai 2025",
     "wcaid": "2016CUIY04",
+    "date": "2025-04-12",
     "province": "浙江",
     "city": "台州"
   },
@@ -416,6 +457,7 @@
     "result": "17:04.00",
     "competition": "Taiwan Blind Day 2023",
     "wcaid": "2013LIHU01",
+    "date": "2023-04-16",
     "province": "台湾",
     "city": "台湾"
   },
@@ -426,6 +468,7 @@
     "result": "24:54.00",
     "competition": "Hong Kong Blind Legends 2024",
     "wcaid": "2023HOIC01",
+    "date": "2024-08-17",
     "province": "香港",
     "city": "香港"
   }

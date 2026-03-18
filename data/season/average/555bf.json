@@ -1,110 +1,182 @@
 [
   {
     "rank": 1,
+    "name": "Ryan Eckersley",
+    "gender": "男",
+    "result": "3:08.73",
+    "competition": "BL&D BLD Binningen 2026",
+    "wcaid": "2019ECKE02",
+    "date": "2026-02-28",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 2,
     "name": "Victor Tang Yao Jun (湯曜駿)",
     "gender": "男",
     "result": "5:32.27",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2015JUNV01",
+    "date": "2026-02-06",
     "country": "China"
   },
   {
-    "rank": 2,
+    "rank": 3,
+    "name": "Jack McDougall",
+    "gender": "男",
+    "result": "6:34.84",
+    "competition": "NZ North Island Championship 2026",
+    "wcaid": "2020MCDO01",
+    "date": "2026-02-27",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 4,
     "name": "Marcos Ferreira Semolini",
     "gender": "男",
     "result": "7:10.97",
     "competition": "Itapeva 2026",
     "wcaid": "2017SEMO02",
+    "date": "2026-01-24",
     "country": "Brazil"
   },
   {
-    "rank": 3,
+    "rank": 5,
+    "name": "William Phommaha",
+    "gender": "男",
+    "result": "7:29.51",
+    "competition": "Nanterre 2 Folie 2026",
+    "wcaid": "2015PHOM01",
+    "date": "2026-03-14",
+    "country": "France"
+  },
+  {
+    "rank": 6,
     "name": "Ivo Stoutjesdijk",
     "gender": "男",
     "result": "9:31.20",
     "competition": "Leersum Open 2026",
     "wcaid": "2019STOU02",
+    "date": "2026-01-10",
     "country": "Netherlands"
   },
   {
-    "rank": 4,
+    "rank": 7,
     "name": "Rodolphe Rouyrre",
     "gender": "男",
     "result": "13:29.00",
     "competition": "Saucisse Vergèze au PBQ 2026",
     "wcaid": "2020ROUY01",
+    "date": "2026-01-24",
     "country": "France"
   },
   {
-    "rank": 5,
+    "rank": 8,
     "name": "Mikus Lembergs",
     "gender": "男",
     "result": "15:17.00",
     "competition": "PBQ Ropaži 2026",
     "wcaid": "2017LEMB02",
+    "date": "2026-01-17",
     "country": "Latvia"
   },
   {
-    "rank": 6,
+    "rank": 9,
     "name": "Daniel Goodman",
     "gender": "男",
     "result": "15:35.00",
     "competition": "Love is Blind UMBC 2026",
     "wcaid": "2013GOOD01",
+    "date": "2026-02-15",
     "country": "USA"
   },
   {
-    "rank": 7,
+    "rank": 10,
     "name": "James Moore",
     "gender": "男",
     "result": "16:42.00",
     "competition": "Wellington Mind Games 2026",
     "wcaid": "2016MOOR07",
+    "date": "2026-01-31",
     "country": "New Zealand"
   },
   {
-    "rank": 8,
+    "rank": 11,
     "name": "Ge Shi (石歌)",
     "gender": "男",
     "result": "17:08.00",
     "competition": "Singapore Championship 2026",
     "wcaid": "2024GESH01",
+    "date": "2026-02-20",
     "country": "China"
   },
   {
-    "rank": 9,
+    "rank": 12,
+    "name": "Brandon Villadolid",
+    "gender": "男",
+    "result": "18:32.00",
+    "competition": "Empire State ALL11-Stars 2026",
+    "wcaid": "2019VILL03",
+    "date": "2026-03-07",
+    "country": "USA"
+  },
+  {
+    "rank": 13,
+    "name": "Pedro Azevedo",
+    "gender": "男",
+    "result": "18:56.00",
+    "competition": "Blind in Aveiro 2026",
+    "wcaid": "2018AZEV03",
+    "date": "2026-03-14",
+    "country": "Portugal"
+  },
+  {
+    "rank": 14,
     "name": "Kacper Paweł Dworak",
     "gender": "男",
     "result": "20:30.00",
     "competition": "CF Goes Crazy II Brzeziny 2026",
     "wcaid": "2020DWOR01",
+    "date": "2026-01-02",
     "country": "Poland"
   },
   {
-    "rank": 10,
+    "rank": 15,
     "name": "Carson Claud",
     "gender": "男",
     "result": "28:19.00",
     "competition": "Spokane Winter PBQ 2026",
     "wcaid": "2015CLAU02",
+    "date": "2026-01-24",
     "country": "USA"
   },
   {
-    "rank": 11,
+    "rank": 16,
     "name": "Eli Rogers",
     "gender": "男",
     "result": "28:57.00",
     "competition": "Multi Mayhem VA 2026",
     "wcaid": "2022ROGE05",
+    "date": "2026-01-02",
     "country": "USA"
   },
   {
-    "rank": 12,
+    "rank": 17,
     "name": "Zaya Qiaolong (俏龙扎雅)",
     "gender": "女",
     "result": "29:36.00",
     "competition": "PBQ in Almaty 2026",
     "wcaid": "2024QIAO03",
+    "date": "2026-01-17",
     "country": "China"
+  },
+  {
+    "rank": 18,
+    "name": "Robinson Semolini",
+    "gender": "男",
+    "result": "30:43.00",
+    "competition": "Zoioff Campinas 2026",
+    "wcaid": "2018SEMO01",
+    "date": "2026-03-07",
+    "country": "Brazil"
   }
 ]

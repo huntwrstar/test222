@@ -6,6 +6,7 @@
     "result": "1:13.75",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2013LINK01",
+    "date": "2026-02-06",
     "province": "广东",
     "city": "江门"
   },
@@ -16,6 +17,7 @@
     "result": "2:01.35",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2019WANZ21",
+    "date": "2026-02-06",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -26,6 +28,7 @@
     "result": "2:15.26",
     "competition": "Please Be Quiet Thailand 2026",
     "wcaid": "2016XUWE02",
+    "date": "2026-02-15",
     "province": "广东",
     "city": "广州"
   },
@@ -36,6 +39,7 @@
     "result": "2:20.96",
     "competition": "Edinburgh Winter 2026",
     "wcaid": "2016NGAN02",
+    "date": "2026-01-24",
     "province": "香港",
     "city": "香港"
   },
@@ -46,6 +50,7 @@
     "result": "2:23.02",
     "competition": "Singapore Championship 2026",
     "wcaid": "2012HUAN12",
+    "date": "2026-02-20",
     "province": "台湾",
     "city": "台湾"
   },
@@ -56,6 +61,7 @@
     "result": "2:33.42",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2015JUNV01",
+    "date": "2026-02-06",
     "province": "香港",
     "city": "香港"
   },
@@ -66,6 +72,7 @@
     "result": "2:36.08",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2011TANH01",
+    "date": "2026-02-06",
     "province": "广东",
     "city": "广州"
   },
@@ -76,6 +83,7 @@
     "result": "2:48.08",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2015CHEN49",
+    "date": "2026-02-06",
     "province": "广东",
     "city": "东莞"
   },
@@ -86,6 +94,7 @@
     "result": "2:49.94",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2021LILI02",
+    "date": "2026-02-06",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -96,6 +105,7 @@
     "result": "3:02.61",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2019SUNY09",
+    "date": "2026-02-06",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -106,6 +116,7 @@
     "result": "3:02.81",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2023XUZI01",
+    "date": "2026-02-06",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -116,6 +127,7 @@
     "result": "3:21.64",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2015YUEW01",
+    "date": "2026-02-06",
     "province": "河南",
     "city": "洛阳"
   },
@@ -126,6 +138,7 @@
     "result": "3:25.35",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2017XUYO01",
+    "date": "2026-02-06",
     "province": "广东",
     "city": "韶关"
   },
@@ -136,6 +149,7 @@
     "result": "3:25.35",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2017WANY29",
+    "date": "2026-02-06",
     "province": "福建",
     "city": "三明"
   },
@@ -146,8 +160,9 @@
     "result": "3:46.04",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2026CHEN19",
-    "province": "神手谷",
-    "city": "神手谷"
+    "date": "2026-02-06",
+    "province": "北京",
+    "city": "北京"
   },
   {
     "rank": 16,
@@ -156,6 +171,7 @@
     "result": "3:49.37",
     "competition": "Love is Blind UMBC 2026",
     "wcaid": "2009YANG06",
+    "date": "2026-02-15",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -166,6 +182,7 @@
     "result": "4:14.69",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2010SHIX01",
+    "date": "2026-02-06",
     "province": "湖北",
     "city": "武汉"
   },
@@ -176,6 +193,7 @@
     "result": "5:11.13",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2025YANG33",
+    "date": "2026-02-06",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -186,6 +204,7 @@
     "result": "5:45.59",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2024GESH01",
+    "date": "2026-02-06",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -196,6 +215,7 @@
     "result": "6:28.93",
     "competition": "Luzon Championship 2026",
     "wcaid": "2010WANG53",
+    "date": "2026-01-09",
     "province": "浙江",
     "city": "台州"
   },
@@ -206,6 +226,7 @@
     "result": "6:31.32",
     "competition": "Melbourne Summer 2026",
     "wcaid": "2021YEPU01",
+    "date": "2026-01-24",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -216,6 +237,7 @@
     "result": "6:32.34",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2024YANG18",
+    "date": "2026-02-06",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -226,6 +248,7 @@
     "result": "7:23.97",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2023KUOK01",
+    "date": "2026-02-06",
     "province": "澳门",
     "city": "澳门"
   },
@@ -236,6 +259,7 @@
     "result": "7:25.54",
     "competition": "PBQ in Almaty 2026",
     "wcaid": "2024QIAO03",
+    "date": "2026-01-17",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -246,6 +270,7 @@
     "result": "8:12.68",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2018ZHAH02",
+    "date": "2026-02-06",
     "province": "福建",
     "city": "宁德"
   },
@@ -256,6 +281,7 @@
     "result": "9:32.90",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2025HANJ03",
+    "date": "2026-02-06",
     "province": "神手谷",
     "city": "神手谷"
   },
@@ -266,6 +292,7 @@
     "result": "9:34.99",
     "competition": "Don't DNF Davis 2026",
     "wcaid": "2009DENG01",
+    "date": "2026-02-21",
     "province": "湖南",
     "city": "常德"
   },
@@ -276,16 +303,29 @@
     "result": "10:42.00",
     "competition": "Edinburgh Winter 2026",
     "wcaid": "2018SAMK01",
+    "date": "2026-01-24",
     "province": "澳门",
     "city": "澳门"
   },
   {
     "rank": 29,
+    "name": "Loïc Zhang",
+    "gender": "男",
+    "result": "12:20.00",
+    "competition": "Nanterre 2 Folie 2026",
+    "wcaid": "2022ZHAN31",
+    "date": "2026-03-14",
+    "province": "",
+    "city": ""
+  },
+  {
+    "rank": 30,
     "name": "Taiji Yi (易泰基)",
     "gender": "男",
     "result": "13:38.00",
     "competition": "Guangdong Open - Revival & Rival 2026",
     "wcaid": "2018YITA01",
+    "date": "2026-02-06",
     "province": "神手谷",
     "city": "神手谷"
   }

@@ -647,18 +647,7 @@ function renderRegionCompProjectTags() {
             }
             state.regionComp.selectedEvents = selected;
             renderRegionCompProjectTags();
-            updateRegionCompCurrentLabel();
-
-            // 清空表格体
-            const tbody = document.getElementById('regionComp-tbody');
-            if (tbody) {
-                const colspan = state.regionComp.dimension === 'province' ? 4 : 5;
-                tbody.innerHTML = `<tr><td colspan="${colspan}" class="loading-cell">请点击单次或平均加载数据</td></tr>`;
-            }
-
-            // 清空分页
-            const pagination = document.getElementById('regionComp-pagination');
-            if (pagination) pagination.innerHTML = '';
+            updateRegionCompCurrentLabel(); // 只更新标签，不清空表格
         });
     });
 }

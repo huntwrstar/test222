@@ -368,31 +368,7 @@ async function initRegionComp() {
         dimSelect.value = state.regionComp.dimension;
         dimSelect.addEventListener('change', (e) => {
             state.regionComp.dimension = e.target.value;
-            updateRegionCompCurrentLabel();
-
-            // 更新表头
-            const thead = document.querySelector('#regionComp-table thead');
-            if (thead) {
-                const dimension = state.regionComp.dimension;
-                thead.innerHTML = `<tr>
-                    <th>${__('table.rank')}</th>
-                    <th>${dimension === 'province' ? __('dimension.province') : __('dimension.city')}</th>
-                    ${dimension === 'city' ? `<th>${__('dimension.city')}</th>` : ''}
-                    <th>${__('table.events_count')}</th>
-                    <th>${__('table.total_rank')}</th>
-                </tr>`;
-            }
-
-            // 清空表格体
-            const tbody = document.getElementById('regionComp-tbody');
-            if (tbody) {
-                const colspan = state.regionComp.dimension === 'province' ? 4 : 5;
-                tbody.innerHTML = `<tr><td colspan="${colspan}" class="loading-cell">请点击单次或平均加载数据</td></tr>`;
-            }
-
-            // 清空分页
-            const pagination = document.getElementById('regionComp-pagination');
-            if (pagination) pagination.innerHTML = '';
+            updateRegionCompCurrentLabel(); // 只更新标签，不清空表格
         });
     }
 
@@ -401,18 +377,7 @@ async function initRegionComp() {
         if (r.value === state.regionComp.period) r.checked = true;
         r.addEventListener('change', (e) => {
             state.regionComp.period = e.target.value;
-            updateRegionCompCurrentLabel();
-
-            // 清空表格体
-            const tbody = document.getElementById('regionComp-tbody');
-            if (tbody) {
-                const colspan = state.regionComp.dimension === 'province' ? 4 : 5;
-                tbody.innerHTML = `<tr><td colspan="${colspan}" class="loading-cell">请点击单次或平均加载数据</td></tr>`;
-            }
-
-            // 清空分页
-            const pagination = document.getElementById('regionComp-pagination');
-            if (pagination) pagination.innerHTML = '';
+            updateRegionCompCurrentLabel(); // 只更新标签，不清空表格
         });
     });
 
@@ -420,11 +385,11 @@ async function initRegionComp() {
 
     document.getElementById('regionComp-single').addEventListener('click', () => {
         setType('regionComp', 'single');
-        calculateRegionComp();
+        calculateRegionComp(); // 点击时重新计算
     });
     document.getElementById('regionComp-average').addEventListener('click', () => {
         setType('regionComp', 'average');
-        calculateRegionComp();
+        calculateRegionComp(); // 点击时重新计算
     });
 
     await calculateRegionComp(); // 初始加载

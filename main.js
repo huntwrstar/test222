@@ -285,8 +285,15 @@ async function loadRegionTopData() {
         let data = await fetchJSON(`data/region/${period}/${type}/${project}.json`);
         data = applyGenderFilter(data, gender);
 
-
+ 
         data = deduplicateByBestAndDate(data, project);
+
+
+        data = data.filter(item => {
+            if (!item.province) return false; 
+            if (dimension === 'city' && !item.city) return false; 
+            return true;
+        });
 
         const groups = {};
         data.forEach(item => {

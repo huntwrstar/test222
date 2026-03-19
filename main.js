@@ -66,6 +66,7 @@ function bindLanguageSwitch() {
         }
     });
 }
+
 async function loadPage(page) {
     console.log(`切换到页面: ${page}`);
     state.currentPage = page;
@@ -130,28 +131,28 @@ async function initRegion() {
         const historicalData = await fetchJSON(`data/region/historical/single/333.json`);
         console.log(`构建省份列表，数据条数: ${historicalData.length}`);
         const allRecords = historicalData;
-const provinceSet = new Set();
-const cityMap = {};
-allRecords.forEach(r => {
-    if (r.province) {
-        provinceSet.add(r.province);
-        if (r.city) {
-            if (!cityMap[r.province]) cityMap[r.province] = new Set();
-            cityMap[r.province].add(r.city);
+        const provinceSet = new Set();
+        const cityMap = {};
+        allRecords.forEach(r => {
+            if (r.province) {
+                provinceSet.add(r.province);
+                if (r.city) {
+                    if (!cityMap[r.province]) cityMap[r.province] = new Set();
+                    cityMap[r.province].add(r.city);
+                }
+            }
+        });
+        let provinces = Array.from(provinceSet).sort((a, b) => a.localeCompare(b, 'zh'));
+        const shenshouIndex = provinces.indexOf('神手谷');
+        if (shenshouIndex > -1) {
+            provinces.splice(shenshouIndex, 1);
+            provinces.unshift('神手谷');
         }
-    }
-});
-let provinces = Array.from(provinceSet).sort((a, b) => a.localeCompare(b, 'zh'));
-const shenshouIndex = provinces.indexOf('神手谷');
-if (shenshouIndex > -1) {
-    provinces.splice(shenshouIndex, 1);
-    provinces.unshift('神手谷');
-}
-state.region.allProvinces = provinces;
-state.region.provinceCities = {};
-for (let p in cityMap) {
-    state.region.provinceCities[p] = Array.from(cityMap[p]).sort((a, b) => a.localeCompare(b, 'zh'));
-}
+        state.region.allProvinces = provinces;
+        state.region.provinceCities = {};
+        for (let p in cityMap) {
+            state.region.provinceCities[p] = Array.from(cityMap[p]).sort((a, b) => a.localeCompare(b, 'zh'));
+        }
         console.log('省份列表:', state.region.allProvinces);
     } catch (e) {
         console.warn('无法构建省份城市列表', e);
@@ -211,19 +212,18 @@ async function initRegionTop() {
     const dimSelect = document.getElementById('regionTop-dimension');
     if (dimSelect) {
         dimSelect.value = state.regionTop.dimension;
-dimSelect.addEventListener('change', (e) => {
-    state.regionComp.dimension = e.target.value;
-    updateRegionCompCurrentLabel();
-    calculateRegionComp(); // 重新计算
-});
+        dimSelect.addEventListener('change', (e) => {
+            state.regionTop.dimension = e.target.value;
+            loadRegionTopData(); // 重新加载数据
+        });
     }
 
-    // 时期单选按钮
     const periodRadios = document.querySelectorAll('input[name="regionTop-period"]');
     periodRadios.forEach(r => {
         if (r.value === state.regionTop.period) r.checked = true;
         r.addEventListener('change', (e) => {
             state.regionTop.period = e.target.value;
+            loadRegionTopData();
         });
     });
 
@@ -270,7 +270,6 @@ async function loadRegionTopData() {
         let data = await fetchJSON(`data/region/${period}/${type}/${project}.json`);
         data = applyGenderFilter(data, gender);
 
-        // 分组找出每个地区的第一名（并列）
         const groups = {};
         data.forEach(item => {
             const key = dimension === 'province' ? item.province : `${item.province}|${item.city}`;
@@ -295,7 +294,6 @@ async function loadRegionTopData() {
             });
         }
 
-        // 对所有榜首按成绩排序
         if (project === '333mbf') {
             topList.sort((a, b) => {
                 const aParsed = parseMBF(a.result);
@@ -313,7 +311,6 @@ async function loadRegionTopData() {
             topList.sort((a, b) => parseTime(a.result) - parseTime(b.result));
         }
 
-        // 重新计算排名（同分同名次）
         let rank = 1, sameCount = 0;
         for (let i = 0; i < topList.length; i++) {
             if (i === 0) {
@@ -357,20 +354,17 @@ async function initRegionComp() {
         dimSelect.addEventListener('change', (e) => {
             state.regionComp.dimension = e.target.value;
             updateRegionCompCurrentLabel();
-            calculateRegionComp(); // 重新计算
-// 在 calculateRegionComp 末尾，替换原来的渲染代码
-renderRegionCompTable(rankedResults);  // 注意：这个函数现在在 ui.js 中
+            calculateRegionComp();
         });
     }
 
-    // 时期单选按钮
     const periodRadios = document.querySelectorAll('input[name="regionComp-period"]');
     periodRadios.forEach(r => {
         if (r.value === state.regionComp.period) r.checked = true;
         r.addEventListener('change', (e) => {
             state.regionComp.period = e.target.value;
             updateRegionCompCurrentLabel();
-            calculateRegionComp(); // 重新计算
+            calculateRegionComp();
         });
     });
 
@@ -423,12 +417,12 @@ async function calculateRegionComp() {
                 if (!groupRank[key] || rank < groupRank[key]) {
                     groupRank[key] = rank;
                 }
-if (!groupInfoMap.has(key)) {
-    groupInfoMap.set(key, {
-        province: item.province || '',
-        city: dimension === 'city' ? item.city || '' : '' // 维度为省份时不存城市
-    });
-}
+                if (!groupInfoMap.has(key)) {
+                    groupInfoMap.set(key, {
+                        province: item.province || '',
+                        city: dimension === 'city' ? item.city || '' : ''
+                    });
+                }
             });
 
             projectDataMap[proj] = {
@@ -483,7 +477,9 @@ if (!groupInfoMap.has(key)) {
         return item;
     });
 
-
+    // 调用 ui.js 中的渲染函数
+    renderRegionCompTable(rankedResults);
+}
 
 async function initComprehensive() {
     await loadMeta();
@@ -639,7 +635,7 @@ async function loadRegionData() {
     document.getElementById('region-current-project').textContent = getProjectName(project);
     document.getElementById('region-current-type').textContent = type === 'single' ? '单次' : '平均';
     document.getElementById('region-current-period').textContent = 
-        period === 'historical' ? '所有' : (period === 'season' ? '年度' : '近三⁮年度');
+        period === 'historical' ? '所有' : (period === 'season' ? '年度' : '近三年度');
 
     const thead = document.querySelector('#region-table thead');
     if (thead) {
@@ -894,22 +890,22 @@ async function loadAllRecordsData() {
 
         state.record.rawDataByProject = rawDataByProject;
 
-const provinceSet = new Set();
-for (let proj in rawDataByProject) {
-    ['single', 'average'].forEach(type => {
-        rawDataByProject[proj][type].forEach(item => {
-            if (item.province) provinceSet.add(item.province);
-        });
-    });
-}
-let provinces = Array.from(provinceSet).sort((a,b) => a.localeCompare(b, 'zh'));
-const shenshouIndex = provinces.indexOf('神手谷');
-if (shenshouIndex > -1) {
-    provinces.splice(shenshouIndex, 1);
-    provinces.unshift('神手谷');
-}
-state.record.allProvinces = provinces;
-state.record.dataLoaded = true;
+        const provinceSet = new Set();
+        for (let proj in rawDataByProject) {
+            ['single', 'average'].forEach(type => {
+                rawDataByProject[proj][type].forEach(item => {
+                    if (item.province) provinceSet.add(item.province);
+                });
+            });
+        }
+        let provinces = Array.from(provinceSet).sort((a,b) => a.localeCompare(b, 'zh'));
+        const shenshouIndex = provinces.indexOf('神手谷');
+        if (shenshouIndex > -1) {
+            provinces.splice(shenshouIndex, 1);
+            provinces.unshift('神手谷');
+        }
+        state.record.allProvinces = provinces;
+        state.record.dataLoaded = true;
         console.log('省市纪录原始数据加载完成，省份列表：', state.record.allProvinces);
     } catch (e) {
         console.error('加载省市纪录原始数据失败', e);
@@ -1186,7 +1182,7 @@ function bindEvents(page, autoLoad = true) {
         }
     }
     const genderSelect = document.getElementById(`${prefix}-gender`);
-    if (genderSelect && page !== 'regionComp') { // regionComp 无性别
+    if (genderSelect && page !== 'regionComp') {
         genderSelect.addEventListener('change', (e) => {
             state[page].gender = e.target.value;
         });

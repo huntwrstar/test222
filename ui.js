@@ -243,6 +243,7 @@ function renderRegionTop() {
 }
 
 function renderRegionComp() {
+    const dimension = state.regionComp.dimension;
     return `
         <div class="page-heading">
             <h2>${__('regionComp.title')}</h2>
@@ -252,16 +253,16 @@ function renderRegionComp() {
             <div class="filter-item">
                 <label>${__('filter.dimension')}</label>
                 <select id="regionComp-dimension">
-                    <option value="province">${__('dimension.province')}</option>
-                    <option value="city">${__('dimension.city')}</option>
+                    <option value="province" ${dimension === 'province' ? 'selected' : ''}>${__('dimension.province')}</option>
+                    <option value="city" ${dimension === 'city' ? 'selected' : ''}>${__('dimension.city')}</option>
                 </select>
             </div>
             <div class="filter-item">
                 <label>${__('filter.period')}</label>
                 <div class="radio-group" id="regionComp-period-group">
-                    <label><input type="radio" name="regionComp-period" value="historical" checked> ${__('current.historical')}</label>
-                    <label><input type="radio" name="regionComp-period" value="season"> ${__('current.season')}</label>
-                    <label><input type="radio" name="regionComp-period" value="active"> ${__('current.active')}</label>
+                    <label><input type="radio" name="regionComp-period" value="historical" ${state.regionComp.period === 'historical' ? 'checked' : ''}> ${__('current.historical')}</label>
+                    <label><input type="radio" name="regionComp-period" value="season" ${state.regionComp.period === 'season' ? 'checked' : ''}> ${__('current.season')}</label>
+                    <label><input type="radio" name="regionComp-period" value="active" ${state.regionComp.period === 'active' ? 'checked' : ''}> ${__('current.active')}</label>
                 </div>
             </div>
             <div style="margin-bottom: 15px; width:100%;">
@@ -281,8 +282,8 @@ function renderRegionComp() {
                 <thead>
                     <tr>
                         <th>${__('table.rank')}</th>
-                        <th>${__('dimension.province')}</th>
-                        <th>${__('dimension.city')}</th>
+                        <th>${dimension === 'province' ? __('dimension.province') : __('dimension.city')}</th>
+                        ${dimension === 'city' ? `<th>${__('dimension.city')}</th>` : ''}
                         <th>${__('table.events_count')}</th>
                         <th>${__('table.total_rank')}</th>
                     </tr>
@@ -661,4 +662,55 @@ function updateRegionCompCurrentLabel() {
     else if (period === 'season') periodText = __('current.season');
     else periodText = __('current.active');
     document.getElementById('regionComp-current').innerText = `${dim} · ${periodText} · ${type} · ${state.regionComp.selectedEvents.length} ${__('table.event')}`;
+}
+
+// 渲染省市综合表格（包含分页）
+function renderRegionCompTable(data) {
+    const tbody = document.getElementById('regionComp-tbody');
+    if (!tbody) return;
+
+    if (data.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="5">' + __('no_data') + '</td></tr>';
+        return;
+    }
+
+    state.pagination.data = data;
+    state.pagination.totalPages = Math.ceil(data.length / 100);
+    state.pagination.currentPage = 1;
+
+    const pageData = paginate(data, 1);
+    renderRegionCompTableBody(tbody, pageData);
+
+    const onPageChange = (newPage) => {
+        state.pagination.currentPage = newPage;
+        const newPageData = paginate(data, newPage);
+        renderRegionCompTableBody(tbody, newPageData);
+        renderPagination('regionComp-pagination', state.pagination.totalPages, newPage, onPageChange);
+    };
+    renderPagination('regionComp-pagination', state.pagination.totalPages, 1, onPageChange);
+}
+
+// 渲染省市综合表格体（动态列）
+function renderRegionCompTableBody(tbody, data) {
+    const dimension = state.regionComp.dimension;
+    let html = '';
+    data.forEach(item => {
+        if (dimension === 'province') {
+            html += `<tr>
+                <td class="rank-cell">${item.displayRank}</td>
+                <td>${item.province}</td>
+                <td>${item.eventCount}</td>
+                <td>${item.totalRank}</td>
+            </tr>`;
+        } else {
+            html += `<tr>
+                <td class="rank-cell">${item.displayRank}</td>
+                <td>${item.province}</td>
+                <td>${item.city || ''}</td>
+                <td>${item.eventCount}</td>
+                <td>${item.totalRank}</td>
+            </tr>`;
+        }
+    });
+    tbody.innerHTML = html;
 }

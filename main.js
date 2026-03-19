@@ -211,9 +211,11 @@ async function initRegionTop() {
     const dimSelect = document.getElementById('regionTop-dimension');
     if (dimSelect) {
         dimSelect.value = state.regionTop.dimension;
-        dimSelect.addEventListener('change', (e) => {
-            state.regionTop.dimension = e.target.value;
-        });
+dimSelect.addEventListener('change', (e) => {
+    state.regionComp.dimension = e.target.value;
+    updateRegionCompCurrentLabel();
+    calculateRegionComp(); // 重新计算
+});
     }
 
     // 时期单选按钮
@@ -355,6 +357,9 @@ async function initRegionComp() {
         dimSelect.addEventListener('change', (e) => {
             state.regionComp.dimension = e.target.value;
             updateRegionCompCurrentLabel();
+            calculateRegionComp(); // 重新计算
+// 在 calculateRegionComp 末尾，替换原来的渲染代码
+renderRegionCompTable(rankedResults);  // 注意：这个函数现在在 ui.js 中
         });
     }
 
@@ -365,6 +370,7 @@ async function initRegionComp() {
         r.addEventListener('change', (e) => {
             state.regionComp.period = e.target.value;
             updateRegionCompCurrentLabel();
+            calculateRegionComp(); // 重新计算
         });
     });
 
@@ -417,12 +423,12 @@ async function calculateRegionComp() {
                 if (!groupRank[key] || rank < groupRank[key]) {
                     groupRank[key] = rank;
                 }
-                if (!groupInfoMap.has(key)) {
-                    groupInfoMap.set(key, {
-                        province: item.province || '',
-                        city: item.city || ''
-                    });
-                }
+if (!groupInfoMap.has(key)) {
+    groupInfoMap.set(key, {
+        province: item.province || '',
+        city: dimension === 'city' ? item.city || '' : '' // 维度为省份时不存城市
+    });
+}
             });
 
             projectDataMap[proj] = {
@@ -477,47 +483,7 @@ async function calculateRegionComp() {
         return item;
     });
 
-    renderRegionCompTable(rankedResults);
-}
 
-function renderRegionCompTable(data) {
-    const tbody = document.getElementById('regionComp-tbody');
-    if (!tbody) return;
-
-    if (data.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="5">' + __('no_data') + '</td></tr>';
-        return;
-    }
-
-    state.pagination.data = data;
-    state.pagination.totalPages = Math.ceil(data.length / 100);
-    state.pagination.currentPage = 1;
-
-    const pageData = paginate(data, 1);
-    renderRegionCompTableBody(tbody, pageData);
-
-    const onPageChange = (newPage) => {
-        state.pagination.currentPage = newPage;
-        const newPageData = paginate(data, newPage);
-        renderRegionCompTableBody(tbody, newPageData);
-        renderPagination('regionComp-pagination', state.pagination.totalPages, newPage, onPageChange);
-    };
-    renderPagination('regionComp-pagination', state.pagination.totalPages, 1, onPageChange);
-}
-
-function renderRegionCompTableBody(tbody, data) {
-    let html = '';
-    data.forEach(item => {
-        html += `<tr>
-            <td class="rank-cell">${item.displayRank}</td>
-            <td>${item.province}</td>
-            <td>${item.city || ''}</td>
-            <td>${item.eventCount}</td>
-            <td>${item.totalRank}</td>
-        </tr>`;
-    });
-    tbody.innerHTML = html;
-}
 
 async function initComprehensive() {
     await loadMeta();

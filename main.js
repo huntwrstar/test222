@@ -214,7 +214,17 @@ async function initRegionTop() {
         dimSelect.value = state.regionTop.dimension;
         dimSelect.addEventListener('change', (e) => {
             state.regionTop.dimension = e.target.value;
-            loadRegionTopData(); // 重新加载数据
+            updateRegionTopCurrentLabel(); // 更新当前信息标签
+
+            // 清空表格体
+            const tbody = document.getElementById('regionTop-tbody');
+            if (tbody) {
+                tbody.innerHTML = '<tr><td colspan="7" class="loading-cell">请点击单次或平均加载数据</td></tr>';
+            }
+
+            // 清空分页
+            const pagination = document.getElementById('regionTop-pagination');
+            if (pagination) pagination.innerHTML = '';
         });
     }
 
@@ -223,7 +233,17 @@ async function initRegionTop() {
         if (r.value === state.regionTop.period) r.checked = true;
         r.addEventListener('change', (e) => {
             state.regionTop.period = e.target.value;
-            loadRegionTopData();
+            updateRegionTopCurrentLabel(); // 更新当前信息标签
+
+            // 清空表格体
+            const tbody = document.getElementById('regionTop-tbody');
+            if (tbody) {
+                tbody.innerHTML = '<tr><td colspan="7" class="loading-cell">请点击单次或平均加载数据</td></tr>';
+            }
+
+            // 清空分页
+            const pagination = document.getElementById('regionTop-pagination');
+            if (pagination) pagination.innerHTML = '';
         });
     });
 
@@ -232,6 +252,7 @@ async function initRegionTop() {
         projSelect.value = state.regionTop.project;
         projSelect.addEventListener('change', (e) => {
             state.regionTop.project = e.target.value;
+            updateRegionTopCurrentLabel(); // 更新当前信息标签
         });
     }
 
@@ -240,19 +261,33 @@ async function initRegionTop() {
         genderSelect.value = state.regionTop.gender;
         genderSelect.addEventListener('change', (e) => {
             state.regionTop.gender = e.target.value;
+            updateRegionTopCurrentLabel(); // 更新当前信息标签
         });
     }
 
     document.getElementById('regionTop-single').addEventListener('click', () => {
         setType('regionTop', 'single');
-        loadRegionTopData();
+        loadRegionTopData(); // 点击按钮才加载数据
     });
     document.getElementById('regionTop-average').addEventListener('click', () => {
         setType('regionTop', 'average');
-        loadRegionTopData();
+        loadRegionTopData(); // 点击按钮才加载数据
     });
 
+    // 初始加载数据
     await loadRegionTopData();
+}
+
+// 辅助函数：更新当前信息标签（请确保此函数在全局作用域）
+function updateRegionTopCurrentLabel() {
+    const { dimension, project, type, period } = state.regionTop;
+    let periodText = '';
+    if (period === 'historical') periodText = __('current.historical');
+    else if (period === 'season') periodText = __('current.season');
+    else periodText = __('current.active');
+
+    document.getElementById('regionTop-current').innerText = 
+        `${dimension === 'province' ? __('dimension.province') : __('dimension.city')} · ${periodText} · ${getProjectName(project)} · ${type === 'single' ? __('btn.single') : __('btn.average')}`;
 }
 
 async function loadRegionTopData() {
@@ -353,7 +388,31 @@ async function initRegionComp() {
         dimSelect.value = state.regionComp.dimension;
         dimSelect.addEventListener('change', (e) => {
             state.regionComp.dimension = e.target.value;
-            updateRegionCompCurrentLabel(); // 只更新标签，不重新计算
+            updateRegionCompCurrentLabel();
+
+            // 更新表头
+            const thead = document.querySelector('#regionComp-table thead');
+            if (thead) {
+                const dimension = state.regionComp.dimension;
+                thead.innerHTML = `<tr>
+                    <th>${__('table.rank')}</th>
+                    <th>${dimension === 'province' ? __('dimension.province') : __('dimension.city')}</th>
+                    ${dimension === 'city' ? `<th>${__('dimension.city')}</th>` : ''}
+                    <th>${__('table.events_count')}</th>
+                    <th>${__('table.total_rank')}</th>
+                </tr>`;
+            }
+
+            // 清空表格体
+            const tbody = document.getElementById('regionComp-tbody');
+            if (tbody) {
+                const colspan = state.regionComp.dimension === 'province' ? 4 : 5;
+                tbody.innerHTML = `<tr><td colspan="${colspan}" class="loading-cell">请点击单次或平均加载数据</td></tr>`;
+            }
+
+            // 清空分页
+            const pagination = document.getElementById('regionComp-pagination');
+            if (pagination) pagination.innerHTML = '';
         });
     }
 
@@ -362,19 +421,30 @@ async function initRegionComp() {
         if (r.value === state.regionComp.period) r.checked = true;
         r.addEventListener('change', (e) => {
             state.regionComp.period = e.target.value;
-            updateRegionCompCurrentLabel(); // 只更新标签，不重新计算
+            updateRegionCompCurrentLabel();
+
+            // 清空表格体
+            const tbody = document.getElementById('regionComp-tbody');
+            if (tbody) {
+                const colspan = state.regionComp.dimension === 'province' ? 4 : 5;
+                tbody.innerHTML = `<tr><td colspan="${colspan}" class="loading-cell">请点击单次或平均加载数据</td></tr>`;
+            }
+
+            // 清空分页
+            const pagination = document.getElementById('regionComp-pagination');
+            if (pagination) pagination.innerHTML = '';
         });
     });
 
-    renderRegionCompProjectTags(); // 该函数内部已修改为只更新标签
+    renderRegionCompProjectTags();
 
     document.getElementById('regionComp-single').addEventListener('click', () => {
         setType('regionComp', 'single');
-        calculateRegionComp(); // 点击时重新计算
+        calculateRegionComp();
     });
     document.getElementById('regionComp-average').addEventListener('click', () => {
         setType('regionComp', 'average');
-        calculateRegionComp(); // 点击时重新计算
+        calculateRegionComp();
     });
 
     await calculateRegionComp(); // 初始加载

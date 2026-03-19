@@ -353,8 +353,7 @@ async function initRegionComp() {
         dimSelect.value = state.regionComp.dimension;
         dimSelect.addEventListener('change', (e) => {
             state.regionComp.dimension = e.target.value;
-            updateRegionCompCurrentLabel();
-            calculateRegionComp();
+            updateRegionCompCurrentLabel(); // 只更新标签，不重新计算
         });
     }
 
@@ -363,23 +362,22 @@ async function initRegionComp() {
         if (r.value === state.regionComp.period) r.checked = true;
         r.addEventListener('change', (e) => {
             state.regionComp.period = e.target.value;
-            updateRegionCompCurrentLabel();
-            calculateRegionComp();
+            updateRegionCompCurrentLabel(); // 只更新标签，不重新计算
         });
     });
 
-    renderRegionCompProjectTags();
+    renderRegionCompProjectTags(); // 该函数内部已修改为只更新标签
 
     document.getElementById('regionComp-single').addEventListener('click', () => {
         setType('regionComp', 'single');
-        calculateRegionComp();
+        calculateRegionComp(); // 点击时重新计算
     });
     document.getElementById('regionComp-average').addEventListener('click', () => {
         setType('regionComp', 'average');
-        calculateRegionComp();
+        calculateRegionComp(); // 点击时重新计算
     });
 
-    await calculateRegionComp();
+    await calculateRegionComp(); // 初始加载
 }
 
 async function calculateRegionComp() {

@@ -622,7 +622,6 @@ function updateCompCurrentLabel() {
     document.getElementById('comp-current').innerText = __('comp.current', {source: sourceName, count: eventCount, type: typeName});
 }
 
-// 省市综合专用标签渲染
 function renderRegionCompProjectTags() {
     const container = document.getElementById('regionComp-project-tags');
     if (!container) return;
@@ -648,7 +647,7 @@ function renderRegionCompProjectTags() {
             }
             state.regionComp.selectedEvents = selected;
             renderRegionCompProjectTags();
-            updateRegionCompCurrentLabel();
+            updateRegionCompCurrentLabel(); // 只更新标签，不重新计算
         });
     });
 }

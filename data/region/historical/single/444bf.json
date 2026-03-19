@@ -1140,8 +1140,8 @@
     "competition": "Please Be Quiet Quanzhou 2025",
     "wcaid": "2025HANJ03",
     "date": "2025-12-21",
-    "province": "神手谷",
-    "city": "神手谷"
+    "province": "广东",
+    "city": "广州"
   },
   {
     "rank": 105,
@@ -1683,7 +1683,18 @@
     "city": "深圳"
   },
   {
-    "rank": 154,
+    "rank": 153,
+    "name": "Yiquan Ling (凌艺全)",
+    "gender": "男",
+    "result": "14:50.00",
+    "competition": "Big 'n Blind Guangzhou 2018",
+    "wcaid": "2014LING03",
+    "date": "2018-12-09",
+    "province": "广东",
+    "city": "深圳"
+  },
+  {
+    "rank": 155,
     "name": "Jinzheng Li (李金铮)",
     "gender": "男",
     "result": "15:01.00",
@@ -1694,7 +1705,7 @@
     "city": "延边"
   },
   {
-    "rank": 154,
+    "rank": 155,
     "name": "Xingyan Ding (丁醒炎)",
     "gender": "男",
     "result": "15:01.00",
@@ -1705,7 +1716,7 @@
     "city": "无锡"
   },
   {
-    "rank": 156,
+    "rank": 157,
     "name": "Jintao Jin (金锦涛)",
     "gender": "男",
     "result": "15:08.00",
@@ -1716,7 +1727,7 @@
     "city": "温州"
   },
   {
-    "rank": 157,
+    "rank": 158,
     "name": "Zhaoli Zheng (郑召利)",
     "gender": "男",
     "result": "15:17.00",
@@ -1727,7 +1738,7 @@
     "city": "常德"
   },
   {
-    "rank": 158,
+    "rank": 159,
     "name": "Hua-Ting Lee (李華庭)",
     "gender": "女",
     "result": "15:24.00",
@@ -1738,7 +1749,7 @@
     "city": "台湾"
   },
   {
-    "rank": 159,
+    "rank": 160,
     "name": "Andy Mok Man Cheuk (莫文卓)",
     "gender": "男",
     "result": "15:26.00",
@@ -1749,7 +1760,7 @@
     "city": "香港"
   },
   {
-    "rank": 160,
+    "rank": 161,
     "name": "Jia Zeng (曾嘉)",
     "gender": "男",
     "result": "15:31.00",
@@ -1760,7 +1771,7 @@
     "city": "南京"
   },
   {
-    "rank": 161,
+    "rank": 162,
     "name": "Jianyu Que (阙剑宇)",
     "gender": "男",
     "result": "16:04.00",
@@ -1771,7 +1782,7 @@
     "city": "厦门"
   },
   {
-    "rank": 162,
+    "rank": 163,
     "name": "Zhiyang Chen (陈至扬)",
     "gender": "男",
     "result": "16:12.00",
@@ -1782,7 +1793,7 @@
     "city": "吉安"
   },
   {
-    "rank": 163,
+    "rank": 164,
     "name": "Liang Zhang (张亮)",
     "gender": "男",
     "result": "16:37.00",
@@ -1793,7 +1804,7 @@
     "city": "济南"
   },
   {
-    "rank": 164,
+    "rank": 165,
     "name": "Luchen Zhang (张录辰)",
     "gender": "男",
     "result": "16:49.00",
@@ -1804,7 +1815,7 @@
     "city": "北京"
   },
   {
-    "rank": 165,
+    "rank": 166,
     "name": "Xiaotian Ma (马晓田)",
     "gender": "男",
     "result": "17:03.00",
@@ -1815,7 +1826,7 @@
     "city": "吕梁"
   },
   {
-    "rank": 166,
+    "rank": 167,
     "name": "Shifei Dai (代时飞)",
     "gender": "女",
     "result": "17:06.00",
@@ -1826,7 +1837,7 @@
     "city": "南京"
   },
   {
-    "rank": 167,
+    "rank": 168,
     "name": "Dongyun Yin (殷冬昀)",
     "gender": "男",
     "result": "17:31.00",
@@ -1837,7 +1848,7 @@
     "city": "无锡"
   },
   {
-    "rank": 168,
+    "rank": 169,
     "name": "Yu Zhou (周煜)",
     "gender": "男",
     "result": "17:35.00",
@@ -1848,7 +1859,7 @@
     "city": "无锡"
   },
   {
-    "rank": 169,
+    "rank": 170,
     "name": "Yunke Zhang (张云柯)",
     "gender": "男",
     "result": "17:47.00",
@@ -1859,7 +1870,7 @@
     "city": "北京"
   },
   {
-    "rank": 170,
+    "rank": 171,
     "name": "Liudi Sun (孙柳笛)",
     "gender": "女",
     "result": "18:13.00",
@@ -1870,7 +1881,7 @@
     "city": "南京"
   },
   {
-    "rank": 171,
+    "rank": 172,
     "name": "Matthew Advani (歐卓禮)",
     "gender": "男",
     "result": "18:44.00",
@@ -1881,7 +1892,7 @@
     "city": "香港"
   },
   {
-    "rank": 172,
+    "rank": 173,
     "name": "Chao-Che Chung (鍾肇哲)",
     "gender": "男",
     "result": "19:04.00",
@@ -1892,7 +1903,7 @@
     "city": "台湾"
   },
   {
-    "rank": 173,
+    "rank": 174,
     "name": "Mo Ji (季默)",
     "gender": "男",
     "result": "19:07.00",
@@ -1903,7 +1914,7 @@
     "city": "阜新"
   },
   {
-    "rank": 174,
+    "rank": 175,
     "name": "Guanghua Wang (王光华)",
     "gender": "男",
     "result": "19:14.00",
@@ -1914,7 +1925,7 @@
     "city": "嘉兴"
   },
   {
-    "rank": 175,
+    "rank": 176,
     "name": "Yu-Chi Hou (侯宥圻)",
     "gender": "男",
     "result": "19:19.00",
@@ -1925,7 +1936,7 @@
     "city": "台湾"
   },
   {
-    "rank": 176,
+    "rank": 177,
     "name": "Xiaoliang Zhu (朱校良)",
     "gender": "男",
     "result": "19:27.00",
@@ -1936,7 +1947,7 @@
     "city": "苏州"
   },
   {
-    "rank": 177,
+    "rank": 178,
     "name": "Hung Lo (羅鴻)",
     "gender": "男",
     "result": "19:47.00",
@@ -1947,7 +1958,7 @@
     "city": "台湾"
   },
   {
-    "rank": 178,
+    "rank": 179,
     "name": "Mok Man Kit (莫文傑)",
     "gender": "男",
     "result": "20:46.00",
@@ -1958,7 +1969,7 @@
     "city": "香港"
   },
   {
-    "rank": 179,
+    "rank": 180,
     "name": "Chan Yau Hoi (陳佑愷)",
     "gender": "男",
     "result": "21:26.00",
@@ -1969,7 +1980,7 @@
     "city": "香港"
   },
   {
-    "rank": 180,
+    "rank": 181,
     "name": "Ziyou Yin (殷子佑)",
     "gender": "男",
     "result": "22:29.00",
@@ -1980,7 +1991,7 @@
     "city": "神手谷"
   },
   {
-    "rank": 181,
+    "rank": 182,
     "name": "Chong-Cheng Wang (汪忠正)",
     "gender": "男",
     "result": "23:04.00",
@@ -1991,7 +2002,7 @@
     "city": "台湾"
   },
   {
-    "rank": 182,
+    "rank": 183,
     "name": "Zhongguang Que (阙忠光)",
     "gender": "男",
     "result": "23:40.00",
@@ -2002,7 +2013,7 @@
     "city": "厦门"
   },
   {
-    "rank": 183,
+    "rank": 184,
     "name": "Hang Yu (禹杭)",
     "gender": "男",
     "result": "24:49.00",
@@ -2013,7 +2024,7 @@
     "city": "杭州"
   },
   {
-    "rank": 184,
+    "rank": 185,
     "name": "Kuan-Ying Li (李冠穎)",
     "gender": "男",
     "result": "26:08.00",
@@ -2024,7 +2035,7 @@
     "city": "台湾"
   },
   {
-    "rank": 185,
+    "rank": 186,
     "name": "Tzu-Heng Lin (林子恆)",
     "gender": "男",
     "result": "34:12.00",

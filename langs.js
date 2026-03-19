@@ -23,7 +23,7 @@ window.TRANSLATIONS = {
         'regionTop.title': 'Regional Top Rankings',
         'regionTop.subtitle': 'This page ranks the top-ranked player from each province/city.',
         'regionComp.title': 'Regional Comprehensive Rankings',
-        'regionComp.subtitle': 'Sum of the best rank in each selected event for each province/city (based on regional rankings).',
+        'regionComp.subtitle': '',
         'comprehensive.title': 'Comprehensive Rankings',
         'comprehensive.subtitle': 'This page calculates the sum of ranks across multiple events and ranks players accordingly.',
         'record.title': 'Regional Records',

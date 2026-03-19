@@ -21,7 +21,7 @@ window.TRANSLATIONS = {
         'region.title': 'Regional Rankings',
         'region.subtitle': 'This page displays rankings by province and city, allowing you to view the rankings of Chinese competitors in their respective cities. Competitors with unknown province and city information will be automatically categorized as "Shenshougu" by the system (please refer to the announcement on the homepage for specific reasons). Friendly reminder: Competitors can now enter the feedback page to submit requests for changing their province and city information. All ranking results are sourced from the official rankings of WCA events.',
         'regionTop.title': 'Regional Top Rankings',
-        'regionTop.subtitle': 'This page shows the top-ranked player(s) in each province/city. All ties are displayed regardless of date.',
+        'regionTop.subtitle': 'This page ranks the top-ranked player from each province/city.',
         'regionComp.title': 'Regional Comprehensive Rankings',
         'regionComp.subtitle': 'Sum of the best rank in each selected event for each province/city (based on regional rankings).',
         'comprehensive.title': 'Comprehensive Rankings',
@@ -116,9 +116,9 @@ window.TRANSLATIONS = {
         'region.title': '省市排名',
         'region.subtitle': '本页面为省市排名，可以查看中国选手在其所属城市的排名，省市信息未知的选手将被系统自动归入神手谷（具体缘由详见首页公告）。温馨提示：选手现可进入反馈页提交省市信息更改申请。所有的排名成绩源自WCA赛事的官方排名。',
         'regionTop.title': '省市榜首排名',
-        'regionTop.subtitle': '本页面显示每个省份/城市排名第一的选手（成绩并列则全部显示）。',
+        'regionTop.subtitle': '本页面将每个省份/城市排名第一的选手进行排名。',
         'regionComp.title': '省市综合排名',
-        'regionComp.subtitle': '计算每个省份/城市在所选项目中各自第一名的排名总和。',
+        'regionComp.subtitle': '',
         'comprehensive.title': '综合排名',
         'comprehensive.subtitle': '本页面为综合排名，可计算选手在多个项目的排名总和并进行排名。',
         'record.title': '省市纪录',
@@ -211,9 +211,9 @@ window.TRANSLATIONS = {
         'region.title': '省市排名',
         'region.subtitle': '本頁面為省市排名，可以查看中國選手在其所屬城市的排名，省市訊息未知的選手將被系統自動歸入神手谷（具體緣由詳見首頁公告）。溫馨提示：選手現可進入反饋頁提交省市訊息更改申請。所有的排名成績源自WCA賽事的官方排名。',
         'regionTop.title': '省市榜首排名',
-        'regionTop.subtitle': '本頁面顯示每個省份/城市排名第一的選手（成績並列則全部顯示）。',
+        'regionTop.subtitle': '本頁面將每個省份/城市排名第一的選手進行排名。',
         'regionComp.title': '省市綜合排名',
-        'regionComp.subtitle': '計算每個省份/城市在所選項目中各自第一名的排名總和。',
+        'regionComp.subtitle': '',
         'comprehensive.title': '綜合排名',
         'comprehensive.subtitle': '本頁面為綜合排名，可計算選手在多個項目的排名總和並進行排名。',
         'record.title': '省市紀錄',
@@ -290,7 +290,7 @@ window.TRANSLATIONS = {
         'project.333mbf': '多盲',
     },
 
-    // 其他语言保留空对象，避免报错
+
     'ca': {}, 'cs': {}, 'da': {}, 'de': {}, 'eo': {}, 'es-ES': {}, 'es-419': {}, 'eu': {}, 'fi': {}, 'fr': {}, 'fr-CA': {}, 'hr': {}, 'hu': {}, 'id': {}, 'it': {}, 'ja': {}, 'kk': {}, 'ko': {}, 'nl': {}, 'pl': {}, 'pt-PT': {}, 'pt-BR': {}, 'ro': {}, 'ru': {}, 'sk': {}, 'sl': {}, 'sv': {}, 'th': {}, 'uk': {}, 'vi': {}
 };
 

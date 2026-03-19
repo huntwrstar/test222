@@ -214,7 +214,7 @@ async function initRegionTop() {
         dimSelect.value = state.regionTop.dimension;
         dimSelect.addEventListener('change', (e) => {
             state.regionTop.dimension = e.target.value;
-            updateRegionTopCurrentLabel(); // 只更新标签，不清空表格
+            updateRegionTopCurrentLabel(); 
         });
     }
 
@@ -223,7 +223,7 @@ async function initRegionTop() {
         if (r.value === state.regionTop.period) r.checked = true;
         r.addEventListener('change', (e) => {
             state.regionTop.period = e.target.value;
-            updateRegionTopCurrentLabel(); // 只更新标签，不清空表格
+            updateRegionTopCurrentLabel(); 
         });
     });
 
@@ -232,7 +232,7 @@ async function initRegionTop() {
         projSelect.value = state.regionTop.project;
         projSelect.addEventListener('change', (e) => {
             state.regionTop.project = e.target.value;
-            updateRegionTopCurrentLabel(); // 只更新标签，不清空表格
+            updateRegionTopCurrentLabel(); 
         });
     }
 
@@ -241,24 +241,24 @@ async function initRegionTop() {
         genderSelect.value = state.regionTop.gender;
         genderSelect.addEventListener('change', (e) => {
             state.regionTop.gender = e.target.value;
-            updateRegionTopCurrentLabel(); // 只更新标签，不清空表格
+            updateRegionTopCurrentLabel(); 
         });
     }
 
     document.getElementById('regionTop-single').addEventListener('click', () => {
         setType('regionTop', 'single');
-        loadRegionTopData(); // 点击按钮才加载数据
+        loadRegionTopData(); 
     });
     document.getElementById('regionTop-average').addEventListener('click', () => {
         setType('regionTop', 'average');
-        loadRegionTopData(); // 点击按钮才加载数据
+        loadRegionTopData(); 
     });
 
-    // 初始加载数据
+
     await loadRegionTopData();
 }
 
-// 辅助函数：更新当前信息标签（如果尚未定义，请确保此函数存在）
+
 function updateRegionTopCurrentLabel() {
     const { dimension, project, type, period } = state.regionTop;
     let periodText = '';
@@ -285,7 +285,7 @@ async function loadRegionTopData() {
         let data = await fetchJSON(`data/region/${period}/${type}/${project}.json`);
         data = applyGenderFilter(data, gender);
 
-        // 新增：按选手去重，保留成绩最好且日期最早的一条
+
         data = deduplicateByBestAndDate(data, project);
 
         const groups = {};
@@ -371,7 +371,7 @@ async function initRegionComp() {
         dimSelect.value = state.regionComp.dimension;
         dimSelect.addEventListener('change', (e) => {
             state.regionComp.dimension = e.target.value;
-            updateRegionCompCurrentLabel(); // 只更新标签，不清空表格
+            updateRegionCompCurrentLabel(); 
         });
     }
 
@@ -380,7 +380,7 @@ async function initRegionComp() {
         if (r.value === state.regionComp.period) r.checked = true;
         r.addEventListener('change', (e) => {
             state.regionComp.period = e.target.value;
-            updateRegionCompCurrentLabel(); // 只更新标签，不清空表格
+            updateRegionCompCurrentLabel(); 
         });
     });
 
@@ -388,14 +388,14 @@ async function initRegionComp() {
 
     document.getElementById('regionComp-single').addEventListener('click', () => {
         setType('regionComp', 'single');
-        calculateRegionComp(); // 点击时重新计算
+        calculateRegionComp(); 
     });
     document.getElementById('regionComp-average').addEventListener('click', () => {
         setType('regionComp', 'average');
-        calculateRegionComp(); // 点击时重新计算
+        calculateRegionComp(); 
     });
 
-    await calculateRegionComp(); // 初始加载
+    await calculateRegionComp(); 
 }
 
 async function calculateRegionComp() {
@@ -493,7 +493,7 @@ async function calculateRegionComp() {
         return item;
     });
 
-    // 调用 ui.js 中的渲染函数
+
     renderRegionCompTable(rankedResults);
 }
 
@@ -681,7 +681,6 @@ async function loadRegionData() {
             console.log(`省市数据城市筛选后 (${city}): ${data.length}`);
         }
         
-        // 新增：按选手去重，保留成绩最好且日期最早的一条
         data = deduplicateByBestAndDate(data, project);
         console.log(`去重后数据条数: ${data.length}`);
 

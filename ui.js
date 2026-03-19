@@ -663,7 +663,6 @@ function updateRegionCompCurrentLabel() {
     document.getElementById('regionComp-current').innerText = `${dim} · ${periodText} · ${type} · ${state.regionComp.selectedEvents.length} ${__('table.event')}`;
 }
 
-// 渲染省市综合表格（包含分页）
 function renderRegionCompTable(data) {
     const tbody = document.getElementById('regionComp-tbody');
     if (!tbody) return;
@@ -689,7 +688,6 @@ function renderRegionCompTable(data) {
     renderPagination('regionComp-pagination', state.pagination.totalPages, 1, onPageChange);
 }
 
-// 渲染省市综合表格体（动态列）
 function renderRegionCompTableBody(tbody, data) {
     const dimension = state.regionComp.dimension;
     let html = '';

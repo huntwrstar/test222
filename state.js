@@ -16,7 +16,7 @@ window.state = {
         project: '333',
         type: 'single',
         gender: 'all',
-        period: 'historical',     // 新增时期字段
+        period: 'historical',     
         data: [],
         currentPage: 1
     },
@@ -24,7 +24,7 @@ window.state = {
         dimension: 'province',
         selectedEvents: ['333', '222', '444'],
         type: 'single',
-        period: 'historical',     // 新增时期字段
+        period: 'historical',     
         data: [],
         currentPage: 1
     },

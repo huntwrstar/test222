@@ -285,6 +285,9 @@ async function loadRegionTopData() {
         let data = await fetchJSON(`data/region/${period}/${type}/${project}.json`);
         data = applyGenderFilter(data, gender);
 
+        // 新增：按选手去重，保留成绩最好且日期最早的一条
+        data = deduplicateByBestAndDate(data, project);
+
         const groups = {};
         data.forEach(item => {
             const key = dimension === 'province' ? item.province : `${item.province}|${item.city}`;
@@ -677,6 +680,11 @@ async function loadRegionData() {
             data = data.filter(d => d.city === city);
             console.log(`省市数据城市筛选后 (${city}): ${data.length}`);
         }
+        
+        // 新增：按选手去重，保留成绩最好且日期最早的一条
+        data = deduplicateByBestAndDate(data, project);
+        console.log(`去重后数据条数: ${data.length}`);
+
         renderTable('region', data, project);
     } catch (e) {
         console.error(e);

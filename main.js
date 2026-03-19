@@ -214,17 +214,7 @@ async function initRegionTop() {
         dimSelect.value = state.regionTop.dimension;
         dimSelect.addEventListener('change', (e) => {
             state.regionTop.dimension = e.target.value;
-            updateRegionTopCurrentLabel(); // 更新当前信息标签
-
-            // 清空表格体
-            const tbody = document.getElementById('regionTop-tbody');
-            if (tbody) {
-                tbody.innerHTML = '<tr><td colspan="7" class="loading-cell">请点击单次或平均加载数据</td></tr>';
-            }
-
-            // 清空分页
-            const pagination = document.getElementById('regionTop-pagination');
-            if (pagination) pagination.innerHTML = '';
+            updateRegionTopCurrentLabel(); // 只更新标签，不清空表格
         });
     }
 
@@ -233,17 +223,7 @@ async function initRegionTop() {
         if (r.value === state.regionTop.period) r.checked = true;
         r.addEventListener('change', (e) => {
             state.regionTop.period = e.target.value;
-            updateRegionTopCurrentLabel(); // 更新当前信息标签
-
-            // 清空表格体
-            const tbody = document.getElementById('regionTop-tbody');
-            if (tbody) {
-                tbody.innerHTML = '<tr><td colspan="7" class="loading-cell">请点击单次或平均加载数据</td></tr>';
-            }
-
-            // 清空分页
-            const pagination = document.getElementById('regionTop-pagination');
-            if (pagination) pagination.innerHTML = '';
+            updateRegionTopCurrentLabel(); // 只更新标签，不清空表格
         });
     });
 
@@ -252,7 +232,7 @@ async function initRegionTop() {
         projSelect.value = state.regionTop.project;
         projSelect.addEventListener('change', (e) => {
             state.regionTop.project = e.target.value;
-            updateRegionTopCurrentLabel(); // 更新当前信息标签
+            updateRegionTopCurrentLabel(); // 只更新标签，不清空表格
         });
     }
 
@@ -261,7 +241,7 @@ async function initRegionTop() {
         genderSelect.value = state.regionTop.gender;
         genderSelect.addEventListener('change', (e) => {
             state.regionTop.gender = e.target.value;
-            updateRegionTopCurrentLabel(); // 更新当前信息标签
+            updateRegionTopCurrentLabel(); // 只更新标签，不清空表格
         });
     }
 
@@ -278,7 +258,7 @@ async function initRegionTop() {
     await loadRegionTopData();
 }
 
-// 辅助函数：更新当前信息标签（请确保此函数在全局作用域）
+// 辅助函数：更新当前信息标签（如果尚未定义，请确保此函数存在）
 function updateRegionTopCurrentLabel() {
     const { dimension, project, type, period } = state.regionTop;
     let periodText = '';

@@ -6,6 +6,18 @@ function renderHome() {
         <div class="announcement-list">
             <div class="announcement">
                 <h3>更新公告</h3>
+                <div class="announcement-card"><p>更新内容如下：<p>
+<p>1.新增省市榜首排名<p>
+<p>-在省市榜首排名中，您可以看到每个省份/城市排名第一的选手的排名；p>
+<p>2.新增省市综合排名<p>
+<p>-在省市综合排名中，您可以自由组合项目计算每个省份/城市的综合实力进行排名；<p>
+<p>3.完善一些细节<p>
+<p>2026-03-19<p>
+                </div>
+            </div>
+        <div class="announcement-list">
+            <div class="announcement">
+                <h3>更新公告</h3>
                 <div class="announcement-card"><p>根据最近几天大家的反馈，本次更新内容如下：<p>
 <p>1.更改部分排名榜单的定义<p>
 <p>2.修复部分已知bug<p>

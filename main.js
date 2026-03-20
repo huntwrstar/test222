@@ -995,7 +995,8 @@ function computeAllBestRecords(province, city, gender) {
         const filteredSingle = singleList.filter(filterFn);
         const filteredAvg = avgList.filter(filterFn);
 
-        let bestSingleVal = Infinity, bestAvgVal = Infinity;
+let bestSingleVal = (projCode === '333mbf') ? -Infinity : Infinity;
+let bestAvgVal = Infinity;
         if (projCode === '333mbf') {
             filteredSingle.forEach(item => {
                 const parsed = parseMBF(item.result);

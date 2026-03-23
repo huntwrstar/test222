@@ -75,7 +75,7 @@ async function loadPage(page) {
 
     const app = document.getElementById('app');
     switch(page) {
-        case 'home': app.innerHTML = renderHome(); initCarousel(); // 轮播初始化break;
+        case 'home': app.innerHTML = renderHome(); initCarousel(); break;// 轮播初始化
         case 'season': app.innerHTML = renderSeason(); await initSeason(); break;
         case 'active': app.innerHTML = renderActive(); await initActive(); break;
         case 'comprehensive': app.innerHTML = renderComprehensive(); await initComprehensive(); break;

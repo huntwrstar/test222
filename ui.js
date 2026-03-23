@@ -3,16 +3,17 @@ function renderHome() {
         <div style="text-align: center; margin: 50px 0;">
             <h3 class="home-title"><span>探索未来，</span><span>未来已来。</span></h3>
         </div>
-        <!-- 新增轮播图区域 -->
-        <div class="carousel-container">
-            <div class="carousel-slides">
-                <a href="https://example.com/1" target="_blank"><img src="images/banner1.jpg" alt="banner1"></a>
-                <a href="https://example.com/2" target="_blank"><img src="images/banner2.jpg" alt="banner2"></a>
-                <a href="https://example.com/3" target="_blank"><img src="images/banner3.jpg" alt="banner3"></a>
+        <!-- 横幅轮播：按钮在边框外部 -->
+        <div class="banner-wrapper">
+            <button class="banner-prev">❮</button>
+            <div class="banner-container">
+                <div class="banner-slides">
+                    <a href="https://example.com/1" target="_blank"><img src="images/banner1.jpg" alt="banner1"></a>
+                    <a href="https://example.com/2" target="_blank"><img src="images/banner2.jpg" alt="banner2"></a>
+                    <a href="https://example.com/3" target="_blank"><img src="images/banner3.jpg" alt="banner3"></a>
+                </div>
             </div>
-            <button class="carousel-prev">❮</button>
-            <button class="carousel-next">❯</button>
-            <div class="carousel-dots"></div>
+            <button class="banner-next">❯</button>
         </div>
         <div class="announcement-list">
         <div class="announcement-list">

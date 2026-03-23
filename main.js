@@ -1269,40 +1269,24 @@ function setType(page, type) {
     }
 }
 
-//横幅
 function initCarousel() {
-    const slides = document.querySelector('.carousel-slides');
-    const prevBtn = document.querySelector('.carousel-prev');
-    const nextBtn = document.querySelector('.carousel-next');
-    const dotsContainer = document.querySelector('.carousel-dots');
-    if (!slides) return;
+    const slidesContainer = document.querySelector('.banner-slides');
+    const prevBtn = document.querySelector('.banner-prev');
+    const nextBtn = document.querySelector('.banner-next');
+    if (!slidesContainer) return;
 
-    const totalSlides = slides.children.length;
+    const slides = slidesContainer.children;
+    const totalSlides = slides.length;
+    if (totalSlides === 0) return;
+
     let currentIndex = 0;
     let autoTimer;
-
-    // 生成圆点
-    if (dotsContainer) {
-        dotsContainer.innerHTML = '';
-        for (let i = 0; i < totalSlides; i++) {
-            const dot = document.createElement('span');
-            dot.dataset.index = i;
-            dot.addEventListener('click', () => goToSlide(i));
-            dotsContainer.appendChild(dot);
-        }
-    }
-    const dots = dotsContainer ? dotsContainer.querySelectorAll('span') : [];
 
     function goToSlide(index) {
         if (index < 0) index = totalSlides - 1;
         if (index >= totalSlides) index = 0;
         currentIndex = index;
-        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-        if (dots.length) {
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === currentIndex);
-            });
-        }
+        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
         resetAutoPlay();
     }
 

@@ -75,7 +75,7 @@ async function loadPage(page) {
 
     const app = document.getElementById('app');
     switch(page) {
-        case 'home': app.innerHTML = renderHome(); break;
+        case 'home': app.innerHTML = renderHome(); initCarousel(); // 轮播初始化break;
         case 'season': app.innerHTML = renderSeason(); await initSeason(); break;
         case 'active': app.innerHTML = renderActive(); await initActive(); break;
         case 'comprehensive': app.innerHTML = renderComprehensive(); await initComprehensive(); break;
@@ -1267,6 +1267,57 @@ function setType(page, type) {
         singleBtn?.classList.add('btn-primary');
         singleBtn?.classList.remove('btn-warning');
     }
+}
+
+//横幅
+function initCarousel() {
+    const slides = document.querySelector('.carousel-slides');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+    const dotsContainer = document.querySelector('.carousel-dots');
+    if (!slides) return;
+
+    const totalSlides = slides.children.length;
+    let currentIndex = 0;
+    let autoTimer;
+
+    // 生成圆点
+    if (dotsContainer) {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('span');
+            dot.dataset.index = i;
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+    }
+    const dots = dotsContainer ? dotsContainer.querySelectorAll('span') : [];
+
+    function goToSlide(index) {
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+        currentIndex = index;
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        if (dots.length) {
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentIndex);
+            });
+        }
+        resetAutoPlay();
+    }
+
+    function resetAutoPlay() {
+        if (autoTimer) clearInterval(autoTimer);
+        autoTimer = setInterval(() => {
+            goToSlide(currentIndex + 1);
+        }, 4000);
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+
+    resetAutoPlay();
+    goToSlide(0);
 }
 
 window.addEventListener('load', async () => {

@@ -92,10 +92,16 @@ function handleHash() {
     loadPage(page);
 }
 
-// ==================== 年份选择辅助 ====================
+// ==================== 年份选择辅助（缓存优化） ====================
+const _yearCache = new Map();
+
 function getAvailableYears(project, type) {
+    const cacheKey = `${project}_${type}`;
+    if (_yearCache.has(cacheKey)) return _yearCache.get(cacheKey);
     const years = state.meta?.availableYears?.[project]?.[type] || [];
-    return years.filter(y => typeof y === 'number' && y >= 2007).sort((a,b)=>b-a);
+    const valid = years.filter(y => typeof y === 'number' && y >= 2007).sort((a,b)=>b-a);
+    _yearCache.set(cacheKey, valid);
+    return valid;
 }
 
 async function loadYearOptions(pageKey, project) {
@@ -675,56 +681,45 @@ async function calculateRegionComp() {
         return;
     }
     const projectDataMap = {};
-    const groupInfoMap = new Map();
+    const groupInfoMap = new Map(); // key -> { province, city, totalRank, eventCount }
+
     for (let proj of selectedEvents) {
         try {
             let data = await fetchDataByPeriod(proj, type, period, period === 'historical' ? null : year);
             const ranked = recomputeRanks(data, proj);
-            const groupData = {};
+            // 取每个地区的第一名（排名最小）
+            const groupFirst = {};
             ranked.forEach(item => {
                 const key = dimension === 'province' ? item.province : `${item.province}|${item.city}`;
                 if (!key || !item.province) return;
-                if (!groupData[key]) {
-                    groupData[key] = { totalRank: 0, count: 0, province: item.province, city: item.city || '' };
+                if (!groupFirst[key] || item.rank < groupFirst[key].rank) {
+                    groupFirst[key] = { rank: item.rank, province: item.province, city: item.city || '' };
                 }
-                groupData[key].totalRank += item.rank;
-                groupData[key].count++;
             });
-            if (!projectDataMap[proj]) projectDataMap[proj] = {};
-            for (let key in groupData) {
-                projectDataMap[proj][key] = groupData[key];
+            // 累加排名
+            for (let key in groupFirst) {
+                const info = groupFirst[key];
                 if (!groupInfoMap.has(key)) {
-                    groupInfoMap.set(key, {
-                        province: groupData[key].province,
-                        city: groupData[key].city
-                    });
+                    groupInfoMap.set(key, { province: info.province, city: info.city, totalRank: 0, eventCount: 0 });
                 }
+                const group = groupInfoMap.get(key);
+                group.totalRank += info.rank;
+                group.eventCount++;
             }
         } catch (e) {
             console.warn(`加载项目 ${proj} 失败`, e);
-            projectDataMap[proj] = {};
         }
     }
+
     const results = [];
-    for (let [key, info] of groupInfoMap.entries()) {
-        let totalRank = 0;
-        let totalCount = 0;
-        for (let proj of selectedEvents) {
-            const projData = projectDataMap[proj][key];
-            if (projData) {
-                totalRank += projData.totalRank;
-                totalCount += projData.count;
-            }
-        }
-        if (totalCount > 0) {
-            results.push({
-                groupKey: key,
-                province: info.province,
-                city: info.city,
-                totalRank: totalRank,
-                totalCount: totalCount
-            });
-        }
+    for (let [key, group] of groupInfoMap.entries()) {
+        results.push({
+            groupKey: key,
+            province: group.province,
+            city: group.city,
+            totalRank: group.totalRank,
+            totalCount: group.eventCount
+        });
     }
     results.sort((a, b) => a.totalRank - b.totalRank);
     let rank = 1, sameCount = 0;
@@ -905,6 +900,7 @@ async function calculateComprehensive() {
                 if (province) data = data.filter(d => d.province === province);
                 if (city !== '全部城市' && city) data = data.filter(d => d.city === city);
             }
+            console.log(`项目 ${proj} 加载完成，记录数: ${data.length}`);
             data.forEach(d => {
                 const id = d.wcaid;
                 if (!personInfoMap.has(id)) {
@@ -920,7 +916,7 @@ async function calculateComprehensive() {
             const rankMap = {};
             ranked.forEach(item => { rankMap[item.wcaid] = item.rank; });
             projectDataMap[proj] = { rankMap: rankMap, maxRank: data.length };
-            console.log(`项目 ${proj} 处理完成，有效选手数: ${data.length}`);
+            console.log(`项目 ${proj} 处理完成，有效选手数: ${data.length}, 最大排名: ${data.length}`);
         } catch (e) {
             console.warn(`加载项目 ${proj} 失败`, e);
             projectDataMap[proj] = { rankMap: {}, maxRank: 0 };
@@ -952,6 +948,11 @@ async function calculateComprehensive() {
         }
     }
     console.log(`综合排名计算完成，共有 ${results.length} 名选手`);
+    if (results.length === 0) {
+        if (loadingDiv) loadingDiv.style.display = 'none';
+        tbody.innerHTML = `.<td colspan="5">${__('no_data')}<\/td>`;
+        return;
+    }
     results.sort((a, b) => a.totalRank - b.totalRank);
     let rank = 1, lastTotal = null, sameCount = 0;
     const rankedResults = results.map((item, idx) => {
@@ -975,9 +976,12 @@ async function calculateComprehensive() {
     renderComprehensiveTable(rankedResults);
 }
 
+// ==================== 省市纪录（按需加载优化） ====================
+const recordCache = new Map();
+
 async function initRecord() {
     await loadMeta();
-    // 加载年份选项（只显示有数据的年份，从2007年开始）
+    // 年份下拉框
     const yearSelect = document.getElementById('record-year');
     if (yearSelect) {
         const allYears = state.meta?.availableYears?.['333']?.['single'] || [];
@@ -1004,96 +1008,36 @@ async function initRecord() {
         }
     }
 
-    // 加载省份下拉框
-    if (!state.record.dataLoaded) await loadAllRecordsData();
+    // 省份下拉框（从元数据获取）
     const provinceSelect = document.getElementById('record-province');
-    if (provinceSelect && state.record.allProvinces.length) {
-        provinceSelect.innerHTML = state.record.allProvinces.map(p => `<option value="${p}">${p}</option>`).join('');
-        if (state.record.allProvinces.includes(state.record.province))
+    if (provinceSelect) {
+        const provinces = state.meta.provincesCities.provinces;
+        provinceSelect.innerHTML = provinces.map(p => `<option value="${p}">${p}</option>`).join('');
+        if (provinces.includes(state.record.province))
             provinceSelect.value = state.record.province;
-        else {
-            provinceSelect.value = state.record.allProvinces[0];
-            state.record.province = state.record.allProvinces[0];
+        else if (provinces.length) {
+            provinceSelect.value = provinces[0];
+            state.record.province = provinces[0];
         }
+        provinceSelect.addEventListener('change', (e) => {
+            state.record.province = e.target.value;
+            state.record.city = '全部城市';
+            updateRecordCitySelect(state.record.province);
+            loadRecordData();
+        });
     }
+
+    // 城市下拉框（动态加载）
     updateRecordCitySelect(state.record.province);
+
     const genderSelect = document.getElementById('record-gender');
     if (genderSelect) genderSelect.value = state.record.gender;
-
-    provinceSelect?.addEventListener('change', (e) => {
-        state.record.province = e.target.value;
-        state.record.city = '全部城市';
-        updateRecordCitySelect(state.record.province);
-        loadRecordData();
-    });
-    const citySelect = document.getElementById('record-city');
-    citySelect?.addEventListener('change', (e) => { state.record.city = e.target.value; loadRecordData(); });
     genderSelect?.addEventListener('change', (e) => { state.record.gender = e.target.value; loadRecordData(); });
+
     document.getElementById('record-refresh')?.addEventListener('click', () => { loadRecordData(); });
+
+    // 初始加载数据
     await loadRecordData();
-}
-
-async function loadAllRecordsData() {
-    if (state.record.dataLoaded) return;
-    state.record.loading = true;
-    const rawDataByProject = {};
-    for (let proj of PROJECT_LIST) {
-        const code = proj.code;
-        rawDataByProject[code] = { single: [], average: [] };
-        try {
-            // 初始加载所有历史数据，后续根据年份过滤在 computeAllBestRecords 中处理
-            const allYears = state.meta?.availableYears?.[code]?.['single'] || [];
-            if (allYears.length) {
-                const single = await fetchRawData(code, 'single', allYears);
-                const avg = await fetchRawData(code, 'average', allYears);
-                rawDataByProject[code].single = single;
-                rawDataByProject[code].average = avg;
-            }
-        } catch (e) {
-            console.warn(`加载项目 ${code} 历史数据失败`, e);
-        }
-    }
-    state.record.rawDataByProject = rawDataByProject;
-    const provinceSet = new Set();
-    const citiesMap = {};
-    for (let proj in rawDataByProject) {
-        ['single', 'average'].forEach(type => {
-            rawDataByProject[proj][type].forEach(item => {
-                if (item.province) provinceSet.add(item.province);
-                if (item.province && item.city) {
-                    if (!citiesMap[item.province]) citiesMap[item.province] = new Set();
-                    citiesMap[item.province].add(item.city);
-                }
-            });
-        });
-    }
-    let provinces = Array.from(provinceSet).sort((a,b) => a.localeCompare(b, 'zh'));
-    const shenshouIndex = provinces.indexOf('神手谷');
-    if (shenshouIndex > -1) {
-        provinces.splice(shenshouIndex, 1);
-        provinces.unshift('神手谷');
-    }
-    state.record.allProvinces = provinces;
-    state.record.provinceCities = {};
-    for (let p in citiesMap) {
-        state.record.provinceCities[p] = Array.from(citiesMap[p]).sort((a,b) => a.localeCompare(b, 'zh'));
-    }
-    state.record.dataLoaded = true;
-    console.log('省市纪录原始数据加载完成，省份列表：', state.record.allProvinces);
-    state.record.loading = false;
-}
-
-function extractCitiesFromRawData(province) {
-    if (!state.record.dataLoaded) return [];
-    const citiesSet = new Set();
-    for (let proj in state.record.rawDataByProject) {
-        ['single', 'average'].forEach(type => {
-            (state.record.rawDataByProject[proj][type] || []).forEach(item => {
-                if (item.province === province && item.city) citiesSet.add(item.city);
-            });
-        });
-    }
-    return Array.from(citiesSet).sort((a,b) => a.localeCompare(b, 'zh'));
 }
 
 function updateRecordCitySelect(province) {
@@ -1106,7 +1050,8 @@ function updateRecordCitySelect(province) {
         state.record.city = province;
     } else {
         citySelect.disabled = false;
-        const cities = extractCitiesFromRawData(province);
+        // 从缓存获取该省份的城市列表
+        const cities = state.meta.provincesCities.cities[province] || [];
         let options = '<option value="全部城市">全省</option>';
         cities.forEach(c => options += `<option value="${c}">${c}</option>`);
         citySelect.innerHTML = options;
@@ -1114,82 +1059,21 @@ function updateRecordCitySelect(province) {
             state.record.city = '全部城市';
         }
         citySelect.value = state.record.city;
+        citySelect.removeEventListener('change', citySelect._handler);
+        citySelect._handler = (e) => { state.record.city = e.target.value; loadRecordData(); };
+        citySelect.addEventListener('change', citySelect._handler);
     }
-}
-
-function computeAllBestRecords(province, city, gender, year) {
-    const result = {};
-    for (let proj of PROJECT_LIST) {
-        const projCode = proj.code;
-        const allSingles = state.record.rawDataByProject[projCode]?.single || [];
-        const allAvgs = state.record.rawDataByProject[projCode]?.average || [];
-        // 只保留截至 year 年的记录
-        const singleList = allSingles.filter(item => {
-            const itemYear = item.date ? parseInt(item.date.split('-')[0]) : null;
-            return itemYear !== null && itemYear <= year;
-        });
-        const avgList = allAvgs.filter(item => {
-            const itemYear = item.date ? parseInt(item.date.split('-')[0]) : null;
-            return itemYear !== null && itemYear <= year;
-        });
-        const filterFn = (item) => {
-            if (item.province !== province) return false;
-            if (city !== '全部城市' && item.city !== city) return false;
-            if (gender !== 'all' && item.gender !== gender) return false;
-            return true;
-        };
-        const filteredSingle = singleList.filter(filterFn);
-        const filteredAvg = avgList.filter(filterFn);
-        let bestSingleVal = (projCode === '333mbf') ? -Infinity : Infinity;
-        let bestAvgVal = Infinity;
-        if (projCode === '333mbf') {
-            filteredSingle.forEach(item => {
-                const parsed = parseMBF(item.result);
-                if (!parsed) return;
-                const score = parsed.success - parsed.fail;
-                if (score > bestSingleVal) bestSingleVal = score;
-            });
-        } else {
-            filteredSingle.forEach(item => {
-                const val = parseTime(item.result);
-                if (val < bestSingleVal) bestSingleVal = val;
-            });
-            filteredAvg.forEach(item => {
-                const val = parseTime(item.result);
-                if (val < bestAvgVal) bestAvgVal = val;
-            });
-        }
-        const bestSingles = [];
-        const bestAvgs = [];
-        if (projCode === '333mbf') {
-            filteredSingle.forEach(item => {
-                const parsed = parseMBF(item.result);
-                if (parsed && (parsed.success - parsed.fail) === bestSingleVal) bestSingles.push(item);
-            });
-        } else {
-            filteredSingle.forEach(item => {
-                if (parseTime(item.result) === bestSingleVal) bestSingles.push(item);
-            });
-            filteredAvg.forEach(item => {
-                if (parseTime(item.result) === bestAvgVal) bestAvgs.push(item);
-            });
-        }
-        result[projCode] = { single: bestSingles, average: bestAvgs };
-    }
-    return result;
 }
 
 async function loadRecordData() {
     const tbody = document.getElementById('record-tbody');
     if (!tbody) return;
-    if (!state.record.dataLoaded) {
-        tbody.innerHTML = `.<td colspan="6" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}<\/td>`;
-        return;
-    }
     const province = state.record.province;
     const city = state.record.city;
     const gender = state.record.gender;
     const year = state.record.year;
+
+    // 更新当前信息显示
     document.getElementById('record-current-year').textContent = year;
     document.getElementById('record-current-province').textContent = province;
     let displayCity = (city === '全部城市') ? '全省' : city;
@@ -1199,40 +1083,112 @@ async function loadRecordData() {
     else if (gender === '女') genderText = '女';
     else if (gender === '未知') genderText = '未知';
     document.getElementById('record-current-gender').textContent = genderText;
+
     tbody.innerHTML = `.<td colspan="6" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}<span class="loading-dots"></span><\/td>`;
     await new Promise(resolve => setTimeout(resolve, 20));
-    const bestMap = computeAllBestRecords(province, city, gender, year);
+
+    // 按需加载数据：只加载当前省份和年份所需的数据
+    const cacheKey = `record_${province}_${city}_${gender}_${year}`;
+    if (recordCache.has(cacheKey)) {
+        renderRecordTable(recordCache.get(cacheKey), tbody);
+        return;
+    }
+
+    // 并行加载所有项目截至该年份的历史数据
+    const projectPromises = PROJECT_LIST.map(async proj => {
+        const code = proj.code;
+        try {
+            const data = await fetchHistoricalUpToYear(code, 'single', year);
+            return { code, data };
+        } catch (e) {
+            console.warn(`加载项目 ${code} 历史数据失败`, e);
+            return { code, data: [] };
+        }
+    });
+    const allProjectData = await Promise.all(projectPromises);
+    const bestMap = {};
+
+    // 计算每个项目的纪录
+    for (let { code, data } of allProjectData) {
+        // 过滤：省份、城市、性别
+        let filtered = data.filter(item => {
+            if (item.province !== province) return false;
+            if (city !== '全部城市' && item.city !== city) return false;
+            if (gender !== 'all' && item.gender !== gender) return false;
+            return true;
+        });
+        // 按成绩排序，取第一名
+        if (code === '333mbf') {
+            filtered.sort((a, b) => {
+                const aParsed = parseMBF(a.result);
+                const bParsed = parseMBF(b.result);
+                if (!aParsed && !bParsed) return 0;
+                if (!aParsed) return 1;
+                if (!bParsed) return -1;
+                const aScore = aParsed.success - aParsed.fail;
+                const bScore = bParsed.success - bParsed.fail;
+                if (aScore !== bScore) return bScore - aScore;
+                if (aParsed.timeSeconds !== bParsed.timeSeconds) return aParsed.timeSeconds - bParsed.timeSeconds;
+                return aParsed.fail - bParsed.fail;
+            });
+        } else {
+            filtered.sort((a, b) => parseTime(a.result) - parseTime(b.result));
+        }
+        const bestSingle = filtered[0] || null;
+        // 平均同理
+        let avgData = [];
+        try {
+            avgData = await fetchHistoricalUpToYear(code, 'average', year);
+        } catch (e) {}
+        let avgFiltered = avgData.filter(item => {
+            if (item.province !== province) return false;
+            if (city !== '全部城市' && item.city !== city) return false;
+            if (gender !== 'all' && item.gender !== gender) return false;
+            return true;
+        });
+        if (code === '333mbf') {
+            // 多盲平均处理同单次（实际上多盲没有平均，但这里统一用排序）
+            avgFiltered.sort((a, b) => {
+                const aParsed = parseMBF(a.result);
+                const bParsed = parseMBF(b.result);
+                if (!aParsed && !bParsed) return 0;
+                if (!aParsed) return 1;
+                if (!bParsed) return -1;
+                const aScore = aParsed.success - aParsed.fail;
+                const bScore = bParsed.success - bParsed.fail;
+                if (aScore !== bScore) return bScore - aScore;
+                if (aParsed.timeSeconds !== bParsed.timeSeconds) return aParsed.timeSeconds - bParsed.timeSeconds;
+                return aParsed.fail - bParsed.fail;
+            });
+        } else {
+            avgFiltered.sort((a, b) => parseTime(a.result) - parseTime(b.result));
+        }
+        const bestAvg = avgFiltered[0] || null;
+        bestMap[code] = { single: bestSingle, average: bestAvg };
+    }
+
+    recordCache.set(cacheKey, bestMap);
+    renderRecordTable(bestMap, tbody);
+}
+
+function renderRecordTable(bestMap, tbody) {
     let html = '';
     for (let proj of PROJECT_LIST) {
-        const projBest = bestMap[proj.code] || { single: [], average: [] };
-        const singleList = projBest.single;
-        const avgList = projBest.average;
+        const projBest = bestMap[proj.code] || { single: null, average: null };
         html += `<tr class="region-cell"><td colspan="6">${proj.name}<\/td><\/tr>`;
-        if (singleList.length === 0 && avgList.length === 0) {
+        if (!projBest.single && !projBest.average) {
             html += `.<td colspan="6" class="empty-cell">${__('record.no_record')}<\/td><\/tr>`;
         } else {
-            singleList.forEach(rec => {
+            if (projBest.single) {
+                const rec = projBest.single;
                 const displayName = extractChineseName(rec.name);
-                html += `<tr>
-                    <td><\/td>
-                    <td>${formatResult(rec.result)}<\/td>
-                    <td><\/td>
-                    <td>${displayName}<\/td>
-                    <td>${rec.competition || ''}<\/td>
-                    <td>${rec.date || ''}<\/td>
-                <\/tr>`;
-            });
-            avgList.forEach(rec => {
+                html += `.<td><\/td><td>${formatResult(rec.result)}<\/td><td><\/td><td>${displayName}<\/td><td>${rec.competition || ''}<\/td><td>${rec.date || ''}<\/td><\/tr>`;
+            }
+            if (projBest.average) {
+                const rec = projBest.average;
                 const displayName = extractChineseName(rec.name);
-                html += `<tr>
-                    <td><\/td>
-                    <td><\/td>
-                    <td>${formatResult(rec.result)}<\/td>
-                    <td>${displayName}<\/td>
-                    <td>${rec.competition || ''}<\/td>
-                    <td>${rec.date || ''}<\/td>
-                <\/tr>`;
-            });
+                html += `.<td><\/td><td><\/td><td>${formatResult(rec.result)}<\/td><td>${displayName}<\/td><td>${rec.competition || ''}<\/td><td>${rec.date || ''}<\/td><\/tr>`;
+            }
         }
     }
     tbody.innerHTML = html || `.<td colspan="6">${__('no_data')}<\/td><\/tr>`;

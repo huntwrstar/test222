@@ -93,16 +93,22 @@ function handleHash() {
 }
 
 // ==================== 年份选择辅助 ====================
+function getAvailableYears(project, type) {
+    const years = state.meta?.availableYears?.[project]?.[type] || [];
+    return years.filter(y => typeof y === 'number' && y >= 2007).sort((a,b)=>b-a);
+}
+
 async function loadYearOptions(pageKey, project) {
     const yearSelect = document.getElementById(`${pageKey}-year`);
     if (!yearSelect) return;
     const type = state[pageKey].type;
-    const years = state.meta?.availableYears?.[project]?.[type] || [];
-    const validYears = years.filter(y => typeof y === 'number').sort((a,b)=>b-a);
+    const validYears = getAvailableYears(project, type);
     if (validYears.length === 0) {
         yearSelect.innerHTML = '<option value="">无数据</option>';
+        yearSelect.disabled = true;
         return;
     }
+    yearSelect.disabled = false;
     let html = '';
     if (pageKey === 'active') {
         const maxStart = Math.max(...validYears) - 2;
@@ -128,14 +134,16 @@ async function loadYearOptions(pageKey, project) {
         yearSelect.value = defaultYear;
         state[pageKey].year = defaultYear;
     }
-    yearSelect.addEventListener('change', (e) => {
+    yearSelect.removeEventListener('change', yearSelect._handler);
+    yearSelect._handler = (e) => {
         const newYear = parseInt(e.target.value);
         if (!isNaN(newYear)) {
             state[pageKey].year = newYear;
             if (pageKey === 'season') loadRankingData('season', 'season');
             else if (pageKey === 'active') loadRankingData('active', 'active');
         }
-    });
+    };
+    yearSelect.addEventListener('change', yearSelect._handler);
 }
 
 // ==================== 通用加载函数 ====================
@@ -161,7 +169,7 @@ async function loadRankingData(pageKey, period) {
     } catch (e) {
         console.error(e);
         const tbody = document.getElementById(`${pageKey}-tbody`);
-        if (tbody) tbody.innerHTML = `<tr><td colspan="6">${__('loading_failed')}</td></tr>`;
+        if (tbody) tbody.innerHTML = `.<td colspan="6">${__('loading_failed')}<\/td>`;
     }
 }
 
@@ -256,12 +264,13 @@ async function loadRegionYearOptions() {
     if (!yearSelect) return;
     const project = state.region.project;
     const type = state.region.type;
-    const years = state.meta?.availableYears?.[project]?.[type] || [];
-    const validYears = years.filter(y => typeof y === 'number').sort((a,b)=>b-a);
+    const validYears = getAvailableYears(project, type);
     if (validYears.length === 0) {
         yearSelect.innerHTML = '<option value="">无数据</option>';
+        yearSelect.disabled = true;
         return;
     }
+    yearSelect.disabled = false;
     let html = '';
     if (state.region.period === 'active') {
         const maxStart = Math.max(...validYears) - 2;
@@ -290,13 +299,15 @@ async function loadRegionYearOptions() {
         yearSelect.innerHTML = '';
         return;
     }
-    yearSelect.addEventListener('change', (e) => {
+    yearSelect.removeEventListener('change', yearSelect._handler);
+    yearSelect._handler = (e) => {
         const newYear = parseInt(e.target.value);
         if (!isNaN(newYear)) {
             state.region.year = newYear;
             loadRegionData();
         }
-    });
+    };
+    yearSelect.addEventListener('change', yearSelect._handler);
 }
 
 function updateRegionYearVisibility() {
@@ -337,7 +348,7 @@ async function loadRegionData() {
     } catch (e) {
         console.error(e);
         const tbody = document.getElementById('region-tbody');
-        if (tbody) tbody.innerHTML = `<tr><td colspan="7">${__('loading_failed')}</td></tr>`;
+        if (tbody) tbody.innerHTML = `.<td colspan="7">${__('loading_failed')}<\/td>`;
     }
 }
 
@@ -401,12 +412,13 @@ async function loadRegionTopYearOptions() {
     if (!yearSelect) return;
     const project = state.regionTop.project;
     const type = state.regionTop.type;
-    const years = state.meta?.availableYears?.[project]?.[type] || [];
-    const validYears = years.filter(y => typeof y === 'number').sort((a,b)=>b-a);
+    const validYears = getAvailableYears(project, type);
     if (validYears.length === 0) {
         yearSelect.innerHTML = '<option value="">无数据</option>';
+        yearSelect.disabled = true;
         return;
     }
+    yearSelect.disabled = false;
     let html = '';
     if (state.regionTop.period === 'active') {
         const maxStart = Math.max(...validYears) - 2;
@@ -435,13 +447,15 @@ async function loadRegionTopYearOptions() {
         yearSelect.innerHTML = '';
         return;
     }
-    yearSelect.addEventListener('change', (e) => {
+    yearSelect.removeEventListener('change', yearSelect._handler);
+    yearSelect._handler = (e) => {
         const newYear = parseInt(e.target.value);
         if (!isNaN(newYear)) {
             state.regionTop.year = newYear;
             loadRegionTopData();
         }
-    });
+    };
+    yearSelect.addEventListener('change', yearSelect._handler);
 }
 
 function updateRegionTopYearVisibility() {
@@ -545,7 +559,7 @@ async function loadRegionTopData() {
         renderTable('regionTop', topList, project);
     } catch (e) {
         console.error(e);
-        document.getElementById('regionTop-tbody').innerHTML = `<tr><td colspan="7">${__('loading_failed')}</td></tr>`;
+        document.getElementById('regionTop-tbody').innerHTML = `.<td colspan="7">${__('loading_failed')}<\/td>`;
     }
 }
 
@@ -591,12 +605,13 @@ async function loadRegionCompYearOptions() {
     if (!yearSelect) return;
     const project = state.regionComp.selectedEvents[0] || '333';
     const type = state.regionComp.type;
-    const years = state.meta?.availableYears?.[project]?.[type] || [];
-    const validYears = years.filter(y => typeof y === 'number').sort((a,b)=>b-a);
+    const validYears = getAvailableYears(project, type);
     if (validYears.length === 0) {
         yearSelect.innerHTML = '<option value="">无数据</option>';
+        yearSelect.disabled = true;
         return;
     }
+    yearSelect.disabled = false;
     let html = '';
     if (state.regionComp.period === 'active') {
         const maxStart = Math.max(...validYears) - 2;
@@ -625,13 +640,15 @@ async function loadRegionCompYearOptions() {
         yearSelect.innerHTML = '';
         return;
     }
-    yearSelect.addEventListener('change', (e) => {
+    yearSelect.removeEventListener('change', yearSelect._handler);
+    yearSelect._handler = (e) => {
         const newYear = parseInt(e.target.value);
         if (!isNaN(newYear)) {
             state.regionComp.year = newYear;
             calculateRegionComp();
         }
-    });
+    };
+    yearSelect.addEventListener('change', yearSelect._handler);
 }
 
 function updateRegionCompYearVisibility() {
@@ -648,13 +665,13 @@ async function calculateRegionComp() {
     if (state.currentPage !== 'regionComp') return;
     const tbody = document.getElementById('regionComp-tbody');
     const paginationDiv = document.getElementById('regionComp-pagination');
-    if (tbody) tbody.innerHTML = `<tr><td colspan="5" class="loading-cell"><i class="fas fa-spinner"></i> ${__('comp.calculating')}</td></tr>`;
+    if (tbody) tbody.innerHTML = `.<td colspan="5" class="loading-cell"><i class="fas fa-spinner"></i> ${__('comp.calculating')}<\/td>`;
     if (paginationDiv) paginationDiv.innerHTML = '';
     await new Promise(resolve => setTimeout(resolve, 20));
     updateRegionCompCurrentLabel();
     const { dimension, selectedEvents, type, period, year } = state.regionComp;
     if (selectedEvents.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="5">${__('no_data')}</td></tr>`;
+        tbody.innerHTML = `.<td colspan="5">${__('no_data')}<\/td>`;
         return;
     }
     const projectDataMap = {};
@@ -663,7 +680,6 @@ async function calculateRegionComp() {
         try {
             let data = await fetchDataByPeriod(proj, type, period, period === 'historical' ? null : year);
             const ranked = recomputeRanks(data, proj);
-            // 按省份/城市聚合所有选手的排名，计算总排名和和人数
             const groupData = {};
             ranked.forEach(item => {
                 const key = dimension === 'province' ? item.province : `${item.province}|${item.city}`;
@@ -674,7 +690,6 @@ async function calculateRegionComp() {
                 groupData[key].totalRank += item.rank;
                 groupData[key].count++;
             });
-            // 存储每个项目的聚合数据
             if (!projectDataMap[proj]) projectDataMap[proj] = {};
             for (let key in groupData) {
                 projectDataMap[proj][key] = groupData[key];
@@ -700,9 +715,7 @@ async function calculateRegionComp() {
                 totalRank += projData.totalRank;
                 totalCount += projData.count;
             }
-            // 如果该项目在该地区没有选手，不参与排名（跳过）
         }
-        // 只有当至少有一个项目有选手时才计入排名
         if (totalCount > 0) {
             results.push({
                 groupKey: key,
@@ -713,7 +726,6 @@ async function calculateRegionComp() {
             });
         }
     }
-    // 按总排名和排序（越小越好）
     results.sort((a, b) => a.totalRank - b.totalRank);
     let rank = 1, sameCount = 0;
     const rankedResults = results.map((item, idx) => {
@@ -758,7 +770,7 @@ async function initComprehensive() {
     });
     document.getElementById('comp-dataset')?.addEventListener('change', async (e) => {
         state.comprehensive.subDataset = e.target.value;
-        await loadCompYearOptions();  // 重要：切换数据集时重新加载年份
+        await loadCompYearOptions();
         updateCompCurrentLabel();
         calculateComprehensive();
     });
@@ -794,7 +806,6 @@ async function loadCompYearOptions() {
     if (!yearSelect) return;
     const source = state.comprehensive.source;
     const subDataset = state.comprehensive.subDataset;
-    // 判断是否应显示年份下拉框
     let shouldShow = false;
     if (source === 'season' || source === 'active') {
         shouldShow = true;
@@ -807,17 +818,16 @@ async function loadCompYearOptions() {
     }
     yearSelect.style.display = 'flex';
 
-    // 获取第一个选中项目，用于获取可用年份
     const project = state.comprehensive.selectedEvents[0] || '333';
     const type = state.comprehensive.type;
-    const years = state.meta?.availableYears?.[project]?.[type] || [];
-    const validYears = years.filter(y => typeof y === 'number').sort((a,b)=>b-a);
+    const validYears = getAvailableYears(project, type);
     if (validYears.length === 0) {
         yearSelect.innerHTML = '<option value="">无数据</option>';
+        yearSelect.disabled = true;
         return;
     }
+    yearSelect.disabled = false;
     let html = '';
-    // 根据当前排名类型和子数据集决定年份范围
     if ((source === 'active') || (source === 'province' && subDataset === 'active')) {
         const maxStart = Math.max(...validYears) - 2;
         const minStart = Math.min(...validYears);
@@ -842,17 +852,18 @@ async function loadCompYearOptions() {
         yearSelect.value = defaultYear;
         state.comprehensive.year = defaultYear;
     } else {
-        // 其他情况（historical）隐藏下拉框
         yearSelect.style.display = 'none';
         return;
     }
-    yearSelect.addEventListener('change', (e) => {
+    yearSelect.removeEventListener('change', yearSelect._handler);
+    yearSelect._handler = (e) => {
         const newYear = parseInt(e.target.value);
         if (!isNaN(newYear)) {
             state.comprehensive.year = newYear;
             calculateComprehensive();
         }
-    });
+    };
+    yearSelect.addEventListener('change', yearSelect._handler);
 }
 
 async function calculateComprehensive() {
@@ -869,7 +880,7 @@ async function calculateComprehensive() {
     const { source, subDataset, scope, selectedEvents, gender, province, city, type, year } = state.comprehensive;
     if (selectedEvents.length === 0) {
         if (loadingDiv) loadingDiv.style.display = 'none';
-        if (tbody) tbody.innerHTML = `<tr><td colspan="5">${__('comp.select_events')}</td></tr>`;
+        if (tbody) tbody.innerHTML = `.<td colspan="5">${__('comp.select_events')}<\/td>`;
         return;
     }
     const projectDataMap = {};
@@ -880,8 +891,7 @@ async function calculateComprehensive() {
             let period = '';
             if (source === 'season') period = 'season';
             else if (source === 'active') period = 'active';
-            else period = subDataset; // historical / season / active
-            // 修正：只要 period 不是 historical，就传入年份
+            else period = subDataset;
             let data = await fetchDataByPeriod(proj, type, period, period !== 'historical' ? year : null);
             if (gender !== 'all') data = data.filter(d => d.gender === gender);
             if (source !== 'province') {
@@ -967,11 +977,11 @@ async function calculateComprehensive() {
 
 async function initRecord() {
     await loadMeta();
-    // 加载年份选项
+    // 加载年份选项（只显示有数据的年份，从2007年开始）
     const yearSelect = document.getElementById('record-year');
     if (yearSelect) {
         const allYears = state.meta?.availableYears?.['333']?.['single'] || [];
-        const validYears = allYears.filter(y => typeof y === 'number').sort((a,b)=>b-a);
+        const validYears = allYears.filter(y => typeof y === 'number' && y >= 2007).sort((a,b)=>b-a);
         if (validYears.length) {
             let html = '';
             validYears.forEach(y => { html += `<option value="${y}">${y}</option>`; });
@@ -983,15 +993,18 @@ async function initRecord() {
             }
             yearSelect.value = defaultYear;
             state.record.year = defaultYear;
-            yearSelect.addEventListener('change', (e) => {
+            yearSelect.removeEventListener('change', yearSelect._handler);
+            yearSelect._handler = (e) => {
                 state.record.year = parseInt(e.target.value);
                 loadRecordData();
-            });
+            };
+            yearSelect.addEventListener('change', yearSelect._handler);
         } else {
             yearSelect.innerHTML = '<option value="">无数据</option>';
         }
     }
 
+    // 加载省份下拉框
     if (!state.record.dataLoaded) await loadAllRecordsData();
     const provinceSelect = document.getElementById('record-province');
     if (provinceSelect && state.record.allProvinces.length) {
@@ -1006,6 +1019,7 @@ async function initRecord() {
     updateRecordCitySelect(state.record.province);
     const genderSelect = document.getElementById('record-gender');
     if (genderSelect) genderSelect.value = state.record.gender;
+
     provinceSelect?.addEventListener('change', (e) => {
         state.record.province = e.target.value;
         state.record.city = '全部城市';
@@ -1027,10 +1041,14 @@ async function loadAllRecordsData() {
         const code = proj.code;
         rawDataByProject[code] = { single: [], average: [] };
         try {
-            const single = await fetchAllHistorical(code, 'single');
-            const avg = await fetchAllHistorical(code, 'average');
-            rawDataByProject[code].single = single;
-            rawDataByProject[code].average = avg;
+            // 初始加载所有历史数据，后续根据年份过滤在 computeAllBestRecords 中处理
+            const allYears = state.meta?.availableYears?.[code]?.['single'] || [];
+            if (allYears.length) {
+                const single = await fetchRawData(code, 'single', allYears);
+                const avg = await fetchRawData(code, 'average', allYears);
+                rawDataByProject[code].single = single;
+                rawDataByProject[code].average = avg;
+            }
         } catch (e) {
             console.warn(`加载项目 ${code} 历史数据失败`, e);
         }
@@ -1103,13 +1121,16 @@ function computeAllBestRecords(province, city, gender, year) {
     const result = {};
     for (let proj of PROJECT_LIST) {
         const projCode = proj.code;
-        const singleList = (state.record.rawDataByProject[projCode]?.single || []).filter(item => {
+        const allSingles = state.record.rawDataByProject[projCode]?.single || [];
+        const allAvgs = state.record.rawDataByProject[projCode]?.average || [];
+        // 只保留截至 year 年的记录
+        const singleList = allSingles.filter(item => {
             const itemYear = item.date ? parseInt(item.date.split('-')[0]) : null;
-            return itemYear === year;
+            return itemYear !== null && itemYear <= year;
         });
-        const avgList = (state.record.rawDataByProject[projCode]?.average || []).filter(item => {
+        const avgList = allAvgs.filter(item => {
             const itemYear = item.date ? parseInt(item.date.split('-')[0]) : null;
-            return itemYear === year;
+            return itemYear !== null && itemYear <= year;
         });
         const filterFn = (item) => {
             if (item.province !== province) return false;
@@ -1162,7 +1183,7 @@ async function loadRecordData() {
     const tbody = document.getElementById('record-tbody');
     if (!tbody) return;
     if (!state.record.dataLoaded) {
-        tbody.innerHTML = `<tr><td colspan="6" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}</td></tr>`;
+        tbody.innerHTML = `.<td colspan="6" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}<\/td>`;
         return;
     }
     const province = state.record.province;
@@ -1178,7 +1199,7 @@ async function loadRecordData() {
     else if (gender === '女') genderText = '女';
     else if (gender === '未知') genderText = '未知';
     document.getElementById('record-current-gender').textContent = genderText;
-    tbody.innerHTML = `<tr><td colspan="6" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}<span class="loading-dots"></span></td></tr>`;
+    tbody.innerHTML = `.<td colspan="6" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}<span class="loading-dots"></span><\/td>`;
     await new Promise(resolve => setTimeout(resolve, 20));
     const bestMap = computeAllBestRecords(province, city, gender, year);
     let html = '';
@@ -1186,35 +1207,35 @@ async function loadRecordData() {
         const projBest = bestMap[proj.code] || { single: [], average: [] };
         const singleList = projBest.single;
         const avgList = projBest.average;
-        html += `<tr class="region-cell"><td colspan="6">${proj.name}</td></tr>`;
+        html += `<tr class="region-cell"><td colspan="6">${proj.name}<\/td><\/tr>`;
         if (singleList.length === 0 && avgList.length === 0) {
-            html += `<tr><td colspan="6" class="empty-cell">${__('record.no_record')}</td></tr>`;
+            html += `.<td colspan="6" class="empty-cell">${__('record.no_record')}<\/td><\/tr>`;
         } else {
             singleList.forEach(rec => {
                 const displayName = extractChineseName(rec.name);
                 html += `<tr>
-                    <td></td>
-                    <td>${formatResult(rec.result)}</td>
-                    <td></td>
-                    <td>${displayName}</td>
-                    <td>${rec.competition || ''}</td>
-                    <td>${rec.date || ''}</td>
-                </tr>`;
+                    <td><\/td>
+                    <td>${formatResult(rec.result)}<\/td>
+                    <td><\/td>
+                    <td>${displayName}<\/td>
+                    <td>${rec.competition || ''}<\/td>
+                    <td>${rec.date || ''}<\/td>
+                <\/tr>`;
             });
             avgList.forEach(rec => {
                 const displayName = extractChineseName(rec.name);
                 html += `<tr>
-                    <td></td>
-                    <td></td>
-                    <td>${formatResult(rec.result)}</td>
-                    <td>${displayName}</td>
-                    <td>${rec.competition || ''}</td>
-                    <td>${rec.date || ''}</td>
-                </tr>`;
+                    <td><\/td>
+                    <td><\/td>
+                    <td>${formatResult(rec.result)}<\/td>
+                    <td>${displayName}<\/td>
+                    <td>${rec.competition || ''}<\/td>
+                    <td>${rec.date || ''}<\/td>
+                <\/tr>`;
             });
         }
     }
-    tbody.innerHTML = html || `<tr><td colspan="6">${__('no_data')}</td></tr>`;
+    tbody.innerHTML = html || `.<td colspan="6">${__('no_data')}<\/td><\/tr>`;
 }
 
 // ==================== 辅助函数 ====================

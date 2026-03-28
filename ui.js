@@ -634,8 +634,13 @@ function toggleCompFilters(source) {
     if (datasetItem) datasetItem.classList.toggle('hidden', !isProvince);
     if (provinceItem) provinceItem.classList.toggle('hidden', !isProvince);
     if (cityItem) cityItem.classList.toggle('hidden', !isProvince);
-    // 年份选择只在 season 或 active 且不是 province 时显示
+    
+    // 年份显示条件：当 source 为 'season' 或 'active' 时显示
+    // 或者 source 为 'province' 且 subDataset 为 'season' 或 'active' 时显示
+    const subDataset = state.comprehensive.subDataset;
     if (!isProvince && (source === 'season' || source === 'active')) {
+        yearItem.style.display = 'flex';
+    } else if (isProvince && (subDataset === 'season' || subDataset === 'active')) {
         yearItem.style.display = 'flex';
     } else {
         yearItem.style.display = 'none';

@@ -82,6 +82,19 @@ async function fetchDataByPeriod(project, type, period, year = null) {
     return await fetchRawData(project, type, years);
 }
 
+/**
+ * 加载截至某年份的所有历史数据（用于省市纪录延续）
+ * @param {string} project
+ * @param {string} type
+ * @param {number} upToYear 截止年份
+ */
+async function fetchHistoricalUpToYear(project, type, upToYear) {
+    const allYears = state.meta?.availableYears?.[project]?.[type] || [];
+    const yearsToLoad = allYears.filter(y => typeof y === 'number' && y <= upToYear);
+    if (yearsToLoad.length === 0) return [];
+    return await fetchRawData(project, type, yearsToLoad);
+}
+
 // ==================== 成绩处理与排序 ====================
 function formatResultForSort(resultStr) {
     if (!resultStr || resultStr === 'DNF' || resultStr === '暂无') return Infinity;

@@ -1,0 +1,35 @@
+[
+  {
+    "wcaid": "2016WHIT16",
+    "name": "Jason White",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "4:07.76",
+    "competition": "Oregon State Leap Day 2020",
+    "date": "2020-02-29"
+  },
+  {
+    "wcaid": "2017HUGH04",
+    "name": "Lennon Hughes",
+    "gender": "男",
+    "country": "Australia",
+    "province": "",
+    "city": "",
+    "result": "3:58.82",
+    "competition": "Melbourne Summer 2020",
+    "date": "2020-01-25"
+  },
+  {
+    "wcaid": "2013ANIR01",
+    "name": "Hari Anirudh",
+    "gender": "男",
+    "country": "India",
+    "province": "",
+    "city": "",
+    "result": "3:36.42",
+    "competition": "Mémorial François Courtès - Un Temps pour Lui 2020",
+    "date": "2020-02-22"
+  }
+]

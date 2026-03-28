@@ -1,0 +1,46 @@
+[
+  {
+    "wcaid": "2004NOOR01",
+    "name": "Joël van Noort",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "1:04.32",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2005GREE02",
+    "name": "Peter Greenwood",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:56.85",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2004NOWI01",
+    "name": "Jarosław Nowicki",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "1:49.81",
+    "competition": "Polish Open 2005",
+    "date": "2005-09-18"
+  },
+  {
+    "wcaid": "2005DAYN01",
+    "name": "Nathaniel Day",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:21.96",
+    "competition": "Horace Mann Spring competition 2005",
+    "date": "2005-05-28"
+  }
+]

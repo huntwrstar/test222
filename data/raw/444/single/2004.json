@@ -1,0 +1,90 @@
+[
+  {
+    "wcaid": "2003JANS01",
+    "name": "Peter Jansen",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "1:48.78",
+    "competition": "German Open 2004",
+    "date": "2004-04-24"
+  },
+  {
+    "wcaid": "2004MCGA01",
+    "name": "Bill McGaugh",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:19.77",
+    "competition": "Caltech Fall competition 2004",
+    "date": "2004-10-16"
+  },
+  {
+    "wcaid": "2004OUYA01",
+    "name": "Derek Ouyang",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "6:09.44",
+    "competition": "Caltech Spring competition 2004",
+    "date": "2004-04-03"
+  },
+  {
+    "wcaid": "2003MORG01",
+    "name": "Brent Morgan",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:21.26",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2004HOLL01",
+    "name": "Trevor Holland",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:27.68",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2004GATE02",
+    "name": "Evan Gates",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:59.18",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2004CHEN01",
+    "name": "Bryan Cheng",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "4:30.82",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2003ZBOR01",
+    "name": "Wiktoria Zborowska",
+    "gender": "女",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "6:51.04",
+    "competition": "European Rubik's Games Championship 2004",
+    "date": "2004-08-07"
+  }
+]

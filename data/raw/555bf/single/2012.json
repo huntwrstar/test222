@@ -1,0 +1,112 @@
+[
+  {
+    "wcaid": "2009SHEP01",
+    "name": "Daniel Sheppard",
+    "gender": "男",
+    "country": "United Kingdom",
+    "province": "",
+    "city": "",
+    "result": "7:05.68",
+    "competition": "Rapid Dash Open 2012",
+    "date": "2012-04-14"
+  },
+  {
+    "wcaid": "2008WEST02",
+    "name": "Simon Westlund",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "16:59.00",
+    "competition": "Norwegian Championship 2012",
+    "date": "2012-02-18"
+  },
+  {
+    "wcaid": "2010LIAN06",
+    "name": "Zhizhe Liang (梁稚喆)",
+    "gender": "男",
+    "country": "China",
+    "province": "陕西",
+    "city": "西安",
+    "result": "12:20.00",
+    "competition": "Beijing Winter 2012",
+    "date": "2012-11-24"
+  },
+  {
+    "wcaid": "2011KOGL01",
+    "name": "Jakob Kogler",
+    "gender": "男",
+    "country": "Austria",
+    "province": "",
+    "city": "",
+    "result": "12:04.00",
+    "competition": "Hungarian Open 2012",
+    "date": "2012-09-08"
+  },
+  {
+    "wcaid": "2010KARY02",
+    "name": "Dmitry Karyakin",
+    "gender": "男",
+    "country": "Russia",
+    "province": "",
+    "city": "",
+    "result": "8:56.41",
+    "competition": "MPEI Open 2012",
+    "date": "2012-11-24"
+  },
+  {
+    "wcaid": "2011SARN01",
+    "name": "Dan Sarnelli",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "27:15.00",
+    "competition": "United States National Championships 2012",
+    "date": "2012-08-03"
+  },
+  {
+    "wcaid": "2011ZALE02",
+    "name": "Marcin Zalewski",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "13:20.00",
+    "competition": "Polish Nationals 2012",
+    "date": "2012-08-04"
+  },
+  {
+    "wcaid": "2005HSUA01",
+    "name": "Anthony Hsu",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "33:14.00",
+    "competition": "St. Joseph's College Summer 2012",
+    "date": "2012-08-18"
+  },
+  {
+    "wcaid": "2009LARK02",
+    "name": "Adam Lärkeryd",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "29:50.00",
+    "competition": "Swedish Championship 2012",
+    "date": "2012-10-06"
+  },
+  {
+    "wcaid": "2011SUOJ01",
+    "name": "Jinghui Suo (索晶辉)",
+    "gender": "男",
+    "country": "China",
+    "province": "内蒙古",
+    "city": "呼伦贝尔",
+    "result": "25:43.00",
+    "competition": "Beijing Winter 2012",
+    "date": "2012-11-24"
+  }
+]

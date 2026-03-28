@@ -1,0 +1,200 @@
+[
+  {
+    "wcaid": "2017SEMO02",
+    "name": "Marcos Ferreira Semolini",
+    "gender": "男",
+    "country": "Brazil",
+    "province": "",
+    "city": "",
+    "result": "7:10.97",
+    "competition": "Itapeva 2026",
+    "date": "2026-01-24"
+  },
+  {
+    "wcaid": "2019ECKE02",
+    "name": "Ryan Eckersley",
+    "gender": "男",
+    "country": "United Kingdom",
+    "province": "",
+    "city": "",
+    "result": "3:08.73",
+    "competition": "BL&D BLD Binningen 2026",
+    "date": "2026-02-28"
+  },
+  {
+    "wcaid": "2020DWOR01",
+    "name": "Kacper Paweł Dworak",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "20:30.00",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "date": "2026-01-02"
+  },
+  {
+    "wcaid": "2013GOOD01",
+    "name": "Daniel Goodman",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "15:35.00",
+    "competition": "Love is Blind UMBC 2026",
+    "date": "2026-02-15"
+  },
+  {
+    "wcaid": "2020MCDO01",
+    "name": "Jack McDougall",
+    "gender": "男",
+    "country": "New Zealand",
+    "province": "",
+    "city": "",
+    "result": "6:34.84",
+    "competition": "NZ North Island Championship 2026",
+    "date": "2026-02-27"
+  },
+  {
+    "wcaid": "2020ROUY01",
+    "name": "Rodolphe Rouyrre",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "13:29.00",
+    "competition": "Saucisse Vergèze au PBQ 2026",
+    "date": "2026-01-24"
+  },
+  {
+    "wcaid": "2024GESH01",
+    "name": "Ge Shi (石歌)",
+    "gender": "男",
+    "country": "China",
+    "province": "",
+    "city": "",
+    "result": "17:08.00",
+    "competition": "Singapore Championship 2026",
+    "date": "2026-02-20"
+  },
+  {
+    "wcaid": "2022ROGE05",
+    "name": "Eli Rogers",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "28:57.00",
+    "competition": "Multi Mayhem VA 2026",
+    "date": "2026-01-02"
+  },
+  {
+    "wcaid": "2019STOU02",
+    "name": "Ivo Stoutjesdijk",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "9:31.20",
+    "competition": "Leersum Open 2026",
+    "date": "2026-01-10"
+  },
+  {
+    "wcaid": "2024QIAO03",
+    "name": "Zaya Qiaolong (俏龙扎雅)",
+    "gender": "女",
+    "country": "China",
+    "province": "",
+    "city": "",
+    "result": "29:36.00",
+    "competition": "PBQ in Almaty 2026",
+    "date": "2026-01-17"
+  },
+  {
+    "wcaid": "2017LEMB02",
+    "name": "Mikus Lembergs",
+    "gender": "男",
+    "country": "Latvia",
+    "province": "",
+    "city": "",
+    "result": "15:17.00",
+    "competition": "PBQ Ropaži 2026",
+    "date": "2026-01-17"
+  },
+  {
+    "wcaid": "2015CLAU02",
+    "name": "Carson Claud",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "28:19.00",
+    "competition": "Spokane Winter PBQ 2026",
+    "date": "2026-01-24"
+  },
+  {
+    "wcaid": "2016MOOR07",
+    "name": "James Moore",
+    "gender": "男",
+    "country": "New Zealand",
+    "province": "",
+    "city": "",
+    "result": "16:42.00",
+    "competition": "Wellington Mind Games 2026",
+    "date": "2026-01-31"
+  },
+  {
+    "wcaid": "2015JUNV01",
+    "name": "Victor Tang Yao Jun (湯曜駿)",
+    "gender": "男",
+    "country": "China",
+    "province": "香港",
+    "city": "香港",
+    "result": "5:32.27",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "date": "2026-02-06"
+  },
+  {
+    "wcaid": "2018SEMO01",
+    "name": "Robinson Semolini",
+    "gender": "男",
+    "country": "Brazil",
+    "province": "",
+    "city": "",
+    "result": "30:43.00",
+    "competition": "Zoioff Campinas 2026",
+    "date": "2026-03-07"
+  },
+  {
+    "wcaid": "2019VILL03",
+    "name": "Brandon Villadolid",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "18:32.00",
+    "competition": "Empire State ALL11-Stars 2026",
+    "date": "2026-03-07"
+  },
+  {
+    "wcaid": "2018AZEV03",
+    "name": "Pedro Azevedo",
+    "gender": "男",
+    "country": "Portugal",
+    "province": "",
+    "city": "",
+    "result": "18:56.00",
+    "competition": "Blind in Aveiro 2026",
+    "date": "2026-03-14"
+  },
+  {
+    "wcaid": "2015PHOM01",
+    "name": "William Phommaha",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "7:29.51",
+    "competition": "Nanterre 2 Folie 2026",
+    "date": "2026-03-14"
+  }
+]

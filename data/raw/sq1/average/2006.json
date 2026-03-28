@@ -1,0 +1,112 @@
+[
+  {
+    "wcaid": "2005MILE01",
+    "name": "Tadeás Miler",
+    "gender": "男",
+    "country": "Czech Republic",
+    "province": "",
+    "city": "",
+    "result": "45.45",
+    "competition": "Czech Open 2006",
+    "date": "2006-07-23"
+  },
+  {
+    "wcaid": "2006KATA01",
+    "name": "Aya Kataoka (片岡彩)",
+    "gender": "女",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "1:55.03",
+    "competition": "Japanese Championship 2006",
+    "date": "2006-11-12"
+  },
+  {
+    "wcaid": "2003PATT01",
+    "name": "Richard Patterson",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "36.34",
+    "competition": "G-Wiz Fall competition 2006",
+    "date": "2006-10-21"
+  },
+  {
+    "wcaid": "2005TAKA02",
+    "name": "Syoji Takamatsu (高松唱司)",
+    "gender": "男",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "46.45",
+    "competition": "Rubik's Cube OGU Open 2006",
+    "date": "2006-10-28"
+  },
+  {
+    "wcaid": "2006OOKU02",
+    "name": "Tatsuya Ookubo (大久保達也)",
+    "gender": "男",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "47.14",
+    "competition": "Rubik's Cube OGU Open 2006",
+    "date": "2006-10-28"
+  },
+  {
+    "wcaid": "2005BOUC01",
+    "name": "Craig Bouchard",
+    "gender": "男",
+    "country": "Canada",
+    "province": "",
+    "city": "",
+    "result": "1:28.84",
+    "competition": "US Nationals 2006",
+    "date": "2006-08-04"
+  },
+  {
+    "wcaid": "2003HARD01",
+    "name": "Chris Hardwick",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:43.69",
+    "competition": "US Nationals 2006",
+    "date": "2006-08-04"
+  },
+  {
+    "wcaid": "2004JELI01",
+    "name": "Josef Jelínek",
+    "gender": "男",
+    "country": "Czech Republic",
+    "province": "",
+    "city": "",
+    "result": "47.31",
+    "competition": "German Open 2006",
+    "date": "2006-04-21"
+  },
+  {
+    "wcaid": "2005PROD01",
+    "name": "Mitko Prodanov",
+    "gender": "男",
+    "country": "Hungary",
+    "province": "",
+    "city": "",
+    "result": "5:42.65",
+    "competition": "German Open 2006",
+    "date": "2006-04-21"
+  },
+  {
+    "wcaid": "2004HERM01",
+    "name": "Daniel Hermansson",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "58.63",
+    "competition": "Swedish Cube Day competition 2006",
+    "date": "2006-12-03"
+  }
+]

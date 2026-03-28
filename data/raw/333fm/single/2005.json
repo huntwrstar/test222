@@ -1,0 +1,46 @@
+[
+  {
+    "wcaid": "2003GOLJ01",
+    "name": "Mirek Goljan",
+    "gender": "男",
+    "country": "Czech Republic",
+    "province": "",
+    "city": "",
+    "result": "28",
+    "competition": "Caltech Winter competition 2005",
+    "date": "2005-01-15"
+  },
+  {
+    "wcaid": "2003PATT01",
+    "name": "Richard Patterson",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "41",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2005THON01",
+    "name": "Jason Thong",
+    "gender": "男",
+    "country": "Canada",
+    "province": "",
+    "city": "",
+    "result": "46",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2003BABC01",
+    "name": "Peter Babcock",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "49",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  }
+]

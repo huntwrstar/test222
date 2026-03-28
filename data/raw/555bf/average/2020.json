@@ -1,0 +1,35 @@
+[
+  {
+    "wcaid": "2017MEYS02",
+    "name": "Cedric Meysing",
+    "gender": "男",
+    "country": "Germany",
+    "province": "",
+    "city": "",
+    "result": "12:52.00",
+    "competition": "Happy New Year Cubing Hoorn 2020",
+    "date": "2020-01-04"
+  },
+  {
+    "wcaid": "2003HARD01",
+    "name": "Chris Hardwick",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "18:47.00",
+    "competition": "Florida 2020",
+    "date": "2020-03-13"
+  },
+  {
+    "wcaid": "2015EWER01",
+    "name": "Helmer Ewert",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "20:50.00",
+    "competition": "Welcome Back Jönköping 2020",
+    "date": "2020-09-26"
+  }
+]

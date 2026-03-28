@@ -1,0 +1,57 @@
+[
+  {
+    "wcaid": "2003JANS01",
+    "name": "Peter Jansen",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "6:40.70",
+    "competition": "German Open 2004",
+    "date": "2004-04-24"
+  },
+  {
+    "wcaid": "2004JIAQ01",
+    "name": "Yin Jia Qiu",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "8:44.65",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2004BOUC01",
+    "name": "Charles Bouchart",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "3:57.30",
+    "competition": "Ile-de-France competition 2004",
+    "date": "2004-10-23"
+  },
+  {
+    "wcaid": "2004BORD01",
+    "name": "Bertrand Bordage",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "4:42.31",
+    "competition": "Ile-de-France competition 2004",
+    "date": "2004-10-23"
+  },
+  {
+    "wcaid": "2004FONT01",
+    "name": "Benoît Fontaine",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "8:24.08",
+    "competition": "Ile-de-France competition 2004",
+    "date": "2004-10-23"
+  }
+]

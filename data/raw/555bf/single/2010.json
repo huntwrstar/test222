@@ -1,0 +1,46 @@
+[
+  {
+    "wcaid": "2006GUZE01",
+    "name": "Rafał Guzewicz",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "13:50.00",
+    "competition": "Pabianice Open 2010",
+    "date": "2010-09-18"
+  },
+  {
+    "wcaid": "2008NIEL01",
+    "name": "Lars Vennike Nielsson",
+    "gender": "男",
+    "country": "Denmark",
+    "province": "",
+    "city": "",
+    "result": "14:44.00",
+    "competition": "Odense Open 2010",
+    "date": "2010-09-25"
+  },
+  {
+    "wcaid": "2009ANAM01",
+    "name": "Muhammad Iril Khairul Anam",
+    "gender": "男",
+    "country": "Indonesia",
+    "province": "",
+    "city": "",
+    "result": "12:49.00",
+    "competition": "Jakarta Ceria Open 2010",
+    "date": "2010-10-29"
+  },
+  {
+    "wcaid": "2009ADIW01",
+    "name": "Wicaksono Adi",
+    "gender": "男",
+    "country": "Indonesia",
+    "province": "",
+    "city": "",
+    "result": "36:12.00",
+    "competition": "Jakarta Ceria Open 2010",
+    "date": "2010-10-29"
+  }
+]

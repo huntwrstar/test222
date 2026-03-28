@@ -1,0 +1,134 @@
+[
+  {
+    "wcaid": "2003LEEJ01",
+    "name": "Jasmine Lee",
+    "gender": "女",
+    "country": "Australia",
+    "province": "",
+    "city": "",
+    "result": "22.68",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2003POCH01",
+    "name": "Stefan Pochmann",
+    "gender": "男",
+    "country": "Germany",
+    "province": "",
+    "city": "",
+    "result": "8.39",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2003HELT01",
+    "name": "Koen Heltzel",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "14.43",
+    "competition": "Dutch Open 2005",
+    "date": "2005-10-16"
+  },
+  {
+    "wcaid": "2004BECH01",
+    "name": "Michel Bechtatou",
+    "gender": "男",
+    "country": "Germany",
+    "province": "",
+    "city": "",
+    "result": "14.06",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2005WALT02",
+    "name": "Matt Walter",
+    "gender": "男",
+    "country": "Canada",
+    "province": "",
+    "city": "",
+    "result": "15.21",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2005PICO01",
+    "name": "Ben Picolo",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "16.22",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2005BOUC01",
+    "name": "Craig Bouchard",
+    "gender": "男",
+    "country": "Canada",
+    "province": "",
+    "city": "",
+    "result": "19.92",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2005RIVI01",
+    "name": "Maria Rivilis",
+    "gender": "女",
+    "country": "Germany",
+    "province": "",
+    "city": "",
+    "result": "29.06",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2004BOSS01",
+    "name": "Arjan Bosse",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "34.36",
+    "competition": "Dutch Open 2005",
+    "date": "2005-10-16"
+  },
+  {
+    "wcaid": "2005SPAD01",
+    "name": "Joe Spadafora",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "36.39",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2004PEDA01",
+    "name": "Sunil Pedapudi",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "54.56",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2004NOWI01",
+    "name": "Jarosław Nowicki",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "20.35",
+    "competition": "Polish Open 2005",
+    "date": "2005-09-18"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "wcaid": "2003BABC01",
+    "name": "Peter Babcock",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:34.85",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2003RUET01",
+    "name": "Jake Rueth",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:47.30",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2005GREE02",
+    "name": "Peter Greenwood",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:17.49",
+    "competition": "Rubik's World Championship 2005",
+    "date": "2005-11-05"
+  },
+  {
+    "wcaid": "2004NOWI01",
+    "name": "Jarosław Nowicki",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "1:10.95",
+    "competition": "Polish Open 2005",
+    "date": "2005-09-18"
+  }
+]

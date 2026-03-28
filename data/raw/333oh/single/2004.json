@@ -1,0 +1,178 @@
+[
+  {
+    "wcaid": "2003ALLE02",
+    "name": "Joe Allen",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "41.99",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2004JIAQ01",
+    "name": "Yin Jia Qiu",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "44.92",
+    "competition": "Caltech Fall competition 2004",
+    "date": "2004-10-16"
+  },
+  {
+    "wcaid": "2004KUMA01",
+    "name": "Rishi Kumar",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "34.32",
+    "competition": "Caltech Fall competition 2004",
+    "date": "2004-10-16"
+  },
+  {
+    "wcaid": "2004LIOU01",
+    "name": "Eric Liou",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:51.46",
+    "competition": "Caltech Spring competition 2004",
+    "date": "2004-04-03"
+  },
+  {
+    "wcaid": "2004KWAK01",
+    "name": "Eric Kwak",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:16.97",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2004GATE01",
+    "name": "Aren Gates",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "3:03.50",
+    "competition": "Caltech Spring competition 2004",
+    "date": "2004-04-03"
+  },
+  {
+    "wcaid": "2004OUYA01",
+    "name": "Derek Ouyang",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:45.87",
+    "competition": "Caltech Fall competition 2004",
+    "date": "2004-10-16"
+  },
+  {
+    "wcaid": "2004CHEN01",
+    "name": "Bryan Cheng",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "3:24.62",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2004REED01",
+    "name": "Doug Reed",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:08.06",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2003MORR02",
+    "name": "Jon Morris",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:24.76",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2004GATE02",
+    "name": "Evan Gates",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:36.95",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2004WANG01",
+    "name": "Richard Wang",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:49.47",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2004SEOJ01",
+    "name": "John Seo",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:33.95",
+    "competition": "Caltech Fall competition 2004",
+    "date": "2004-10-16"
+  },
+  {
+    "wcaid": "2004BOUC01",
+    "name": "Charles Bouchart",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "48.94",
+    "competition": "Ile-de-France competition 2004",
+    "date": "2004-10-23"
+  },
+  {
+    "wcaid": "2004BORD01",
+    "name": "Bertrand Bordage",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "1:02.18",
+    "competition": "Ile-de-France competition 2004",
+    "date": "2004-10-23"
+  },
+  {
+    "wcaid": "2004GIRE01",
+    "name": "Clément Gires",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "1:32.39",
+    "competition": "Ile-de-France competition 2004",
+    "date": "2004-10-23"
+  }
+]

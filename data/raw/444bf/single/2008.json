@@ -1,0 +1,24 @@
+[
+  {
+    "wcaid": "2008COOK01",
+    "name": "Alex Cook",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "8:19.16",
+    "competition": "US Nationals and Open 2008",
+    "date": "2008-07-19"
+  },
+  {
+    "wcaid": "2007KRIJ01",
+    "name": "Jacco Krijnen",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "36:16.00",
+    "competition": "Dutch Masters 2008",
+    "date": "2008-08-23"
+  }
+]

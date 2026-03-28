@@ -1,0 +1,134 @@
+[
+  {
+    "wcaid": "2014SCHO02",
+    "name": "Cale Schoon",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "5:00.63",
+    "competition": "Mental Breakdown Minnesota 2018",
+    "date": "2018-07-07"
+  },
+  {
+    "wcaid": "2005KOCZ01",
+    "name": "István Kocza",
+    "gender": "男",
+    "country": "Hungary",
+    "province": "",
+    "city": "",
+    "result": "12:31.00",
+    "competition": "Bratislava Mental Breakdown 2018",
+    "date": "2018-08-18"
+  },
+  {
+    "wcaid": "2008BERG04",
+    "name": "Mats Bergsten",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "15:22.00",
+    "competition": "Swedish Championship 2018",
+    "date": "2018-05-11"
+  },
+  {
+    "wcaid": "2015BUAT01",
+    "name": "Witali Bułatow",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "8:19.12",
+    "competition": "Polish Open 2018",
+    "date": "2018-12-08"
+  },
+  {
+    "wcaid": "2014BOYA01",
+    "name": "Mark Boyanowski",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "6:44.31",
+    "competition": "Please Be Quiet LA 2018",
+    "date": "2018-02-03"
+  },
+  {
+    "wcaid": "2009WANG62",
+    "name": "Yuxin Wang (王宇欣)",
+    "gender": "男",
+    "country": "China",
+    "province": "北京",
+    "city": "北京",
+    "result": "19:46.00",
+    "competition": "Beijing Open 2018",
+    "date": "2018-04-30"
+  },
+  {
+    "wcaid": "2007YUNQ01",
+    "name": "Yunqi Ouyang (欧阳韵奇)",
+    "gender": "男",
+    "country": "China",
+    "province": "上海",
+    "city": "上海",
+    "result": "21:45.00",
+    "competition": "Please Be Quiet Beijing 2018",
+    "date": "2018-06-30"
+  },
+  {
+    "wcaid": "2008CLEM01",
+    "name": "Kit Clement",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "31:11.00",
+    "competition": "Mental Breakdown Summer 2018",
+    "date": "2018-07-14"
+  },
+  {
+    "wcaid": "2014KOUL01",
+    "name": "Sukant Koul",
+    "gender": "男",
+    "country": "India",
+    "province": "",
+    "city": "",
+    "result": "14:00.00",
+    "competition": "Bengaluru Championship 2018",
+    "date": "2018-07-27"
+  },
+  {
+    "wcaid": "2016WHIT16",
+    "name": "Jason White",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "13:24.00",
+    "competition": "Skillcon 2018",
+    "date": "2018-12-14"
+  },
+  {
+    "wcaid": "2007HUGH01",
+    "name": "Mike Hughey",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "13:02.00",
+    "competition": "Flag City Fall 2018",
+    "date": "2018-10-20"
+  },
+  {
+    "wcaid": "2017WANY29",
+    "name": "Yifan Wang (王逸帆)",
+    "gender": "男",
+    "country": "China",
+    "province": "福建",
+    "city": "三明",
+    "result": "15:11.00",
+    "competition": "Hangzhou Open 2018",
+    "date": "2018-11-10"
+  }
+]

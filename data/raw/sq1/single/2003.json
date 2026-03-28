@@ -1,0 +1,24 @@
+[
+  {
+    "wcaid": "2003GOET01",
+    "name": "Jeff Goetz",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:42.12",
+    "competition": "World Rubik's Games Championship 2003",
+    "date": "2003-08-23"
+  },
+  {
+    "wcaid": "2003ATTA01",
+    "name": "Paul Attar",
+    "gender": "男",
+    "country": "Canada",
+    "province": "",
+    "city": "",
+    "result": "2:19.40",
+    "competition": "World Rubik's Games Championship 2003",
+    "date": "2003-08-23"
+  }
+]

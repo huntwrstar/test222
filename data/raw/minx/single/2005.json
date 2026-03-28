@@ -1,0 +1,35 @@
+[
+  {
+    "wcaid": "2004KODR01",
+    "name": "Stefan Kodrnja",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "6:17.54",
+    "competition": "Swedish Open 2005",
+    "date": "2005-09-10"
+  },
+  {
+    "wcaid": "2003MORR01",
+    "name": "Frank Morris",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "3:40.48",
+    "competition": "Caltech Dallas Summer competition 2005",
+    "date": "2005-08-13"
+  },
+  {
+    "wcaid": "2005BROW01",
+    "name": "Christopher Brownlee",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "6:52.16",
+    "competition": "Caltech Dallas Summer competition 2005",
+    "date": "2005-08-13"
+  }
+]

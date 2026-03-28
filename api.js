@@ -1,66 +1,101 @@
+// ==================== 基础请求与缓存 ====================
 async function fetchJSON(url) {
-    console.log(`开始加载: ${url}`);
-    if (state.cache[url]) {
-        console.log(`使用缓存: ${url}`);
-        return state.cache[url];
+    if (state.cache[url]) return state.cache[url];
+    try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        state.cache[url] = data;
+        return data;
+    } catch (e) {
+        console.error(`加载失败 ${url}:`, e);
+        throw e;
     }
-    const res = await fetch(url);
-    if (!res.ok) {
-        console.error(`加载失败: ${url} 状态码 ${res.status}`);
-        throw new Error(`加载失败: ${url}`);
-    }
-    const data = await res.json();
-    if (Array.isArray(data)) {
-        console.log(`加载成功: ${url} 共 ${data.length} 条记录`);
-        if (data.length > 0) {
-            console.log('第一条数据示例:', data[0]);
-        } else {
-            console.warn(`警告: ${url} 返回空数组`);
-        }
-        data.forEach(item => {
-            if (item.result === undefined || item.result === null) {
-                item.result = 'DNF';
-            }
-        });
-    } else {
-        console.log(`加载成功: ${url} (对象)`);
-    }
-    state.cache[url] = data; 
-    return data;
 }
 
+// ==================== 元数据加载 ====================
 async function loadMeta() {
     if (state.meta) return;
     try {
-        state.meta = await fetchJSON('data/meta.json');
-        if (!state.meta.country_continent) {
-            state.meta.country_continent = {};
-            console.warn('meta.json 缺少 country_continent 字段，将使用空映射，按洲筛选将无法工作');
-        }
-    } catch {
-        state.meta = { 
-            countries: [], 
-            country_continent: {} 
+        const meta = await fetchJSON('data/meta.json');
+        const provincesCities = await fetchJSON('data/provinces_cities.json');
+        const availableYears = await fetchJSON('data/available_years.json');
+        state.meta = { ...meta, provincesCities, availableYears };
+    } catch (e) {
+        console.error('加载元数据失败', e);
+        state.meta = {
+            countries: [],
+            country_continent: {},
+            provincesCities: { provinces: [], cities: {} },
+            availableYears: {}
         };
     }
 }
 
+// ==================== 原始数据加载（分片合并） ====================
+async function fetchRawData(project, type, years) {
+    const cacheKey = `raw_${project}_${type}_${years.join('_')}`;
+    if (state.cache[cacheKey]) return state.cache[cacheKey];
+
+    const basePath = `data/raw/${project}/${type}`;
+    const promises = years.map(async year => {
+        const url = `${basePath}/${year}.json`;
+        try {
+            return await fetchJSON(url);
+        } catch (e) {
+            console.warn(`加载失败 ${url}`, e);
+            return [];
+        }
+    });
+    const results = await Promise.all(promises);
+    const merged = results.flat();
+    state.cache[cacheKey] = merged;
+    return merged;
+}
+
+/**
+ * 加载某个项目在指定时期的数据，支持年份参数
+ * @param {string} project
+ * @param {string} type 'single'|'average'
+ * @param {string} period 'historical'|'season'|'active'
+ * @param {number|null} year 年份，用于 season 或 active
+ */
+async function fetchDataByPeriod(project, type, period, year = null) {
+    const currentYear = new Date().getFullYear();
+    let years = [];
+    if (period === 'historical') {
+        const allYears = state.meta?.availableYears?.[project]?.[type] || [];
+        years = allYears;
+        if (years.length === 0) years = ['unknown'];
+    } else if (period === 'season') {
+        const targetYear = year !== null ? year : currentYear;
+        years = [targetYear];
+    } else if (period === 'active') {
+        let startYear;
+        if (year !== null) {
+            startYear = year;
+        } else {
+            startYear = currentYear - 2;
+        }
+        years = [startYear, startYear + 1, startYear + 2];
+    }
+    return await fetchRawData(project, type, years);
+}
+
+// ==================== 成绩处理与排序 ====================
 function formatResultForSort(resultStr) {
-    if (resultStr === undefined || resultStr === null || resultStr === '') return Infinity;
-    if (resultStr === 'DNF' || resultStr === '暂无') return Infinity;
-    if (typeof resultStr === 'string' && resultStr.includes(':')) {
+    if (!resultStr || resultStr === 'DNF' || resultStr === '暂无') return Infinity;
+    if (resultStr.includes(':')) {
         const parts = resultStr.split(':');
         return parseFloat(parts[0]) * 60 + parseFloat(parts[1]);
     }
     return parseFloat(resultStr);
 }
 
-function parseTime(timeStr) {
-    return formatResultForSort(timeStr);
-}
+function parseTime(timeStr) { return formatResultForSort(timeStr); }
 
 function parseMBF(resultStr) {
-    if (!resultStr || resultStr === 'DNF' || resultStr === '暂无') return null;
+    if (!resultStr || resultStr === 'DNF') return null;
     const match = String(resultStr).match(/^(\d+)\/(\d+)\s+(\d+):(\d+(?:\.\d+)?)$/);
     if (!match) return null;
     const success = parseInt(match[1], 10);
@@ -74,127 +109,85 @@ function parseMBF(resultStr) {
 
 function formatResult(resultStr) {
     if (!resultStr || resultStr === 'DNF' || resultStr === '暂无') return '暂无';
-    if (typeof resultStr === 'string' && resultStr.includes('/') && resultStr.includes(':')) return resultStr;
-    if (/^\d+$/.test(String(resultStr).trim())) {
-        return resultStr;
-    }
-    if (typeof resultStr === 'string' && (resultStr.includes(':') || resultStr.includes('.')) && !/^\d+$/.test(resultStr)) {
-        return resultStr;
-    }
+    if (resultStr.includes('/') && resultStr.includes(':')) return resultStr;
+    if (/^\d+$/.test(String(resultStr).trim())) return resultStr;
+    if (resultStr.includes(':') || resultStr.includes('.')) return resultStr;
     const num = parseFloat(resultStr);
     if (isNaN(num) || num <= 0) return '暂无';
     const totalSeconds = num / 100;
     const minutes = Math.floor(totalSeconds / 60);
     const seconds = (totalSeconds % 60).toFixed(2);
-    if (minutes > 0) {
-        return `${minutes}:${seconds.padStart(5, '0')}`;
-    } else {
-        return seconds;
-    }
+    if (minutes > 0) return `${minutes}:${seconds.padStart(5, '0')}`;
+    else return seconds;
 }
 
 function extractChineseName(name) {
     if (name && name.includes('(') && name.includes(')')) {
         const match = name.match(/\(([^)]+)\)/);
-        if (match) {
-            const inside = match[1].trim();
-            if (/[\u4e00-\u9fa5]/.test(inside)) {
-                return inside;
-            }
-        }
+        if (match && /[\u4e00-\u9fa5]/.test(match[1])) return match[1];
     }
     return name;
 }
 
 function getDisplayName(item) {
     const name = item.name || '';
-    if (!state.currentLang.startsWith('zh')) {
-        return name;
-    }
+    if (!state.currentLang?.startsWith('zh')) return name;
     const isChinese = (item.country === 'China') || (item.province);
-    if (isChinese) {
-        return extractChineseName(name);
-    }
-    return name;
+    return isChinese ? extractChineseName(name) : name;
 }
 
 function deduplicateByBestAndDate(data, project) {
-    const map = new Map(); // wcaid -> best item
+    const map = new Map();
     data.forEach(item => {
         const id = item.wcaid;
         if (!id) return;
         const existing = map.get(id);
-        if (!existing) {
-            map.set(id, item);
-            return;
-        }
+        if (!existing) { map.set(id, item); return; }
 
         let isBetter = false;
         if (project === '333mbf') {
-            const currParsed = parseMBF(item.result);
-            const existParsed = parseMBF(existing.result);
-            if (!currParsed && !existParsed) return; 
-            if (!currParsed) return; 
-            if (!existParsed) { 
-                map.set(id, item);
-                return;
-            }
-            const currScore = currParsed.success - currParsed.fail;
-            const existScore = existParsed.success - existParsed.fail;
-            if (currScore > existScore) {
-                isBetter = true;
-            } else if (currScore === existScore) {
-                if (currParsed.timeSeconds < existParsed.timeSeconds) {
-                    isBetter = true;
-                } else if (currParsed.timeSeconds === existParsed.timeSeconds) {
-                    if (currParsed.fail < existParsed.fail) {
-                        isBetter = true;
-                    } else if (currParsed.fail === existParsed.fail) {
-
-                        if (item.date && existing.date && item.date < existing.date) {
-                            isBetter = true;
-                        } else if (!existing.date && item.date) {
-                            isBetter = true;
-                        }
-                    }
+            const curr = parseMBF(item.result);
+            const exist = parseMBF(existing.result);
+            if (!curr && !exist) return;
+            if (!curr) return;
+            if (!exist) { map.set(id, item); return; }
+            const currScore = curr.success - curr.fail;
+            const existScore = exist.success - exist.fail;
+            if (currScore > existScore) isBetter = true;
+            else if (currScore === existScore) {
+                if (curr.timeSeconds < exist.timeSeconds) isBetter = true;
+                else if (curr.timeSeconds === exist.timeSeconds && curr.fail < exist.fail) isBetter = true;
+                else if (curr.timeSeconds === exist.timeSeconds && curr.fail === exist.fail) {
+                    if (item.date && existing.date && item.date < existing.date) isBetter = true;
+                    else if (!existing.date && item.date) isBetter = true;
                 }
             }
         } else {
             const currVal = parseTime(item.result);
             const existVal = parseTime(existing.result);
-            if (currVal < existVal) {
-                isBetter = true;
-            } else if (currVal === existVal) {
-
-                if (item.date && existing.date && item.date < existing.date) {
-                    isBetter = true;
-                } else if (!existing.date && item.date) {
-                    isBetter = true;
-                }
+            if (currVal < existVal) isBetter = true;
+            else if (currVal === existVal) {
+                if (item.date && existing.date && item.date < existing.date) isBetter = true;
+                else if (!existing.date && item.date) isBetter = true;
             }
         }
-        if (isBetter) {
-            map.set(id, item);
-        }
+        if (isBetter) map.set(id, item);
     });
     return Array.from(map.values());
 }
 
 function recomputeRanks(data, project) {
     data = data.filter(item => item && item.result !== undefined);
-    
     if (project === '333mbf') {
         data.sort((a, b) => {
             const aParsed = parseMBF(a.result);
             const bParsed = parseMBF(b.result);
-            const aValid = aParsed !== null;
-            const bValid = bParsed !== null;
-            if (!aValid && !bValid) return 0;
-            if (!aValid) return 1;      
-            if (!bValid) return -1;
+            if (!aParsed && !bParsed) return 0;
+            if (!aParsed) return 1;
+            if (!bParsed) return -1;
             const aScore = aParsed.success - aParsed.fail;
             const bScore = bParsed.success - bParsed.fail;
-            if (aScore !== bScore) return bScore - aScore;   
+            if (aScore !== bScore) return bScore - aScore;
             if (aParsed.timeSeconds !== bParsed.timeSeconds) return aParsed.timeSeconds - bParsed.timeSeconds;
             return aParsed.fail - bParsed.fail;
         });
@@ -202,33 +195,24 @@ function recomputeRanks(data, project) {
         data.sort((a, b) => parseTime(a.result) - parseTime(b.result));
     }
 
-    let rank = 1;
-    let sameCount = 0;
+    let rank = 1, sameCount = 0;
     for (let i = 0; i < data.length; i++) {
         const item = data[i];
-        if (i === 0) {
-            item.rank = rank;
-            continue;
-        }
+        if (i === 0) { item.rank = rank; continue; }
         let isSame = false;
         if (project === '333mbf') {
-            const prevParsed = parseMBF(data[i-1].result);
-            const currParsed = parseMBF(item.result);
-            if (prevParsed && currParsed) {
-                const prevScore = prevParsed.success - prevParsed.fail;
-                const currScore = currParsed.success - currParsed.fail;
+            const prev = parseMBF(data[i-1].result);
+            const curr = parseMBF(item.result);
+            if (prev && curr) {
+                const prevScore = prev.success - prev.fail;
+                const currScore = curr.success - curr.fail;
                 isSame = (prevScore === currScore) &&
-                         (prevParsed.timeSeconds === currParsed.timeSeconds) &&
-                         (prevParsed.fail === currParsed.fail);
-            } else if (!prevParsed && !currParsed) {
-                isSame = true;   
-            } else {
-                isSame = false;
-            }
+                         (prev.timeSeconds === curr.timeSeconds) &&
+                         (prev.fail === curr.fail);
+            } else if (!prev && !curr) isSame = true;
         } else {
             isSame = (item.result === data[i-1].result);
         }
-
         if (isSame) {
             sameCount++;
             item.rank = rank;

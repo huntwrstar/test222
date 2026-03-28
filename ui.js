@@ -1,57 +1,33 @@
+// ==================== 页面渲染 ====================
 function renderHome() {
     return `
         <div style="text-align: center; margin: 50px 0;">
             <h3 class="home-title"><span>探索未来，</span><span>未来已来。</span></h3>
         </div>
-        <!-- 横幅轮播：按钮在边框外部 -->
         <div class="banner-wrapper">
             <button class="banner-prev">❮</button>
             <div class="banner-container">
                 <div class="banner-slides">
-                    <a href="https://example.com/1" target="_blank"><img src="images/banner1.jpg" alt="banner1"></a>
-                    <a href="https://example.com/2" target="_blank"><img src="images/banner2.jpg" alt="banner2"></a>
-                    <a href="https://example.com/3" target="_blank"><img src="images/banner3.jpg" alt="banner3"></a>
+                    <a href="https://cubing.pro/welcome" target="_blank"><img src="images/banner1.jpg" alt="banner1"></a>
+                    <a href="https://rktimer.com" target="_blank"><img src="images/banner2.jpg" alt="banner2"></a>
+                    <a href="https://xcubing.cn" target="_blank"><img src="images/banner3.jpg" alt="banner3"></a>
                 </div>
             </div>
             <button class="banner-next">❯</button>
         </div>
         <div class="announcement-list">
-        <div class="announcement-list">
             <div class="announcement">
                 <h3>更新公告</h3>
                 <div class="announcement-card"><p>更新内容如下：<p>
 <p>1.新增省市榜首排名<p>
-<p>-在省市榜首排名中，您可以看到每个省份/城市排名第一的选手的排名；<p>
 <p>2.新增省市综合排名<p>
-<p>-在省市综合排名中，您可以自由组合项目计算每个省份/城市的综合实力进行排名；<p>
 <p>3.完善一些细节<p>
 <p>2026-03-19<p>
                 </div>
             </div>
-        <div class="announcement-list">
-            <div class="announcement">
-                <h3>更新公告</h3>
-                <div class="announcement-card"><p>根据最近几天大家的反馈，本次更新内容如下：<p>
-<p>1.更改部分排名榜单的定义<p>
-<p>2.修复部分已知bug<p>
-<p>3.开放选手省份城市更改<p>
-<p>4.添加反馈页<p>
-<p>-通过该页面可直接提交对网站的意见反馈或选手省市信息更改申请。<p>
-<p>（反馈入口可在页面右下角找到）<p>
-欢迎大家积极反馈，一起完善小破站。
-<p>2026-03-08<p>
-                </div>
-            </div>
-        <div class="announcement-list">
             <div class="announcement">
                 <h3>关于省市信息</h3>
                 <div class="announcement-card"><p>2018年5月粗饼网取消选手所在城市显示，由于现在已无法从粗饼网获取选手城市，故2018年5月之后参加WCA比赛的选手在本站被作者归入了不存在的神手谷。<p>目前使用的选手省市信息源自魔友赵吉波在取消前爬取的数据，非常感谢前辈留下的数据！<p>
-                </div>
-            </div>
-            <div class="announcement">
-                <h3>${__('announcement.launch.title')}</h3>
-                <div class="announcement-card">
-                    <p>${__('announcement.launch.content')}</p>
                 </div>
             </div>
         </div>
@@ -70,6 +46,10 @@ function renderSeason() {
                 <select id="season-scope"></select>
             </div>
             <div class="filter-item">
+                <label>${__('filter.year')}</label>
+                <select id="season-year"></select>
+            </div>
+            <div class="filter-item">
                 <label>${__('filter.project')}</label>
                 <select id="season-project">${projectOptions()}</select>
             </div>
@@ -83,7 +63,7 @@ function renderSeason() {
             </div>
         </div>
         <div class="current-info">
-            <h3><i class="fa fa-info-circle"></i> ${__('current.season')} - <span id="season-current-project">${getProjectName(state.season.project)}</span> - <span id="season-current-type">${__('btn.single')}</span></h3>
+            <h3><i class="fa fa-info-circle"></i> ${__('current.season')} - <span id="season-current-project">${getProjectName(state.season.project)}</span> - <span id="season-current-year"></span> - <span id="season-current-type">${__('btn.single')}</span></h3>
         </div>
         <div class="table-container">
             <table id="season-table">
@@ -116,6 +96,10 @@ function renderActive() {
                 <select id="active-scope"></select>
             </div>
             <div class="filter-item">
+                <label>${__('filter.start_year')}</label>
+                <select id="active-year"></select>
+            </div>
+            <div class="filter-item">
                 <label>${__('filter.project')}</label>
                 <select id="active-project">${projectOptions()}</select>
             </div>
@@ -129,7 +113,7 @@ function renderActive() {
             </div>
         </div>
         <div class="current-info">
-            <h3><i class="fa fa-info-circle"></i> ${__('current.active')} - <span id="active-current-project">${getProjectName(state.active.project)}</span> - <span id="active-current-type">${__('btn.single')}</span></h3>
+            <h3><i class="fa fa-info-circle"></i> ${__('current.active')} - <span id="active-current-project">${getProjectName(state.active.project)}</span> - <span id="active-current-year-range"></span> - <span id="active-current-type">${__('btn.single')}</span></h3>
         </div>
         <div class="table-container">
             <table id="active-table">
@@ -165,6 +149,10 @@ function renderRegion() {
                     <label><input type="radio" name="region-period" value="active"> ${__('current.active')}</label>
                 </div>
             </div>
+            <div class="filter-item" id="region-year-item" style="display:none;">
+                <label>${__('filter.year')}</label>
+                <select id="region-year"></select>
+            </div>
             <div class="filter-item">
                 <label>${__('filter.province')}</label>
                 <select id="region-province"></select>
@@ -187,7 +175,7 @@ function renderRegion() {
             </div>
         </div>
         <div class="current-info">
-            <h3><i class="fa fa-info-circle"></i> ${__('current.region')} - <span id="region-current-project">${getProjectName(state.region.project)}</span> - <span id="region-current-type">${__('btn.single')}</span> <span id="region-current-period">${__('current.historical')}</span></h3>
+            <h3><i class="fa fa-info-circle"></i> ${__('current.region')} - <span id="region-current-project">${getProjectName(state.region.project)}</span> - <span id="region-current-type">${__('btn.single')}</span> <span id="region-current-period">${__('current.historical')}</span> <span id="region-current-year"></span></h3>
         </div>
         <div class="table-container">
             <table id="region-table">
@@ -230,6 +218,10 @@ function renderRegionTop() {
                     <label><input type="radio" name="regionTop-period" value="season"> ${__('current.season')}</label>
                     <label><input type="radio" name="regionTop-period" value="active"> ${__('current.active')}</label>
                 </div>
+            </div>
+            <div class="filter-item" id="regionTop-year-item" style="display:none;">
+                <label>${__('filter.year')}</label>
+                <select id="regionTop-year"></select>
             </div>
             <div class="filter-item">
                 <label>${__('filter.project')}</label>
@@ -290,6 +282,10 @@ function renderRegionComp() {
                     <label><input type="radio" name="regionComp-period" value="active" ${state.regionComp.period === 'active' ? 'checked' : ''}> ${__('current.active')}</label>
                 </div>
             </div>
+            <div class="filter-item" id="regionComp-year-item" style="display:none;">
+                <label>${__('filter.year')}</label>
+                <select id="regionComp-year"></select>
+            </div>
             <div style="margin-bottom: 15px; width:100%;">
                 <label style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #6c757d; margin-bottom: 5px; display: block;">${__('comp.select_events')}</label>
                 <div class="project-tag-group" id="regionComp-project-tags"></div>
@@ -308,8 +304,8 @@ function renderRegionComp() {
                     <tr>
                         <th>${__('table.rank')}</th>
                         <th>${dimension === 'province' ? __('dimension.province') : __('dimension.city')}</th>
-                        ${dimension === 'city' ? `<th>${__('dimension.city')}</th>` : ''}
-                        <th>${__('table.events_count')}</th>
+                        ${dimension === 'city' ? `<th>${__('table.province')}</th>` : ''}
+                        <th>${__('table.participants')}</th>
                         <th>${__('table.total_rank')}</th>
                     </tr>
                 </thead>
@@ -338,6 +334,10 @@ function renderComprehensive() {
                     <option value="active">${__('nav.active')}</option>
                     <option value="province">${__('nav.region')}</option>
                 </select>
+            </div>
+            <div class="filter-item" id="comp-year-item" style="display:none;">
+                <label>${__('filter.year')}</label>
+                <select id="comp-year"></select>
             </div>
             <div class="filter-item" id="comp-scope-item">
                 <label>${__('filter.region')}</label>
@@ -392,6 +392,10 @@ function renderRecord() {
         <div class="page-subtitle">${__('record.subtitle')}</div>
         <div class="filter-section">
             <div class="filter-item">
+                <label>${__('filter.year')}</label>
+                <select id="record-year"></select>
+            </div>
+            <div class="filter-item">
                 <label>${__('filter.province')}</label>
                 <select id="record-province"></select>
             </div>
@@ -413,7 +417,7 @@ function renderRecord() {
             </div>
         </div>
         <div class="current-info">
-            <h3><i class="fa fa-map-marker-alt"></i> ${__('current.region')} - <span id="record-current-province">北京</span> · <span id="record-current-city">${__('all_cities')}</span> · <span id="record-current-gender">${__('gender.all')}</span></h3>
+            <h3><i class="fa fa-map-marker-alt"></i> ${__('current.region')} - <span id="record-current-year"></span> · <span id="record-current-province">北京</span> · <span id="record-current-city">${__('all_cities')}</span> · <span id="record-current-gender">${__('gender.all')}</span></h3>
         </div>
         <div class="table-container">
             <table id="record-table">
@@ -435,6 +439,7 @@ function renderRecord() {
     `;
 }
 
+// ==================== 辅助渲染函数 ====================
 function projectOptions() {
     return PROJECT_LIST.map(p => `<option value="${p.code}">${__('project.' + p.code)}</option>`).join('');
 }
@@ -450,21 +455,15 @@ function getProjectName(code) {
 function showPageLoading(page) {
     const tbody = document.getElementById(`${page}-tbody`);
     if (!tbody) return;
-    let colspan = 6; 
-    if (page === 'region') {
-        colspan = 7;
-    } else if (page === 'season' || page === 'active') {
-        colspan = 6;
-    } else if (page === 'regionTop') {
-        colspan = 7;
-    } else if (page === 'regionComp') {
-        colspan = 5;
-    } else if (page === 'comprehensive') {
+    let colspan = 6;
+    if (page === 'region') colspan = 7;
+    else if (page === 'season' || page === 'active') colspan = 6;
+    else if (page === 'regionTop') colspan = 7;
+    else if (page === 'regionComp') colspan = 5;
+    else if (page === 'comprehensive') {
         const source = state.comprehensive.source;
         colspan = source === 'province' ? 6 : 5;
-    } else if (page === 'record') {
-        colspan = 6;
-    }
+    } else if (page === 'record') colspan = 6;
     tbody.innerHTML = `<tr><td colspan="${colspan}" class="loading-cell"><i class="fas fa-spinner"></i> ${__('loading')}<span class="loading-dots"></span></td></tr>`;
 }
 
@@ -630,10 +629,17 @@ function toggleCompFilters(source) {
     const datasetItem = document.getElementById('comp-dataset-item');
     const provinceItem = document.getElementById('comp-province-item');
     const cityItem = document.getElementById('comp-city-item');
+    const yearItem = document.getElementById('comp-year-item');
     if (scopeItem) scopeItem.classList.toggle('hidden', isProvince);
     if (datasetItem) datasetItem.classList.toggle('hidden', !isProvince);
     if (provinceItem) provinceItem.classList.toggle('hidden', !isProvince);
     if (cityItem) cityItem.classList.toggle('hidden', !isProvince);
+    // 年份选择只在 season 或 active 且不是 province 时显示
+    if (!isProvince && (source === 'season' || source === 'active')) {
+        yearItem.style.display = 'flex';
+    } else {
+        yearItem.style.display = 'none';
+    }
 }
 
 function updateCompCurrentLabel() {
@@ -672,7 +678,7 @@ function renderRegionCompProjectTags() {
             }
             state.regionComp.selectedEvents = selected;
             renderRegionCompProjectTags();
-            updateRegionCompCurrentLabel(); // 只更新标签，不清空表格
+            updateRegionCompCurrentLabel();
         });
     });
 }
@@ -685,7 +691,10 @@ function updateRegionCompCurrentLabel() {
     if (period === 'historical') periodText = __('current.historical');
     else if (period === 'season') periodText = __('current.season');
     else periodText = __('current.active');
-    document.getElementById('regionComp-current').innerText = `${dim} · ${periodText} · ${type} · ${state.regionComp.selectedEvents.length} ${__('table.event')}`;
+    let yearText = '';
+    if (period === 'season' && state.regionComp.year) yearText = ` · ${state.regionComp.year}`;
+    if (period === 'active' && state.regionComp.year) yearText = ` · ${state.regionComp.year}-${state.regionComp.year+2}`;
+    document.getElementById('regionComp-current').innerText = `${dim} · ${periodText}${yearText} · ${type} · ${state.regionComp.selectedEvents.length} ${__('table.event')}`;
 }
 
 function renderRegionCompTable(data) {
@@ -721,15 +730,15 @@ function renderRegionCompTableBody(tbody, data) {
             html += `<tr>
                 <td class="rank-cell">${item.displayRank}</td>
                 <td>${item.province}</td>
-                <td>${item.eventCount}</td>
+                <td>${item.totalCount}</td>
                 <td>${item.totalRank}</td>
             </tr>`;
         } else {
             html += `<tr>
                 <td class="rank-cell">${item.displayRank}</td>
+                <td>${item.city}</td>
                 <td>${item.province}</td>
-                <td>${item.city || ''}</td>
-                <td>${item.eventCount}</td>
+                <td>${item.totalCount}</td>
                 <td>${item.totalRank}</td>
             </tr>`;
         }

@@ -1,0 +1,46 @@
+[
+  {
+    "wcaid": "2006BITE01",
+    "name": "Niklas Bitén",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "4:38.80",
+    "competition": "Swedish Cube Day competition 2007",
+    "date": "2007-12-15"
+  },
+  {
+    "wcaid": "2004LOLE01",
+    "name": "Leyan Lo",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:35.74",
+    "competition": "US Open 2007",
+    "date": "2007-06-16"
+  },
+  {
+    "wcaid": "2006KIMB01",
+    "name": "Brian Kim",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "3:39.69",
+    "competition": "Caltech Winter competition 2007",
+    "date": "2007-01-13"
+  },
+  {
+    "wcaid": "2005LODA01",
+    "name": "Daniel Lo",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:41.71",
+    "competition": "San Diego competition 2007",
+    "date": "2007-05-26"
+  }
+]

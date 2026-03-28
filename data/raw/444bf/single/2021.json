@@ -1,0 +1,112 @@
+[
+  {
+    "wcaid": "2015PANE01",
+    "name": "Ethan Pan",
+    "gender": "男",
+    "country": "New Zealand",
+    "province": "",
+    "city": "",
+    "result": "5:08.60",
+    "competition": "Wellington Mind Games 2021",
+    "date": "2021-02-06"
+  },
+  {
+    "wcaid": "2020TAYL02",
+    "name": "Alex Taylor",
+    "gender": "男",
+    "country": "New Zealand",
+    "province": "",
+    "city": "",
+    "result": "6:25.51",
+    "competition": "A New Year in Auckland 2021",
+    "date": "2021-01-08"
+  },
+  {
+    "wcaid": "2016STAN05",
+    "name": "Tom Stanton-Barnett",
+    "gender": "男",
+    "country": "New Zealand",
+    "province": "",
+    "city": "",
+    "result": "22:33.00",
+    "competition": "A New Year in Auckland 2021",
+    "date": "2021-01-08"
+  },
+  {
+    "wcaid": "2019DING02",
+    "name": "Yinhao Ding",
+    "gender": "男",
+    "country": "Australia",
+    "province": "",
+    "city": "",
+    "result": "6:52.05",
+    "competition": "Please Be Quiet Brisbane 2021",
+    "date": "2021-04-10"
+  },
+  {
+    "wcaid": "2017SIER01",
+    "name": "Sam Sieracki",
+    "gender": "男",
+    "country": "Australia",
+    "province": "",
+    "city": "",
+    "result": "43:27.00",
+    "competition": "WA State Championship 2021",
+    "date": "2021-07-17"
+  },
+  {
+    "wcaid": "2018HEAT01",
+    "name": "Luke Heath-Edwards",
+    "gender": "男",
+    "country": "New Zealand",
+    "province": "",
+    "city": "",
+    "result": "14:54.00",
+    "competition": "NZ North Island Championship 2021",
+    "date": "2021-08-13"
+  },
+  {
+    "wcaid": "2021OBAR01",
+    "name": "Dominik Obara",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "9:33.00",
+    "competition": "Szansa Cubing Open Warsaw 2021",
+    "date": "2021-09-11"
+  },
+  {
+    "wcaid": "2018CONN04",
+    "name": "Edward Connell",
+    "gender": "男",
+    "country": "Ireland",
+    "province": "",
+    "city": "",
+    "result": "19:01.00",
+    "competition": "Norwegian Championship 2021",
+    "date": "2021-11-12"
+  },
+  {
+    "wcaid": "2018ZOUX03",
+    "name": "Xieben Zou",
+    "gender": "男",
+    "country": "China",
+    "province": "",
+    "city": "",
+    "result": "11:24.00",
+    "competition": "German Side Events 2021",
+    "date": "2021-11-20"
+  },
+  {
+    "wcaid": "2017LOWM01",
+    "name": "Matthew Low",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "12:16.00",
+    "competition": "CubingUSA Western Championship 2021",
+    "date": "2021-11-26"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "wcaid": "2012STRA02",
+    "name": "Roman Strakhov",
+    "gender": "男",
+    "country": "Russia",
+    "province": "",
+    "city": "",
+    "result": "5:49.77",
+    "competition": "Spring in Vitebsk 2017",
+    "date": "2017-03-25"
+  },
+  {
+    "wcaid": "2014HANJ02",
+    "name": "Jiachi Han (韩佳池)",
+    "gender": "男",
+    "country": "China",
+    "province": "辽宁",
+    "city": "沈阳",
+    "result": "19:27.00",
+    "competition": "Beijing Open 2017",
+    "date": "2017-06-24"
+  },
+  {
+    "wcaid": "2011GRIT01",
+    "name": "Oleg Gritsenko",
+    "gender": "男",
+    "country": "Russia",
+    "province": "",
+    "city": "",
+    "result": "9:15.79",
+    "competition": "Swiss Open 2017",
+    "date": "2017-07-21"
+  },
+  {
+    "wcaid": "2013APAZ01",
+    "name": "Yehude Rudy Canaza Apaza",
+    "gender": "男",
+    "country": "Peru",
+    "province": "",
+    "city": "",
+    "result": "16:43.00",
+    "competition": "Univalle Spring 2017",
+    "date": "2017-08-12"
+  },
+  {
+    "wcaid": "2015BAOW01",
+    "name": "Weina Bao (鲍伟娜)",
+    "gender": "女",
+    "country": "China",
+    "province": "黑龙江",
+    "city": "绥化",
+    "result": "17:54.00",
+    "competition": "Hefei Open 2017",
+    "date": "2017-10-05"
+  },
+  {
+    "wcaid": "2010SHIX01",
+    "name": "Xin Shi (石欣)",
+    "gender": "男",
+    "country": "China",
+    "province": "湖北",
+    "city": "武汉",
+    "result": "8:40.53",
+    "competition": "Hefei Open 2017",
+    "date": "2017-10-05"
+  }
+]

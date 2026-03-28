@@ -1,0 +1,68 @@
+[
+  {
+    "wcaid": "2007HUGH01",
+    "name": "Mike Hughey",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "6:37.86",
+    "competition": "World Rubik's Cube Championship 2013",
+    "date": "2013-07-26"
+  },
+  {
+    "wcaid": "2010DAVI06",
+    "name": "Julian David",
+    "gender": "男",
+    "country": "Canada",
+    "province": "",
+    "city": "",
+    "result": "5:33.97",
+    "competition": "World Rubik's Cube Championship 2013",
+    "date": "2013-07-26"
+  },
+  {
+    "wcaid": "2011ZALE02",
+    "name": "Marcin Zalewski",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "6:24.42",
+    "competition": "Polish Open 2013",
+    "date": "2013-04-20"
+  },
+  {
+    "wcaid": "2007JIPT01",
+    "name": "Kai Jiptner",
+    "gender": "男",
+    "country": "Germany",
+    "province": "",
+    "city": "",
+    "result": "5:39.73",
+    "competition": "World Rubik's Cube Championship 2013",
+    "date": "2013-07-26"
+  },
+  {
+    "wcaid": "2009LIAN03",
+    "name": "Chester Lian",
+    "gender": "男",
+    "country": "Malaysia",
+    "province": "",
+    "city": "",
+    "result": "6:42.38",
+    "competition": "World Rubik's Cube Championship 2013",
+    "date": "2013-07-26"
+  },
+  {
+    "wcaid": "2010WUJI01",
+    "name": "Jiawen Wu (吴嘉文)",
+    "gender": "男",
+    "country": "China",
+    "province": "上海",
+    "city": "上海",
+    "result": "9:43.28",
+    "competition": "Hefei Open 2013",
+    "date": "2013-07-27"
+  }
+]

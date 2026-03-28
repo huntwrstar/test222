@@ -1,0 +1,68 @@
+[
+  {
+    "wcaid": "2011GRIT01",
+    "name": "Oleg Gritsenko",
+    "gender": "男",
+    "country": "Russia",
+    "province": "",
+    "city": "",
+    "result": "3:35.62",
+    "competition": "Kharkiv Open 2014",
+    "date": "2014-02-01"
+  },
+  {
+    "wcaid": "2012POHL01",
+    "name": "Andreas Pohl",
+    "gender": "男",
+    "country": "Germany",
+    "province": "",
+    "city": "",
+    "result": "5:01.28",
+    "competition": "German Open 2014",
+    "date": "2014-04-05"
+  },
+  {
+    "wcaid": "2014UKEY01",
+    "name": "Mayur Ukey",
+    "gender": "男",
+    "country": "India",
+    "province": "",
+    "city": "",
+    "result": "16:47.00",
+    "competition": "Indian Nationals 2014",
+    "date": "2014-07-25"
+  },
+  {
+    "wcaid": "2011SAKO01",
+    "name": "Corey Sakowski",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "6:38.57",
+    "competition": "US Nationals 2014",
+    "date": "2014-08-01"
+  },
+  {
+    "wcaid": "2012KOTT01",
+    "name": "Daniel Kottenstette",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "21:05.00",
+    "competition": "Indiana 2014",
+    "date": "2014-08-23"
+  },
+  {
+    "wcaid": "2012FROS01",
+    "name": "Oliver Frost",
+    "gender": "男",
+    "country": "United Kingdom",
+    "province": "",
+    "city": "",
+    "result": "2:35.62",
+    "competition": "ABHC 2014",
+    "date": "2014-08-23"
+  }
+]

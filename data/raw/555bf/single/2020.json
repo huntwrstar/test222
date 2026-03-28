@@ -1,0 +1,112 @@
+[
+  {
+    "wcaid": "2005REYN01",
+    "name": "Tim Reynolds",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "19:52.00",
+    "competition": "Washington Championship 2020",
+    "date": "2020-01-24"
+  },
+  {
+    "wcaid": "2008CLEM01",
+    "name": "Kit Clement",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "17:02.00",
+    "competition": "Washington Championship 2020",
+    "date": "2020-01-24"
+  },
+  {
+    "wcaid": "2008SAMP01",
+    "name": "Bradley Sampson",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "18:52.00",
+    "competition": "PBQtah Sandy Winter 2020",
+    "date": "2020-02-29"
+  },
+  {
+    "wcaid": "2015GUNN01",
+    "name": "Jakob Gunnarsson",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "13:13.00",
+    "competition": "Greve Gymnasium 2020",
+    "date": "2020-02-29"
+  },
+  {
+    "wcaid": "2018BERR01",
+    "name": "Fletcher Berry",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "15:27.00",
+    "competition": "Please Be Quiet Frisco 2020",
+    "date": "2020-01-11"
+  },
+  {
+    "wcaid": "2018LANZ03",
+    "name": "Valentin Lanz",
+    "gender": "男",
+    "country": "Switzerland",
+    "province": "",
+    "city": "",
+    "result": "16:37.00",
+    "competition": "Swisscubing Cup I 2020",
+    "date": "2020-01-04"
+  },
+  {
+    "wcaid": "2013STRE01",
+    "name": "Ben Streeter",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "31:27.00",
+    "competition": "SacCubing IX 2020",
+    "date": "2020-01-25"
+  },
+  {
+    "wcaid": "2019JEYA01",
+    "name": "Jeyamurugesh Jeyaraj",
+    "gender": "男",
+    "country": "India",
+    "province": "",
+    "city": "",
+    "result": "23:43.00",
+    "competition": "CMI Tessellate Cube Open 2020",
+    "date": "2020-01-31"
+  },
+  {
+    "wcaid": "2017KERY01",
+    "name": "Ilya Kerymov (Ілля Керимов)",
+    "gender": "男",
+    "country": "Ukraine",
+    "province": "",
+    "city": "",
+    "result": "42:03.00",
+    "competition": "Kiev Super Blind 2020",
+    "date": "2020-02-15"
+  },
+  {
+    "wcaid": "2019POUL02",
+    "name": "Brandon Poulton",
+    "gender": "男",
+    "country": "United Kingdom",
+    "province": "",
+    "city": "",
+    "result": "24:09.00",
+    "competition": "Don't DNF Dublin 2020",
+    "date": "2020-03-07"
+  }
+]

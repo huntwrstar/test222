@@ -1,0 +1,46 @@
+[
+  {
+    "wcaid": "2012HIRA01",
+    "name": "Tomoyuki Hiraide (平出智之)",
+    "gender": "男",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "4:16.88",
+    "competition": "Japan Open 2016",
+    "date": "2016-10-09"
+  },
+  {
+    "wcaid": "2011MIKE01",
+    "name": "Brandon Mikel",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "10:43.00",
+    "competition": "Blind and Whatnot 2016",
+    "date": "2016-02-20"
+  },
+  {
+    "wcaid": "2008YUDA01",
+    "name": "Yu Da-Hyun (유다현)",
+    "gender": "女",
+    "country": "Korea",
+    "province": "",
+    "city": "",
+    "result": "8:31.57",
+    "competition": "Korean Championship 2016",
+    "date": "2016-08-12"
+  },
+  {
+    "wcaid": "2016MART29",
+    "name": "Artyom Martirosov",
+    "gender": "男",
+    "country": "Russia",
+    "province": "",
+    "city": "",
+    "result": "6:22.17",
+    "competition": "CCC Summer Open 2016",
+    "date": "2016-08-20"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "wcaid": "2014BOYA01",
+    "name": "Mark Boyanowski",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "3:00.65",
+    "competition": "Minnesota Cube Melt 2017",
+    "date": "2017-05-06"
+  },
+  {
+    "wcaid": "2012PETE03",
+    "name": "Marcel Peters",
+    "gender": "男",
+    "country": "Germany",
+    "province": "",
+    "city": "",
+    "result": "10:08.00",
+    "competition": "Mental Breakdown Germany 2017",
+    "date": "2017-02-11"
+  },
+  {
+    "wcaid": "2011CHEC01",
+    "name": "Maxim Chechnev",
+    "gender": "男",
+    "country": "Russia",
+    "province": "",
+    "city": "",
+    "result": "14:57.00",
+    "competition": "Cuberussia in SPB 2017",
+    "date": "2017-02-25"
+  },
+  {
+    "wcaid": "2015RIVE05",
+    "name": "Mark Rivers",
+    "gender": "男",
+    "country": "United Kingdom",
+    "province": "",
+    "city": "",
+    "result": "5:56.60",
+    "competition": "Crawley Open 2017",
+    "date": "2017-06-03"
+  },
+  {
+    "wcaid": "2013SANT13",
+    "name": "Sergio Torrijos Santano",
+    "gender": "男",
+    "country": "Spain",
+    "province": "",
+    "city": "",
+    "result": "9:54.33",
+    "competition": "Quijote Open 2017",
+    "date": "2017-07-01"
+  },
+  {
+    "wcaid": "2008CIRN01",
+    "name": "Fabrizio Cirnigliaro",
+    "gender": "男",
+    "country": "Italy",
+    "province": "",
+    "city": "",
+    "result": "8:49.25",
+    "competition": "World Rubik's Cube Championship 2017",
+    "date": "2017-07-13"
+  },
+  {
+    "wcaid": "2015WRON01",
+    "name": "Michał Wroński",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "15:23.00",
+    "competition": "ŚLS Zawiercie 2017",
+    "date": "2017-07-29"
+  },
+  {
+    "wcaid": "2015HILL09",
+    "name": "Max Hilliard",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "7:23.57",
+    "competition": "Northwest Championships 2017",
+    "date": "2017-08-11"
+  },
+  {
+    "wcaid": "2015ANTO04",
+    "name": "Manuel Prieto de Antón",
+    "gender": "男",
+    "country": "Spain",
+    "province": "",
+    "city": "",
+    "result": "14:03.00",
+    "competition": "Villanueva Open 2017",
+    "date": "2017-11-04"
+  },
+  {
+    "wcaid": "2015CITT01",
+    "name": "Marco Edoardo Cittar",
+    "gender": "男",
+    "country": "Italy",
+    "province": "",
+    "city": "",
+    "result": "5:26.96",
+    "competition": "Italian Championship 2017",
+    "date": "2017-12-16"
+  }
+]

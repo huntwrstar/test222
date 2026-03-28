@@ -1,0 +1,90 @@
+[
+  {
+    "wcaid": "2003HARD01",
+    "name": "Chris Hardwick",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "4:46.19",
+    "competition": "Chattahoochee Spring competition 2009",
+    "date": "2009-03-21"
+  },
+  {
+    "wcaid": "2006TABU02",
+    "name": "Yumu Tabuchi (田渕雄夢)",
+    "gender": "男",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "8:41.85",
+    "competition": "World Rubik's Cube Championship 2009",
+    "date": "2009-10-09"
+  },
+  {
+    "wcaid": "2004GALL02",
+    "name": "Clément Gallet",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "18:09.00",
+    "competition": "Czech Open 2009",
+    "date": "2009-07-17"
+  },
+  {
+    "wcaid": "2005BAUM01",
+    "name": "Jason Baum",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "18:40.00",
+    "competition": "Ohio Open 2009",
+    "date": "2009-03-28"
+  },
+  {
+    "wcaid": "2004CHAN04",
+    "name": "Shelley Chang",
+    "gender": "女",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "11:41.00",
+    "competition": "Utah Cubing Fall Open 2009",
+    "date": "2009-12-12"
+  },
+  {
+    "wcaid": "2008POTR01",
+    "name": "Guillain Potron",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "9:48.50",
+    "competition": "World Rubik's Cube Championship 2009",
+    "date": "2009-10-09"
+  },
+  {
+    "wcaid": "2006KRUE01",
+    "name": "Chris Krueger",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "13:31.00",
+    "competition": "Utah Open 2009",
+    "date": "2009-04-11"
+  },
+  {
+    "wcaid": "2008MAPE01",
+    "name": "Reynaldo Mape Jr.",
+    "gender": "男",
+    "country": "Philippines",
+    "province": "",
+    "city": "",
+    "result": "11:23.00",
+    "competition": "Bulacan Open 2009",
+    "date": "2009-05-16"
+  }
+]

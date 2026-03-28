@@ -1,0 +1,156 @@
+[
+  {
+    "wcaid": "2007KRZY01",
+    "name": "Jarosław Krzyżanowski",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "36",
+    "competition": "Polish Open 2007",
+    "date": "2007-09-15"
+  },
+  {
+    "wcaid": "2006MORG01",
+    "name": "Błażej Morgała",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "37",
+    "competition": "Polish Open 2007",
+    "date": "2007-09-15"
+  },
+  {
+    "wcaid": "2006WOJT01",
+    "name": "Adam Wojtyła",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "43",
+    "competition": "Polish Open 2007",
+    "date": "2007-09-15"
+  },
+  {
+    "wcaid": "2007LAGI01",
+    "name": "Szczepan Łągiewka",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "46",
+    "competition": "Polish Open 2007",
+    "date": "2007-09-15"
+  },
+  {
+    "wcaid": "2007MROZ01",
+    "name": "Adrian Mróz",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "46",
+    "competition": "Polish Open 2007",
+    "date": "2007-09-15"
+  },
+  {
+    "wcaid": "2006PRZE01",
+    "name": "Konrad Przetacznik",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "50",
+    "competition": "Polish Open 2007",
+    "date": "2007-09-15"
+  },
+  {
+    "wcaid": "2005DURK01",
+    "name": "Remigiusz Durka",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "49",
+    "competition": "Wroclaw Open 2007",
+    "date": "2007-07-08"
+  },
+  {
+    "wcaid": "2004FELI01",
+    "name": "Sébastien Felix",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "39",
+    "competition": "World Rubik's Cube Championship 2007",
+    "date": "2007-10-05"
+  },
+  {
+    "wcaid": "2005VANH01",
+    "name": "Anssi Vanhala",
+    "gender": "男",
+    "country": "Finland",
+    "province": "",
+    "city": "",
+    "result": "35",
+    "competition": "Swedish Cube Day competition 2007",
+    "date": "2007-12-15"
+  },
+  {
+    "wcaid": "2006JACQ01",
+    "name": "Thibaut Jacquinot",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "43",
+    "competition": "World Rubik's Cube Championship 2007",
+    "date": "2007-10-05"
+  },
+  {
+    "wcaid": "2005OOMS01",
+    "name": "Alexander Ooms",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "36",
+    "competition": "Dutch Open 2007",
+    "date": "2007-10-13"
+  },
+  {
+    "wcaid": "2006TEMM01",
+    "name": "Rama Temmink",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "59",
+    "competition": "Dutch Open 2007",
+    "date": "2007-10-13"
+  },
+  {
+    "wcaid": "2007BEES01",
+    "name": "Marc van Beest",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "45",
+    "competition": "Dutch Championship 2007",
+    "date": "2007-11-24"
+  },
+  {
+    "wcaid": "2007ZHAN01",
+    "name": "Brian Zhang",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "50",
+    "competition": "Berkeley Spring competition 2007",
+    "date": "2007-04-14"
+  }
+]

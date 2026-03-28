@@ -1,0 +1,24 @@
+[
+  {
+    "wcaid": "2004HELL01",
+    "name": "Micael Hellberg",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "8.44",
+    "competition": "Swedish Cube Day competition 2004",
+    "date": "2004-11-27"
+  },
+  {
+    "wcaid": "2004BERG01",
+    "name": "Mattias Berglund",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "14.09",
+    "competition": "Swedish Cube Day competition 2004",
+    "date": "2004-11-27"
+  }
+]

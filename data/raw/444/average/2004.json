@@ -1,0 +1,57 @@
+[
+  {
+    "wcaid": "2003SAUE01",
+    "name": "Keith Sauer",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "3:17.09",
+    "competition": "Caltech Spring competition 2004",
+    "date": "2004-04-03"
+  },
+  {
+    "wcaid": "2004JIAQ01",
+    "name": "Yin Jia Qiu",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:02.23",
+    "competition": "Caltech Fall competition 2004",
+    "date": "2004-10-16"
+  },
+  {
+    "wcaid": "2004OUYA01",
+    "name": "Derek Ouyang",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "7:59.63",
+    "competition": "Caltech Spring competition 2004",
+    "date": "2004-04-03"
+  },
+  {
+    "wcaid": "2004HOLL01",
+    "name": "Trevor Holland",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:33.52",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  },
+  {
+    "wcaid": "2003MORG01",
+    "name": "Brent Morgan",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:37.34",
+    "competition": "US Nationals 2004",
+    "date": "2004-07-10"
+  }
+]

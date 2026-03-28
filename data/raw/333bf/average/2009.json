@@ -1,0 +1,233 @@
+[
+  {
+    "wcaid": "2004GALL02",
+    "name": "Clément Gallet",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "2:33.68",
+    "competition": "Nantes Open 2009",
+    "date": "2009-06-05"
+  },
+  {
+    "wcaid": "2004FONN01",
+    "name": "Eivind Fonn",
+    "gender": "男",
+    "country": "Norway",
+    "province": "",
+    "city": "",
+    "result": "4:55.00",
+    "competition": "Norwegian Open 2009",
+    "date": "2009-02-14"
+  },
+  {
+    "wcaid": "2008PHEL01",
+    "name": "Jared Phelps",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "4:27.57",
+    "competition": "Chattahoochee Spring competition 2009",
+    "date": "2009-03-21"
+  },
+  {
+    "wcaid": "2009KOZA01",
+    "name": "Witold Kozak",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "4:14.18",
+    "competition": "Polish Nationals 2009",
+    "date": "2009-02-21"
+  },
+  {
+    "wcaid": "2007FUBO01",
+    "name": "Fubo Wang (王富博)",
+    "gender": "男",
+    "country": "China",
+    "province": "北京",
+    "city": "北京",
+    "result": "2:43.03",
+    "competition": "Shijiazhuang Open 2009",
+    "date": "2009-03-15"
+  },
+  {
+    "wcaid": "2003BURT01",
+    "name": "Bob Burton",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "4:14.35",
+    "competition": "UPenn Spring competition 2009",
+    "date": "2009-03-21"
+  },
+  {
+    "wcaid": "2008LAUR01",
+    "name": "Mario Laurent",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "5:21.33",
+    "competition": "Lyon Spring Open 2009",
+    "date": "2009-05-16"
+  },
+  {
+    "wcaid": "2008CAOP01",
+    "name": "Peng Cao (曹鹏)",
+    "gender": "男",
+    "country": "China",
+    "province": "天津",
+    "city": "天津",
+    "result": "2:28.85",
+    "competition": "Beijing Metropolis Open 2009",
+    "date": "2009-05-02"
+  },
+  {
+    "wcaid": "2004CHAN04",
+    "name": "Shelley Chang",
+    "gender": "女",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "1:30.66",
+    "competition": "Discovery Science Center competition 2009",
+    "date": "2009-05-16"
+  },
+  {
+    "wcaid": "2007BRIT01",
+    "name": "Michael Avelino Britto",
+    "gender": "男",
+    "country": "Brazil",
+    "province": "",
+    "city": "",
+    "result": "3:24.24",
+    "competition": "Brasília Open 2009",
+    "date": "2009-07-18"
+  },
+  {
+    "wcaid": "2007LIBI01",
+    "name": "Bill Li",
+    "gender": "男",
+    "country": "Canada",
+    "province": "神手谷",
+    "city": "神手谷",
+    "result": "3:40.59",
+    "competition": "canadianCubing Classic 2009",
+    "date": "2009-07-25"
+  },
+  {
+    "wcaid": "2009XUAN03",
+    "name": "Yan Xuan (宣炎)",
+    "gender": "男",
+    "country": "China",
+    "province": "上海",
+    "city": "上海",
+    "result": "2:43.98",
+    "competition": "Shanghai Weisuo Open 2009",
+    "date": "2009-08-09"
+  },
+  {
+    "wcaid": "2007HOHU01",
+    "name": "Hui Hing Ho (許鑫豪)",
+    "gender": "男",
+    "country": "China",
+    "province": "香港",
+    "city": "香港",
+    "result": "2:29.45",
+    "competition": "Macau Rubik's Open 2009",
+    "date": "2009-08-15"
+  },
+  {
+    "wcaid": "2009NOVI02",
+    "name": "Maxim Novikov",
+    "gender": "男",
+    "country": "Russia",
+    "province": "",
+    "city": "",
+    "result": "7:18.28",
+    "competition": "Saint Petersburg Open 2009",
+    "date": "2009-08-29"
+  },
+  {
+    "wcaid": "2007PAPA01",
+    "name": "Jonathan Papa",
+    "gender": "男",
+    "country": "Philippines",
+    "province": "",
+    "city": "",
+    "result": "2:56.02",
+    "competition": "Philippines Open 2009",
+    "date": "2009-08-29"
+  },
+  {
+    "wcaid": "2008MCKN01",
+    "name": "Anthony McKnight",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:17.85",
+    "competition": "Boulder 2009",
+    "date": "2009-09-19"
+  },
+  {
+    "wcaid": "2007XUYU01",
+    "name": "Yuhui Xu (许宇辉)",
+    "gender": "男",
+    "country": "China",
+    "province": "广东",
+    "city": "广州",
+    "result": "49.35",
+    "competition": "Guangdong Open 2009",
+    "date": "2009-10-01"
+  },
+  {
+    "wcaid": "2006BARL01",
+    "name": "Thom Barlow",
+    "gender": "男",
+    "country": "United Kingdom",
+    "province": "",
+    "city": "",
+    "result": "5:06.69",
+    "competition": "UK Open 2009",
+    "date": "2009-11-07"
+  },
+  {
+    "wcaid": "2006GARR01",
+    "name": "Lucas Garron",
+    "gender": "男",
+    "country": "Germany",
+    "province": "",
+    "city": "",
+    "result": "1:36.55",
+    "competition": "Berkeley Fall competition 2009",
+    "date": "2009-11-14"
+  },
+  {
+    "wcaid": "2008SKAR01",
+    "name": "Arvid Skarrie",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "2:20.45",
+    "competition": "Swedish Cube Day competition 2009",
+    "date": "2009-12-05"
+  },
+  {
+    "wcaid": "2006NORS01",
+    "name": "Bruce Norskog",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "7:13.18",
+    "competition": "Brown Cubing Day 2009",
+    "date": "2009-12-12"
+  }
+]

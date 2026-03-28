@@ -1,0 +1,90 @@
+[
+  {
+    "wcaid": "2005KURO01",
+    "name": "Hu Kuroiwa (黒岩風)",
+    "gender": "男",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "13.53",
+    "competition": "Japanese Championship 2006",
+    "date": "2006-11-12"
+  },
+  {
+    "wcaid": "2005HEYM01",
+    "name": "Joël Heymbeeck",
+    "gender": "男",
+    "country": "Belgium",
+    "province": "",
+    "city": "",
+    "result": "17.58",
+    "competition": "Dutch Open 2006",
+    "date": "2006-10-14"
+  },
+  {
+    "wcaid": "2006HORI02",
+    "name": "Mayumi Hori (堀真由美)",
+    "gender": "女",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "32.33",
+    "competition": "Rubik's Cube OGU Open 2006",
+    "date": "2006-10-28"
+  },
+  {
+    "wcaid": "2006GERH01",
+    "name": "Marcus Gerhardsson",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "9.53",
+    "competition": "Swedish Open 2006",
+    "date": "2006-10-21"
+  },
+  {
+    "wcaid": "2005WIZN01",
+    "name": "Michał Wizner",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "14.01",
+    "competition": "Polish Open 2006",
+    "date": "2006-09-16"
+  },
+  {
+    "wcaid": "2006ISHI01",
+    "name": "Taisuke Ishikawa (石川泰佑)",
+    "gender": "男",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "11.60",
+    "competition": "Japanese Championship 2006",
+    "date": "2006-11-12"
+  },
+  {
+    "wcaid": "2006KATA01",
+    "name": "Aya Kataoka (片岡彩)",
+    "gender": "女",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "19.13",
+    "competition": "Japanese Championship 2006",
+    "date": "2006-11-12"
+  },
+  {
+    "wcaid": "2006ODAK01",
+    "name": "Kazuki Oda (尾田一輝)",
+    "gender": "男",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "19.15",
+    "competition": "Japanese Championship 2006",
+    "date": "2006-11-12"
+  }
+]

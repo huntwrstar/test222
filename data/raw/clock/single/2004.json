@@ -1,0 +1,46 @@
+[
+  {
+    "wcaid": "2003SCHE01",
+    "name": "Jaap Scherphuis",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "31.39",
+    "competition": "European Rubik's Games Championship 2004",
+    "date": "2004-08-07"
+  },
+  {
+    "wcaid": "2004BURN01",
+    "name": "Matthew Burns",
+    "gender": "男",
+    "country": "United Kingdom",
+    "province": "",
+    "city": "",
+    "result": "14.55",
+    "competition": "European Rubik's Games Championship 2004",
+    "date": "2004-08-07"
+  },
+  {
+    "wcaid": "2004FRED02",
+    "name": "Per Kristen Fredlund",
+    "gender": "男",
+    "country": "Norway",
+    "province": "",
+    "city": "",
+    "result": "20.87",
+    "competition": "European Rubik's Games Championship 2004",
+    "date": "2004-08-07"
+  },
+  {
+    "wcaid": "2003JANS01",
+    "name": "Peter Jansen",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "30.97",
+    "competition": "European Rubik's Games Championship 2004",
+    "date": "2004-08-07"
+  }
+]

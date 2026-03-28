@@ -1,0 +1,112 @@
+[
+  {
+    "wcaid": "2006DZOA02",
+    "name": "Chris Dzoan",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "4:06.85",
+    "competition": "US Nationals 2006",
+    "date": "2006-08-04"
+  },
+  {
+    "wcaid": "2005TAKA02",
+    "name": "Syoji Takamatsu (高松唱司)",
+    "gender": "男",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "3:46.21",
+    "competition": "Tokyo Open 2006",
+    "date": "2006-07-30"
+  },
+  {
+    "wcaid": "2005LOVI01",
+    "name": "Cory Loviglio",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "2:27.03",
+    "competition": "Trumbull Spring competition 2006",
+    "date": "2006-05-27"
+  },
+  {
+    "wcaid": "2005RYBE01",
+    "name": "Steve Rybecky",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "4:01.83",
+    "competition": "Trumbull Spring competition 2006",
+    "date": "2006-05-27"
+  },
+  {
+    "wcaid": "2005DAYN01",
+    "name": "Nathaniel Day",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "5:26.10",
+    "competition": "Trumbull Spring competition 2006",
+    "date": "2006-05-27"
+  },
+  {
+    "wcaid": "2005BERG01",
+    "name": "David Bergman",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "5:43.11",
+    "competition": "Trumbull Spring competition 2006",
+    "date": "2006-05-27"
+  },
+  {
+    "wcaid": "2005PARL01",
+    "name": "Chris Parlette",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "4:29.74",
+    "competition": "Rutgers Spring competition 2006",
+    "date": "2006-04-29"
+  },
+  {
+    "wcaid": "2005PELL01",
+    "name": "Chris Pelley",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "6:19.63",
+    "competition": "Draughons Eastern competition 2006",
+    "date": "2006-04-22"
+  },
+  {
+    "wcaid": "2006GERH01",
+    "name": "Marcus Gerhardsson",
+    "gender": "男",
+    "country": "Sweden",
+    "province": "",
+    "city": "",
+    "result": "3:54.40",
+    "competition": "SveKub Annual Meeting competition 2006",
+    "date": "2006-03-18"
+  },
+  {
+    "wcaid": "2006KIMB01",
+    "name": "Brian Kim",
+    "gender": "男",
+    "country": "USA",
+    "province": "",
+    "city": "",
+    "result": "4:23.75",
+    "competition": "UC Berkeley Fall competition 2006",
+    "date": "2006-11-18"
+  }
+]

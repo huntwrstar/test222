@@ -1,0 +1,57 @@
+[
+  {
+    "wcaid": "2006FRAN01",
+    "name": "Piotr Frankowski",
+    "gender": "男",
+    "country": "Poland",
+    "province": "",
+    "city": "",
+    "result": "2/2 17:13",
+    "competition": "World Rubik's Cube Championship 2007",
+    "date": "2007-10-05"
+  },
+  {
+    "wcaid": "2004GALL02",
+    "name": "Clément Gallet",
+    "gender": "男",
+    "country": "France",
+    "province": "",
+    "city": "",
+    "result": "4/4 27:11",
+    "competition": "Dutch Open 2007",
+    "date": "2007-10-13"
+  },
+  {
+    "wcaid": "2005BATI01",
+    "name": "Milán Baticz",
+    "gender": "男",
+    "country": "Hungary",
+    "province": "",
+    "city": "",
+    "result": "4/4 38:12",
+    "competition": "Swedish Open 2007",
+    "date": "2007-08-25"
+  },
+  {
+    "wcaid": "2003DENN01",
+    "name": "Ton Dennenbroek",
+    "gender": "男",
+    "country": "Netherlands",
+    "province": "",
+    "city": "",
+    "result": "2/2 19:47",
+    "competition": "Dutch Open 2007",
+    "date": "2007-10-13"
+  },
+  {
+    "wcaid": "2006ARAK01",
+    "name": "Sinpei Araki (荒木慎平)",
+    "gender": "男",
+    "country": "Japan",
+    "province": "",
+    "city": "",
+    "result": "2/2 12:12",
+    "competition": "World Rubik's Cube Championship 2007",
+    "date": "2007-10-05"
+  }
+]

@@ -3,39 +3,73 @@ window.state = {
     currentPage: 'home',
     currentLang: 'en',
     meta: null,
-    season: {
-        project: '333', type: 'single', scope: 'country:China', gender: 'all',
-        continent: '', country: 'China', year: null   // 新增 year
-    },
-    active: {
-        project: '333', type: 'single', scope: 'country:China', gender: 'all',
-        continent: '', country: 'China', year: null   // 新增 year
-    },
+    season: { project: '333', type: 'single', scope: 'country:China', gender: 'all', continent: '', country: 'China' },
+    active: { project: '333', type: 'single', scope: 'country:China', gender: 'all', continent: '', country: 'China' },
     region: {
         project: '333', type: 'single', period: 'historical',
-        province: '北京', city: '全部城市', gender: 'all', year: null,   // 新增 year
-        allProvinces: [], provinceCities: {}
+        province: '北京', city: '全部城市', gender: 'all',
+        allProvinces: [],
+        provinceCities: {}
     },
     regionTop: {
-        dimension: 'province', project: '333', type: 'single',
-        gender: 'all', period: 'historical', year: null,   // 新增 year
-        data: [], currentPage: 1
+        dimension: 'province',
+        project: '333',
+        type: 'single',
+        gender: 'all',
+        period: 'historical',
+        data: [],
+        currentPage: 1
     },
     regionComp: {
-        dimension: 'province', selectedEvents: ['333', '222', '444'],
-        type: 'single', period: 'historical', year: null,   // 新增 year
-        data: [], currentPage: 1
+        dimension: 'province',
+        selectedEvents: ['333', '222', '444'],
+        type: 'single',
+        period: 'historical',
+        data: [],
+        currentPage: 1
     },
     comprehensive: {
-        source: 'season', subDataset: 'historical', scope: 'country:China',
-        selectedEvents: ['333'], gender: 'all', province: '', city: '全部城市',
-        type: 'single', year: null,   // 新增 year
-        rankedData: [], currentPage: 1
+        source: 'season',
+        subDataset: 'historical',
+        scope: 'country:China',
+        selectedEvents: ['333'],
+        gender: 'all',
+        province: '',
+        city: '全部城市',
+        type: 'single',
+        rankedData: [],
+        currentPage: 1
     },
     record: {
-        province: '北京', city: '全部城市', gender: 'all', year: null,   // 新增 year
-        allProvinces: [], provinceCities: {}, rawDataByProject: {},
-        dataLoaded: false, loading: false
+        province: '北京',
+        city: '全部城市',
+        gender: 'all',
+        allProvinces: [],
+        provinceCities: {},
+        rawDataByProject: {},
+        dataLoaded: false,
+        loading: false
+    },
+    recordV2: {
+        province: '北京',
+        city: '全部城市',
+        gender: 'all',
+        allProvinces: [],
+        provinceCities: {},
+        rawDataByProject: {},
+        dataLoaded: false,
+        loading: false
+    },
+    recordHunter: {
+        searchName: '',
+        selectedEvents: PROJECT_LIST.map(p => p.code),
+        ready: false,
+        results: []
+    },
+    recordHunterCache: {
+        eventsData: null,
+        provinceRecords: null,
+        cityRecords: null
     },
     pagination: { currentPage: 1, totalPages: 1, data: [] }
 };

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>手眼协调测试</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            background: white;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .top-nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            padding: 4px 12px;
+            border-radius: 20px;
+            transition: background 0.2s;
+        }
+
+        .top-nav a:hover {
+            background: #eaeef2;
+        }
+
+        .top-nav a.active {
+            background: #4a6ee0;
+            color: white;
+        }
+
+
+        .retry-button-wrapper {
+            text-align: center;
+            margin: 12px 0 8px 0;
+            margin-top: 52px; 
+        }
+
+        .retry-button {
+            background: #e0e0e0;
+            color: #333;
+            border: none;
+            padding: 10px 32px;
+            border-radius: 40px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            transition: all 0.2s;
+            border: 1px solid #ccc;
+        }
+
+        .retry-button:active {
+            background: #d0d0d0;
+            transform: scale(0.97);
+        }
+
+
+        .mobile-tip {
+            position: fixed;
+            top: 60px;
+            left: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            text-align: center;
+            padding: 12px 16px;
+            border-radius: 40px;
+            font-size: 15px;
+            font-weight: 500;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 9999;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.15);
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+        .mobile-tip.show {
+            opacity: 1;
+        }
+
+
+        .desktop-crop {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            overflow: hidden;
+        }
+
+        .game-frame {
+            border: 0;
+            display: block;
+            background: white;
+            pointer-events: auto;
+            outline: none;
+        }
+
+
+        .mobile-wrapper {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .mobile-wrapper .game-frame {
+            width: 100%;
+            height: auto;
+            min-height: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="index.html">Xcubing</a>
+        <a href="test1.html">反应速度</a>
+        <a href="test2.html" class="active">手眼协调</a>
+    </div>
+
+
+    <div class="mobile-tip" id="mobileTip">建议在电脑端使用有线鼠标进行测试！</div>
+
+    <div class="retry-button-wrapper">
+        <button class="retry-button" id="retryButton">再测一次</button>
+    </div>
+
+
+    <div id="containerWrapper"></div>
+
+    <script>
+        (function(){
+            "use strict";
+
+            const MOBILE_BREAKPOINT = 768;
+            const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+
+
+            const mobileTip = document.getElementById('mobileTip');
+            function showMobileTipIfNeeded() {
+                if (window.innerWidth <= MOBILE_BREAKPOINT) {
+                    mobileTip.classList.add('show');
+                    setTimeout(() => {
+                        mobileTip.classList.remove('show');
+                    }, 3000);
+                }
+            }
+            showMobileTipIfNeeded();
+            window.addEventListener('resize', () => {
+                if (window.innerWidth <= MOBILE_BREAKPOINT && !mobileTip.classList.contains('show')) {
+                    mobileTip.classList.add('show');
+                    setTimeout(() => {
+                        mobileTip.classList.remove('show');
+                    }, 3000);
+                }
+            });
+
+
+            const wrapperDiv = document.getElementById('containerWrapper');
+            let container, frame;
+
+
+            const DESKTOP_GRID = {
+                iframeWidth: 900,
+                iframeHeight: 900,
+                cropTop: 300,
+                cropBottom: 710,
+                cropLeft: 55,
+                cropWidth: 790
+            };
+            const FIXED_OFFSET = { top: -120, left: 0 };
+
+            let autoConfirmObserver = null;
+            let confirmedFlag = false;
+
+
+            function createFrame() {
+                const iframe = document.createElement('iframe');
+                iframe.id = 'gameFrame';
+                iframe.className = 'game-frame';
+                iframe.src = 'https://www.arealme.com/1-to-50/cn/';
+                iframe.scrolling = isMobile ? 'yes' : 'no';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                iframe.sandbox = 'allow-same-origin allow-scripts allow-forms allow-popups allow-modals allow-orientation-lock';
+                iframe.title = '1 to 50';
+                iframe.loading = 'eager';
+                return iframe;
+            }
+
+
+            function buildDesktop() {
+                const cropDiv = document.createElement('div');
+                cropDiv.className = 'desktop-crop';
+                cropDiv.id = 'cropContainer';
+                
+                frame = createFrame();
+                cropDiv.appendChild(frame);
+                
+                wrapperDiv.innerHTML = '';
+                wrapperDiv.appendChild(cropDiv);
+                
+                applyDesktopLayout();
+            }
+
+
+            function applyDesktopLayout() {
+                const cfg = DESKTOP_GRID;
+                frame.style.position = 'relative';
+                frame.style.width = cfg.iframeWidth + 'px';
+                frame.style.height = cfg.iframeHeight + 'px';
+                frame.style.left = 'auto';
+                frame.style.top = 'auto';
+                frame.style.transform = 'none';
+                
+                const container = document.getElementById('cropContainer');
+                const containerWidth = container.clientWidth;
+                const vh = window.innerHeight;  
+                
+                const cropHeight = cfg.cropBottom - cfg.cropTop;
+                const targetCropTop = (vh - cropHeight) / 2;
+                let top = targetCropTop - cfg.cropTop;
+                
+                const maxTop = 0;
+                const minTop = -(cfg.iframeHeight - vh);
+                top = Math.min(maxTop, Math.max(minTop, top));
+                
+                const cropBottomPos = cfg.cropBottom + top;
+                if (cropBottomPos > vh - 5) {
+                    top = vh - 5 - cfg.cropBottom;
+                    top = Math.min(maxTop, Math.max(minTop, top));
+                }
+                const cropTopPos = cfg.cropTop + top;
+                if (cropTopPos < 0) {
+                    top = -cfg.cropTop;
+                    top = Math.min(maxTop, Math.max(minTop, top));
+                }
+                
+                top += FIXED_OFFSET.top;
+                frame.style.marginTop = top + 'px';
+                frame.style.marginBottom = '0';
+                
+                const cropCenterX = cfg.cropLeft + cfg.cropWidth / 2;
+                const iframeCenterOffset = cfg.iframeWidth / 2 - cropCenterX;
+                const containerPadding = (containerWidth - cfg.iframeWidth) / 2;
+                let leftOffset = containerPadding - iframeCenterOffset + FIXED_OFFSET.left;
+                frame.style.marginLeft = leftOffset + 'px';
+                frame.style.marginRight = 'auto';
+            }
+
+ 
+            function buildMobile() {
+                const mobileDiv = document.createElement('div');
+                mobileDiv.className = 'mobile-wrapper';
+                mobileDiv.id = 'mobileWrapper';
+                
+                frame = createFrame();
+                mobileDiv.appendChild(frame);
+                
+                wrapperDiv.innerHTML = '';
+                wrapperDiv.appendChild(mobileDiv);
+                
+
+                frame.style.width = '100%';
+                frame.style.height = 'auto';
+                frame.style.minHeight = '600px';
+                frame.style.margin = '0';
+                frame.style.position = 'static';
+                frame.style.transform = 'none';
+                frame.style.left = 'auto';
+                frame.style.top = 'auto';
+            }
+
+
+            function triggerConfirm() {
+                if (confirmedFlag) return false;
+                try {
+                    const iframeWin = frame.contentWindow;
+                    const iframeDoc = frame.contentDocument || (iframeWin ? iframeWin.document : null);
+                    if (!iframeDoc || !iframeWin) return false;
+
+                    const evtOpts = { key: 'Enter', code: 'Enter', keyCode: 13, which: 13, bubbles: true };
+                    const keydown = new KeyboardEvent('keydown', evtOpts);
+                    const keyup = new KeyboardEvent('keyup', evtOpts);
+                    
+                    const target = iframeDoc.activeElement || iframeDoc.body;
+                    target.dispatchEvent(keydown);
+                    target.dispatchEvent(keyup);
+                    iframeDoc.dispatchEvent(keydown);
+                    iframeDoc.dispatchEvent(keyup);
+                    
+                    const confirmTexts = ['确定', '确认', '提交', '保存', 'OK'];
+                    const btns = iframeDoc.querySelectorAll('button, a, .btn');
+                    for (let btn of btns) {
+                        if (confirmTexts.some(t => btn.textContent.includes(t)) && btn.offsetParent !== null) {
+                            btn.click();
+                            break;
+                        }
+                    }
+                    
+                    confirmedFlag = true;
+                    setTimeout(() => { confirmedFlag = false; }, 5000);
+                    return true;
+                } catch (e) {
+                    return false;
+                }
+            }
+
+            function setupAutoConfirm() {
+                try {
+                    const iframeDoc = frame.contentDocument || frame.contentWindow.document;
+                    if (!iframeDoc) return false;
+                    if (autoConfirmObserver) autoConfirmObserver.disconnect();
+                    
+                    autoConfirmObserver = new MutationObserver(() => {
+                        if (!confirmedFlag) triggerConfirm();
+                    });
+                    autoConfirmObserver.observe(iframeDoc.body, { childList: true, subtree: true });
+                    
+                    const poll = setInterval(() => {
+                        if (!confirmedFlag) triggerConfirm();
+                    }, 1500);
+                    frame._poll = poll;
+                    return true;
+                } catch (e) {
+                    return false;
+                }
+            }
+
+            function onFrameLoad() {
+                if (isMobile) {
+
+                    try {
+                        const iframeDoc = frame.contentDocument || frame.contentWindow.document;
+                        if (iframeDoc) {
+                            const height = iframeDoc.body.scrollHeight;
+                            frame.style.height = height + 'px';
+                        }
+                    } catch(e) {}
+                }
+                
+                confirmedFlag = false;
+                if (frame._poll) clearInterval(frame._poll);
+                setupAutoConfirm();
+            }
+
+            if (isMobile) {
+                buildMobile();
+            } else {
+                buildDesktop();
+            }
+            
+            frame.addEventListener('load', onFrameLoad);
+            if (frame.contentDocument?.readyState === 'complete') onFrameLoad();
+
+
+            let resizeTimer;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(() => {
+                    const nowMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+                    if (nowMobile !== isMobile) {
+                        window.location.reload();
+                    } else if (!nowMobile) {
+
+                        applyDesktopLayout();
+                    }
+                }, 80);
+            });
+
+
+            document.getElementById('retryButton').addEventListener('click', () => {
+                window.location.reload();
+            });
+
+            window.addEventListener('beforeunload', () => {
+                if (autoConfirmObserver) autoConfirmObserver.disconnect();
+                if (frame._poll) clearInterval(frame._poll);
+            });
+
+        })();
+    </script>
+</body>
+</html>

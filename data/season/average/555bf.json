@@ -1,0 +1,312 @@
+[
+  {
+    "rank": 1,
+    "name": "Ryan Eckersley",
+    "gender": "男",
+    "result": "3:08.73",
+    "competition": "BL&D BLD Binningen 2026",
+    "wcaid": "2019ECKE02",
+    "date": "2026-02-28",
+    "country": "United Kingdom"
+  },
+  {
+    "rank": 2,
+    "name": "Kaijun Lin (林恺俊)",
+    "gender": "男",
+    "result": "3:27.68",
+    "competition": "Quanzhou Blindfolded 2026",
+    "wcaid": "2013LINK01",
+    "date": "2026-05-31",
+    "country": "China"
+  },
+  {
+    "rank": 3,
+    "name": "Simon Praschl",
+    "gender": "男",
+    "result": "4:08.76",
+    "competition": "Langenstein City Blind Open 2026",
+    "wcaid": "2021PRAS02",
+    "date": "2026-04-18",
+    "country": "Austria"
+  },
+  {
+    "rank": 4,
+    "name": "Victor Tang Yao Jun (湯曜駿)",
+    "gender": "男",
+    "result": "5:32.27",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015JUNV01",
+    "date": "2026-02-06",
+    "country": "China"
+  },
+  {
+    "rank": 5,
+    "name": "William Phommaha",
+    "gender": "男",
+    "result": "6:02.73",
+    "competition": "French Championship 2026",
+    "wcaid": "2015PHOM01",
+    "date": "2026-04-04",
+    "country": "France"
+  },
+  {
+    "rank": 6,
+    "name": "Noah Kraft",
+    "gender": "男",
+    "result": "6:04.74",
+    "competition": "BLD Open Fürth 2026",
+    "wcaid": "2016KRAF01",
+    "date": "2026-04-11",
+    "country": "Germany"
+  },
+  {
+    "rank": 7,
+    "name": "Firstian Fushada (符逢城)",
+    "gender": "男",
+    "result": "6:34.07",
+    "competition": "Solving in Sale 2026",
+    "wcaid": "2015FUSH01",
+    "date": "2026-04-17",
+    "country": "Indonesia"
+  },
+  {
+    "rank": 8,
+    "name": "Jack McDougall",
+    "gender": "男",
+    "result": "6:34.84",
+    "competition": "NZ North Island Championship 2026",
+    "wcaid": "2020MCDO01",
+    "date": "2026-02-27",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 9,
+    "name": "Marcos Ferreira Semolini",
+    "gender": "男",
+    "result": "7:10.97",
+    "competition": "Itapeva 2026",
+    "wcaid": "2017SEMO02",
+    "date": "2026-01-24",
+    "country": "Brazil"
+  },
+  {
+    "rank": 10,
+    "name": "Jonathan Blöcher",
+    "gender": "男",
+    "result": "7:14.89",
+    "competition": "BLD Open Fürth 2026",
+    "wcaid": "2018BLOC01",
+    "date": "2026-04-11",
+    "country": "Germany"
+  },
+  {
+    "rank": 11,
+    "name": "Ryan Pilat",
+    "gender": "男",
+    "result": "7:23.35",
+    "competition": "DFW Quiet Qualifier 2026",
+    "wcaid": "2016PILA03",
+    "date": "2026-05-03",
+    "country": "USA"
+  },
+  {
+    "rank": 12,
+    "name": "Jordi Lleixà López",
+    "gender": "男",
+    "result": "8:06.19",
+    "competition": "Parets Open 2026",
+    "wcaid": "2023LOPE09",
+    "date": "2026-03-14",
+    "country": "Spain"
+  },
+  {
+    "rank": 13,
+    "name": "Adam Śmigaj",
+    "gender": "男",
+    "result": "9:15.84",
+    "competition": "Cube Factory League Zgierz 2026",
+    "wcaid": "2021SMIG01",
+    "date": "2026-05-23",
+    "country": "Poland"
+  },
+  {
+    "rank": 14,
+    "name": "Ivo Stoutjesdijk",
+    "gender": "男",
+    "result": "9:31.20",
+    "competition": "Leersum Open 2026",
+    "wcaid": "2019STOU02",
+    "date": "2026-01-10",
+    "country": "Netherlands"
+  },
+  {
+    "rank": 15,
+    "name": "Claudio Fabrizio Scalia",
+    "gender": "男",
+    "result": "9:32.85",
+    "competition": "Calabria Open 2026",
+    "wcaid": "2018SCAL02",
+    "date": "2026-03-28",
+    "country": "Italy"
+  },
+  {
+    "rank": 16,
+    "name": "Rodolphe Rouyrre",
+    "gender": "男",
+    "result": "13:29.00",
+    "competition": "Saucisse Vergèze au PBQ 2026",
+    "wcaid": "2020ROUY01",
+    "date": "2026-01-24",
+    "country": "France"
+  },
+  {
+    "rank": 17,
+    "name": "Fabian Settelen",
+    "gender": "男",
+    "result": "14:29.00",
+    "competition": "Roscommon Cubing 2026",
+    "wcaid": "2015SETT01",
+    "date": "2026-05-16",
+    "country": "Switzerland"
+  },
+  {
+    "rank": 18,
+    "name": "Luke Selle",
+    "gender": "男",
+    "result": "14:32.00",
+    "competition": "CubingUSA Heartland Championship 2026",
+    "wcaid": "2022SELL05",
+    "date": "2026-05-22",
+    "country": "USA"
+  },
+  {
+    "rank": 19,
+    "name": "Xiangjie Li (李祥杰)",
+    "gender": "男",
+    "result": "15:08.00",
+    "competition": "Please Don't DNF Beijing 2026",
+    "wcaid": "2016LIXI04",
+    "date": "2026-05-16",
+    "country": "China"
+  },
+  {
+    "rank": 20,
+    "name": "Mikus Lembergs",
+    "gender": "男",
+    "result": "15:17.00",
+    "competition": "PBQ Ropaži 2026",
+    "wcaid": "2017LEMB02",
+    "date": "2026-01-17",
+    "country": "Latvia"
+  },
+  {
+    "rank": 21,
+    "name": "Daniel Goodman",
+    "gender": "男",
+    "result": "15:35.00",
+    "competition": "Love is Blind UMBC 2026",
+    "wcaid": "2013GOOD01",
+    "date": "2026-02-15",
+    "country": "USA"
+  },
+  {
+    "rank": 22,
+    "name": "Lanshi Zhang (张岚石)",
+    "gender": "男",
+    "result": "16:30.00",
+    "competition": "Quanzhou Blindfolded 2026",
+    "wcaid": "2013ZHAN41",
+    "date": "2026-05-31",
+    "country": "China"
+  },
+  {
+    "rank": 23,
+    "name": "James Moore",
+    "gender": "男",
+    "result": "16:42.00",
+    "competition": "Wellington Mind Games 2026",
+    "wcaid": "2016MOOR07",
+    "date": "2026-01-31",
+    "country": "New Zealand"
+  },
+  {
+    "rank": 24,
+    "name": "Ge Shi (石歌)",
+    "gender": "男",
+    "result": "17:08.00",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2024GESH01",
+    "date": "2026-02-20",
+    "country": "China"
+  },
+  {
+    "rank": 25,
+    "name": "Brandon Villadolid",
+    "gender": "男",
+    "result": "18:32.00",
+    "competition": "Empire State ALL11-Stars 2026",
+    "wcaid": "2019VILL03",
+    "date": "2026-03-07",
+    "country": "USA"
+  },
+  {
+    "rank": 26,
+    "name": "Pedro Azevedo",
+    "gender": "男",
+    "result": "18:56.00",
+    "competition": "Blind in Aveiro 2026",
+    "wcaid": "2018AZEV03",
+    "date": "2026-03-14",
+    "country": "Portugal"
+  },
+  {
+    "rank": 27,
+    "name": "Kacper Paweł Dworak",
+    "gender": "男",
+    "result": "20:30.00",
+    "competition": "CF Goes Crazy II Brzeziny 2026",
+    "wcaid": "2020DWOR01",
+    "date": "2026-01-02",
+    "country": "Poland"
+  },
+  {
+    "rank": 28,
+    "name": "Yuheng Wu (吴雨衡)",
+    "gender": "男",
+    "result": "24:54.00",
+    "competition": "Please Be Quiet Singapore April 2026",
+    "wcaid": "2018WUYU03",
+    "date": "2026-04-18",
+    "country": "China"
+  },
+  {
+    "rank": 29,
+    "name": "Carson Claud",
+    "gender": "男",
+    "result": "28:19.00",
+    "competition": "Spokane Winter PBQ 2026",
+    "wcaid": "2015CLAU02",
+    "date": "2026-01-24",
+    "country": "USA"
+  },
+  {
+    "rank": 30,
+    "name": "Eli Rogers",
+    "gender": "男",
+    "result": "28:57.00",
+    "competition": "Multi Mayhem VA 2026",
+    "wcaid": "2022ROGE05",
+    "date": "2026-01-02",
+    "country": "USA"
+  },
+  {
+    "rank": 31,
+    "name": "Robinson Semolini",
+    "gender": "男",
+    "result": "30:43.00",
+    "competition": "Zoioff Campinas 2026",
+    "wcaid": "2018SEMO01",
+    "date": "2026-03-07",
+    "country": "Brazil"
+  }
+]

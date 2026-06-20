@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>反应速度测试</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: white;
+            touch-action: none;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .top-nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            padding: 4px 12px;
+            border-radius: 20px;
+            transition: background 0.2s;
+        }
+
+        .top-nav a:hover {
+            background: #eaeef2;
+        }
+
+        .top-nav a.active {
+            background: #4a6ee0;
+            color: white;
+        }
+
+
+        .score-guide {
+            width: 100%;
+            background: white;
+            padding: 8px 16px;
+            text-align: center;
+            font-size: 13px;
+            color: #444;
+            border-bottom: 1px solid #eee;
+            flex-shrink: 0;
+            line-height: 1.5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            margin-top: 40px; 
+        }
+
+        .score-guide span {
+            display: inline-block;
+            margin: 0 4px;
+        }
+
+        .crop-container {
+            position: relative;
+            width: 100%;
+            flex: 1;
+            overflow: hidden;
+            background: inherit;
+            touch-action: none;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .crop-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .reaction-frame {
+            position: absolute;
+            border: 0;
+            left: 50%;
+            background: #1a2632;
+            overflow: hidden;
+            pointer-events: auto;
+            outline: none;
+            scrolling: no;
+        }
+
+
+        .mobile-tip {
+            position: fixed;
+            top: 60px;
+            left: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            text-align: center;
+            padding: 12px 16px;
+            border-radius: 40px;
+            font-size: 15px;
+            font-weight: 500;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 9999;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.15);
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+        .mobile-tip.show {
+            opacity: 1;
+        }
+
+
+        .debug-panel {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.7);
+            color: #0f0;
+            font-size: 11px;
+            padding: 6px 10px;
+            border-radius: 20px;
+            z-index: 999;
+            display: none;
+            pointer-events: none;
+            backdrop-filter: blur(4px);
+            border: 1px solid #3f9eff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="index.html">Xcubing</a>
+        <a href="test1.html" class="active">反应速度</a>
+        <a href="test2.html">手眼协调</a>
+    </div>
+
+
+    <div class="score-guide">
+        <strong>电竞评分参考标准（不清楚魔方竞速是否适用）：</strong><br>
+        <span>&lt;180ms：职业入门门槛（顶级选手常在150-160ms）</span>
+        <span>180ms-220ms：业余高手</span>
+        <span>220ms-260ms：普通玩家水平</span>
+        <span>&gt;260ms：反应偏慢，更适合回合制或策略类游戏</span>
+    </div>
+
+
+    <div class="mobile-tip" id="mobileTip">建议在电脑端使用有线鼠标进行测试！</div>
+
+    <div class="crop-container" id="cropContainer">
+        <iframe 
+            id="reactionFrame" 
+            class="reaction-frame"
+            src="https://humanbenchmark.com/tests/reactiontime"
+            scrolling="no"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-modals allow-orientation-lock"
+            title="Reaction Test - White Background"
+            loading="eager">
+        </iframe>
+        <div class="debug-panel" id="debugPanel"></div>
+    </div>
+
+    <script>
+        (function(){
+            "use strict";
+
+
+            const MOBILE_BREAKPOINT = 768;
+            const mobileTip = document.getElementById('mobileTip');
+            
+            function showMobileTipIfNeeded() {
+                if (window.innerWidth <= MOBILE_BREAKPOINT) {
+                    mobileTip.classList.add('show');
+                    setTimeout(() => {
+                        mobileTip.classList.remove('show');
+                    }, 3000);
+                }
+            }
+            showMobileTipIfNeeded();
+            window.addEventListener('resize', () => {
+                if (window.innerWidth <= MOBILE_BREAKPOINT && !mobileTip.classList.contains('show')) {
+                    mobileTip.classList.add('show');
+                    setTimeout(() => {
+                        mobileTip.classList.remove('show');
+                    }, 3000);
+                }
+            });
+
+
+            const preventAllScroll = (e) => e.preventDefault();
+            document.body.addEventListener('touchmove', preventAllScroll, { passive: false });
+            document.body.addEventListener('wheel', preventAllScroll, { passive: false });
+            const container = document.getElementById('cropContainer');
+            container.addEventListener('touchmove', preventAllScroll, { passive: false });
+            container.addEventListener('wheel', preventAllScroll, { passive: false });
+            window.addEventListener('keydown', (e) => {
+                const keys = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', ' ', 'PageUp', 'PageDown', 'Home', 'End'];
+                if (keys.includes(e.key)) e.preventDefault();
+            }, false);
+            document.addEventListener('gesturestart', (e) => e.preventDefault());
+            document.addEventListener('gesturechange', (e) => e.preventDefault());
+            document.addEventListener('gestureend', (e) => e.preventDefault());
+            const frame = document.getElementById('reactionFrame');
+            frame.addEventListener('dragstart', (e) => e.preventDefault());
+
+
+
+            const DESKTOP_CONFIG = {
+                iframeWidth: 1100,
+                iframeHeight: 1100,
+                contentTop: 55,
+                contentBottom: 580,
+                blueLeft: 145,
+                blueWidth: 735
+            };
+
+            const MOBILE_CONFIG = {
+                iframeWidth: 375,
+                iframeHeight: 850,
+                contentTop: 20,
+                contentBottom: 540,
+                blueLeft: 10,
+                blueWidth: 355
+            };
+
+            let currentConfig = window.innerWidth <= MOBILE_BREAKPOINT ? MOBILE_CONFIG : DESKTOP_CONFIG;
+
+            const debugPanel = document.getElementById('debugPanel');
+            
+            window.showDebug = function() {
+                debugPanel.style.display = 'block';
+                updateDebugInfo();
+            };
+            window.hideDebug = function() {
+                debugPanel.style.display = 'none';
+            };
+
+            function updateDebugInfo() {
+                if (!currentConfig) return;
+                const vh = window.innerHeight;
+                const top = parseFloat(frame.style.top) || 0;
+                const config = currentConfig;
+                const actualTop = config.contentTop + top;
+                const actualBottom = config.contentBottom + top;
+                debugPanel.innerHTML = `屏幕:${window.innerWidth}x${vh} | iframe:${config.iframeWidth}x${config.iframeHeight}<br>top:${top}px | 内容区Y:${actualTop}~${actualBottom}`;
+            }
+
+            let config = currentConfig;
+
+            function applyLayout() {
+                const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+                config = isMobile ? MOBILE_CONFIG : DESKTOP_CONFIG;
+                currentConfig = config;
+
+                frame.style.width = config.iframeWidth + 'px';
+                frame.style.height = config.iframeHeight + 'px';
+
+                calculateAndApplyOffset(config);
+            }
+
+            function calculateAndApplyOffset(config) {
+                const vw = window.innerWidth;
+                const vh = window.innerHeight;  
+
+                const targetContentBottom = vh - 2;
+                let top = targetContentBottom - config.contentBottom;
+                
+                const actualContentTop = config.contentTop + top;
+                if (actualContentTop < 0) {
+                    top = -config.contentTop;
+                }
+
+                const safetyMargin = 50; 
+                if ((config.contentBottom + top) > (vh - safetyMargin)) {
+                    top = vh - safetyMargin - config.contentBottom;
+                }
+
+
+                if (window.innerWidth <= MOBILE_BREAKPOINT && vh < 600) {
+                    const compactTop = -config.contentTop + 5;
+                    const compactBottom = config.contentBottom + compactTop;
+                    if (compactBottom > vh - 10) {
+                        top = vh - 10 - config.contentBottom;
+                        if (config.contentTop + top < 0) {
+                            top = -config.contentTop;
+                        }
+                    } else {
+                        top = compactTop;
+                    }
+                }
+
+                frame.style.top = top + 'px';
+                frame.style.marginTop = '0';
+
+                const blueCenterX = config.blueLeft + config.blueWidth / 2;
+                const iframeCenterOffset = config.iframeWidth / 2 - blueCenterX;
+                frame.style.left = '50%';
+                frame.style.transform = `translateX(calc(-50% + ${iframeCenterOffset}px))`;
+
+                updateDebugInfo();
+            }
+
+            applyLayout();
+
+            let resizeTimer;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(applyLayout, 80);
+            });
+            window.addEventListener('orientationchange', () => {
+                setTimeout(applyLayout, 50);
+            });
+
+            frame.addEventListener('load', () => {
+                try {
+                    const doc = frame.contentDocument || frame.contentWindow.document;
+                    if (doc) {
+                        doc.documentElement.style.overflow = 'hidden';
+                        doc.body.style.overflow = 'hidden';
+                        doc.body.style.touchAction = 'none';
+                    }
+                } catch(e) {}
+                
+                setTimeout(() => calculateAndApplyOffset(config), 150);
+            });
+
+            window.addEventListener('pageshow', () => {
+                setTimeout(() => calculateAndApplyOffset(config), 50);
+            });
+
+            if (location.search.includes('debug')) {
+                window.showDebug();
+            }
+
+        })();
+    </script>
+
+    <style>
+        .crop-container, .reaction-frame {
+            -webkit-overflow-scrolling: auto !important;
+            overflow: hidden !important;
+            touch-action: none !important;
+        }
+        .crop-container {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            contain: strict;
+        }
+        body, html {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        .reaction-frame {
+            pointer-events: auto;
+            will-change: left, transform, top;
+        }
+    </style>
+</body>
+</html>

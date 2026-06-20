@@ -98,9 +98,6 @@ window.TRANSLATIONS = {
         'project.444bf': '4x4x4 Blindfolded',
         'project.555bf': '5x5x5 Blindfolded',
         'project.333mbf': '3x3x3 Multi-Blind',
-'filter.start_year': 'Start Year',
-'table.participants': 'Participants',
-'current.year': 'Year',
     },
 
     'zh-CN': {
@@ -196,9 +193,6 @@ window.TRANSLATIONS = {
         'project.444bf': '四盲',
         'project.555bf': '五盲',
         'project.333mbf': '多盲',
-'filter.year': '年份',
-'table.participants': '参与人次',
-'current.year': '年份',
     },
 
     'zh-TW': {
@@ -294,9 +288,6 @@ window.TRANSLATIONS = {
         'project.444bf': '四盲',
         'project.555bf': '五盲',
         'project.333mbf': '多盲',
-'filter.year': '年份',
-'table.participants': '參與人次',
-'current.year': '年份',
     },
 
 

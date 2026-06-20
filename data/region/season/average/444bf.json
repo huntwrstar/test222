@@ -1,0 +1,112 @@
+[
+  {
+    "rank": 1,
+    "name": "Yuhang Sun (孙煜航)",
+    "gender": "男",
+    "result": "2:34.72",
+    "competition": "Quanzhou Blindfolded 2026",
+    "wcaid": "2019SUNY09",
+    "date": "2026-05-31",
+    "province": "江西",
+    "city": "抚州"
+  },
+  {
+    "rank": 2,
+    "name": "Ziyi Xu (徐梓翼)",
+    "gender": "男",
+    "result": "3:14.05",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2023XUZI01",
+    "date": "2026-02-06",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 3,
+    "name": "Michael Ngan (顏律言)",
+    "gender": "男",
+    "result": "3:23.37",
+    "competition": "Glasgow Winter - Scottish Blind Off 2026",
+    "wcaid": "2016NGAN02",
+    "date": "2026-02-07",
+    "province": "香港",
+    "city": "香港"
+  },
+  {
+    "rank": 4,
+    "name": "Wayne Pi",
+    "gender": "男",
+    "result": "3:50.74",
+    "competition": "Please Don't DNF Kaohsiung 2026",
+    "wcaid": "2017PIWA01",
+    "date": "2026-04-05",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 5,
+    "name": "Wenxuan Yue (岳文轩)",
+    "gender": "男",
+    "result": "3:54.28",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2015YUEW01",
+    "date": "2026-02-06",
+    "province": "河南",
+    "city": "洛阳"
+  },
+  {
+    "rank": 6,
+    "name": "Yonghao Xu (徐永浩)",
+    "gender": "男",
+    "result": "4:01.19",
+    "competition": "Guangdong Open - Revival & Rival 2026",
+    "wcaid": "2017XUYO01",
+    "date": "2026-02-06",
+    "province": "广东",
+    "city": "韶关"
+  },
+  {
+    "rank": 7,
+    "name": "Ge Shi (石歌)",
+    "gender": "男",
+    "result": "6:34.01",
+    "competition": "Singapore Championship 2026",
+    "wcaid": "2024GESH01",
+    "date": "2026-02-20",
+    "province": "神手谷",
+    "city": "神手谷"
+  },
+  {
+    "rank": 8,
+    "name": "Po-Ling Lin (林柏伶)",
+    "gender": "女",
+    "result": "6:35.72",
+    "competition": "Please Don't DNF Kaohsiung 2026",
+    "wcaid": "2019LINP03",
+    "date": "2026-04-05",
+    "province": "台湾",
+    "city": "台湾"
+  },
+  {
+    "rank": 9,
+    "name": "Guoqiao Wang (王国桥)",
+    "gender": "男",
+    "result": "8:18.54",
+    "competition": "Please Don't DNF Beijing 2026",
+    "wcaid": "2015WANG90",
+    "date": "2026-05-16",
+    "province": "北京",
+    "city": "北京"
+  },
+  {
+    "rank": 10,
+    "name": "Jiahao Han (韩嘉豪)",
+    "gender": "男",
+    "result": "11:00.00",
+    "competition": "Please Be Quiet Hefei 2026",
+    "wcaid": "2025HANJ03",
+    "date": "2026-05-10",
+    "province": "广东",
+    "city": "广州"
+  }
+]

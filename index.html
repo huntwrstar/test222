@@ -1,254 +1,3597 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="XCUBING,XCUBING·魔方排名网提供WCA赛事年度排名、近三年度排名、省市排名、综合排名及省市纪录查询，数据源自WCA官方排名。">
-    <title>XCUBING · 魔方排名网</title>
-    <link rel="icon" href="logo.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="wrapper">
-    <header class="header">
-        <div class="logo-area">
-            <h1>XCUBING · 魔方排名网</h1>
-        </div>
-        <div class="language-selector">
-            <select id="lang-select" aria-label="Language">
-            </select>
-        </div>
-    </header>
+    <title>细饼</title>
+    <link rel="icon" href="images/XC48.png" type="image/png">
 
-    <nav class="main-nav">
-        <div class="nav-container" id="desktop-nav">
-        </div>
-        <div class="mobile-menu-icon" id="mobile-menu-icon">☰</div>
-        <div class="mobile-nav" id="mobile-nav"></div>
-    </nav>
+    <meta property="og:type"        content="website">
+    <meta property="og:site_name"   content="细饼">
+    <meta property="og:title"       content="细饼 · WCA 中国选手数据查看器">
+    <meta property="og:description" content="查询中国魔方选手的省市排名、省市纪录、综合排名与个人成绩。">
+    <meta property="og:image"       content="images/og-share.png">
+    <meta property="og:image:width"  content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt"   content="细饼 · WCA 中国选手数据查看器">
 
-    <div class="content" id="app"></div>
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="细饼 · WCA 中国选手数据查看器">
+    <meta name="twitter:description" content="查询中国魔方选手的省市排名、省市纪录、综合排名与个人成绩。">
+    <meta name="twitter:image"       content="images/og-share.png">
 
-    <footer class="footer">
-        <div>Copyright © 2026 XCUBING.CN</div>
-    </footer>
-</div>
+    <script>
+    (function () {
+        if (!String.prototype.padStart) {
+            String.prototype.padStart = function (targetLength, padString) {
+                targetLength = targetLength >> 0;
+                padString = String(typeof padString !== 'undefined' ? padString : ' ');
+                if (this.length >= targetLength) return String(this);
+                targetLength = targetLength - this.length;
+                if (targetLength > padString.length) padString += padString.repeat(targetLength / padString.length);
+                return padString.slice(0, targetLength) + String(this);
+            };
+        }
+        if (!Array.from) {
+            Array.from = function (arrayLike) {
+                var arr = [];
+                for (var i = 0; i < arrayLike.length; i++) arr.push(arrayLike[i]);
+                return arr;
+            };
+        }
+    })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.cubing.net/v0/css/@cubing/icons/css">
+    <style>
+        * { box-sizing: border-box; font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; }
+        body { background: #e0f2f1; margin: 0; padding: 20px; color: #000; }
+        .container {
+            max-width: 1400px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 8px 24px rgba(38, 166, 154, 0.15);
+            border: 1px solid #b2dfdb;
+        }
+        h1, h2, h3, h4 { color: #000; }
 
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="state.js"></script>
-<script src="langs.js"></script>
-<script src="api.js"></script>
-<script src="ui.js"></script>
-<script src="main.js"></script>
+h4 { margin: 8px 0 2px 0; }
 
-<div id="feedbackFloat" class="feedback-float expanded">
-    <span class="feedback-text">反馈</span>
-</div>
+#rankResult h3, #recResult h3 {
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+        #fullscreenLoader {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        #fullscreenLoader.hide { opacity: 0; pointer-events: none; }
+        .loader-content { text-align: center; color: #000; }
+.loader-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: block;
+    animation: spin 1.5s linear infinite;
+}
 
-<style>
-.feedback-float {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    background-color: #4a6ee0; 
-    color: white;
-    border-radius: 30px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 1000;
-    user-select: none;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+.loader-spinner {
+    width: 64px;
+    height: 64px;
+    border: 6px solid #b2dfdb;
+    border-top-color: #26a69a;
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin { 
+    to { transform: rotate(360deg); } 
+}
+        .loader-content p { margin: 4px 0; font-size: 16px; font-weight: 600; color: #000; }
+        .loader-content .loader-hint { font-size: 13px; color: #666; font-weight: normal; }
+
+        .tabs { display: flex; gap: 10px; border-bottom: 2px solid #b2dfdb; margin-bottom: 20px; flex-wrap: wrap; }
+        .tab { padding: 10px 20px; cursor: pointer; border-radius: 12px 12px 0 0; background: #e0f2f1; color: #000; font-weight: 600; transition: 0.2s; }
+        .tab.active { background: #26a69a; color: white; }
+        .tab:hover:not(.active) { background: #b2dfdb; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+.tab-logo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    line-height: 1;
-    white-space: nowrap;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    margin-right: 18px;
+    margin-bottom: -2px;
 }
-.feedback-float.collapsed {
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    border-radius: 50%;
-    background-color: #4a6ee0; 
-}
-.feedback-float.collapsed .feedback-text {
-    display: none;
-}
-.feedback-float.collapsed::after {
-    content: '';
-    width: 8px;
-    height: 8px;
-    background-color: white;
-    border-radius: 50%;
+.tab-logo img {
+    height: 38px;
+    width: auto;
     display: block;
 }
-.feedback-float.expanded::after {
+
+        .filters { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; align-items: end; }
+        .filters label { font-size: 14px; font-weight: 600; color: #000; display: flex; flex-direction: column; gap: 4px; }
+        .filters select, .filters input {
+            padding: 6px 10px; border-radius: 8px; border: 1px solid #b2dfdb;
+            background: #f9fbfb; min-width: 120px; color: #000;
+        }
+        .filters select:disabled {
+            background: #eeeeee; color: #999; cursor: not-allowed;
+        }
+        .filters select:focus, .filters input:focus {
+            outline: none; border-color: #26a69a;
+            box-shadow: 0 0 0 3px rgba(38,166,154,0.2);
+        }
+        .filters button {
+            padding: 6px 16px; border-radius: 8px; border: none;
+            background: #26a69a; color: white; font-weight: 600; cursor: pointer; transition: 0.15s;
+        }
+        .filters button:hover { background: #1d8b7e; }
+        .filters button.secondary { background: #00897b; }
+        .filters button.secondary:hover { background: #00695c; }
+
+        table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 14px; margin-top: 2px; }
+        th {
+            background: #26a69a; color: white; padding: 8px 10px; text-align: left;
+            position: -webkit-sticky; position: sticky; top: 0; z-index: 10; font-weight: 600;
+        }
+        td { padding: 6px 10px; border-bottom: 1px solid #e0f2f1; color: #000; background: #fff; }
+        tr:hover td { background: #f1f8f6; }
+        .table-wrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+.player-link {
+    color: #003d33;
+    font-weight: normal;
+    text-decoration: none;
+    transition: 0.15s;
+    cursor: pointer;
+}
+.player-link:hover { color: #001f18; text-decoration: underline; }
+
+        .player-home-topbar {
+            display: flex; justify-content: flex-end; align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #b2dfdb;
+        }
+        .back-to-search {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 8px 18px; border-radius: 30px;
+            background: #26a69a; color: white; border: none;
+            font-weight: 600; font-size: 14px; transition: 0.15s;
+            cursor: pointer; font-family: inherit;
+        }
+        .back-to-search:hover { background: #1d8b7e; }
+
+        .pb-single, .pb-avg, .city-single, .city-avg, .province-single, .province-avg,
+        .mpr-single, .mpr-avg, .fpr-single, .fpr-avg,
+        .mcr-single, .mcr-avg, .fcr-single, .fcr-avg {
+            color: #d35400;
+            font-weight: normal;
+        }
+        #homeTableContainer .pb-single,
+        #homeTableContainer .pb-avg,
+        #homeTableContainer .city-single,
+        #homeTableContainer .city-avg,
+        #homeTableContainer .province-single,
+        #homeTableContainer .province-avg,
+        #homeTableContainer .mpr-single,
+        #homeTableContainer .mpr-avg,
+        #homeTableContainer .fpr-single,
+        #homeTableContainer .fpr-avg,
+        #homeTableContainer .mcr-single,
+        #homeTableContainer .mcr-avg,
+        #homeTableContainer .fcr-single,
+        #homeTableContainer .fcr-avg {
+            color: #000;
+            font-weight: normal;
+        }
+
+        .help-icon {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 22px; height: 22px; border-radius: 50%;
+            background: #26a69a; color: white; font-weight: bold; font-size: 14px;
+            cursor: pointer; user-select: none; transition: 0.15s; touch-action: manipulation;
+        }
+        .help-icon:hover { background: #1d8b7e; }
+
+        .player-header {
+            background: transparent;
+            padding: 12px 0;
+            border-radius: 0;
+            margin-bottom: 12px;
+            display: flex; flex-wrap: wrap; gap: 20px;
+            border-left: none;
+        }
+        .player-header .item { font-size: 15px; color: #000; }
+        .player-header .item strong { display: inline-block; width: 80px; color: #000; }
+
+        .view-toggle { display: flex; gap: 10px; margin: 12px 0; flex-wrap: wrap; align-items: center; }
+        .view-toggle button {
+            padding: 6px 16px; border: 1px solid #b2dfdb; background: #f9fbfb;
+            cursor: pointer; border-radius: 20px; color: #000; font-weight: 500; transition: 0.15s;
+        }
+        .view-toggle button.active { background: #26a69a; color: white; border-color: #26a69a; }
+        .view-toggle button:hover:not(.active) { background: #e0f2f1; }
+
+        .search-box { display: flex; gap: 12px; margin-bottom: 16px; }
+        .search-box input {
+            flex: 1; padding: 8px 14px; border-radius: 30px;
+            border: 1px solid #b2dfdb; background: #f9fbfb; color: #000;
+        }
+        .search-box input:focus {
+            outline: none; border-color: #26a69a;
+            box-shadow: 0 0 0 3px rgba(38,166,154,0.2);
+        }
+        .search-box button {
+            padding: 8px 24px; border-radius: 30px; border: none;
+            background: #26a69a; color: white; font-weight: 600; cursor: pointer;
+        }
+        .search-box button:hover { background: #1d8b7e; }
+
+        .record-section { margin-top: 2px; }
+.record-section h3 {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: #000;
+    display: inline-block;
+    font-weight: 600;
+    margin: 0;
+}
+        .no-data { text-align: center; color: #888; padding: 30px 0; }
+
+        .record-stats {
+            background: transparent;
+            border: none;
+            padding: 12px 0;
+            margin: 12px 0;
+        }
+.record-stats h3 { margin: 0 0 2px 0; }
+        .record-stats table { width: auto; margin: 0; }
+        .record-stats th { background: #26a69a; color: white; }
+        .reign-container { display: flex; gap: 20px; flex-wrap: wrap; }
+.reign-container h3 { margin: 0 0 2px 0; }
+        .reign-container > div { flex: 1; min-width: 300px; }
+        .value-list { font-size: 12px; color: #555; white-space: nowrap; }
+
+        .pb-table-section { margin-top: 2px; }
+.pb-table-section h3 {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: #000;
+    display: inline-block;
+    font-weight: 600;
+    margin: 0;
+}
+        .pb-table-section table { font-size: 13px; }
+        .pb-table-section th { text-align: center; }
+        .pb-table-section td { text-align: center; }
+        .pb-table-section td:first-child { text-align: left; font-weight: 600; color: #000; }
+        .pb-rank-top { color: #27ae60; font-weight: 700; }
+        .pb-rank-none { color: #aaa; }
+
+        .score-section { margin-top: 2px; }
+.score-section > h3 {
+    background: transparent;
+    padding: 4px 0;
+    border-radius: 0;
+    color: #000;
+    display: inline-block;
+    font-weight: 600;
+    margin: 0 0 2px 0;
+}
+
+.section-tabs-wrapper { margin-top: 12px; }
+.section-tabs {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 10px 0;
+    flex-wrap: wrap;
+}
+.section-tabs button {
+    padding: 8px 26px;
+    border: 1px solid #b2dfdb;
+    background: #f9fbfb;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+    transition: 0.15s;
+    font-family: inherit;
+}
+.section-tabs button.active {
+    background: #26a69a;
+    color: white;
+    border-color: #26a69a;
+}
+.section-tabs button:hover:not(.active) {
+    background: #e0f2f1;
+}
+        .year-buttons {
+            display: flex; flex-wrap: wrap; gap: 8px;
+            margin: 8px 0 12px 0;
+        }
+        .year-buttons button {
+            padding: 6px 16px; border-radius: 20px;
+            border: 1px solid #b2dfdb; background: #f9fbfb;
+            color: #000; font-weight: 600; font-size: 13px;
+            cursor: pointer; transition: 0.15s; font-family: inherit;
+        }
+        .year-buttons button.active { background: #26a69a; color: white; border-color: #26a69a; }
+        .year-buttons button:hover:not(.active) { background: #e0f2f1; }
+
+        .comp-table-title {
+            margin: 10px 0 2px 0;
+            padding: 4px 0;
+            background: transparent;
+            border-left: none;
+            border-bottom: none;
+            border-radius: 0;
+            color: #000;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .event-cell {
+            display: inline-flex; align-items: center; gap: 4px;
+            white-space: nowrap;
+        }
+        .event-cell .cubing-icon { font-size: 16px; }
+
+        .badge {
+            display: inline-block; padding: 1px 7px; border-radius: 10px;
+            font-size: 11px; font-weight: bold; color: white;
+            margin-right: 4px; vertical-align: middle; line-height: 1.4;
+        }
+        .badge-pb { background: #95a5a6; }
+        .badge-city { background: #27ae60; }
+        .badge-prov { background: #e67e22; }
+        .badge-mpr { background: #1976d2; }
+        .badge-fpr { background: #d81b60; }
+        .badge-mcr { background: #42a5f5; }
+        .badge-fcr { background: #ec407a; }
+
+.announcement {
+    background: #ffffff;
+    border: 1px solid #b2dfdb; border-radius: 12px;
+    padding: 20px 24px; margin-bottom: 24px; color: #000;
+}
+        .announcement h2 {
+            margin: 0 0 12px 0; font-size: 20px; color: #000;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .announcement p { margin: 6px 0; line-height: 1.6; font-size: 14px; }
+        .announcement .tag {
+            display: inline-block; background: #26a69a; color: white;
+            padding: 2px 10px; border-radius: 12px;
+            font-size: 12px; font-weight: 600; margin-right: 8px;
+        }
+
+        .home-section { margin-top: 20px; }
+.home-section h3 {
+    background: transparent; padding: 0;
+    color: #000; display: inline-block; font-weight: 600; margin: 0 0 4px 0;
+}
+
+        .home-controls {
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 12px; margin-bottom: 12px;
+        }
+        .filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+        .filter-buttons button {
+            padding: 5px 14px; border-radius: 20px; border: 1px solid #b2dfdb;
+            background: #f9fbfb; color: #000; font-weight: 600;
+            cursor: pointer; font-size: 13px; transition: 0.15s;
+        }
+        .filter-buttons button.active { background: #26a69a; color: white; border-color: #26a69a; }
+        .filter-buttons button:hover:not(.active) { background: #e0f2f1; }
+        .home-search {
+            display: flex; align-items: center; gap: 8px;
+            background: #f9fbfb; border: 1px solid #b2dfdb;
+            border-radius: 20px; padding: 4px 12px;
+        }
+        .home-search input {
+            border: none; background: transparent; outline: none;
+            padding: 4px 0; font-size: 13px; color: #000;
+            min-width: 200px;
+        }
+        .home-search input::placeholder { color: #999; }
+        .home-search button {
+            border: none; background: #26a69a; color: white;
+            padding: 4px 10px; border-radius: 14px;
+            font-size: 12px; font-weight: 600; cursor: pointer;
+        }
+        .home-search button:hover { background: #1d8b7e; }
+        .home-search .clear-btn { background: #95a5a6; }
+        .home-search .clear-btn:hover { background: #7f8c8d; }
+.auto-play-toggle {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 13px; color: #000; font-weight: 600;
+    cursor: pointer; user-select: none;
+    background: transparent; padding: 0; border: none;
+}
+        .auto-play-toggle input { accent-color: #26a69a; cursor: pointer; }
+
+        .pagination {
+            display: flex; justify-content: center; align-items: center;
+            gap: 10px; margin: 20px 0 10px 0; flex-wrap: wrap;
+        }
+        .pagination button {
+            padding: 6px 14px; border-radius: 20px; border: 1px solid #b2dfdb;
+            background: #f9fbfb; color: #000; font-weight: 600;
+            cursor: pointer; transition: 0.15s;
+        }
+        .pagination button:hover:not(:disabled) { background: #e0f2f1; }
+        .pagination button:disabled { opacity: 0.4; cursor: not-allowed; }
+        .pagination .page-info { font-size: 14px; color: #000; font-weight: 600; }
+
+        .tbl-pagination-row td {
+            background: #f9fbfb !important;
+            text-align: center;
+            padding: 8px !important;
+            border-bottom: 1px solid #e0f2f1;
+        }
+        .tbl-page-btn {
+            padding: 4px 12px;
+            margin: 0 3px;
+            border-radius: 16px;
+            border: 1px solid #b2dfdb;
+            background: #ffffff;
+            color: #000;
+            font-weight: 600;
+            font-size: 12px;
+            cursor: pointer;
+            transition: 0.15s;
+            font-family: inherit;
+        }
+        .tbl-page-btn:hover:not(:disabled) { background: #e0f2f1; }
+        .tbl-page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .tbl-pagination-row .page-info-inline {
+            margin: 0 10px; font-size: 13px; color: #000; font-weight: 600;
+        }
+        .pagination .page-info-inline {
+            margin: 0 10px; font-size: 13px; color: #000; font-weight: 600;
+        }
+
+#ovResult h3 {
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+#ovResult > p {
+    margin: 0 0 6px 0 !important;
+}
+
+        .ov-event-col {
+            text-align: center !important;
+            min-width: 52px;
+        }
+        .ov-event-col .cubing-icon {
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        .ov-rank-cell {
+            text-align: center;
+            font-weight: 600;
+        }
+        .ov-rank-cell.ov-rank-default {
+            color: #d35400;
+            font-weight: 500;
+        }
+        .ov-rank-cell.ov-rank-top {
+            color: #27ae60;
+            font-weight: 700;
+        }
+
+        .loading-spinner {
+            display: flex; flex-direction: column; align-items: center;
+            justify-content: center; padding: 40px 0; color: #26a69a;
+        }
+        .loading-spinner .spinner {
+            width: 40px; height: 40px;
+            border: 4px solid #b2dfdb; border-top-color: #26a69a;
+            border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 12px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loading-spinner p { font-size: 14px; color: #000; margin: 0; font-weight: 600; }
+
+        #backToTop {
+            position: fixed; right: 24px; bottom: 24px;
+            width: 48px; height: 48px; border-radius: 50%;
+            background: #26a69a; color: white; border: none;
+            cursor: pointer; box-shadow: 0 4px 12px rgba(38, 166, 154, 0.4);
+            font-size: 22px; font-weight: bold;
+            display: none; align-items: center; justify-content: center;
+            z-index: 1500; transition: 0.2s;
+            touch-action: manipulation; -webkit-tap-highlight-color: transparent;
+        }
+        #backToTop.show { display: flex; }
+        #backToTop:hover { background: #1d8b7e; transform: translateY(-2px); }
+        #backToTop:active { transform: translateY(0); }
+
+        .control-panel {
+            display: none; background: #e8f5e9; border: 1px solid #b2dfdb;
+            border-radius: 16px; padding: 16px 20px; margin-bottom: 20px;
+            flex-wrap: wrap; align-items: center; gap: 20px;
+        }
+        .control-panel.show { display: flex; }
+        .control-panel .group { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .control-panel label {
+            font-weight: 600; font-size: 14px; color: #000;
+            display: flex; align-items: center; gap: 4px;
+        }
+        .control-panel input[type="range"] { width: 120px; accent-color: #26a69a; }
+        .control-panel button {
+            padding: 6px 16px; border-radius: 30px; border: none;
+            background: #26a69a; color: white; font-weight: 600; cursor: pointer;
+        }
+        .control-panel button:hover { background: #1d8b7e; }
+        .control-panel .screenshot-options { display: flex; flex-wrap: wrap; gap: 12px; }
+        .control-panel .screenshot-options label { font-weight: normal; font-size: 13px; color: #000; }
+        .shortcut-hint { font-size: 12px; color: #6c757d; margin-left: 8px; }
+        kbd {
+            background: #ffffff; border-radius: 6px; border: 1px solid #b2dfdb;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05); color: #000;
+            display: inline-block; font-size: 0.85em; font-weight: 700;
+            padding: 2px 8px; white-space: nowrap;
+        }
+
+        .rank-toggle { display: flex; gap: 10px; margin: 12px 0; }
+        .rank-toggle button {
+            padding: 8px 28px; border: 1px solid #b2dfdb;
+            background: #f9fbfb; cursor: pointer; border-radius: 20px;
+            font-weight: 600; font-size: 14px; color: #000;
+        }
+        .rank-toggle button.active { background: #26a69a; color: white; border-color: #26a69a; }
+        .rank-toggle button:hover:not(.active) { background: #e0f2f1; }
+
+        .warning-box {
+            background: #fff3cd; border: 1px solid #ffeeba; color: #856404;
+            padding: 10px 16px; border-radius: 8px; margin-bottom: 16px; font-size: 14px;
+        }
+
+        .event-icons { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 10px 0; }
+        .event-icon {
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            gap: 2px; padding: 5px 7px; border-radius: 10px;
+            border: 1px solid #b2dfdb; background: #f9fbfb; color: #000;
+            cursor: pointer; transition: 0.15s; min-width: 48px;
+            font-size: 10px; font-weight: 600; font-family: inherit;
+        }
+        .event-icon .cubing-icon { font-size: 20px; line-height: 1; color: inherit; }
+        .event-icon:hover { background: #e0f2f1; }
+        .event-icon.active {
+            background: rgba(38, 166, 154, 0.15);
+            border-color: #26a69a;
+            color: #000;
+        }
+        .event-icon.active .cubing-icon { color: #000; }
+
+#rankEventIcons .event-icon,
+#recEventIcons .event-icon,
+#ovEventIcons .event-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    padding: 0;
+    gap: 0;
+    justify-content: center;
+}
+#rankEventIcons .event-icon .cubing-icon,
+#recEventIcons .event-icon .cubing-icon,
+#ovEventIcons .event-icon .cubing-icon {
+    font-size: 20px;
+}
+#rankEventIcons .event-icon .event-icon-label,
+#recEventIcons .event-icon .event-icon-label,
+#ovEventIcons .event-icon .event-icon-label {
     display: none;
 }
-</style>
+
+#playerEventIcons .event-icon {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    padding: 0;
+    gap: 0;
+    justify-content: center;
+}
+#playerEventIcons .event-icon .cubing-icon {
+    font-size: 16px;
+}
+#playerEventIcons .event-icon .event-icon-label {
+    display: none;
+}
+
+        .event-icons-actions {
+            display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+            margin-bottom: 8px; font-size: 13px; color: #000; font-weight: 600;
+        }
+        .event-icons-actions button {
+            padding: 5px 14px; border-radius: 20px; border: 1px solid #b2dfdb;
+            background: #f9fbfb; color: #000; font-weight: 600;
+            cursor: pointer; font-size: 13px; transition: 0.15s;
+        }
+        .event-icons-actions button:hover { background: #e0f2f1; }
+
+        @media (max-width: 768px) {
+            body { padding: 8px; }
+            .container { padding: 12px; border-radius: 10px; }
+            h1 { font-size: 20px; }
+            table { font-size: 12px; }
+            th, td { padding: 5px 6px; }
+
+            .tabs {
+                gap: 8px;
+                row-gap: 8px;
+                align-items: center;
+            }
+            .tab-logo {
+                flex: 0 0 100%;
+                width: 100%;
+                margin: 0 0 4px 0;
+                padding: 0;
+                justify-content: flex-start;
+            }
+            .tab-logo img {
+                height: 30px;
+                margin: 0;
+            }
+
+            .filters { flex-direction: column; align-items: stretch; }
+            .filters select, .filters input, .filters button,
+            .view-toggle button, .rank-toggle button {
+                min-height: 40px; font-size: 14px; width: 100%;
+            }
+            .view-toggle { flex-direction: column; align-items: stretch; }
+            .rank-toggle { flex-direction: column; }
+            .rank-toggle button { width: 100%; }
+            .player-header .item { font-size: 13px; }
+            .player-header .item strong { width: 64px; }
+            .reign-container { flex-direction: column; }
+            .search-box { flex-direction: column; }
+            .search-box button { width: 100%; }
+            .control-panel { padding: 12px; }
+            #backToTop { right: 16px; bottom: 16px; width: 44px; height: 44px; font-size: 20px; }
+            .home-controls { flex-direction: column; align-items: stretch; }
+            .home-search input { min-width: 100%; }
+            .ov-event-col { min-width: 40px; }
+            .ov-event-col .cubing-icon { font-size: 15px; }
+            .section-tabs button { width: 100%; }
+        }
+
+        button, select, input, .tab, .help-icon {
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+<div id="fullscreenLoader">
+    <div class="loader-content">
+        <img src="images/XC256.png" class="loader-logo" id="loaderLogo" alt="加载中..." 
+             onerror="this.style.display='none'; document.getElementById('fallbackSpinner').style.display='block';">
+        <div class="loader-spinner" id="fallbackSpinner" style="display:none;"></div>
+        <p>WCA 数据加载中…</p>
+        <p class="loader-hint">首次加载需要一些时间，请稍候</p>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="control-panel" id="controlPanel">
+        <div class="group">
+            <label>自动滚动速度 <input type="range" id="scrollSpeed" min="50" max="500" value="150" step="10"> <span id="speedDisplay">150</span> px/s</label>
+            <button id="scrollToggleBtn">开始滚动</button>
+            <span class="shortcut-hint">（<kbd>Ctrl+Shift+↓</kbd> 开始 / <kbd>Esc</kbd> 停止）</span>
+        </div>
+        <div class="group">
+            <button id="screenshotBtn">截图所选区域</button>
+            <div class="screenshot-options">
+                <label><input type="checkbox" class="screenshot-checkbox" value="player-info" checked> 选手信息</label>
+                <label><input type="checkbox" class="screenshot-checkbox" value="record-stats" checked> 纪录统计</label>
+                <label><input type="checkbox" class="screenshot-checkbox" value="reign" checked> 巅峰统治期</label>
+                <label><input type="checkbox" class="screenshot-checkbox" value="province-records" checked> 历史省份纪录</label>
+                <label><input type="checkbox" class="screenshot-checkbox" value="province-gender-records" checked> 历史性别省份纪录</label>
+                <label><input type="checkbox" class="screenshot-checkbox" value="city-records" checked> 历史城市纪录</label>
+                <label><input type="checkbox" class="screenshot-checkbox" value="city-gender-records" checked> 历史性别城市纪录</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <div class="tab-logo">
+            <img src="images/logo.png" alt="细饼">
+        </div>
+
+        <div class="tab active" data-tab="tab-home">首页</div>
+        <div class="tab" data-tab="tab-rank">省市排名</div>
+        <div class="tab" data-tab="tab-region-records">省市纪录</div>
+        <div class="tab" data-tab="tab-overall">综合排名</div>
+        <div class="tab" data-tab="tab-player">选手</div>
+    </div>
+
+    <div id="tab-home" class="tab-content active">
+        <div class="announcement">
+            <h2>📢 公告</h2>
+            <p>欢迎访问，在这里可以查询中国选手在WCA赛事的省市排名、纪录。</p>
+            <p><span class="tag">当前版本</span> <kbd>2.0.0</kbd> 主要更新内容：选手主页新增男子/女子省市纪录（MPR/MCR/FPR/FCR）统计与徽章标识、纪录汇总表按优先级去重统计</p>
+        </div>
+
+        <div class="home-section">
+            <h3 style="display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                <span>近期纪录刷新（最近 1 个月）</span>
+                <span onclick="showBadgeHelp()" title="纪录标识说明"
+                      style="display:inline-flex;align-items:center;gap:4px;cursor:pointer;background:#ffffff;border:1px solid #b2dfdb;border-radius:14px;padding:3px 10px 3px 3px;font-weight:600;">
+                    <span class="help-icon">?</span>
+                    <span style="font-size:13px;color:#000;">纪录标识说明</span>
+                </span>
+            </h3>
+            <div id="homeRecentRecords"><div class="no-data">正在准备……</div></div>
+        </div>
+    </div>
+
+    <div id="tab-rank" class="tab-content">
+        <div id="genderWarning" class="warning-box" style="display:none;">
+            提示：当前数据中缺少"性别"字段，性别筛选将无法使用。
+        </div>
+        <div class="filters">
+            <label>省份 <select id="rankProvince"><option value="">全国</option></select></label>
+            <label>城市 <select id="rankCity"><option value="">全部</option></select></label>
+            <label>性别
+                <select id="rankGender">
+                    <option value="">全部</option>
+                    <option value="m">男</option>
+                    <option value="f">女</option>
+                </select>
+            </label>
+            <div class="rank-toggle" style="margin:0;">
+                <button id="rankSingleBtn" class="active">单次</button>
+                <button id="rankAvgBtn">平均</button>
+            </div>
+        </div>
+        <div style="font-size:13px;color:#000;font-weight:600;margin-top:4px;">项目</div>
+        <div class="event-icons" id="rankEventIcons"></div>
+        <div id="rankResult"><div class="no-data">请选择省份、城市及项目</div></div>
+    </div>
+
+    <div id="tab-region-records" class="tab-content">
+        <div class="filters">
+            <label>省份 <select id="recProvince"></select></label>
+            <label>城市 <select id="recCity"><option value="">全部</option></select></label>
+            <label>性别
+                <select id="recGender">
+                    <option value="">全部</option>
+                    <option value="m">男</option>
+                    <option value="f">女</option>
+                </select>
+            </label>
+            <button id="recQueryBtn">当前纪录</button>
+            <button id="recHistoryBtn" class="secondary">历史纪录</button>
+        </div>
+        <div id="recEventSelector" style="display:none;">
+            <div style="font-size:13px;color:#000;font-weight:600;margin-top:4px;">项目</div>
+            <div class="event-icons" id="recEventIcons"></div>
+        </div>
+        <div id="recResult"><div class="no-data">请选择省份、城市后点击「当前纪录」或「历史纪录」</div></div>
+    </div>
+
+    <div id="tab-overall" class="tab-content">
+        <div class="filters">
+            <label>省份 <select id="ovProvince"><option value="">全国</option></select></label>
+            <label>城市 <select id="ovCity"><option value="">全部</option></select></label>
+            <label>性别
+                <select id="ovGender">
+                    <option value="">全部</option>
+                    <option value="m">男</option>
+                    <option value="f">女</option>
+                </select>
+            </label>
+            <div class="rank-toggle" style="margin:0;">
+                <button id="ovSingleBtn" class="active">单次</button>
+                <button id="ovAvgBtn">平均</button>
+            </div>
+        </div>
+
+        <div style="font-size:13px;color:#000;font-weight:600;margin-top:4px;">项目</div>
+        <div class="event-icons" id="ovEventIcons"></div>
+        <div class="event-icons-actions">
+            <button id="ovSelectAll">全选</button>
+            <button id="ovClearAll">清空</button>
+            <span id="ovSelectedCount">已选 0 项</span>
+        </div>
+
+        <div id="ovResult"><div class="no-data">请点击上方图标选择至少一个项目</div></div>
+    </div>
+
+    <div id="tab-player" class="tab-content">
+        <div id="playerSearchView">
+            <div class="search-box">
+                <input type="text" id="playerSearchInput" placeholder="输入 WCA ID 或姓名（中英文均可，支持模糊搜索）">
+                <button id="playerSearchBtn">搜索</button>
+            </div>
+            <div id="playerResult"><div class="no-data">请输入 WCA ID 或姓名进行搜索</div></div>
+        </div>
+        <div id="playerHomeView" style="display:none;">
+            <div class="player-home-topbar">
+                <button class="back-to-search" id="playerHomeBackBtn">返回搜索</button>
+            </div>
+            <div id="playerHomeContent"></div>
+        </div>
+    </div>
+</div>
+
+<button id="backToTop" title="返回顶部">↑</button>
 
 <script>
-(function() {
-    const floatBtn = document.getElementById('feedbackFloat');
-    let timer = null;
-    let isDragging = false;        
-    let dragStarted = false;      
-    let startX, startY;             
-    let startLeft, startTop;       
-    const DRAG_THRESHOLD = 5; 
-    let clickFromDrag = false; 
+// ============================================================
+// 工具函数
+// ============================================================
+const ROUND_MAP = {
+    '1': '初赛', '2': '复赛', '3': '半决赛', 'f': '决赛',
+    'c': '资格赛', 'd': '第一轮', 'e': '第二轮', 'g': '第三轮', 'h': '第四轮'
+};
+const ROUND_ORDER = { 'c': 1, '1': 2, 'd': 2, '2': 4, 'e': 4, '3': 6, 'g': 6, 'f': 7, 'h': 7 };
+function getRoundName(id) { return ROUND_MAP[id] || id || '-'; }
+function getRoundOrder(id) { return ROUND_ORDER[id] || 99; }
 
-    function setExpanded(expanded) {
-        if (expanded) {
-            floatBtn.classList.remove('collapsed');
-            floatBtn.classList.add('expanded');
-        } else {
-            floatBtn.classList.remove('expanded');
-            floatBtn.classList.add('collapsed');
-        }
+const EVENT_MAP = {
+    '333': '三阶', '222': '二阶', '444': '四阶', '555': '五阶', '666': '六阶', '777': '七阶',
+    '333bf': '三盲', '333fm': '最少步', '333oh': '单手',
+    'clock': '魔表', 'minx': '五魔方', 'pyram': '金字塔', 'skewb': '斜转', 'sq1': 'SQ1',
+    '444bf': '四盲', '555bf': '五盲', '333mbf': '多盲'
+};
+function getEventName(id) { return EVENT_MAP[id] || id; }
+
+const EVENT_ORDER = [
+    '333', '222', '444', '555', '666', '777',
+    '333bf', '333fm', '333oh',
+    'clock', 'minx', 'pyram', 'skewb', 'sq1',
+    '444bf', '555bf', '333mbf'
+];
+function getEventOrderIndex(id) {
+    const idx = EVENT_ORDER.indexOf(id);
+    return idx === -1 ? 999 : idx;
+}
+
+const PROVINCE_PINYIN = {
+    '安徽': 'A', '澳门': 'A', '北京': 'B', '重庆': 'C', '福建': 'F',
+    '甘肃': 'G', '广东': 'G', '广西': 'G', '贵州': 'G',
+    '海南': 'H', '河北': 'H', '黑龙江': 'H', '河南': 'H',
+    '香港': 'H', '湖北': 'H', '湖南': 'H',
+    '吉林': 'J', '江苏': 'J', '江西': 'J', '辽宁': 'L',
+    '内蒙古': 'N', '宁夏': 'N', '青海': 'Q',
+    '山东': 'S', '山西': 'S', '陕西': 'S', '上海': 'S', '四川': 'S',
+    '台湾': 'T', '天津': 'T', '西藏': 'X', '新疆': 'X',
+    '云南': 'Y', '浙江': 'Z'
+};
+function getProvinceSortKey(p) {
+    if (p === '未知') return '0';
+    return (PROVINCE_PINYIN[p] || 'Z') + p;
+}
+
+const PRESET_CITIES = {
+    '澳门': ['花地玛堂区', '圣安多尼堂区', '大堂区', '望德堂区', '风顺堂区', '嘉模堂区（氹仔）', '圣方济各堂区（路环）'],
+    '香港': ['中西区', '东区', '南区', '湾仔区', '九龙城区', '观塘区', '深水埗区', '黄大仙区', '油尖旺区', '离岛区', '葵青区', '北区', '西贡区', '沙田区', '大埔区', '荃湾区', '屯门区', '元朗区'],
+    '台湾': ['台北', '新北', '桃园', '台中', '台南', '高雄', '基隆', '新竹', '嘉义'],
+    '上海': ['黄浦区', '徐汇区', '长宁区', '静安区', '普陀区', '虹口区', '杨浦区', '闵行区', '宝山区', '嘉定区', '浦东新区', '金山区', '松江区', '青浦区', '奉贤区', '崇明区'],
+    '天津': ['和平区', '河东区', '河西区', '南开区', '河北区', '红桥区', '东丽区', '西青区', '津南区', '北辰区', '武清区', '宝坻区', '宁河区', '静海区', '蓟州区', '滨海新区'],
+    '重庆': ['两江新区', '万州区', '黔江区', '涪陵区', '渝中区', '大渡口区', '沙坪坝区', '九龙坡区', '南岸区', '北碚区', '巴南区', '长寿区', '江津区', '合川区', '永川区', '南川区', '綦江区', '大足区', '璧山区', '铜梁区', '潼南区', '荣昌区', '开州区', '梁平区', '武隆区'],
+    '北京': ['东城区', '西城区', '朝阳区', '海淀区', '丰台区', '石景山区', '通州区', '顺义区', '昌平区', '大兴区', '门头沟区', '房山区', '怀柔区', '平谷区', '密云区', '延庆区']
+};
+
+const HIDDEN_CITY_NAMES = ['澳门', '香港', '台湾', '上海', '天津', '重庆', '北京'];
+
+function formatResult(value, eventId) {
+    if (!value || value <= 0) return '-';
+    if (eventId === '333fm') {
+        if (value > 100) return (value / 100).toFixed(2);
+        return value.toString();
     }
-
-    function startTimer() {
-        if (timer) clearTimeout(timer);
-        timer = setTimeout(() => {
-            setExpanded(false);
-            timer = null;
-        }, 10000); // 10秒
+    if (eventId === '333mbf') {
+        const str = value.toString().padStart(9, '0');
+        const P = parseInt(str.substring(0, 3));
+        const Q = parseInt(str.substring(3, 7));
+        const R = parseInt(str.substring(7, 9));
+        if (isNaN(P) || isNaN(Q) || isNaN(R)) return value.toString();
+        const success = 99 + R - Math.floor(P / 10);
+        const attempts = success + R;
+        const minutes = Math.floor(Q / 60);
+        const seconds = Q % 60;
+        const timeStr = (minutes > 0) ? `${minutes}:${seconds.toString().padStart(2, '0')}` : `${seconds}s`;
+        return `${success}/${attempts} ${timeStr}`;
     }
+    const seconds = value / 100;
+    if (seconds < 60) return seconds.toFixed(2) + 's';
+    const mins = Math.floor(seconds / 60);
+    const secs = (seconds % 60).toFixed(2);
+    return `${mins}:${secs.padStart(5, '0')}`;
+}
 
-    function clearTimer() {
-        if (timer) {
-            clearTimeout(timer);
-            timer = null;
-        }
+// ★ 优先级徽章渲染（新签名）
+function renderResultWithBadge(value, eventId, r, player, isSingle) {
+    const text = formatResult(value, eventId);
+    if (!text || text === '-') return '-';
+    const gender = player.gender;
+    let badge = '', cls = '';
+    if (isSingle) {
+        if (r._provSingle) { badge = '<span class="badge badge-prov">PR</span>'; cls = 'province-single'; }
+        else if (r._provGenderSingle && gender === 'm') { badge = '<span class="badge badge-mpr">MPR</span>'; cls = 'mpr-single'; }
+        else if (r._provGenderSingle && gender === 'f') { badge = '<span class="badge badge-fpr">FPR</span>'; cls = 'fpr-single'; }
+        else if (r._citySingle) { badge = '<span class="badge badge-city">CR</span>'; cls = 'city-single'; }
+        else if (r._cityGenderSingle && gender === 'm') { badge = '<span class="badge badge-mcr">MCR</span>'; cls = 'mcr-single'; }
+        else if (r._cityGenderSingle && gender === 'f') { badge = '<span class="badge badge-fcr">FCR</span>'; cls = 'fcr-single'; }
+        else if (r._pbSingle) { badge = '<span class="badge badge-pb">PB</span>'; cls = 'pb-single'; }
+    } else {
+        if (r._provAvg) { badge = '<span class="badge badge-prov">PR</span>'; cls = 'province-avg'; }
+        else if (r._provGenderAvg && gender === 'm') { badge = '<span class="badge badge-mpr">MPR</span>'; cls = 'mpr-avg'; }
+        else if (r._provGenderAvg && gender === 'f') { badge = '<span class="badge badge-fpr">FPR</span>'; cls = 'fpr-avg'; }
+        else if (r._cityAvg) { badge = '<span class="badge badge-city">CR</span>'; cls = 'city-avg'; }
+        else if (r._cityGenderAvg && gender === 'm') { badge = '<span class="badge badge-mcr">MCR</span>'; cls = 'mcr-avg'; }
+        else if (r._cityGenderAvg && gender === 'f') { badge = '<span class="badge badge-fcr">FCR</span>'; cls = 'fcr-avg'; }
+        else if (r._pbAvg) { badge = '<span class="badge badge-pb">PB</span>'; cls = 'pb-avg'; }
     }
+    return badge + `<span class="${cls}">${text}</span>`;
+}
 
-    function onDragStart(e) {
-        e.preventDefault();  
-        e.stopPropagation();
+// ★ 汇总用：判断某成绩的最高优先级类型
+function getHighestSingleType(r, gender) {
+    if (r._provSingle) return 'PR';
+    if (r._provGenderSingle && gender) return gender === 'm' ? 'MPR' : 'FPR';
+    if (r._citySingle) return 'CR';
+    if (r._cityGenderSingle && gender) return gender === 'm' ? 'MCR' : 'FCR';
+    if (r._pbSingle) return 'PB';
+    return null;
+}
+function getHighestAvgType(r, gender) {
+    if (r._provAvg) return 'PR';
+    if (r._provGenderAvg && gender) return gender === 'm' ? 'MPR' : 'FPR';
+    if (r._cityAvg) return 'CR';
+    if (r._cityGenderAvg && gender) return gender === 'm' ? 'MCR' : 'FCR';
+    if (r._pbAvg) return 'PB';
+    return null;
+}
 
-        const rect = floatBtn.getBoundingClientRect();
-        startLeft = rect.left;
-        startTop = rect.top;
+function eventCellHtml(eventId) {
+    return `<span class="event-cell"><span class="cubing-icon event-${eventId}"></span>${getEventName(eventId)}</span>`;
+}
 
-        floatBtn.style.left = startLeft + 'px';
-        floatBtn.style.top = startTop + 'px';
-        floatBtn.style.right = 'auto';
-        floatBtn.style.bottom = 'auto';
+function playerLinkHtml(name, wcaId) {
+    if (!wcaId) return name || '-';
+    return `<a class="player-link" href="#" data-wca="${wcaId}">${name}</a>`;
+}
 
-        if (e.type === 'mousedown') {
-            startX = e.clientX;
-            startY = e.clientY;
-            document.addEventListener('mousemove', onDragMove);
-            document.addEventListener('mouseup', onDragEnd);
-        } else if (e.type === 'touchstart') {
-            startX = e.touches[0].clientX;
-            startY = e.touches[0].clientY;
-            document.addEventListener('touchmove', onDragMove, { passive: false });
-            document.addEventListener('touchend', onDragEnd);
-            document.addEventListener('touchcancel', onDragEnd);
-        }
+function parseDate(str) {
+    if (!str) return null;
+    const parts = str.split('-');
+    if (parts.length === 3) return new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+    return null;
+}
 
-        dragStarted = true;
-        isDragging = false;
+function showLoading(containerId, text) {
+    const c = document.getElementById(containerId);
+    if (!c) return;
+    c.innerHTML = `<div class="loading-spinner"><div class="spinner"></div><p>${text || '加载中…'}</p></div>`;
+}
+
+function showFullscreenLoader(text) {
+    const loader = document.getElementById('fullscreenLoader');
+    if (!loader) return;
+    const p = loader.querySelector('.loader-content p:first-of-type');
+    if (p && text) p.textContent = text;
+    loader.style.display = 'flex';
+    void loader.offsetWidth;
+    loader.classList.remove('hide');
+}
+
+function hideFullscreenLoader() {
+    const loader = document.getElementById('fullscreenLoader');
+    if (!loader) return;
+    loader.classList.add('hide');
+    setTimeout(function () {
+        loader.style.display = 'none';
+    }, 500);
+}
+
+function countLess(sortedArr, val) {
+    let lo = 0, hi = sortedArr.length;
+    while (lo < hi) {
+        const mid = (lo + hi) >> 1;
+        if (sortedArr[mid] < val) lo = mid + 1;
+        else hi = mid;
     }
+    return lo;
+}
 
-    function onDragMove(e) {
-        if (!dragStarted) return;
+// ============================================================
+// 全局数据
+// ============================================================
+let allPlayers = [], playerMap = {}, eventList = [];
+let rankType = 'single';
+let rankPage = 1;
+let rankSelectedEvent = '';
+const RANK_PAGE_SIZE = 100;
+let playersByCity = {}, playersByProvince = {};
+let playerMarkedCache = {};
+
+let playerBestCache = {};
+let eventRankCache = {};
+
+let playerTablePages = {};
+const PLAYER_TABLE_PAGE_SIZE = 30;
+const SCORE_TABLE_PAGE_SIZE = 50;
+const REIGN_PAGE_SIZE = 10;
+
+let playerViewMode = 'event';
+let playerSelectedEvent = '333';
+let playerSelectedCompYear = 'all';
+let playerSectionMode = 'score';
+
+let recSelectedEvent = '';
+let recMode = 'current';
+
+let homeAllRecords = [];
+let homeRankFilter = 'all';
+let homeSearchWcaId = '';
+let homePage = 1;
+const HOME_PAGE_SIZE = 50;
+let homeAutoPlay = true;
+let homeAutoTimer = null;
+
+let ovType = 'single';
+let ovSelected = [];
+let ovPage = 1;
+const OV_PAGE_SIZE = 100;
+
+// ============================================================
+// 弹窗
+// ============================================================
+function showBadgeHelp() { document.getElementById('badgeHelpModal').style.display = 'flex'; }
+function closeBadgeHelp() { document.getElementById('badgeHelpModal').style.display = 'none'; }
+document.addEventListener('click', function (e) {
+    const modal = document.getElementById('badgeHelpModal');
+    if (e.target === modal) modal.style.display = 'none';
+});
+
+document.addEventListener('keydown', function (e) {
+    const tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    if (e.key === 'f' || e.key === 'F') {
+        const panel = document.getElementById('controlPanel');
+        if (!panel) return;
+        panel.classList.toggle('show');
+    }
+});
+
+document.addEventListener('click', function (e) {
+    const link = e.target.closest('.player-link');
+    if (link) {
         e.preventDefault();
+        const wcaId = link.dataset.wca;
+        if (wcaId) openPlayerHome(wcaId);
+    }
+});
 
-        let clientX, clientY;
-        if (e.type === 'mousemove') {
-            clientX = e.clientX;
-            clientY = e.clientY;
-        } else if (e.type === 'touchmove') {
-            clientX = e.touches[0].clientX;
-            clientY = e.touches[0].clientY;
+// ============================================================
+// 数据加载（分片并行加载 + 单文件回退）
+// ============================================================
+async function fetchChunkPlayers(index) {
+    const chunks = (index && index.chunks) || [];
+    const files = chunks
+        .map(item => (typeof item === 'string') ? item : (item && item.file))
+        .filter(Boolean);
+    const totalChunks = files.length;
+    if (totalChunks === 0) return [];
+
+    let done = 0;
+    showFullscreenLoader(`正在加载数据分片 0 / ${totalChunks}…`);
+
+    const tasks = files.map(file =>
+        fetch(file)
+            .then(resp => {
+                if (!resp.ok) throw new Error(`数据分片加载失败：${file}`);
+                return resp.json();
+            })
+            .then(arr => {
+                done++;
+                showFullscreenLoader(`正在加载数据分片 ${done} / ${totalChunks}…`);
+                return Array.isArray(arr) ? arr : [];
+            })
+    );
+
+    const parts = await Promise.all(tasks);
+    // 按索引顺序拼接，保证结果稳定
+    const all = [];
+    for (let i = 0; i < parts.length; i++) {
+        const arr = parts[i];
+        for (let k = 0; k < arr.length; k++) all.push(arr[k]);
+    }
+    return all;
+}
+
+async function fetchAllPlayers() {
+    // 优先使用分片索引
+    try {
+        showFullscreenLoader('正在读取数据索引…');
+        const idxResp = await fetch('wca_merged_index.json');
+        if (idxResp.ok) {
+            const index = await idxResp.json();
+            if (index && Array.isArray(index.chunks) && index.chunks.length > 0) {
+                return await fetchChunkPlayers(index);
+            }
         }
-
-        const deltaX = clientX - startX;
-        const deltaY = clientY - startY;
-        const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-
-        if (!isDragging && distance > DRAG_THRESHOLD) {
-            isDragging = true;  
-        }
-
-        if (isDragging) {
-            let newLeft = startLeft + deltaX;
-            let newTop = startTop + deltaY;
-
-            const winWidth = window.innerWidth;
-            const winHeight = window.innerHeight;
-            const btnWidth = floatBtn.offsetWidth;
-            const btnHeight = floatBtn.offsetHeight;
-
-            newLeft = Math.max(0, Math.min(newLeft, winWidth - btnWidth));
-            newTop = Math.max(0, Math.min(newTop, winHeight - btnHeight));
-
-            floatBtn.style.left = newLeft + 'px';
-            floatBtn.style.top = newTop + 'px';
-
-            startX = clientX;
-            startY = clientY;
-            startLeft = newLeft;
-            startTop = newTop;
-        }
+    } catch (e) {
+        console.warn('分片索引加载失败，尝试单文件模式：', e);
     }
 
-    function onDragEnd(e) {
-        if (!dragStarted) return;
-
-        document.removeEventListener('mousemove', onDragMove);
-        document.removeEventListener('mouseup', onDragEnd);
-        document.removeEventListener('touchmove', onDragMove);
-        document.removeEventListener('touchend', onDragEnd);
-        document.removeEventListener('touchcancel', onDragEnd);
-
-        if (!isDragging) {
-            clickFromDrag = true;
-            handleClick();
-        }
-
-        dragStarted = false;
-        isDragging = false;
+    // 回退：旧的单文件模式
+    showFullscreenLoader('WCA 数据加载中…');
+    const resp = await fetch('wca_merged.json');
+    if (!resp.ok) {
+        throw new Error('未找到 wca_merged_index.json，也未找到 wca_merged.json，请确认文件与 viewer.html 在同一目录');
     }
+    return await resp.json();
+}
 
-    function handleClick() {
-        if (floatBtn.classList.contains('collapsed')) {
-            setExpanded(true);
-            startTimer();
-        } else {
-            clearTimer();
-            window.location.href = 'feedback.html';
-        }
+// ============================================================
+// 加载数据
+// ============================================================
+async function loadData() {
+    const timeoutId = setTimeout(function () {
+        const loader = document.getElementById('fullscreenLoader');
+        if (loader && !loader.classList.contains('hide')) hideFullscreenLoader();
+    }, 120000);
+
+    const playerResult = document.getElementById('playerResult');
+    try {
+        playerResult.innerHTML = `<div class="loading-spinner"><div class="spinner"></div><p>数据加载中，请稍候……</p></div>`;
+        allPlayers = await fetchAllPlayers();
+
+        allPlayers.forEach(p => {
+            if (!p.province || p.province.toString().trim().toLowerCase() === 'other') p.province = '未知';
+            if (!p.city || p.city.toString().trim().toLowerCase() === 'other') p.city = '未知';
+            if (p.country_id && ['Hong Kong', 'Macau', 'Taiwan', 'Chinese Taipei'].indexOf(p.country_id.trim()) >= 0) {
+                p.country_id = 'China';
+            }
+        });
+
+        const EXCLUDED_EVENTS = ['333ft', 'magic', '333mbo', 'mmagic'];
+        allPlayers.forEach(p => {
+            p.results = p.results.filter(r => EXCLUDED_EVENTS.indexOf(r.event_id) === -1);
+        });
+
+        allPlayers.forEach(p => {
+            playerMap[p.wca_id] = p;
+            if (p.city && p.city !== '未知') {
+                if (!playersByCity[p.city]) playersByCity[p.city] = [];
+                playersByCity[p.city].push(p);
+            }
+            if (p.province && p.province !== '未知') {
+                if (!playersByProvince[p.province]) playersByProvince[p.province] = [];
+                playersByProvince[p.province].push(p);
+            }
+        });
+
+        allPlayers.forEach(p => {
+            const map = {};
+            p.results.forEach(r => {
+                if (!map[r.event_id]) map[r.event_id] = { single: Infinity, avg: Infinity };
+                if (r.best > 0 && r.best < map[r.event_id].single) map[r.event_id].single = r.best;
+                if (r.average > 0 && r.average < map[r.event_id].avg) map[r.event_id].avg = r.average;
+            });
+            playerBestCache[p.wca_id] = map;
+        });
+
+        const evSet = {};
+        allPlayers.forEach(p => p.results.forEach(r => { evSet[r.event_id] = 1; }));
+        eventList = Object.keys(evSet).sort((a, b) => getEventOrderIndex(a) - getEventOrderIndex(b));
+
+        const hasGender = allPlayers.some(p => p.gender);
+        if (!hasGender) document.getElementById('genderWarning').style.display = 'block';
+
+        initRankFilters();
+        initRecordFilters();
+        initOverall();
+
+        playerResult.innerHTML = '<div class="no-data">请输入 WCA ID 或姓名进行搜索</div>';
+
+        renderHomePage(function () {
+            clearTimeout(timeoutId);
+            hideFullscreenLoader();
+        });
+    } catch (e) {
+        playerResult.innerHTML = '<div class="no-data">加载失败：' + e.message + '</div>';
+        alert('加载失败: ' + e.message);
+        clearTimeout(timeoutId);
+        hideFullscreenLoader();
     }
+}
 
-    floatBtn.addEventListener('mousedown', onDragStart);
-    floatBtn.addEventListener('touchstart', onDragStart, { passive: false });
+// ============================================================
+// 首页
+// ============================================================
+function renderHomePage(callback) {
+    showLoading('homeRecentRecords', '正在统计近期纪录…');
+    requestAnimationFrame(function () {
+        setTimeout(function () {
+            _computeHomeRecords();
+            if (typeof callback === 'function') callback();
+        }, 0);
+    });
+}
 
-    floatBtn.addEventListener('click', function(e) {
-        if (clickFromDrag) {
-            clickFromDrag = false; 
-            return;
-        }
-        handleClick();
+function _computeHomeRecords() {
+    const playerBestSingle = {}, playerBestAvg = {};
+    const cityBestSingle = {}, cityBestAvg = {};
+    const provBestSingle = {}, provBestAvg = {};
+    const cityGenderBestSingle = {}, cityGenderBestAvg = {};
+    const provGenderBestSingle = {}, provGenderBestAvg = {};
+
+    allPlayers.forEach(p => {
+        const pid = p.wca_id;
+        const pbs = {}, pba = {};
+        const gender = p.gender;
+        p.results.forEach(r => {
+            const ev = r.event_id;
+            if (r.best > 0) {
+                if (!pbs[ev] || r.best < pbs[ev]) pbs[ev] = r.best;
+                if (p.city && p.city !== '未知') {
+                    const k = p.city + '|' + ev;
+                    if (!cityBestSingle[k] || r.best < cityBestSingle[k]) cityBestSingle[k] = r.best;
+                    if (gender) {
+                        const gk = p.city + '|' + gender + '|' + ev;
+                        if (!cityGenderBestSingle[gk] || r.best < cityGenderBestSingle[gk]) cityGenderBestSingle[gk] = r.best;
+                    }
+                }
+                if (p.province && p.province !== '未知') {
+                    const k = p.province + '|' + ev;
+                    if (!provBestSingle[k] || r.best < provBestSingle[k]) provBestSingle[k] = r.best;
+                    if (gender) {
+                        const gk = p.province + '|' + gender + '|' + ev;
+                        if (!provGenderBestSingle[gk] || r.best < provGenderBestSingle[gk]) provGenderBestSingle[gk] = r.best;
+                    }
+                }
+            }
+            if (r.average > 0) {
+                if (!pba[ev] || r.average < pba[ev]) pba[ev] = r.average;
+                if (p.city && p.city !== '未知') {
+                    const k = p.city + '|' + ev;
+                    if (!cityBestAvg[k] || r.average < cityBestAvg[k]) cityBestAvg[k] = r.average;
+                    if (gender) {
+                        const gk = p.city + '|' + gender + '|' + ev;
+                        if (!cityGenderBestAvg[gk] || r.average < cityGenderBestAvg[gk]) cityGenderBestAvg[gk] = r.average;
+                    }
+                }
+                if (p.province && p.province !== '未知') {
+                    const k = p.province + '|' + ev;
+                    if (!provBestAvg[k] || r.average < provBestAvg[k]) provBestAvg[k] = r.average;
+                    if (gender) {
+                        const gk = p.province + '|' + gender + '|' + ev;
+                        if (!provGenderBestAvg[gk] || r.average < provGenderBestAvg[gk]) provGenderBestAvg[gk] = r.average;
+                    }
+                }
+            }
+        });
+        playerBestSingle[pid] = pbs;
+        playerBestAvg[pid] = pba;
     });
 
-    setExpanded(true);
-    startTimer();
+    const oneMonthAgo = new Date();
+    oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
+    oneMonthAgo.setHours(0, 0, 0, 0);
+
+    const recent = [];
+    allPlayers.forEach(p => {
+        const gender = p.gender;
+        p.results.forEach(r => {
+            const d = parseDate(r.date);
+            if (!d || d < oneMonthAgo) return;
+            const ev = r.event_id;
+
+            if (r.best > 0) {
+                let badgeText = null, badgeLabel = null, level = 0, badgeCls = '', valCls = '';
+                if (p.province && p.province !== '未知' && provBestSingle[p.province + '|' + ev] === r.best) {
+                    badgeText = 'PR'; badgeLabel = 'PR'; level = 5; badgeCls = 'badge-prov'; valCls = 'province-single';
+                } else if (gender && p.province && p.province !== '未知' && provGenderBestSingle[p.province + '|' + gender + '|' + ev] === r.best) {
+                    badgeText = 'PR'; badgeLabel = (gender === 'm' ? 'MPR' : 'FPR'); level = 4;
+                    badgeCls = (gender === 'm' ? 'badge-mpr' : 'badge-fpr');
+                    valCls = (gender === 'm' ? 'mpr-single' : 'fpr-single');
+                } else if (p.city && p.city !== '未知' && cityBestSingle[p.city + '|' + ev] === r.best) {
+                    badgeText = 'CR'; badgeLabel = 'CR'; level = 3; badgeCls = 'badge-city'; valCls = 'city-single';
+                } else if (gender && p.city && p.city !== '未知' && cityGenderBestSingle[p.city + '|' + gender + '|' + ev] === r.best) {
+                    badgeText = 'CR'; badgeLabel = (gender === 'm' ? 'MCR' : 'FCR'); level = 2;
+                    badgeCls = (gender === 'm' ? 'badge-mcr' : 'badge-fcr');
+                    valCls = (gender === 'm' ? 'mcr-single' : 'fcr-single');
+                } else if (playerBestSingle[p.wca_id][ev] === r.best) {
+                    badgeText = 'PB'; badgeLabel = 'PB'; level = 1; badgeCls = 'badge-pb'; valCls = 'pb-single';
+                }
+                if (badgeText) {
+                    recent.push({
+                        level, date: r.date, dateObj: d, event: ev,
+                        eventName: getEventName(ev),
+                        badgeCls, valCls, badgeText, badgeLabel,
+                        value: r.best, isSingle: true,
+                        name: p.name, wca_id: p.wca_id,
+                        competition: r.competition_name || r.competition_id
+                    });
+                }
+            }
+            if (r.average > 0) {
+                let badgeText = null, badgeLabel = null, level = 0, badgeCls = '', valCls = '';
+                if (p.province && p.province !== '未知' && provBestAvg[p.province + '|' + ev] === r.average) {
+                    badgeText = 'PR'; badgeLabel = 'PR'; level = 5; badgeCls = 'badge-prov'; valCls = 'province-avg';
+                } else if (gender && p.province && p.province !== '未知' && provGenderBestAvg[p.province + '|' + gender + '|' + ev] === r.average) {
+                    badgeText = 'PR'; badgeLabel = (gender === 'm' ? 'MPR' : 'FPR'); level = 4;
+                    badgeCls = (gender === 'm' ? 'badge-mpr' : 'badge-fpr');
+                    valCls = (gender === 'm' ? 'mpr-avg' : 'fpr-avg');
+                } else if (p.city && p.city !== '未知' && cityBestAvg[p.city + '|' + ev] === r.average) {
+                    badgeText = 'CR'; badgeLabel = 'CR'; level = 3; badgeCls = 'badge-city'; valCls = 'city-avg';
+                } else if (gender && p.city && p.city !== '未知' && cityGenderBestAvg[p.city + '|' + gender + '|' + ev] === r.average) {
+                    badgeText = 'CR'; badgeLabel = (gender === 'm' ? 'MCR' : 'FCR'); level = 2;
+                    badgeCls = (gender === 'm' ? 'badge-mcr' : 'badge-fcr');
+                    valCls = (gender === 'm' ? 'mcr-avg' : 'fcr-avg');
+                } else if (playerBestAvg[p.wca_id][ev] === r.average) {
+                    badgeText = 'PB'; badgeLabel = 'PB'; level = 1; badgeCls = 'badge-pb'; valCls = 'pb-avg';
+                }
+                if (badgeText) {
+                    recent.push({
+                        level, date: r.date, dateObj: d, event: ev,
+                        eventName: getEventName(ev),
+                        badgeCls, valCls, badgeText, badgeLabel,
+                        value: r.average, isSingle: false,
+                        name: p.name, wca_id: p.wca_id,
+                        competition: r.competition_name || r.competition_id
+                    });
+                }
+            }
+        });
+    });
+
+    recent.sort((a, b) => {
+        const dt = b.dateObj - a.dateObj;
+        if (dt !== 0) return dt;
+        return b.level - a.level;
+    });
+
+    const seen = {};
+    const dedup = [];
+    recent.forEach(r => {
+        const key = r.name + '|' + r.event + '|' + r.isSingle + '|' + r.date;
+        if (!seen[key]) {
+            seen[key] = 1;
+            dedup.push(r);
+        }
+    });
+
+    homeAllRecords = dedup;
+    homePage = 1;
+    renderHomeControls();
+    renderHomeTableBody();
+}
+
+function renderHomeControls() {
+    const container = document.getElementById('homeRecentRecords');
+    if (!container) return;
+    if (document.getElementById('homeControls')) {
+        updateHomeFilterButtons();
+        return;
+    }
+    container.innerHTML = `
+        <div class="home-controls" id="homeControls">
+            <div class="filter-buttons" id="homeFilterButtons">
+                <button data-filter="all">全部</button>
+                <button data-filter="PR">PR</button>
+                <button data-filter="CR">CR</button>
+                <button data-filter="PB">PB</button>
+            </div>
+            <div class="home-search">
+                <input type="text" id="homeSearchInput" placeholder="输入 WCA ID 搜索选手" value="${homeSearchWcaId}">
+                <button id="homeSearchClear" style="display:${homeSearchWcaId ? 'inline-block' : 'none'};">清除</button>
+            </div>
+            <label class="auto-play-toggle" title="每 5 秒自动翻页">
+                <input type="checkbox" id="homeAutoPlayCheck" ${homeAutoPlay ? 'checked' : ''}>
+                自动翻页（每 5 秒）
+            </label>
+        </div>
+        <div id="homeTableContainer"></div>
+    `;
+
+    document.querySelectorAll('#homeFilterButtons button').forEach(btn => {
+        btn.onclick = function () {
+            homeRankFilter = this.dataset.filter;
+            homePage = 1;
+            updateHomeFilterButtons();
+            renderHomeTableBody();
+        };
+    });
+
+    const autoCheck = document.getElementById('homeAutoPlayCheck');
+    if (autoCheck) {
+        autoCheck.onchange = function () {
+            homeAutoPlay = this.checked;
+            if (homeAutoTimer) { clearInterval(homeAutoTimer); homeAutoTimer = null; }
+            if (homeAutoPlay) {
+                const filteredCount = getHomeFilteredCount();
+                const totalPages = Math.max(1, Math.ceil(filteredCount / HOME_PAGE_SIZE));
+                if (totalPages > 1) startHomeAutoTimer(totalPages);
+            }
+        };
+    }
+
+    const searchInput = document.getElementById('homeSearchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', function () {
+            homeSearchWcaId = this.value.trim();
+            document.getElementById('homeSearchClear').style.display = homeSearchWcaId ? 'inline-block' : 'none';
+            homePage = 1;
+            renderHomeTableBody();
+        });
+    }
+
+    const clearBtn = document.getElementById('homeSearchClear');
+    if (clearBtn) {
+        clearBtn.onclick = function () {
+            document.getElementById('homeSearchInput').value = '';
+            homeSearchWcaId = '';
+            this.style.display = 'none';
+            homePage = 1;
+            renderHomeTableBody();
+        };
+    }
+
+    updateHomeFilterButtons();
+}
+
+function updateHomeFilterButtons() {
+    document.querySelectorAll('#homeFilterButtons button').forEach(btn => {
+        if (btn.dataset.filter === homeRankFilter) btn.classList.add('active');
+        else btn.classList.remove('active');
+    });
+}
+
+function getHomeFilteredCount() {
+    let filtered = homeAllRecords;
+    if (homeSearchWcaId) {
+        const search = homeSearchWcaId.toUpperCase();
+        filtered = filtered.filter(r => r.wca_id && r.wca_id.toUpperCase().indexOf(search) >= 0);
+    }
+    if (homeRankFilter !== 'all') {
+        filtered = filtered.filter(r => r.badgeText === homeRankFilter);
+    }
+    return filtered.length;
+}
+
+function renderHomeTableBody() {
+    const tableContainer = document.getElementById('homeTableContainer');
+    if (!tableContainer) return;
+
+    if (homeAutoTimer) { clearInterval(homeAutoTimer); homeAutoTimer = null; }
+
+    let filtered = homeAllRecords;
+    if (homeSearchWcaId) {
+        const search = homeSearchWcaId.toUpperCase();
+        filtered = filtered.filter(r => r.wca_id && r.wca_id.toUpperCase().indexOf(search) >= 0);
+    }
+    if (homeRankFilter !== 'all') {
+        filtered = filtered.filter(r => r.badgeText === homeRankFilter);
+    }
+
+    if (filtered.length === 0) {
+        let msg = '该筛选下暂无纪录刷新';
+        if (homeSearchWcaId) {
+            const p = playerMap[homeSearchWcaId.toUpperCase()];
+            if (p) msg = `${p.name}（${homeSearchWcaId.toUpperCase()}）近期没有刷新任何纪录`;
+            else msg = '未找到该选手，请检查 WCA ID 是否正确';
+        }
+        tableContainer.innerHTML = `<div class="no-data">${msg}</div>`;
+        return;
+    }
+
+    const totalPages = Math.max(1, Math.ceil(filtered.length / HOME_PAGE_SIZE));
+    if (homePage > totalPages) homePage = totalPages;
+    if (homePage < 1) homePage = 1;
+    const start = (homePage - 1) * HOME_PAGE_SIZE;
+    const pageItems = filtered.slice(start, start + HOME_PAGE_SIZE);
+
+    let html = `<div class="table-wrap"><table>
+        <tr><th>项目</th><th>单次</th><th>平均</th><th>姓名</th><th>WCA ID</th><th>比赛</th><th>日期</th></tr>`;
+
+    pageItems.forEach(r => {
+        const label = r.badgeLabel || r.badgeText;
+        const valHtml = `<span class="badge ${r.badgeCls}">${label}</span><span class="${r.valCls}">${formatResult(r.value, r.event)}</span>`;
+        html += `<tr>
+            <td>${eventCellHtml(r.event)}</td>
+            <td>${r.isSingle ? valHtml : '-'}</td>
+            <td>${r.isSingle ? '-' : valHtml}</td>
+            <td>${playerLinkHtml(r.name, r.wca_id)}</td>
+            <td>${r.wca_id}</td>
+            <td>${r.competition}</td>
+            <td>${r.date || '-'}</td>
+        </tr>`;
+    });
+
+    html += '</table></div>';
+
+    html += `<div class="pagination">
+        <button id="homeFirstPage" ${homePage <= 1 ? 'disabled' : ''}>首页</button>
+        <button id="homePrevPage" ${homePage <= 1 ? 'disabled' : ''}>上一页</button>
+        <span class="page-info">第 ${homePage} / ${totalPages} 页（共 ${filtered.length} 条，每页 ${HOME_PAGE_SIZE} 条）</span>
+        <button id="homeNextPage" ${homePage >= totalPages ? 'disabled' : ''}>下一页</button>
+        <button id="homeLastPage" ${homePage >= totalPages ? 'disabled' : ''}>末页</button>
+    </div>`;
+
+    tableContainer.innerHTML = html;
+
+    const firstBtn = document.getElementById('homeFirstPage');
+    const prevBtn = document.getElementById('homePrevPage');
+    const nextBtn = document.getElementById('homeNextPage');
+    const lastBtn = document.getElementById('homeLastPage');
+    if (firstBtn) firstBtn.onclick = function () { homePage = 1; renderHomeTableBody(); };
+    if (prevBtn) prevBtn.onclick = function () { homePage = Math.max(1, homePage - 1); renderHomeTableBody(); };
+    if (nextBtn) nextBtn.onclick = function () { homePage = Math.min(totalPages, homePage + 1); renderHomeTableBody(); };
+    if (lastBtn) lastBtn.onclick = function () { homePage = totalPages; renderHomeTableBody(); };
+
+    if (homeAutoPlay && totalPages > 1) {
+        startHomeAutoTimer(totalPages);
+    }
+}
+
+function startHomeAutoTimer(totalPages) {
+    if (homeAutoTimer) clearInterval(homeAutoTimer);
+    homeAutoTimer = setInterval(function () {
+        homePage++;
+        if (homePage > totalPages) homePage = 1;
+        renderHomeTableBody();
+    }, 5000);
+}
+
+// ============================================================
+// 省市排名
+// ============================================================
+function initRankFilters() {
+    const provinces = [...new Set(allPlayers.map(p => p.province).filter(Boolean))].sort((a, b) => {
+        return getProvinceSortKey(a).localeCompare(getProvinceSortKey(b), 'en');
+    });
+    const provSel = document.getElementById('rankProvince');
+    provSel.innerHTML = '<option value="">全国</option>' + provinces.map(p => `<option value="${p}">${p}</option>`).join('');
+    if (provinces.indexOf('未知') >= 0) {
+        provSel.value = '未知';
+    } else {
+        provSel.value = '';
+    }
+
+    updateRankCityDisabled();
+    updateCityOptions();
+    renderRankEventIcons();
+
+    provSel.addEventListener('change', () => {
+        updateRankCityDisabled();
+        updateCityOptions();
+        rankPage = 1;
+        if (rankSelectedEvent) renderPlayerRanking();
+    });
+    ['rankCity', 'rankGender'].forEach(id => {
+        document.getElementById(id).addEventListener('change', () => {
+            rankPage = 1;
+            if (rankSelectedEvent) renderPlayerRanking();
+        });
+    });
+
+    document.getElementById('rankSingleBtn').addEventListener('click', () => {
+        rankType = 'single';
+        rankPage = 1;
+        document.getElementById('rankSingleBtn').classList.add('active');
+        document.getElementById('rankAvgBtn').classList.remove('active');
+        if (rankSelectedEvent) renderPlayerRanking();
+    });
+    document.getElementById('rankAvgBtn').addEventListener('click', () => {
+        rankType = 'avg';
+        rankPage = 1;
+        document.getElementById('rankAvgBtn').classList.add('active');
+        document.getElementById('rankSingleBtn').classList.remove('active');
+        if (rankSelectedEvent) renderPlayerRanking();
+    });
+}
+
+function updateRankCityDisabled() {
+    const provSel = document.getElementById('rankProvince');
+    const citySel = document.getElementById('rankCity');
+    if (provSel.value === '' || provSel.value === '未知') {
+        citySel.disabled = true;
+        citySel.value = '';
+    } else {
+        citySel.disabled = false;
+    }
+}
+
+function renderRankEventIcons() {
+    const wrap = document.getElementById('rankEventIcons');
+    if (!wrap) return;
+    wrap.innerHTML = eventList.map(ev => {
+        const active = rankSelectedEvent === ev ? ' active' : '';
+        return `<button type="button" class="event-icon${active}" data-event="${ev}" title="${getEventName(ev)}">
+            <span class="cubing-icon event-${ev}"></span>
+            <span class="event-icon-label">${getEventName(ev)}</span>
+        </button>`;
+    }).join('');
+
+    wrap.querySelectorAll('.event-icon').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const ev = this.dataset.event;
+            if (rankSelectedEvent === ev) {
+                rankSelectedEvent = '';
+            } else {
+                rankSelectedEvent = ev;
+            }
+            renderRankEventIcons();
+            if (rankSelectedEvent) {
+                rankPage = 1;
+                renderPlayerRanking();
+            } else {
+                document.getElementById('rankResult').innerHTML = '<div class="no-data">请选择项目</div>';
+            }
+        });
+    });
+}
+
+function updateCityOptions() {
+    const province = document.getElementById('rankProvince').value;
+    let cities;
+    if (province) {
+        cities = [...new Set(allPlayers.filter(p => p.province === province).map(p => p.city).filter(Boolean))];
+    } else {
+        cities = [...new Set(allPlayers.map(p => p.city).filter(Boolean))];
+    }
+    if (province && PRESET_CITIES[province]) {
+        cities = [...new Set([...cities, ...PRESET_CITIES[province]])];
+    }
+    cities = cities.filter(c => HIDDEN_CITY_NAMES.indexOf(c) < 0);
+    cities.sort((a, b) => {
+        if (a === '未知') return -1;
+        if (b === '未知') return 1;
+        return a.localeCompare(b, 'zh-Hans-CN');
+    });
+    const citySel = document.getElementById('rankCity');
+    const prev = citySel.value;
+    citySel.innerHTML = '<option value="">全部</option>' + cities.map(c => `<option value="${c}">${c}</option>`).join('');
+    if (cities.indexOf(prev) >= 0) citySel.value = prev;
+}
+
+function renderPlayerRanking() {
+    const province = document.getElementById('rankProvince').value;
+    const city = document.getElementById('rankCity').value;
+    const eventId = rankSelectedEvent;
+    const gender = document.getElementById('rankGender').value;
+    const container = document.getElementById('rankResult');
+
+    if (!eventId) {
+        container.innerHTML = '<div class="no-data">请先选择项目</div>';
+        return;
+    }
+
+    showLoading('rankResult', '正在计算排名…');
+    requestAnimationFrame(function () {
+        setTimeout(function () {
+            _renderPlayerRanking(province, city, eventId, gender);
+        }, 0);
+    });
+}
+
+function _renderPlayerRanking(province, city, eventId, gender) {
+    const container = document.getElementById('rankResult');
+    const candidates = [];
+    allPlayers.forEach(p => {
+        if (province && p.province !== province) return;
+        if (city && p.city !== city) return;
+        if (gender && p.gender !== gender) return;
+
+        let best = null;
+        for (const r of p.results) {
+            if (r.event_id !== eventId) continue;
+            const val = rankType === 'single' ? r.best : r.average;
+            if (val > 0 && (best === null || val < best)) best = val;
+        }
+        if (best !== null) {
+            candidates.push({
+                wca_id: p.wca_id, name: p.name,
+                province: p.province || '-', city: p.city || '-',
+                best: best
+            });
+        }
+    });
+
+    if (candidates.length === 0) {
+        container.innerHTML = '<div class="no-data">没有符合条件的选手</div>';
+        return;
+    }
+
+    candidates.sort((a, b) => a.best - b.best);
+    let lastVal = null, lastRank = 0;
+    candidates.forEach((item, idx) => {
+        if (item.best !== lastVal) { lastRank = idx + 1; lastVal = item.best; }
+        item.rank = lastRank;
+    });
+
+    const totalPages = Math.max(1, Math.ceil(candidates.length / RANK_PAGE_SIZE));
+    if (rankPage > totalPages) rankPage = totalPages;
+    if (rankPage < 1) rankPage = 1;
+    const start = (rankPage - 1) * RANK_PAGE_SIZE;
+    const pageItems = candidates.slice(start, start + RANK_PAGE_SIZE);
+
+    const regionParts = [];
+    if (province) regionParts.push(province);
+    if (city) regionParts.push(city);
+    const regionLabel = regionParts.length > 0 ? regionParts.join(' · ') : '全国';
+    const typeLabel = rankType === 'single' ? '单次' : '平均';
+    const genderLabel = gender === 'm' ? '（男）' : (gender === 'f' ? '（女）' : '');
+
+    let html = `<h3>${regionLabel} ${getEventName(eventId)} ${typeLabel}排名${genderLabel}（共 ${candidates.length} 人）</h3>`;
+    html += `<div class="table-wrap"><table><tr><th>排名</th><th>选手</th><th>省份</th><th>城市</th><th>成绩</th><th>WCA ID</th></tr>`;
+    pageItems.forEach(item => {
+        html += `<tr>
+            <td>${item.rank}</td>
+            <td>${playerLinkHtml(item.name, item.wca_id)}</td>
+            <td>${item.province}</td>
+            <td>${item.city}</td>
+            <td>${formatResult(item.best, eventId)}</td>
+            <td>${item.wca_id}</td>
+        </tr>`;
+    });
+    html += '</table></div>';
+
+    html += `<div class="pagination">
+        <button id="rankFirstPage" ${rankPage <= 1 ? 'disabled' : ''}>首页</button>
+        <button id="rankPrevPage" ${rankPage <= 1 ? 'disabled' : ''}>上一页</button>
+        <span class="page-info">第 ${rankPage} / ${totalPages} 页（每页 ${RANK_PAGE_SIZE} 条）</span>
+        <button id="rankNextPage" ${rankPage >= totalPages ? 'disabled' : ''}>下一页</button>
+        <button id="rankLastPage" ${rankPage >= totalPages ? 'disabled' : ''}>末页</button>
+    </div>`;
+
+    container.innerHTML = html;
+
+    const firstBtn = document.getElementById('rankFirstPage');
+    const prevBtn = document.getElementById('rankPrevPage');
+    const nextBtn = document.getElementById('rankNextPage');
+    const lastBtn = document.getElementById('rankLastPage');
+    if (firstBtn) firstBtn.onclick = () => { rankPage = 1; renderPlayerRanking(); };
+    if (prevBtn) prevBtn.onclick = () => { rankPage--; renderPlayerRanking(); };
+    if (nextBtn) nextBtn.onclick = () => { rankPage++; renderPlayerRanking(); };
+    if (lastBtn) lastBtn.onclick = () => { rankPage = totalPages; renderPlayerRanking(); };
+}
+
+// ============================================================
+// 省市纪录
+// ============================================================
+function initRecordFilters() {
+    const provinces = [...new Set(allPlayers.map(p => p.province).filter(Boolean))].sort((a, b) => {
+        return getProvinceSortKey(a).localeCompare(getProvinceSortKey(b), 'en');
+    });
+    const provSel = document.getElementById('recProvince');
+    provSel.innerHTML = provinces.map(p => `<option value="${p}">${p}</option>`).join('');
+    if (provinces.indexOf('未知') >= 0) {
+        provSel.value = '未知';
+    } else if (provinces.length > 0) {
+        provSel.value = provinces[0];
+    }
+
+    updateRecCityDisabled();
+    updateRecCityOptions();
+    renderRecEventIcons();
+
+    provSel.addEventListener('change', () => {
+        updateRecCityDisabled();
+        updateRecCityOptions();
+        if (recMode === 'history' && recSelectedEvent) {
+            renderHistoryRecords();
+        }
+    });
+    document.getElementById('recCity').addEventListener('change', () => {
+        if (recMode === 'history' && recSelectedEvent) {
+            renderHistoryRecords();
+        }
+    });
+    document.getElementById('recGender').addEventListener('change', () => {
+        if (recMode === 'history' && recSelectedEvent) {
+            renderHistoryRecords();
+        }
+    });
+
+    document.getElementById('recQueryBtn').addEventListener('click', () => {
+        recMode = 'current';
+        recSelectedEvent = '';
+        renderRecEventIcons();
+        document.getElementById('recEventSelector').style.display = 'none';
+        renderRegionRecords();
+    });
+
+    document.getElementById('recHistoryBtn').addEventListener('click', () => {
+        recMode = 'history';
+        document.getElementById('recEventSelector').style.display = 'block';
+        if (recSelectedEvent) {
+            renderHistoryRecords();
+        } else {
+            document.getElementById('recResult').innerHTML = '<div class="no-data">请点击上方图标选择项目后，将自动显示该项目的历史纪录</div>';
+        }
+    });
+}
+
+function updateRecCityDisabled() {
+    const provSel = document.getElementById('recProvince');
+    const citySel = document.getElementById('recCity');
+    if (provSel.value === '未知') {
+        citySel.disabled = true;
+        citySel.value = '';
+    } else {
+        citySel.disabled = false;
+    }
+}
+
+function renderRecEventIcons() {
+    const wrap = document.getElementById('recEventIcons');
+    if (!wrap) return;
+    wrap.innerHTML = eventList.map(ev => {
+        const active = recSelectedEvent === ev ? ' active' : '';
+        return `<button type="button" class="event-icon${active}" data-event="${ev}" title="${getEventName(ev)}">
+            <span class="cubing-icon event-${ev}"></span>
+            <span class="event-icon-label">${getEventName(ev)}</span>
+        </button>`;
+    }).join('');
+
+    wrap.querySelectorAll('.event-icon').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const ev = this.dataset.event;
+            recSelectedEvent = (recSelectedEvent === ev) ? '' : ev;
+            renderRecEventIcons();
+            if (recMode === 'history') {
+                if (recSelectedEvent) {
+                    renderHistoryRecords();
+                } else {
+                    document.getElementById('recResult').innerHTML = '<div class="no-data">请点击上方图标选择项目后，将自动显示该项目的历史纪录</div>';
+                }
+            }
+        });
+    });
+}
+
+function updateRecCityOptions() {
+    const province = document.getElementById('recProvince').value;
+    let cities;
+    if (province) cities = [...new Set(allPlayers.filter(p => p.province === province).map(p => p.city).filter(Boolean))];
+    else cities = [...new Set(allPlayers.map(p => p.city).filter(Boolean))];
+    if (province && PRESET_CITIES[province]) cities = [...new Set([...cities, ...PRESET_CITIES[province]])];
+    cities = cities.filter(c => HIDDEN_CITY_NAMES.indexOf(c) < 0);
+    cities.sort((a, b) => {
+        if (a === '未知') return -1;
+        if (b === '未知') return 1;
+        return a.localeCompare(b, 'zh-Hans-CN');
+    });
+    const citySel = document.getElementById('recCity');
+    const prev = citySel.value;
+    citySel.innerHTML = '<option value="">全部</option>' + cities.map(c => `<option value="${c}">${c}</option>`).join('');
+    if (cities.indexOf(prev) >= 0) citySel.value = prev;
+}
+
+function renderRegionRecords() {
+    showLoading('recResult', '正在统计当前纪录…');
+    requestAnimationFrame(function () {
+        setTimeout(function () {
+            _renderRegionRecords();
+        }, 0);
+    });
+}
+
+function _renderRegionRecords() {
+    const province = document.getElementById('recProvince').value;
+    const city = document.getElementById('recCity').value;
+    const gender = document.getElementById('recGender').value;
+    const container = document.getElementById('recResult');
+
+    const candidates = allPlayers.filter(p => {
+        if (province && p.province !== province) return false;
+        if (city && p.city !== city) return false;
+        if (gender && p.gender !== gender) return false;
+        return true;
+    });
+
+    if (candidates.length === 0) { container.innerHTML = '<div class="no-data">没有符合条件的选手</div>'; return; }
+
+    const recordsByEvent = {};
+    candidates.forEach(p => {
+        p.results.forEach(r => {
+            const ev = r.event_id;
+            if (!recordsByEvent[ev]) recordsByEvent[ev] = { singles: [], avgs: [] };
+            if (r.best > 0) recordsByEvent[ev].singles.push({ value: r.best, name: p.name, wca_id: p.wca_id, competition: r.competition_name || r.competition_id, date: r.date });
+            if (r.average > 0) recordsByEvent[ev].avgs.push({ value: r.average, name: p.name, wca_id: p.wca_id, competition: r.competition_name || r.competition_id, date: r.date });
+        });
+    });
+
+    const result = [];
+    Object.keys(recordsByEvent).forEach(ev => {
+        const data = recordsByEvent[ev];
+        let bestSingles = [], bestAvgs = [];
+        if (data.singles.length > 0) {
+            const minVal = Math.min(...data.singles.map(x => x.value));
+            bestSingles = data.singles.filter(x => x.value === minVal);
+        }
+        if (data.avgs.length > 0) {
+            const minVal = Math.min(...data.avgs.map(x => x.value));
+            bestAvgs = data.avgs.filter(x => x.value === minVal);
+        }
+        result.push({ event: ev, singles: bestSingles, avgs: bestAvgs });
+    });
+
+    result.sort((a, b) => getEventOrderIndex(a.event) - getEventOrderIndex(b.event));
+
+    const regionParts = [];
+    if (province) regionParts.push(province);
+    if (city) regionParts.push(city);
+    const regionLabel = regionParts.length > 0 ? regionParts.join(' · ') : '全国';
+    const genderLabel = gender === 'm' ? '（男）' : (gender === 'f' ? '（女）' : '');
+
+    let html = `<h3>${regionLabel} 省市纪录${genderLabel}</h3>`;
+    html += `<div class="table-wrap"><table><tr><th>项目</th><th>单次</th><th>平均</th><th>姓名</th><th>比赛</th><th>日期</th></tr>`;
+
+    result.forEach(item => {
+        html += `<tr class="event-row"><td colspan="6" style="background:#e8f5e9;font-weight:bold;color:#000;">${eventCellHtml(item.event)}</td></tr>`;
+        item.singles.forEach(s => {
+            html += `<tr><td></td><td>${formatResult(s.value, item.event)}</td><td>-</td><td>${playerLinkHtml(s.name, s.wca_id)}</td><td>${s.competition}</td><td>${s.date || '-'}</td></tr>`;
+        });
+        item.avgs.forEach(a => {
+            html += `<tr><td></td><td>-</td><td>${formatResult(a.value, item.event)}</td><td>${playerLinkHtml(a.name, a.wca_id)}</td><td>${a.competition}</td><td>${a.date || '-'}</td></tr>`;
+        });
+    });
+
+    html += '</table></div>';
+    container.innerHTML = html;
+}
+
+function renderHistoryRecords() {
+    showLoading('recResult', '正在统计历史纪录…');
+    requestAnimationFrame(function () {
+        setTimeout(function () {
+            _renderHistoryRecords();
+        }, 0);
+    });
+}
+
+function _renderHistoryRecords() {
+    const province = document.getElementById('recProvince').value;
+    const city = document.getElementById('recCity').value;
+    const gender = document.getElementById('recGender').value;
+    const eventId = recSelectedEvent;
+    const container = document.getElementById('recResult');
+
+    if (!eventId) { container.innerHTML = '<div class="no-data">请选择项目</div>'; return; }
+
+    const candidates = allPlayers.filter(p => {
+        if (province && p.province !== province) return false;
+        if (city && p.city !== city) return false;
+        if (gender && p.gender !== gender) return false;
+        return true;
+    });
+
+    const allResults = [];
+    candidates.forEach(p => {
+        p.results.forEach(r => {
+            if (r.event_id !== eventId) return;
+            const dateObj = parseDate(r.date);
+            if (r.best > 0) allResults.push({ type: 'single', value: r.best, name: p.name, wca_id: p.wca_id, competition: r.competition_name || r.competition_id, date: r.date, dateObj: dateObj, roundOrder: getRoundOrder(r.round_type_id) });
+            if (r.average > 0) allResults.push({ type: 'avg', value: r.average, name: p.name, wca_id: p.wca_id, competition: r.competition_name || r.competition_id, date: r.date, dateObj: dateObj, roundOrder: getRoundOrder(r.round_type_id) });
+        });
+    });
+
+    allResults.sort((a, b) => {
+        if (a.dateObj && b.dateObj) {
+            const diff = a.dateObj - b.dateObj;
+            if (diff !== 0) return diff;
+        } else if (!a.dateObj && b.dateObj) return 1;
+        else if (a.dateObj && !b.dateObj) return -1;
+        if (a.roundOrder !== b.roundOrder) return a.roundOrder - b.roundOrder;
+        return a.value - b.value;
+    });
+
+    const singleHistory = [], avgHistory = [];
+    let currentSingle = Infinity, currentAvg = Infinity;
+    allResults.forEach(r => {
+        if (r.type === 'single' && r.value <= currentSingle) { currentSingle = r.value; singleHistory.push({ ...r, typeLabel: '单次' }); }
+        else if (r.type === 'avg' && r.value <= currentAvg) { currentAvg = r.value; avgHistory.push({ ...r, typeLabel: '平均' }); }
+    });
+
+    if (singleHistory.length === 0 && avgHistory.length === 0) { container.innerHTML = '<div class="no-data">该区域没有该项目的纪录</div>'; return; }
+
+    const regionParts = [];
+    if (province) regionParts.push(province);
+    if (city) regionParts.push(city);
+    const regionLabel = regionParts.length > 0 ? regionParts.join(' · ') : '全国';
+    const genderLabel = gender === 'm' ? '（男）' : (gender === 'f' ? '（女）' : '');
+
+    let html = `<h3>${regionLabel} ${eventCellHtml(eventId)} 历史纪录${genderLabel}</h3>`;
+
+    if (singleHistory.length > 0) {
+        html += `<h4>单次纪录（共 ${singleHistory.length} 次刷新）</h4>`;
+        html += `<div class="table-wrap"><table><tr><th>成绩</th><th>姓名</th><th>比赛</th><th>日期</th></tr>`;
+        singleHistory.forEach(r => {
+            html += `<tr><td>${formatResult(r.value, eventId)}</td><td>${playerLinkHtml(r.name, r.wca_id)}</td><td>${r.competition}</td><td>${r.date || '-'}</td></tr>`;
+        });
+        html += '</table></div>';
+    } else {
+        html += `<h4>单次纪录演变</h4><div class="no-data">暂无单次纪录</div>`;
+    }
+
+    if (avgHistory.length > 0) {
+        html += `<h4 style="margin-top:20px;">平均纪录（共 ${avgHistory.length} 次刷新）</h4>`;
+        html += `<div class="table-wrap"><table><tr><th>成绩</th><th>姓名</th><th>比赛</th><th>日期</th></tr>`;
+        avgHistory.forEach(r => {
+            html += `<tr><td>${formatResult(r.value, eventId)}</td><td>${playerLinkHtml(r.name, r.wca_id)}</td><td>${r.competition}</td><td>${r.date || '-'}</td></tr>`;
+        });
+        html += '</table></div>';
+    } else {
+        html += `<h4 style="margin-top:20px;">平均纪录</h4><div class="no-data">暂无平均纪录</div>`;
+    }
+
+    container.innerHTML = html;
+}
+
+// ============================================================
+// 综合排名
+// ============================================================
+function ovOrderedSelected() {
+    return eventList.filter(ev => ovSelected.indexOf(ev) >= 0);
+}
+
+function ovUpdateSelectedCount() {
+    const el = document.getElementById('ovSelectedCount');
+    if (el) el.textContent = `已选 ${ovSelected.length} 项`;
+}
+
+function initOverall() {
+    const provinces = [...new Set(allPlayers.map(p => p.province).filter(Boolean))].sort((a, b) => {
+        return getProvinceSortKey(a).localeCompare(getProvinceSortKey(b), 'en');
+    });
+    const provSel = document.getElementById('ovProvince');
+    provSel.innerHTML = '<option value="">全国</option>' + provinces.map(p => `<option value="${p}">${p}</option>`).join('');
+    if (provinces.indexOf('未知') >= 0) {
+        provSel.value = '未知';
+    } else {
+        provSel.value = '';
+    }
+
+    updateOvCityDisabled();
+    ovUpdateCityOptions();
+    ovRenderEventIcons();
+
+    provSel.addEventListener('change', () => {
+        updateOvCityDisabled();
+        ovUpdateCityOptions();
+        ovPage = 1;
+        if (ovSelected.length) renderOverallRanking();
+    });
+    ['ovCity', 'ovGender'].forEach(id => {
+        document.getElementById(id).addEventListener('change', () => {
+            ovPage = 1;
+            if (ovSelected.length) renderOverallRanking();
+        });
+    });
+
+    document.getElementById('ovSingleBtn').addEventListener('click', function () {
+        ovType = 'single';
+        this.classList.add('active');
+        document.getElementById('ovAvgBtn').classList.remove('active');
+        ovPage = 1;
+        if (ovSelected.length) renderOverallRanking();
+    });
+    document.getElementById('ovAvgBtn').addEventListener('click', function () {
+        ovType = 'avg';
+        this.classList.add('active');
+        document.getElementById('ovSingleBtn').classList.remove('active');
+        ovPage = 1;
+        if (ovSelected.length) renderOverallRanking();
+    });
+
+    document.getElementById('ovSelectAll').addEventListener('click', () => {
+        ovSelected = eventList.slice();
+        ovRenderEventIcons();
+        ovPage = 1;
+        renderOverallRanking();
+    });
+    document.getElementById('ovClearAll').addEventListener('click', () => {
+        ovSelected = [];
+        ovRenderEventIcons();
+        ovPage = 1;
+        renderOverallRanking();
+    });
+}
+
+function updateOvCityDisabled() {
+    const provSel = document.getElementById('ovProvince');
+    const citySel = document.getElementById('ovCity');
+    if (provSel.value === '' || provSel.value === '未知') {
+        citySel.disabled = true;
+        citySel.value = '';
+    } else {
+        citySel.disabled = false;
+    }
+}
+
+function ovUpdateCityOptions() {
+    const province = document.getElementById('ovProvince').value;
+    let cities;
+    if (province) cities = [...new Set(allPlayers.filter(p => p.province === province).map(p => p.city).filter(Boolean))];
+    else cities = [...new Set(allPlayers.map(p => p.city).filter(Boolean))];
+    if (province && PRESET_CITIES[province]) cities = [...new Set([...cities, ...PRESET_CITIES[province]])];
+    cities = cities.filter(c => HIDDEN_CITY_NAMES.indexOf(c) < 0);
+    cities.sort((a, b) => {
+        if (a === '未知') return -1;
+        if (b === '未知') return 1;
+        return a.localeCompare(b, 'zh-Hans-CN');
+    });
+    const citySel = document.getElementById('ovCity');
+    const prev = citySel.value;
+    citySel.innerHTML = '<option value="">全部</option>' + cities.map(c => `<option value="${c}">${c}</option>`).join('');
+    if (cities.indexOf(prev) >= 0) citySel.value = prev;
+}
+
+function ovRenderEventIcons() {
+    const wrap = document.getElementById('ovEventIcons');
+    if (!wrap) return;
+    wrap.innerHTML = eventList.map(ev => {
+        const active = ovSelected.indexOf(ev) >= 0 ? ' active' : '';
+        return `<button type="button" class="event-icon${active}" data-event="${ev}" title="${getEventName(ev)}">
+            <span class="cubing-icon event-${ev}"></span>
+            <span class="event-icon-label">${getEventName(ev)}</span>
+        </button>`;
+    }).join('');
+
+    wrap.querySelectorAll('.event-icon').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const ev = this.dataset.event;
+            const idx = ovSelected.indexOf(ev);
+            if (idx >= 0) ovSelected.splice(idx, 1);
+            else ovSelected.push(ev);
+            this.classList.toggle('active');
+            ovUpdateSelectedCount();
+            ovPage = 1;
+            renderOverallRanking();
+        });
+    });
+    ovUpdateSelectedCount();
+}
+
+function renderOverallRanking() {
+    const events = ovOrderedSelected();
+    if (events.length === 0) {
+        document.getElementById('ovResult').innerHTML = '<div class="no-data">请点击上方图标选择至少一个项目</div>';
+        return;
+    }
+    showLoading('ovResult', '正在计算综合排名…');
+    requestAnimationFrame(function () {
+        setTimeout(function () {
+            _renderOverallRanking();
+        }, 0);
+    });
+}
+
+function _renderOverallRanking() {
+    const container = document.getElementById('ovResult');
+    const province = document.getElementById('ovProvince').value;
+    const city = document.getElementById('ovCity').value;
+    const gender = document.getElementById('ovGender').value;
+    const events = ovOrderedSelected();
+
+    const candidates = allPlayers.filter(p => {
+        if (province && p.province !== province) return false;
+        if (city && p.city !== city) return false;
+        if (gender && p.gender !== gender) return false;
+        return true;
+    });
+
+    const stats = {};
+    candidates.forEach(p => {
+        stats[p.wca_id] = { p: p, details: {}, total: 0, count: 0 };
+    });
+
+    let validEvents = 0;
+    events.forEach(ev => {
+        const arr = [];
+        candidates.forEach(p => {
+            let best = Infinity;
+            for (let i = 0; i < p.results.length; i++) {
+                const r = p.results[i];
+                if (r.event_id !== ev) continue;
+                const v = ovType === 'single' ? r.best : r.average;
+                if (v > 0 && v < best) best = v;
+            }
+            if (best !== Infinity) arr.push({ wca_id: p.wca_id, value: best });
+        });
+
+        if (arr.length === 0) return;
+        validEvents++;
+
+        arr.sort((a, b) => a.value - b.value);
+        let lastVal = null, lastRank = 0;
+        arr.forEach((item, idx) => {
+            if (item.value !== lastVal) { lastRank = idx + 1; lastVal = item.value; }
+            const st = stats[item.wca_id];
+            st.details[ev] = { rank: lastRank, value: item.value, isDefault: false };
+            st.total += lastRank;
+            st.count++;
+        });
+
+        const defaultRank = arr.length + 1;
+        candidates.forEach(p => {
+            const st = stats[p.wca_id];
+            if (!st.details[ev]) {
+                st.details[ev] = { rank: defaultRank, value: null, isDefault: true };
+                st.total += defaultRank;
+            }
+        });
+    });
+
+    if (validEvents === 0) {
+        container.innerHTML = '<div class="no-data">所选项目在当前筛选条件下都没有成绩数据</div>';
+        return;
+    }
+
+    let list = Object.keys(stats).map(k => stats[k]).filter(s => s.count > 0);
+
+    if (list.length === 0) {
+        container.innerHTML = '<div class="no-data">没有符合条件的选手</div>';
+        return;
+    }
+
+    list.sort((a, b) => {
+        if (a.total !== b.total) return a.total - b.total;
+        if (b.count !== a.count) return b.count - a.count;
+        return a.p.name.localeCompare(b.p.name, 'zh-Hans-CN');
+    });
+
+    let lastTotal = null, lastRank = 0;
+    list.forEach((s, idx) => {
+        if (s.total !== lastTotal) { lastRank = idx + 1; lastTotal = s.total; }
+        s.rank = lastRank;
+    });
+
+    const totalPages = Math.max(1, Math.ceil(list.length / OV_PAGE_SIZE));
+    if (ovPage > totalPages) ovPage = totalPages;
+    if (ovPage < 1) ovPage = 1;
+    const start = (ovPage - 1) * OV_PAGE_SIZE;
+    const pageItems = list.slice(start, start + OV_PAGE_SIZE);
+
+    const regionParts = [];
+    if (province) regionParts.push(province);
+    if (city) regionParts.push(city);
+    const regionLabel = regionParts.length > 0 ? regionParts.join(' · ') : '全国';
+    const genderLabel = gender === 'm' ? '（男）' : (gender === 'f' ? '（女）' : '');
+    const typeLabel = ovType === 'single' ? '单次' : '平均';
+
+    let html = `<h3>${regionLabel} 综合排名${genderLabel} · ${typeLabel}（共 ${list.length} 人）</h3>`;
+    html += `<p style="font-size:13px;color:#000;margin:4px 0 10px;line-height:1.7;">
+        所选项目：${events.map(e => getEventName(e)).join('、')}<br>
+        排名规则：先计算选手在每个所选项目中的名次，再求名次之和，<strong>总和越小排名越靠前</strong>；
+        <span style="color:#d35400;">若选手在某个所选项目没有成绩，则按该项目最后一名 + 1 计入总和</span>（带 * 标记表示+1名次）。
+    </p>`;
+
+    html += `<div class="table-wrap"><table><tr>
+        <th>排名</th><th>选手</th><th>省份</th><th>城市</th><th>总和</th>`;
+    events.forEach(ev => {
+        html += `<th class="ov-event-col" title="${getEventName(ev)}"><span class="cubing-icon event-${ev}"></span></th>`;
+    });
+    html += `</tr>`;
+
+    pageItems.forEach(s => {
+        html += `<tr>
+            <td>${s.rank}</td>
+            <td>${playerLinkHtml(s.p.name, s.p.wca_id)}</td>
+            <td>${s.p.province || '-'}</td>
+            <td>${s.p.city || '-'}</td>
+            <td><strong style="color:#26a69a;font-size:15px;">${s.total}</strong></td>`;
+        events.forEach(ev => {
+            const d = s.details[ev];
+            if (!d) {
+                html += `<td class="ov-rank-cell">-</td>`;
+            } else if (d.isDefault) {
+                html += `<td class="ov-rank-cell ov-rank-default" title="该项目无成绩，按最后一名+1计算">${d.rank}*</td>`;
+            } else if (d.rank <= 10) {
+                html += `<td class="ov-rank-cell ov-rank-top">${d.rank}</td>`;
+            } else {
+                html += `<td class="ov-rank-cell">${d.rank}</td>`;
+            }
+        });
+        html += `</tr>`;
+    });
+
+    html += '</table></div>';
+
+    html += `<div class="pagination">
+        <button id="ovFirstPage" ${ovPage <= 1 ? 'disabled' : ''}>首页</button>
+        <button id="ovPrevPage" ${ovPage <= 1 ? 'disabled' : ''}>上一页</button>
+        <span class="page-info">第 ${ovPage} / ${totalPages} 页（共 ${list.length} 人，每页 ${OV_PAGE_SIZE} 人）</span>
+        <button id="ovNextPage" ${ovPage >= totalPages ? 'disabled' : ''}>下一页</button>
+        <button id="ovLastPage" ${ovPage >= totalPages ? 'disabled' : ''}>末页</button>
+    </div>`;
+
+    container.innerHTML = html;
+
+    const firstBtn = document.getElementById('ovFirstPage');
+    const prevBtn = document.getElementById('ovPrevPage');
+    const nextBtn = document.getElementById('ovNextPage');
+    const lastBtn = document.getElementById('ovLastPage');
+    if (firstBtn) firstBtn.onclick = () => { ovPage = 1; _renderOverallRanking(); };
+    if (prevBtn) prevBtn.onclick = () => { ovPage = Math.max(1, ovPage - 1); _renderOverallRanking(); };
+    if (nextBtn) nextBtn.onclick = () => { ovPage = Math.min(totalPages, ovPage + 1); _renderOverallRanking(); };
+    if (lastBtn) lastBtn.onclick = () => { ovPage = totalPages; _renderOverallRanking(); };
+}
+
+// ============================================================
+// 选手搜索 + 选手主页
+// ============================================================
+function showPlayerSearchView() {
+    document.getElementById('playerSearchView').style.display = 'block';
+    document.getElementById('playerHomeView').style.display = 'none';
+}
+
+function showPlayerHomeView() {
+    document.getElementById('playerSearchView').style.display = 'none';
+    document.getElementById('playerHomeView').style.display = 'block';
+}
+
+function renderPlayerSearch(query) {
+    const container = document.getElementById('playerResult');
+    showPlayerSearchView();
+
+    if (!query) {
+        container.innerHTML = '<div class="no-data">请输入 WCA ID 或姓名进行搜索</div>';
+        return;
+    }
+    const q = query.toUpperCase();
+    const results = allPlayers.filter(p => {
+        if (p.wca_id && p.wca_id.toUpperCase().indexOf(q) >= 0) return true;
+        if (p.name && p.name.toUpperCase().indexOf(q) >= 0) return true;
+        if (p.name_zh && p.name_zh.toUpperCase().indexOf(q) >= 0) return true;
+        if (p.name_en && p.name_en.toUpperCase().indexOf(q) >= 0) return true;
+        return false;
+    });
+    if (results.length === 0) {
+        container.innerHTML = '<div class="no-data">未找到匹配的选手，请检查关键词是否正确</div>';
+        return;
+    }
+    results.sort((a, b) => {
+        if (a.wca_id === q) return -1;
+        if (b.wca_id === q) return 1;
+        return (a.wca_id || '').localeCompare(b.wca_id || '');
+    });
+
+    const MAX_SHOW = 200;
+    const total = results.length;
+    const shown = results.slice(0, MAX_SHOW);
+
+    let html = `<h3>搜索结果（共 ${total} 人${total > MAX_SHOW ? '，仅显示前 ' + MAX_SHOW + ' 条' : ''}）</h3>`;
+    html += `<p style="font-size:13px;color:#000;margin:4px 0 10px;">点击姓名可在当前页面查看该选手的完整主页。${total > MAX_SHOW ? ' 结果过多，请补充关键词缩小范围。' : ''}</p>`;
+    html += `<div class="table-wrap"><table>
+        <tr><th>姓名</th><th>WCA ID</th><th>省份</th><th>城市</th><th>性别</th></tr>`;
+    shown.forEach(p => {
+        const genderLabel = p.gender === 'm' ? '男' : (p.gender === 'f' ? '女' : '-');
+        html += `<tr>
+            <td>${playerLinkHtml(p.name, p.wca_id)}</td>
+            <td>${p.wca_id}</td>
+            <td>${p.province || '-'}</td>
+            <td>${p.city || '-'}</td>
+            <td>${genderLabel}</td>
+        </tr>`;
+    });
+    html += '</table></div>';
+    container.innerHTML = html;
+}
+
+function openPlayerHome(wcaId) {
+    if (!wcaId) return;
+
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    const playerTab = document.querySelector('.tab[data-tab="tab-player"]');
+    if (playerTab) playerTab.classList.add('active');
+    const playerTabContent = document.getElementById('tab-player');
+    if (playerTabContent) playerTabContent.classList.add('active');
+
+    showFullscreenLoader('正在加载选手数据…');
+
+    playerTablePages = {};
+    playerViewMode = 'event';
+    playerSectionMode = 'score';
+    const player = playerMap[wcaId];
+    if (player) {
+        const playerEvents = [...new Set(player.results.map(r => r.event_id))];
+        if (playerEvents.indexOf('333') >= 0) {
+            playerSelectedEvent = '333';
+        } else if (playerEvents.length > 0) {
+            playerEvents.sort((a, b) => getEventOrderIndex(a) - getEventOrderIndex(b));
+            playerSelectedEvent = playerEvents[0];
+        } else {
+            playerSelectedEvent = '';
+        }
+    } else {
+        playerSelectedEvent = '333';
+    }
+    playerSelectedCompYear = 'all';
+
+    showPlayerHomeView();
+
+    window.scrollTo(0, 0);
+
+    requestAnimationFrame(function () {
+        setTimeout(function () {
+            try {
+                renderPlayerHomeContent(wcaId);
+            } catch (err) {
+                console.error('选手主页渲染失败:', err);
+            }
+            hideFullscreenLoader();
+            window.scrollTo(0, 0);
+        }, 30);
+    });
+}
+
+function getEventRanks(ev) {
+    if (eventRankCache[ev]) return eventRankCache[ev];
+    const allSingles = [], allAvgs = [];
+    const byProv = {}, byCity = {};
+    allPlayers.forEach(p => {
+        const pb = playerBestCache[p.wca_id] && playerBestCache[p.wca_id][ev];
+        if (!pb) return;
+        if (pb.single !== Infinity) {
+            allSingles.push(pb.single);
+            if (p.province && p.province !== '未知') {
+                if (!byProv[p.province]) byProv[p.province] = { singles: [], avgs: [] };
+                byProv[p.province].singles.push(pb.single);
+            }
+            if (p.city && p.city !== '未知') {
+                if (!byCity[p.city]) byCity[p.city] = { singles: [], avgs: [] };
+                byCity[p.city].singles.push(pb.single);
+            }
+        }
+        if (pb.avg !== Infinity) {
+            allAvgs.push(pb.avg);
+            if (p.province && p.province !== '未知') {
+                if (!byProv[p.province]) byProv[p.province] = { singles: [], avgs: [] };
+                byProv[p.province].avgs.push(pb.avg);
+            }
+            if (p.city && p.city !== '未知') {
+                if (!byCity[p.city]) byCity[p.city] = { singles: [], avgs: [] };
+                byCity[p.city].avgs.push(pb.avg);
+            }
+        }
+    });
+    allSingles.sort((a, b) => a - b);
+    allAvgs.sort((a, b) => a - b);
+    Object.keys(byProv).forEach(k => {
+        byProv[k].singles.sort((a, b) => a - b);
+        byProv[k].avgs.sort((a, b) => a - b);
+    });
+    Object.keys(byCity).forEach(k => {
+        byCity[k].singles.sort((a, b) => a - b);
+        byCity[k].avgs.sort((a, b) => a - b);
+    });
+    const result = { allSingles, allAvgs, byProv, byCity };
+    eventRankCache[ev] = result;
+    return result;
+}
+
+function computePBRanks(player) {
+    const events = [...new Set(player.results.map(r => r.event_id))].sort((a, b) => getEventOrderIndex(a) - getEventOrderIndex(b));
+    const result = [];
+    events.forEach(ev => {
+        const pb = playerBestCache[player.wca_id][ev] || {};
+        const pSingle = (pb.single === undefined || pb.single === Infinity) ? null : pb.single;
+        const pAvg = (pb.avg === undefined || pb.avg === Infinity) ? null : pb.avg;
+
+        const ranks = getEventRanks(ev);
+
+        let citySingleRank = '-', cityAvgRank = '-';
+        let provSingleRank = '-', provAvgRank = '-';
+        let natSingleRank = '-', natAvgRank = '-';
+
+        if (pSingle !== null) {
+            natSingleRank = countLess(ranks.allSingles, pSingle) + 1;
+            if (player.province && player.province !== '未知' && ranks.byProv[player.province]) {
+                provSingleRank = countLess(ranks.byProv[player.province].singles, pSingle) + 1;
+            }
+            if (player.city && player.city !== '未知' && ranks.byCity[player.city]) {
+                citySingleRank = countLess(ranks.byCity[player.city].singles, pSingle) + 1;
+            }
+        }
+        if (pAvg !== null) {
+            natAvgRank = countLess(ranks.allAvgs, pAvg) + 1;
+            if (player.province && player.province !== '未知' && ranks.byProv[player.province]) {
+                provAvgRank = countLess(ranks.byProv[player.province].avgs, pAvg) + 1;
+            }
+            if (player.city && player.city !== '未知' && ranks.byCity[player.city]) {
+                cityAvgRank = countLess(ranks.byCity[player.city].avgs, pAvg) + 1;
+            }
+        }
+
+        result.push({
+            event: ev,
+            single: pSingle,
+            avg: pAvg,
+            citySingleRank, cityAvgRank,
+            provSingleRank, provAvgRank,
+            natSingleRank, natAvgRank
+        });
+    });
+    return result;
+}
+
+function renderPlayerHomeContent(wcaId) {
+    const container = document.getElementById('playerHomeContent');
+    const player = playerMap[wcaId];
+    if (!player) {
+        container.innerHTML = `<div class="no-data">未找到选手 ${wcaId}</div>`;
+        return;
+    }
+
+    let marked, provinceReign, cityReign, counts, pbRanks;
+    if (playerMarkedCache[wcaId]) {
+        const cached = playerMarkedCache[wcaId];
+        marked = cached.marked; provinceReign = cached.provinceReign; cityReign = cached.cityReign;
+        counts = cached.counts;
+        pbRanks = cached.pbRanks;
+    } else {
+        const results = player.results;
+        marked = markRecords(results.slice(), player);
+        const gender = player.gender;
+        counts = {
+            pb:  { single: 0, avg: 0 },
+            pr:  { single: 0, avg: 0 },
+            cr:  { single: 0, avg: 0 },
+            mpr: { single: 0, avg: 0 },
+            fpr: { single: 0, avg: 0 },
+            mcr: { single: 0, avg: 0 },
+            fcr: { single: 0, avg: 0 }
+        };
+        marked.forEach(r => {
+            const st = getHighestSingleType(r, gender);
+            if (st) counts[st.toLowerCase()].single++;
+            const at = getHighestAvgType(r, gender);
+            if (at) counts[at.toLowerCase()].avg++;
+        });
+        provinceReign = computeReignFromMarks(marked, player, 'province');
+        cityReign = computeReignFromMarks(marked, player, 'city');
+        pbRanks = computePBRanks(player);
+        playerMarkedCache[wcaId] = { marked, provinceReign, cityReign, counts, pbRanks };
+    }
+
+    const playerEventSet = new Set(marked.map(r => r.event_id));
+    if (!playerSelectedEvent || !playerEventSet.has(playerSelectedEvent)) {
+        if (playerEventSet.has('333')) {
+            playerSelectedEvent = '333';
+        } else if (playerEventSet.size > 0) {
+            const evs = [...playerEventSet].sort((a, b) => getEventOrderIndex(a) - getEventOrderIndex(b));
+            playerSelectedEvent = evs[0];
+        } else {
+            playerSelectedEvent = '';
+        }
+    }
+
+    const results = player.results;
+    const comps = [...new Set(results.map(r => r.competition_id))];
+    const dates = results.map(r => r.date).filter(d => d).sort();
+    const startDate = dates.length ? dates[0] : '-';
+    const endDate = dates.length ? dates[dates.length - 1] : '-';
+
+    let html = `<div class="player-header screenshot-area" data-screenshot="player-info">
+        <div class="item"><strong>姓名</strong> ${player.name}</div>
+        <div class="item"><strong>WCA ID</strong> ${player.wca_id}</div>
+        <div class="item"><strong>国家</strong> ${player.country_id}</div>
+        <div class="item"><strong>省份</strong> ${player.province || '-'}</div>
+        <div class="item"><strong>城市</strong> ${player.city || '-'}</div>
+        <div class="item"><strong>性别</strong> ${player.gender === 'm' ? '男' : (player.gender === 'f' ? '女' : '-')}</div>
+        <div class="item"><strong>参赛次数</strong> ${comps.length}</div>
+        <div class="item"><strong>参赛时间</strong> ${startDate} ～ ${endDate}</div>
+    </div>`;
+
+    html += `<div class="pb-table-section screenshot-area" data-screenshot="pb-table">
+        <h3>个人最好成绩</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>项目</th>
+                        <th>城市排名</th>
+                        <th>省份排名</th>
+                        <th>全国排名</th>
+                        <th>单次</th>
+                        <th>平均</th>
+                        <th>全国排名</th>
+                        <th>省份排名</th>
+                        <th>城市排名</th>
+                    </tr>
+                </thead>
+                <tbody>`;
+
+    function rankCell(rank) {
+        if (rank === '-' || rank === null || rank === undefined) {
+            return '<span class="pb-rank-none">-</span>';
+        }
+        if (rank <= 10) {
+            return `<span class="pb-rank-top">${rank}</span>`;
+        }
+        return `<span>${rank}</span>`;
+    }
+
+    pbRanks.forEach(item => {
+        html += `<tr>
+            <td>${eventCellHtml(item.event)}</td>
+            <td>${rankCell(item.citySingleRank)}</td>
+            <td>${rankCell(item.provSingleRank)}</td>
+            <td>${rankCell(item.natSingleRank)}</td>
+            <td>${item.single !== null ? formatResult(item.single, item.event) : '-'}</td>
+            <td>${item.avg !== null ? formatResult(item.avg, item.event) : '-'}</td>
+            <td>${rankCell(item.natAvgRank)}</td>
+            <td>${rankCell(item.provAvgRank)}</td>
+            <td>${rankCell(item.cityAvgRank)}</td>
+        </tr>`;
+    });
+
+    html += `</tbody></table></div>
+    </div>`;
+
+    // ★ 新的纪录汇总表：只显示非零行
+    const rowDefs = [
+        { key: 'pr',  label: 'PR（省份纪录）',       cls: 'badge-prov' },
+        { key: 'mpr', label: 'MPR（男子省份纪录）',  cls: 'badge-mpr' },
+        { key: 'fpr', label: 'FPR（女子省份纪录）',  cls: 'badge-fpr' },
+        { key: 'cr',  label: 'CR（城市纪录）',       cls: 'badge-city' },
+        { key: 'mcr', label: 'MCR（男子城市纪录）',  cls: 'badge-mcr' },
+        { key: 'fcr', label: 'FCR（女子城市纪录）',  cls: 'badge-fcr' },
+        { key: 'pb',  label: 'PB（个人最好成绩）',   cls: 'badge-pb' }
+    ];
+    let rowsHtml = '';
+    let hasAnyRecord = false;
+    rowDefs.forEach(def => {
+        const c = counts[def.key];
+        const total = c.single + c.avg;
+        if (total === 0) return;
+        hasAnyRecord = true;
+        rowsHtml += `<tr>
+            <td><span class="badge ${def.cls}">${def.key.toUpperCase()}</span> ${def.label}</td>
+            <td>${total}</td>
+            <td>${c.single}</td>
+            <td>${c.avg}</td>
+        </tr>`;
+    });
+
+    if (hasAnyRecord) {
+        html += `<div class="record-stats screenshot-area" data-screenshot="record-stats">
+            <h3 style="display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                <span>纪录汇总</span>
+                <span onclick="showBadgeHelp()" title="纪录标识说明"
+                      data-html2canvas-ignore="true"
+                      style="display:inline-flex;align-items:center;gap:4px;cursor:pointer;background:#ffffff;border:1px solid #b2dfdb;border-radius:14px;padding:3px 10px 3px 3px;font-weight:600;">
+                    <span class="help-icon">?</span>
+                    <span style="font-size:13px;color:#000;">纪录标识说明</span>
+                </span>
+            </h3>
+            <table>
+                <tr><th>纪录</th><th>次数</th><th>单次</th><th>平均</th></tr>
+                ${rowsHtml}
+            </table>
+        </div>`;
+    }
+
+    function renderReignTable(reignData, regionLabel, keyPrefix) {
+        if (!reignData || reignData.length === 0) return '';
+        const totalReign = reignData.length;
+        const reignKey = keyPrefix;
+        let page = playerTablePages[reignKey] || 1;
+        const totalPages = Math.ceil(totalReign / REIGN_PAGE_SIZE) || 1;
+        if (page > totalPages) page = totalPages;
+        if (page < 1) page = 1;
+        playerTablePages[reignKey] = page;
+        const start = (page - 1) * REIGN_PAGE_SIZE;
+        const pageItems = reignData.slice(start, start + REIGN_PAGE_SIZE);
+
+        let out = `<div><h3>${regionLabel}</h3><div class="table-wrap"><table>
+            <tr><th>项目</th><th>类型</th><th>起始日期</th><th>结束日期</th><th>天数</th><th>中断天数</th></tr>`;
+        pageItems.forEach(item => {
+            const endStr = item.isCurrent ? '至今' : item.endDate.toISOString().slice(0, 10);
+            out += `<tr><td>${eventCellHtml(item.event)}</td><td>${item.type}</td><td>${item.startDate.toISOString().slice(0, 10)}</td><td>${endStr}</td><td>${item.totalDays}</td><td>${item.interruptionDays}</td></tr>`;
+        });
+        if (totalReign > REIGN_PAGE_SIZE) {
+            out += `<tr class="tbl-pagination-row"><td colspan="6">
+                <button type="button" class="tbl-page-btn" data-tbl-key="${reignKey}" data-tbl-page="1" ${page <= 1 ? 'disabled' : ''}>首页</button>
+                <button type="button" class="tbl-page-btn" data-tbl-key="${reignKey}" data-tbl-page="${page - 1}" ${page <= 1 ? 'disabled' : ''}>上一页</button>
+                <span class="page-info-inline">第 ${page} / ${totalPages} 页（共 ${totalReign} 条）</span>
+                <button type="button" class="tbl-page-btn" data-tbl-key="${reignKey}" data-tbl-page="${page + 1}" ${page >= totalPages ? 'disabled' : ''}>下一页</button>
+                <button type="button" class="tbl-page-btn" data-tbl-key="${reignKey}" data-tbl-page="${totalPages}" ${page >= totalPages ? 'disabled' : ''}>末页</button>
+            </td></tr>`;
+        }
+        out += `</table></div></div>`;
+        return out;
+    }
+
+    let reignHtml = '<div class="reign-container screenshot-area" data-screenshot="reign">';
+    reignHtml += renderReignTable(provinceReign, '省份纪录保持', 'reign_province');
+    reignHtml += renderReignTable(cityReign, '城市纪录保持', 'reign_city');
+    reignHtml += '</div>';
+    if (provinceReign.length > 0 || cityReign.length > 0) html += reignHtml;
+
+    const isMale = player.gender === 'm';
+    const isFemale = player.gender === 'f';
+    const hasProvRecords = marked.some(r => r._provSingle || r._provAvg);
+    const hasCityRecords = marked.some(r => r._citySingle || r._cityAvg);
+    const hasProvGenderRecords = (isMale || isFemale) && marked.some(r =>
+        (r._provGenderSingle || r._provGenderAvg) && !(r._provSingle || r._provAvg)
+    );
+    const hasCityGenderRecords = (isMale || isFemale) && marked.some(r =>
+        (r._cityGenderSingle || r._cityGenderAvg) && !(r._citySingle || r._cityAvg)
+    );
+    const hasRecords = hasProvRecords || hasCityRecords || hasProvGenderRecords || hasCityGenderRecords;
+
+    if (playerSectionMode === 'records' && !hasRecords) playerSectionMode = 'score';
+
+    let sectionTabsHtml = `<div class="section-tabs">
+        <button id="sectionTabScore" class="${playerSectionMode === 'score' ? 'active' : ''}">成绩</button>`;
+    if (hasRecords) {
+        sectionTabsHtml += `<button id="sectionTabRecords" class="${playerSectionMode === 'records' ? 'active' : ''}">纪录</button>`;
+    }
+    sectionTabsHtml += `</div>`;
+
+    let recordsContentHtml = '';
+    if (hasRecords) {
+        recordsContentHtml = `<div id="sectionContentRecords" style="display:${playerSectionMode === 'records' ? 'block' : 'none'};">`;
+        if (hasProvRecords) {
+            recordsContentHtml += `<div class="record-section screenshot-area" data-screenshot="province-records">
+                <h3>历史省份纪录（PR）</h3>
+                <div id="provinceRecords"></div>
+            </div>`;
+        }
+        if (hasProvGenderRecords) {
+            const genderLabel = isMale ? '历史男子省份纪录（MPR）' : '历史女子省份纪录（FPR）';
+            recordsContentHtml += `<div class="record-section screenshot-area" data-screenshot="province-gender-records">
+                <h3>${genderLabel}</h3>
+                <div id="provinceGenderRecords"></div>
+            </div>`;
+        }
+        if (hasCityRecords) {
+            recordsContentHtml += `<div class="record-section screenshot-area" data-screenshot="city-records">
+                <h3>历史城市纪录（CR）</h3>
+                <div id="cityRecords"></div>
+            </div>`;
+        }
+        if (hasCityGenderRecords) {
+            const genderLabel = isMale ? '历史男子城市纪录（MCR）' : '历史女子城市纪录（FCR）';
+            recordsContentHtml += `<div class="record-section screenshot-area" data-screenshot="city-gender-records">
+                <h3>${genderLabel}</h3>
+                <div id="cityGenderRecords"></div>
+            </div>`;
+        }
+        recordsContentHtml += `</div>`;
+    }
+
+    html += `<div class="section-tabs-wrapper screenshot-area" data-screenshot="scores">
+        ${sectionTabsHtml}
+        <div id="sectionContentScore" style="display:${playerSectionMode === 'score' ? 'block' : 'none'};">
+            <div class="view-toggle">
+                <button id="viewByEvent" class="${playerViewMode === 'event' ? 'active' : ''}">按项目</button>
+                <button id="viewByComp" class="${playerViewMode === 'comp' ? 'active' : ''}">按赛事</button>
+                <span onclick="showBadgeHelp()" title="纪录标识说明" style="display:inline-flex;align-items:center;gap:4px;cursor:pointer;background:#e8f5e9;border:1px solid #b2dfdb;border-radius:14px;padding:3px 10px 3px 3px;transition:0.15s;">
+                    <span class="help-icon">?</span>
+                    <span style="font-size:13px;color:#000;font-weight:600;">纪录标识说明</span>
+                </span>
+            </div>
+            <div id="playerEventSelector" style="display:${playerViewMode === 'event' ? 'block' : 'none'};">
+                <div class="event-icons" id="playerEventIcons"></div>
+            </div>
+            <div id="playerYearSelector" style="display:${playerViewMode === 'comp' ? 'block' : 'none'};">
+                <div class="year-buttons" id="playerYearButtons"></div>
+            </div>
+            <div id="resultTableContainer"></div>
+        </div>
+        ${recordsContentHtml}
+    </div>`;
+
+    container.innerHTML = html;
+
+    function renderPaginatedRows(allRows, rowRenderer, tableKey, pageSize) {
+        const total = allRows.length;
+        if (total <= pageSize) {
+            return allRows.map(rowRenderer).join('');
+        }
+        let page = playerTablePages[tableKey] || 1;
+        const totalPages = Math.ceil(total / pageSize);
+        if (page > totalPages) page = totalPages;
+        if (page < 1) page = 1;
+        playerTablePages[tableKey] = page;
+        const start = (page - 1) * pageSize;
+        const pageRows = allRows.slice(start, start + pageSize);
+        let outHtml = pageRows.map(rowRenderer).join('');
+        outHtml += `<tr class="tbl-pagination-row"><td colspan="100">
+            <button type="button" class="tbl-page-btn" data-tbl-key="${tableKey}" data-tbl-page="1" ${page <= 1 ? 'disabled' : ''}>首页</button>
+            <button type="button" class="tbl-page-btn" data-tbl-key="${tableKey}" data-tbl-page="${page - 1}" ${page <= 1 ? 'disabled' : ''}>上一页</button>
+            <span class="page-info-inline">第 ${page} / ${totalPages} 页（共 ${total} 条）</span>
+            <button type="button" class="tbl-page-btn" data-tbl-key="${tableKey}" data-tbl-page="${page + 1}" ${page >= totalPages ? 'disabled' : ''}>下一页</button>
+            <button type="button" class="tbl-page-btn" data-tbl-key="${tableKey}" data-tbl-page="${totalPages}" ${page >= totalPages ? 'disabled' : ''}>末页</button>
+        </td></tr>`;
+        return outHtml;
+    }
+
+    function renderPlayerEventIcons() {
+        const wrap = document.getElementById('playerEventIcons');
+        if (!wrap) return;
+        const playerEvents = [...playerEventSet].sort((a, b) => getEventOrderIndex(a) - getEventOrderIndex(b));
+        if (playerEvents.length === 0) {
+            wrap.innerHTML = '<div class="no-data" style="padding:12px 0;">该选手暂无项目成绩</div>';
+            return;
+        }
+        wrap.innerHTML = playerEvents.map(ev => {
+            const active = playerSelectedEvent === ev ? ' active' : '';
+            return `<button type="button" class="event-icon${active}" data-event="${ev}" title="${getEventName(ev)}">
+                <span class="cubing-icon event-${ev}"></span>
+                <span class="event-icon-label">${getEventName(ev)}</span>
+            </button>`;
+        }).join('');
+    }
+
+    function renderPlayerYearButtons() {
+        const wrap = document.getElementById('playerYearButtons');
+        if (!wrap) return;
+        const years = [...new Set(marked.map(r => (r.date || '').slice(0, 4)).filter(y => /^\d{4}$/.test(y)))].sort((a, b) => b.localeCompare(a));
+        let out = `<button type="button" class="${playerSelectedCompYear === 'all' ? 'active' : ''}" data-year="all">全部年份</button>`;
+        out += years.map(y => `<button type="button" class="${playerSelectedCompYear === y ? 'active' : ''}" data-year="${y}">${y}</button>`).join('');
+        wrap.innerHTML = out;
+    }
+
+    function renderByEventMode() {
+        const c = document.getElementById('resultTableContainer');
+        if (!c) return;
+        const ev = playerSelectedEvent;
+        if (!ev) {
+            c.innerHTML = '<div class="no-data">该选手暂无项目成绩</div>';
+            return;
+        }
+        const rows = marked.filter(r => r.event_id === ev);
+        if (rows.length === 0) {
+            c.innerHTML = `<div class="no-data">该选手没有 ${getEventName(ev)} 的成绩</div>`;
+            return;
+        }
+        rows.sort((a, b) => {
+            const da = parseDate(a.date), db = parseDate(b.date);
+            if (da && db && da.getTime() !== db.getTime()) return db - da;
+            if (da && !db) return -1;
+            if (!da && db) return 1;
+            return getRoundOrder(b.round_type_id) - getRoundOrder(a.round_type_id);
+        });
+        const tableKey = 'pe_' + ev;
+        let out = `<h4>${eventCellHtml(ev)} 成绩（共 ${rows.length} 条）</h4><div class="table-wrap"><table>
+            <tr><th>赛事</th><th>轮次</th><th>排名</th><th>最好</th><th>平均</th><th>日期</th></tr>`;
+        out += renderPaginatedRows(rows, function (r) {
+            const bestCell = renderResultWithBadge(r.best, r.event_id, r, player, true);
+            const avgCell = renderResultWithBadge(r.average, r.event_id, r, player, false);
+            return `<tr><td>${r.competition_name || r.competition_id}</td><td>${getRoundName(r.round_type_id)}</td><td>${r.pos || '-'}</td><td>${bestCell}</td><td>${avgCell}</td><td>${r.date || '-'}</td></tr>`;
+        }, tableKey, SCORE_TABLE_PAGE_SIZE);
+        out += '</table></div>';
+        c.innerHTML = out;
+    }
+
+    function renderByCompMode() {
+        const c = document.getElementById('resultTableContainer');
+        if (!c) return;
+        let rows = marked;
+        if (playerSelectedCompYear !== 'all') {
+            rows = rows.filter(r => (r.date || '').slice(0, 4) === playerSelectedCompYear);
+        }
+        if (rows.length === 0) {
+            c.innerHTML = `<div class="no-data">没有符合条件的赛事成绩</div>`;
+            return;
+        }
+        const byComp = {};
+        rows.forEach(r => {
+            if (!byComp[r.competition_id]) byComp[r.competition_id] = [];
+            byComp[r.competition_id].push(r);
+        });
+        const groups = Object.keys(byComp).map(compId => {
+            const compRows = byComp[compId];
+            compRows.sort((a, b) => {
+                const evDiff = getEventOrderIndex(a.event_id) - getEventOrderIndex(b.event_id);
+                if (evDiff !== 0) return evDiff;
+                return getRoundOrder(b.round_type_id) - getRoundOrder(a.round_type_id);
+            });
+            const firstRow = compRows[0];
+            return {
+                compId: compId,
+                compName: firstRow.competition_name || compId,
+                rows: compRows,
+                dateObj: parseDate(firstRow.date)
+            };
+        });
+        groups.sort((a, b) => {
+            if (a.dateObj && b.dateObj) return b.dateObj - a.dateObj;
+            if (a.dateObj && !b.dateObj) return -1;
+            if (!a.dateObj && b.dateObj) return 1;
+            return a.compId.localeCompare(b.compId);
+        });
+
+        const pages = [];
+        let current = [];
+        let currentSize = 0;
+        groups.forEach(g => {
+            if (currentSize > 0 && currentSize + g.rows.length > SCORE_TABLE_PAGE_SIZE) {
+                pages.push(current);
+                current = [];
+                currentSize = 0;
+            }
+            current.push(g);
+            currentSize += g.rows.length;
+        });
+        if (current.length > 0) pages.push(current);
+        if (pages.length === 0) pages.push([]);
+
+        const totalPages = pages.length;
+        const tableKey = 'pc_' + playerSelectedCompYear;
+        let page = playerTablePages[tableKey] || 1;
+        if (page > totalPages) page = totalPages;
+        if (page < 1) page = 1;
+        playerTablePages[tableKey] = page;
+        const pageGroups = pages[page - 1];
+
+        const yearLabel = playerSelectedCompYear === 'all' ? '全部年份' : playerSelectedCompYear + ' 年';
+        let out = `<h4>赛事成绩（${yearLabel}，共 ${groups.length} 个赛事）</h4>`;
+        pageGroups.forEach(g => {
+            out += `<div class="comp-table-title">${g.compName}</div>`;
+            out += `<div class="table-wrap"><table>
+                <tr><th>项目</th><th>轮次</th><th>排名</th><th>最好</th><th>平均</th><th>日期</th></tr>`;
+            g.rows.forEach(r => {
+                const bestCell = renderResultWithBadge(r.best, r.event_id, r, player, true);
+                const avgCell = renderResultWithBadge(r.average, r.event_id, r, player, false);
+                out += `<tr><td>${eventCellHtml(r.event_id)}</td><td>${getRoundName(r.round_type_id)}</td><td>${r.pos || '-'}</td><td>${bestCell}</td><td>${avgCell}</td><td>${r.date || '-'}</td></tr>`;
+            });
+            out += `</table></div>`;
+        });
+        if (totalPages > 1) {
+            out += `<div class="pagination">
+                <button type="button" class="tbl-page-btn" data-tbl-key="${tableKey}" data-tbl-page="1" ${page <= 1 ? 'disabled' : ''}>首页</button>
+                <button type="button" class="tbl-page-btn" data-tbl-key="${tableKey}" data-tbl-page="${page - 1}" ${page <= 1 ? 'disabled' : ''}>上一页</button>
+                <span class="page-info-inline">第 ${page} / ${totalPages} 页（共 ${groups.length} 个赛事）</span>
+                <button type="button" class="tbl-page-btn" data-tbl-key="${tableKey}" data-tbl-page="${page + 1}" ${page >= totalPages ? 'disabled' : ''}>下一页</button>
+                <button type="button" class="tbl-page-btn" data-tbl-key="${tableKey}" data-tbl-page="${totalPages}" ${page >= totalPages ? 'disabled' : ''}>末页</button>
+            </div>`;
+        }
+        c.innerHTML = out;
+    }
+
+    function renderCurrentScoreTable() {
+        if (playerViewMode === 'event') {
+            renderByEventMode();
+        } else {
+            renderByCompMode();
+        }
+    }
+
+    function renderRecordsTables() {
+         function renderRecords(regionType) {
+            let containerId, flagSingle, flagAvg, recBadgeHtml, excludeFlags = null;
+            if (regionType === 'province') {
+                containerId = 'provinceRecords';
+                flagSingle = '_provSingle';
+                flagAvg = '_provAvg';
+                recBadgeHtml = '<span class="badge badge-prov">PR</span>';
+            } else if (regionType === 'province-gender') {
+                containerId = 'provinceGenderRecords';
+                flagSingle = '_provGenderSingle';
+                flagAvg = '_provGenderAvg';
+                recBadgeHtml = player.gender === 'm'
+                    ? '<span class="badge badge-mpr">MPR</span>'
+                    : '<span class="badge badge-fpr">FPR</span>';
+                excludeFlags = ['_provSingle', '_provAvg'];
+            } else if (regionType === 'city') {
+                containerId = 'cityRecords';
+                flagSingle = '_citySingle';
+                flagAvg = '_cityAvg';
+                recBadgeHtml = '<span class="badge badge-city">CR</span>';
+            } else if (regionType === 'city-gender') {
+                containerId = 'cityGenderRecords';
+                flagSingle = '_cityGenderSingle';
+                flagAvg = '_cityGenderAvg';
+                recBadgeHtml = player.gender === 'm'
+                    ? '<span class="badge badge-mcr">MCR</span>'
+                    : '<span class="badge badge-fcr">FCR</span>';
+                excludeFlags = ['_citySingle', '_cityAvg'];
+            } else {
+                return;
+            }
+            const c = document.getElementById(containerId);
+            if (!c) return;
+            let recs = marked.filter(r => r[flagSingle] || r[flagAvg]);
+            if (excludeFlags) {
+                recs = recs.filter(r => !excludeFlags.some(f => r[f]));
+            }
+            if (!recs.length) { c.innerHTML = '<div class="no-data">暂无纪录</div>'; return; }
+            const sortedRows = [...recs].sort((a, b) => {
+                const evDiff = getEventOrderIndex(a.event_id) - getEventOrderIndex(b.event_id);
+                if (evDiff !== 0) return evDiff;
+                const dateA = parseDate(a.date), dateB = parseDate(b.date);
+                if (!dateA && !dateB) return 0;
+                if (!dateA) return 1;
+                if (!dateB) return -1;
+                if (dateB - dateA !== 0) return dateB - dateA;
+                return getRoundOrder(b.round_type_id) - getRoundOrder(a.round_type_id);
+            });
+            const tableKey = 'rec_' + regionType;
+            let out = `<div class="table-wrap"><table><tr><th>项目</th><th>单次</th><th>平均</th><th>赛事</th><th>轮次</th><th>日期</th><th>详情</th></tr>`;
+            out += renderPaginatedRows(sortedRows, function (r) {
+                let singleVal = '-', avgVal = '-';
+                const hasSingle = r[flagSingle];
+                const hasAvg = r[flagAvg];
+                if (hasSingle) singleVal = recBadgeHtml + formatResult(r.best, r.event_id);
+                if (hasAvg) avgVal = recBadgeHtml + formatResult(r.average, r.event_id);
+                let values = [];
+                if (r.value1 !== undefined && r.value1 !== null && r.value1 > 0) {
+                    values = [r.value1, r.value2, r.value3, r.value4, r.value5];
+                }
+                let valuesStr = '-';
+                if (values.length > 0) {
+                    valuesStr = values.map(v => formatResult(v, r.event_id)).filter(s => s !== '-').join(', ');
+                    if (valuesStr === '') valuesStr = '-';
+                } else valuesStr = '<span style="color:#aaa;">数据未包含</span>';
+                return `<tr><td>${eventCellHtml(r.event_id)}</td><td>${singleVal}</td><td>${avgVal}</td><td>${r.competition_name || r.competition_id}</td><td>${getRoundName(r.round_type_id)}</td><td>${r.date || '-'}</td><td class="value-list">${valuesStr}</td></tr>`;
+            }, tableKey, PLAYER_TABLE_PAGE_SIZE);
+            out += '</table></div>';
+            c.innerHTML = out;
+        }
+        renderRecords('province');
+        renderRecords('province-gender');
+        renderRecords('city');
+        renderRecords('city-gender');
+    }
+
+    renderPlayerEventIcons();
+    renderPlayerYearButtons();
+    renderCurrentScoreTable();
+    renderRecordsTables();
+
+    container.onclick = function (e) {
+        const tblBtn = e.target.closest('.tbl-page-btn');
+        if (tblBtn && container.contains(tblBtn)) {
+            const key = tblBtn.dataset.tblKey;
+            const pg = parseInt(tblBtn.dataset.tblPage);
+            playerTablePages[key] = pg;
+            const scrollY = window.scrollY;
+            renderPlayerHomeContent(wcaId);
+            window.scrollTo(0, scrollY);
+            return;
+        }
+        const sectionTab = e.target.closest('#sectionTabScore, #sectionTabRecords');
+        if (sectionTab && container.contains(sectionTab)) {
+            const newMode = sectionTab.id === 'sectionTabScore' ? 'score' : 'records';
+            if (playerSectionMode !== newMode) {
+                playerSectionMode = newMode;
+                const scrollY = window.scrollY;
+                renderPlayerHomeContent(wcaId);
+                window.scrollTo(0, scrollY);
+            }
+            return;
+        }
+        const viewBtn = e.target.closest('#viewByEvent, #viewByComp');
+        if (viewBtn && container.contains(viewBtn)) {
+            const targetMode = viewBtn.id === 'viewByEvent' ? 'event' : 'comp';
+            if (playerViewMode !== targetMode) {
+                playerViewMode = targetMode;
+                const scrollY = window.scrollY;
+                renderPlayerHomeContent(wcaId);
+                window.scrollTo(0, scrollY);
+            }
+            return;
+        }
+        const evIcon = e.target.closest('#playerEventIcons .event-icon');
+        if (evIcon && container.contains(evIcon)) {
+            const ev = evIcon.dataset.event;
+            if (playerSelectedEvent !== ev) {
+                playerSelectedEvent = ev;
+                const scrollY = window.scrollY;
+                renderPlayerHomeContent(wcaId);
+                window.scrollTo(0, scrollY);
+            }
+            return;
+        }
+        const yearBtn = e.target.closest('#playerYearButtons button');
+        if (yearBtn && container.contains(yearBtn)) {
+            const y = yearBtn.dataset.year;
+            if (playerSelectedCompYear !== y) {
+                playerSelectedCompYear = y;
+                const scrollY = window.scrollY;
+                renderPlayerHomeContent(wcaId);
+                window.scrollTo(0, scrollY);
+            }
+            return;
+        }
+    };
+}
+
+// ============================================================
+// 标记纪录（含 MPR/MCR/FPR/FCR）
+// ============================================================
+function markRecords(records, player) {
+    const sorted = [...records].sort((a, b) => {
+        const da = parseDate(a.date), db = parseDate(b.date);
+        if (da && db) {
+            if (da.getTime() !== db.getTime()) return da - db;
+        } else if (da) return -1; else if (db) return 1;
+        return getRoundOrder(a.round_type_id) - getRoundOrder(b.round_type_id);
+    });
+
+    const pbSingle = {}, pbAvg = {};
+    const cityPlayers = (player.city && player.city !== '未知') ? (playersByCity[player.city] || []) : [];
+    const provPlayers = (player.province && player.province !== '未知') ? (playersByProvince[player.province] || []) : [];
+    const playerGender = player.gender;
+    const citySameGender = playerGender ? cityPlayers.filter(p => p.gender === playerGender) : [];
+    const provSameGender = playerGender ? provPlayers.filter(p => p.gender === playerGender) : [];
+
+    function prevBestIn(players, ev, dateObj, roundOrder) {
+        let bestSingle = Infinity, bestAvg = Infinity;
+        for (let i = 0; i < players.length; i++) {
+            const rList = players[i].results;
+            for (let j = 0; j < rList.length; j++) {
+                const r2 = rList[j];
+                if (r2.event_id !== ev) continue;
+                const d2 = parseDate(r2.date);
+                if (!d2) continue;
+                if (d2.getTime() < dateObj.getTime() ||
+                    (d2.getTime() === dateObj.getTime() && getRoundOrder(r2.round_type_id) < roundOrder)) {
+                    if (r2.best > 0 && r2.best < bestSingle) bestSingle = r2.best;
+                    if (r2.average > 0 && r2.average < bestAvg) bestAvg = r2.average;
+                }
+            }
+        }
+        return { bestSingle, bestAvg };
+    }
+
+    sorted.forEach(r => {
+        const ev = r.event_id;
+        const dateObj = parseDate(r.date);
+        const roundOrder = getRoundOrder(r.round_type_id);
+
+        if (!pbSingle[ev]) pbSingle[ev] = Infinity;
+        if (!pbAvg[ev]) pbAvg[ev] = Infinity;
+        r._pbSingle = (r.best > 0 && r.best < pbSingle[ev]);
+        r._pbAvg = (r.average > 0 && r.average < pbAvg[ev]);
+        if (r.best > 0 && r.best < pbSingle[ev]) pbSingle[ev] = r.best;
+        if (r.average > 0 && r.average < pbAvg[ev]) pbAvg[ev] = r.average;
+
+        if (cityPlayers.length > 0) {
+            const b = prevBestIn(cityPlayers, ev, dateObj, roundOrder);
+            r._citySingleRaw = (r.best > 0 && (b.bestSingle === Infinity || r.best <= b.bestSingle));
+            r._cityAvgRaw = (r.average > 0 && (b.bestAvg === Infinity || r.average <= b.bestAvg));
+        } else { r._citySingleRaw = false; r._cityAvgRaw = false; }
+
+        if (provPlayers.length > 0) {
+            const b = prevBestIn(provPlayers, ev, dateObj, roundOrder);
+            r._provSingleRaw = (r.best > 0 && (b.bestSingle === Infinity || r.best <= b.bestSingle));
+            r._provAvgRaw = (r.average > 0 && (b.bestAvg === Infinity || r.average <= b.bestAvg));
+        } else { r._provSingleRaw = false; r._provAvgRaw = false; }
+
+        if (citySameGender.length > 0) {
+            const b = prevBestIn(citySameGender, ev, dateObj, roundOrder);
+            r._cityGenderSingleRaw = (r.best > 0 && (b.bestSingle === Infinity || r.best <= b.bestSingle));
+            r._cityGenderAvgRaw = (r.average > 0 && (b.bestAvg === Infinity || r.average <= b.bestAvg));
+        } else { r._cityGenderSingleRaw = false; r._cityGenderAvgRaw = false; }
+
+        if (provSameGender.length > 0) {
+            const b = prevBestIn(provSameGender, ev, dateObj, roundOrder);
+            r._provGenderSingleRaw = (r.best > 0 && (b.bestSingle === Infinity || r.best <= b.bestSingle));
+            r._provGenderAvgRaw = (r.average > 0 && (b.bestAvg === Infinity || r.average <= b.bestAvg));
+        } else { r._provGenderSingleRaw = false; r._provGenderAvgRaw = false; }
+    });
+
+    function deduplicateGroup(players, rawSingleKey, rawAvgKey, outSingleKey, outAvgKey) {
+        sorted.forEach(r => {
+            r[outSingleKey] = false;
+            r[outAvgKey] = false;
+        });
+
+        const dateGroups = {};
+        sorted.forEach(r => {
+            const isSingle = r[rawSingleKey];
+            const isAvg = r[rawAvgKey];
+            if (!isSingle && !isAvg) return;
+            const dateKey = parseDate(r.date).toISOString().slice(0, 10);
+            const ev = r.event_id;
+            const key = dateKey + '|' + ev;
+            if (!dateGroups[key]) dateGroups[key] = { singles: [], avgs: [], dateObj: parseDate(r.date), ev: ev, dateKey: dateKey };
+            if (isSingle) dateGroups[key].singles.push(r);
+            if (isAvg) dateGroups[key].avgs.push(r);
+        });
+
+        Object.keys(dateGroups).forEach(key => {
+            const group = dateGroups[key];
+            const dateObj = group.dateObj, ev = group.ev, dateKey = group.dateKey;
+
+            let beforeSingle = Infinity, beforeAvg = Infinity;
+            for (let i = 0; i < players.length; i++) {
+                const rList = players[i].results;
+                for (let j = 0; j < rList.length; j++) {
+                    const r2 = rList[j];
+                    if (r2.event_id !== ev) continue;
+                    const d2 = parseDate(r2.date);
+                    if (!d2) continue;
+                    if (d2.getTime() < dateObj.getTime()) {
+                        if (r2.best > 0 && r2.best < beforeSingle) beforeSingle = r2.best;
+                        if (r2.average > 0 && r2.average < beforeAvg) beforeAvg = r2.average;
+                    }
+                }
+            }
+
+            function dayBestIds(players, ev, dateKey, beforeBest, useAvg) {
+                let minVal = Infinity;
+                for (let i = 0; i < players.length; i++) {
+                    const p = players[i];
+                    const rList = p.results;
+                    for (let j = 0; j < rList.length; j++) {
+                        const r2 = rList[j];
+                        if (r2.event_id !== ev) continue;
+                        const d2 = parseDate(r2.date);
+                        if (!d2) continue;
+                        if (d2.toISOString().slice(0, 10) !== dateKey) continue;
+                        const val = useAvg ? r2.average : r2.best;
+                        if (val > 0 && (beforeBest === Infinity || val <= beforeBest)) {
+                            if (val < minVal) minVal = val;
+                        }
+                    }
+                }
+                const ids = {};
+                for (let i = 0; i < players.length; i++) {
+                    const p = players[i];
+                    const rList = p.results;
+                    for (let j = 0; j < rList.length; j++) {
+                        const r2 = rList[j];
+                        if (r2.event_id !== ev) continue;
+                        const d2 = parseDate(r2.date);
+                        if (!d2) continue;
+                        if (d2.toISOString().slice(0, 10) !== dateKey) continue;
+                        const val = useAvg ? r2.average : r2.best;
+                        if (val > 0 && val === minVal) ids[p.wca_id] = 1;
+                    }
+                }
+                return ids;
+            }
+
+            if (group.singles.length > 0) {
+                const ids = dayBestIds(players, ev, dateKey, beforeSingle, false);
+                if (ids[player.wca_id]) {
+                    group.singles.forEach(r => { r[outSingleKey] = true; });
+                }
+            }
+            if (group.avgs.length > 0) {
+                const ids = dayBestIds(players, ev, dateKey, beforeAvg, true);
+                if (ids[player.wca_id]) {
+                    group.avgs.forEach(r => { r[outAvgKey] = true; });
+                }
+            }
+        });
+    }
+
+    if (cityPlayers.length > 0) deduplicateGroup(cityPlayers, '_citySingleRaw', '_cityAvgRaw', '_citySingle', '_cityAvg');
+    else sorted.forEach(r => { r._citySingle = false; r._cityAvg = false; });
+
+    if (provPlayers.length > 0) deduplicateGroup(provPlayers, '_provSingleRaw', '_provAvgRaw', '_provSingle', '_provAvg');
+    else sorted.forEach(r => { r._provSingle = false; r._provAvg = false; });
+
+    if (citySameGender.length > 0) deduplicateGroup(citySameGender, '_cityGenderSingleRaw', '_cityGenderAvgRaw', '_cityGenderSingle', '_cityGenderAvg');
+    else sorted.forEach(r => { r._cityGenderSingle = false; r._cityGenderAvg = false; });
+
+    if (provSameGender.length > 0) deduplicateGroup(provSameGender, '_provGenderSingleRaw', '_provGenderAvgRaw', '_provGenderSingle', '_provGenderAvg');
+    else sorted.forEach(r => { r._provGenderSingle = false; r._provGenderAvg = false; });
+
+    return sorted;
+}
+
+function computeReignFromMarks(marked, player, regionType) {
+    const flagSingle = regionType === 'province' ? '_provSingle' : '_citySingle';
+    const flagAvg = regionType === 'province' ? '_provAvg' : '_cityAvg';
+    const regionValue = regionType === 'province' ? player.province : player.city;
+    if (!regionValue || regionValue === '未知') return [];
+
+    const regionPlayers = regionType === 'province'
+        ? (playersByProvince[regionValue] || [])
+        : (playersByCity[regionValue] || []);
+
+    const recordEvents = [];
+    marked.forEach(r => {
+        const isSingle = r[flagSingle];
+        const isAvg = r[flagAvg];
+        const date = parseDate(r.date);
+        if (!date) return;
+        if (isSingle) recordEvents.push({ type: 'single', date: date, value: r.best, event: r.event_id });
+        if (isAvg) recordEvents.push({ type: 'avg', date: date, value: r.average, event: r.event_id });
+    });
+    if (recordEvents.length === 0) return [];
+
+    const groups = {};
+    recordEvents.forEach(e => {
+        const key = e.event + '|' + e.type;
+        if (!groups[key]) groups[key] = [];
+        groups[key].push(e);
+    });
+
+    const result = [];
+    const today = new Date();
+
+    function getBreakDate(eventId, type, afterDate, recordValue) {
+        let breakDate = null;
+        for (let i = 0; i < regionPlayers.length; i++) {
+            const p = regionPlayers[i];
+            if (p.wca_id === player.wca_id) continue;
+            const rList = p.results;
+            for (let j = 0; j < rList.length; j++) {
+                const r = rList[j];
+                if (r.event_id !== eventId) continue;
+                const d = parseDate(r.date);
+                if (!d) continue;
+                if (d > afterDate) {
+                    const val = type === 'single' ? r.best : r.average;
+                    if (val > 0 && val < recordValue) {
+                        if (!breakDate || d < breakDate) breakDate = d;
+                    }
+                }
+            }
+        }
+        return breakDate;
+    }
+
+    for (const key in groups) {
+        const parts = key.split('|');
+        const eventId = parts[0];
+        const type = parts[1];
+        const events = groups[key];
+        events.sort((a, b) => a.date - b.date);
+
+        const segments = [];
+        let currentStart = events[0].date;
+        let currentValue = events[0].value;
+
+        for (let i = 1; i < events.length; i++) {
+            const prev = events[i - 1];
+            const curr = events[i];
+            const breakDate = getBreakDate(eventId, type, prev.date, prev.value);
+            if (breakDate && breakDate < curr.date) {
+                segments.push({ startDate: currentStart, endDate: breakDate, value: currentValue, isCurrent: false });
+                currentStart = curr.date;
+                currentValue = curr.value;
+            }
+            currentValue = curr.value;
+        }
+
+        const lastBreak = getBreakDate(eventId, type, events[events.length - 1].date, events[events.length - 1].value);
+        const isCurrent = (lastBreak === null);
+        const endDate = isCurrent ? today : lastBreak;
+        segments.push({ startDate: currentStart, endDate: endDate, value: currentValue, isCurrent: isCurrent });
+
+        segments.forEach((seg, idx) => {
+            const start = seg.startDate;
+            const end = seg.endDate;
+            const totalDays = Math.floor((end - start) / (1000 * 60 * 60 * 24)) + 1;
+            let interruptionDays = 0;
+            if (idx < segments.length - 1) {
+                const nextStart = segments[idx + 1].startDate;
+                interruptionDays = Math.floor((nextStart - seg.endDate) / (1000 * 60 * 60 * 24));
+            }
+            const typeLabel = type === 'single' ? '单次' : '平均';
+            result.push({
+                event: eventId, eventName: getEventName(eventId), type: typeLabel,
+                startDate: start, endDate: end,
+                totalDays: totalDays, interruptionDays: interruptionDays,
+                isCurrent: seg.isCurrent
+            });
+        });
+    }
+    return result;
+}
+
+// ============================================================
+// 自动滚动与截图
+// ============================================================
+document.addEventListener('DOMContentLoaded', function () {
+    let scrollInterval = null, isScrolling = false;
+    const speedSlider = document.getElementById('scrollSpeed');
+    const speedDisplay = document.getElementById('speedDisplay');
+    const scrollBtn = document.getElementById('scrollToggleBtn');
+
+    speedSlider.addEventListener('input', function () { speedDisplay.textContent = this.value; });
+
+    function startScroll() {
+        if (isScrolling) return;
+        const speed = parseInt(speedSlider.value);
+        const step = speed / 60;
+        isScrolling = true;
+        scrollBtn.textContent = '停止滚动';
+        scrollInterval = setInterval(() => {
+            window.scrollBy(0, step);
+            if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 10) {
+                clearInterval(scrollInterval); scrollInterval = null; isScrolling = false;
+                scrollBtn.textContent = '开始滚动';
+            }
+        }, 16);
+    }
+
+    function stopScroll() {
+        if (scrollInterval) { clearInterval(scrollInterval); scrollInterval = null; }
+        isScrolling = false;
+        scrollBtn.textContent = '开始滚动';
+    }
+
+    scrollBtn.addEventListener('click', function () { if (isScrolling) stopScroll(); else startScroll(); });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && isScrolling) { stopScroll(); e.preventDefault(); }
+        if (e.ctrlKey && e.shiftKey && e.key === 'ArrowDown') {
+            if (!isScrolling) { startScroll(); e.preventDefault(); }
+        }
+    });
+
+    document.getElementById('screenshotBtn').addEventListener('click', function () {
+        const checkboxes = document.querySelectorAll('.screenshot-checkbox:checked');
+        if (checkboxes.length === 0) { alert('请至少选择一个区域进行截图。'); return; }
+        const selectedIds = Array.from(checkboxes).map(cb => cb.value);
+        const elements = [];
+        selectedIds.forEach(id => {
+            const els = document.querySelectorAll(`.screenshot-area[data-screenshot="${id}"]`);
+            els.forEach(el => elements.push(el));
+        });
+        if (elements.length === 0) { alert('没有找到可截图的区域。'); return; }
+
+        const canvasList = [], scale = 2;
+        function captureElement(el) {
+            return html2canvas(el, { scale: scale, useCORS: true, backgroundColor: '#ffffff', logging: false });
+        }
+
+        async function captureAll() {
+            try {
+                for (let el of elements) canvasList.push(await captureElement(el));
+                if (canvasList.length === 0) return;
+                const totalHeight = canvasList.reduce((sum, c) => sum + c.height, 0);
+                const maxWidth = Math.max.apply(null, canvasList.map(c => c.width));
+                const finalCanvas = document.createElement('canvas');
+                finalCanvas.width = maxWidth; finalCanvas.height = totalHeight;
+                const ctx = finalCanvas.getContext('2d');
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(0, 0, maxWidth, totalHeight);
+                let yOffset = 0;
+                for (let c of canvasList) { ctx.drawImage(c, 0, yOffset); yOffset += c.height; }
+                const link = document.createElement('a');
+                link.download = `WCA_选手截图_${new Date().toISOString().slice(0, 10)}.png`;
+                link.href = finalCanvas.toDataURL('image/png');
+                link.click();
+            } catch (err) {
+                console.error('截图失败:', err);
+                alert('截图生成失败，请查看控制台错误。');
+            }
+        }
+        captureAll();
+    });
+});
+
+// ============================================================
+// 返回顶部
+// ============================================================
+(function () {
+    const backBtn = document.getElementById('backToTop');
+    if (!backBtn) return;
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) backBtn.classList.add('show');
+        else backBtn.classList.remove('show');
+    }, { passive: true });
+    backBtn.addEventListener('click', function () {
+        try {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } catch (err) {
+            window.scrollTo(0, 0);
+        }
+    });
 })();
+
+// ============================================================
+// 事件绑定
+// ============================================================
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.addEventListener('click', function () {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.getElementById(this.dataset.tab).classList.add('active');
+        });
+    });
+
+    let playerSearchTimer = null;
+
+    function doPlayerSearch() {
+        const query = document.getElementById('playerSearchInput').value.trim();
+        if (query.length === 1) return;
+        renderPlayerSearch(query);
+    }
+
+    document.getElementById('playerSearchInput').addEventListener('input', function () {
+        if (playerSearchTimer) clearTimeout(playerSearchTimer);
+        playerSearchTimer = setTimeout(doPlayerSearch, 250);
+    });
+
+    document.getElementById('playerSearchInput').addEventListener('keyup', function (e) {
+        if (e.key === 'Enter') {
+            if (playerSearchTimer) clearTimeout(playerSearchTimer);
+            doPlayerSearch();
+        }
+    });
+
+    document.getElementById('playerSearchBtn').addEventListener('click', function () {
+        if (playerSearchTimer) clearTimeout(playerSearchTimer);
+        doPlayerSearch();
+    });
+
+    document.getElementById('playerHomeBackBtn').addEventListener('click', function () {
+        showPlayerSearchView();
+    });
+
+    loadData();
+});
 </script>
+
+<!-- 纪录标识说明弹窗 -->
+<div id="badgeHelpModal" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.45);z-index:2000;justify-content:center;align-items:center;">
+    <div style="background:#fff;border-radius:12px;padding:24px 28px;max-width:460px;width:90%;box-shadow:0 8px 24px rgba(0,0,0,0.25);">
+        <h3 style="margin-top:0;color:#000;">纪录标识说明</h3>
+        <table style="margin-top:8px;font-size:14px;">
+            <tr>
+                <td style="padding:6px 10px;"><span class="badge badge-prov">PR</span></td>
+                <td style="padding:6px 10px;">省份纪录（不分性别）</td>
+            </tr>
+            <tr>
+                <td style="padding:6px 10px;"><span class="badge badge-mpr">MPR</span></td>
+                <td style="padding:6px 10px;">男子省份纪录</td>
+            </tr>
+            <tr>
+                <td style="padding:6px 10px;"><span class="badge badge-fpr">FPR</span></td>
+                <td style="padding:6px 10px;">女子省份纪录</td>
+            </tr>
+            <tr>
+                <td style="padding:6px 10px;"><span class="badge badge-city">CR</span></td>
+                <td style="padding:6px 10px;">城市纪录（不分性别）</td>
+            </tr>
+            <tr>
+                <td style="padding:6px 10px;"><span class="badge badge-mcr">MCR</span></td>
+                <td style="padding:6px 10px;">男子城市纪录</td>
+            </tr>
+            <tr>
+                <td style="padding:6px 10px;"><span class="badge badge-fcr">FCR</span></td>
+                <td style="padding:6px 10px;">女子城市纪录</td>
+            </tr>
+            <tr>
+                <td style="padding:6px 10px;"><span class="badge badge-pb">PB</span></td>
+                <td style="padding:6px 10px;">个人最好成绩</td>
+            </tr>
+        </table>
+        <p style="font-size:12px;color:#666;line-height:1.6;margin:10px 0 0;">
+            同一成绩只显示最高优先级徽章：<br>
+            女子：PR &gt; FPR &gt; CR &gt; FCR &gt; PB<br>
+            男子：PR &gt; MPR &gt; CR &gt; MCR &gt; PB
+        </p>
+        <p style="text-align:right;margin-bottom:0;margin-top:12px;">
+            <button onclick="closeBadgeHelp()" style="padding:6px 16px;border:none;background:#26a69a;color:white;border-radius:6px;cursor:pointer;">关闭</button>
+        </p>
+    </div>
+</div>
+
 </body>
 </html>

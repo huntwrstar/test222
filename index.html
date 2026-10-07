@@ -729,7 +729,7 @@ h4 { margin: 8px 0 2px 0; }
         <div class="announcement">
             <h2>📢 公告</h2>
             <p>欢迎访问，在这里可以查询中国选手在WCA赛事的省市排名、纪录。</p>
-            <p><span class="tag">当前版本</span> <kbd>2.0.0</kbd> 主要更新内容：选手主页新增男子/女子省市纪录（MPR/MCR/FPR/FCR）统计与徽章标识、纪录汇总表按优先级去重统计</p>
+            <p><span class="tag">当前版本</span> <kbd>2.1.0</kbd> 数据分层加载，首屏秒开；选手主页新增男子/女子省市纪录（MPR/MCR/FPR/FCR）统计与徽章标识</p>
         </div>
 
         <div class="home-section">
@@ -839,6 +839,13 @@ h4 { margin: 8px 0 2px 0; }
 
 <script>
 // ============================================================
+// 数据文件基础路径（全文件只定义一次）
+// 同目录部署：保持 ''
+// 用 jsDelivr：'https://cdn.jsdelivr.net/gh/用户名/仓库名@main/'
+// ============================================================
+const DATA_BASE_URL = '';
+
+// ============================================================
 // 工具函数
 // ============================================================
 const ROUND_MAP = {
@@ -922,7 +929,6 @@ function formatResult(value, eventId) {
     return `${mins}:${secs.padStart(5, '0')}`;
 }
 
-// ★ 优先级徽章渲染（新签名）
 function renderResultWithBadge(value, eventId, r, player, isSingle) {
     const text = formatResult(value, eventId);
     if (!text || text === '-') return '-';
@@ -948,7 +954,6 @@ function renderResultWithBadge(value, eventId, r, player, isSingle) {
     return badge + `<span class="${cls}">${text}</span>`;
 }
 
-// ★ 汇总用：判断某成绩的最高优先级类型
 function getHighestSingleType(r, gender) {
     if (r._provSingle) return 'PR';
     if (r._provGenderSingle && gender) return gender === 'm' ? 'MPR' : 'FPR';
@@ -1021,6 +1026,12 @@ function countLess(sortedArr, val) {
 // 全局数据
 // ============================================================
 let allPlayers = [], playerMap = {}, eventList = [];
+let fullDataLoaded = false;
+const pendingFullDataCallbacks = [];
+function onFullDataReady(cb) {
+    if (fullDataLoaded) { cb(); return; }
+    pendingFullDataCallbacks.push(cb);
+}
 let rankType = 'single';
 let rankPage = 1;
 let rankSelectedEvent = '';
@@ -1087,79 +1098,93 @@ document.addEventListener('click', function (e) {
 });
 
 // ============================================================
-// 数据加载（分片并行加载 + 单文件回退）
+// 数据分层加载
 // ============================================================
-async function fetchChunkPlayers(index) {
-    const chunks = (index && index.chunks) || [];
-    const files = chunks
-        .map(item => (typeof item === 'string') ? item : (item && item.file))
-        .filter(Boolean);
-    const totalChunks = files.length;
-    if (totalChunks === 0) return [];
-
-    let done = 0;
-    showFullscreenLoader(`正在加载数据分片 0 / ${totalChunks}…`);
-
-    const tasks = files.map(file =>
-        fetch(file)
-            .then(resp => {
-                if (!resp.ok) throw new Error(`数据分片加载失败：${file}`);
-                return resp.json();
-            })
-            .then(arr => {
-                done++;
-                showFullscreenLoader(`正在加载数据分片 ${done} / ${totalChunks}…`);
-                return Array.isArray(arr) ? arr : [];
-            })
-    );
-
-    const parts = await Promise.all(tasks);
-    // 按索引顺序拼接，保证结果稳定
-    const all = [];
-    for (let i = 0; i < parts.length; i++) {
-        const arr = parts[i];
-        for (let k = 0; k < arr.length; k++) all.push(arr[k]);
-    }
-    return all;
+async function fetchIndex() {
+    showFullscreenLoader('正在读取数据索引…');
+    const resp = await fetch(DATA_BASE_URL + 'wca_merged_index.json');
+    if (!resp.ok) throw new Error('未找到 wca_merged_index.json');
+    return await resp.json();
 }
 
-async function fetchAllPlayers() {
-    // 优先使用分片索引
-    try {
-        showFullscreenLoader('正在读取数据索引…');
-        const idxResp = await fetch('wca_merged_index.json');
-        if (idxResp.ok) {
-            const index = await idxResp.json();
-            if (index && Array.isArray(index.chunks) && index.chunks.length > 0) {
-                return await fetchChunkPlayers(index);
-            }
-        }
-    } catch (e) {
-        console.warn('分片索引加载失败，尝试单文件模式：', e);
+async function loadAllDetails(chunks) {
+    if (!chunks || chunks.length === 0) {
+        fullDataLoaded = true;
+        pendingFullDataCallbacks.splice(0).forEach(cb => { try { cb(); } catch (e) { console.error(e); } });
+        hideFullscreenLoader(); // 确保关闭
+        return;
     }
 
-    // 回退：旧的单文件模式
-    showFullscreenLoader('WCA 数据加载中…');
-    const resp = await fetch('wca_merged.json');
-    if (!resp.ok) {
-        throw new Error('未找到 wca_merged_index.json，也未找到 wca_merged.json，请确认文件与 viewer.html 在同一目录');
-    }
-    return await resp.json();
+    let done = 0;
+    // 给每个请求加 60 秒超时，避免某个分片卡死导致整个页面一直等下去
+    const tasks = chunks.map(c => {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 60000);
+        return fetch(DATA_BASE_URL + c.file, { signal: controller.signal })
+            .then(r => {
+                clearTimeout(timeoutId);
+                if (!r.ok) throw new Error('分片加载失败：' + c.file);
+                return r.json();
+            })
+            .then(arr => ({ meta: c, arr }))
+            .catch(err => {
+                console.warn('分片加载失败或超时:', c.file, err);
+                return { meta: c, arr: null }; // 失败时返回 null，保证不阻塞整体流程
+            })
+            .then(res => {
+                done++;
+                // 改用页面内的提示，不要触发全屏遮挡
+                const homeEl = document.getElementById('homeRecentRecords');
+                if (homeEl) {
+                    homeEl.innerHTML = `<div class="no-data">正在后台加载完整数据 ${done} / ${chunks.length}…</div>`;
+                }
+                return res;
+            });
+    });
+
+    const results = await Promise.all(tasks);
+
+    results.forEach(({ meta, arr }) => {
+        if (!arr) return; // 跳过失败的分片
+        for (let i = 0; i < arr.length; i++) {
+            const p = allPlayers[meta.start_index + i];
+            if (!p) continue;
+            p.results = arr[i].results || [];
+            p.ranks_single = arr[i].ranks_single || [];
+            p.ranks_average = arr[i].ranks_average || [];
+        }
+    });
+
+    fullDataLoaded = true;
+    pendingFullDataCallbacks.splice(0).forEach(cb => { try { cb(); } catch (e) { console.error(e); } });
+
+    // 确保加载完毕后，不管有没有报错，都隐藏遮罩
+    hideFullscreenLoader();
 }
 
 // ============================================================
 // 加载数据
 // ============================================================
 async function loadData() {
-    const timeoutId = setTimeout(function () {
-        const loader = document.getElementById('fullscreenLoader');
-        if (loader && !loader.classList.contains('hide')) hideFullscreenLoader();
-    }, 120000);
-
     const playerResult = document.getElementById('playerResult');
     try {
         playerResult.innerHTML = `<div class="loading-spinner"><div class="spinner"></div><p>数据加载中，请稍候……</p></div>`;
-        allPlayers = await fetchAllPlayers();
+
+        // 阶段 1：加载索引
+        const indexData = await fetchIndex();
+        const players = indexData.players || [];
+        allPlayers = players.map(p => ({
+            wca_id: p.wca_id,
+            name: p.name,
+            country_id: p.country_id,
+            gender: p.gender,
+            province: p.province,
+            city: p.city,
+            pb: p.pb || {},
+            results: [],
+            ranks_single: [],
+            ranks_average: [],
+        }));
 
         allPlayers.forEach(p => {
             if (!p.province || p.province.toString().trim().toLowerCase() === 'other') p.province = '未知';
@@ -1169,10 +1194,25 @@ async function loadData() {
             }
         });
 
-        const EXCLUDED_EVENTS = ['333ft', 'magic', '333mbo', 'mmagic'];
         allPlayers.forEach(p => {
-            p.results = p.results.filter(r => EXCLUDED_EVENTS.indexOf(r.event_id) === -1);
+            const map = {};
+            if (p.pb) {
+                Object.keys(p.pb).forEach(ev => {
+                    const e = p.pb[ev] || {};
+                    map[ev] = {
+                        single: (e.single && e.single > 0) ? e.single : Infinity,
+                        avg: (e.avg && e.avg > 0) ? e.avg : Infinity,
+                    };
+                });
+            }
+            playerBestCache[p.wca_id] = map;
         });
+
+        const evSet = {};
+        allPlayers.forEach(p => {
+            if (p.pb) Object.keys(p.pb).forEach(ev => { evSet[ev] = 1; });
+        });
+        eventList = Object.keys(evSet).sort((a, b) => getEventOrderIndex(a) - getEventOrderIndex(b));
 
         allPlayers.forEach(p => {
             playerMap[p.wca_id] = p;
@@ -1186,20 +1226,6 @@ async function loadData() {
             }
         });
 
-        allPlayers.forEach(p => {
-            const map = {};
-            p.results.forEach(r => {
-                if (!map[r.event_id]) map[r.event_id] = { single: Infinity, avg: Infinity };
-                if (r.best > 0 && r.best < map[r.event_id].single) map[r.event_id].single = r.best;
-                if (r.average > 0 && r.average < map[r.event_id].avg) map[r.event_id].avg = r.average;
-            });
-            playerBestCache[p.wca_id] = map;
-        });
-
-        const evSet = {};
-        allPlayers.forEach(p => p.results.forEach(r => { evSet[r.event_id] = 1; }));
-        eventList = Object.keys(evSet).sort((a, b) => getEventOrderIndex(a) - getEventOrderIndex(b));
-
         const hasGender = allPlayers.some(p => p.gender);
         if (!hasGender) document.getElementById('genderWarning').style.display = 'block';
 
@@ -1208,15 +1234,20 @@ async function loadData() {
         initOverall();
 
         playerResult.innerHTML = '<div class="no-data">请输入 WCA ID 或姓名进行搜索</div>';
+        showLoading('homeRecentRecords', '完整数据加载后自动统计…');
 
-        renderHomePage(function () {
-            clearTimeout(timeoutId);
-            hideFullscreenLoader();
+        // 阶段 2：隐藏全屏 loading，页面已可用
+        hideFullscreenLoader();
+
+        // 阶段 3：后台静默加载完整详情
+        onFullDataReady(function () {
+            renderHomePage();
         });
+        loadAllDetails(indexData.chunks || []);
+
     } catch (e) {
         playerResult.innerHTML = '<div class="no-data">加载失败：' + e.message + '</div>';
         alert('加载失败: ' + e.message);
-        clearTimeout(timeoutId);
         hideFullscreenLoader();
     }
 }
@@ -1560,7 +1591,7 @@ function startHomeAutoTimer(totalPages) {
 }
 
 // ============================================================
-// 省市排名
+// 省市排名（用 PB）
 // ============================================================
 function initRankFilters() {
     const provinces = [...new Set(allPlayers.map(p => p.province).filter(Boolean))].sort((a, b) => {
@@ -1699,11 +1730,11 @@ function _renderPlayerRanking(province, city, eventId, gender) {
         if (city && p.city !== city) return;
         if (gender && p.gender !== gender) return;
 
+        const pb = playerBestCache[p.wca_id] && playerBestCache[p.wca_id][eventId];
         let best = null;
-        for (const r of p.results) {
-            if (r.event_id !== eventId) continue;
-            const val = rankType === 'single' ? r.best : r.average;
-            if (val > 0 && (best === null || val < best)) best = val;
+        if (pb) {
+            const val = rankType === 'single' ? pb.single : pb.avg;
+            if (val && val !== Infinity && val > 0) best = val;
         }
         if (best !== null) {
             candidates.push({
@@ -1821,6 +1852,13 @@ function initRecordFilters() {
     document.getElementById('recHistoryBtn').addEventListener('click', () => {
         recMode = 'history';
         document.getElementById('recEventSelector').style.display = 'block';
+        if (!fullDataLoaded) {
+            document.getElementById('recResult').innerHTML = '<div class="no-data">正在加载完整数据，请稍候…</div>';
+            onFullDataReady(function () {
+                if (recSelectedEvent) renderHistoryRecords();
+            });
+            return;
+        }
         if (recSelectedEvent) {
             renderHistoryRecords();
         } else {
@@ -1857,6 +1895,13 @@ function renderRecEventIcons() {
             recSelectedEvent = (recSelectedEvent === ev) ? '' : ev;
             renderRecEventIcons();
             if (recMode === 'history') {
+                if (!fullDataLoaded) {
+                    document.getElementById('recResult').innerHTML = '<div class="no-data">正在加载完整数据，请稍候…</div>';
+                    onFullDataReady(function () {
+                        if (recSelectedEvent) renderHistoryRecords();
+                    });
+                    return;
+                }
                 if (recSelectedEvent) {
                     renderHistoryRecords();
                 } else {
@@ -1911,11 +1956,16 @@ function _renderRegionRecords() {
 
     const recordsByEvent = {};
     candidates.forEach(p => {
-        p.results.forEach(r => {
-            const ev = r.event_id;
+        const pb = playerBestCache[p.wca_id] || {};
+        Object.keys(pb).forEach(ev => {
             if (!recordsByEvent[ev]) recordsByEvent[ev] = { singles: [], avgs: [] };
-            if (r.best > 0) recordsByEvent[ev].singles.push({ value: r.best, name: p.name, wca_id: p.wca_id, competition: r.competition_name || r.competition_id, date: r.date });
-            if (r.average > 0) recordsByEvent[ev].avgs.push({ value: r.average, name: p.name, wca_id: p.wca_id, competition: r.competition_name || r.competition_id, date: r.date });
+            const e = pb[ev];
+            if (e.single && e.single !== Infinity) {
+                recordsByEvent[ev].singles.push({ value: e.single, name: p.name, wca_id: p.wca_id, competition: '-', date: '-' });
+            }
+            if (e.avg && e.avg !== Infinity) {
+                recordsByEvent[ev].avgs.push({ value: e.avg, name: p.name, wca_id: p.wca_id, competition: '-', date: '-' });
+            }
         });
     });
 
@@ -2047,7 +2097,7 @@ function _renderHistoryRecords() {
 }
 
 // ============================================================
-// 综合排名
+// 综合排名（用 PB）
 // ============================================================
 function ovOrderedSelected() {
     return eventList.filter(ev => ovSelected.indexOf(ev) >= 0);
@@ -2208,14 +2258,10 @@ function _renderOverallRanking() {
     events.forEach(ev => {
         const arr = [];
         candidates.forEach(p => {
-            let best = Infinity;
-            for (let i = 0; i < p.results.length; i++) {
-                const r = p.results[i];
-                if (r.event_id !== ev) continue;
-                const v = ovType === 'single' ? r.best : r.average;
-                if (v > 0 && v < best) best = v;
-            }
-            if (best !== Infinity) arr.push({ wca_id: p.wca_id, value: best });
+            const pb = playerBestCache[p.wca_id] && playerBestCache[p.wca_id][ev];
+            if (!pb) return;
+            const v = ovType === 'single' ? pb.single : pb.avg;
+            if (v && v !== Infinity && v > 0) arr.push({ wca_id: p.wca_id, value: v });
         });
 
         if (arr.length === 0) return;
@@ -2407,21 +2453,29 @@ function openPlayerHome(wcaId) {
     const playerTabContent = document.getElementById('tab-player');
     if (playerTabContent) playerTabContent.classList.add('active');
 
-    showFullscreenLoader('正在加载选手数据…');
-
     playerTablePages = {};
     playerViewMode = 'event';
     playerSectionMode = 'score';
+
     const player = playerMap[wcaId];
     if (player) {
-        const playerEvents = [...new Set(player.results.map(r => r.event_id))];
+        const playerEvents = [...new Set((player.results || []).map(r => r.event_id))];
         if (playerEvents.indexOf('333') >= 0) {
             playerSelectedEvent = '333';
         } else if (playerEvents.length > 0) {
             playerEvents.sort((a, b) => getEventOrderIndex(a) - getEventOrderIndex(b));
             playerSelectedEvent = playerEvents[0];
         } else {
-            playerSelectedEvent = '';
+            // 详情还没加载，先用 PB 判断
+            const pbEvents = Object.keys(player.pb || {});
+            if (pbEvents.indexOf('333') >= 0) {
+                playerSelectedEvent = '333';
+            } else if (pbEvents.length > 0) {
+                pbEvents.sort((a, b) => getEventOrderIndex(a) - getEventOrderIndex(b));
+                playerSelectedEvent = pbEvents[0];
+            } else {
+                playerSelectedEvent = '333';
+            }
         }
     } else {
         playerSelectedEvent = '333';
@@ -2429,9 +2483,21 @@ function openPlayerHome(wcaId) {
     playerSelectedCompYear = 'all';
 
     showPlayerHomeView();
-
     window.scrollTo(0, 0);
 
+    if (!fullDataLoaded) {
+        showFullscreenLoader('正在加载完整成绩数据…');
+        document.getElementById('playerHomeContent').innerHTML =
+            '<div class="no-data">正在加载完整成绩数据，请稍候…</div>';
+        onFullDataReady(function () {
+            hideFullscreenLoader();
+            try { renderPlayerHomeContent(wcaId); } catch (err) { console.error(err); }
+            window.scrollTo(0, 0);
+        });
+        return;
+    }
+
+    showFullscreenLoader('正在加载选手数据…');
     requestAnimationFrame(function () {
         setTimeout(function () {
             try {
@@ -2491,7 +2557,7 @@ function getEventRanks(ev) {
 }
 
 function computePBRanks(player) {
-    const events = [...new Set(player.results.map(r => r.event_id))].sort((a, b) => getEventOrderIndex(a) - getEventOrderIndex(b));
+    const events = [...new Set((player.results || []).map(r => r.event_id))].sort((a, b) => getEventOrderIndex(a) - getEventOrderIndex(b));
     const result = [];
     events.forEach(ev => {
         const pb = playerBestCache[player.wca_id][ev] || {};
@@ -2649,7 +2715,7 @@ function renderPlayerHomeContent(wcaId) {
     html += `</tbody></table></div>
     </div>`;
 
-    // ★ 新的纪录汇总表：只显示非零行
+    // ★ 纪录汇总表：只显示非零行，标题旁加「纪录标识说明」
     const rowDefs = [
         { key: 'pr',  label: 'PR（省份纪录）',       cls: 'badge-prov' },
         { key: 'mpr', label: 'MPR（男子省份纪录）',  cls: 'badge-mpr' },
@@ -2731,14 +2797,21 @@ function renderPlayerHomeContent(wcaId) {
 
     const isMale = player.gender === 'm';
     const isFemale = player.gender === 'f';
+
+    // 与渲染阶段完全一致：性别省份/城市纪录必须排除已被更高优先级 PR/CR 占用的行
+    function hasExclusiveGenderRecord(flagSingle, flagAvg, excludeSingle, excludeAvg) {
+        return marked.some(r =>
+            (r[flagSingle] || r[flagAvg]) &&
+            !r[excludeSingle] && !r[excludeAvg]
+        );
+    }
+
     const hasProvRecords = marked.some(r => r._provSingle || r._provAvg);
     const hasCityRecords = marked.some(r => r._citySingle || r._cityAvg);
-    const hasProvGenderRecords = (isMale || isFemale) && marked.some(r =>
-        (r._provGenderSingle || r._provGenderAvg) && !(r._provSingle || r._provAvg)
-    );
-    const hasCityGenderRecords = (isMale || isFemale) && marked.some(r =>
-        (r._cityGenderSingle || r._cityGenderAvg) && !(r._citySingle || r._cityAvg)
-    );
+    const hasProvGenderRecords = (isMale || isFemale) &&
+        hasExclusiveGenderRecord('_provGenderSingle', '_provGenderAvg', '_provSingle', '_provAvg');
+    const hasCityGenderRecords = (isMale || isFemale) &&
+        hasExclusiveGenderRecord('_cityGenderSingle', '_cityGenderAvg', '_citySingle', '_cityAvg');
     const hasRecords = hasProvRecords || hasCityRecords || hasProvGenderRecords || hasCityGenderRecords;
 
     if (playerSectionMode === 'records' && !hasRecords) playerSectionMode = 'score';
